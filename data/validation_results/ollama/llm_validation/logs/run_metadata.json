@@ -1,0 +1,7 @@
+{
+  "provider": ["ollama"],
+  "run_id": ["llm_validation"],
+  "start_time": ["2025-01-09 10:45:35"],
+  "chunk_size": [50],
+  "total_records": [300]
+}
