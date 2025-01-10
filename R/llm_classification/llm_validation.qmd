@@ -104,9 +104,9 @@ chat <- chat_openai(
   model = "gpt-4o-mini"
 )
 
-result <- chat$extract_data(coal_example, type = project_analysis_spec)
+oai_result <- chat$extract_data(coal_example, type = project_analysis_spec)
 
-result 
+oai_result
 ```
 
 ## Test Anthropic API
@@ -117,9 +117,23 @@ chat <- chat_claude(
   model = "claude-3-5-sonnet-20241022"
 )
 
-result <- chat$extract_data(coal_example, type = project_analysis_spec)
+claude_result <- chat$extract_data(coal_example, type = project_analysis_spec)
 
-result 
+claude_result 
+```
+
+## Test Llama 3.3-70B API
+
+```{r}
+chat <- chat_vllm(
+  base_url = "https://promptly-technologies-llc--example-vllm-openai-compatible-serve.modal.run/v1/",
+  system_prompt = system_prompt_txt,
+  model = "Llama-3.3-70B-Instruct"
+)
+
+llama_result <- chat$extract_data(coal_example, type = project_analysis_spec)
+
+llama_result
 ```
 
 # Run 300 Examples
@@ -216,6 +230,7 @@ gpt_4o_mini_run_results <- collect_results(
 ```{r}
 gpt_4o_mini_run_results$fa
 ```
+
 ### GPT 4o-mini
 
 ```{r}
@@ -267,4 +282,3 @@ df_with_tokens %>%
 ```{r}
 str_length(system_prompt_txt)/4
 ```
-
