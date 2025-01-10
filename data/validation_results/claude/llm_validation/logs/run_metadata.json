@@ -1,7 +1,0 @@
-{
-  "provider": ["claude"],
-  "run_id": ["llm_validation"],
-  "start_time": ["2025-01-09 22:33:40"],
-  "chunk_size": [10],
-  "total_records": [300]
-}

@@ -62,8 +62,7 @@ gcdf_data_for_llm <- get_gcdf3_dataset() |>
     combined_text = paste(
       "# Sector\n", sector_name, "\n\n",
       "# Title\n", title, "\n\n",
-      "# Description\n", description, "\n\n",
-      "# Staff Comments\n", staff_comments,
+      "# Description\n", description,
       sep = ""
     )
   ) 
