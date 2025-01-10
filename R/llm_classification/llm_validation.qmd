@@ -16,6 +16,7 @@ library(here)
 library(chinadevfin3)
 library(beepr)
 library(progressr)
+library(jsonlite)
 ```
 
 ## Source Scripts
@@ -131,7 +132,16 @@ chat <- chat_vllm(
   model = "Llama-3.3-70B-Instruct"
 )
 
-llama_result <- chat$extract_data(coal_example, type = project_analysis_spec)
+llama_result <- chat$chat(coal_example)
+
+# Remove triple backticks and optional "json"
+llama_result <- gsub("^```(json)?\\s*", "", llama_result)
+
+# Remove trailing triple backticks
+llama_result <- gsub("```$", "", llama_result)
+
+# Parse the JSON string
+llama_result <- fromJSON(llama_result)
 
 llama_result
 ```
