@@ -146,6 +146,19 @@ llama_result <- fromJSON(llama_result)
 llama_result
 ```
 
+## Test DeepSeek V3
+
+``` {r}
+chat <- chat_vllm(
+  base_url = "https://api.deepseek.com/v1/",
+  system_prompt = system_prompt_txt,
+  model = "deepseek-chat",
+  api_key=Sys.getenv("DEEPSEEK_API_KEY")
+)
+
+llama_result <- chat$chat(coal_example)
+```
+
 # Run 300 Examples
 
 ## Create Sample
