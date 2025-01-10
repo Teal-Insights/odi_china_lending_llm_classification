@@ -8,6 +8,7 @@ editor: visual
 # Setup
 
 ## Load Libraries
+
 ```{r}
 library(tidyverse)
 library(ellmer)
@@ -18,6 +19,7 @@ library(progressr)
 ```
 
 ## Source Scripts
+
 ```{r}
 source(
   here(
@@ -43,6 +45,7 @@ system_prompt_txt
 ```
 
 ## Get GCDF Data
+
 ```{r}
 gcdf_data_for_llm <- get_gcdf3_dataset() |> 
   filter(
@@ -69,6 +72,7 @@ gcdf_data_for_llm
 ```
 
 ## Load Llama
+
 ```{r}
 # ollamar::pull("llama3.3")
 ```
@@ -82,16 +86,18 @@ coal_example
 ```
 
 ```{r}
-chat <- chat_ollama(
-  system_prompt = system_prompt_txt,
-  model = "llama3.3"
-)
-
-result <- chat$extract_data(coal_example, type = project_analysis_spec)
-
-result 
+# chat <- chat_ollama(
+#   system_prompt = system_prompt_txt,
+#   model = "llama3.3"
+# )
+# 
+# result <- chat$extract_data(coal_example, type = project_analysis_spec)
+# 
+# result 
 ```
+
 ## Test OpenAI API
+
 ```{r}
 chat <- chat_openai(
   system_prompt = system_prompt_txt,
@@ -102,7 +108,9 @@ result <- chat$extract_data(coal_example, type = project_analysis_spec)
 
 result 
 ```
+
 ## Test Anthropic API
+
 ```{r}
 chat <- chat_claude(
   system_prompt = system_prompt_txt,
@@ -114,9 +122,10 @@ result <- chat$extract_data(coal_example, type = project_analysis_spec)
 result 
 ```
 
-# Run 300 Examples 
+# Run 300 Examples
 
 ## Create Sample
+
 ```{r}
 set.seed(42) # For reproducibility
 
@@ -135,6 +144,7 @@ gcdf_sample_for_validation
 ```
 
 ## Save Sample
+
 ```{r}
 write_csv(
   gcdf_sample_for_validation,
@@ -146,41 +156,41 @@ write_csv(
 ```
 
 ### LLama 3.3
+
 ```{r}
-start_time <- Sys.time()
-llama_results <- process_all_chunks(
-  gcdf_sample_for_validation,
-  chunk_size = 50,
-  chat_provider = "ollama",
-  output_dir = "data/validation_results",
-  run_name = "llm_validation"
-)
-end_time <- Sys.time()
-beep(3)
-
-# How long did it take?
-llama_results_time_elapsed <- end_time - start_time
-llama_results_time_elapsed
-
-llama_results_time_elapsed_per_loan <- gpt_4o_mini_time_elapsed/300
-llama_results_time_elapsed_per_loan
-
-# Collect results
-llama_results_run_results <- collect_results(
-  "data/validation_results", 
-  chat_provider = "ollama",
-  run_id = "llm_validation"
-)
+# start_time <- Sys.time()
+# llama_results <- process_all_chunks(
+#   gcdf_sample_for_validation,
+#   chunk_size = 50,
+#   chat_provider = "ollama",
+#   output_dir = "data/validation_results",
+#   run_name = "llm_validation"
+# )
+# end_time <- Sys.time()
+# beep(3)
+# 
+# # How long did it take?
+# llama_results_time_elapsed <- end_time - start_time
+# llama_results_time_elapsed
+# 
+# llama_results_time_elapsed_per_loan <- gpt_4o_mini_time_elapsed/300
+# llama_results_time_elapsed_per_loan
+# 
+# # Collect results
+# llama_results_run_results <- collect_results(
+#   "data/validation_results", 
+#   chat_provider = "ollama",
+#   run_id = "llm_validation"
+# )
 ```
 
-
-
 ### GPT 4o-mini
+
 ```{r}
 start_time <- Sys.time()
 results <- process_all_chunks(
   gcdf_sample_for_validation,
-  chunk_size = 50,
+  chunk_size = 10,
   chat_provider = "openai-gpt-4o-mini",
   output_dir = "data/validation_results",
   run_name = "llm_validation"
@@ -204,6 +214,57 @@ gpt_4o_mini_run_results <- collect_results(
 ```
 
 ```{r}
-gpt_4o_mini_run_results
+gpt_4o_mini_run_results$fa
+```
+### GPT 4o-mini
+
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  gcdf_sample_for_validation,
+  chunk_size = 10,
+  chat_provider = "claude",
+  output_dir = "data/validation_results",
+  run_name = "llm_validation"
+)
+end_time <- Sys.time()
+beep(3)
+
+# How long did it take?
+claude_time_elapsed <- end_time - start_time
+claude_time_elapsed
+
+claude_time_elapsed_per_loan <- claude_time_elapsed/300
+claude_time_elapsed_per_loan
+
+# Collect results
+claude_run_results <- collect_results(
+  "data/validation_results", 
+  chat_provider =  "claude",
+  run_id = "llm_validation"
+)
+```
+
+```{r}
+claude_run_results
+```
+
+```{r}
+df_with_tokens <- gcdf_data_for_llm %>%
+  mutate(
+    char_count = str_length(combined_text),
+    approx_tokens = char_count / 4
+  )
+
+df_with_tokens %>%
+  summarize(
+    avg_tokens = mean(approx_tokens),
+    percentile_75 = quantile(approx_tokens, probs = 0.75),
+    max_tokens = max(approx_tokens)
+  )
+```
+
+```{r}
+str_length(system_prompt_txt)/4
 ```
 

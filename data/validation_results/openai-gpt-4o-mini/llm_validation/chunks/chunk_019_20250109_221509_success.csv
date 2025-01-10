@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+60562,"INDUSTRY, MINING, CONSTRUCTION","Bank of China Loans $6,800,000 to Vale Brazil","In December 2014, the Bank of China loaned $6,800,000 to Vale Brazil, a Brazilian multinational corporation engaged in metals and mining. The loan terms and the use of the loan is unclear. The Brazil Central Bank lists the registration as complete, but the status of the loan is unclear.",NA,"# Sector
+INDUSTRY, MINING, CONSTRUCTION
+
+# Title
+Bank of China Loans $6,800,000 to Vale Brazil
+
+# Description
+In December 2014, the Bank of China loaned $6,800,000 to Vale Brazil, a Brazilian multinational corporation engaged in metals and mining. The loan terms and the use of the loan is unclear. The Brazil Central Bank lists the registration as complete, but the status of the loan is unclear.
+
+# Staff Comments
+NA",TRUE,NA,NEUTRAL,LOW,Other,"The loan's purpose and terms are unclear, and it is not specifically tied to a significant project impacting energy or construction directly.","Loan amount of $6,800,000 registered with the Brazil Central Bank, but details on application and current status are not provided."
