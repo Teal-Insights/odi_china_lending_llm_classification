@@ -86,14 +86,14 @@ coal_example
 ```
 
 ```{r}
-# chat <- chat_ollama(
-#   system_prompt = system_prompt_txt,
-#   model = "llama3.3"
-# )
-# 
-# result <- chat$extract_data(coal_example, type = project_analysis_spec)
-# 
-# result 
+chat <- chat_ollama(
+  system_prompt = system_prompt_txt,
+  model = "llama3.3"
+)
+
+result <- chat$extract_data(coal_example, type = project_analysis_spec)
+
+result
 ```
 
 ## Test OpenAI API
@@ -197,7 +197,7 @@ write_csv(
 # start_time <- Sys.time()
 # llama_results <- process_all_chunks(
 #   gcdf_sample_for_validation,
-#   chunk_size = 50,
+#   chunk_size = 10,
 #   chat_provider = "ollama",
 #   output_dir = "data/validation_results",
 #   run_name = "llm_validation"
@@ -209,16 +209,21 @@ write_csv(
 # llama_results_time_elapsed <- end_time - start_time
 # llama_results_time_elapsed
 # 
-# llama_results_time_elapsed_per_loan <- gpt_4o_mini_time_elapsed/300
+# llama_results_time_elapsed_per_loan <- llama_results_time_elapsed/300
 # llama_results_time_elapsed_per_loan
 # 
 # # Collect results
 # llama_results_run_results <- collect_results(
-#   "data/validation_results", 
+#   "data/validation_results",
 #   chat_provider = "ollama",
 #   run_id = "llm_validation"
 # )
 ```
+
+```{r}
+
+```
+
 
 ### GPT 4o-mini
 
