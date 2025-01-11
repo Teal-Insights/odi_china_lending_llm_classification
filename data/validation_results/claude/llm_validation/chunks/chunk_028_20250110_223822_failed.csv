@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+902,TRANSPORT AND STORAGE,Chinese Government provides $4 million grant for 67Ha District Street Rehabilitation Project,"During a 2002 visit to Madagascar by the Chinese Vice Foreign Minister, the Chinese Government agreed in principle to provide a $4 million grant rehabilitate the streets of Antananarivo. On February 26, 2003, officials from the Chinese Government and the Government of Madagascar signed a letter confirming a project partnership. Then, in April 2004, the Chinese Government and the Government of Madagascar signed a grant agreement for the 67Ha District Street Rehabilitation Project. This project involved rehabilitation of 5.9 km streets in a suburb of Antananarivo known as 67Ha. It was completed; however, the precise date of completion is unknown.",The French project title is travaux de réhabilitation des rues du quartier 67Ha. The Chinese project title is 首都道路.,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Government provides $4 million grant for 67Ha District Street Rehabilitation Project
+
+# Description
+During a 2002 visit to Madagascar by the Chinese Vice Foreign Minister, the Chinese Government agreed in principle to provide a $4 million grant rehabilitate the streets of Antananarivo. On February 26, 2003, officials from the Chinese Government and the Government of Madagascar signed a letter confirming a project partnership. Then, in April 2004, the Chinese Government and the Government of Madagascar signed a grant agreement for the 67Ha District Street Rehabilitation Project. This project involved rehabilitation of 5.9 km streets in a suburb of Antananarivo known as 67Ha. It was completed; however, the precise date of completion is unknown.",FALSE,"Error in `httr2::req_perform()` at tidyverse-ellmer-67b3d30/R/httr2.R:106:3:
+! HTTP 529 NA.
+• Overloaded [overloaded_error]
+",NA,NA,NA,NA,NA

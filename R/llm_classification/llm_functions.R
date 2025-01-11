@@ -25,7 +25,12 @@ process_chunk <- function(chunk, chat, type_spec) {
     mutate(
       classification_result = map(
         combined_text,
-        ~classify_single_project(.x, chat, type_spec)
+        ~{
+          # Clear all prior turns so we start fresh for *each* record
+          chat$set_turns(list())
+          
+          classify_single_project(.x, chat, type_spec)
+        }
       )
     ) |>
     unnest(classification_result) |>

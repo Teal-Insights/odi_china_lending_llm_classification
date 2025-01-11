@@ -148,14 +148,14 @@ llama_result
 ## Test DeepSeek V3
 
 ``` {r}
-chat <- chat_vllm(
-  base_url = "https://api.deepseek.com/v1/",
-  system_prompt = system_prompt_txt,
-  model = "deepseek-chat",
-  api_key=Sys.getenv("DEEPSEEK_API_KEY")
-)
-
-llama_result <- chat$chat(coal_example)
+# chat <- chat_vllm(
+#   base_url = "https://api.deepseek.com/v1/",
+#   system_prompt = system_prompt_txt,
+#   model = "deepseek-chat",
+#   api_key=Sys.getenv("DEEPSEEK_API_KEY")
+# )
+# 
+# llama_result <- chat$chat(coal_example)
 ```
 
 # Run 300 Examples
@@ -223,63 +223,63 @@ write_csv(
 ### GPT 4o-mini
 
 ```{r}
-start_time <- Sys.time()
-results <- process_all_chunks(
-  gcdf_sample_for_validation,
-  chunk_size = 10,
-  chat_provider = "openai-gpt-4o-mini",
-  output_dir = "data/validation_results",
-  run_name = "llm_validation"
-)
-end_time <- Sys.time()
-beep(3)
-
-# How long did it take?
-gpt_4o_mini_time_elapsed <- end_time - start_time
-gpt_4o_mini_time_elapsed
-
-gpt_4o_mini_time_elapsed_per_loan <- gpt_4o_mini_time_elapsed/300
-gpt_4o_mini_time_elapsed_per_loan
-
-# Collect results
-gpt_4o_mini_run_results <- collect_results(
-  "data/validation_results", 
-  chat_provider = "openai-gpt-4o-mini",
-  run_id = "llm_validation"
-)
+# start_time <- Sys.time()
+# results <- process_all_chunks(
+#   gcdf_sample_for_validation,
+#   chunk_size = 10,
+#   chat_provider = "openai-gpt-4o-mini",
+#   output_dir = "data/validation_results",
+#   run_name = "llm_validation"
+# )
+# end_time <- Sys.time()
+# beep(3)
+# 
+# # How long did it take?
+# gpt_4o_mini_time_elapsed <- end_time - start_time
+# gpt_4o_mini_time_elapsed
+# 
+# gpt_4o_mini_time_elapsed_per_loan <- gpt_4o_mini_time_elapsed/300
+# gpt_4o_mini_time_elapsed_per_loan
+# 
+# # Collect results
+# gpt_4o_mini_run_results <- collect_results(
+#   "data/validation_results", 
+#   chat_provider = "openai-gpt-4o-mini",
+#   run_id = "llm_validation"
+# )
 ```
 
 ```{r}
-gpt_4o_mini_run_results$fa
+# gpt_4o_mini_run_results$fa
 ```
 
-### GPT 4o-mini
+### Claude
 
 ```{r}
-start_time <- Sys.time()
-results <- process_all_chunks(
-  gcdf_sample_for_validation,
-  chunk_size = 10,
-  chat_provider = "claude",
-  output_dir = "data/validation_results",
-  run_name = "llm_validation"
-)
-end_time <- Sys.time()
-beep(3)
-
-# How long did it take?
-claude_time_elapsed <- end_time - start_time
-claude_time_elapsed
-
-claude_time_elapsed_per_loan <- claude_time_elapsed/300
-claude_time_elapsed_per_loan
-
-# Collect results
-claude_run_results <- collect_results(
-  "data/validation_results", 
-  chat_provider =  "claude",
-  run_id = "llm_validation"
-)
+# start_time <- Sys.time()
+# results <- process_all_chunks(
+#   gcdf_sample_for_validation,
+#   chunk_size = 10,
+#   chat_provider = "claude",
+#   output_dir = "data/validation_results",
+#   run_name = "llm_validation"
+# )
+# end_time <- Sys.time()
+# beep(3)
+# 
+# # How long did it take?
+# claude_time_elapsed <- end_time - start_time
+# claude_time_elapsed
+# 
+# claude_time_elapsed_per_loan <- claude_time_elapsed/300
+# claude_time_elapsed_per_loan
+# 
+# # Collect results
+# claude_run_results <- collect_results(
+#   "data/validation_results", 
+#   chat_provider =  "claude",
+#   run_id = "llm_validation"
+# )
 ```
 
 ```{r}

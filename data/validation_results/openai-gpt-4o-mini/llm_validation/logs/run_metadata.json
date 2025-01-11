@@ -1,0 +1,7 @@
+{
+  "provider": ["openai-gpt-4o-mini"],
+  "run_id": ["llm_validation"],
+  "start_time": ["2025-01-10 22:11:08"],
+  "chunk_size": [10],
+  "total_records": [300]
+}

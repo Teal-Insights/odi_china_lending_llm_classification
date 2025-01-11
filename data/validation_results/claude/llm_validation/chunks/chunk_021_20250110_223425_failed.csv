@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+97592,TRANSPORT AND STORAGE,Chinese Embassy provides a motorbike to Liberia’s New Dawn newspaper in September 2021,"On September 16, 2021, the Chinese Embassy in Liberia donated a motorbike to the New Dawn newspaper of Liberia. The purpose of the donation is to support the newspaper’s transportation operations. The monetary value of this donation is unknown.  A handover ceremony was held for this donation in Congo Town, Liberia. Specific attendees of the ceremony are unknown.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Embassy provides a motorbike to Liberia’s New Dawn newspaper in September 2021
+
+# Description
+On September 16, 2021, the Chinese Embassy in Liberia donated a motorbike to the New Dawn newspaper of Liberia. The purpose of the donation is to support the newspaper’s transportation operations. The monetary value of this donation is unknown.  A handover ceremony was held for this donation in Congo Town, Liberia. Specific attendees of the ceremony are unknown.",FALSE,"Error in `httr2::req_perform()` at tidyverse-ellmer-67b3d30/R/httr2.R:106:3:
+! HTTP 529 NA.
+• Overloaded [overloaded_error]
+",NA,NA,NA,NA,NA
