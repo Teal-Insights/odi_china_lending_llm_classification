@@ -126,7 +126,8 @@ claude_result
 
 ```{r}
 chat <- chat_vllm(
-  base_url = "https://promptly-technologies-llc--example-vllm-openai-compatible-serve.modal.run/v1/",
+  # base_url = "https://promptly-technologies-llc--example-vllm-openai-compatible-serve.modal.run/v1/",
+  base_url = "https://lte-1--example-vllm-openai-compatible-serve.modal.run/v1",
   system_prompt = system_prompt_txt,
   model = "Llama-3.3-70B-Instruct"
 )
@@ -148,14 +149,14 @@ llama_result
 ## Test DeepSeek V3
 
 ``` {r}
-# chat <- chat_vllm(
-#   base_url = "https://api.deepseek.com/v1/",
-#   system_prompt = system_prompt_txt,
-#   model = "deepseek-chat",
-#   api_key=Sys.getenv("DEEPSEEK_API_KEY")
-# )
-# 
-# llama_result <- chat$chat(coal_example)
+chat <- chat_vllm(
+  base_url = "https://api.deepseek.com/v1/",
+  system_prompt = system_prompt_txt,
+  model = "deepseek-chat",
+  api_key=Sys.getenv("DEEPSEEK_API_KEY")
+)
+
+llama_result <- chat$chat(coal_example)
 ```
 
 # Run 300 Examples
