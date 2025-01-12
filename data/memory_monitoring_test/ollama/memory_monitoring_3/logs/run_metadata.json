@@ -1,0 +1,17 @@
+{
+  "provider": ["ollama"],
+  "run_id": ["memory_monitoring_3"],
+  "start_time": ["2025-01-11 21:40:14"],
+  "chunk_size": [1],
+  "total_records": [3],
+  "monitoring_enabled": [true],
+  "monitoring_config": {
+    "cooldown_minutes": [10],
+    "thresholds": {
+      "memory": [90],
+      "cpu": [80],
+      "thermal": [85]
+    },
+    "interval": [1]
+  }
+}

@@ -1,0 +1,4 @@
+INFO [2025-01-11 21:40:14] SystemMonitor initialized
+INFO [2025-01-11 21:40:14] Output directory: /Users/teal_mac_mini_25/Library/CloudStorage/Dropbox/DataScience/odi_china_lending_llm_classification/data/memory_monitoring_test/ollama/memory_monitoring_3/system_metrics/memory_monitoring_3
+INFO [2025-01-11 21:40:14] LLMProcessMonitor initialized
+INFO [2025-01-11 21:40:14] Monitoring process: ollama
