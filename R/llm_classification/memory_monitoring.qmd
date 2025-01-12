@@ -1,0 +1,153 @@
+---
+title: "Memory Monitoring"
+author: "Teal Emery"
+format: html
+editor: visual
+---
+
+The purpose of this is to create and test basic functions for logging memory monitoring when running Llama 3.3 locally. 
+
+# Setup
+
+## Load Libraries
+
+```{r}
+library(tidyverse)
+library(ellmer)
+library(here)
+library(chinadevfin3)
+library(beepr)
+library(progressr)
+library(jsonlite)
+library(ps)
+library(logger)
+library(systemfonts)
+```
+
+## Source Scripts
+
+```{r}
+source(
+  here(
+    "R",
+    "llm_classification",
+    "llm_functions.R"
+  )
+)
+```
+
+## System Prompt
+
+```{r}
+system_prompt_txt <- here(
+  "R",
+  "llm_classification",
+  "classification-prompt.md"
+) |> 
+  read_lines() |> 
+  paste(collapse = "\n")
+
+system_prompt_txt
+```
+
+## Get GCDF Data
+
+```{r}
+gcdf_data_for_llm <- get_gcdf3_dataset() |> 
+  filter(
+    recommended_for_aggregates == "Yes"
+  ) |> 
+   select(
+    aid_data_record_id,
+    sector_name,
+    title,
+    description,
+    staff_comments
+    ) |> 
+  mutate(
+    combined_text = paste(
+      "# Sector\n", sector_name, "\n\n",
+      "# Title\n", title, "\n\n",
+      "# Description\n", description,
+      sep = ""
+    )
+  ) 
+
+gcdf_data_for_llm
+```
+
+## Load Llama
+
+```{r}
+# ollamar::pull("llama3.3")
+```
+
+```{r}
+coal_example <- gcdf_data_for_llm |> 
+  filter(aid_data_record_id == 92546) |> 
+  pull(combined_text)
+
+coal_example
+```
+
+
+```{r}
+chat <- chat_ollama(
+  system_prompt = system_prompt_txt,
+  model = "llama3.3"
+)
+
+result <- chat$extract_data(coal_example, type = project_analysis_spec)
+
+result
+```
+
+#### Helper Functions
+
+```{r}
+set.seed(42) # For reproducibility
+
+gcdf_sample_for_memory_management <- gcdf_data_for_llm |>
+  filter(
+    # sectors likely to have high density of Green/Brown/Grey projects
+    sector_name %in% c(
+      "ENERGY",
+      "TRANSPORT AND STORAGE",
+      "INDUSTRY, MINING, CONSTRUCTION"
+    )
+  ) |> 
+  slice_sample(n = 3)
+
+gcdf_sample_for_memory_management
+```
+
+# Run test
+```{r}
+start_time <- Sys.time()
+llama_results <- process_all_chunks(
+  gcdf_sample_for_memory_management,
+  chunk_size = 1,
+  chat_provider = "ollama",
+  output_dir = "data/memory_monitoring_test",
+  run_name = "memory_monitoring_3",
+  enable_monitoring = TRUE
+)
+end_time <- Sys.time()
+beep(3)
+
+# How long did it take?
+llama_results_time_elapsed <- end_time - start_time
+llama_results_time_elapsed
+
+llama_results_time_elapsed_per_loan <- llama_results_time_elapsed/3
+llama_results_time_elapsed_per_loan
+
+# Collect results
+llama_results_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider = "ollama",
+  run_id = "llm_validation"
+)
+```
+
+
