@@ -20,7 +20,15 @@ classify_single_project <- function(text, chat, type_spec) {
 }
 
 # 2. Process a chunk of data ----
-process_chunk <- function(chunk, chat, type_spec) {
+# 3. Modify process_chunk to handle provider types
+process_chunk <- function(chunk, chat, type_spec, provider_type = NULL) {
+  # Use the provider_type parameter to determine which classification function to use
+  classify_fn <- if(provider_type == "deepseek") {
+    classify_single_project_deepseek
+  } else {
+    classify_single_project
+  }
+  
   chunk |>
     mutate(
       classification_result = map(
@@ -29,12 +37,11 @@ process_chunk <- function(chunk, chat, type_spec) {
           # Clear all prior turns so we start fresh for *each* record
           chat$set_turns(list())
           
-          classify_single_project(.x, chat, type_spec)
+          classify_fn(.x, chat, type_spec)
         }
       )
     ) |>
     unnest(classification_result) |>
-    # For successful classifications, unnest the actual classifications
     mutate(
       primary_class = map_chr(classification, ~.x$classification$primary %||% NA_character_),
       confidence = map_chr(classification, ~.x$classification$confidence %||% NA_character_),
@@ -42,7 +49,7 @@ process_chunk <- function(chunk, chat, type_spec) {
       justification = map_chr(classification, ~.x$justification %||% NA_character_),
       evidence = map_chr(classification, ~.x$evidence %||% NA_character_)
     ) |>
-    select(-classification) # Remove the nested list column
+    select(-classification)
 }
 
 
@@ -59,10 +66,9 @@ create_chunks <- function(data, chunk_size = 100) {
 }
 
 # 4. Process Chunks ----
-
 process_all_chunks <- function(data, chunk_size = 100, 
-                               chat_provider = c("ollama", "openai-gpt-4o","openai-gpt-4o-mini", "claude"),
-                               output_dir = "classification_results",
+                               chat_provider = c("ollama", "openai-gpt-4o", "openai-gpt-4o-mini", "claude", "deepseek"),
+                               output_dir = "validation_results",
                                run_name = NULL) {
   
   start_time <- Sys.time()
@@ -99,7 +105,17 @@ process_all_chunks <- function(data, chunk_size = 100,
                  "ollama" = chat_ollama(model = "llama3.3", system_prompt = system_prompt_txt),
                  "openai-gpt-4o" = chat_openai(model = "gpt-4o", system_prompt = system_prompt_txt),
                  "openai-gpt-4o-mini" = chat_openai(model = "gpt-4o-mini", system_prompt = system_prompt_txt),
-                 "claude" = chat_claude(model = "claude-3-5-sonnet-20241022", system_prompt = system_prompt_txt)
+                 "claude" = chat_claude(model = "claude-3-5-sonnet-20241022", system_prompt = system_prompt_txt),
+                 "deepseek" = chat_vllm(
+                   base_url = "https://api.deepseek.com/v1/",
+                   system_prompt = paste(
+                     system_prompt_txt,
+                     "\nIMPORTANT: Return ONLY raw JSON without any markdown code blocks, backticks, or formatting. The response should start with '{' and end with '}'.",
+                     sep = "\n"
+                   ),
+                   model = "deepseek-chat",
+                   api_key = Sys.getenv("DEEPSEEK_API_KEY")
+                 )
   )
   
   # Create chunks
@@ -120,7 +136,7 @@ process_all_chunks <- function(data, chunk_size = 100,
       chunk_num <- as.integer(chunk_idx)
       
       # Process chunk
-      chunk_results <- process_chunk(chunk, chat, project_analysis_spec)
+      chunk_results <- process_chunk(chunk, chat, project_analysis_spec, provider_type = chat_provider)
       
       # Generate filenames
       timestamp <- format(Sys.time(), "%Y%m%d_%H%M%S")
@@ -291,3 +307,50 @@ project_analysis_spec <- type_object(
   justification = type_string("Justification of the classification"),
   evidence = type_string("Evidence supporting the classification")
 )
+
+# 8. Deepseek post-processing ----
+
+# 1. Create the helper function for Deepseek processing
+# 1. Keep the helper function for Deepseek
+process_deepseek_response <- function(response) {
+  clean_text <- gsub("```json\\s*\\{", "{", response)
+  clean_text <- gsub("\\s*```\\s*$", "", clean_text)
+  
+  tryCatch({
+    parsed <- jsonlite::fromJSON(clean_text, simplifyVector = TRUE)
+    
+    list(
+      classification = list(
+        primary = as.character(parsed$classification$primary),
+        confidence = as.character(parsed$classification$confidence),
+        project_type = as.character(parsed$classification$project_type)
+      ),
+      justification = as.character(parsed$justification),
+      evidence = as.character(parsed$evidence)
+    )
+  }, error = function(e) {
+    cli::cli_abort(
+      c("Failed to parse DeepSeek response",
+        i = "Original response: {response}",
+        x = "Error: {conditionMessage(e)}")
+    )
+  })
+}
+
+# 2. Create Deepseek-specific classification function
+classify_single_project_deepseek <- function(text, chat, type_spec) {
+  result <- purrr::safely(
+    ~ {
+      response <- chat$chat(text, echo = FALSE)
+      process_deepseek_response(response)
+    },
+    otherwise = NULL,
+    quiet = TRUE
+  )()
+  
+  tibble::tibble(
+    success = is.null(result$error),
+    error_message = if(is.null(result$error)) NA_character_ else as.character(result$error),
+    classification = list(result$result)
+  )
+}
