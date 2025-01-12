@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+89976,HEALTH,"Chinese Government donates 100,000 USD to Vanuatu for fight against COVID-19 (linked to project #93604)","On May 5 2020, a handover ceremony was held for the donation of medical supplies and 100,000 USD from the Chinese Government to Vanuatu. They were handed over by Chinese Ambassador to Vanuatu Zhou Haicheng to Prime Minister of Vanuatu Bob Loughman. The donation goes towards the fight against COVID-19 and was accompanied by a donation of medical masks, protective clothing, goggles, forehead thermometers, and ventilators (see project ID #93604). This donation comes after Vanuatu has struggled with COVID-19 infections along with the aftermath of Hurricane Harold.",The transaction amount comes from an image on the Chinese Embassy Site source.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates 100,000 USD to Vanuatu for fight against COVID-19 (linked to project #93604)
+
+# Description
+On May 5 2020, a handover ceremony was held for the donation of medical supplies and 100,000 USD from the Chinese Government to Vanuatu. They were handed over by Chinese Ambassador to Vanuatu Zhou Haicheng to Prime Minister of Vanuatu Bob Loughman. The donation goes towards the fight against COVID-19 and was accompanied by a donation of medical masks, protective clothing, goggles, forehead thermometers, and ventilators (see project ID #93604). This donation comes after Vanuatu has struggled with COVID-19 infections along with the aftermath of Hurricane Harold.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of medical supplies and funds for COVID-19 response, no energy-related components"
+89977,HEALTH,"Chinese Government donates 100,000 USD to the Vanuatu Government for Prevention and Control of COVID-19","On March 26, 2020, a handover ceremony was held where Zhou Haicheng, Chinese Ambassador to Vanuatu, donated 100,000 USD to the Vanuatu Government on behalf of the Chinese Government. Ambassador Zhou Haicheng presented the check to Vanuatu’s caretaker Minister of Foreign Affairs International Cooperation and External Trade, Ralph Regenvanu. The money is a donation and there is no expectation of repayment. The donation goes towards prevention and control of the coronavirus.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates 100,000 USD to the Vanuatu Government for Prevention and Control of COVID-19
+
+# Description
+On March 26, 2020, a handover ceremony was held where Zhou Haicheng, Chinese Ambassador to Vanuatu, donated 100,000 USD to the Vanuatu Government on behalf of the Chinese Government. Ambassador Zhou Haicheng presented the check to Vanuatu’s caretaker Minister of Foreign Affairs International Cooperation and External Trade, Ralph Regenvanu. The money is a donation and there is no expectation of repayment. The donation goes towards prevention and control of the coronavirus.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation for COVID-19 prevention and control, healthcare sector focus"
+90037,HEALTH,China Civil Engineering Construction Corporation donates refurbished containers to Vanuatu Government for COVID-19 Testing and Quarantine Purposes,"On May 16, 2020, a handover ceremony was held between CCECC and the Vanuatu Government for refurbished containers.  The containers are located at Vila Central Hospital to be used as isolation wards for healthcare workers.    The donation is to be used for COVID-19 testing laboratories and as quarantine rooms. CCECC hopes that the donation will help Vanuatu better fight COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+China Civil Engineering Construction Corporation donates refurbished containers to Vanuatu Government for COVID-19 Testing and Quarantine Purposes
+
+# Description
+On May 16, 2020, a handover ceremony was held between CCECC and the Vanuatu Government for refurbished containers.  The containers are located at Vila Central Hospital to be used as isolation wards for healthcare workers.    The donation is to be used for COVID-19 testing laboratories and as quarantine rooms. CCECC hopes that the donation will help Vanuatu better fight COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare infrastructure for COVID-19 response without direct environmental or energy transition impacts,"Refurbished containers used as isolation wards and testing laboratories at hospital, COVID-19 response focus"
+90038,HEALTH,"China donates 100,000 USD to Vanuatu for COVID-19 Response","On December 15, 2020, the Chinese ambassador presented a donation worth 100,000 USD to the Vanuatu government.  According to Chinese ambassador to Vanuatu Zhou Haicheng, this was the sixth COVID-19 response donation from the Chinese government to the Vanatu, with more intended for the future. Previous donations include #89976 and #93604.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 100,000 USD to Vanuatu for COVID-19 Response
+
+# Description
+On December 15, 2020, the Chinese ambassador presented a donation worth 100,000 USD to the Vanuatu government.  According to Chinese ambassador to Vanuatu Zhou Haicheng, this was the sixth COVID-19 response donation from the Chinese government to the Vanatu, with more intended for the future. Previous donations include #89976 and #93604.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a healthcare-related donation with no direct environmental or energy transition impact,"COVID-19 response donation, healthcare sector focus"
+90103,TRADE POLICIES AND REGULATIONS,China donates customs inspection equipment to Vanuatu in 2020,"On June 4 2020, a handover ceremony was held for inspection equipment from China to Vanuatu Department of Customs and Inland Revenue.  The donation includes CT baggage scanners, mobile x-ray system from Nuctech and is delivered by CCOEC. The equipment is to be used to improve border security, detection and seizure of illicit drugs, and prevent smuggling into Vanuatu.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+China donates customs inspection equipment to Vanuatu in 2020
+
+# Description
+On June 4 2020, a handover ceremony was held for inspection equipment from China to Vanuatu Department of Customs and Inland Revenue.  The donation includes CT baggage scanners, mobile x-ray system from Nuctech and is delivered by CCOEC. The equipment is to be used to improve border security, detection and seizure of illicit drugs, and prevent smuggling into Vanuatu.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on customs and border security equipment without clear environmental or energy transition impacts,"CT baggage scanners, mobile x-ray system for border security and smuggling prevention"
+90118,EDUCATION,China offers Chinese Government Scholarships to Vanuatu students for 2020-2021 academic year,"On December 13, 2020, the Chinese Embassy to Vanuatu released a public notice announcing the Chinese Government Scholarships were open for applications from Vanuatu students, teachers, and scholars. The scholarships go towards degree programs (Bachelor's, Master's, PhD's) at Chinese higher education institutions.   The applications are due January 31, 2021.",NA,"# Sector
+EDUCATION
+
+# Title
+China offers Chinese Government Scholarships to Vanuatu students for 2020-2021 academic year
+
+# Description
+On December 13, 2020, the Chinese Embassy to Vanuatu released a public notice announcing the Chinese Government Scholarships were open for applications from Vanuatu students, teachers, and scholars. The scholarships go towards degree programs (Bachelor's, Master's, PhD's) at Chinese higher education institutions.   The applications are due January 31, 2021.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education with no direct environmental or energy transition impact,"Education-focused scholarships for degree programs, no energy or infrastructure components"
+93130,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese Embassy in Vanuatu grants 4 million Vatu for Independence Anniversary fireworks,"The Chinese Embassy in Port Vila Vanuatu granted 4 million Vatu to the government of Vanuatu to be used for a fireworks display for the country's 40th Independence Anniversary celebration.  The Deputy Prime Minister and Minister of Internal Affairs, Alatoi Ishmael Kalsakau, was there to receive the grant.  The coordinator of the 40th Independence Anniversary celebrations said that this grant would allow the fireworks celebration to expand from Port Vila to Luganville and five other provinces for the first time.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Embassy in Vanuatu grants 4 million Vatu for Independence Anniversary fireworks
+
+# Description
+The Chinese Embassy in Port Vila Vanuatu granted 4 million Vatu to the government of Vanuatu to be used for a fireworks display for the country's 40th Independence Anniversary celebration.  The Deputy Prime Minister and Minister of Internal Affairs, Alatoi Ishmael Kalsakau, was there to receive the grant.  The coordinator of the 40th Independence Anniversary celebrations said that this grant would allow the fireworks celebration to expand from Port Vila to Luganville and five other provinces for the first time.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a social development initiative with no direct environmental or energy transition impact,"Funding for Independence Anniversary fireworks display, categorized under social infrastructure and services"
+93604,HEALTH,Chinese Government donates medical supplies worth Vt $60 million to Vanuatu for fight against COVID-19 (linked to project ID #89976),"On May 5 2020, a handover ceremony was held for the donation of medical supplies and 100,000 USD from the Chinese Government to Vanuatu. They were handed over by Chinese Ambassador to Vanuatu Zhou Haicheng to Prime Minister of Vanuatu Bob Loughman. The donation goes towards the fight against COVID-19 and contains medical masks, protective clothing, goggles, forehead thermometers, and ventilators amongst others. These donations amounted to Vt $60 million. This donation comes after Vanuatu has struggled with COVID-19 infections along with the aftermath of Hurricane Harold.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates medical supplies worth Vt $60 million to Vanuatu for fight against COVID-19 (linked to project ID #89976)
+
+# Description
+On May 5 2020, a handover ceremony was held for the donation of medical supplies and 100,000 USD from the Chinese Government to Vanuatu. They were handed over by Chinese Ambassador to Vanuatu Zhou Haicheng to Prime Minister of Vanuatu Bob Loughman. The donation goes towards the fight against COVID-19 and contains medical masks, protective clothing, goggles, forehead thermometers, and ventilators amongst others. These donations amounted to Vt $60 million. This donation comes after Vanuatu has struggled with COVID-19 infections along with the aftermath of Hurricane Harold.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support and COVID-19 response, with no direct environmental or energy transition impact","Medical supplies donation including masks, protective clothing, goggles, thermometers, and ventilators for COVID-19 response"
+97333,HEALTH,China donates medical supplies to Vanuatu in April 2020 as part of the fight against COVID-19,"On April 11th, 2020, the Chinese government donated medical supplies to Vanuatu at the request of Vanuatu's government. The donation included 300 disposable protective clothing for medical use, 130 forehead thermometers, 2,000 N95 masks, 20,000 disposable surgical masks, 50 Coronavirus detection kits and 3 ICU ventilators. The supplies were delivered on a charter from China under strict observation of Vanuatu’s COVID-19 prevention measures and will be The items are stored in a secured storage as part of the quarantine process before being installed at the Vila Central Hospital (VCH) premises. The installation will be carried out by China Civil Engineering Construction Corporation (CCECC).",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates medical supplies to Vanuatu in April 2020 as part of the fight against COVID-19
+
+# Description
+On April 11th, 2020, the Chinese government donated medical supplies to Vanuatu at the request of Vanuatu's government. The donation included 300 disposable protective clothing for medical use, 130 forehead thermometers, 2,000 N95 masks, 20,000 disposable surgical masks, 50 Coronavirus detection kits and 3 ICU ventilators. The supplies were delivered on a charter from China under strict observation of Vanuatu’s COVID-19 prevention measures and will be The items are stored in a secured storage as part of the quarantine process before being installed at the Vila Central Hospital (VCH) premises. The installation will be carried out by China Civil Engineering Construction Corporation (CCECC).",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare support with no direct environmental or energy transition impacts,"Medical supplies donation including protective equipment, testing kits, and ventilators for COVID-19 response"
+91611,DISASTER PREVENTION AND PREPAREDNESS,China donates 5th shipment of anti-pandemic supplies to Venezuela in May 2020,"On 12 May 2020, the International Liaison Department of the Chinese Communist Party donated its fifth shipment of anti-pandemic materials to the government of Venezuela on behalf of the United Socialist Party of Venezuela. The donations amounted to 46 tons of supplies and included more than 3.8 million masks, more than 80,000 diagnostic tests, 51,000 protective suits, 11,000 disposable gloves and 3,000 protective glasses, among other materials.   The materials will be used in Venezuela's fight against Covid-19 and the donation represents cooperation and partnership between China and Venezuela.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+DISASTER PREVENTION AND PREPAREDNESS
+
+# Title
+China donates 5th shipment of anti-pandemic supplies to Venezuela in May 2020
+
+# Description
+On 12 May 2020, the International Liaison Department of the Chinese Communist Party donated its fifth shipment of anti-pandemic materials to the government of Venezuela on behalf of the United Socialist Party of Venezuela. The donations amounted to 46 tons of supplies and included more than 3.8 million masks, more than 80,000 diagnostic tests, 51,000 protective suits, 11,000 disposable gloves and 3,000 protective glasses, among other materials.   The materials will be used in Venezuela's fight against Covid-19 and the donation represents cooperation and partnership between China and Venezuela.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on humanitarian aid and public health, with no direct environmental or energy transition impact","Donation of medical supplies for COVID-19 response, humanitarian focus"

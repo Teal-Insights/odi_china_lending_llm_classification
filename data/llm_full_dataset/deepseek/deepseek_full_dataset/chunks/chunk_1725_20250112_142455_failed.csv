@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+42609,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy in Romania donates 350 million Romanian lei to Chamber of Deputies for office equipment,"On January 22, 2004, the donation protocol was signed for the donation of 350 million leu from the Chinese Embassy to the Romanian Parliament. The aid will be used to purchase office equipment and computers for the Chamber of Deputies. The protocol was signed in the presence of the Chamber of Deputies' Speaker Valer Dorneanu, the Chinese Embassy's chargee d'affaires Wang Tieshan, and the Chamber's secretary-general Mihai Ungheanu.  On June 14, 2004, the Romanian Minister of Economy and Trade, Dan Ioan Popescu, and the Chinese Minister of Trade, Bo Xilai, signed a paper confirming the donation had been received.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy in Romania donates 350 million Romanian lei to Chamber of Deputies for office equipment
+
+# Description
+On January 22, 2004, the donation protocol was signed for the donation of 350 million leu from the Chinese Embassy to the Romanian Parliament. The aid will be used to purchase office equipment and computers for the Chamber of Deputies. The protocol was signed in the presence of the Chamber of Deputies' Speaker Valer Dorneanu, the Chinese Embassy's chargee d'affaires Wang Tieshan, and the Chamber's secretary-general Mihai Ungheanu.  On June 14, 2004, the Romanian Minister of Economy and Trade, Dan Ioan Popescu, and the Chinese Minister of Trade, Bo Xilai, signed a paper confirming the donation had been received.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

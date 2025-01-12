@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93691,COMMUNICATIONS,Chinese Embassy provides filming materials and technology of unspecified value to Côte d'Ivoire National Television and Radio Station,"On January 19, 2021, the Chinese Embassy to Côte d'Ivoire provided filming materials and technology to the National Television and Radio Station of Côte d'Ivoire. The amount of materials donated by the embassy, as well as their monetary value, are unknown. The purpose of the donation was to assist the station in producing greater quality programming for audiences in Côte d'Ivoire.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese Embassy provides filming materials and technology of unspecified value to Côte d'Ivoire National Television and Radio Station
+
+# Description
+On January 19, 2021, the Chinese Embassy to Côte d'Ivoire provided filming materials and technology to the National Television and Radio Station of Côte d'Ivoire. The amount of materials donated by the embassy, as well as their monetary value, are unknown. The purpose of the donation was to assist the station in producing greater quality programming for audiences in Côte d'Ivoire.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on media development and quality improvement without clear environmental or energy transition impacts,Donation of filming materials and technology to national television and radio station for programming quality improvement
+89557,HEALTH,Chinese Ministry of Foreign Affairs provides 38 pulmonary ventilators to Cuba in January 2021,"On January 8, 2021, the Chinese Ministry of Foreign Affairs provided 38 pulmonary ventilators to the Ministry of Foreign Affairs in Cuba. This donation was made to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown. A handover ceremony was held for this donation in Havana, the capital of Cuba. China’s Ambassador to Cuba, Chen Xi, attended the ceremony and delivered a speech.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Ministry of Foreign Affairs provides 38 pulmonary ventilators to Cuba in January 2021
+
+# Description
+On January 8, 2021, the Chinese Ministry of Foreign Affairs provided 38 pulmonary ventilators to the Ministry of Foreign Affairs in Cuba. This donation was made to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown. A handover ceremony was held for this donation in Havana, the capital of Cuba. China’s Ambassador to Cuba, Chen Xi, attended the ceremony and delivered a speech.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of pulmonary ventilators for COVID-19 response, healthcare sector focus"
+91528,HEALTH,Chinese Government provides 30 Sinopharm-made ventilators to Cuba in July 2021,"On July 31, 2021, the Chinese Government donated 30 ventilators to Cuba. The ventilators were made by Sinopharm and were donated to improve Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides 30 Sinopharm-made ventilators to Cuba in July 2021
+
+# Description
+On July 31, 2021, the Chinese Government donated 30 ventilators to Cuba. The ventilators were made by Sinopharm and were donated to improve Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare equipment donation with no direct environmental or energy transition impact,"Donation of 30 ventilators for COVID-19 response, healthcare sector focus"
+91530,HEALTH,Chinese Government provides 150 oxygen concentrators to Cuba in August 2021,"On August 20, 2021, the Chinese Government donated 150 oxygen concentrators to Cuba. The concentrators were manufactured by Sinopharm and arrived in Havana. This donation was made to improve Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides 150 oxygen concentrators to Cuba in August 2021
+
+# Description
+On August 20, 2021, the Chinese Government donated 150 oxygen concentrators to Cuba. The concentrators were manufactured by Sinopharm and arrived in Havana. This donation was made to improve Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare equipment donation with no direct environmental or energy transition impact,"Donation of 150 oxygen concentrators for COVID-19 response, healthcare sector focus"
+91556,HEALTH,Chinese Government donates COVID-19 supplies to Cuban Ministry of Health (Linked to Project ID #91557),"On December 15, 2021, China gifted the Cuban Government another batch of COVID-19 supplies. The supplies donated amounted to 30 ventilators; 2,000 antigen kits; 100,000 surgical masks; 150,000 masks; 100,000 pairs of surgical gloves; 100,000 pairs of examination gloves; 30,000 protective suits; 20,000 protective glasses; 100,000 protective screens and 20,000 surgical suits. The monetary value of this donation is unknown.  The donation receipt was signed by Chinese Ambassador Ma Hui and Deborah Rivas, Vice Minister of Foreign Trade and Foreign Investment at the Cuban Ministry of Public Health Headquarters, Havana, Cuba. On the same day, a $100,000 donation was also made to the Cuban Ministry of Health (see Project ID#91557).",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates COVID-19 supplies to Cuban Ministry of Health (Linked to Project ID #91557)
+
+# Description
+On December 15, 2021, China gifted the Cuban Government another batch of COVID-19 supplies. The supplies donated amounted to 30 ventilators; 2,000 antigen kits; 100,000 surgical masks; 150,000 masks; 100,000 pairs of surgical gloves; 100,000 pairs of examination gloves; 30,000 protective suits; 20,000 protective glasses; 100,000 protective screens and 20,000 surgical suits. The monetary value of this donation is unknown.  The donation receipt was signed by Chinese Ambassador Ma Hui and Deborah Rivas, Vice Minister of Foreign Trade and Foreign Investment at the Cuban Ministry of Public Health Headquarters, Havana, Cuba. On the same day, a $100,000 donation was also made to the Cuban Ministry of Health (see Project ID#91557).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies and funding for healthcare purposes, with no direct environmental or energy transition impact","COVID-19 supplies donation including ventilators, masks, gloves, and protective equipment; $100,000 donation to Ministry of Health"
+91557,HEALTH,"Chinese Government donates $100,000 USD to Cuban Ministry of Public Health (Linked to Project ID#91556)","On December 15th, 2021, the Chinese Ambassador to Cuba, Ma Hui, signed over to the Cuban Minister of Public Health, Jose Miranda, a check for $100,000 USD. The donation ceremony took place at the Cuban Ministry of Public Health building in Havana, Cuba. Ambassador Ma and Minister Miranda noted that the donation will be used by the Ministry of Public Health to acquire essential supplies that will contribute to the work of preventing and controlling COVID-19. The Chinese government also made a donation of COVID supplies on the same day (see Project ID#91556).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates $100,000 USD to Cuban Ministry of Public Health (Linked to Project ID#91556)
+
+# Description
+On December 15th, 2021, the Chinese Ambassador to Cuba, Ma Hui, signed over to the Cuban Minister of Public Health, Jose Miranda, a check for $100,000 USD. The donation ceremony took place at the Cuban Ministry of Public Health building in Havana, Cuba. Ambassador Ma and Minister Miranda noted that the donation will be used by the Ministry of Public Health to acquire essential supplies that will contribute to the work of preventing and controlling COVID-19. The Chinese government also made a donation of COVID supplies on the same day (see Project ID#91556).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Financial donation for healthcare purposes with no direct environmental or energy transition impact,Donation to Ministry of Public Health for COVID-19 prevention and control supplies
+97334,HEALTH,Chinese Government provides anti-epidemic materials to Cuba in August 2021,"On August 28, 2021, the Chinese Government provided 22 tons of COVID-19 supplies to the Cuban government. The supplies included 280,000 items such as antigen testing kits, surgical gloves, protective suits, masks, medical goggles, and other items necessary for the daily work of medical personnel involved in patient care. The purpose of this donation is to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.  A handover ceremony was held for this donation. China’s Ambassador to Cuba, Ma Hui, and the Cuban Minister of Foreign Trade and Investment attended the ceremony and delivered speeches. This is the third batch of COVID-19 supplies provided by the Chinese government in 2021.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides anti-epidemic materials to Cuba in August 2021
+
+# Description
+On August 28, 2021, the Chinese Government provided 22 tons of COVID-19 supplies to the Cuban government. The supplies included 280,000 items such as antigen testing kits, surgical gloves, protective suits, masks, medical goggles, and other items necessary for the daily work of medical personnel involved in patient care. The purpose of this donation is to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.  A handover ceremony was held for this donation. China’s Ambassador to Cuba, Ma Hui, and the Cuban Minister of Foreign Trade and Investment attended the ceremony and delivered speeches. This is the third batch of COVID-19 supplies provided by the Chinese government in 2021.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare supplies with no direct environmental or energy transition impact,"COVID-19 supplies including testing kits, PPE, and medical equipment for pandemic response"
+97335,HEALTH,Chinese Government provides anti-epidemic supplies to Cuba in September 2021,"On September 15, 2021, the Chinese Government provided COVID-19 supplies to the Cuban government. The 24-ton supply shipment contained 1.35 million plus items that included examination gloves, medical goggles, face shields, surgical masks, X-ray film, and medicine. This donation was made to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.  This is the fourth batch of COVID-19 supplies provided by the Chinese Government to Cuba in 2021.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides anti-epidemic supplies to Cuba in September 2021
+
+# Description
+On September 15, 2021, the Chinese Government provided COVID-19 supplies to the Cuban government. The 24-ton supply shipment contained 1.35 million plus items that included examination gloves, medical goggles, face shields, surgical masks, X-ray film, and medicine. This donation was made to support Cuba’s COVID-19 response efforts. The monetary value of this donation is unknown.  This is the fourth batch of COVID-19 supplies provided by the Chinese Government to Cuba in 2021.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare supplies with no direct environmental or energy transition impact,"COVID-19 supplies including medical equipment and medicine, healthcare focus"
+97386,COMMUNICATIONS,Chinese Embassy provides a videoconferencing system to Cuba in July 2021,"On July 8, 2021, the Chinese Embassy in Cuba signed an agreement with Farmacuba, a Cuban pharmacy company, to donate a videoconferencing system to the company. The system will be managed by Empresa de Tecnologías de la Información. The monetary value of this donation is unknown.  Déborah Rivas and Vilma Sánchez Sempé, the Deputy Minister and the Director of Trade Policy with Asia and Oceania of the Ministry of Foreign Trade, attended the signing ceremony.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese Embassy provides a videoconferencing system to Cuba in July 2021
+
+# Description
+On July 8, 2021, the Chinese Embassy in Cuba signed an agreement with Farmacuba, a Cuban pharmacy company, to donate a videoconferencing system to the company. The system will be managed by Empresa de Tecnologías de la Información. The monetary value of this donation is unknown.  Déborah Rivas and Vilma Sánchez Sempé, the Deputy Minister and the Director of Trade Policy with Asia and Oceania of the Ministry of Foreign Trade, attended the signing ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of communication technology with no direct environmental or energy transition impact,"Videoconferencing system donation to Cuban pharmacy company, no energy-related components mentioned"
+97387,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"Chinese Government provides 5,000 tons of rice to Cuba in October 2021","On October 12, 2021, the Chinese Government donated 5,000 tons of rice to Cuba. The donation was processed by the Jiangxi Jingia Grain Corporation. The purpose of this donation is to alleviate food insecurity in Cuba. The monetary value of this donation is unknown.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Government provides 5,000 tons of rice to Cuba in October 2021
+
+# Description
+On October 12, 2021, the Chinese Government donated 5,000 tons of rice to Cuba. The donation was processed by the Jiangxi Jingia Grain Corporation. The purpose of this donation is to alleviate food insecurity in Cuba. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on food security assistance without direct environmental or energy transition impacts,"Food aid donation of 5,000 tons of rice to address food insecurity"

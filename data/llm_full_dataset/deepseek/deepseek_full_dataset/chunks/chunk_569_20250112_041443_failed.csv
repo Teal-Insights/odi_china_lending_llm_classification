@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+70505,EDUCATION,China provides July 2018 donation of school supplies to FAWE Girls' School in Rwanda,"On July 23, 2018, during the Chinese President and First Lady's visit to Rwanda, First Lady Peng Liyuan donated school supplies to FAWE (Forum for African Women Educationalists) Girls' School, which is located in the Gazabo District in the North of Kigali. The monetary value of the donation is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+China provides July 2018 donation of school supplies to FAWE Girls' School in Rwanda
+
+# Description
+On July 23, 2018, during the Chinese President and First Lady's visit to Rwanda, First Lady Peng Liyuan donated school supplies to FAWE (Forum for African Women Educationalists) Girls' School, which is located in the Gazabo District in the North of Kigali. The monetary value of the donation is unknown.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

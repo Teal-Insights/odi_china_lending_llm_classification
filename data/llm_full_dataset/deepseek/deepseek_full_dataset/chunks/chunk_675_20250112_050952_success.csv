@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+55839,HEALTH,Chinese Government dispatches 12th Medical Team to Motebang Hospital (Linked to #56630),"Since 1997, Hubei Province has been sending medical teams to Lesotho. On September 29, 2017, the Chinese Government and the Government of Lesotho signed a protocol agreement, dispatching the 12th Chinese medical team (第十二批医疗队) to Lesotho. The team was stationed at Motebang Hospital, which is located on Mandela Road in the town of Hlotse within Leribe District. The 8-member team completed its term of service between October 13, 2017 and October 15, 2018. It treated 20,000 patients, conducted 1000 operations, and organized 4 clinics in remote areas. It also donated medical equipment worth LSL 370,000 (captured in #56630).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government dispatches 12th Medical Team to Motebang Hospital (Linked to #56630)
+
+# Description
+Since 1997, Hubei Province has been sending medical teams to Lesotho. On September 29, 2017, the Chinese Government and the Government of Lesotho signed a protocol agreement, dispatching the 12th Chinese medical team (第十二批医疗队) to Lesotho. The team was stationed at Motebang Hospital, which is located on Mandela Road in the town of Hlotse within Leribe District. The 8-member team completed its term of service between October 13, 2017 and October 15, 2018. It treated 20,000 patients, conducted 1000 operations, and organized 4 clinics in remote areas. It also donated medical equipment worth LSL 370,000 (captured in #56630).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare services and medical assistance, with no direct environmental or energy transition impact","Medical team deployment, patient treatment, operations performed, medical equipment donation"
+55859,GOVERNMENT AND CIVIL SOCIETY,China donates office equipment to Lesotho Ministry of Public Service,"On October 2, 2017, the Chinese Ambassador officially donated office equipment to the Lesotho Ministry of Public Service. It included computers, printers, and projectors. The value of this donation is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates office equipment to Lesotho Ministry of Public Service
+
+# Description
+On October 2, 2017, the Chinese Ambassador officially donated office equipment to the Lesotho Ministry of Public Service. It included computers, printers, and projectors. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of office equipment to government ministry, with no direct environmental or energy transition impact","Donation of computers, printers, and projectors to Lesotho Ministry of Public Service"
+55870,WATER SUPPLY AND SANITATION,China-Lesotho Friendship Fund donates boreholes to Thaba Tseka,"On 20 October 2017, the China-Lesotho People-to-People Friendship Action Fund (CLPPFAF) officially donated two water supply projects to villages in Thaba-Tseka. This project involved constructing wells to store water in each village. The value of this donation is unknown.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China-Lesotho Friendship Fund donates boreholes to Thaba Tseka
+
+# Description
+On 20 October 2017, the China-Lesotho People-to-People Friendship Action Fund (CLPPFAF) officially donated two water supply projects to villages in Thaba-Tseka. This project involved constructing wells to store water in each village. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on water supply and sanitation without clear environmental or energy transition impacts,"Construction of wells for water supply in villages, categorized under water supply and sanitation sector"
+56168,GOVERNMENT AND CIVIL SOCIETY,China co-hosts and donates to the Lesotho Queen's charity event,"On May 1, 2017, the Chinese Embassy and Lesotho Association For China's Peaceful Reunification co-organized a charity golf tournament and made a donation to the Lesotho Queen's Trust Fund. Their Majesties King Letie III and Queen Masenate Mohato Seeiso, H.E. Dr. Sun Xianghua, Ambassador of China, Basotho golf players, and representatives of the Chinese community attended the donation ceremony.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China co-hosts and donates to the Lesotho Queen's charity event
+
+# Description
+On May 1, 2017, the Chinese Embassy and Lesotho Association For China's Peaceful Reunification co-organized a charity golf tournament and made a donation to the Lesotho Queen's Trust Fund. Their Majesties King Letie III and Queen Masenate Mohato Seeiso, H.E. Dr. Sun Xianghua, Ambassador of China, Basotho golf players, and representatives of the Chinese community attended the donation ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,The project is a charitable donation and social event without direct environmental or energy transition impacts,"Charity golf tournament, donation to Lesotho Queen's Trust Fund, social development focus"
+56176,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China hosts 100 Masotho trainees for Human Resource Development Program,"On 20 April 2017, the Chinese Embassy in Lesotho held a send-off ceremony for the first batch of 100 Masotho trainees to participate the 2017 China-aid Human Resource Development Cooperation Program (2017中国援助人力资源开发合作计划研讨会). Trainees were trained in China for an unknown time period. The value of this project is unknown.   The 2018 batch is captured in project #69131.   ",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China hosts 100 Masotho trainees for Human Resource Development Program
+
+# Description
+On 20 April 2017, the Chinese Embassy in Lesotho held a send-off ceremony for the first batch of 100 Masotho trainees to participate the 2017 China-aid Human Resource Development Cooperation Program (2017中国援助人力资源开发合作计划研讨会). Trainees were trained in China for an unknown time period. The value of this project is unknown.   The 2018 batch is captured in project #69131.   ",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on human resource development and training, with no direct environmental or energy transition impacts","Human Resource Development Cooperation Program, training of 100 Masotho trainees"
+56630,HEALTH,"Chinese 12th medical team donates medical equipment worth 370,000 LSL to Lesotho (Linked to #55839)","On December 14, 2017, the 12th Chinese medical team (recorded in #55839) officially donated medicine and equipment worth 370,000 LSL to Motebang Hospital in Leribe, Lesotho. At the same donation ceremony, the China-Lesotho People to People Friendship Action Fund donated water tanks worth 30,000 LSL (#72231).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese 12th medical team donates medical equipment worth 370,000 LSL to Lesotho (Linked to #55839)
+
+# Description
+On December 14, 2017, the 12th Chinese medical team (recorded in #55839) officially donated medicine and equipment worth 370,000 LSL to Motebang Hospital in Leribe, Lesotho. At the same donation ceremony, the China-Lesotho People to People Friendship Action Fund donated water tanks worth 30,000 LSL (#72231).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical equipment and supplies, which is unrelated to energy or environmental impacts","Donation of medicine and medical equipment to hospital, healthcare sector focus"
+71880,"AGRICULTURE, FORESTRY, FISHING","China-Lesotho Friendship Fund donates seed and fertilizer worth 100,000 M to Butha-Buthe","On 30 October 2017, the China-Lesotho People to People Friendship Action Fund officially donated 350 bags of seeds and fertilizer worth 100,000 M to 350 families in 7 different Butha-Buthe villages.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China-Lesotho Friendship Fund donates seed and fertilizer worth 100,000 M to Butha-Buthe
+
+# Description
+On 30 October 2017, the China-Lesotho People to People Friendship Action Fund officially donated 350 bags of seeds and fertilizer worth 100,000 M to 350 families in 7 different Butha-Buthe villages.",TRUE,NA,NEUTRAL,HIGH,Social Development,Agricultural donation project focused on community support without clear environmental or energy transition impacts,"Donation of seeds and fertilizer to local communities, agricultural focus"
+72111,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"China donates 1,006 tons of food to Lesotho (Linked to Umbrella Project #55873)","In August 2017, the Chinese government signed an agreement granting 20 million RMB (40 million M) for food aid to Lesotho (umbrella project #55873). This financed a purchase of 1,006 tons of food was officially handed over on 16 November 2017.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China donates 1,006 tons of food to Lesotho (Linked to Umbrella Project #55873)
+
+# Description
+In August 2017, the Chinese government signed an agreement granting 20 million RMB (40 million M) for food aid to Lesotho (umbrella project #55873). This financed a purchase of 1,006 tons of food was officially handed over on 16 November 2017.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on food aid and security without direct environmental or energy transition impacts,"Food aid donation, developmental food security assistance"
+72112,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"China donates 1,335 tons of food to Lesotho (Linked to Umbrella Project #55873)","In August 2017, the Chinese government signed an agreement granting 20 million RMB (40 million M) for food aid to Lesotho (umbrella project #55873). This financed a purchase of 1,335 tons of parboiled rice which was officially handed over in March 2018.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China donates 1,335 tons of food to Lesotho (Linked to Umbrella Project #55873)
+
+# Description
+In August 2017, the Chinese government signed an agreement granting 20 million RMB (40 million M) for food aid to Lesotho (umbrella project #55873). This financed a purchase of 1,335 tons of parboiled rice which was officially handed over in March 2018.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on food aid and security assistance without direct environmental or energy transition implications,"Food aid donation of 1,335 tons of rice, developmental food security assistance"
+72231,WATER SUPPLY AND SANITATION,"China-Lesotho Friendship Fund donates water tanks worth 30,000 M (Linked to #56630)","On 14 December 2017, the China-Lesotho People to People Friendship Action Fund donated water tanks worth 30,000 M to Motebang Hospital in Leribe, Lesotho. Medical equipment was also donated at the same ceremony (#56630). Lesotho News Agency reported that the combined value of the water tanks and medical equipment was 400,000 M, and the Hubei Health Commission said the equipment alone was worth 370,000 M, meaning the water tanks costed 30,000 M.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China-Lesotho Friendship Fund donates water tanks worth 30,000 M (Linked to #56630)
+
+# Description
+On 14 December 2017, the China-Lesotho People to People Friendship Action Fund donated water tanks worth 30,000 M to Motebang Hospital in Leribe, Lesotho. Medical equipment was also donated at the same ceremony (#56630). Lesotho News Agency reported that the combined value of the water tanks and medical equipment was 400,000 M, and the Hubei Health Commission said the equipment alone was worth 370,000 M, meaning the water tanks costed 30,000 M.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on water supply and medical equipment donation without clear environmental or energy transition impacts,"Donation of water tanks and medical equipment to hospital, no energy-related components mentioned"

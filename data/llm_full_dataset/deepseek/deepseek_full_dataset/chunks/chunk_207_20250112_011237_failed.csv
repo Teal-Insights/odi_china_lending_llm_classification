@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93108,HEALTH,Chinese government donates anti-epidemic supplies to Kenya OAFLAD in July 2020,"On July 22, 2020, the First Lady of China, Peng Liyuan, donated a batch of anti-epidemic supplies on behalf of the Chinese government to Kenya. The aid was organized by the Organization of African First Ladies for Development, or OAFLAD, which is turning its attention to aiding mothers and children in the battle against COVID-19. The donation was received in support of Kenyan first lady Margaret Kenyatta's Beyond Zero initiative at the organization's headquarters in Nairobi. The monetary value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates anti-epidemic supplies to Kenya OAFLAD in July 2020
+
+# Description
+On July 22, 2020, the First Lady of China, Peng Liyuan, donated a batch of anti-epidemic supplies on behalf of the Chinese government to Kenya. The aid was organized by the Organization of African First Ladies for Development, or OAFLAD, which is turning its attention to aiding mothers and children in the battle against COVID-19. The donation was received in support of Kenyan first lady Margaret Kenyatta's Beyond Zero initiative at the organization's headquarters in Nairobi. The monetary value of the donation is unknown.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+90512,HEALTH,Chinese Embassy in Myanmar donates medical equipment in November 2020 to Daw Khin Kyi Women's Hospital,"On November 3, 2020, the Chinese Embassy in Myanmar donated equipment to a hospital in Yangon, Myanmar. The donation included low pressure suction, an oxygen hood, phototherapy units, a warmer for infants, an extractor, an isoflurane evaporation can, and cabinets to house surgical instruments and medicine. The receiving hospital is Daw Khin Kyi Women's Hospital, also known as the 1st China-Myanmar friendship hospital.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Myanmar donates medical equipment in November 2020 to Daw Khin Kyi Women's Hospital
+
+# Description
+On November 3, 2020, the Chinese Embassy in Myanmar donated equipment to a hospital in Yangon, Myanmar. The donation included low pressure suction, an oxygen hood, phototherapy units, a warmer for infants, an extractor, an isoflurane evaporation can, and cabinets to house surgical instruments and medicine. The receiving hospital is Daw Khin Kyi Women's Hospital, also known as the 1st China-Myanmar friendship hospital.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical equipment to a hospital, with no direct environmental or energy transition impact","Medical equipment donation to Daw Khin Kyi Women's Hospital, healthcare focus"
+90561,HEALTH,Yunnan Provincial Government donates CNY 1.5 million to Myanmar to fight COVID-19 in October 2020,"On October 16, 2020, a donation ceremony was held for the donation of RMB 1.5 million in China's Yunnan Province. The donation was given to Myanmar's Yangon Region and Shan state.",NA,"# Sector
+HEALTH
+
+# Title
+Yunnan Provincial Government donates CNY 1.5 million to Myanmar to fight COVID-19 in October 2020
+
+# Description
+On October 16, 2020, a donation ceremony was held for the donation of RMB 1.5 million in China's Yunnan Province. The donation was given to Myanmar's Yangon Region and Shan state.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation for COVID-19 relief, healthcare focus"
+90563,HEALTH,SPIC donates 20 mobile toilets to Myanmar in April 2020,"On April, 20, 2020, SPIC donated 20 mobile toilets to Myanmar. According to Myanmar's Ministry of Foreign Affairs, the toilets are intended to help Myanmar fight COVID-19. The donation ceremony was held at SPIC Yunnan's headquarters in Kunming, China, and are to be transferred to Myanmar via road transport.",NA,"# Sector
+HEALTH
+
+# Title
+SPIC donates 20 mobile toilets to Myanmar in April 2020
+
+# Description
+On April, 20, 2020, SPIC donated 20 mobile toilets to Myanmar. According to Myanmar's Ministry of Foreign Affairs, the toilets are intended to help Myanmar fight COVID-19. The donation ceremony was held at SPIC Yunnan's headquarters in Kunming, China, and are to be transferred to Myanmar via road transport.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on public health infrastructure with no direct environmental or energy transition impact,"Donation of mobile toilets for COVID-19 response, categorized under health sector"
+90564,HEALTH,"Yunnan Province donates 60,000 masks to Myanmar in March 2020","On March 23, 2020, a donation ceremony was held for the donation of 60,000 masks from China's Yunnan Province to Myanmar to help fight COVID-19. According to Myanmar's Ministry of Foreign Affairs, 14,000 would be donated to Yangon, 14,000 to Mandalay and 32,000 going to the Ministry of Sports in Myanmar. The donation will be managed by the Myanmar Ministry of Health and Sports.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Yunnan Province donates 60,000 masks to Myanmar in March 2020
+
+# Description
+On March 23, 2020, a donation ceremony was held for the donation of 60,000 masks from China's Yunnan Province to Myanmar to help fight COVID-19. According to Myanmar's Ministry of Foreign Affairs, 14,000 would be donated to Yangon, 14,000 to Mandalay and 32,000 going to the Ministry of Sports in Myanmar. The donation will be managed by the Myanmar Ministry of Health and Sports.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of 60,000 masks for COVID-19 relief, managed by health ministry"
+90689,HEALTH,PetroChina donates medical supplies in April 2020 to Myanmar Ministry of Electricity and Energy,"On April 6, 2020, PetroChina provided a donation of 20,000 masks, 500 bottles of hand sanitizer, 100 sets of clothing, and 20 thermometer guns to the Myanmar Ministry of Electricity and Energy. The donation was handed over to Myanmar by the China-Myanmar Oil and Gas Pipeline Project. The donation was accepted by a representative of the Ministry of Electricity and Energy. It was implemented by South-East Asia Pipeline Company Ltd (SEAP), the majority owner of the China-Myanmar Oil and Gas Pipeline Project (see project ID#34468)",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+PetroChina donates medical supplies in April 2020 to Myanmar Ministry of Electricity and Energy
+
+# Description
+On April 6, 2020, PetroChina provided a donation of 20,000 masks, 500 bottles of hand sanitizer, 100 sets of clothing, and 20 thermometer guns to the Myanmar Ministry of Electricity and Energy. The donation was handed over to Myanmar by the China-Myanmar Oil and Gas Pipeline Project. The donation was accepted by a representative of the Ministry of Electricity and Energy. It was implemented by South-East Asia Pipeline Company Ltd (SEAP), the majority owner of the China-Myanmar Oil and Gas Pipeline Project (see project ID#34468)",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impacts,"Donation of masks, hand sanitizer, clothing, and thermometer guns for health purposes"
+90690,EDUCATION,China-Myanmar Oil and Gas Pipeline Project donates MMK 62.9 million worth of teaching supplies to 20 schools in Myanmar (linked to #90416),"On July 30, 2020, the China-Myanmar Oil and Gas Pipeline Project provided a donation of 11 sets of teaching aids and 13 sets of sports equipment with a value of MMK 62.9 million to 20 schools along the route of the pipeline.   This project is linked to #90416, which was the donation of a school building from the China-Myanmar Oil and Gas Pipeline Project that took place at the same time as this donation.",NA,"# Sector
+EDUCATION
+
+# Title
+China-Myanmar Oil and Gas Pipeline Project donates MMK 62.9 million worth of teaching supplies to 20 schools in Myanmar (linked to #90416)
+
+# Description
+On July 30, 2020, the China-Myanmar Oil and Gas Pipeline Project provided a donation of 11 sets of teaching aids and 13 sets of sports equipment with a value of MMK 62.9 million to 20 schools along the route of the pipeline.   This project is linked to #90416, which was the donation of a school building from the China-Myanmar Oil and Gas Pipeline Project that took place at the same time as this donation.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of educational materials and is unrelated to energy or environmental impacts,"Donation of teaching aids and sports equipment to schools, social development focus"
+90692,HEALTH,State Power Investment Corporation Limited donates medical equipment in March 2020 to Myanmar government,"SPIC Yunnan International (Chipwi Nge Branch) has donated 4,000 medical masks, 112 bottles of disinfectant and other supplies to Myitkyina Airport, Myitkyina Police Station and Immigration Office of Kachin State on behalf of SPIC Yunnan International on March 17, 2020.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+State Power Investment Corporation Limited donates medical equipment in March 2020 to Myanmar government
+
+# Description
+SPIC Yunnan International (Chipwi Nge Branch) has donated 4,000 medical masks, 112 bottles of disinfectant and other supplies to Myitkyina Airport, Myitkyina Police Station and Immigration Office of Kachin State on behalf of SPIC Yunnan International on March 17, 2020.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of medical masks, disinfectant, and supplies to government facilities"
+90696,HEALTH,SPIC provides COVID-19 supplies to Myanmar's Embassy in China in April 2020,"On April 21, SPIC donated an unspecified amount of anti-epidemic materials to Myanmar's Embassy in China to help fight COVID-19. This was part of a larger donation to both Chile and Myanmar. The monetary value of this donation is unknown.   A handover ceremony was held for this donation. Myanmar’s Ambassador to China, U Myo Thanpei, and Chile’s Ambassador to China, Luis Schmidt, attended the donation ceremony in person.",NA,"# Sector
+HEALTH
+
+# Title
+SPIC provides COVID-19 supplies to Myanmar's Embassy in China in April 2020
+
+# Description
+On April 21, SPIC donated an unspecified amount of anti-epidemic materials to Myanmar's Embassy in China to help fight COVID-19. This was part of a larger donation to both Chile and Myanmar. The monetary value of this donation is unknown.   A handover ceremony was held for this donation. Myanmar’s Ambassador to China, U Myo Thanpei, and Chile’s Ambassador to China, Luis Schmidt, attended the donation ceremony in person.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies unrelated to energy or environmental impact,"COVID-19 anti-epidemic materials donation, healthcare focus"
+90738,HEALTH,SEPCO I donates Covid-19 supplies to Kyaukphyu Township in Myanmar in June 2020,"On June 10, 2020, PowerChina SEPCO1 Electric Power Construction Co., Ltd. (SEPCO1) provided a donation of an unspecified amount and type of medical supplies to Myanmar Kyaukphyu Township. SEPCO 1 is an implementing agency of Kyaukphyu Power Plant Project in Myanmar (see #88703). The donation ceremony was held in Kyaukphyu township and was attended by representatives of Myanmar's government as well as SEPCO.",NA,"# Sector
+HEALTH
+
+# Title
+SEPCO I donates Covid-19 supplies to Kyaukphyu Township in Myanmar in June 2020
+
+# Description
+On June 10, 2020, PowerChina SEPCO1 Electric Power Construction Co., Ltd. (SEPCO1) provided a donation of an unspecified amount and type of medical supplies to Myanmar Kyaukphyu Township. SEPCO 1 is an implementing agency of Kyaukphyu Power Plant Project in Myanmar (see #88703). The donation ceremony was held in Kyaukphyu township and was attended by representatives of Myanmar's government as well as SEPCO.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies unrelated to energy or infrastructure,"Donation of unspecified medical supplies, healthcare focus, no energy-related components"
+90917,EDUCATION,China provides Chinese Government Scholarship to Myanmar for 2020-2021 academic year.,"In a letter dated January 20, 2020, the Myanmar Ministry of Health details the opening of the 2020 Chinese Government Scholarship program application. It is also unclear how many scholarships are being given out and what their value is.",NA,"# Sector
+EDUCATION
+
+# Title
+China provides Chinese Government Scholarship to Myanmar for 2020-2021 academic year.
+
+# Description
+In a letter dated January 20, 2020, the Myanmar Ministry of Health details the opening of the 2020 Chinese Government Scholarship program application. It is also unclear how many scholarships are being given out and what their value is.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program is unrelated to energy or environmental impacts,"Education sector, scholarship program with no direct environmental impact"

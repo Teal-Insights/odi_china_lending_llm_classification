@@ -1,0 +1,73 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92988,HEALTH,National Health Commission of China donated medical equipments for COVID to Sao Tome and Principe Ministry of Health in December 2020,"On December 15, 2020, the handover ceremony of the anti-epidemic medical equipment donated by the National Health Commission of China to the Ministry of Health of Sao Tome and Principe was held in the anti-epidemic material warehouse of Sao Tome. Gao Jinbao, Commercial Counselor of the embassy, ​​Viana, Director of International Cooperation of the Ministry of Health of Sao Tome and Principe, Almeida, Director of the National Center for Disease Control and Prevention of Sao Tome and Principe, and You Zhen, Captain of the 16th medical team in Sao Tome and Principe attended the ceremony. The medical equipment included ventilators, electrocardiogram machines, oxygen generators, and expectoration machines.",NA,"# Sector
+HEALTH
+
+# Title
+National Health Commission of China donated medical equipments for COVID to Sao Tome and Principe Ministry of Health in December 2020
+
+# Description
+On December 15, 2020, the handover ceremony of the anti-epidemic medical equipment donated by the National Health Commission of China to the Ministry of Health of Sao Tome and Principe was held in the anti-epidemic material warehouse of Sao Tome. Gao Jinbao, Commercial Counselor of the embassy, ​​Viana, Director of International Cooperation of the Ministry of Health of Sao Tome and Principe, Almeida, Director of the National Center for Disease Control and Prevention of Sao Tome and Principe, and You Zhen, Captain of the 16th medical team in Sao Tome and Principe attended the ceremony. The medical equipment included ventilators, electrocardiogram machines, oxygen generators, and expectoration machines.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical equipment for healthcare purposes, with no direct environmental or energy transition impact","Donation of ventilators, electrocardiogram machines, oxygen generators, and expectoration machines for COVID response"
+93022,HEALTH,China donated a mobile cabin hospital to Sao Tome and Principe in May 2020,"On May 26, 2020, Wang Wei, Chinese Ambassador to Sao Tome and Principe, and Sao Tome and Principe Minister of Health Neves jointly visited the spare makeshift hospital funded by the Chinese Embassy in Sao Tome and Principe. São Tomé and Príncipe’s spare mobile cabin hospital was renovated from the auditorium of São Tomé and Príncipe National Middle School. It has 40 beds and is designed to accommodate 70 beds maximum. The renovation of water and electricity pipelines, the purchase of mattresses and other supporting basic living materials were funded by the Chinese Embassy in São Tomé and Príncipe. The Chinese Medical Team in São Tomé and Príncipe is responsible for the hospital's nosocomial infection control zoning design.",NA,"# Sector
+HEALTH
+
+# Title
+China donated a mobile cabin hospital to Sao Tome and Principe in May 2020
+
+# Description
+On May 26, 2020, Wang Wei, Chinese Ambassador to Sao Tome and Principe, and Sao Tome and Principe Minister of Health Neves jointly visited the spare makeshift hospital funded by the Chinese Embassy in Sao Tome and Principe. São Tomé and Príncipe’s spare mobile cabin hospital was renovated from the auditorium of São Tomé and Príncipe National Middle School. It has 40 beds and is designed to accommodate 70 beds maximum. The renovation of water and electricity pipelines, the purchase of mattresses and other supporting basic living materials were funded by the Chinese Embassy in São Tomé and Príncipe. The Chinese Medical Team in São Tomé and Príncipe is responsible for the hospital's nosocomial infection control zoning design.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure with no direct environmental or energy transition impact,"Mobile cabin hospital donation, healthcare facility renovation, no energy or environmental components mentioned"
+93025,EDUCATION,Chinese Embassy in Sao Tome and Principe donates an IT center to the National Middle School of Sao Tome and Principe,"On December 4, 2020, the opening ceremony for a new computer center financed by the Chinese Embassy was held at the Sao Tome and Principle National Secondary School. Alongside the computer center, the Chinese embassy donated 22 computers, a server, a projector, and other accessories.","In French, the name of the school is 'Liceu Nacional de São Tomé e Príncipe.'","# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Sao Tome and Principe donates an IT center to the National Middle School of Sao Tome and Principe
+
+# Description
+On December 4, 2020, the opening ceremony for a new computer center financed by the Chinese Embassy was held at the Sao Tome and Principle National Secondary School. Alongside the computer center, the Chinese embassy donated 22 computers, a server, a projector, and other accessories.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational infrastructure and IT equipment donation without clear environmental or energy transition impacts,"Computer center with IT equipment at educational institution, no energy-related components mentioned"
+93026,HEALTH,Chinese Ambassador provides 2nd batch of supplies to combat COVID-19 in June 2020,"On June 12, 2020, the Chinese ambassador handed over the second batch of covid supplies to Sao Tome and Principe. It consisted of 5000 pcr test kits, N95 masks, gloves, and PPE. The supplies arrived in the country on June 11, 2020.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Ambassador provides 2nd batch of supplies to combat COVID-19 in June 2020
+
+# Description
+On June 12, 2020, the Chinese ambassador handed over the second batch of covid supplies to Sao Tome and Principe. It consisted of 5000 pcr test kits, N95 masks, gloves, and PPE. The supplies arrived in the country on June 11, 2020.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare and pandemic response, with no direct environmental or energy transition impact","COVID-19 supplies including test kits, masks, gloves, and PPE"
+93039,HEALTH,Chinese Government sent COVID-19 medical supplies to Sao Tome and Principe in April 2020,"On April 17, 2020, the handover ceremony of Chinese government donation of COVID-19 medical supplies to the government of Sao Tome and Principe was held.  The supplies included N95 masks, ordinary medical masks, medical protective clothing, gloves, shoe covers, goggles, and forehead thermometers. The supplies arrived in Sao Tome on April 15 after arriving in Ghana for distribution on April 6.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government sent COVID-19 medical supplies to Sao Tome and Principe in April 2020
+
+# Description
+On April 17, 2020, the handover ceremony of Chinese government donation of COVID-19 medical supplies to the government of Sao Tome and Principe was held.  The supplies included N95 masks, ordinary medical masks, medical protective clothing, gloves, shoe covers, goggles, and forehead thermometers. The supplies arrived in Sao Tome on April 15 after arriving in Ghana for distribution on April 6.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","COVID-19 medical supplies including masks, protective equipment, and thermometers"
+93040,HEALTH,Chinese Government donated a batch of COVID-19 medicine and medical equipments to Sao Tome and Principe in March 2020,"On March 26, 2020, at a ceremony held at the Ayres de Menezes Central Hospital in São Tomé and Príncipe, Ambassador Wang Wei, representing the Chinese government, delivered a batch of medicines and medical equipment to the Sao Tome Minister of Health, Mr. Edgar Neves. The equipment included antibiotics, vision monitor, cardiac defibrillator, and a ventilator to help the country be prepared for COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donated a batch of COVID-19 medicine and medical equipments to Sao Tome and Principe in March 2020
+
+# Description
+On March 26, 2020, at a ceremony held at the Ayres de Menezes Central Hospital in São Tomé and Príncipe, Ambassador Wang Wei, representing the Chinese government, delivered a batch of medicines and medical equipment to the Sao Tome Minister of Health, Mr. Edgar Neves. The equipment included antibiotics, vision monitor, cardiac defibrillator, and a ventilator to help the country be prepared for COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and medical supplies without clear environmental or energy transition impacts,"Donation of medicines and medical equipment including antibiotics, vision monitor, cardiac defibrillator, and ventilator"
+93060,HEALTH,"CIDCA granted 1,000,000 USD in agreement with UNFPA to provide healthcare assistance to Sao Tome and Principe","On December 31, 2020, Zhang Maoyu, vice-chairman of the China International Development Cooperation Agency (CIDCA), signed a cooperation agreement with a representative of the United Nations Population Fund (UNFPA) that granted 1,000,000 USD to provide healthcare assistance to Sao Tome and Principe.  The CIDCA and the UNFPA agreed to cooperate on providing healthcare assistance to Sao Tome and Principe and Gambia in Central and West Africa that are affected by the COVID-19 pandemic. The project, supported by the South-South Cooperation Assistance Fund, aims to improve the capabilities in pandemic control and response in Sao Tome and Principe and Gambia and ensure their health systems can continuously provide basic public health services such as reproductive and maternal care during the pandemic. The 1,000,000 USD was used to provide PPE and medical supply to health workers to ensure the continuity of sexual and reproductive health services and the supply of essential reproductive health commodities.",NA,"# Sector
+HEALTH
+
+# Title
+CIDCA granted 1,000,000 USD in agreement with UNFPA to provide healthcare assistance to Sao Tome and Principe
+
+# Description
+On December 31, 2020, Zhang Maoyu, vice-chairman of the China International Development Cooperation Agency (CIDCA), signed a cooperation agreement with a representative of the United Nations Population Fund (UNFPA) that granted 1,000,000 USD to provide healthcare assistance to Sao Tome and Principe.  The CIDCA and the UNFPA agreed to cooperate on providing healthcare assistance to Sao Tome and Principe and Gambia in Central and West Africa that are affected by the COVID-19 pandemic. The project, supported by the South-South Cooperation Assistance Fund, aims to improve the capabilities in pandemic control and response in Sao Tome and Principe and Gambia and ensure their health systems can continuously provide basic public health services such as reproductive and maternal care during the pandemic. The 1,000,000 USD was used to provide PPE and medical supply to health workers to ensure the continuity of sexual and reproductive health services and the supply of essential reproductive health commodities.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare assistance and pandemic response without direct environmental or energy transition impacts,"Healthcare assistance, pandemic control, reproductive health services, PPE and medical supplies"
+93077,EDUCATION,China donates 8 wooden classroom to Sao Tome and Principe in September 2020,"On September 17th, 2020, the inauguration ceremony of 8 wooden classrooms donated by the Chinese government was held at the Januário José da Costa secondary school. The Ambassador to Sao Tome and Principe Wang Wei and the Minister of Education for Sao Tome Izidro Rodriguez attended the ceremony. These classrooms were donated to support the improvement of face-to-face learning conditions in school settings.",NA,"# Sector
+EDUCATION
+
+# Title
+China donates 8 wooden classroom to Sao Tome and Principe in September 2020
+
+# Description
+On September 17th, 2020, the inauguration ceremony of 8 wooden classrooms donated by the Chinese government was held at the Januário José da Costa secondary school. The Ambassador to Sao Tome and Principe Wang Wei and the Minister of Education for Sao Tome Izidro Rodriguez attended the ceremony. These classrooms were donated to support the improvement of face-to-face learning conditions in school settings.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education infrastructure without direct environmental or energy transition impacts,"Donation of wooden classrooms for educational purposes, no energy or industrial components mentioned"
+86105,HEALTH,"Zhejiang Guangsha donates RMB $20,000 and 18,000 masks to the city of Guédiawaye, Senegal","On June 30, 2020, Zhejiang Guangsha Construction Vocational and Technical College donated 18,000 masks and $20,000 RMB to Guédiawaye, Senegal. Alongside the donation, students and teachers from Zhejiang Guangsha arranged a video conference where they also shared proper mask wearing techniques and aerobic exercise routines with Senegalese students in Guédiawaye.",NA,"# Sector
+HEALTH
+
+# Title
+Zhejiang Guangsha donates RMB $20,000 and 18,000 masks to the city of Guédiawaye, Senegal
+
+# Description
+On June 30, 2020, Zhejiang Guangsha Construction Vocational and Technical College donated 18,000 masks and $20,000 RMB to Guédiawaye, Senegal. Alongside the donation, students and teachers from Zhejiang Guangsha arranged a video conference where they also shared proper mask wearing techniques and aerobic exercise routines with Senegalese students in Guédiawaye.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on healthcare donations and education, with no direct environmental or energy transition impact","Donation of masks and funds, educational video conference on health practices"

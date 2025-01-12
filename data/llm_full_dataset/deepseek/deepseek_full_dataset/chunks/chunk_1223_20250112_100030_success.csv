@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+31246,UNALLOCATED/UNSPECIFIED,MOFCOM provides RMB 100 million interest-free loan — via ETCA — for unspecified purposes,"On July 20, 2011, China's Ministry of Commerce (MOFCOM) and the Government of Cameroon signed an Economic and Technical Cooperation Agreement (ETCA), which committed an RMB 100 million interest-free loan for unspecified purposes. The borrowing terms of the loan were as follows: a 20 year maturity, an 11 year grace period, and a 0% interest rate. As of December 31, 2020, the loan had achieved a 37.2% disbursement rate (with an undisbursed balance of CFA 5.2 billion). The loan’s outstanding amount was equivalent to CFA 3.5 billion as of December 31, 2020.",1. The ETCA can be accessed in its entirety via Source ID#104968 and https://www.documentcloud.org/documents/20485643-cmr_2011_518. 2. MOFCOM is the funder but the interest-free proceeds were to be disbursed through a CDB account established with a host country bank.,"# Sector
+UNALLOCATED/UNSPECIFIED
+
+# Title
+MOFCOM provides RMB 100 million interest-free loan — via ETCA — for unspecified purposes
+
+# Description
+On July 20, 2011, China's Ministry of Commerce (MOFCOM) and the Government of Cameroon signed an Economic and Technical Cooperation Agreement (ETCA), which committed an RMB 100 million interest-free loan for unspecified purposes. The borrowing terms of the loan were as follows: a 20 year maturity, an 11 year grace period, and a 0% interest rate. As of December 31, 2020, the loan had achieved a 37.2% disbursement rate (with an undisbursed balance of CFA 5.2 billion). The loan’s outstanding amount was equivalent to CFA 3.5 billion as of December 31, 2020.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Loan with unspecified purposes cannot be classified as having environmental impact or energy transition relevance,"Unspecified purposes, financial nature of the loan"
+31833,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China sent two dancer trainers to instruct the Cameroon National Modern Dance Troupe,China sent two dancer trainers to instruct and revive the Cameroon National Modern Dance Troupe from November 2005 to January 2009. 26 professional dancers have been trained as of July 2008.,NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China sent two dancer trainers to instruct the Cameroon National Modern Dance Troupe
+
+# Description
+China sent two dancer trainers to instruct and revive the Cameroon National Modern Dance Troupe from November 2005 to January 2009. 26 professional dancers have been trained as of July 2008.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cultural exchange and training program with no direct environmental or energy transition impact,"Dance training program, cultural exchange focus, no energy or infrastructure components"
+31869,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"China donated tools to maintain Yaounde's Multipurpose Stadium to conclude Phase I of technical cooperation project (linked to #31867, #31868)","On 28 October, 2011, the material handover ceremony was held for the conclusion of Phase 1 of the technical cooperation project for Technical Assistance to Yaounde's Multipurpose Stadium, which was built by China Shanxi Construction from 2006-2008 (see linked ProjectID#31867).  During the ceremony, the Chinese Government donated materials, including tools and spare parts required for daily maintenance of the stadium, to the Government of Cameroon.  Linked ProjectID#31868 captures Phase II of the Technical Assistance Project to Yaounde Multipurpose Stadium.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China donated tools to maintain Yaounde's Multipurpose Stadium to conclude Phase I of technical cooperation project (linked to #31867, #31868)
+
+# Description
+On 28 October, 2011, the material handover ceremony was held for the conclusion of Phase 1 of the technical cooperation project for Technical Assistance to Yaounde's Multipurpose Stadium, which was built by China Shanxi Construction from 2006-2008 (see linked ProjectID#31867).  During the ceremony, the Chinese Government donated materials, including tools and spare parts required for daily maintenance of the stadium, to the Government of Cameroon.  Linked ProjectID#31868 captures Phase II of the Technical Assistance Project to Yaounde Multipurpose Stadium.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of maintenance tools for a stadium, which is unrelated to energy or environmental impacts","Donation of tools and spare parts for stadium maintenance, social infrastructure focus"
+31885,EDUCATION,China Donate Office Equipment and Teaching Supplies to Two Primary Schools in Cameroon,"July 20, 2012 China donated office equipment and teaching supplies to two primary schools in Cameroon. The two schools were built by China. Guangdong Heng Shen Import and Export Co., Ltd. is the implementing organization. The project was signed during the Fourth Ministerial Conference of FOCAC in February 2011.",NA,"# Sector
+EDUCATION
+
+# Title
+China Donate Office Equipment and Teaching Supplies to Two Primary Schools in Cameroon
+
+# Description
+July 20, 2012 China donated office equipment and teaching supplies to two primary schools in Cameroon. The two schools were built by China. Guangdong Heng Shen Import and Export Co., Ltd. is the implementing organization. The project was signed during the Fourth Ministerial Conference of FOCAC in February 2011.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and school supplies without clear environmental or energy transition impact,"Donation of office equipment and teaching supplies to primary schools, education sector focus"
+44504,HEALTH,China donates anti-malaria medical equipment worth 1.5 million yuan to Cameroon,"On July 20, 2011, the governments of China and Cameroon signed documents in which China will supply medical equipment for the anti-malaria fight estimated at 1.5 million yuan (about FCFA 107 million). The agreements were signed by Hu Jintao and Cameroonian President Paul Biya. The status of the agreement is uncertain.",NA,"# Sector
+HEALTH
+
+# Title
+China donates anti-malaria medical equipment worth 1.5 million yuan to Cameroon
+
+# Description
+On July 20, 2011, the governments of China and Cameroon signed documents in which China will supply medical equipment for the anti-malaria fight estimated at 1.5 million yuan (about FCFA 107 million). The agreements were signed by Hu Jintao and Cameroonian President Paul Biya. The status of the agreement is uncertain.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare equipment donation with no direct environmental or energy transition impact,"Medical equipment for anti-malaria fight, healthcare sector focus"
+58632,HEALTH,China grants Cameroon new medical treatment technology and training for hina-Cameroon Capsule Endoscopy New Diagnostic and Clinical Technology Demonstration and Training Center,"An MOU was signed on December 5th of 2011 between China and Cameroon for the China-Cameroon Capsule Endoscopy New Diagnostic and Clinical Technology Demonstration and Training Center at the Yaounde Women and Children Hospital in Cameroon. The center was built by the Ministry of Science and Technology of China and implemented by Chongqing Jinshan Technology (Group) Co., Ltd. The company has presented a batch of capsule endoscopic equipment and capsules to Yaounde Women and Children Hospital as well as conducted a four-day technology training for local doctors. The center and training was completed on December 10th, 2011 (Ministry of Commerce of the People's Republic of China). ",NA,"# Sector
+HEALTH
+
+# Title
+China grants Cameroon new medical treatment technology and training for hina-Cameroon Capsule Endoscopy New Diagnostic and Clinical Technology Demonstration and Training Center
+
+# Description
+An MOU was signed on December 5th of 2011 between China and Cameroon for the China-Cameroon Capsule Endoscopy New Diagnostic and Clinical Technology Demonstration and Training Center at the Yaounde Women and Children Hospital in Cameroon. The center was built by the Ministry of Science and Technology of China and implemented by Chongqing Jinshan Technology (Group) Co., Ltd. The company has presented a batch of capsule endoscopic equipment and capsules to Yaounde Women and Children Hospital as well as conducted a four-day technology training for local doctors. The center and training was completed on December 10th, 2011 (Ministry of Commerce of the People's Republic of China). ",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare technology transfer and training without direct environmental or energy transition impacts,"Capsule endoscopy technology demonstration and training center, medical equipment donation, healthcare sector focus"
+55755,WATER SUPPLY AND SANITATION,Chinese Government provides grant for Borehole Drilling Project,"On June 9 and 14, 2011, the Chinese Government and the Government of the Central African Republic signed an exchange of letters for a Borehole Drilling Project. The purpose of this project was to bring potable water access to 60 villages within three prefectures: Lobaye, Ombella M’poko, and Sangha Mbaere. China Geo-Engineering Corporation International Ltd (中地国际工程有限公司) was the contractor responsible for implementation. This project began implementation, but was later suspended due to violence and political instability. Then, on June 19, 2015, China’s Ambassador to CAR announced the resumption of project implementation. Precise project start and end dates are unknown.",The Chinese project title is 中国援助中非共和国60眼井项目 or 打井项目.,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides grant for Borehole Drilling Project
+
+# Description
+On June 9 and 14, 2011, the Chinese Government and the Government of the Central African Republic signed an exchange of letters for a Borehole Drilling Project. The purpose of this project was to bring potable water access to 60 villages within three prefectures: Lobaye, Ombella M’poko, and Sangha Mbaere. China Geo-Engineering Corporation International Ltd (中地国际工程有限公司) was the contractor responsible for implementation. This project began implementation, but was later suspended due to violence and political instability. Then, on June 19, 2015, China’s Ambassador to CAR announced the resumption of project implementation. Precise project start and end dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on water supply and sanitation, which is unrelated to energy transition or environmental impact","Borehole drilling for potable water access in villages, social development focus"
+56212,HEALTH,China donates 5th batch of anti-malaria drugs to Central African Republic,"On December 22, 2011, the Chinese embassy donated antimalarial drugs to Central African Republic government. The value of the donation is unknown. This donation is one of several anti-malarial donations from China.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 5th batch of anti-malaria drugs to Central African Republic
+
+# Description
+On December 22, 2011, the Chinese embassy donated antimalarial drugs to Central African Republic government. The value of the donation is unknown. This donation is one of several anti-malarial donations from China.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare assistance with no direct environmental or energy transition impact,"Donation of antimalarial drugs, healthcare sector focus"
+56214,COMMUNICATIONS,Chinese government supports China-Africa satellite uplink station,"On October 21, 2011, a groundbreaking ceremony was held for the China-Africa satellite uplink station, which received economic and technical support from the Chinese government. It appears StarTimes was involved in the implementation of the project. The details of the support and current status of the project are unknown.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese government supports China-Africa satellite uplink station
+
+# Description
+On October 21, 2011, a groundbreaking ceremony was held for the China-Africa satellite uplink station, which received economic and technical support from the Chinese government. It appears StarTimes was involved in the implementation of the project. The details of the support and current status of the project are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Satellite uplink station is communications infrastructure with no clear environmental or energy transition impact,"Satellite uplink station, communications sector, no energy-related components mentioned"
+56219,HEALTH,Chinese government agrees to increase amount of anti-malaria drug aid to Central African Republic,"On June 9 and 14, 2011, the Chinese government and Central African Republic government exchanged letters in which China agree to increase amount of anti-malaria drug aid to CAR. It is unclear which donations of anti-malaria drugs might have been given as a result of this agreement.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government agrees to increase amount of anti-malaria drug aid to Central African Republic
+
+# Description
+On June 9 and 14, 2011, the Chinese government and Central African Republic government exchanged letters in which China agree to increase amount of anti-malaria drug aid to CAR. It is unclear which donations of anti-malaria drugs might have been given as a result of this agreement.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves healthcare aid with no direct environmental or energy transition impact,"Anti-malaria drug aid, healthcare focus, no energy or infrastructure components"

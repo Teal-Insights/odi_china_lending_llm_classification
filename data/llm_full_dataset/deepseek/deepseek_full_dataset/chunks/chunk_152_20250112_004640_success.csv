@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94576,WATER SUPPLY AND SANITATION,China Eximbank provides $57.9 million buyer's credit for Drinking Water Supply System in Four Cities Project,"On December 23, 2020, Burkina Faso's Council of Ministers approved the government's expenditure of $4,058,603.51 (XOF 2,183,593,345.99) for the improvement of the water supply system in four cities in southern Burkina Faso. This expenditure was authorized to cover 15% of the total cost ($62,038,653.72 or XOF 33,377,784,039.15) of a commercial contract between Burkina Faso's Ministry of Water and Sanitation CGCOC Group Co., Ltd. The remaining 85% of the commercial contract cost is being financed with a buyer's credit loan from China Eximbank. The borrowing terms of the loan are unknown.  The purpose of the project is to strengthen the drinking water supply system in the cities of Bagré (Dirlakou), Bitou, Tenkodogo and Garango from the Bagré dam. Its ultimate goal is to to increase the availability of drinking water in South-central Burkina Faso. The water is expected to come from the Bagré dam reservoir. The project will also provide for the construction of a new drinking water treatment plant with a capacity of 25,000 m3/day at the Bagré dam, the construction of four new water towers with a total volume of 4,300 m3, the laying of a clean water distribution pipeline between the water plant and the four villages and the construction of a new water distribution center in Tenkodogo.   CGCOC Group Co., Ltd. is the EPC contractor responsible for project implementation. It is working under the supervision of Burkina Faso's National Office for Water and Sanitation (ONEA). Construction was originally expected to commence in January 2021 and take 30 months to complete, with an estimated completion date in July 2023.","1. The French project title is Le projet de renforcement du système d’approvisionnement en eau potable des villes de Bagré (Dirlakou), Bitou, Tenkodogo et Garango. The Chinese project title is 四城市供水.2. No sources explicitly state that this is a buyer's credit loan. AidData assumes this is the case for the following reasons: (1) The loan is provided to a foreign borrower, (2) the loan is denominated in USD, (3) the face value of the loan is explicitly identified in an official source, and (4) the loan is used to finance a commercial contract with a Chinese company.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China Eximbank provides $57.9 million buyer's credit for Drinking Water Supply System in Four Cities Project
+
+# Description
+On December 23, 2020, Burkina Faso's Council of Ministers approved the government's expenditure of $4,058,603.51 (XOF 2,183,593,345.99) for the improvement of the water supply system in four cities in southern Burkina Faso. This expenditure was authorized to cover 15% of the total cost ($62,038,653.72 or XOF 33,377,784,039.15) of a commercial contract between Burkina Faso's Ministry of Water and Sanitation CGCOC Group Co., Ltd. The remaining 85% of the commercial contract cost is being financed with a buyer's credit loan from China Eximbank. The borrowing terms of the loan are unknown.  The purpose of the project is to strengthen the drinking water supply system in the cities of Bagré (Dirlakou), Bitou, Tenkodogo and Garango from the Bagré dam. Its ultimate goal is to to increase the availability of drinking water in South-central Burkina Faso. The water is expected to come from the Bagré dam reservoir. The project will also provide for the construction of a new drinking water treatment plant with a capacity of 25,000 m3/day at the Bagré dam, the construction of four new water towers with a total volume of 4,300 m3, the laying of a clean water distribution pipeline between the water plant and the four villages and the construction of a new water distribution center in Tenkodogo.   CGCOC Group Co., Ltd. is the EPC contractor responsible for project implementation. It is working under the supervision of Burkina Faso's National Office for Water and Sanitation (ONEA). Construction was originally expected to commence in January 2021 and take 30 months to complete, with an estimated completion date in July 2023.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply and sanitation infrastructure without clear environmental or energy transition impacts,"Construction of water treatment plant, water towers, distribution pipelines, and water distribution center for drinking water supply"
+94578,COMMUNICATIONS,China donates computers and office supplies to Burkina Faso Government Information Service,"On July 16, 2020, the Chinese ambassador to Burkina Faso donated computers to the Burkina Faso Government Information Service (French: Service d’information du gouvernement, SIG). SIG is a government service which provides information about the government to the people of Burkina Faso. The donation included office computers, laptops, and inverters.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+China donates computers and office supplies to Burkina Faso Government Information Service
+
+# Description
+On July 16, 2020, the Chinese ambassador to Burkina Faso donated computers to the Burkina Faso Government Information Service (French: Service d’information du gouvernement, SIG). SIG is a government service which provides information about the government to the people of Burkina Faso. The donation included office computers, laptops, and inverters.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of IT equipment for government information services, with no direct environmental or energy transition impact","Donation of computers and office supplies to government information service, no energy-related components"
+94581,GOVERNMENT AND CIVIL SOCIETY,China National People's Congress donates computers to Burkina Faso National Assembly,"On May 18, 2020, the China National People's Congress donated 100 computers and 150 tablets to the Burkina Faso National Assembly. The donation was the result of the speaker of the Burkina Faso National Assembly's 2019 visit to China, where he met with Li Zhanshu, Chairman of the Standing Committee of the National People's Congress. The donation will be used to further the Zero Paper in the National Assembly Plan (French: Zéro Papier à l’Assemblée Nationale, ZEPAN).",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China National People's Congress donates computers to Burkina Faso National Assembly
+
+# Description
+On May 18, 2020, the China National People's Congress donated 100 computers and 150 tablets to the Burkina Faso National Assembly. The donation was the result of the speaker of the Burkina Faso National Assembly's 2019 visit to China, where he met with Li Zhanshu, Chairman of the Standing Committee of the National People's Congress. The donation will be used to further the Zero Paper in the National Assembly Plan (French: Zéro Papier à l’Assemblée Nationale, ZEPAN).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of IT equipment for government modernization, with no direct environmental or energy transition impact","Donation of computers and tablets for National Assembly modernization, supporting digital transformation initiative"
+94587,HEALTH,"CGC Overseas Construction Co., Ltd. (CGCOC) donates anti-epidemic supplies to Burkina Faso in April 2020","Around April 10, 2020, CGC Overseas Construction Co., Ltd. (CGCOC) donated 4,800 medical suits and 96,000 medical masks to several African countries including Burkina Faso. It is unclear how many countries received this donation and how much of this larger donation was specifically sent to Burkina Faso. The monetary value of this donation is also unknown. The donation included 4800 protective suits and 96000 medical masks in total.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+CGC Overseas Construction Co., Ltd. (CGCOC) donates anti-epidemic supplies to Burkina Faso in April 2020
+
+# Description
+Around April 10, 2020, CGC Overseas Construction Co., Ltd. (CGCOC) donated 4,800 medical suits and 96,000 medical masks to several African countries including Burkina Faso. It is unclear how many countries received this donation and how much of this larger donation was specifically sent to Burkina Faso. The monetary value of this donation is also unknown. The donation included 4800 protective suits and 96000 medical masks in total.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of medical suits and masks, healthcare-related supplies"
+94588,HEALTH,China donates 46 ventilators worth XOF 200 million to the Burkina Faso Ministry of Health in July 2020,"On July 29, 2020 the Chinese Ambassador to Burkina Faso handed over a donation of 46 ventilators to the Ministry of Health. The ventilators were valued at XOF 200 million. They were to be used on Covid-19 patients to improve their chances of survival.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 46 ventilators worth XOF 200 million to the Burkina Faso Ministry of Health in July 2020
+
+# Description
+On July 29, 2020 the Chinese Ambassador to Burkina Faso handed over a donation of 46 ventilators to the Ministry of Health. The ventilators were valued at XOF 200 million. They were to be used on Covid-19 patients to improve their chances of survival.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of 46 ventilators for COVID-19 treatment, healthcare sector focus"
+95372,HEALTH,Chinese Government provides CFA 40 million grant for Covid-19 Isolation Center Construction Project at Yalgado Ouédraogo University Hospital,"In 2020, the Chinese Government and the Government of Burkina Faso signed a CFA 40 million grant agreement for the Covid-19 Isolation Center Construction Project at Yalgado Ouédraogo University Hospital. The purpose of the project was to construct a Covid-19 Isolation Center at Yalgado Ouédraogo University Hospital. Project implementation commenced on April 15, 2020. The project was completed on July 3, 2020.",1. The Chinese project title is 中国援助布基纳法索雅尔加多医院隔离房改造项目 or 布基纳法索雅尔加多医院隔离房改造项目. The French project title is Travaux de réhabilitation du Centre d'isolement des patients de COVID-19 au CHU Yalgado Ouédraogo à Ouagadougou.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides CFA 40 million grant for Covid-19 Isolation Center Construction Project at Yalgado Ouédraogo University Hospital
+
+# Description
+In 2020, the Chinese Government and the Government of Burkina Faso signed a CFA 40 million grant agreement for the Covid-19 Isolation Center Construction Project at Yalgado Ouédraogo University Hospital. The purpose of the project was to construct a Covid-19 Isolation Center at Yalgado Ouédraogo University Hospital. Project implementation commenced on April 15, 2020. The project was completed on July 3, 2020.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure development with no direct environmental or energy transition impact,"Construction of Covid-19 Isolation Center at a university hospital, healthcare sector focus"
+97945,HEALTH,"Chinese Government provides USD 1,155,000 to support COVID-19 via World Health Organization in Burkina Faso in March 2020","In March 2020, Chinese government provides USD 1,155,000 to support WHO response to COVID-19 outbreak in Burkina Faso.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides USD 1,155,000 to support COVID-19 via World Health Organization in Burkina Faso in March 2020
+
+# Description
+In March 2020, Chinese government provides USD 1,155,000 to support WHO response to COVID-19 outbreak in Burkina Faso.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support and COVID-19 response, with no direct environmental or energy transition impact","Funding provided to WHO for COVID-19 response in Burkina Faso, healthcare sector focus"
+72604,EDUCATION,Chinese Embassy donates computers to secondary school and vocational training center in Burundi in September 2020,"On September 1, 2020, the Chinese Embassy in Burundi donated a batch of computer equipment to  Kigobe Vocational Training Center and Kamonge Technical Secondary School to help both schools improve their teaching conditions..",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy donates computers to secondary school and vocational training center in Burundi in September 2020
+
+# Description
+On September 1, 2020, the Chinese Embassy in Burundi donated a batch of computer equipment to  Kigobe Vocational Training Center and Kamonge Technical Secondary School to help both schools improve their teaching conditions..",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and vocational training without direct environmental or energy transition impacts,"Donation of computer equipment to schools and vocational training center, education sector focus"
+72605,EMERGENCY RESPONSE,China Provides Annual Burundi Emergency Food Aid in March 2020,"On March 4, 2020, the Chinese Embassy signed the handover certificate for the provision of its annual emergency food assistance to the Burundian government. Since 2017, China has annually provided 5,000 tons of rice and a group of senior agricultural experts to Burundi for climate hazard relief..",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China Provides Annual Burundi Emergency Food Aid in March 2020
+
+# Description
+On March 4, 2020, the Chinese Embassy signed the handover certificate for the provision of its annual emergency food assistance to the Burundian government. Since 2017, China has annually provided 5,000 tons of rice and a group of senior agricultural experts to Burundi for climate hazard relief..",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on emergency food aid and agricultural expertise, with no direct energy or environmental implications","Provision of 5,000 tons of rice and agricultural experts for climate hazard relief"
+92003,EMERGENCY RESPONSE,China donates four batches of anti-epidemic materials to Burundi for the fight against Covid-19 in June 2020,"On June 4, 2020, the Chinese Embassy in Burundi along with the Jack Ma Public Welfare Fund donated four batches of anti-epidemic supplies to Burundi. The supplies included testing reagents, medical masks, medical gloves, protective clothing, shoe covers, and forehead thermometers. The handover ceremony was held at the Burundi Basic Medicine Procurement Center..",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates four batches of anti-epidemic materials to Burundi for the fight against Covid-19 in June 2020
+
+# Description
+On June 4, 2020, the Chinese Embassy in Burundi along with the Jack Ma Public Welfare Fund donated four batches of anti-epidemic supplies to Burundi. The supplies included testing reagents, medical masks, medical gloves, protective clothing, shoe covers, and forehead thermometers. The handover ceremony was held at the Burundi Basic Medicine Procurement Center..",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies for public health purposes with no direct environmental or energy transition impact,"Anti-epidemic materials including testing reagents, medical masks, protective clothing, and other healthcare supplies"

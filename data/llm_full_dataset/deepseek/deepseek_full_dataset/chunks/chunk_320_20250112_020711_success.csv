@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91651,HEALTH,China sends team of medical experts to Venezuela to support fight against Covid-19 in March 2020,"On March 19, 2020 the National Health Commission of China announced it would send a group of eight medical experts to Venezuela. The team was sent to help Venezuela in the effort against the Covid-19 pandemic. They were selected by the commission of health of the Jiangsu province, and specialize in laboratory testing, infectious disease control, and respiratory and critical disease sciences.   The team flew from the Jiangsu province and landed in Caracas on March 30. During their time there, they met with various government organizations and shared China's experience dealing with Covid-19. Upon their departure on April 11, the Venezuelan government granted the eight experts with the second level of the Order of Francisco de Miranda.","1. One official report (Source ID# 159284) claims that the trip lasted fifteen days, though the dates indicate that it only lasted twelve.","# Sector
+HEALTH
+
+# Title
+China sends team of medical experts to Venezuela to support fight against Covid-19 in March 2020
+
+# Description
+On March 19, 2020 the National Health Commission of China announced it would send a group of eight medical experts to Venezuela. The team was sent to help Venezuela in the effort against the Covid-19 pandemic. They were selected by the commission of health of the Jiangsu province, and specialize in laboratory testing, infectious disease control, and respiratory and critical disease sciences.   The team flew from the Jiangsu province and landed in Caracas on March 30. During their time there, they met with various government organizations and shared China's experience dealing with Covid-19. Upon their departure on April 11, the Venezuelan government granted the eight experts with the second level of the Order of Francisco de Miranda.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare support and pandemic response, with no direct environmental or energy transition impacts","Medical expert team sent to Venezuela for Covid-19 response, specialized in infectious disease control and critical care"
+91767,HEALTH,China donates 2nd batch of anti-epidemic materials to Venezuela in March 2020,"On March 28, 2020, the 2nd shipment of anti-epidemic materials from China arrived in Venezuela. The donated materials amounted to 55 tons and included 500,000 Covid-19 rapid tests, 50,000 PCR test kits, ventilators to reinforce sentinel hospitals, 5 million masks, more than 100 isolation and protection suits for health personnel, safety glasses, gloves, slippers, as well as more than 70 thousand infrared thermometers. The shipment also included antivirals, sedatives, and more than 30 thousand units of Chloroquine. The donations arrived at Simon Bolivar International Airport.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates 2nd batch of anti-epidemic materials to Venezuela in March 2020
+
+# Description
+On March 28, 2020, the 2nd shipment of anti-epidemic materials from China arrived in Venezuela. The donated materials amounted to 55 tons and included 500,000 Covid-19 rapid tests, 50,000 PCR test kits, ventilators to reinforce sentinel hospitals, 5 million masks, more than 100 isolation and protection suits for health personnel, safety glasses, gloves, slippers, as well as more than 70 thousand infrared thermometers. The shipment also included antivirals, sedatives, and more than 30 thousand units of Chloroquine. The donations arrived at Simon Bolivar International Airport.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support and epidemic response, with no direct environmental or energy transition impact","Donation of medical supplies including tests, PPE, ventilators, and medications for COVID-19 response"
+91768,HEALTH,China donates 1st shipment of anti-epidemic materials to Venezuela in March 2020,"On March 19, 2020, the first shipment of anti-epidemic materials from China arrived in Venezuela. The shipment included 4,000 early diagnosis test kits, as well as materials used to administer these tests such as biosecurity suits, protective goggles, gloves, and air purifiers to support Venezuelan health care systems. The shipment arrived at Simon Bolivar International Airport in Caracas.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates 1st shipment of anti-epidemic materials to Venezuela in March 2020
+
+# Description
+On March 19, 2020, the first shipment of anti-epidemic materials from China arrived in Venezuela. The shipment included 4,000 early diagnosis test kits, as well as materials used to administer these tests such as biosecurity suits, protective goggles, gloves, and air purifiers to support Venezuelan health care systems. The shipment arrived at Simon Bolivar International Airport in Caracas.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Anti-epidemic materials including test kits, biosecurity suits, protective equipment, and air purifiers"
+91797,HEALTH,China donates 6th shipment of anti-pandemic materials to Venezuela in June 2020,"On June 6, 2020, the 6th shipment of anti-pandemic materials from China arrived in Venezuela. The donated materials amounted to 80 tons and included 800,000 quick tests, technology with machinery and all the accessories to process the PCR tests for the detection of COVID-19, health supplies, personal protective equipment for health workers, and two million masks. The materials arrived at Simon Bolivar International Airport.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates 6th shipment of anti-pandemic materials to Venezuela in June 2020
+
+# Description
+On June 6, 2020, the 6th shipment of anti-pandemic materials from China arrived in Venezuela. The donated materials amounted to 80 tons and included 800,000 quick tests, technology with machinery and all the accessories to process the PCR tests for the detection of COVID-19, health supplies, personal protective equipment for health workers, and two million masks. The materials arrived at Simon Bolivar International Airport.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare support and pandemic response without direct environmental or energy transition implications,"Donation of anti-pandemic materials including tests, protective equipment, and masks"
+91798,HEALTH,China donates 5 ambulances to Venezuela to aid in the pandemic in June 2020,"On June 12, 2020, China donated 5 ambulances to Venezuela to help with the fight against COVID-19. The humanitarian effort was meant as a measure of goodwill between the two countries.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 5 ambulances to Venezuela to aid in the pandemic in June 2020
+
+# Description
+On June 12, 2020, China donated 5 ambulances to Venezuela to help with the fight against COVID-19. The humanitarian effort was meant as a measure of goodwill between the two countries.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a humanitarian donation of medical equipment unrelated to energy or environmental impacts,"Donation of 5 ambulances for COVID-19 response, healthcare focus"
+91799,HEALTH,China donates 9th shipment of anti-pandemic materials to Venezuela in December 2020,"On December 22, 2020, the 9th shipment of anti-pandemic materials from China arrived in Venezuela. The shipment included medicines and medical products as well as PCR tests, rapid tests, masks, disposable gowns, and an oxygen concentrator.   The materials arrived at the Simon Bolivar International Airport. As of the arrival of this shipment, Venezuela had received 247 tons of anti-pandemic materials from China.   The Vice President of Venezuela, Delcy Rodríguez, accepted the donation from Chinese Ambassador to Venezuela Li Baorong. Upon the acceptance, the vice president thanked China for its assistance with materials while the country was facing an economic barricade and increased sanctions from other countries including the United States.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 9th shipment of anti-pandemic materials to Venezuela in December 2020
+
+# Description
+On December 22, 2020, the 9th shipment of anti-pandemic materials from China arrived in Venezuela. The shipment included medicines and medical products as well as PCR tests, rapid tests, masks, disposable gowns, and an oxygen concentrator.   The materials arrived at the Simon Bolivar International Airport. As of the arrival of this shipment, Venezuela had received 247 tons of anti-pandemic materials from China.   The Vice President of Venezuela, Delcy Rodríguez, accepted the donation from Chinese Ambassador to Venezuela Li Baorong. Upon the acceptance, the vice president thanked China for its assistance with materials while the country was facing an economic barricade and increased sanctions from other countries including the United States.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Shipment of anti-pandemic materials including medicines, medical products, and PPE"
+91800,HEALTH,China donates 7th shipment of anti-pandemic materials to Venezuela in September 2020,"On September 8, 2020, the 7th shipment of anti-pandemic materials from China arrived in Venezuela. Included in this shipment were medicines considered traditional Chinese medicines as well as medical equipment and supplies. The donations arrived at the Simon Bolivar International Airport.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 7th shipment of anti-pandemic materials to Venezuela in September 2020
+
+# Description
+On September 8, 2020, the 7th shipment of anti-pandemic materials from China arrived in Venezuela. Included in this shipment were medicines considered traditional Chinese medicines as well as medical equipment and supplies. The donations arrived at the Simon Bolivar International Airport.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies and equipment, unrelated to energy or environmental impact","Anti-pandemic materials, medicines, medical equipment and supplies"
+91802,HEALTH,China donates 8th shipment of anti-pandemic materials to Venezuela in September 2020,"On September 29, 2020, the 8th shipment of anti-pandemic materials from China arrived in Venezuela. The donated materials amounted to 15 tons and included 300,000 rapid tests, 200,000 kits for PCR tests, 3 thermal cyclers,105,000 units of drugs for intensive care aimed at treating covid-19, 55 ventilators, including transport fans, and 50 oxygen concentrators. The materials arrived at Simón Bolívar International Airport in Caracas.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates 8th shipment of anti-pandemic materials to Venezuela in September 2020
+
+# Description
+On September 29, 2020, the 8th shipment of anti-pandemic materials from China arrived in Venezuela. The donated materials amounted to 15 tons and included 300,000 rapid tests, 200,000 kits for PCR tests, 3 thermal cyclers,105,000 units of drugs for intensive care aimed at treating covid-19, 55 ventilators, including transport fans, and 50 oxygen concentrators. The materials arrived at Simón Bolívar International Airport in Caracas.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and pandemic response with no direct environmental or energy transition impact,"Donation of medical supplies including tests, drugs, ventilators, and oxygen concentrators for COVID-19 response"
+91803,HEALTH,China donates 3rd shipment of anti-pandemic materials to Venezuela in April 2020,"On April 8, 2020, the 3rd shipment of anti-pandemic materials arrived in Venezuela in the Province Lara. The estimated value of this shipment is USD 30,000.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 3rd shipment of anti-pandemic materials to Venezuela in April 2020
+
+# Description
+On April 8, 2020, the 3rd shipment of anti-pandemic materials arrived in Venezuela in the Province Lara. The estimated value of this shipment is USD 30,000.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and pandemic response with no direct environmental or energy transition impact,"Anti-pandemic materials donation, healthcare focus, no energy or infrastructure components"
+95743,HEALTH,"National Health Commission in Nanjing, China provides a medical team to Venezuela in March 2020","On March 29, 2020, the Chinese National Health Commission in Nanjing, China, sent a medical team to Venezuela to provide COVID-19 control assistance. The medical team, organized by the National Health Commission, consisted of hospital workers and medical professionals from the Provincial Disease Control and Prevention Center in Jiangsu, China. The members specialized in respiratory aid and critical care, infectious disease control, laboratory testing, nursing and traditional Chinese medicine.   While in Venezuela, the medical team provided general COVID-19 prevention assistance. They also visited local medical institutions, hospitals, and communities to provide anti-epidemic training for local medical staff. The medical team returned to Nanjing on April 13, 2020.",NA,"# Sector
+HEALTH
+
+# Title
+National Health Commission in Nanjing, China provides a medical team to Venezuela in March 2020
+
+# Description
+On March 29, 2020, the Chinese National Health Commission in Nanjing, China, sent a medical team to Venezuela to provide COVID-19 control assistance. The medical team, organized by the National Health Commission, consisted of hospital workers and medical professionals from the Provincial Disease Control and Prevention Center in Jiangsu, China. The members specialized in respiratory aid and critical care, infectious disease control, laboratory testing, nursing and traditional Chinese medicine.   While in Venezuela, the medical team provided general COVID-19 prevention assistance. They also visited local medical institutions, hospitals, and communities to provide anti-epidemic training for local medical staff. The medical team returned to Nanjing on April 13, 2020.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare assistance and COVID-19 response, with no direct environmental or energy transition impact","Medical team providing COVID-19 control assistance, training, and healthcare support"

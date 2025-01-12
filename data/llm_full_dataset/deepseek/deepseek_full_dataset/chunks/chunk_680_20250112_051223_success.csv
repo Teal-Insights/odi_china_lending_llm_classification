@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+58016,HEALTH,China sends 5th medical team to Malawi,"On April 18, 2017, the 5th medical team sent by the Chinese government arrived in Malawi for their mission.  Each medical team to Malawi consists of 16 people that have been selected by the Shaanxi Provincial Health and Family Planning Commission.  On April 18, 2018, the Chinese Embassy in Malawi held a ceremony congratulating the medical team on their year of work.  Ambassador Wang presented the fifth batch of medical team members with an honorary certificate signed by the Ministry of Health of Malawi.  The ceremony also inaugurated the sixth medical team as they began their mission.",NA,"# Sector
+HEALTH
+
+# Title
+China sends 5th medical team to Malawi
+
+# Description
+On April 18, 2017, the 5th medical team sent by the Chinese government arrived in Malawi for their mission.  Each medical team to Malawi consists of 16 people that have been selected by the Shaanxi Provincial Health and Family Planning Commission.  On April 18, 2018, the Chinese Embassy in Malawi held a ceremony congratulating the medical team on their year of work.  Ambassador Wang presented the fifth batch of medical team members with an honorary certificate signed by the Ministry of Health of Malawi.  The ceremony also inaugurated the sixth medical team as they began their mission.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves sending medical teams for healthcare purposes, with no direct environmental or energy transition impact","Medical team mission, healthcare focus, no energy or infrastructure components mentioned"
+58020,GOVERNMENT AND CIVIL SOCIETY,Chinese embassy donates equipment to Peaceful Mothers Foundation,"On April 5, 2017, the Chinese embassy donated equipment to the Malawi Peaceful Mothers Foundation, including computers, sewing machines, and bicycles. The value of this grant is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese embassy donates equipment to Peaceful Mothers Foundation
+
+# Description
+On April 5, 2017, the Chinese embassy donated equipment to the Malawi Peaceful Mothers Foundation, including computers, sewing machines, and bicycles. The value of this grant is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of equipment to a civil society organization without clear environmental or energy transition impacts,"Donation of computers, sewing machines, and bicycles to Peaceful Mothers Foundation"
+58021,EDUCATION,Chinese Embassy to Malawi donates sports supplies to Mulanje schools,"On March 28, 2017, Ambassador Wang of Malawi met with the Malawi Minister of Local Government and Rural Development, Kondwani Namkumwa, and donated a number of sports items such as footballs, domestic tablet scones and other sports goods on behalf of the Chinese Embassy to primary and secondary schools in the Mulanje district of the South Kumwa constituency. The value of the donation is unknown.  Namkumwa thanked the Embassy for its donation, which will greatly improve the lack of stylistic equipment in primary and secondary schools in his constituency and enrich students' after-school lives. ",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy to Malawi donates sports supplies to Mulanje schools
+
+# Description
+On March 28, 2017, Ambassador Wang of Malawi met with the Malawi Minister of Local Government and Rural Development, Kondwani Namkumwa, and donated a number of sports items such as footballs, domestic tablet scones and other sports goods on behalf of the Chinese Embassy to primary and secondary schools in the Mulanje district of the South Kumwa constituency. The value of the donation is unknown.  Namkumwa thanked the Embassy for its donation, which will greatly improve the lack of stylistic equipment in primary and secondary schools in his constituency and enrich students' after-school lives. ",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of sports equipment to schools with no direct environmental or energy transition impact,"Donation of sports items to schools, focus on education and student enrichment"
+58022,WATER SUPPLY AND SANITATION,Chinese embassy donates four wells in Mulanje and Zilazulu regions,"On January 16, 2017, a handover ceremony was held for four wells in the Mulanje and Zilazulu regions donated by the Chinese embassy.  The ceremony was attended by Ambassador Wang, Minister of Agriculture, Irrigation and Water Development, George Saponta, and the Minister of Industry, Trade and Tourism, Joseph Mwanamweka.  The value and commitment date are unknown.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese embassy donates four wells in Mulanje and Zilazulu regions
+
+# Description
+On January 16, 2017, a handover ceremony was held for four wells in the Mulanje and Zilazulu regions donated by the Chinese embassy.  The ceremony was attended by Ambassador Wang, Minister of Agriculture, Irrigation and Water Development, George Saponta, and the Minister of Industry, Trade and Tourism, Joseph Mwanamweka.  The value and commitment date are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on water supply infrastructure for community development without clear energy or environmental implications,"Donation of four wells for water supply, no energy-related components mentioned"
+58241,EDUCATION,Chinese government sends 26 Malawian students to study infrastructure planning and construction in China,"On November 2, 2017, the Chinese government held a ceremony for 26 Malawian students who would study infrastructure planning and construction in China.  The ceremony was hosted by the Chinese Embassy, with Ambassador Wang and Malawi Minister of Local Government Nankumwa giving speeches. It is unclear when the students actually left for China.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government sends 26 Malawian students to study infrastructure planning and construction in China
+
+# Description
+On November 2, 2017, the Chinese government held a ceremony for 26 Malawian students who would study infrastructure planning and construction in China.  The ceremony was hosted by the Chinese Embassy, with Ambassador Wang and Malawi Minister of Local Government Nankumwa giving speeches. It is unclear when the students actually left for China.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and capacity building without direct environmental or energy transition impacts,"26 Malawian students studying infrastructure planning and construction, education-focused initiative"
+58243,EDUCATION,Chinese embassy helps fund construction of the “Student Transfer Hall” at Enhui Primary School,"On May 4, 2017, a groundbreaking ceremony was held for the Chinese embassy-funded ""Student Transfer Hall"" at Enhui Primary School in Malawi. Whether the funding was in the form of a grant or a loan is unclear. The current status of the project is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese embassy helps fund construction of the “Student Transfer Hall” at Enhui Primary School
+
+# Description
+On May 4, 2017, a groundbreaking ceremony was held for the Chinese embassy-funded ""Student Transfer Hall"" at Enhui Primary School in Malawi. Whether the funding was in the form of a grant or a loan is unclear. The current status of the project is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on education infrastructure with no clear environmental or energy transition impact,"Construction of 'Student Transfer Hall' at primary school, education sector focus"
+58260,HEALTH,China Health and Family Planning Commission sends 16 medical experts to train health officials at Malawi Ministry of Health,"On June 26, 2014, the Malawi Ministry of Heath signed a bilateral agreement with the Chinese Ministry of National Health and Family Planning, according to the Malawi government news agency Mana. The Chinese Embassy in Malawi reportst that from April 17-20, 2017, the China Health and Family Planning Commission sent 16 medical experts to train health officials at the Malawi Ministry of Health.",NA,"# Sector
+HEALTH
+
+# Title
+China Health and Family Planning Commission sends 16 medical experts to train health officials at Malawi Ministry of Health
+
+# Description
+On June 26, 2014, the Malawi Ministry of Heath signed a bilateral agreement with the Chinese Ministry of National Health and Family Planning, according to the Malawi government news agency Mana. The Chinese Embassy in Malawi reportst that from April 17-20, 2017, the China Health and Family Planning Commission sent 16 medical experts to train health officials at the Malawi Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare training and capacity building without direct environmental or energy transition impacts,"Training of health officials, healthcare sector focus"
+58388,EDUCATION,Chinese Embassy funds business training in China for 10 Malawian youth,"On June 18, 2017, the Chinese Embassy funded a month-long business skills training in China for 10 Malawian youth. The trip was also sponsored by the African Union and the government of Malawi and is part of the African Union's (AU) Hundred Young Entrepreneurs per Year Program, under which 100 youths engaged in various businesses are recognized and sponsored on skill enhancement trips. The value of this training donated by the Chinese embassy is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy funds business training in China for 10 Malawian youth
+
+# Description
+On June 18, 2017, the Chinese Embassy funded a month-long business skills training in China for 10 Malawian youth. The trip was also sponsored by the African Union and the government of Malawi and is part of the African Union's (AU) Hundred Young Entrepreneurs per Year Program, under which 100 youths engaged in various businesses are recognized and sponsored on skill enhancement trips. The value of this training donated by the Chinese embassy is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and skill development without direct environmental or energy transition impacts,"Business skills training for youth, education sector focus"
+58443,GOVERNMENT AND CIVIL SOCIETY,Chinese Government grants 1 million RMB to Malawi Ministry of Foreign Affairs and International Cooperation (linked to Project ID#71324),"On December 12, 2017, the Chinese government announced a grant of 1 million RMB to Malawi Ministry of Foreign Affairs and International Cooperation at the celebration of 10 years of diplomatic relations between the two countries.  Deputy Minister Xiadong said China believes the grant will help implement Malawi's projects under the Malawi-China Development Cooperation Framework. The 1 million RMB was targeted at enhancing capacity building in the Ministry of Foreign Affairs and International Cooperation and helping to carry out protocol activities more easily across the country. It is unknown whether the funds were actually disbursed.  Linked to Project ID #71324 (umbrella project).",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government grants 1 million RMB to Malawi Ministry of Foreign Affairs and International Cooperation (linked to Project ID#71324)
+
+# Description
+On December 12, 2017, the Chinese government announced a grant of 1 million RMB to Malawi Ministry of Foreign Affairs and International Cooperation at the celebration of 10 years of diplomatic relations between the two countries.  Deputy Minister Xiadong said China believes the grant will help implement Malawi's projects under the Malawi-China Development Cooperation Framework. The 1 million RMB was targeted at enhancing capacity building in the Ministry of Foreign Affairs and International Cooperation and helping to carry out protocol activities more easily across the country. It is unknown whether the funds were actually disbursed.  Linked to Project ID #71324 (umbrella project).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a government grant for capacity building and protocol activities, unrelated to energy or environmental impacts","Grant for capacity building in Ministry of Foreign Affairs, focus on protocol activities"
+58546,EMERGENCY RESPONSE,"Chinese government donates 3,270 metric tons of rice worth $3 million USD to 5,290 households in Malawi","On December 20, 2017, the Chinese government donated 3,270 metric tons of parboiled rice to 5,290 households that were affected by disasters in 2017 in Ntcheu, Malawi. The rice is worth $3 million USD. In 2017, the people in Malawi suffered from armyworm attacks, floods, and poor rain patterns during the growing season. The food will be disbursed by the Malawian government to ten districts to cushion the suffering of the people in the affected areas. In Ntcheu, about 264.5 metric tonnes of rice will benefit people from five traditional authorities of Ganya and Masasa in Sharpevalley EPA as well as Makwangwala, Phambala and Tsikulamowa in Manjawira EPA’s.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese government donates 3,270 metric tons of rice worth $3 million USD to 5,290 households in Malawi
+
+# Description
+On December 20, 2017, the Chinese government donated 3,270 metric tons of parboiled rice to 5,290 households that were affected by disasters in 2017 in Ntcheu, Malawi. The rice is worth $3 million USD. In 2017, the people in Malawi suffered from armyworm attacks, floods, and poor rain patterns during the growing season. The food will be disbursed by the Malawian government to ten districts to cushion the suffering of the people in the affected areas. In Ntcheu, about 264.5 metric tonnes of rice will benefit people from five traditional authorities of Ganya and Masasa in Sharpevalley EPA as well as Makwangwala, Phambala and Tsikulamowa in Manjawira EPA’s.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian food donation with no direct environmental or energy transition impact,"Food donation to disaster-affected households, humanitarian relief focus"

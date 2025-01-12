@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+52384,EDUCATION,China Awards 50 Scholarships to Sierra Leonean Students (Linked to Project #44564),"August 2015, the Chinese government announced that it had raised the number of scholarships for Sierra Leonean students from 35 to 50. This year also marked the continuation of the scholarship program after it was halted due to the Ebola epidemic in West Africa. The financial amount of the scholarships is unknown.",This appears to be an annually occurring program (see project ID #44564).,"# Sector
+EDUCATION
+
+# Title
+China Awards 50 Scholarships to Sierra Leonean Students (Linked to Project #44564)
+
+# Description
+August 2015, the Chinese government announced that it had raised the number of scholarships for Sierra Leonean students from 35 to 50. This year also marked the continuation of the scholarship program after it was halted due to the Ebola epidemic in West Africa. The financial amount of the scholarships is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education with no direct environmental or energy transition impact,"Education sector, scholarship program for students, no energy or infrastructure components"
+52387,EDUCATION,"China Awards 7,000 Scholarships for Young Professionals from Sierra Leone","On October 1, 2015, the Chinese president, Xi Jinping, announced that China would award Sierra Leone with 7,000 scholarships for young professionals to study in China. This is part of a project awarding 35,000 scholarships to students across Africa. Cost of the project is unknown. Project status is also unknown but it is most likely complete",NA,"# Sector
+EDUCATION
+
+# Title
+China Awards 7,000 Scholarships for Young Professionals from Sierra Leone
+
+# Description
+On October 1, 2015, the Chinese president, Xi Jinping, announced that China would award Sierra Leone with 7,000 scholarships for young professionals to study in China. This is part of a project awarding 35,000 scholarships to students across Africa. Cost of the project is unknown. Project status is also unknown but it is most likely complete",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and human development without direct environmental or energy transition impacts,"7,000 scholarships for young professionals, part of broader African education initiative"
+53018,HEALTH,China donated anti-Ebola materials to Sierra Leone,"On March 13, 2015, China donated a batch of anti-Ebola materials to Sierra Leone. Zhao Yanbo, Ambassador of Sierra Leone, and Koroma, President of Serbia, attended the handover ceremony.  Ambassador Zhao and Deputy Minister of the Ministry of Health Savi signed anti-epidemic materials handover certificates on behalf of the two governments.",This project is not to be confused with #62556 because the handover date is different.,"# Sector
+HEALTH
+
+# Title
+China donated anti-Ebola materials to Sierra Leone
+
+# Description
+On March 13, 2015, China donated a batch of anti-Ebola materials to Sierra Leone. Zhao Yanbo, Ambassador of Sierra Leone, and Koroma, President of Serbia, attended the handover ceremony.  Ambassador Zhao and Deputy Minister of the Ministry of Health Savi signed anti-epidemic materials handover certificates on behalf of the two governments.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of anti-Ebola materials, healthcare sector focus"
+53019,HEALTH,China provides anti-Ebola training program in Sierra Leone,"On January 6, 2015, China launched the Anti-Ebola Training Program in Sierra Leone. Chinese Ambassador Zhao Yanbo, Ambassador of Sierra Leone attended the launching ceremony. Since the Ebola outbreak, China has provided all-round support. Up to the launch of this project, Chinese public health experts have trained more than 2,300 people in Sierra Leone.   This intensive training project will further penetrate the grassroots level, and in the three administrative villages of Zhuyi, Corso, and Grafton, systematically help the grassroots to enhance their current anti-epidemic capabilities and their ability to respond to other infectious diseases in the future.  The current status of the project is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China provides anti-Ebola training program in Sierra Leone
+
+# Description
+On January 6, 2015, China launched the Anti-Ebola Training Program in Sierra Leone. Chinese Ambassador Zhao Yanbo, Ambassador of Sierra Leone attended the launching ceremony. Since the Ebola outbreak, China has provided all-round support. Up to the launch of this project, Chinese public health experts have trained more than 2,300 people in Sierra Leone.   This intensive training project will further penetrate the grassroots level, and in the three administrative villages of Zhuyi, Corso, and Grafton, systematically help the grassroots to enhance their current anti-epidemic capabilities and their ability to respond to other infectious diseases in the future.  The current status of the project is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on public health training and epidemic response, unrelated to energy or environmental impacts","Anti-Ebola training program, public health focus, infectious disease response training"
+53021,HEALTH,Chinese Government dispatches 17th medical team to Sierra Leone-China Friendship Hospital,"China has been sending medical teams to Sierra Leone from Hunan Province since 1973. China stopped sending medical teams in 1993 due to civil conflict and political instability. However, it began sending teams again in 2002. On November 4th and 6th, 2015, the Chinese Government and the Government of Sierra Leone signed an exchange of letters, dispatching the 17th Chinese medical team to Sierra Leone. The 10-member team was stationed at the Sierra Leone-China Friendship Hospital in the town of Jui. It completed its term of service between late 2015 and 2016.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government dispatches 17th medical team to Sierra Leone-China Friendship Hospital
+
+# Description
+China has been sending medical teams to Sierra Leone from Hunan Province since 1973. China stopped sending medical teams in 1993 due to civil conflict and political instability. However, it began sending teams again in 2002. On November 4th and 6th, 2015, the Chinese Government and the Government of Sierra Leone signed an exchange of letters, dispatching the 17th Chinese medical team to Sierra Leone. The 10-member team was stationed at the Sierra Leone-China Friendship Hospital in the town of Jui. It completed its term of service between late 2015 and 2016.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare services with no direct environmental or energy transition impact,"Dispatch of medical team to hospital, healthcare focus"
+62556,EMERGENCY RESPONSE,[EBOLA] China donates equipments and cash worth $1.854 million to Sierra Leone for combating Ebola,"On January 15, 2015, the Chinese embassy donated on behalf of the Chinese government $500,000 in cash, 15 pick-up trucks and 200 motorbikes worth $ 1 million, and 215 sets of medical protective equipment worth $354,000 thousand to Sierra Leone in response to the Ebola epidemic, according to the Chinese Embassy in Sierra Leone and Chinese Ministry of Commerce.   These donations will help the Sierra Leonean government strengthen social mobilization, Ebola case management and surveillance.  Ernest Bai Koroma,President of Sierra Leone, accepted the aid and Samura Kamara, Minister of Foreign Affairs and International Cooperation, signed the hand-over certificate.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+[EBOLA] China donates equipments and cash worth $1.854 million to Sierra Leone for combating Ebola
+
+# Description
+On January 15, 2015, the Chinese embassy donated on behalf of the Chinese government $500,000 in cash, 15 pick-up trucks and 200 motorbikes worth $ 1 million, and 215 sets of medical protective equipment worth $354,000 thousand to Sierra Leone in response to the Ebola epidemic, according to the Chinese Embassy in Sierra Leone and Chinese Ministry of Commerce.   These donations will help the Sierra Leonean government strengthen social mobilization, Ebola case management and surveillance.  Ernest Bai Koroma,President of Sierra Leone, accepted the aid and Samura Kamara, Minister of Foreign Affairs and International Cooperation, signed the hand-over certificate.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on emergency response and healthcare support without direct environmental or energy transition implications,"Donation of medical equipment, vehicles, and cash for Ebola response, no energy or environmental components mentioned"
+62729,HEALTH,China donates anti-malarial drugs to Sierra Leone,"On May 13, 2015, the Chinese Ambassador to Sierra Leone, Zhao Yanbo, signed a handover certificate with Sierra Leone's Deputy Minister of the Ministry of Health and Sanitation to for anti-malarial drugs in Freetown, according to the Chinese Embassy in Sierra Leone and Chinese Ministry of Commerce.",NA,"# Sector
+HEALTH
+
+# Title
+China donates anti-malarial drugs to Sierra Leone
+
+# Description
+On May 13, 2015, the Chinese Ambassador to Sierra Leone, Zhao Yanbo, signed a handover certificate with Sierra Leone's Deputy Minister of the Ministry of Health and Sanitation to for anti-malarial drugs in Freetown, according to the Chinese Embassy in Sierra Leone and Chinese Ministry of Commerce.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"Donation of anti-malarial drugs, healthcare sector focus"
+62869,TRADE POLICIES AND REGULATIONS,Chinese Government provides container inspection equipment and remote monitoring system to enhance revenue collection (Linked to Project ID#62872),"In early June 2015, the Chinese Ambassador to Sierra Leone, Zhao Yanbo, and Sierra Leone’s Minister of Foreign Affairs and International Cooperation, Samura Kamara, signed a grant agreement for the provision of a container inspection equipment and a remote monitoring system. The monetary value of this grant commitment is unknown. The purpose of this grant was to enhance the customs clearance and revenue collection capabilities of Sierra Leone’s National Revenue Authority (NRA).    Nuctech Co., Ltd. was the contractor responsible for implementation. The container inspection equipment arrived in Sierra Leone in September 2015. Also, through this project, Sierra Leonean customs staff were trained at the Customs Administration Academy in China on how to operate container scanners and analyze images.  Nuctech Co., Ltd. installed the donated container inspection equipment at the Gbalamuya Customs Post. On January 19, 2017, a project handover ceremony was held.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese Government provides container inspection equipment and remote monitoring system to enhance revenue collection (Linked to Project ID#62872)
+
+# Description
+In early June 2015, the Chinese Ambassador to Sierra Leone, Zhao Yanbo, and Sierra Leone’s Minister of Foreign Affairs and International Cooperation, Samura Kamara, signed a grant agreement for the provision of a container inspection equipment and a remote monitoring system. The monetary value of this grant commitment is unknown. The purpose of this grant was to enhance the customs clearance and revenue collection capabilities of Sierra Leone’s National Revenue Authority (NRA).    Nuctech Co., Ltd. was the contractor responsible for implementation. The container inspection equipment arrived in Sierra Leone in September 2015. Also, through this project, Sierra Leonean customs staff were trained at the Customs Administration Academy in China on how to operate container scanners and analyze images.  Nuctech Co., Ltd. installed the donated container inspection equipment at the Gbalamuya Customs Post. On January 19, 2017, a project handover ceremony was held.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on customs and trade infrastructure without clear environmental or energy transition impacts,"Container inspection equipment, remote monitoring system, customs training, focus on revenue collection"
+86554,GOVERNMENT AND CIVIL SOCIETY,China donates 150 books authored by Xi Jinping to members and staff of Sierra Leone Parliament,"During the third session of Parliament (December 5, 2014 - December 9, 2015), the Chinese Ambassador to Sierra Leone donated 150 books written by Xi Jinping to the members and staff of the Sierra Leone Parliament.",The date of the donation is unknown; the project may have occurred in late 2014 rather than 2015.,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates 150 books authored by Xi Jinping to members and staff of Sierra Leone Parliament
+
+# Description
+During the third session of Parliament (December 5, 2014 - December 9, 2015), the Chinese Ambassador to Sierra Leone donated 150 books written by Xi Jinping to the members and staff of the Sierra Leone Parliament.",TRUE,NA,NEUTRAL,HIGH,Social Development,Book donation is a cultural/social development activity with no direct environmental or energy transition impact,"Donation of 150 books to parliament members and staff, no energy-related components"
+52326,GOVERNMENT AND CIVIL SOCIETY,"Chinese embassy donates consignments to Badbaado Orphanage Center in Mogadishu, Somalia","In June 2015, according to the Chinese embassy in Somalia, Wei Hongtian, the Chinese Ambassador to Somalia, donated blankets, chairs, tables, backpacks, and educational supplies the Badbaado Orphanage Center in Mogadishu, which houses 121 orphans. The Embassy supports the program through the “China-Africa People-to-People Friendship Action” Program. Mohamed Omar Dalha, Deputy Chairman of the Committee of Foreign Affairs and International Cooperation of the Federal Parliament of Somalia, and some representatives from local community attended the hand-over ceremony. ",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese embassy donates consignments to Badbaado Orphanage Center in Mogadishu, Somalia
+
+# Description
+In June 2015, according to the Chinese embassy in Somalia, Wei Hongtian, the Chinese Ambassador to Somalia, donated blankets, chairs, tables, backpacks, and educational supplies the Badbaado Orphanage Center in Mogadishu, which houses 121 orphans. The Embassy supports the program through the “China-Africa People-to-People Friendship Action” Program. Mohamed Omar Dalha, Deputy Chairman of the Committee of Foreign Affairs and International Cooperation of the Federal Parliament of Somalia, and some representatives from local community attended the hand-over ceremony. ",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of basic supplies to an orphanage, with no direct environmental or energy transition impact","Donation of blankets, chairs, tables, backpacks, and educational supplies to orphanage center"

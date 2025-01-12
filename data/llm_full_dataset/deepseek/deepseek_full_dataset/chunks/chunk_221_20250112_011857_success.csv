@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+90406,HEALTH,"Chinese Consulate General in Kuching donates 2,000 masks and 500 protective suits to Sarawak General Hospital in April 2020 (Linked to Project ID#90408)","On April 24, 2020, the Chinese Consulate General in Kuching provided a donation of 2,000 medical masks and 500 protective suits to the Sarawak General Hospital in Malaysia. This donation is intended to aid the hospital in combatting COVID-19. The monetary value of the donation is unknown.  This is the first of two batches of medical supplies provided by the Chinese Consulate General to Sarawak General Hospital. The details of the second batch are captured in Project ID #90408.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Kuching donates 2,000 masks and 500 protective suits to Sarawak General Hospital in April 2020 (Linked to Project ID#90408)
+
+# Description
+On April 24, 2020, the Chinese Consulate General in Kuching provided a donation of 2,000 medical masks and 500 protective suits to the Sarawak General Hospital in Malaysia. This donation is intended to aid the hospital in combatting COVID-19. The monetary value of the donation is unknown.  This is the first of two batches of medical supplies provided by the Chinese Consulate General to Sarawak General Hospital. The details of the second batch are captured in Project ID #90408.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 2,000 masks and 500 protective suits to hospital for COVID-19 response"
+90408,HEALTH,"Chinese Consulate General in Kuching donates 6,000 masks and 300 protective suits to 3 hospitals in Malaysia in April 2020 (Linked to Project ID#90406)","On April 30, 2020, the Chinese Consulate General in Kuching provided a donation of 6,000 medical masks and 300 protective suits to Malaysian general hospitals in Miri, Sibu, and Bintulu. This donation is intended to aid the hospitals in combatting COVID-19. The monetary value of the donation is unknown.  This is the second batch of medical supplies provided by the Chinese Consulate General to hospitals in Malaysia. Details on the first batch are captured in Project ID #90406.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Kuching donates 6,000 masks and 300 protective suits to 3 hospitals in Malaysia in April 2020 (Linked to Project ID#90406)
+
+# Description
+On April 30, 2020, the Chinese Consulate General in Kuching provided a donation of 6,000 medical masks and 300 protective suits to Malaysian general hospitals in Miri, Sibu, and Bintulu. This donation is intended to aid the hospitals in combatting COVID-19. The monetary value of the donation is unknown.  This is the second batch of medical supplies provided by the Chinese Consulate General to hospitals in Malaysia. Details on the first batch are captured in Project ID #90406.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 6,000 masks and 300 protective suits to hospitals for COVID-19 response"
+90409,HEALTH,"Changsha High Tech Industrial Development Zone donates 10,300 masks to Malaysia-China Friendship Association","On March 26, 2020, the Malaysia-China Friendship Association announced that 10,000 masks and 3,000 N95 masks were being donated by Changsha High Tech Industrial Development Zone to the association. On March 31, the supply arrived in Malaysia. The donation will go toward the frontline in the fight against COVID-19 in Malaysia.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Changsha High Tech Industrial Development Zone donates 10,300 masks to Malaysia-China Friendship Association
+
+# Description
+On March 26, 2020, the Malaysia-China Friendship Association announced that 10,000 masks and 3,000 N95 masks were being donated by Changsha High Tech Industrial Development Zone to the association. On March 31, the supply arrived in Malaysia. The donation will go toward the frontline in the fight against COVID-19 in Malaysia.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of masks for COVID-19 response, healthcare focus"
+90410,HEALTH,"Chinese Embassy in Malaysia donates 30,000 masks to the Malaysia-China Friendship Association","On April 15, 2020, the Chinese Embassy in Malaysia donated 30,000 masks to the Malaysia-China Friendship Association. The donation will go towards medical institutions and groups in need within the country. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Malaysia donates 30,000 masks to the Malaysia-China Friendship Association
+
+# Description
+On April 15, 2020, the Chinese Embassy in Malaysia donated 30,000 masks to the Malaysia-China Friendship Association. The donation will go towards medical institutions and groups in need within the country. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation of masks to medical institutions and groups in need, healthcare-related social development"
+90411,EDUCATION,"Chinese Embassy in Malaysia donates RM 200,000 to Malaysia-China Friendship Association for Youth Exchange Fund (Linked to Project ID#66241, #86967)","On September 24, 2020, the Chinese Embassy in Malaysia donated RM 200,000 to Malaysia-China Friendship Association. The donation goes to the Youth Exchange Fund where Malaysian youth go to China to learn about culture, education, business, and lifestyle through Chinese Universities.  This is part of a larger set of donations from the embassy to the Youth Exchange Fund (see #86967, #66241).",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Malaysia donates RM 200,000 to Malaysia-China Friendship Association for Youth Exchange Fund (Linked to Project ID#66241, #86967)
+
+# Description
+On September 24, 2020, the Chinese Embassy in Malaysia donated RM 200,000 to Malaysia-China Friendship Association. The donation goes to the Youth Exchange Fund where Malaysian youth go to China to learn about culture, education, business, and lifestyle through Chinese Universities.  This is part of a larger set of donations from the embassy to the Youth Exchange Fund (see #86967, #66241).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on cultural and educational exchange without direct environmental or energy transition impacts,"Youth exchange program focused on culture, education, and lifestyle through universities"
+90412,HEALTH,"Chinese Consulate General in Penang donates Covid-19 supplies to Perak, Malaysia (Linked to Project ID#93094)","On March 31, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 medical masks and CRRC contributed 5,000 masks and 350L disinfectants to Perak, Malaysia (Project ID#93094). This donation is intended to aid the Perak State Government in combatting COVID-19. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Penang donates Covid-19 supplies to Perak, Malaysia (Linked to Project ID#93094)
+
+# Description
+On March 31, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 medical masks and CRRC contributed 5,000 masks and 350L disinfectants to Perak, Malaysia (Project ID#93094). This donation is intended to aid the Perak State Government in combatting COVID-19. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies for public health purposes with no direct environmental or energy transition impact,Donation of medical masks and disinfectants for COVID-19 response
+90413,HEALTH,"Chinese Consulate General in Penang donates 15,000 masks to Kedah State Government","On April 1, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Kedah State Government in Malaysia. This donation is intended to aid Kedah against COVID-19 and will be transferred to the health department. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Penang donates 15,000 masks to Kedah State Government
+
+# Description
+On April 1, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Kedah State Government in Malaysia. This donation is intended to aid Kedah against COVID-19 and will be transferred to the health department. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of 15,000 masks for COVID-19 response, healthcare focus"
+90414,HEALTH,"Chinese Consulate General in Penang donates 15,000 masks to Penang State Government","On April 2, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Penang State Government in Malaysia. This donation is intended to aid Penang against Covid-19. After the donation ceremony, the Penang State Government transferred the masks to the Penang General Hospital where patients of Covid-19 are treated.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Penang donates 15,000 masks to Penang State Government
+
+# Description
+On April 2, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Penang State Government in Malaysia. This donation is intended to aid Penang against Covid-19. After the donation ceremony, the Penang State Government transferred the masks to the Penang General Hospital where patients of Covid-19 are treated.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation of 15,000 masks for Covid-19 response, transferred to hospital for patient care"
+90417,HEALTH,"Chinese Consulate General in Penang donates of 6,000 masks to Perlis State Government in Malaysia","On April 8, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Perlis State Government in Malaysia. This donation is intended to aid Perlis against Covid-19. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Penang donates of 6,000 masks to Perlis State Government in Malaysia
+
+# Description
+On April 8, 2020, the Chinese Consulate General in Penang provided a donation of 15,000 masks to the Perlis State Government in Malaysia. This donation is intended to aid Perlis against Covid-19. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation unrelated to energy or environmental impacts,"Mask donation for COVID-19 relief, health sector focus"
+90423,HEALTH,"Malaysia-China Kuantan Industrial Park and other Chinese companies donate 20,000 masks to Peneng General Hospital (Linked to Project ID#93993, 93994)","On April 9, 2020, Chinese companies Beibu Gulf Holdings (Malaysia) (Project ID#93993), Zhongxin Resource Regeneration Technology Malaysia Sdn Bhd (Project ID#93994), and Malaysia-China Kuantan Industrial Park (Project ID#90423) donated 10,000 N95 masks and 10,000 medical face masks to the Penang General Hospital to support Malaysia during the COVID-19 pandemic. The monetary value of the donation is unknown.","1. Because Beibu Golf Holding, Zhongxin Resource Regeneration Technology Malaysia Sdn Bhd, and Malaysia-China Kuantan Industrial Park all contributed an unknown number of supplies to this donation, AidData assumes each donor made an equal contribution. The total value of the donation is estimated to be $14,000, with each donor contributing USD 4,666.66 (USD 14,000 / 3 known contributors = USD 4,666.66).","# Sector
+HEALTH
+
+# Title
+Malaysia-China Kuantan Industrial Park and other Chinese companies donate 20,000 masks to Peneng General Hospital (Linked to Project ID#93993, 93994)
+
+# Description
+On April 9, 2020, Chinese companies Beibu Gulf Holdings (Malaysia) (Project ID#93993), Zhongxin Resource Regeneration Technology Malaysia Sdn Bhd (Project ID#93994), and Malaysia-China Kuantan Industrial Park (Project ID#90423) donated 10,000 N95 masks and 10,000 medical face masks to the Penang General Hospital to support Malaysia during the COVID-19 pandemic. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to a hospital, with no direct environmental or energy transition impact","Donation of 20,000 masks to Penang General Hospital, healthcare sector focus"

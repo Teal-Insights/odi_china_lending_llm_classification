@@ -1,0 +1,108 @@
+---
+title: "Run Full Dataset with Deepseek"
+author: "Teal Emery"
+format: html
+editor: visual
+---
+
+# Setup
+
+## Load Libraries
+
+```{r}
+library(tidyverse)
+library(ellmer)
+library(here)
+library(chinadevfin3)
+library(beepr)
+library(progressr)
+library(jsonlite)
+```
+
+## Source Scripts
+
+```{r}
+source(
+  here(
+    "R",
+    "llm_classification",
+    "llm_functions.R"
+  )
+)
+```
+
+## System Prompt
+
+```{r}
+system_prompt_txt <- here(
+  "R",
+  "llm_classification",
+  "classification-prompt.md"
+) |> 
+  read_lines() |> 
+  paste(collapse = "\n")
+
+system_prompt_txt
+```
+
+## Get GCDF Data
+
+```{r}
+gcdf_data_for_llm <- get_gcdf3_dataset() |> 
+  filter(
+    recommended_for_aggregates == "Yes"
+  ) |> 
+   select(
+    aid_data_record_id,
+    sector_name,
+    title,
+    description,
+    staff_comments
+    ) |> 
+  mutate(
+    combined_text = paste(
+      "# Sector\n", sector_name, "\n\n",
+      "# Title\n", title, "\n\n",
+      "# Description\n", description,
+      sep = ""
+    )
+  ) 
+
+gcdf_data_for_llm
+```
+
+# Run Full Dataset with Deepseek
+
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  gcdf_data_for_llm,
+  chunk_size = 10,
+  chat_provider = "deepseek",  
+  output_dir = "data/llm_full_dataset",
+  run_name = "deepseek_full_dataset"
+)
+end_time <- Sys.time()
+#beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed <- end_time - start_time
+deepseek_time_elapsed
+
+deepseek_time_elapsed_per_loan <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan
+
+# Collect results
+deepseek_run_results <- collect_results(
+  "data/llm_full_dataset",
+  chat_provider =  "deepseek",
+  run_id = "deepseek_full_dataset"
+)
+```
+
+
+
+```{r}
+deepseek_run_results
+```
+

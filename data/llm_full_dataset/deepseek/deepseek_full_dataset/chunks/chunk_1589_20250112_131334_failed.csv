@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+2048,WATER SUPPLY AND SANITATION,Chinese Government issues MAD 22 million grant for provision of engineering equipment to support hydraulic projects,"On April 24, 2006, Bo Xilai, China’s Minister of Commerce of China, and M. Fathallah Oulalou, Minister of Finance and Privatization of Morocco, signed letters of exchange, committing MAD 22 million of grant funding for the provision of engineering equipment to support hydraulic projects. The equipment was successfully delivered on October 20, 2006.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government issues MAD 22 million grant for provision of engineering equipment to support hydraulic projects
+
+# Description
+On April 24, 2006, Bo Xilai, China’s Minister of Commerce of China, and M. Fathallah Oulalou, Minister of Finance and Privatization of Morocco, signed letters of exchange, committing MAD 22 million of grant funding for the provision of engineering equipment to support hydraulic projects. The equipment was successfully delivered on October 20, 2006.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

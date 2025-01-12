@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92542,OTHER MULTISECTOR,ICBC provides EUR 70 million to Bulgarian Development Bank for on-lending and working capital purposes in March 2020,"On March 13, 2020, Industrial and Commercial Bank of China (ICBC) — through its divisions in Austria and Poland — and Bulgarian Development Bank (BDB) signed an EUR 75 million interbank loan agreement. The loan carries an interest rate of 6-month EURIBOR plus an unspecified margin. The proceeds of the loan are intended for general lending activities of BDB, direct financing, as well as on-lending through Bulgarian financial institutions in support of investment projects and providing working capital.   The loan is unsecured. As of December 31, 2020, the loan had achieved a 100% disbursement rate and its (principal) amount outstanding was EUR 75 million.",NA,"# Sector
+OTHER MULTISECTOR
+
+# Title
+ICBC provides EUR 70 million to Bulgarian Development Bank for on-lending and working capital purposes in March 2020
+
+# Description
+On March 13, 2020, Industrial and Commercial Bank of China (ICBC) — through its divisions in Austria and Poland — and Bulgarian Development Bank (BDB) signed an EUR 75 million interbank loan agreement. The loan carries an interest rate of 6-month EURIBOR plus an unspecified margin. The proceeds of the loan are intended for general lending activities of BDB, direct financing, as well as on-lending through Bulgarian financial institutions in support of investment projects and providing working capital.   The loan is unsecured. As of December 31, 2020, the loan had achieved a 100% disbursement rate and its (principal) amount outstanding was EUR 75 million.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves general financial services without specific environmental or energy transition focus,Interbank loan agreement for general lending activities and working capital purposes
+94134,HEALTH,Chinese government grants Bulgaria anti-epidemic medical supplies in April 2020,"On April 17, 2020,  the Chinese government sent a batch of anti-epidemic medical supplies to Sofia, Bulgaria. The items were committed to Bulgaria on March 18, 2020. The donated medical supplies include PCR testing reagents, medical masks, protective clothing, isolation goggles, sterilized rubber surgical gloves, and shoe covers.",The commitment date is detailed in source 171047The exact USD value of the donation is unclear.,"# Sector
+HEALTH
+
+# Title
+Chinese government grants Bulgaria anti-epidemic medical supplies in April 2020
+
+# Description
+On April 17, 2020,  the Chinese government sent a batch of anti-epidemic medical supplies to Sofia, Bulgaria. The items were committed to Bulgaria on March 18, 2020. The donated medical supplies include PCR testing reagents, medical masks, protective clothing, isolation goggles, sterilized rubber surgical gloves, and shoe covers.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Anti-epidemic medical supplies including PCR testing reagents, medical masks, protective clothing, isolation goggles, sterilized rubber surgical gloves, and shoe covers"
+94135,HEALTH,Chinese Embassy in Bulgaria donated anti-epidemic materials to Sofia's 'Home for Medical and Social Care for Children' in April 2020 (Linked to Project ID#94260),"On April 30, 2020, on behalf of the Chinese Embassy in Bulgaria, ​​Xia Zhishun, wife of the Chinese ambassador to Bulgaria, donated a batch of masks, disinfectant, gloves and other anti-epidemic supplies to the Sofia ""Children's Medical and Social Care"" home, as well as a batch of children's supplies and food.  The second batch of medical supplies was donated from the Embassy in December 2020 (See Project ID#94260).",The Bulgarian name of the receiving agency is Дом за медико-социални грижи за деца „Св. Иван Рилски Чудотворец”.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Bulgaria donated anti-epidemic materials to Sofia's 'Home for Medical and Social Care for Children' in April 2020 (Linked to Project ID#94260)
+
+# Description
+On April 30, 2020, on behalf of the Chinese Embassy in Bulgaria, ​​Xia Zhishun, wife of the Chinese ambassador to Bulgaria, donated a batch of masks, disinfectant, gloves and other anti-epidemic supplies to the Sofia ""Children's Medical and Social Care"" home, as well as a batch of children's supplies and food.  The second batch of medical supplies was donated from the Embassy in December 2020 (See Project ID#94260).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies and children's items without direct environmental or energy transition impact,"Donation of masks, disinfectant, gloves, children's supplies, and food to a medical and social care facility"
+94136,HEALTH,Chinese army donates anti-epidemic materials to Bulgarian army in July 2020,"On July 3, 2020, the handover ceremony of the anti-epidemic materials aided by the Chinese army to the Bulgarian army was held at the Sofia Military Medical Academy. On July 2, 2020, the anti-epidemic materials aided by the Chinese army to the Bulgarian Army arrived in Sofia smoothly.   The materials include 13 types of anti-epidemic equipment such as masks, protective clothing, and goggles.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese army donates anti-epidemic materials to Bulgarian army in July 2020
+
+# Description
+On July 3, 2020, the handover ceremony of the anti-epidemic materials aided by the Chinese army to the Bulgarian army was held at the Sofia Military Medical Academy. On July 2, 2020, the anti-epidemic materials aided by the Chinese army to the Bulgarian Army arrived in Sofia smoothly.   The materials include 13 types of anti-epidemic equipment such as masks, protective clothing, and goggles.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Anti-epidemic materials including masks, protective clothing, and goggles for healthcare purposes"
+94235,HEALTH,Lishui City donates anti-epidemic equipments to The Sofia Second City Hospital in Bulgaria in April 2020,"In April 2020, Lishui City donated medical supplies to the Sofia Second City Hospital. The medical supplies were initially received by Dimov, head of the Nadezhda district in Sofia, before being donated officially to the Sofia Second City Hospital. The supplies include 9,000 disposable medical surgical masks, 500 N 95 masks, and 100 disposable protective suits.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Lishui City donates anti-epidemic equipments to The Sofia Second City Hospital in Bulgaria in April 2020
+
+# Description
+In April 2020, Lishui City donated medical supplies to the Sofia Second City Hospital. The medical supplies were initially received by Dimov, head of the Nadezhda district in Sofia, before being donated officially to the Sofia Second City Hospital. The supplies include 9,000 disposable medical surgical masks, 500 N 95 masks, and 100 disposable protective suits.",TRUE,NA,NEUTRAL,HIGH,Healthcare and education facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation including masks and protective suits, healthcare sector focus"
+94259,HEALTH,Jiangxi Province donates its second shipment of medical supplies to the Bulgarian Ministry of Health in July 2020 (Linked to Project #94686),"On July 23, 2020, the Jiangxi Province of China donated medical supplies to the Bulgarian Ministry of Health during an online handover ceremony. This is a secondary donation comprised of 2,200 protective suits.   The first donation from Jiangxi Province was made in March (See Project ID#94686)",NA,"# Sector
+HEALTH
+
+# Title
+Jiangxi Province donates its second shipment of medical supplies to the Bulgarian Ministry of Health in July 2020 (Linked to Project #94686)
+
+# Description
+On July 23, 2020, the Jiangxi Province of China donated medical supplies to the Bulgarian Ministry of Health during an online handover ceremony. This is a secondary donation comprised of 2,200 protective suits.   The first donation from Jiangxi Province was made in March (See Project ID#94686)",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of 2,200 protective suits to Bulgarian Ministry of Health, healthcare sector focus"
+94260,HEALTH,Chinese Embassy in Bulgaria donates supplies and food to Sofia's 'Home for Medical and Social Care for Children' in December 2020 (Linked to Project #94135),"On December 16, 2020, Xia Zhishun, wife of the Chinese ambassador to Bulgaria donated anti-epidemic medical supplies, children's supplies, and food to Sofia's ""Home for Medical and Social Care for Children"". This is the second time that Xia Zhishun has donated supplies to Sofia's ""Home for Medical and Social Care for Children"".   The first donation was made in April 2020 (Project #94135).   The amount of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Bulgaria donates supplies and food to Sofia's 'Home for Medical and Social Care for Children' in December 2020 (Linked to Project #94135)
+
+# Description
+On December 16, 2020, Xia Zhishun, wife of the Chinese ambassador to Bulgaria donated anti-epidemic medical supplies, children's supplies, and food to Sofia's ""Home for Medical and Social Care for Children"". This is the second time that Xia Zhishun has donated supplies to Sofia's ""Home for Medical and Social Care for Children"".   The first donation was made in April 2020 (Project #94135).   The amount of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on social welfare and healthcare support without direct environmental or energy transition impacts,"Donation of medical supplies, children's supplies, and food to a care facility"
+94686,HEALTH,Jiangxi Province donates its first shipment of medical supplies to the Bulgarian Ministry of Health in March 2020 (Linked to Project#94259),"On March 13, 2020, Jiangxi Province donated its first shipment of medical supplies to the Bulgarian Ministry of Health. The donation was made after previous announcements by Bulgaria of firm support for Jiangxi Province during the pandemic. The donation amount is unknown.   This is the first of two batches of medical supplies Jiangxi Province has donated to the Bulgarian Ministry of Health. The other donation was made in July 2020 (see Project#94259).",NA,"# Sector
+HEALTH
+
+# Title
+Jiangxi Province donates its first shipment of medical supplies to the Bulgarian Ministry of Health in March 2020 (Linked to Project#94259)
+
+# Description
+On March 13, 2020, Jiangxi Province donated its first shipment of medical supplies to the Bulgarian Ministry of Health. The donation was made after previous announcements by Bulgaria of firm support for Jiangxi Province during the pandemic. The donation amount is unknown.   This is the first of two batches of medical supplies Jiangxi Province has donated to the Bulgarian Ministry of Health. The other donation was made in July 2020 (see Project#94259).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies, which is unrelated to energy or environmental impacts","Donation of medical supplies to Bulgarian Ministry of Health, healthcare sector focus"
+86748,COMMUNICATIONS,China Eximbank provides RMB 560 million government concessional loan for Smart Burkina Faso Project,"On September 29, 2020, China Eximbank and the Government of Burkina Faso’s Ministry of Security signed an RMB 560 million government concessional loan (GCL) agreement [CHINA EXIMBANK GCL NO (2020) 7 TOTAL NO (699)] for the Smart Burkina Faso Project. The GCL carries a 20-year maturity, a 5-year grace period, and a 1% interest rate. The borrower is expected to used the proceeds of the loan to finance a $80 million (CFA 52,301,810,024) commercial contract (ID# 0Y08541900000) between Burkina Faso's Ministry of Security, Huawei Technologies Co, Ltd and China International Telecommunication Construction Corporation.   The purpose of the project is to establish a 650 kilometer fiber optic backbone network that connects various cities and localities in Burkina Faso, establish a 150 kilometer fiber optic network that connects other cities and localities in Burkina Faso, and strengthen public security by installing 900 surveillance cameras and 300 video surveillance sites. Huawei Technologies Co, Ltd and China International Telecommunication Construction Corporation are the contractors responsible for project implementation.  The project officially commenced on July 8, 2021 and it is expected to reach completion within 54 months (January 8, 2026).",1. The French project title is Projet Smart Burkina Faso. The Chinese project title is “智慧布基纳法索”项目 or 智慧布基纳法索.,"# Sector
+COMMUNICATIONS
+
+# Title
+China Eximbank provides RMB 560 million government concessional loan for Smart Burkina Faso Project
+
+# Description
+On September 29, 2020, China Eximbank and the Government of Burkina Faso’s Ministry of Security signed an RMB 560 million government concessional loan (GCL) agreement [CHINA EXIMBANK GCL NO (2020) 7 TOTAL NO (699)] for the Smart Burkina Faso Project. The GCL carries a 20-year maturity, a 5-year grace period, and a 1% interest rate. The borrower is expected to used the proceeds of the loan to finance a $80 million (CFA 52,301,810,024) commercial contract (ID# 0Y08541900000) between Burkina Faso's Ministry of Security, Huawei Technologies Co, Ltd and China International Telecommunication Construction Corporation.   The purpose of the project is to establish a 650 kilometer fiber optic backbone network that connects various cities and localities in Burkina Faso, establish a 150 kilometer fiber optic network that connects other cities and localities in Burkina Faso, and strengthen public security by installing 900 surveillance cameras and 300 video surveillance sites. Huawei Technologies Co, Ltd and China International Telecommunication Construction Corporation are the contractors responsible for project implementation.  The project officially commenced on July 8, 2021 and it is expected to reach completion within 54 months (January 8, 2026).",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on communications infrastructure development without clear environmental or energy transition impacts,"Fiber optic network development and surveillance system installation, no direct energy or environmental components"
+93396,HEALTH,Chinese Embassy in Burkina Faso donates medical supplies to Burkina Faso government in March 2020,"On March 24, 2020, the Chinese Embassy in Burkina Faso donated a batch of protective equipment to the Burkina Faso Ministry of Health to support the prevention and control of the COVID-19 pandemic. Ambassador to Burkina Faso, Li Jian, and Director General of the Medical Supplies Management Department of the Ministry of Health of Burkina Faso, Koanda, handed over the supplies at the Embassy.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Burkina Faso donates medical supplies to Burkina Faso government in March 2020
+
+# Description
+On March 24, 2020, the Chinese Embassy in Burkina Faso donated a batch of protective equipment to the Burkina Faso Ministry of Health to support the prevention and control of the COVID-19 pandemic. Ambassador to Burkina Faso, Li Jian, and Director General of the Medical Supplies Management Department of the Ministry of Health of Burkina Faso, Koanda, handed over the supplies at the Embassy.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of medical supplies for COVID-19 prevention, healthcare sector focus"

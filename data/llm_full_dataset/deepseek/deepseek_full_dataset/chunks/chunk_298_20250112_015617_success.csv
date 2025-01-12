@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95540,HEALTH,China's Ministry of National Defense donates medical equipment to Sri Lanka's Ministry of Defence,"On May 12, 2020, China's Ministry of National Defense donated 70,000 disposable medical masks, 9,000 surgical masks, 9,000 medical surgical masks (KN95), 6,300 medical protective goggles, 4,500 disposable medical protective screens (face shields), 4,500 disposable one-piece medical protective suits, 4,500 disposable medical isolation (170) gowns, 9,000 pairs of disposable medical boot covers, 80 disposable medical gloves, 160 disposable nitrile gloves 50-packets,  30 infusion pumps, two 16-litere Knapsack disinfectant sprayers (16L), 70 frontal temperature gun CK - T1501 (IR thermometers) and two Thermal Imaging Smart Helmet (N901) (infrared image temperature observing helmets) to Sri Lanka's Defence Ministry. A People’s Liberation Army-Air Force Y-20 delivered the donation.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China's Ministry of National Defense donates medical equipment to Sri Lanka's Ministry of Defence
+
+# Description
+On May 12, 2020, China's Ministry of National Defense donated 70,000 disposable medical masks, 9,000 surgical masks, 9,000 medical surgical masks (KN95), 6,300 medical protective goggles, 4,500 disposable medical protective screens (face shields), 4,500 disposable one-piece medical protective suits, 4,500 disposable medical isolation (170) gowns, 9,000 pairs of disposable medical boot covers, 80 disposable medical gloves, 160 disposable nitrile gloves 50-packets,  30 infusion pumps, two 16-litere Knapsack disinfectant sprayers (16L), 70 frontal temperature gun CK - T1501 (IR thermometers) and two Thermal Imaging Smart Helmet (N901) (infrared image temperature observing helmets) to Sri Lanka's Defence Ministry. A People’s Liberation Army-Air Force Y-20 delivered the donation.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical equipment with no direct environmental or energy transition impact,"Medical equipment donation including masks, protective gear, and medical devices"
+95716,EDUCATION,"Chinese Embassy provides school bags and stationary to over 700 students in Colombo, Sri Lanka in September 2020","On September 2, 2020, the Chinese Embassy provided school bags and stationary to over 700 students in Colombo, Sri Lanka. The students were from 19 local schools, each with different religious and ethnic backgrounds, whose education was affected by the COVID-19 pandemic. This donation was made in the hopes of improving education opportunities for these students. The monetary value of this donation is unknown.  A handover ceremony was held for this donation in the Alshidaya School Auditorium in Colombo, Sri Lanka. Hu Wei, Chargé d'affaires of the Embassy, attended the ceremony and presented the supplies to students and staff. Principles of the 19 schools, nearly 100 student representatives, and journalists from Chinese and Sri Lankan media attended the event.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy provides school bags and stationary to over 700 students in Colombo, Sri Lanka in September 2020
+
+# Description
+On September 2, 2020, the Chinese Embassy provided school bags and stationary to over 700 students in Colombo, Sri Lanka. The students were from 19 local schools, each with different religious and ethnic backgrounds, whose education was affected by the COVID-19 pandemic. This donation was made in the hopes of improving education opportunities for these students. The monetary value of this donation is unknown.  A handover ceremony was held for this donation in the Alshidaya School Auditorium in Colombo, Sri Lanka. Hu Wei, Chargé d'affaires of the Embassy, attended the ceremony and presented the supplies to students and staff. Principles of the 19 schools, nearly 100 student representatives, and journalists from Chinese and Sri Lankan media attended the event.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education support without direct environmental or energy transition impacts,"Provision of school bags and stationary to students, education-focused donation"
+95829,HEALTH,China donates anti-epidemic materials to Sri Lanka Ministry of Health in April 2020,"On April 1-3, 2020, China donated 5,000 pairs of gloves and 20,750 masks to Sri Lanka's Ministry of Health & Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates anti-epidemic materials to Sri Lanka Ministry of Health in April 2020
+
+# Description
+On April 1-3, 2020, China donated 5,000 pairs of gloves and 20,750 masks to Sri Lanka's Ministry of Health & Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on public health and epidemic prevention, with no direct environmental or energy transition impact",Donation of medical supplies (gloves and masks) for COVID-19 prevention
+95831,HEALTH,China donates 750 units of Personal Protective Equipment (PPE) to Sri Lanka Ministry of Health in May 2020,"On May 18, 2020, China donated 750 units of Personal Protective Equipment (PPE) to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates 750 units of Personal Protective Equipment (PPE) to Sri Lanka Ministry of Health in May 2020
+
+# Description
+On May 18, 2020, China donated 750 units of Personal Protective Equipment (PPE) to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of PPE for COVID-19 prevention, healthcare sector focus"
+95832,HEALTH,"China Sinopharm International Corporation donates 1,008 COVID-19 tests worth USD $20,832 to Sri Lanka Ministry of Health in March 2020","On March 29, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 1,008 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts. This donation was worth USD $20,832.",NA,"# Sector
+HEALTH
+
+# Title
+China Sinopharm International Corporation donates 1,008 COVID-19 tests worth USD $20,832 to Sri Lanka Ministry of Health in March 2020
+
+# Description
+On March 29, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 1,008 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts. This donation was worth USD $20,832.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"COVID-19 test kits donation to Ministry of Health, healthcare sector focus"
+95833,HEALTH,"China’s Sinopharm International Corporation (Sinopharm) donates 20,016 COVID-19 tests worth USD $364,291.20 to Sri Lanka Ministry of Health in April 2020","On April 21, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 20,016 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts. This donation was worth USD $364,291.20.",NA,"# Sector
+HEALTH
+
+# Title
+China’s Sinopharm International Corporation (Sinopharm) donates 20,016 COVID-19 tests worth USD $364,291.20 to Sri Lanka Ministry of Health in April 2020
+
+# Description
+On April 21, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 20,016 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts. This donation was worth USD $364,291.20.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"COVID-19 test kits donation, healthcare sector focus"
+95834,HEALTH,"China’s Sinopharm International Corporation (Sinopharm) donates 30,000 COVID-19 tests to Sri Lanka Ministry of Health in May 2020","On May 10, 2020, China’a Sinopharm International Corporation (Sinopharm) donated 30,000 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts.  This donation was worth USD $576,000.",NA,"# Sector
+HEALTH
+
+# Title
+China’s Sinopharm International Corporation (Sinopharm) donates 30,000 COVID-19 tests to Sri Lanka Ministry of Health in May 2020
+
+# Description
+On May 10, 2020, China’a Sinopharm International Corporation (Sinopharm) donated 30,000 navel coronavirus nucleic acid diagnostic kits to Sri Lanka's Ministry of Health and Indigenous Medical Services. This donation was made to improve Sri Lanka’s COVID-19 response efforts.  This donation was worth USD $576,000.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of COVID-19 tests to improve healthcare response
+95837,HEALTH,China’s Sinopharm International Corporation donates anti-epidemic materials to Sri Lanka Ministry of Health in April 2020,"On April 22, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 9,800 medical protective face masks, 97,600 surgical masks, 10,000 disposable coveralls, and 1,000 medical goggles to the Sri Lanka Ministry of Health and Indigenous Medical Services. The medical protective face masks were worth USD $33,000, the surgical masks USD $51,000, the disposable coveralls USD $218,400, and the medical goggles USD $4,000. This resulted in a total donation amount of USD $306,400. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts.","1. The donation captured in this project was reported in Line 15 of Source ID#176064. 2. Line 11 of Source ID#174257 lists the donation as received on April 15, 2020. AidData uses the later April 22, 2020 date as Source ID#176064 has more specific unit information.","# Sector
+HEALTH
+
+# Title
+China’s Sinopharm International Corporation donates anti-epidemic materials to Sri Lanka Ministry of Health in April 2020
+
+# Description
+On April 22, 2020, China’s Sinopharm International Corporation (Sinopharm) donated 9,800 medical protective face masks, 97,600 surgical masks, 10,000 disposable coveralls, and 1,000 medical goggles to the Sri Lanka Ministry of Health and Indigenous Medical Services. The medical protective face masks were worth USD $33,000, the surgical masks USD $51,000, the disposable coveralls USD $218,400, and the medical goggles USD $4,000. This resulted in a total donation amount of USD $306,400. This donation was made to improve Sri Lanka’s COVID-19 prevention efforts.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and epidemic prevention without direct environmental or energy transition impacts,"Donation of medical supplies including masks, coveralls, and goggles for COVID-19 prevention"
+95845,HEALTH,China Electronic Technology Group Corporation (CETC) donates 149 non-contact digital thermometer guns and 2 non-contact smart access control cameras to Sri Lanka Ministry of Defence in June 2020,"On June 8, 2020, China Electronic Technology Group Corporation (CETC) donated 149 non-contact digital thermometer guns and 2 non-contact smart access control cameras to Sri Lanka’s Ministry of Defence. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China Electronic Technology Group Corporation (CETC) donates 149 non-contact digital thermometer guns and 2 non-contact smart access control cameras to Sri Lanka Ministry of Defence in June 2020
+
+# Description
+On June 8, 2020, China Electronic Technology Group Corporation (CETC) donated 149 non-contact digital thermometer guns and 2 non-contact smart access control cameras to Sri Lanka’s Ministry of Defence. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves healthcare equipment donation with no direct environmental or energy transition impact,Donation of medical equipment (thermometer guns and access control cameras) for healthcare purposes
+95897,HEALTH,Chinese Embassy in Sri Lanka provides unspecified financial assistance for SLCBFA donation program for Buddhist temples in Sri Lanka,"On November 14, 2020, the China Buddhist Friendship Association (SLCBFA), with financial assistance from the Chinese Embassy in Sri Lanka, commenced Phase 1 of a program to donate dry rations and hand sanitizers to Buddhist temples throughout Sri Lanka. Phase 1 involved a specific donation of dry food rations and hand sanitizers to Dr. Ittapane Dhammalankara Thera, the Chief Prelate of the Kotte Chapter of the Sri Wijayalokaramaya Temple in Rukmalgama, Pannipitiya. The specific financial assistance from the Chinese Embassy is unspecified.   A handover ceremony was held for this donation. The supplies were delivered by Sumathi Dharmawardena (PC), the President of SLCBFA. Aruna Silva, the General Secretary, and K.G. Chandrasiri, the Assistant Treasurer of SLCBFA, were also present at the handover ceremony.  Phase I of this program will also cover Buddhist temples in the Colombo, Gampaha, and Kalutara districts. Phase II will cover the Kurunegala, Kandy, Matale, Kegalle, and Anuradhapura districts. The final phase will cover remaining Buddhist temples in the rest of the districts in Sri Lanka.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Sri Lanka provides unspecified financial assistance for SLCBFA donation program for Buddhist temples in Sri Lanka
+
+# Description
+On November 14, 2020, the China Buddhist Friendship Association (SLCBFA), with financial assistance from the Chinese Embassy in Sri Lanka, commenced Phase 1 of a program to donate dry rations and hand sanitizers to Buddhist temples throughout Sri Lanka. Phase 1 involved a specific donation of dry food rations and hand sanitizers to Dr. Ittapane Dhammalankara Thera, the Chief Prelate of the Kotte Chapter of the Sri Wijayalokaramaya Temple in Rukmalgama, Pannipitiya. The specific financial assistance from the Chinese Embassy is unspecified.   A handover ceremony was held for this donation. The supplies were delivered by Sumathi Dharmawardena (PC), the President of SLCBFA. Aruna Silva, the General Secretary, and K.G. Chandrasiri, the Assistant Treasurer of SLCBFA, were also present at the handover ceremony.  Phase I of this program will also cover Buddhist temples in the Colombo, Gampaha, and Kalutara districts. Phase II will cover the Kurunegala, Kandy, Matale, Kegalle, and Anuradhapura districts. The final phase will cover remaining Buddhist temples in the rest of the districts in Sri Lanka.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves social welfare donations with no direct environmental or energy transition impact,"Donation of dry rations and hand sanitizers to Buddhist temples, categorized as social development assistance"

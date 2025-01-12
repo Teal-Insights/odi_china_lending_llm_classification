@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+90660,TRANSPORT AND STORAGE,MOFCOM provides RMB 40.6 million grant for Davao River Bridge (Bucana Bridge) Construction Project,"On December 9, 2020, the Chinese Government and the Government of the Republic of the Philippines through the Department of Public Works and Highways (DPWH) signed an exchange of letters and an implementation agreement for the Davao River Bridge (Bucana Bridge) Project. The grant proceeds were to be used to finance an RMB 40,633,038.76 commercial contract (for project design and construction supervision) signed by DPWH and a consortium consisting of CCCC Highway Consultants Co., Ltd. and Beijing Zhongjiao Road & Bridge Supervision Co., Ltd, which was signed on July 6, 2022.   The purpose of the project is to construct the Davao River Bridge. Also known as the Bucana Bridge, the Davao River Bridge will have dual two-lane roads with a total length of 1,340 meters located at the estuary of Davao River in Davao City. Upon completion, the project is expected to improve traffic congestion in the east-west coastal areas of the city by diverting around 35,000 vehicles per day. An estimate of 300 to 500 Dabawenyos is also expected to benefit as employees of the construction project. The project was designed to follow a localized method of implementation, with the Philippine side in charge of technical works and project management during the entire process.  A 'notice to proceed' was issued by DPWH to CCCC Highway Consultants Co., Ltd. and Beijing Zhongjiao Road & Bridge Supervision Co., Ltd on July 1, 2022. The originally expected duration of the project was 30 months. The surveys and design phase of the project was scheduled to be completed in six months, while the construction supervision was targeted to last for 24 months or two years.",1. The notice to proceed can be accessed via https://www.dropbox.com/s/cxpxb8m5uxwj4js/notice%20to%20proceed%20bucana.pdf?dl=02. The July 2022 commercial contract can be accessed via https://www.dropbox.com/s/uhhf0mewyds77h5/Contract%20Agreement%20BUCANA%20%28english%20version%29.pdf?dl=0,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+MOFCOM provides RMB 40.6 million grant for Davao River Bridge (Bucana Bridge) Construction Project
+
+# Description
+On December 9, 2020, the Chinese Government and the Government of the Republic of the Philippines through the Department of Public Works and Highways (DPWH) signed an exchange of letters and an implementation agreement for the Davao River Bridge (Bucana Bridge) Project. The grant proceeds were to be used to finance an RMB 40,633,038.76 commercial contract (for project design and construction supervision) signed by DPWH and a consortium consisting of CCCC Highway Consultants Co., Ltd. and Beijing Zhongjiao Road & Bridge Supervision Co., Ltd, which was signed on July 6, 2022.   The purpose of the project is to construct the Davao River Bridge. Also known as the Bucana Bridge, the Davao River Bridge will have dual two-lane roads with a total length of 1,340 meters located at the estuary of Davao River in Davao City. Upon completion, the project is expected to improve traffic congestion in the east-west coastal areas of the city by diverting around 35,000 vehicles per day. An estimate of 300 to 500 Dabawenyos is also expected to benefit as employees of the construction project. The project was designed to follow a localized method of implementation, with the Philippine side in charge of technical works and project management during the entire process.  A 'notice to proceed' was issued by DPWH to CCCC Highway Consultants Co., Ltd. and Beijing Zhongjiao Road & Bridge Supervision Co., Ltd on July 1, 2022. The originally expected duration of the project was 30 months. The surveys and design phase of the project was scheduled to be completed in six months, while the construction supervision was targeted to last for 24 months or two years.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"The project is focused on bridge construction to improve traffic congestion, with no clear environmental or energy transition impacts","Construction of Davao River Bridge with dual two-lane roads, focus on traffic congestion improvement, no mention of energy or environmental aspects"
+92819,HEALTH,Chinese Consulate General in Cebu Donates Ambulance to Cebu Provincial Government in the Philppines in August 2020,"On August 10th, 2020, Chinese Consulate General  donated an ambulance to Cebu Provincial Government in the Philippines. This donation is part of China's continuing support of the Phillippines in their fight against COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Cebu Donates Ambulance to Cebu Provincial Government in the Philppines in August 2020
+
+# Description
+On August 10th, 2020, Chinese Consulate General  donated an ambulance to Cebu Provincial Government in the Philippines. This donation is part of China's continuing support of the Phillippines in their fight against COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Ambulance donation for COVID-19 response, healthcare sector focus"
+92959,HEALTH,China’s Ministry of National Defense Donates Medical Supplies to Philippine's Military in May 2020,"On May 13th, China’s Ministry of National Defence donated medical supplies to the Philippines. Included in the supplies were more than 80,000 pieces of surgical masks, protective goggles, and suits.",NA,"# Sector
+HEALTH
+
+# Title
+China’s Ministry of National Defense Donates Medical Supplies to Philippine's Military in May 2020
+
+# Description
+On May 13th, China’s Ministry of National Defence donated medical supplies to the Philippines. Included in the supplies were more than 80,000 pieces of surgical masks, protective goggles, and suits.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"Medical supplies donation, no energy or infrastructure components"
+92961,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China Donates 7200 Bags of Rice to the Philippines,"On June 9th, 2020, China donated 7,200 bags of rice to the Philippines. The donation coincides with the 45th anniversary of Philippine-China relations. the rice donation has an estimated cost of $3.5 million pesos.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China Donates 7200 Bags of Rice to the Philippines
+
+# Description
+On June 9th, 2020, China donated 7,200 bags of rice to the Philippines. The donation coincides with the 45th anniversary of Philippine-China relations. the rice donation has an estimated cost of $3.5 million pesos.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Rice donation for social development purposes, no energy or infrastructure components"
+92979,HEALTH,"Xiamen Municipal Government Donates 10,000 Masks to the Philippines","On March 31, 2020, the Chinese Government donated 10,000 K95 masks to the Philippines for emergency support against the COVID-19 pandemic. The masks were specifically donated to the city of Cebu in the Philippines.   On April 20, 2020, the Chinese Consulate General in Cebu handed over the donation to the authorities.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Xiamen Municipal Government Donates 10,000 Masks to the Philippines
+
+# Description
+On March 31, 2020, the Chinese Government donated 10,000 K95 masks to the Philippines for emergency support against the COVID-19 pandemic. The masks were specifically donated to the city of Cebu in the Philippines.   On April 20, 2020, the Chinese Consulate General in Cebu handed over the donation to the authorities.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 10,000 K95 masks for COVID-19 response, healthcare focus"
+92980,HEALTH,Guangzhou Municipal Government Donates Medical Supplies to the Manila City Government,"On March 25th, 2020, the Guangzhou Municipal Government donated 200,000 N95 masks, 100,000 surgical masks, and 2,000 infrared thermometers to the Philippines. The donation was sent to Manila from Guangzhou to help the city fight against the COVID-19 pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Guangzhou Municipal Government Donates Medical Supplies to the Manila City Government
+
+# Description
+On March 25th, 2020, the Guangzhou Municipal Government donated 200,000 N95 masks, 100,000 surgical masks, and 2,000 infrared thermometers to the Philippines. The donation was sent to Manila from Guangzhou to help the city fight against the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Donation of N95 masks, surgical masks, and infrared thermometers for COVID-19 response"
+92981,HEALTH,"Shandong Provincial Government Donates Pandemic Medical Supplies to Ilocos Norte, the Philippines","On April 6th, 2020, Shandong Province donated 25,000 pieces of medical surgical masks, 2,000 pieces of N95 masks, 2,000 pieces of medical goggles, and 2,000 sets of medical protective suits to Ilocos Norte, the Philippines. Chinese Consulate General in Laoag handed over the supplies.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Shandong Provincial Government Donates Pandemic Medical Supplies to Ilocos Norte, the Philippines
+
+# Description
+On April 6th, 2020, Shandong Province donated 25,000 pieces of medical surgical masks, 2,000 pieces of N95 masks, 2,000 pieces of medical goggles, and 2,000 sets of medical protective suits to Ilocos Norte, the Philippines. Chinese Consulate General in Laoag handed over the supplies.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"Donation of medical surgical masks, N95 masks, medical goggles, and protective suits for pandemic response"
+92982,HEALTH,"Hainan Provincial Government Donates 25,000 Masks to Palawan, the Philippines","On March 25th, the Hainan Provincial Government commits to donate 25,000 masks to the Philippines. The donation from the Hainan Province was sent to Palawan to aid the province in its fight against COVID-19 on May 15, 2020.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Hainan Provincial Government Donates 25,000 Masks to Palawan, the Philippines
+
+# Description
+On March 25th, the Hainan Provincial Government commits to donate 25,000 masks to the Philippines. The donation from the Hainan Province was sent to Palawan to aid the province in its fight against COVID-19 on May 15, 2020.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation of 25,000 masks for COVID-19 response, healthcare focus"
+93349,HEALTH,Chinese Medical Team Donates COVID Medical Supplies to the Philippines in April 2020 (Linked to #90323),"On April 5th, 2020, a 12-member delegation of Chinese medical experts arrived in Manila to provide COVID-19 assistance. The team members have field experience in epidemics and will assist in combatting the spread of COVID-19. This is the third team of anti-epidemic experts sent by the Chinese government to an ASEAN country (#90323).   Along with dispatching of the medical team, China donated 300,000 medical surgical masks and 30,000 medical N95 masks, 5,000 protective suits, 5,000 medical isolation masks, and 30 non-invasive ventilators.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Medical Team Donates COVID Medical Supplies to the Philippines in April 2020 (Linked to #90323)
+
+# Description
+On April 5th, 2020, a 12-member delegation of Chinese medical experts arrived in Manila to provide COVID-19 assistance. The team members have field experience in epidemics and will assist in combatting the spread of COVID-19. This is the third team of anti-epidemic experts sent by the Chinese government to an ASEAN country (#90323).   Along with dispatching of the medical team, China donated 300,000 medical surgical masks and 30,000 medical N95 masks, 5,000 protective suits, 5,000 medical isolation masks, and 30 non-invasive ventilators.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project focuses on healthcare support and medical supplies donation without direct environmental or energy transition impacts,"Medical team deployment, donation of medical supplies including masks, protective suits, and ventilators"
+93357,EMERGENCY RESPONSE,China Donates RMB 1 Million Worth of Supplies to Support the Philippines’ Typhoon Rolly (Goni) Relief Efforts (Linked to #90650),"On November 3, 2020, China announced that it would donate supplies to people affected by typhoon Rolly (also known as Goni). On November 20, 2020, the Chinese Embassy donated 1 million RMB worth of supplies (including food and others) to the people affected by the typhoon in Albay and Catanduanes provinces.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China Donates RMB 1 Million Worth of Supplies to Support the Philippines’ Typhoon Rolly (Goni) Relief Efforts (Linked to #90650)
+
+# Description
+On November 3, 2020, China announced that it would donate supplies to people affected by typhoon Rolly (also known as Goni). On November 20, 2020, the Chinese Embassy donated 1 million RMB worth of supplies (including food and others) to the people affected by the typhoon in Albay and Catanduanes provinces.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on humanitarian aid and disaster relief, with no direct environmental or energy transition impact","Donation of supplies for typhoon relief, humanitarian focus"

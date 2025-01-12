@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93085,HEALTH,Chinese First Lady donates anti-epidemic supplies to Ethiopia in August 2020,"On August 14, 2020, donations by Peng Liyuan, the First Lady of China, arrived in Ethiopia to help the country’s effort to curb the spread of the COVID-19 pandemic. The donations consisted of 18,000 surgical masks and 120 infrared thermometers. The First Lady's office announced the donation on August 11, 2020. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese First Lady donates anti-epidemic supplies to Ethiopia in August 2020
+
+# Description
+On August 14, 2020, donations by Peng Liyuan, the First Lady of China, arrived in Ethiopia to help the country’s effort to curb the spread of the COVID-19 pandemic. The donations consisted of 18,000 surgical masks and 120 infrared thermometers. The First Lady's office announced the donation on August 11, 2020. The monetary value of the donation is unknown.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

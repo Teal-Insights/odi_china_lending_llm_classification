@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93310,HEALTH,First Lady of China donates medical supplies to South Sudanese Ministry of Health in July 2020,"On July 1, 2020, the First Lady of China, Peng Liyuan, donated medical supplies to the South Sudanese Ministry of Health. The supplies were handed over to the First Lady of South Sudan, Mary Ayen Mayardit. The supplies consisted of 18,000 face masks and 120 thermometers. These will be distributed to healthcare workers across South Sudan. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates medical supplies to South Sudanese Ministry of Health in July 2020
+
+# Description
+On July 1, 2020, the First Lady of China, Peng Liyuan, donated medical supplies to the South Sudanese Ministry of Health. The supplies were handed over to the First Lady of South Sudan, Mary Ayen Mayardit. The supplies consisted of 18,000 face masks and 120 thermometers. These will be distributed to healthcare workers across South Sudan. The monetary value of this donation is unknown.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

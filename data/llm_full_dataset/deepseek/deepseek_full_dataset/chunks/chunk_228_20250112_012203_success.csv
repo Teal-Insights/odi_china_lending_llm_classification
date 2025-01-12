@@ -1,0 +1,73 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93011,HEALTH,China Poly Group International donates COVID-19 relief medical equipment to Mauritanian Armed Forces,"On August 22, 2020, the China Poly Group International donated COVID-19 relief medical equipment to Mauritania. The contents and value of the donation are unknown. The handover ceremony was attended by Chinese Ambassador Zhang Jianguo and Deputy Chief of Staff of the Mauritius Armed Forces Chabane.",NA,"# Sector
+HEALTH
+
+# Title
+China Poly Group International donates COVID-19 relief medical equipment to Mauritanian Armed Forces
+
+# Description
+On August 22, 2020, the China Poly Group International donated COVID-19 relief medical equipment to Mauritania. The contents and value of the donation are unknown. The handover ceremony was attended by Chinese Ambassador Zhang Jianguo and Deputy Chief of Staff of the Mauritius Armed Forces Chabane.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a medical donation unrelated to energy or environmental impacts,"COVID-19 relief medical equipment donation, healthcare sector focus"
+93012,HEALTH,"China donates COVID-19 relief medical supplies to the Mauritanian National Institute of Health on June 29, 2020","On June 29, 2020, the Chinese government donated COVID-19 relief medical supplies to the Mauritanian National Institute of Health. The exact contents and value of this donation are unknown. The donation is a part of a working protocol of the Chinese medical team signed by China and Mauritania.",NA,"# Sector
+HEALTH
+
+# Title
+China donates COVID-19 relief medical supplies to the Mauritanian National Institute of Health on June 29, 2020
+
+# Description
+On June 29, 2020, the Chinese government donated COVID-19 relief medical supplies to the Mauritanian National Institute of Health. The exact contents and value of this donation are unknown. The donation is a part of a working protocol of the Chinese medical team signed by China and Mauritania.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"COVID-19 relief medical supplies, healthcare sector focus"
+93019,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,China donates 24 tons of food and anti-epidemic supplies to Mauritania for Ramadan May 2020,"On May 10, 2020, 32 Chinese-funded enterprises and institutions donated 24 tons of food materials and anti-epidemic supplies to Mauritania for Ramadan. The donation was intended as a gift as well as assistance in fighting the COVID-19 pandemic. The donation was jointly organized by the Chinese Embassy in Mauritania along with the 32 Chinese-funded enterprises and institutions. The exact agencies involved are unknown, as well as the contents of the medical donation and the value of the donation.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China donates 24 tons of food and anti-epidemic supplies to Mauritania for Ramadan May 2020
+
+# Description
+On May 10, 2020, 32 Chinese-funded enterprises and institutions donated 24 tons of food materials and anti-epidemic supplies to Mauritania for Ramadan. The donation was intended as a gift as well as assistance in fighting the COVID-19 pandemic. The donation was jointly organized by the Chinese Embassy in Mauritania along with the 32 Chinese-funded enterprises and institutions. The exact agencies involved are unknown, as well as the contents of the medical donation and the value of the donation.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on humanitarian aid and social development without clear environmental or energy transition impacts,"Food and medical supplies donation, COVID-19 pandemic assistance, Ramadan support"
+93042,HEALTH,Chinese Ministry of Foreign Affairs donates 10 heavy-duty ventilators to Mauritania December 2020,"On December 16, 2020, the Chinese Ministry of Foreign Affairs donated 10 heavy-duty ventilators to Mauritania. This donation was given in response to a request by Mauritania for assistance in fighting the Covid-19 pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Ministry of Foreign Affairs donates 10 heavy-duty ventilators to Mauritania December 2020
+
+# Description
+On December 16, 2020, the Chinese Ministry of Foreign Affairs donated 10 heavy-duty ventilators to Mauritania. This donation was given in response to a request by Mauritania for assistance in fighting the Covid-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of medical equipment (ventilators) for pandemic response
+93050,HEALTH,"China donates COVID-19 relief supplies to Mauritanian ministry and political party on September 4, 2020","On September 4, 2020, the Chinese Embassy donated COVID-19 relief supplies to the Ministry of Higher Education, Scientific Research, Information and Communication Technologies and the Women’s Committee of the ruling party, Union Pour la Repubilque (UPR). The supplies include protective, educational, and office supplies.",NA,"# Sector
+HEALTH
+
+# Title
+China donates COVID-19 relief supplies to Mauritanian ministry and political party on September 4, 2020
+
+# Description
+On September 4, 2020, the Chinese Embassy donated COVID-19 relief supplies to the Ministry of Higher Education, Scientific Research, Information and Communication Technologies and the Women’s Committee of the ruling party, Union Pour la Repubilque (UPR). The supplies include protective, educational, and office supplies.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical and educational supplies without direct environmental or energy transition impact,"COVID-19 relief supplies, protective and educational materials, social development focus"
+93053,HEALTH,"China’s Ningxia Hui Autonomous Region donates 30,000 surgical masks to the Association of Graduates from China in Mauritania and Chinguetti City","On June 24, 2020, the Ningxia Hui Autonomous Region announced a donation of 30,000 disposable medical masks to Mauritania. This donation was in response to the Covid-19 pandemic, and was given to the Association of Graduates from China in Mauritania and to Chinguetti City.   The supplies were shipped to Beijing before they arrived in Mauritania in August of 2020. The handover ceremonies for the donation were held on August 10 and 14, though it is unclear which recipient's ceremony came first.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China’s Ningxia Hui Autonomous Region donates 30,000 surgical masks to the Association of Graduates from China in Mauritania and Chinguetti City
+
+# Description
+On June 24, 2020, the Ningxia Hui Autonomous Region announced a donation of 30,000 disposable medical masks to Mauritania. This donation was in response to the Covid-19 pandemic, and was given to the Association of Graduates from China in Mauritania and to Chinguetti City.   The supplies were shipped to Beijing before they arrived in Mauritania in August of 2020. The handover ceremonies for the donation were held on August 10 and 14, though it is unclear which recipient's ceremony came first.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of 30,000 surgical masks for Covid-19 response, healthcare focus"
+93054,HEALTH,"China donates 16th batch of COVID-19 relief supplies to Mauritania on June 10, 2020","On June 10, 2020, the Chinese government donated COVID-19 relief supplies to Mauritania. This donation was the 16th batch of COVID-relief donations to Mauritania. It is unclear what the donation contained or its value.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 16th batch of COVID-19 relief supplies to Mauritania on June 10, 2020
+
+# Description
+On June 10, 2020, the Chinese government donated COVID-19 relief supplies to Mauritania. This donation was the 16th batch of COVID-relief donations to Mauritania. It is unclear what the donation contained or its value.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation unrelated to energy or environmental impacts,"COVID-19 relief supplies, health sector focus, donation nature"
+93055,HEALTH,"China's Fuzhou City donated COVID-19 relief supplies to Mauritanian city of Nouadhibou on June 9, 2020","On June 9, 2020, the Chinese Embassy handed over the donations of COVID-19 relief supplies from Fuzhou and Hong Dong International (Mauritania) Fishery Co. Ltd to Nouadhibou. Fuzhou is the sister city of Nouadhibou. The contents and value of this donation are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China's Fuzhou City donated COVID-19 relief supplies to Mauritanian city of Nouadhibou on June 9, 2020
+
+# Description
+On June 9, 2020, the Chinese Embassy handed over the donations of COVID-19 relief supplies from Fuzhou and Hong Dong International (Mauritania) Fishery Co. Ltd to Nouadhibou. Fuzhou is the sister city of Nouadhibou. The contents and value of this donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves humanitarian aid and health-related donations without clear environmental or energy transition impacts,"COVID-19 relief supplies, health sector focus, sister city relationship"
+93057,HEALTH,"China donates donated 6.1 tons of COVID-19 relief supplies to Mauritania  on April 15, 2020","On April 15, 2020, the Chinese government along with 32 Chinese companies and institutions donated 6.1 tons of COVID-19 relief supplies. This donation included 42 unspecified medical machines and other materials. It arrived in 570 boxes. The value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China donates donated 6.1 tons of COVID-19 relief supplies to Mauritania  on April 15, 2020
+
+# Description
+On April 15, 2020, the Chinese government along with 32 Chinese companies and institutions donated 6.1 tons of COVID-19 relief supplies. This donation included 42 unspecified medical machines and other materials. It arrived in 570 boxes. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare relief supplies with no direct environmental or energy transition impact,"COVID-19 relief supplies, medical machines, healthcare focus"

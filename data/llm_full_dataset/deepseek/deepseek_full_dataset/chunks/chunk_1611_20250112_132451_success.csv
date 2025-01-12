@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+34837,HEALTH,China funds anti-malaria training program in Uganda (Linked to #63793),"In November 2006, soon after the China-Africa Summit, a three-day anti-malaria training program was held in Kampala and funded by the Chinese government as part of China’s efforts to join forces with Uganda to fight the disease. The program started on November 27th and ended on November 29th, during which 5 experts from China provided training on treating and controlling Malaria to 48 primary doctors and officers from Uganda.   This project is linked to #63793, which details all of the malaria-related projects in Uganda funded by China.",NA,"# Sector
+HEALTH
+
+# Title
+China funds anti-malaria training program in Uganda (Linked to #63793)
+
+# Description
+In November 2006, soon after the China-Africa Summit, a three-day anti-malaria training program was held in Kampala and funded by the Chinese government as part of China’s efforts to join forces with Uganda to fight the disease. The program started on November 27th and ended on November 29th, during which 5 experts from China provided training on treating and controlling Malaria to 48 primary doctors and officers from Uganda.   This project is linked to #63793, which details all of the malaria-related projects in Uganda funded by China.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare training with no direct environmental or energy transition impact,"Anti-malaria training program, healthcare focus, no energy or infrastructure components"
+60078,HEALTH,"China donates anti-malaria drugs worth US $253 million in 2006 (Linked to #63793, #34837)","During the Forum of China-Africa Co-operation Summit (FOCAC) held in November 2006, the Chinese government committed to providing a first batch of anti-malarial drugs worth approximately US $250,000 to the Uganda Ministry of Health. The actual commitment was made on June 23, 2006. The Ugandan government records the actual disbursement as US $253,285.74, a total of two disbursements made in 2006 and 2007, respectively. This donation was also part of the three-day anti-malarial program held in Kampala (#34837). The batch was delivered in 2 segments: one on August 11, 2006 and the other on April 24, 2007.   This project is linked to #63793, which details all of the malaria-related projects in Uganda funded by China.",NA,"# Sector
+HEALTH
+
+# Title
+China donates anti-malaria drugs worth US $253 million in 2006 (Linked to #63793, #34837)
+
+# Description
+During the Forum of China-Africa Co-operation Summit (FOCAC) held in November 2006, the Chinese government committed to providing a first batch of anti-malarial drugs worth approximately US $250,000 to the Uganda Ministry of Health. The actual commitment was made on June 23, 2006. The Ugandan government records the actual disbursement as US $253,285.74, a total of two disbursements made in 2006 and 2007, respectively. This donation was also part of the three-day anti-malarial program held in Kampala (#34837). The batch was delivered in 2 segments: one on August 11, 2006 and the other on April 24, 2007.   This project is linked to #63793, which details all of the malaria-related projects in Uganda funded by China.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies without direct environmental or energy transition implications,"Anti-malaria drugs donation, healthcare sector focus"
+60327,ENERGY,"China provided and delivered 50,000 lamps to the Electoral Commission (EC) worth US$0.6 million.","In 2006, China provided and delivered 50,000 lamps to the Electoral Commission (EC) worth US$600,000.","this project might be a duplicate of project #30979. However, no definitive evidences can be found to determine that.","# Sector
+ENERGY
+
+# Title
+China provided and delivered 50,000 lamps to the Electoral Commission (EC) worth US$0.6 million.
+
+# Description
+In 2006, China provided and delivered 50,000 lamps to the Electoral Commission (EC) worth US$600,000.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Provision of lamps does not have a clear environmental or energy transition impact,"50,000 lamps provided to Electoral Commission, no energy-related specifications mentioned"
+60328,COMMUNICATIONS,"Chinese Government provides a $49,875.31 grant to support an expert team to study broadcasting and television projects","On June 23, 2006, the Chinese government committed $49,875.31 in grant funding to finance an expert team to conduct one study of an FM broadcasting project and another study of a television channel project.  According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, $49,321.82 was ultimately disbursed via this grant agreement through a single payment that took place on December 19, 2006.",One or both of the studies were likely feasibility studies for project ID#11413.,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese Government provides a $49,875.31 grant to support an expert team to study broadcasting and television projects
+
+# Description
+On June 23, 2006, the Chinese government committed $49,875.31 in grant funding to finance an expert team to conduct one study of an FM broadcasting project and another study of a television channel project.  According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, $49,321.82 was ultimately disbursed via this grant agreement through a single payment that took place on December 19, 2006.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves funding for studies related to broadcasting and television, which are unrelated to energy or environmental impacts",Grant funding for expert team to study FM broadcasting and television channel projects
+69144,TRANSPORT AND STORAGE,"Chinese Government grants $4,987,532 to Uganda for the introduction of a Motor Vehicle Inspection Service (ETCA)","On June 23, 2006, the Government of China committed a grant of $4,987,531.17 to the Government of Uganda through an Economic and Technical Cooperation Agreement (ETCA). The purpose of this grant was to introduce a Motor Vehicle Inspection Service that will be implemented by Uganda's Ministry of Works and Transport.  The actual amount disbursed as of November 30, 2007 is $5,354,035.60.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Government grants $4,987,532 to Uganda for the introduction of a Motor Vehicle Inspection Service (ETCA)
+
+# Description
+On June 23, 2006, the Government of China committed a grant of $4,987,531.17 to the Government of Uganda through an Economic and Technical Cooperation Agreement (ETCA). The purpose of this grant was to introduce a Motor Vehicle Inspection Service that will be implemented by Uganda's Ministry of Works and Transport.  The actual amount disbursed as of November 30, 2007 is $5,354,035.60.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on vehicle inspection services without clear environmental or energy transition impacts,"Motor Vehicle Inspection Service, transport sector project"
+85127,HEALTH,"China committed the donation of 2,000,000 RMB anti-malaria drugs in 2006 (Linked to #63793)","On April 19, 2007, in accordance with an agreement signed on June 23, 2006, China handed over anti-malaria drugs worth 2 million RMB to the Uganda Ministry of Health. The anti-malaria drugs were provided by Beijing Holley-Cotec Pharmaceuticals Co., Ltd. Between 2007 and 2009, the Chinese government donated anti-malaria medicine worth US$500,000 per annum through the ministry of health.",NA,"# Sector
+HEALTH
+
+# Title
+China committed the donation of 2,000,000 RMB anti-malaria drugs in 2006 (Linked to #63793)
+
+# Description
+On April 19, 2007, in accordance with an agreement signed on June 23, 2006, China handed over anti-malaria drugs worth 2 million RMB to the Uganda Ministry of Health. The anti-malaria drugs were provided by Beijing Holley-Cotec Pharmaceuticals Co., Ltd. Between 2007 and 2009, the Chinese government donated anti-malaria medicine worth US$500,000 per annum through the ministry of health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"Donation of anti-malaria drugs, healthcare sector focus"
+42459,EMERGENCY RESPONSE,Chinese Government provides RMB 10 million grant for Chernobyl reconstruction activities,"On April 25, 2006, as a part of a series of ceremonies and memorials to remember the 20th anniversary of the Chernobyl disaster, Ukrainian Economy Minister Arseniy Yatsenyukniy and Chinese Extraordinary and Plenipotentiary Ambassador to Ukraine Gao Yuishen signed an intergovernmental agreement. Under the terms of the agreement, the Chinese Government agreed to provide an RMB 10 million grant (1.2 million USD) to address the consequences of the Chernobyl nuclear accident. More specifically, the proceeds of the grant were to be used for the technical reconstruction of the sarcophagus over the deteriorated reactor and to assist the victims of the Chernobyl disaster by providing medical equipment and constructing a medical rehabilitation center.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government provides RMB 10 million grant for Chernobyl reconstruction activities
+
+# Description
+On April 25, 2006, as a part of a series of ceremonies and memorials to remember the 20th anniversary of the Chernobyl disaster, Ukrainian Economy Minister Arseniy Yatsenyukniy and Chinese Extraordinary and Plenipotentiary Ambassador to Ukraine Gao Yuishen signed an intergovernmental agreement. Under the terms of the agreement, the Chinese Government agreed to provide an RMB 10 million grant (1.2 million USD) to address the consequences of the Chernobyl nuclear accident. More specifically, the proceeds of the grant were to be used for the technical reconstruction of the sarcophagus over the deteriorated reactor and to assist the victims of the Chernobyl disaster by providing medical equipment and constructing a medical rehabilitation center.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on disaster recovery and medical assistance without clear environmental or energy transition impacts,"Technical reconstruction of sarcophagus, medical equipment provision, medical rehabilitation center construction"
+42461,GOVERNMENT AND CIVIL SOCIETY,China grants $1.2M to Ukraine Foreign Ministry,"In 2006, China donated $1.2 million for construction of the new house of the Diplomatic Academy within the Foreign Ministry of Ukraine. Mykola Kulinich, rector of the Diplomatic Academy within the Foreign Ministry of Ukraine, visited China in the framework of the Foreign Ministry's diplomats' visit to Beijing. The technical relief includes two computer and two lingophonic classes.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China grants $1.2M to Ukraine Foreign Ministry
+
+# Description
+In 2006, China donated $1.2 million for construction of the new house of the Diplomatic Academy within the Foreign Ministry of Ukraine. Mykola Kulinich, rector of the Diplomatic Academy within the Foreign Ministry of Ukraine, visited China in the framework of the Foreign Ministry's diplomats' visit to Beijing. The technical relief includes two computer and two lingophonic classes.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational infrastructure development with no direct environmental or energy transition impact,"Construction of Diplomatic Academy building, computer and lingophonic classes for educational purposes"
+42463,BANKING AND FINANCIAL SERVICES,"China Eximbank provides $817,800 buyer’s credit loan to UkrPromBank to finance import of Chinese goods","In May 2006, the Export-Import Bank of China and UkrPromBank signed a $817,800 buyer’s credit loan to finance the import of goods from China. The maturity length of the loan was 3 years. The interest rate is unknown.","In 2009, Ukrprombank was in financial distress and the accounts of more than 1 million depositors, to whom Ukrprombank owed UAH 7,370 million, were transferred to Ukraine’s state-owned Rodovid Bank.","# Sector
+BANKING AND FINANCIAL SERVICES
+
+# Title
+China Eximbank provides $817,800 buyer’s credit loan to UkrPromBank to finance import of Chinese goods
+
+# Description
+In May 2006, the Export-Import Bank of China and UkrPromBank signed a $817,800 buyer’s credit loan to finance the import of goods from China. The maturity length of the loan was 3 years. The interest rate is unknown.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves financial services with no clear environmental or energy transition impacts,"Buyer's credit loan for import of unspecified goods, banking sector project"
+42464,EDUCATION,"Chinese Government provides $750,000 grant for provision of educational equipment","On July 16, 2006, through an agreement signed by Ukrainian Economy Minister Arseniy Yatsenyukniy and the Chinese ambassador in Ukraine, Gao Yusheng, the Chinese Government agreed to provide a $750,000 grant to the Government of Ukraine for the provision of technical equipment for the language laboratory of Dnipropetrovsk University, IT equipment to the Foreign Ministry's diplomatic academy and the University of Kyiv, and educational programs for trade and economic relations with China at the Ukrainian Academy of Foreign Trade.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides $750,000 grant for provision of educational equipment
+
+# Description
+On July 16, 2006, through an agreement signed by Ukrainian Economy Minister Arseniy Yatsenyukniy and the Chinese ambassador in Ukraine, Gao Yusheng, the Chinese Government agreed to provide a $750,000 grant to the Government of Ukraine for the provision of technical equipment for the language laboratory of Dnipropetrovsk University, IT equipment to the Foreign Ministry's diplomatic academy and the University of Kyiv, and educational programs for trade and economic relations with China at the Ukrainian Academy of Foreign Trade.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational equipment and programs without direct environmental or energy transition impacts,"Provision of technical equipment for language labs, IT equipment, and educational programs for trade relations"

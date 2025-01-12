@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+61365,"INDUSTRY, MINING, CONSTRUCTION","BGP China Loans 500,000 USD to BGP Brasil","In August 2012, the BGP China loaned  500,000 USD to BGP Brasil. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete, however the current status is unclear. ",NA,"# Sector
+INDUSTRY, MINING, CONSTRUCTION
+
+# Title
+BGP China Loans 500,000 USD to BGP Brasil
+
+# Description
+In August 2012, the BGP China loaned  500,000 USD to BGP Brasil. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete, however the current status is unclear. ",TRUE,NA,NEUTRAL,LOW,Financial Services,"Loan with unclear purpose and use, insufficient information to determine environmental impact","Loan terms and use of funds are unspecified, no project details provided"
+61476,UNALLOCATED/UNSPECIFIED,"XCMG Loans 80,500 USD to Exito Impd. Brasil","In June 2012, Xuzhou Heavy Machinery Co., Ltd. (XCMG) loaned 80,500 USD to Exito Impd. Brasil as import financing. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete. However, the current status is unclear.",NA,"# Sector
+UNALLOCATED/UNSPECIFIED
+
+# Title
+XCMG Loans 80,500 USD to Exito Impd. Brasil
+
+# Description
+In June 2012, Xuzhou Heavy Machinery Co., Ltd. (XCMG) loaned 80,500 USD to Exito Impd. Brasil as import financing. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete. However, the current status is unclear.",TRUE,NA,NEUTRAL,LOW,Financial Services,Project involves financial services with unclear environmental impact or energy transition relevance,Import financing loan with unspecified use of funds
+61872,"INDUSTRY, MINING, CONSTRUCTION","XCMG Construction Loans 24,200 USD to Exito Import/Export S.A.","In June 2012, XCMG Construction loaned 24,200 USD to Exito Import/Export S.A. as import financing. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete.",NA,"# Sector
+INDUSTRY, MINING, CONSTRUCTION
+
+# Title
+XCMG Construction Loans 24,200 USD to Exito Import/Export S.A.
+
+# Description
+In June 2012, XCMG Construction loaned 24,200 USD to Exito Import/Export S.A. as import financing. The loan terms and use of the loan are unclear. The Central Bank of Brazil lists the registration of the loan as complete.",TRUE,NA,NEUTRAL,LOW,Financial Services,"Loan purpose and use are unclear, with no specific environmental or energy transition impacts identified","Import financing with unspecified use, no project details provided"
+64580,"INDUSTRY, MINING, CONSTRUCTION",CDB provides $1.365 billion loan to China Niobium Investment Holdings Limited for acquisition of minority stake in Companhia Brasileira de Metalurgia e Mineracao,"In 2012, the Hong Kong Branch of China Development Bank (CDB) provided a $1.365 billion loan to China Niobium Investment Holdings Limited — a joint venture invested by a consortium consisting of 5 Chinese SOEs (CITIC Group, Anshan Iron & Steel Group Corporation, Baosteel Group Co., Ltd., Shougang Corporation and Taiyuan Iron & Steel (Group) Co., Ltd.) — for the acquisition of a minority stake in Companhia Brasileira de Metalurgia e Mineracao (CBMM), a privately held Brazilian miner of niobium.",NA,"# Sector
+INDUSTRY, MINING, CONSTRUCTION
+
+# Title
+CDB provides $1.365 billion loan to China Niobium Investment Holdings Limited for acquisition of minority stake in Companhia Brasileira de Metalurgia e Mineracao
+
+# Description
+In 2012, the Hong Kong Branch of China Development Bank (CDB) provided a $1.365 billion loan to China Niobium Investment Holdings Limited — a joint venture invested by a consortium consisting of 5 Chinese SOEs (CITIC Group, Anshan Iron & Steel Group Corporation, Baosteel Group Co., Ltd., Shougang Corporation and Taiyuan Iron & Steel (Group) Co., Ltd.) — for the acquisition of a minority stake in Companhia Brasileira de Metalurgia e Mineracao (CBMM), a privately held Brazilian miner of niobium.",TRUE,NA,GREY,HIGH,Mining (Energy Transition Minerals),"Niobium is a critical mineral used in energy transition technologies, particularly in high-strength steel for wind turbines and electric vehicles","Acquisition of stake in Brazilian niobium mining company, CBMM, by Chinese consortium"
+98541,TRANSPORT AND STORAGE,BOC Aviation enters into sale-and-leaseback agreement with GOL for eight Boeing 737-800 aircraft,"In November 2012, BOC Aviation a purchase-and-leaseback agreement with GOL Linhas Aéreas Inteligentes S.A. (GOL), for eight new Boeing 737-800 aircraft. The aircraft were scheduled to be delivered from the first quarter of 2013 to the third quarter of 2014.",1. Sale and leaseback (or sale-leaseback) agreements are generally considered to be off-balance-sheet hybrid debt products.,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+BOC Aviation enters into sale-and-leaseback agreement with GOL for eight Boeing 737-800 aircraft
+
+# Description
+In November 2012, BOC Aviation a purchase-and-leaseback agreement with GOL Linhas Aéreas Inteligentes S.A. (GOL), for eight new Boeing 737-800 aircraft. The aircraft were scheduled to be delivered from the first quarter of 2013 to the third quarter of 2014.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves financial leasing of aircraft without direct environmental or energy transition implications,"Sale-and-leaseback agreement for commercial aircraft, no specific environmental features mentioned"
+38238,EDUCATION,China sends 23 volunteer teachers to Brunei on a one year teaching service in 2012,"On December 27 2012, the Chinese Ministry of Commerce and the Chinese Young Volunteers Association jointly organised a government cooperation project by sending 23 volunteer teachers to Brunei on a one-year teaching service. These 23 volunteers will assist various schools in Brunei for medical knowledge, sports and Chinese Teaching. It is also captured by the 2018 MOFCOM Investment Guide",NA,"# Sector
+EDUCATION
+
+# Title
+China sends 23 volunteer teachers to Brunei on a one year teaching service in 2012
+
+# Description
+On December 27 2012, the Chinese Ministry of Commerce and the Chinese Young Volunteers Association jointly organised a government cooperation project by sending 23 volunteer teachers to Brunei on a one-year teaching service. These 23 volunteers will assist various schools in Brunei for medical knowledge, sports and Chinese Teaching. It is also captured by the 2018 MOFCOM Investment Guide",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and knowledge transfer without direct environmental or energy transition implications,"Volunteer teaching program in medical knowledge, sports, and Chinese language"
+42196,EMERGENCY RESPONSE,"China donates 15,000 BGN for Bulgaria Disaster Relief","On 8 February 2012, the Chinese embassy in Sofia donated 15,000 BGN (about 10,180 U.S. dollars) to victims of the floods that hit a Bulgarian village on Monday. The money is provided to the Bulgarian Red Cross, the embassy said in a press release.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates 15,000 BGN for Bulgaria Disaster Relief
+
+# Description
+On 8 February 2012, the Chinese embassy in Sofia donated 15,000 BGN (about 10,180 U.S. dollars) to victims of the floods that hit a Bulgarian village on Monday. The money is provided to the Bulgarian Red Cross, the embassy said in a press release.",TRUE,NA,NEUTRAL,HIGH,Social Development,Financial donation for disaster relief with no direct environmental or energy transition impact,"Donation to Bulgarian Red Cross for flood victims, humanitarian aid focus"
+42197,EDUCATION,"Chinese Embassy Donates 1,700 volumes of literature and video materials to Bulgaria University","12 February 2012 China's Ambassador to Bulgaria Guo Yezhou Saturday presented a donation of 1,700 volumes of literature and video materials for the study of Chinese language to the Paisii Hilendarski University of Plovdiv, said the University Rector, Assoc. Prof. Zapryan Kozloudjov. The teaching aids will be used in the three latest philological bachelor degree courses launched for the current academic year: Chinese Language and Bulgarian Language, Chinese Language and German Language, and Chinese Language and English Language, with a combined enrolment of over 40. ",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy Donates 1,700 volumes of literature and video materials to Bulgaria University
+
+# Description
+12 February 2012 China's Ambassador to Bulgaria Guo Yezhou Saturday presented a donation of 1,700 volumes of literature and video materials for the study of Chinese language to the Paisii Hilendarski University of Plovdiv, said the University Rector, Assoc. Prof. Zapryan Kozloudjov. The teaching aids will be used in the three latest philological bachelor degree courses launched for the current academic year: Chinese Language and Bulgarian Language, Chinese Language and German Language, and Chinese Language and English Language, with a combined enrolment of over 40. ",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves educational materials donation with no direct environmental or energy transition impact,Donation of literature and video materials for Chinese language study at university
+66512,ENERGY,China Development Bank provides EUR 103 million loan to Astronergy for construction of PV solar energy plants,"China Development Bank (CDB) Zhejiang Branch extended an EUR 103 million loan to a private company called Astronergy Co., Ltd. (Chint Solar) for the construction of photovoltaic (PV) solar energy plants in Bulgaria with an aggregate capacity of 60MW.   On June 12, 2012, Astronergy Co., Ltd. — a subsidiary of the CHINT Group — announced that it had completed the construction of these solar power plants and they had achieved their commercial operations date (COD). These plants are expected to generate 1,858,548,000 kWh of electricity over the next 25 years. The project took approximately three months to complete construction.   The reported power generation capacity of this project varies from 45MW to 60MW across different sources. CDB identifies the project as a '60 MW solar power project’. CMS Legal Services EEIG identifies the project as supporting eleven separate renewable energy projects with a total capacity of 45 MW. Siyana Timcheva, a former project manager, notes on her Linkedin Page that the CDB loan supported independent renewable energy projects with a total capacity of 45 MW. The Astronergy website identifies eight different power plants in Bulgaria, all completed in June 2012 with a total capacity of 45.1 MW.","1. The loan (signature) commitment year is not specified by any available sources. AidData has set the commitment year to 2012 for the time being (since this is the year when construction began). 2. While it is known that Astronergy constructed the Valchin, Hanovo, Smolnik, Skobelevo, Bezmer, Yambol, Chargan, Cherveniakovo, Palauovo solar energy plants in Bulgaria, it is not known which specific plants were constructed with the proceeds of the CDB loan. This issue merits further investigation.","# Sector
+ENERGY
+
+# Title
+China Development Bank provides EUR 103 million loan to Astronergy for construction of PV solar energy plants
+
+# Description
+China Development Bank (CDB) Zhejiang Branch extended an EUR 103 million loan to a private company called Astronergy Co., Ltd. (Chint Solar) for the construction of photovoltaic (PV) solar energy plants in Bulgaria with an aggregate capacity of 60MW.   On June 12, 2012, Astronergy Co., Ltd. — a subsidiary of the CHINT Group — announced that it had completed the construction of these solar power plants and they had achieved their commercial operations date (COD). These plants are expected to generate 1,858,548,000 kWh of electricity over the next 25 years. The project took approximately three months to complete construction.   The reported power generation capacity of this project varies from 45MW to 60MW across different sources. CDB identifies the project as a '60 MW solar power project’. CMS Legal Services EEIG identifies the project as supporting eleven separate renewable energy projects with a total capacity of 45 MW. Siyana Timcheva, a former project manager, notes on her Linkedin Page that the CDB loan supported independent renewable energy projects with a total capacity of 45 MW. The Astronergy website identifies eight different power plants in Bulgaria, all completed in June 2012 with a total capacity of 45.1 MW.",TRUE,NA,GREEN,HIGH,Solar Power,Primary purpose is solar power generation through multiple photovoltaic plants,"Construction of photovoltaic solar energy plants with total capacity between 45-60MW, expected to generate significant renewable electricity over 25 years"
+66514,ENERGY,China Development Bank provides EUR 26.19 million loan to RisenSky for the construction of 4 solar parks,"In September 2011, RisenSky, a joint venture between Sky Solar and Risen Energy Co., Ltd., was formed. Risen Energy, through its affiliate Risen Energy (Hong Kong) Co., Ltd., holds a 70% equity stake in RisenSky, and Sky Solar holds a 30% equity stake. In March 2012, China Development Bank extended an EUR 26.19 million loan to RisenSky for the development of four solar parks in Bulgaria with an aggregate capacity of 12.1 MW. Risen Energy is the guarantor of the CDB loan.   According to a financial report published by Risen Energy, China Development Bank extended a loan worth EUR 26,190,000 with a repayment period between March 26, 2012 and November 20, 2026 and an interest rate of 7.10%. As of December 31, 2017, RisenSky had completed the construction of the four solar parks in Bulgaria.",NA,"# Sector
+ENERGY
+
+# Title
+China Development Bank provides EUR 26.19 million loan to RisenSky for the construction of 4 solar parks
+
+# Description
+In September 2011, RisenSky, a joint venture between Sky Solar and Risen Energy Co., Ltd., was formed. Risen Energy, through its affiliate Risen Energy (Hong Kong) Co., Ltd., holds a 70% equity stake in RisenSky, and Sky Solar holds a 30% equity stake. In March 2012, China Development Bank extended an EUR 26.19 million loan to RisenSky for the development of four solar parks in Bulgaria with an aggregate capacity of 12.1 MW. Risen Energy is the guarantor of the CDB loan.   According to a financial report published by Risen Energy, China Development Bank extended a loan worth EUR 26,190,000 with a repayment period between March 26, 2012 and November 20, 2026 and an interest rate of 7.10%. As of December 31, 2017, RisenSky had completed the construction of the four solar parks in Bulgaria.",TRUE,NA,GREEN,HIGH,Solar Power,Primary purpose is solar power generation through the construction of solar parks,Development of four solar parks in Bulgaria with an aggregate capacity of 12.1 MW

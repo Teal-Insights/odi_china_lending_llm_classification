@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95086,HEALTH,"ZTE donates 50,000 masks to Ukraine in April 2020","On April 9, 2020, 50,000 three-layer medical masks donated by ZTE to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The masks were eventually delivered to Ukraine. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+ZTE donates 50,000 masks to Ukraine in April 2020
+
+# Description
+On April 9, 2020, 50,000 three-layer medical masks donated by ZTE to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The masks were eventually delivered to Ukraine. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 50,000 medical masks, healthcare sector focus"
+95087,HEALTH,"Guizhou Provincial Government donates masks, gloves, and tests to Ukraine in April 2020","On April 9, 2020, 15,000 three-layer medical masks, 1,000 medical gloves,  500 N95 masks, and 100 tests donated by the People's Government of Guizhou Province  to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Guizhou Provincial Government donates masks, gloves, and tests to Ukraine in April 2020
+
+# Description
+On April 9, 2020, 15,000 three-layer medical masks, 1,000 medical gloves,  500 N95 masks, and 100 tests donated by the People's Government of Guizhou Province  to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for humanitarian purposes, unrelated to energy or environmental impacts","Donation of medical masks, gloves, and tests for healthcare purposes"
+95088,HEALTH,China Railway 14 Bureau Group Corp donates disinfects to Ukraine in April 2020,"On April 9, 2020, 500 bottles of medical disinfectant and 500 bottles of medical-grade alcohol donated by China Railway 14 Bureau Group Corp to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China Railway 14 Bureau Group Corp donates disinfects to Ukraine in April 2020
+
+# Description
+On April 9, 2020, 500 bottles of medical disinfectant and 500 bottles of medical-grade alcohol donated by China Railway 14 Bureau Group Corp to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"Donation of medical disinfectant and alcohol, healthcare-related supplies"
+95089,HEALTH,"China Road and Bridge Corporation donates 50,000 masks to Ukraine in April 2020","On April 10, 2020, 50,000 three-layer medical masks donated by China Road and Bridge Corporation to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The masks were eventually delivered to Ukraine. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Road and Bridge Corporation donates 50,000 masks to Ukraine in April 2020
+
+# Description
+On April 10, 2020, 50,000 three-layer medical masks donated by China Road and Bridge Corporation to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The masks were eventually delivered to Ukraine. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Medical mask donation, healthcare-related assistance"
+95091,HEALTH,China Great Wall Corporation donates Covid-19 supplies to Ukraine in April 2020,"On April 10, 2020, 15,850 three-layer medical masks, 4 thousand protective gloves, 120 protective glasses, and 100 packs of Chinese medicine donated by China Great Wall Corporation to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Great Wall Corporation donates Covid-19 supplies to Ukraine in April 2020
+
+# Description
+On April 10, 2020, 15,850 three-layer medical masks, 4 thousand protective gloves, 120 protective glasses, and 100 packs of Chinese medicine donated by China Great Wall Corporation to Ukraine were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical masks, protective gloves, protective glasses, and Chinese medicine donated for healthcare purposes"
+95095,HEALTH,China Council for the Promotion of International Trade donates Covid-19 medical supplies to Ukraine in April 2020,"On April 10, 2020, 20,000 three-layer medical masks, 400 sets of protective clothing, 200 safety glasses, and 200 pairs of medical shoes donated by China Council for the Promotion of International Trade (CCPIT) were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Council for the Promotion of International Trade donates Covid-19 medical supplies to Ukraine in April 2020
+
+# Description
+On April 10, 2020, 20,000 three-layer medical masks, 400 sets of protective clothing, 200 safety glasses, and 200 pairs of medical shoes donated by China Council for the Promotion of International Trade (CCPIT) were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without clear environmental or energy transition impacts,"Medical masks, protective clothing, safety glasses, and medical shoes donated for healthcare purposes"
+95096,HEALTH,China Ministry of State Security donates masks to Ukraine in April 2020,"On April 10, 2020, 20,000 three-layer medical masks and 1,000 N95 masks donated by China's Ministry of State Security were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Ministry of State Security donates masks to Ukraine in April 2020
+
+# Description
+On April 10, 2020, 20,000 three-layer medical masks and 1,000 N95 masks donated by China's Ministry of State Security were held in a warehouse in Beijing to be loaded onto a plane to Ukraine. The supplies were eventually delivered to Ukraine.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical mask donation, healthcare sector focus"
+95114,HEALTH,AVIC loans warehouse worth USD 1 million to Government of Ukraine,"In March and April 2020, the Government of Ukraine received several donations of Covid-19 supplies from Chinese companies. The goods were stored in a warehouse in Beijing prior to being shipped to Ukraine. AVIC loaned Ukraine the warehouse as a form of humanitarian aid. The value of this donation was valued at USD 1 million.",NA,"# Sector
+HEALTH
+
+# Title
+AVIC loans warehouse worth USD 1 million to Government of Ukraine
+
+# Description
+In March and April 2020, the Government of Ukraine received several donations of Covid-19 supplies from Chinese companies. The goods were stored in a warehouse in Beijing prior to being shipped to Ukraine. AVIC loaned Ukraine the warehouse as a form of humanitarian aid. The value of this donation was valued at USD 1 million.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is humanitarian aid unrelated to energy or environmental impacts,"Warehouse loan for storing Covid-19 supplies, classified as humanitarian aid"
+98129,HEALTH,Nanning Municipal Government donates medical supplies to Ivano-Frankivsk,"Sometime between March to April 2020, Nanning Municipal Government donated medical supplies to the city of Ivano-Frankivsk, Ukraine.",NA,"# Sector
+HEALTH
+
+# Title
+Nanning Municipal Government donates medical supplies to Ivano-Frankivsk
+
+# Description
+Sometime between March to April 2020, Nanning Municipal Government donated medical supplies to the city of Ivano-Frankivsk, Ukraine.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation, healthcare sector"
+68934,HEALTH,"Shanxi Province provided a donation of 20,000 and 10,000 surgical masks to Canelones and Paysandú in May 2020","On May 27, 2020, the Chinese province of Shanxi gave a donation of 20,000 surgical masks to the department of Canelones and 10,000 surgical masks to the department of Paysandú to assist Uruguay's dealing with COVID-19.   Harvard's Mask Diplomacy Dataset estimated the donation to Canelones to be worth USD 8,000 and the donation to Paysandú to be worth USD 4,000, for a total estimated value of USD 12,000.","1. The Chinese Embassy article that describes this donation includes a photo with several boxes that have Brazilian flags on their labels, in addition to boxes with Uruguayan flags. This issue warrants further investigation.","# Sector
+HEALTH
+
+# Title
+Shanxi Province provided a donation of 20,000 and 10,000 surgical masks to Canelones and Paysandú in May 2020
+
+# Description
+On May 27, 2020, the Chinese province of Shanxi gave a donation of 20,000 surgical masks to the department of Canelones and 10,000 surgical masks to the department of Paysandú to assist Uruguay's dealing with COVID-19.   Harvard's Mask Diplomacy Dataset estimated the donation to Canelones to be worth USD 8,000 and the donation to Paysandú to be worth USD 4,000, for a total estimated value of USD 12,000.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation of surgical masks for COVID-19 response, healthcare sector focus"

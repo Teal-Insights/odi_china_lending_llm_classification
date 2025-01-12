@@ -1,0 +1,11 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+2234,EMERGENCY RESPONSE,"Chinese Government provides $500,000 USD cash grant, food, and blankets after CNMC industrial accident","In 2005, the Chinese Government donated $500,000 USD and material assistance (including food and blankets) to the Government of Zambia after a fatal accident took place at a CNMC-owned BGRIMM explosives plant in the town of Kitwe. The explosion killed 51 and injured 2 others.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government provides $500,000 USD cash grant, food, and blankets after CNMC industrial accident
+
+# Description
+In 2005, the Chinese Government donated $500,000 USD and material assistance (including food and blankets) to the Government of Zambia after a fatal accident took place at a CNMC-owned BGRIMM explosives plant in the town of Kitwe. The explosion killed 51 and injured 2 others.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 502 Bad Gateway.
+",NA,NA,NA,NA,NA

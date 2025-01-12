@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91169,HEALTH,Chinese government donates masks and protective gear to El Salvador in July 2020,"On July 28, 2020,  the Chinese Government donated 400,000 surgical masks, 50,000 N95 masks and 5,000 protective suits to the Salvadoran Government. The medical supplies is intended to support health personnel in El Salvador with the Covid-19 pandemic. The monetary value of the donation is unknown.","1. The social media sources are from the Chinese embassy's official channels, but they are not backed by an article on their website.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese government donates masks and protective gear to El Salvador in July 2020
+
+# Description
+On July 28, 2020,  the Chinese Government donated 400,000 surgical masks, 50,000 N95 masks and 5,000 protective suits to the Salvadoran Government. The medical supplies is intended to support health personnel in El Salvador with the Covid-19 pandemic. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of masks and protective gear for COVID-19 response, health sector focus"
+91171,HEALTH,Chinese Embassy donates 452 food packets to medical staff in El Salvador in July 2020,"On July 3, 2020, the Chinese Embassy donated 452 food packets to the medical and technical staff of 30 hospitals in El Salvador. This donation was completed in collaboration with the Ministry of Health in El Salvador. The monetary value of the donation is unknown.",1. The only source for this donation is the official twitter account of the Chinese embassy.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 452 food packets to medical staff in El Salvador in July 2020
+
+# Description
+On July 3, 2020, the Chinese Embassy donated 452 food packets to the medical and technical staff of 30 hospitals in El Salvador. This donation was completed in collaboration with the Ministry of Health in El Salvador. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Food donation to medical staff, no energy or infrastructure components"
+91172,HEALTH,Chinese Embassy donates masks to International Fair and Convention Center hospital in El Salvador in May 2020,"On May 20, 2020, Chinese Ambassador Ou Jianhong handed over a donation of medical-wear masks to the International Fair and Convention Center (CIFCO) President in El Salvador. This donation will be provided to workers on the frontline of the CIFCO hospital construction, Hospital El Salvador. The monetary value of this donation is unknown.  The Hospital El Salvador is a major hospital in San Salvador, El Salvador, and is planned to be the largest hospital in Latin America. The first phase was constructed between March and June 2020 as a conversion of the International Fair and Convention Center (Centro Internacional de Ferias y Convenciones, CIFCO) and forms part of El Salvador's response to the COVID-19 pandemic. The hospital exclusively receives COVID-19 patients.",1. The twitter source (Source ID #157900) is from the Chinese Embassy's official twitter.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates masks to International Fair and Convention Center hospital in El Salvador in May 2020
+
+# Description
+On May 20, 2020, Chinese Ambassador Ou Jianhong handed over a donation of medical-wear masks to the International Fair and Convention Center (CIFCO) President in El Salvador. This donation will be provided to workers on the frontline of the CIFCO hospital construction, Hospital El Salvador. The monetary value of this donation is unknown.  The Hospital El Salvador is a major hospital in San Salvador, El Salvador, and is planned to be the largest hospital in Latin America. The first phase was constructed between March and June 2020 as a conversion of the International Fair and Convention Center (Centro Internacional de Ferias y Convenciones, CIFCO) and forms part of El Salvador's response to the COVID-19 pandemic. The hospital exclusively receives COVID-19 patients.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to a healthcare facility, with no direct environmental or energy transition impact","Medical-wear masks donation, COVID-19 hospital construction, healthcare focus"
+91176,HEALTH,Municipality of Beijing donates 5 tanker trucks to San Salvador in March 2020,"On March 11, 2020,  Ambassador Ou Jianhong delivered 5 tanker trucks donated by the municipality of Beijing, China's capital, to San Salvador City Hall. The donation was intended to improve sanitation in vulnerable communities and prevent the spread of COVID-19. The monetary value of the trucks is unknown.",1. The twitter source (Source ID #157904) is from the Chinese embassy's official twitter.,"# Sector
+HEALTH
+
+# Title
+Municipality of Beijing donates 5 tanker trucks to San Salvador in March 2020
+
+# Description
+On March 11, 2020,  Ambassador Ou Jianhong delivered 5 tanker trucks donated by the municipality of Beijing, China's capital, to San Salvador City Hall. The donation was intended to improve sanitation in vulnerable communities and prevent the spread of COVID-19. The monetary value of the trucks is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on sanitation improvement and COVID-19 prevention without direct environmental or energy transition impacts,Donation of tanker trucks for sanitation purposes in vulnerable communities
+91179,HEALTH,China donates USD 2 million for construction of speciality Covid-19 hospital in El Salvador,"In 2020, the People’s Republic of China donated USD 2 million to support the construction of the Specialty Hospital for emergency COVID-19 care in San Salvador.",1. The exact date this donation was committed is unknown.,"# Sector
+HEALTH
+
+# Title
+China donates USD 2 million for construction of speciality Covid-19 hospital in El Salvador
+
+# Description
+In 2020, the People’s Republic of China donated USD 2 million to support the construction of the Specialty Hospital for emergency COVID-19 care in San Salvador.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure development with no direct environmental or energy transition impact,"Construction of specialty COVID-19 hospital, healthcare sector focus"
+91189,HEALTH,Chinese Embassy donates masks to the GANA party of El Salvador in May 2020,"​​On May 12, 2020, the Chinese Ambassador in El Salvador, Ou Jianhong, donated 20,000 masks to the GANA party of El Salvador. William Gallegos, the Vice President of the Assembly, accepted the donation on behalf of The Grand Alliance for National Unity (GANA), a political party in El Salvador. The monetary value of the donation is unknown.","1. The only sources for this project are on social media. One is the official twitter account of the GANA party, and it has an image of the Chinese ambassador to El Salvador Ou Jianhong. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates masks to the GANA party of El Salvador in May 2020
+
+# Description
+​​On May 12, 2020, the Chinese Ambassador in El Salvador, Ou Jianhong, donated 20,000 masks to the GANA party of El Salvador. William Gallegos, the Vice President of the Assembly, accepted the donation on behalf of The Grand Alliance for National Unity (GANA), a political party in El Salvador. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation unrelated to energy or environmental impacts,"Donation of masks for health purposes, no energy or environmental components"
+91191,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"Chinese Embassy donates food packets to Ahuachapán, El Salvador in May 2020","On May 21, 2020, the Chinese Embassy in El Salvador donated food packets to the municipality of Ahuachapán, a city in western El Salvador. The monetary value of the donated goods is unknown.","1.) The only source for this donation is from social media, but it comes from an official recipient (The National Director of Legal Affairs).","# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Embassy donates food packets to Ahuachapán, El Salvador in May 2020
+
+# Description
+On May 21, 2020, the Chinese Embassy in El Salvador donated food packets to the municipality of Ahuachapán, a city in western El Salvador. The monetary value of the donated goods is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Food aid project with no direct environmental or energy transition impact,Donation of food packets for food security assistance
+91201,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese Embassy donates technology supplies to Salvadoran Institute for the Development of Women in December 2020,"On December 15, 2020, the Chinese Embassy in El Salvador offered a donation of technological supplies to the Salvadoran Institute for the Development of Women (ISDEMU). This donation will be used to help affected Salvadoran women face challenges posed by the pandemic and achieve independent sustainable development. The monetary value of this donation is unknown.","1. The social media sources are official embassy channels, but no other official information on this donation exists.","# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Embassy donates technology supplies to Salvadoran Institute for the Development of Women in December 2020
+
+# Description
+On December 15, 2020, the Chinese Embassy in El Salvador offered a donation of technological supplies to the Salvadoran Institute for the Development of Women (ISDEMU). This donation will be used to help affected Salvadoran women face challenges posed by the pandemic and achieve independent sustainable development. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on social development and gender equality through technology donation, with no direct environmental or energy transition impact","Donation of technology supplies to women's development institute, focus on pandemic response and sustainable development"
+92649,BANKING AND FINANCIAL SERVICES,China Co-Financing Fund for Latin America and the Caribbean loan provides $15 million loan to Davivienda for ‘green’ on-lending activities in El Salvador (Linked to Project ID#86526),"On December 23, 2020, the China Co-Financing Fund for Latin America and the Caribbean signed a $15 million loan agreement with Banco Davivienda S.A. (Davivienda) — a private regional bank that operates in six countries (Colombia, Panama, Costa Rica, El Salvador, Honduras, and the United States) — to support the development of Davivienda’s portfolio of financing for environmentally friendly projects (‘green loans’) in El Salvador. Additionally, the loan is intended to aid Banco Davivienda in their development projects and obstacles caused by the Covid-19 economic crisis. The borrowing terms of the loan are unknown. The loan from the China Co-Financing Fund for Latin America and the Caribbean was secured alongside a $35 million loan from the Inter-American Investment Corporation (IDB Invest) and $50 million mobilized through co-financiers or ‘B’ lenders.","1. The China Co-Financing Fund for Latin America and the Caribbean was established on January 14, 2013 with a contribution of $2 billion by the People's Bank of China. It is administered by the IDB. For more information, see umbrella Project ID#86526. 2. The IDB Invest project identification number is 11860-02 or IDBI-11860-02.","# Sector
+BANKING AND FINANCIAL SERVICES
+
+# Title
+China Co-Financing Fund for Latin America and the Caribbean loan provides $15 million loan to Davivienda for ‘green’ on-lending activities in El Salvador (Linked to Project ID#86526)
+
+# Description
+On December 23, 2020, the China Co-Financing Fund for Latin America and the Caribbean signed a $15 million loan agreement with Banco Davivienda S.A. (Davivienda) — a private regional bank that operates in six countries (Colombia, Panama, Costa Rica, El Salvador, Honduras, and the United States) — to support the development of Davivienda’s portfolio of financing for environmentally friendly projects (‘green loans’) in El Salvador. Additionally, the loan is intended to aid Banco Davivienda in their development projects and obstacles caused by the Covid-19 economic crisis. The borrowing terms of the loan are unknown. The loan from the China Co-Financing Fund for Latin America and the Caribbean was secured alongside a $35 million loan from the Inter-American Investment Corporation (IDB Invest) and $50 million mobilized through co-financiers or ‘B’ lenders.",TRUE,NA,NEUTRAL,HIGH,Financial Services,"The project involves financial services for green lending activities, but the primary purpose is financial intermediation rather than direct environmental impact","$15 million loan for green on-lending activities, financial services focus"
+92773,HEALTH,Chinese Government sends anti-epidemic medical expert team to Equatorial Guinea in response to COVID-19 epidemic,"On May 25, 2020, an anti-epidemic expert team of 12 members arrived in Malabo in response to the COVID-19 epidemic. The team was formed by the National Health Commission and selected by the Hunan Provincial Health Commission. The team included experts in respiratory care, infectious disease, intensive care, Infection control, public health, laboratory testing and nursing.  Zhao Lijian, the spokesman for the Foreign Ministry Information Department of the People's Republic of China, announced their arrival on May 25. The team remained in Equatorial Guinea for 10 days and left on June 8, 2020, after providing medical assistance.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government sends anti-epidemic medical expert team to Equatorial Guinea in response to COVID-19 epidemic
+
+# Description
+On May 25, 2020, an anti-epidemic expert team of 12 members arrived in Malabo in response to the COVID-19 epidemic. The team was formed by the National Health Commission and selected by the Hunan Provincial Health Commission. The team included experts in respiratory care, infectious disease, intensive care, Infection control, public health, laboratory testing and nursing.  Zhao Lijian, the spokesman for the Foreign Ministry Information Department of the People's Republic of China, announced their arrival on May 25. The team remained in Equatorial Guinea for 10 days and left on June 8, 2020, after providing medical assistance.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on providing medical assistance and expertise, with no direct environmental or energy transition impact","Anti-epidemic medical expert team, COVID-19 response, healthcare focus"

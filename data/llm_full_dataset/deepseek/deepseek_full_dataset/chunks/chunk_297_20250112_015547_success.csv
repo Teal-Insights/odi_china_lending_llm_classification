@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95524,HEALTH,"Chinese Embassy donates medical masks, disinfectant spray, thermometers, and other equipment to St. John's Ambulance to assist its school disinfection program","On June 23, 2020, the Chinese Embassy in Sri Lanka donated medical masks, disinfectant spray bottles, forehead  thermometers, and other disinfectant equipment to the St. John Ambulance Association and Brigade of Sri Lanka to assist its school disinfection program amidst the COVID-19 pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates medical masks, disinfectant spray, thermometers, and other equipment to St. John's Ambulance to assist its school disinfection program
+
+# Description
+On June 23, 2020, the Chinese Embassy in Sri Lanka donated medical masks, disinfectant spray bottles, forehead  thermometers, and other disinfectant equipment to the St. John Ambulance Association and Brigade of Sri Lanka to assist its school disinfection program amidst the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare support and pandemic response, with no direct environmental or energy transition impact","Donation of medical masks, disinfectant spray, thermometers, and other equipment for school disinfection program"
+95526,HEALTH,"Chinese Government donates 30,000 PCR testing kits, 30,000 coveralls, 30,000 medical masks, 600,000 surgical masks, and 30,000 medical goggles to the Government of Sri Lanka (Linked to Project ID#95172 and #95173)","On June 24, 2020, the Chinese Government donated 30,000 PCR testing kits, 30,000 disposable coveralls, 30,000 medical protective face masks, 600,000 surgical masks, and 30,000 medical goggles to the Government of Sri Lanka. This was the third batch of the Chinese Government's COVID-19 aid to Sri Lanka; the first batch is captured by linked Project ID#95172 and the second batch is captured by linked Project ID#95173.  China has also provided 175,000 masks to students across the country and will provide another 100,000 masks to the Elections Commission for the public health safety during the country's upcoming Parliamentary Elections. Enditem",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates 30,000 PCR testing kits, 30,000 coveralls, 30,000 medical masks, 600,000 surgical masks, and 30,000 medical goggles to the Government of Sri Lanka (Linked to Project ID#95172 and #95173)
+
+# Description
+On June 24, 2020, the Chinese Government donated 30,000 PCR testing kits, 30,000 disposable coveralls, 30,000 medical protective face masks, 600,000 surgical masks, and 30,000 medical goggles to the Government of Sri Lanka. This was the third batch of the Chinese Government's COVID-19 aid to Sri Lanka; the first batch is captured by linked Project ID#95172 and the second batch is captured by linked Project ID#95173.  China has also provided 175,000 masks to students across the country and will provide another 100,000 masks to the Elections Commission for the public health safety during the country's upcoming Parliamentary Elections. Enditem",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare support and COVID-19 relief, with no direct environmental or energy transition impact","Donation of PCR testing kits, medical masks, coveralls, and goggles for COVID-19 response"
+95528,HEALTH,"Chinese Embassy donates 100,000 face masks and 20,000 test kits to Sri Lanka Ministry of Health","On March 20, 2020, Chinese Ambassador Hu Wei handed off a donation of 100,000 face masks (which included 10,000 N-95 masks) and 20,000 COVID-19 tests to Sri Lanka's Health Minister Pavitra Vanniarachchi.  Furthermore, on the same day, Health Minister Vanniarachchi asked Ambassador Hu Wei for the provision of 100,000 units of personal protective equipment.","1. The source mentions 'the Ambassador donated one lakh of face masks including 10,000 N-95 masks and 20,000 test kits...', therefore AidData codes the total number of masks donated as 100,000 units because one lakh is equivalent to 100,000 according to Google's Oxford Languages. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 100,000 face masks and 20,000 test kits to Sri Lanka Ministry of Health
+
+# Description
+On March 20, 2020, Chinese Ambassador Hu Wei handed off a donation of 100,000 face masks (which included 10,000 N-95 masks) and 20,000 COVID-19 tests to Sri Lanka's Health Minister Pavitra Vanniarachchi.  Furthermore, on the same day, Health Minister Vanniarachchi asked Ambassador Hu Wei for the provision of 100,000 units of personal protective equipment.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of face masks and COVID-19 test kits, healthcare sector focus"
+95529,HEALTH,Chinese Embassy donates masks to Sri Lanka's State Ministry of Higher Education,"On June 3, 2020, the Chinese Embassy in Sri Lanka donated masks to Sri Lanka's State Ministry of Higher Education. The masks were intended to support universities, vocational training institutes, and other higher education institutions.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates masks to Sri Lanka's State Ministry of Higher Education
+
+# Description
+On June 3, 2020, the Chinese Embassy in Sri Lanka donated masks to Sri Lanka's State Ministry of Higher Education. The masks were intended to support universities, vocational training institutes, and other higher education institutions.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impacts,"Donation of masks to higher education institutions, health sector focus"
+95532,HEALTH,"Shanghai Municipal Government donates 20,000 KN95 masks, 210 medical protective clothing, and 300 goggles to the Public Health Department of the Colombo Municipal Council","On May 2, 2020, the Shanghai Municipal Government donated 20,000 KN95 masks, 210 medical protective clothing, and 300 goggles to the Public Health Department of the Colombo Municipal Council (CMC). This donation was made after a request made by the Colombo Mayor Rosy Senanayake.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Shanghai Municipal Government donates 20,000 KN95 masks, 210 medical protective clothing, and 300 goggles to the Public Health Department of the Colombo Municipal Council
+
+# Description
+On May 2, 2020, the Shanghai Municipal Government donated 20,000 KN95 masks, 210 medical protective clothing, and 300 goggles to the Public Health Department of the Colombo Municipal Council (CMC). This donation was made after a request made by the Colombo Mayor Rosy Senanayake.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, with no direct environmental or energy transition impact","Donation of 20,000 KN95 masks, 210 medical protective clothing, and 300 goggles to Public Health Department"
+95533,HEALTH,China National Machinery Import & Export Corporation donates healthcare kits to Sri Lanka's Ministry of Transport and Highways,"On June 3, 2020, China National Machinery Import & Export Corporation (CMC) donated a package of healthcare kits, consisting of a face mask, face over, and protecting kit, to Sri Lanka's Ministry of Transport and Highways. The donation was intended to protect the employees of the transport sector in Sri Lanka, specifically the Sri Lanka Transport Board (SLTB) and the Railway Department, which would also make them available to the public of Sri Lanka.",NA,"# Sector
+HEALTH
+
+# Title
+China National Machinery Import & Export Corporation donates healthcare kits to Sri Lanka's Ministry of Transport and Highways
+
+# Description
+On June 3, 2020, China National Machinery Import & Export Corporation (CMC) donated a package of healthcare kits, consisting of a face mask, face over, and protecting kit, to Sri Lanka's Ministry of Transport and Highways. The donation was intended to protect the employees of the transport sector in Sri Lanka, specifically the Sri Lanka Transport Board (SLTB) and the Railway Department, which would also make them available to the public of Sri Lanka.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Healthcare kits donation, focus on public health protection"
+95535,HEALTH,Beijing Municipal Government donates medical supplies worth Rs.16 million LKR to the Colombo Municipal Council,"On December 12, 2020, the People’s Government of Beijing Municipality announced in a letter that it would be donating medical supplies worth Rs.16 million LKR to the Colombo Municipal Council (CMC). The donated materials included personal protection equipment (PPE), a ventilator, and PCR test kits. The first batch was expected to arrive in Colombo on December 12, 2020; the second batch was planned to arrive on December 14; and the third batch was planned to arrive on December 17. The first batch arrived as scheduled.",NA,"# Sector
+HEALTH
+
+# Title
+Beijing Municipal Government donates medical supplies worth Rs.16 million LKR to the Colombo Municipal Council
+
+# Description
+On December 12, 2020, the People’s Government of Beijing Municipality announced in a letter that it would be donating medical supplies worth Rs.16 million LKR to the Colombo Municipal Council (CMC). The donated materials included personal protection equipment (PPE), a ventilator, and PCR test kits. The first batch was expected to arrive in Colombo on December 12, 2020; the second batch was planned to arrive on December 14; and the third batch was planned to arrive on December 17. The first batch arrived as scheduled.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation including PPE, ventilator, and PCR test kits"
+95537,EDUCATION,"Chinese Embassy provides a Rs. 3,418,000 LKR grant to finance a new multimedia center at the University of Ruhuna","On December 15, 2020, the Chinese Embassy issued a Rs. 3,418,000 LKR grant to the University of Ruhuna to finance a new multimedia center at the university.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy provides a Rs. 3,418,000 LKR grant to finance a new multimedia center at the University of Ruhuna
+
+# Description
+On December 15, 2020, the Chinese Embassy issued a Rs. 3,418,000 LKR grant to the University of Ruhuna to finance a new multimedia center at the university.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on educational infrastructure development with no direct environmental or energy transition impact,"Grant for multimedia center at university, education sector focus"
+95538,HEALTH,Chinese Government donates thermometers and face masks to Sri Lanka's Ministry of Defence in April 2020,"On April 8, 2020, the Chinese Government donated 70 frontal thermometers, 750 medical disposable 20-mask packets (15,000 masks), 2,080 medical disposal 10-mask packets (20,800 masks), 440 medical disposable 50-mask packets (22,000 masks) to Sri Lanka's Ministry of Defence.","1. AidData has assumed that the units referred to in 'Loans, Grants and in kind Assistance recorded in the Treasury, as well as informed by the line Ministries and Foreign Development Partners as of 22nd May 2020 in Support of COVID -19 Response Initiatives' meant that '750' units of the grant of medical disposable mask 20-packet meant that 15,000 total masks were being donated.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates thermometers and face masks to Sri Lanka's Ministry of Defence in April 2020
+
+# Description
+On April 8, 2020, the Chinese Government donated 70 frontal thermometers, 750 medical disposable 20-mask packets (15,000 masks), 2,080 medical disposal 10-mask packets (20,800 masks), 440 medical disposable 50-mask packets (22,000 masks) to Sri Lanka's Ministry of Defence.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,Donation of thermometers and face masks to Ministry of Defence for healthcare purposes
+95539,HEALTH,"Chinese Government donates masks, coveralls, disinfectant cans, and helmets with face shields to Sri Lanka's Ministry of Defence in April 2020","On April 10, 2020, the Chinese Government donated 50 medical disposable mask 50-packets (2,500 masks), 100 special coveralls, six liquid disinfectant 4-liter cans, and six helmets with face shields to Sri Lanka's Ministry of Defence.","1. AidData has assumed that the units referred to in 'Loans, Grants and in kind Assistance recorded in the Treasury, as well as informed by the line Ministries and Foreign Development Partners as of 22nd May 2020 in Support of COVID -19 Response Initiatives' meant that '50' units of the grant of medical disposable mask 50-packet meant that 2,500 total masks were being donated.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates masks, coveralls, disinfectant cans, and helmets with face shields to Sri Lanka's Ministry of Defence in April 2020
+
+# Description
+On April 10, 2020, the Chinese Government donated 50 medical disposable mask 50-packets (2,500 masks), 100 special coveralls, six liquid disinfectant 4-liter cans, and six helmets with face shields to Sri Lanka's Ministry of Defence.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical masks, coveralls, disinfectant, and protective equipment donated for healthcare purposes"

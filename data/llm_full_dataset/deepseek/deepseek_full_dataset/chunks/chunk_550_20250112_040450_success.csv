@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+62615,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"China Donates 100,000 RMB worth of Blankets to Namibia (Linked to #62616)","On December 8, 2018 at a Christmas party, the Chinese Embassy in Namibia officially donated 100,000 RMB worth of blankets to the elderly community in Tsumeb.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China Donates 100,000 RMB worth of Blankets to Namibia (Linked to #62616)
+
+# Description
+On December 8, 2018 at a Christmas party, the Chinese Embassy in Namibia officially donated 100,000 RMB worth of blankets to the elderly community in Tsumeb.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation without direct environmental or energy transition impact,"Blanket donation to elderly community, social welfare focus"
+62616,UNALLOCATED/UNSPECIFIED,"China Donates 50,000 NAD to Windhoek City, Namibia (Linked to #62615)","On 7 December 2018 at a Christmas event, the Chinese Embassy in Namibia granted 50,000 NAD to the city of Windhoek for unspecified purposes. This donation could be for the ""free"" medical clinic offered at the Christmas party. The 12th Chinese medical team (project #62628) carried out the consultations for roughly 400 elderly Namibians in attendance.   The following day, the Chinese Embassy donated another N$100,000 to elderly Namibians at different Christmas party (project #62615).",NA,"# Sector
+UNALLOCATED/UNSPECIFIED
+
+# Title
+China Donates 50,000 NAD to Windhoek City, Namibia (Linked to #62615)
+
+# Description
+On 7 December 2018 at a Christmas event, the Chinese Embassy in Namibia granted 50,000 NAD to the city of Windhoek for unspecified purposes. This donation could be for the ""free"" medical clinic offered at the Christmas party. The 12th Chinese medical team (project #62628) carried out the consultations for roughly 400 elderly Namibians in attendance.   The following day, the Chinese Embassy donated another N$100,000 to elderly Namibians at different Christmas party (project #62615).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Donation for unspecified purposes, likely supporting social welfare activities","Donation to city of Windhoek, connection to medical clinic and elderly support"
+62619,HEALTH,"China Donates 100,000 NAD worth of Hygienic Supplies to Namibia (Linked to #67797)","On November 16, 2018, the Chinese Embassy to Namibia donated 100,000 NAD worth of hygienic supplies to combat spreading the ongoing hepatitis-E outbreak. The official donation ceremony took place at a clinic event co-organized by the Embassy, the Chinese-funded Chamber of Commerce, and the Red Cross Society in which the 12th medical team provided free consultations (#67797).",NA,"# Sector
+HEALTH
+
+# Title
+China Donates 100,000 NAD worth of Hygienic Supplies to Namibia (Linked to #67797)
+
+# Description
+On November 16, 2018, the Chinese Embassy to Namibia donated 100,000 NAD worth of hygienic supplies to combat spreading the ongoing hepatitis-E outbreak. The official donation ceremony took place at a clinic event co-organized by the Embassy, the Chinese-funded Chamber of Commerce, and the Red Cross Society in which the 12th medical team provided free consultations (#67797).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on healthcare support and disease prevention without direct environmental or energy transition impacts,"Donation of hygienic supplies, medical consultations, health sector focus"
+62620,EDUCATION,"China Donates School Bags to Namibian Students in Kunene Province (Linked to #67757, Umbrella Project #67798)","On October 29, 2018, the Chinese Ambassador to Namibia donated backpacks and school supplies to three unnamed schools in Kunene province, Namibia under the Panda Pack project (umbrella project #67798). The value and quantities of this donation are unknown. At the same event, students were awarded the Chinese Ambassador Scholarship (project #67757).",NA,"# Sector
+EDUCATION
+
+# Title
+China Donates School Bags to Namibian Students in Kunene Province (Linked to #67757, Umbrella Project #67798)
+
+# Description
+On October 29, 2018, the Chinese Ambassador to Namibia donated backpacks and school supplies to three unnamed schools in Kunene province, Namibia under the Panda Pack project (umbrella project #67798). The value and quantities of this donation are unknown. At the same event, students were awarded the Chinese Ambassador Scholarship (project #67757).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of school supplies and scholarships, with no direct environmental or energy transition impact","Donation of backpacks and school supplies, Chinese Ambassador Scholarship awarded"
+62621,GOVERNMENT AND CIVIL SOCIETY,China donates computers to Khomas Regional Police Headquarters in Namibia,"On November 1, 2018, the Chinese Ambassador to Namibia donated a desktop computer, laptop computer and large LCD flat screen TV to the Khomas Police Department. The value of this donation is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates computers to Khomas Regional Police Headquarters in Namibia
+
+# Description
+On November 1, 2018, the Chinese Ambassador to Namibia donated a desktop computer, laptop computer and large LCD flat screen TV to the Khomas Police Department. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of computer equipment to government institution with no clear environmental or energy transition impact,"Donation of computers and TV to police department, no energy-related components"
+62622,GOVERNMENT AND CIVIL SOCIETY,"China Donates Computers to SWAPO Headquarters in Oshana Province, Namibia","On November 1, 2018, the Chinese Ambassador to Namibia donated three desktop computers to the South West Africa People's Organization (SWAPO) headquarters in Oshana Province.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China Donates Computers to SWAPO Headquarters in Oshana Province, Namibia
+
+# Description
+On November 1, 2018, the Chinese Ambassador to Namibia donated three desktop computers to the South West Africa People's Organization (SWAPO) headquarters in Oshana Province.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of computers to a political organization, with no clear environmental or energy transition impact","Donation of computers to SWAPO headquarters, categorized under government and civil society sector"
+62625,EDUCATION,"China Pledges 200,000 NAD to St. Boniface College in Namibia for Textbooks","On September 14, 2018, the Chinese Embassy pledged to donate 200,000 NAD to St. Boniface College, a private secondary school, in Kavango East Province to spend on textbooks. It is unclear whether these funds have actually been disbursed. At the same ceremony, a number of Chinese Ambassador Scholarships were awarded (#67765).",NA,"# Sector
+EDUCATION
+
+# Title
+China Pledges 200,000 NAD to St. Boniface College in Namibia for Textbooks
+
+# Description
+On September 14, 2018, the Chinese Embassy pledged to donate 200,000 NAD to St. Boniface College, a private secondary school, in Kavango East Province to spend on textbooks. It is unclear whether these funds have actually been disbursed. At the same ceremony, a number of Chinese Ambassador Scholarships were awarded (#67765).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on education and textbook provision without direct environmental or energy transition impacts,"Donation for textbooks at secondary school, education sector focus"
+62627,EDUCATION,"China Donates 50,000 NAD to Mini World Cup among Namibian Elementary Schools","On June 26, 2018, the Chinese Ambassador to Namibia donated 50,000 NAD to the Mini World Cup, a fundraiser jointly organized by more than 40 elementary schools in Khomas Province to celebrate the World Cup in Russia and raise money for a sports field and mixed-use courts for netball, volleyball, and basketball. The launch ceremony took place at Mao Zedong Middle School (#41119).",NA,"# Sector
+EDUCATION
+
+# Title
+China Donates 50,000 NAD to Mini World Cup among Namibian Elementary Schools
+
+# Description
+On June 26, 2018, the Chinese Ambassador to Namibia donated 50,000 NAD to the Mini World Cup, a fundraiser jointly organized by more than 40 elementary schools in Khomas Province to celebrate the World Cup in Russia and raise money for a sports field and mixed-use courts for netball, volleyball, and basketball. The launch ceremony took place at Mao Zedong Middle School (#41119).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation for educational and sports development without direct environmental or energy transition impacts,"Donation for school sports fundraiser, focus on education and community development"
+62628,HEALTH,"China sends 12th Medical Team to Namibia (Linked to #67797, Umbrella Project #62439)","On 8 June 2018, the 12th Chinese medical team was officially welcomed in Namibia. The team consisting of four doctors and nurses with backgrounds in traditional Chinese medicine served in Katutura Hospital in Windhoek until 20 January 2020.    The 12th medical team has carried out multiple free consultations (project #67797), especially related to the ongoing hepatitis-E outbreak.  This project is part of the umbrella project #62439, which captures all medical teams sent to Katutura State Hospital since 1996.",This project could be related to donation captured in ProjectID#62616.,"# Sector
+HEALTH
+
+# Title
+China sends 12th Medical Team to Namibia (Linked to #67797, Umbrella Project #62439)
+
+# Description
+On 8 June 2018, the 12th Chinese medical team was officially welcomed in Namibia. The team consisting of four doctors and nurses with backgrounds in traditional Chinese medicine served in Katutura Hospital in Windhoek until 20 January 2020.    The 12th medical team has carried out multiple free consultations (project #67797), especially related to the ongoing hepatitis-E outbreak.  This project is part of the umbrella project #62439, which captures all medical teams sent to Katutura State Hospital since 1996.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare services without direct environmental or energy transition impacts,"Medical team deployment, healthcare services, traditional Chinese medicine focus"
+62629,"AGRICULTURE, FORESTRY, FISHING",China Funds and Builds Greenhouses in Namibia (Linked to Project ID#88520).,"On June 28, 2018, the Chinese Ambassador visited Embassy-donated greenhouses but constructed and operated by the Youth League of the People's Organizing Party Kavango East branch. The Chinese Embassy donated at least 4 greenhouses, with 8 possible being committed as cited by the Ministry of Foreign Affairs for the PRC. The produce will support the community's consumption needs.",See project #88520 for the 2019 greenhouse donation.,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China Funds and Builds Greenhouses in Namibia (Linked to Project ID#88520).
+
+# Description
+On June 28, 2018, the Chinese Ambassador visited Embassy-donated greenhouses but constructed and operated by the Youth League of the People's Organizing Party Kavango East branch. The Chinese Embassy donated at least 4 greenhouses, with 8 possible being committed as cited by the Ministry of Foreign Affairs for the PRC. The produce will support the community's consumption needs.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on agricultural development and community support without clear environmental or energy transition impacts,"Greenhouse construction for community consumption needs, social development focus"

@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+69362,HEALTH,Chinese government donates anti-epidemic materials to the South Sudan Care Association in July 2020,"On July 1, 2020, the Chinese government donated a batch of anti-epidemic materials to the South Sudan Care Association. This donation was made by Chinese First Lady Peng Liyuan in response to the African First Lady Development Association's request for China’s support. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony took place for this donation. Mrs. Aion, the wife of President Kirr of South Sudan, Hua NIng, the Chinese Ambassador to South Sudan, Dr. Artem, the Executive Director of the South Sudan Caring Association, and the Deputy Minister of Health of South Sudan attended the ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates anti-epidemic materials to the South Sudan Care Association in July 2020
+
+# Description
+On July 1, 2020, the Chinese government donated a batch of anti-epidemic materials to the South Sudan Care Association. This donation was made by Chinese First Lady Peng Liyuan in response to the African First Lady Development Association's request for China’s support. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony took place for this donation. Mrs. Aion, the wife of President Kirr of South Sudan, Hua NIng, the Chinese Ambassador to South Sudan, Dr. Artem, the Executive Director of the South Sudan Caring Association, and the Deputy Minister of Health of South Sudan attended the ceremony.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

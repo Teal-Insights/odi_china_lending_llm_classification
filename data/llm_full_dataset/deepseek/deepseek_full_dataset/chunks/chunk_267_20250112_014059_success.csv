@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+90303,HEALTH,Chongqing City donates medical supplies to Port Moresby General Hospital in Papua New Guinea in September 2020,"On September 1 2020, Chongqing City donated medical supplies to Port Moresby General Hospital in Papua New Guinea. This included disposable medical surgical masks, disposable isolation gowns and medical disposable protective clothing.",NA,"# Sector
+HEALTH
+
+# Title
+Chongqing City donates medical supplies to Port Moresby General Hospital in Papua New Guinea in September 2020
+
+# Description
+On September 1 2020, Chongqing City donated medical supplies to Port Moresby General Hospital in Papua New Guinea. This included disposable medical surgical masks, disposable isolation gowns and medical disposable protective clothing.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of medical supplies to hospital, healthcare focus"
+90526,HEALTH,Chinese Government Donates Personal Protective Equipment to Papua New Guinea in April 2020,"In April 2020, the Chinese government donated personal protective equipment to Papua New Guinea. The PPE consisted of 1000 disposable clothing and 500 gloves to be used in customs and clearance procedures. The goods were likely distributed in May 2020.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government Donates Personal Protective Equipment to Papua New Guinea in April 2020
+
+# Description
+In April 2020, the Chinese government donated personal protective equipment to Papua New Guinea. The PPE consisted of 1000 disposable clothing and 500 gloves to be used in customs and clearance procedures. The goods were likely distributed in May 2020.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of PPE for public health purposes, unrelated to energy or environmental impact",Donation of personal protective equipment for customs and clearance procedures
+90574,HEALTH,"Chinese Embassy of Papua New Guinea donates anti-epidemic material to South Bougainville, PNG","On October 9, 2020, the Chinese Embassy of Papua New Guinea donated anti-epidemic material to South Bougainville, Papua New Guinea. The materials included masks, PPE, and forehead temperature guns. The ceremony was attended by Chinese Ambassador Xue Bing and South Bougainville MP and Ministry of Communication and Information Timothy Maisu, who also represents South Bougainville;",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy of Papua New Guinea donates anti-epidemic material to South Bougainville, PNG
+
+# Description
+On October 9, 2020, the Chinese Embassy of Papua New Guinea donated anti-epidemic material to South Bougainville, Papua New Guinea. The materials included masks, PPE, and forehead temperature guns. The ceremony was attended by Chinese Ambassador Xue Bing and South Bougainville MP and Ministry of Communication and Information Timothy Maisu, who also represents South Bougainville;",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, with no direct environmental or energy transition impact","Donation of anti-epidemic materials (masks, PPE, temperature guns) for public health purposes"
+90582,HEALTH,"China Harbour Engineering donates anti-epidemic supplies to Western Highlands, Papua New Guinea","In August, China Harbour Engineering donated anti-epidemic supplies to Western Highlands, Papua New Guinea. The supplies included 200 Covid-19 rapid testing strips, 3,000 masks and 168 bottles of alcohol hand rub solution.  China Harbor Engineering was also working on a 4-lane highway in the region (See Project ID#63174)",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Harbour Engineering donates anti-epidemic supplies to Western Highlands, Papua New Guinea
+
+# Description
+In August, China Harbour Engineering donated anti-epidemic supplies to Western Highlands, Papua New Guinea. The supplies included 200 Covid-19 rapid testing strips, 3,000 masks and 168 bottles of alcohol hand rub solution.  China Harbor Engineering was also working on a 4-lane highway in the region (See Project ID#63174)",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on donation of medical supplies without direct environmental or energy transition impact,"Anti-epidemic supplies including testing strips, masks, and hand sanitizer"
+90732,HEALTH,"China Railway Construction Group donates 2000 face masks to Government of New Ireland, Papua New Guinea","On April 22nd 2020, China Railway Construction Group donated 2000 face masks to Government of New Ireland Province, Papua New Guinea. The masks were to be distributed to health workers throughout the province to help with Covid-19 prevention. The masks were handed over at the construction site of the New Ireland Legislative Assembly building, which was under construction by China Railway Construction.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Railway Construction Group donates 2000 face masks to Government of New Ireland, Papua New Guinea
+
+# Description
+On April 22nd 2020, China Railway Construction Group donated 2000 face masks to Government of New Ireland Province, Papua New Guinea. The masks were to be distributed to health workers throughout the province to help with Covid-19 prevention. The masks were handed over at the construction site of the New Ireland Legislative Assembly building, which was under construction by China Railway Construction.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impacts,"Donation of 2000 face masks for Covid-19 prevention, distributed to health workers"
+93388,EDUCATION,China State Construction Engineering Corporation donates epidemic prevention facilities and materials to Butuka Academy in May 2020 (linked to project ID#90189),"On May 21, 2020, China State Construction Engineering Corporation Papua New Guinea Branch together with the Chinese government donated anti-epidemic facilities and materials to the Butuka Academy. The donated facilities included a water sink, a medical isolation room, and a student restaurant. The donated materials included hand sanitizer, soap, and student sportswear. The monetary value of these donations is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+China State Construction Engineering Corporation donates epidemic prevention facilities and materials to Butuka Academy in May 2020 (linked to project ID#90189)
+
+# Description
+On May 21, 2020, China State Construction Engineering Corporation Papua New Guinea Branch together with the Chinese government donated anti-epidemic facilities and materials to the Butuka Academy. The donated facilities included a water sink, a medical isolation room, and a student restaurant. The donated materials included hand sanitizer, soap, and student sportswear. The monetary value of these donations is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on educational facility support and epidemic prevention, with no direct energy or environmental impact","Donation of anti-epidemic facilities and materials to educational institution, including water sink, medical isolation room, and hygiene supplies"
+93488,HEALTH,China-Pacific Island Countries COVID-19 Response Fund gives second donation to Papua New Guinea (linked to project ID#89183 and 90296),"In 2020, the China-Pacific Island Countries COVID-19 Response Fund (Chinese:中国—太平洋岛国抗疫合作基金) provided three separate donations to Papua New Guinea. The first donation worth USD 300,000 was handed over on March 31, 2020 (see Project ID#89183). The second donation was worth an unknown amount and is captured in this project. The third donation was worth an unknown amount and was handed over on December 25, 2020 (see Project ID #90296).","1. AidData is certain that at least three grants from the China-Pacific Island Countries COVID-19 Response Fund were allocated to PNG in 2020, but the details for the second donation are incomplete.","# Sector
+HEALTH
+
+# Title
+China-Pacific Island Countries COVID-19 Response Fund gives second donation to Papua New Guinea (linked to project ID#89183 and 90296)
+
+# Description
+In 2020, the China-Pacific Island Countries COVID-19 Response Fund (Chinese:中国—太平洋岛国抗疫合作基金) provided three separate donations to Papua New Guinea. The first donation worth USD 300,000 was handed over on March 31, 2020 (see Project ID#89183). The second donation was worth an unknown amount and is captured in this project. The third donation was worth an unknown amount and was handed over on December 25, 2020 (see Project ID #90296).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on COVID-19 response and healthcare support, with no direct environmental or energy transition implications","COVID-19 Response Fund donations, healthcare sector focus"
+72820,HEALTH,China sends team of epidemiologists to Peru to help fight COVID-19,"On May 23, 2020, four epidemiologists sent by China came to Lima to help in the fight against COVID-19. The team was established by the National Health Commission of China and selected by the Health Commission of Guangdong Province and the members were from the Southern Hospital of Southern Medical University. They are experts in respiratory and critical care medicine, infection management, and neurology. In their ten-day stay, they shared knowledge on epidemic prevention and containment as well as providing training for medical professionals.  The team departed from China on March 22 and returned on June 10. They participated in 40 exchange and training activities, and cooperated with the Peruvian National Epidemic Fighting Command Center, the Ministry of Health, the National Institutes of Health, the Social Medical Security Bureau and a number of medical institutions such as the World Health Organization. The members of the team were Guo Yi, an expert in public health management, Liu Laiyu, an expert in respiratory and critical care, Wu Yongming, an expert in neurology and critical care medicine, and Zhou Hao, an expert in hospital infection prevention and control.",NA,"# Sector
+HEALTH
+
+# Title
+China sends team of epidemiologists to Peru to help fight COVID-19
+
+# Description
+On May 23, 2020, four epidemiologists sent by China came to Lima to help in the fight against COVID-19. The team was established by the National Health Commission of China and selected by the Health Commission of Guangdong Province and the members were from the Southern Hospital of Southern Medical University. They are experts in respiratory and critical care medicine, infection management, and neurology. In their ten-day stay, they shared knowledge on epidemic prevention and containment as well as providing training for medical professionals.  The team departed from China on March 22 and returned on June 10. They participated in 40 exchange and training activities, and cooperated with the Peruvian National Epidemic Fighting Command Center, the Ministry of Health, the National Institutes of Health, the Social Medical Security Bureau and a number of medical institutions such as the World Health Organization. The members of the team were Guo Yi, an expert in public health management, Liu Laiyu, an expert in respiratory and critical care, Wu Yongming, an expert in neurology and critical care medicine, and Zhou Hao, an expert in hospital infection prevention and control.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves healthcare expertise sharing and training, with no direct environmental or energy transition impact","Epidemiologists providing COVID-19 response training and knowledge sharing, healthcare sector focus"
+73138,EMERGENCY RESPONSE,Chinese Ministry of Foreign Affairs donates medical equipment to Peru Ministry of Health for coronavirus response,"On April 26, 2020, the Chinese Ministry of Foreign Affairs donated a batch of various medical equipment to the Peruvian Ministry of Health to assist during the coronavirus pandemic. The donation included over 10,000 tests, 10,000 masks, 2,000 pairs of medical glasses, 2,000 pairs of medical gloves, and 500 thermometers.   The Chinese embassy in Peru and Peruvian Agency for International Cooperation (APCI), along with the donor and recipient agencies, assisted with the transportation of these materials. Within the Peruvian Ministry of Health, the test kits were handed to the Peruvian National Institute of Health (INS).",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Ministry of Foreign Affairs donates medical equipment to Peru Ministry of Health for coronavirus response
+
+# Description
+On April 26, 2020, the Chinese Ministry of Foreign Affairs donated a batch of various medical equipment to the Peruvian Ministry of Health to assist during the coronavirus pandemic. The donation included over 10,000 tests, 10,000 masks, 2,000 pairs of medical glasses, 2,000 pairs of medical gloves, and 500 thermometers.   The Chinese embassy in Peru and Peruvian Agency for International Cooperation (APCI), along with the donor and recipient agencies, assisted with the transportation of these materials. Within the Peruvian Ministry of Health, the test kits were handed to the Peruvian National Institute of Health (INS).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical equipment for pandemic response, unrelated to energy or environmental impacts","Donation of medical equipment including tests, masks, gloves, and thermometers for coronavirus response"
+73139,EMERGENCY RESPONSE,China Three Gorges Corporation donates USD 1.5 million worth of biomedical equipment to Peru Ministry of Health,"On May 18, 2020, the Peruvian Ministry of Health received a donation of biomedical equipment from China Three Gorges Corporation (CTG) to care for patients afflicted with the coronavirus. The Ministry of Health will distribute the 10 ventilators, 46 patient monitors, 18 ultrasound scanners, 36 defibrillators, and 15 non-invasive ventilators among different hospitals. The donation was worth USD $1.5 million.  The donation ceremony was held in a warehouse at the Peruvian Ministry of Health.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China Three Gorges Corporation donates USD 1.5 million worth of biomedical equipment to Peru Ministry of Health
+
+# Description
+On May 18, 2020, the Peruvian Ministry of Health received a donation of biomedical equipment from China Three Gorges Corporation (CTG) to care for patients afflicted with the coronavirus. The Ministry of Health will distribute the 10 ventilators, 46 patient monitors, 18 ultrasound scanners, 36 defibrillators, and 15 non-invasive ventilators among different hospitals. The donation was worth USD $1.5 million.  The donation ceremony was held in a warehouse at the Peruvian Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical equipment for healthcare purposes, with no direct environmental or energy transition impact","Donation of biomedical equipment including ventilators, patient monitors, and ultrasound scanners for coronavirus response"

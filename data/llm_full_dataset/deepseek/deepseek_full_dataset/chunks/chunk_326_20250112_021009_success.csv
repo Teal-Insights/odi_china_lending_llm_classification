@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93329,HEALTH,Chinese medical team donates medical supplies in May 2020 to Zimbabwe (Linked to Project ID#91963),"​​On May 11, 2020, a 12-person medical expert team sent by the Chinese government arrived in Harare, the capital of Zimbabwe (See Project ID#91963), with emergency aid materials. Upon their arrival a handover ceremony for the large amount of donated anti-epidemic materials was held. From May 11, 2020 to their departure on May 25, 2020, the medical team distributed these materials to the various hospitals they visited. Throughout their stay in Zimbabwe, the expert group visited medical institutions in the four provinces of Harare, Mashonaland East, Mashonaland Central and Mashonaland West  including Marondera Provincial Hospital, Chinhoyi Provincial Hospital, and Mvurwi Hospital.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese medical team donates medical supplies in May 2020 to Zimbabwe (Linked to Project ID#91963)
+
+# Description
+​​On May 11, 2020, a 12-person medical expert team sent by the Chinese government arrived in Harare, the capital of Zimbabwe (See Project ID#91963), with emergency aid materials. Upon their arrival a handover ceremony for the large amount of donated anti-epidemic materials was held. From May 11, 2020 to their departure on May 25, 2020, the medical team distributed these materials to the various hospitals they visited. Throughout their stay in Zimbabwe, the expert group visited medical institutions in the four provinces of Harare, Mashonaland East, Mashonaland Central and Mashonaland West  including Marondera Provincial Hospital, Chinhoyi Provincial Hospital, and Mvurwi Hospital.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare support and medical supplies donation without direct environmental or energy transition implications,"Medical team donation, distribution of anti-epidemic materials, hospital visits"
+93330,HEALTH,"Sinohydro donates ZWL 1.5 million and 15,000 masks in May 2020 to Matabeleland North Province, Zimbabwe","On May 19, 2020, Sinohydro donated ZWL 1.5 million and 15,000 face masks to Matabeleland North province. The Matabeleland North provincial affairs minister Richard Moyo received the donation from Sino Hydro site manager for Hwange, Tang Zhaolai at the Hwange Five Miles Hospital. Sino Hydro's contract work in Hwange includes the Hwange power station Unit 7 and 8 expansion project in partnership with the Zimbabwe Power Company (ZPC).",NA,"# Sector
+HEALTH
+
+# Title
+Sinohydro donates ZWL 1.5 million and 15,000 masks in May 2020 to Matabeleland North Province, Zimbabwe
+
+# Description
+On May 19, 2020, Sinohydro donated ZWL 1.5 million and 15,000 face masks to Matabeleland North province. The Matabeleland North provincial affairs minister Richard Moyo received the donation from Sino Hydro site manager for Hwange, Tang Zhaolai at the Hwange Five Miles Hospital. Sino Hydro's contract work in Hwange includes the Hwange power station Unit 7 and 8 expansion project in partnership with the Zimbabwe Power Company (ZPC).",TRUE,NA,NEUTRAL,HIGH,Social Development,The donation of funds and masks is a social development initiative unrelated to energy or environmental impacts,"Donation of ZWL 1.5 million and 15,000 face masks for healthcare purposes"
+93332,ENERGY,"30kPv solar energy systems funded by China installed in Zimbabwean secondary schools to improve the electricity supply on July 22, 2020","On July 22, 2020, Satewave installed two 30kPv solar energy systems in two secondary schools in Gombakomba and Manzunu.  The installations will improve the electricity supply to the schools. Funding came directly from China.",NA,"# Sector
+ENERGY
+
+# Title
+30kPv solar energy systems funded by China installed in Zimbabwean secondary schools to improve the electricity supply on July 22, 2020
+
+# Description
+On July 22, 2020, Satewave installed two 30kPv solar energy systems in two secondary schools in Gombakomba and Manzunu.  The installations will improve the electricity supply to the schools. Funding came directly from China.",TRUE,NA,GREEN,HIGH,Solar Power,Primary purpose is solar power generation for educational facilities,"30kPv solar energy systems installed in schools, renewable energy focus"
+93333,HEALTH,Chinese Embassy donates medical supplies in September 2020 to United Bulawayo Hospitals in Zimbabwe,"On September 4, 2020, the Chinese Embassy donated ventilators, thermometers, masks, and oxygen concentrators to the United Bulawayo Hospitals (UBH), which was set to open its Covid-19 center in October. The donation includes 10 ventilator and oxygen concentrators, 10,000 masks, 50 thermometers, and 20 ventilators.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates medical supplies in September 2020 to United Bulawayo Hospitals in Zimbabwe
+
+# Description
+On September 4, 2020, the Chinese Embassy donated ventilators, thermometers, masks, and oxygen concentrators to the United Bulawayo Hospitals (UBH), which was set to open its Covid-19 center in October. The donation includes 10 ventilator and oxygen concentrators, 10,000 masks, 50 thermometers, and 20 ventilators.",TRUE,NA,NEUTRAL,HIGH,Healthcare and education facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Medical supplies donation including ventilators, thermometers, masks, and oxygen concentrators"
+93892,HEALTH,"Jin'an Corporation provides USD 1 million grant in July 2020 for establishment of Health Point Upper East Medical Center in Zimbabwe (linked to Project ID#93297,#93893)","On July 23, 2020, the Health Point Upper East Medical Center (HPUEMC) officially opened. Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation partnered with Health Point, a private medical institution to establish the COVID-19 treatment and isolation facility. The three companies together donated 3,000,000 USD for the facility and equipment. The center is a private hospital and has the capacity to accommodate up to 50 COVID-19 patients. In addition to providing quality health care to COVID-19 patients, the new facility will also provide training to other medical institutions in the country.","1. The individual contributions of Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation to the USD 3 million grant are unknown. For the time being, AidData estimates that each of the three Chinese state-owned companies contributed equal amounts (USD 1 million).","# Sector
+HEALTH
+
+# Title
+Jin'an Corporation provides USD 1 million grant in July 2020 for establishment of Health Point Upper East Medical Center in Zimbabwe (linked to Project ID#93297,#93893)
+
+# Description
+On July 23, 2020, the Health Point Upper East Medical Center (HPUEMC) officially opened. Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation partnered with Health Point, a private medical institution to establish the COVID-19 treatment and isolation facility. The three companies together donated 3,000,000 USD for the facility and equipment. The center is a private hospital and has the capacity to accommodate up to 50 COVID-19 patients. In addition to providing quality health care to COVID-19 patients, the new facility will also provide training to other medical institutions in the country.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure and services with no direct environmental or energy transition impact,"COVID-19 treatment and isolation facility, healthcare training, private hospital"
+93893,HEALTH,"China Mingchang Engineering Corporation provides USD 1 million grant in July 2020 for establishment of Health Point Upper East Medical Center in Zimbabwe (linked to Project ID#93297,#93892)","On July 23, 2020, the Health Point Upper East Medical Center (HPUEMC) officially opened. Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation partnered with Health Point, a private medical institution to establish the COVID-19 treatment and isolation facility. The three companies together donated 3,000,000 USD for the facility and equipment. The center is a private hospital and has the capacity to accommodate up to 50 COVID-19 patients. In addition to providing quality health care to COVID-19 patients, the new facility will also provide training to other medical institutions in the country.","1. The individual contributions of Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation to the USD 3 million grant are unknown. For the time being, AidData estimates that each of the three Chinese state-owned companies contributed equal amounts (USD 1 million).","# Sector
+HEALTH
+
+# Title
+China Mingchang Engineering Corporation provides USD 1 million grant in July 2020 for establishment of Health Point Upper East Medical Center in Zimbabwe (linked to Project ID#93297,#93892)
+
+# Description
+On July 23, 2020, the Health Point Upper East Medical Center (HPUEMC) officially opened. Hongyu Enterprises, Jin'an Corporation, and China Mingchang Engineering Corporation partnered with Health Point, a private medical institution to establish the COVID-19 treatment and isolation facility. The three companies together donated 3,000,000 USD for the facility and equipment. The center is a private hospital and has the capacity to accommodate up to 50 COVID-19 patients. In addition to providing quality health care to COVID-19 patients, the new facility will also provide training to other medical institutions in the country.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure and services without direct environmental or energy transition impacts,"COVID-19 treatment and isolation facility, private hospital, healthcare services, medical training"
+94231,HEALTH,Sichuan Times Technology donates medical supplies in April 2020 to the Angel of Hope fund in Zimbabwe (Linked to Project ID#92079),"On April 21, 2020, Counselor Wang Wei, the wife of China’s Ambassador to Zimbabwe, attended the handover ceremony for materials donated by Sichuan Times Technology Co., Ltd., and Huawei to the ""Angel of Hope Fund"" in Zimbabwe. The donated materials included 50,000 masks, 510 protective suits & 1,000 goggles. Huawei reportedly contributed 30,000 masks. The First Lady of Zimbabwe, Auxillia Mnangagwa, and representatives of Sichuan PD Times Technology, Huawei, and Zimbabwe National also attended the event.","Sichuan and Huawei each contributed an unknown proportion of the 510 protective suits and 1,000 goggles, valued at an estimated USD 13,408. AidData assumes each donor made an equal contribution for this portion of the donation of USD 6,704 (USD 13,408 / 2 known contributors = USD 6,704). After subtracting out Huawei's 30,000 masks, the value of the remaining 20,000 masks is USD 14,000.","# Sector
+HEALTH
+
+# Title
+Sichuan Times Technology donates medical supplies in April 2020 to the Angel of Hope fund in Zimbabwe (Linked to Project ID#92079)
+
+# Description
+On April 21, 2020, Counselor Wang Wei, the wife of China’s Ambassador to Zimbabwe, attended the handover ceremony for materials donated by Sichuan Times Technology Co., Ltd., and Huawei to the ""Angel of Hope Fund"" in Zimbabwe. The donated materials included 50,000 masks, 510 protective suits & 1,000 goggles. Huawei reportedly contributed 30,000 masks. The First Lady of Zimbabwe, Auxillia Mnangagwa, and representatives of Sichuan PD Times Technology, Huawei, and Zimbabwe National also attended the event.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition implications,"Donation of masks, protective suits, and goggles for healthcare purposes"
+94428,ENERGY,"Chinese Government provides USD 17,000 loan for electrification project in Gombakomba village","In 2020, the Chinese Government provided a USD 17,000 loan for an electrification project in Gombakomba village. This project is part of a larger loan financing rural electrification projects across Zimbabwe including an electrification project worth USD 90,000 that involved the Zimbabwean company Satewave Technologies installing solar photovoltaic systems with a capacity of 30 kWp each at secondary schools inombakomba and Manzunu in the Manicaland Province of Zimbabwe (See Project ID#93332).",NA,"# Sector
+ENERGY
+
+# Title
+Chinese Government provides USD 17,000 loan for electrification project in Gombakomba village
+
+# Description
+In 2020, the Chinese Government provided a USD 17,000 loan for an electrification project in Gombakomba village. This project is part of a larger loan financing rural electrification projects across Zimbabwe including an electrification project worth USD 90,000 that involved the Zimbabwean company Satewave Technologies installing solar photovoltaic systems with a capacity of 30 kWp each at secondary schools inombakomba and Manzunu in the Manicaland Province of Zimbabwe (See Project ID#93332).",TRUE,NA,GREEN,HIGH,Solar Power,"Primary purpose is solar power generation for rural electrification, directly supporting renewable energy transition","Installation of solar photovoltaic systems with 30 kWp capacity at secondary schools, part of rural electrification initiative"
+97936,HEALTH,"Chinese Government provides USD 100,000 for health support via United Nations Children's Fund in Zimbabwe in December 2020","In December 2020, Chinese government provides  USD 100,000 for Health SM190538 support via United Nations Children's Fund in Zimbabwe.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides USD 100,000 for health support via United Nations Children's Fund in Zimbabwe in December 2020
+
+# Description
+In December 2020, Chinese government provides  USD 100,000 for Health SM190538 support via United Nations Children's Fund in Zimbabwe.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on health support and does not have direct environmental or energy transition impacts,"Health support via United Nations Children's Fund, no energy or infrastructure components mentioned"
+97937,HEALTH,"Chinese Government provides USD 111,762 for HIV and AIDS support via United Nations Children's Fund in Zimbabwe in December 2020","In December 2020, Chinese government provides USD 111,762 for HIV and AIDS support via United Nations Children's Fund in Zimbabwe.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides USD 111,762 for HIV and AIDS support via United Nations Children's Fund in Zimbabwe in December 2020
+
+# Description
+In December 2020, Chinese government provides USD 111,762 for HIV and AIDS support via United Nations Children's Fund in Zimbabwe.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on healthcare support without direct environmental or energy transition impacts,"HIV and AIDS support through UN Children's Fund, healthcare focus"

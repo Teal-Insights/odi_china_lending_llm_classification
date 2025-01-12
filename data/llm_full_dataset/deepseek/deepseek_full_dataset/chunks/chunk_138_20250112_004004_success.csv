@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94225,HEALTH,Xi’an City provides anti-epidemic materials to Azerbaijan in May 2020,"On May 5, 2020, Xi’an City, a municipality of the Shaanxi Province in China, provided anti-epidemic supplies to Sumgait City in Azerbaijan. The supplies included 100,000 disposable medical surgical masks, 2,000 sets of medical protective clothing, 1,000 pairs of goggles, 100 forehead temperature guns, 1 ventilator, 1 real-time fluorescent quantitative PCR instrument, 1 nucleic acid extraction instrument, 1,000 packages of cell preservation solution and 157 boxes of virus DNA/RNA extraction kits. The total estimated value of this donation is 1.645 million yuan.  A handover ceremony was held for this donation. The ceremony was attended by heads of relevant government departments and medical staff representatives. Specifics on who was in attendance are unavailable.",NA,"# Sector
+HEALTH
+
+# Title
+Xi’an City provides anti-epidemic materials to Azerbaijan in May 2020
+
+# Description
+On May 5, 2020, Xi’an City, a municipality of the Shaanxi Province in China, provided anti-epidemic supplies to Sumgait City in Azerbaijan. The supplies included 100,000 disposable medical surgical masks, 2,000 sets of medical protective clothing, 1,000 pairs of goggles, 100 forehead temperature guns, 1 ventilator, 1 real-time fluorescent quantitative PCR instrument, 1 nucleic acid extraction instrument, 1,000 packages of cell preservation solution and 157 boxes of virus DNA/RNA extraction kits. The total estimated value of this donation is 1.645 million yuan.  A handover ceremony was held for this donation. The ceremony was attended by heads of relevant government departments and medical staff representatives. Specifics on who was in attendance are unavailable.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for epidemic prevention, with no direct environmental or energy transition impact","Anti-epidemic supplies including masks, protective clothing, medical equipment, and testing kits"
+94237,HEALTH,Mianyang City government provides anti-epidemic supplies to Azerbaijan in April 2020,"On April 12, 2020, Mianyang City, a municipality of the Sichuan Province in China, provided anti-epidemic supplies to Sumgait, a city in Azerbaijan. The supplies included 50,000 medical protective masks, 2,000 protective masks, 2,000 goggles, 1,000 sets of protective clothing, 120,000 shoe covers, and 300 infrared thermometers. These supplies will be used to support COVID-19 prevention and response efforts in Azerbaijan. The total estimated value of this donation is 600,000 yuan.  A handover ceremony was held for this donation. Various heads of government departments and medical staff representatives attended the ceremony. Specifics on attendees of the ceremony are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Mianyang City government provides anti-epidemic supplies to Azerbaijan in April 2020
+
+# Description
+On April 12, 2020, Mianyang City, a municipality of the Sichuan Province in China, provided anti-epidemic supplies to Sumgait, a city in Azerbaijan. The supplies included 50,000 medical protective masks, 2,000 protective masks, 2,000 goggles, 1,000 sets of protective clothing, 120,000 shoe covers, and 300 infrared thermometers. These supplies will be used to support COVID-19 prevention and response efforts in Azerbaijan. The total estimated value of this donation is 600,000 yuan.  A handover ceremony was held for this donation. Various heads of government departments and medical staff representatives attended the ceremony. Specifics on attendees of the ceremony are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for COVID-19 response, unrelated to energy or environmental impacts","Anti-epidemic supplies including masks, protective clothing, and medical equipment for COVID-19 prevention"
+94392,HEALTH,Chinese government provides second and third batch of anti-epidemic supplies to Azerbaijan in May 2020 (linked to Project ID#93960),"On May 21, 2020, the Chinese government provided anti-epidemic supplies to Azerbaijan. The donated supplies included 5,000 nucleic acid testing reagents, 10 non-invasive ventilators, 3,500 sets of medical protective clothing, 600,000 medical masks, and 50,000 KN95 masks. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at the Ministry of Foreign Affairs in Azerbaijan. China’s Ambassador to Azerbaijan, Guo Min, Deputy Foreign Minister Hasanov, Deputy Health Minister Gasimov, Foreign Ministry Spokesperson Abdullayeva, and representatives of local mainstream media attended the ceremony. Ambassador Guo Min and Deputy Health Minister Gasimov jointly signed the handover certificate for this donation.  The first batch of anti-epidemic supplies is covered in Project ID#93960.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government provides second and third batch of anti-epidemic supplies to Azerbaijan in May 2020 (linked to Project ID#93960)
+
+# Description
+On May 21, 2020, the Chinese government provided anti-epidemic supplies to Azerbaijan. The donated supplies included 5,000 nucleic acid testing reagents, 10 non-invasive ventilators, 3,500 sets of medical protective clothing, 600,000 medical masks, and 50,000 KN95 masks. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at the Ministry of Foreign Affairs in Azerbaijan. China’s Ambassador to Azerbaijan, Guo Min, Deputy Foreign Minister Hasanov, Deputy Health Minister Gasimov, Foreign Ministry Spokesperson Abdullayeva, and representatives of local mainstream media attended the ceremony. Ambassador Guo Min and Deputy Health Minister Gasimov jointly signed the handover certificate for this donation.  The first batch of anti-epidemic supplies is covered in Project ID#93960.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for epidemic response, with no direct environmental or energy transition impact","Anti-epidemic supplies including testing reagents, ventilators, protective clothing, and masks"
+94393,HEALTH,"Jiangjin District provides anti-epidemic materials to Sumgait City, Azerbaijan in May 2020","On May 13, 2020, the Jiangjin District of Chongqing, a municipality of China, provided anti-epidemic supplies to Sumgait, a city in Azerbaijan. The donated supplies included disposable medical surgical masks, KN95 protective masks, infrared forehead thermometers, and protective medical clothing.   The specific amount and monetary value of this donation are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Jiangjin District provides anti-epidemic materials to Sumgait City, Azerbaijan in May 2020
+
+# Description
+On May 13, 2020, the Jiangjin District of Chongqing, a municipality of China, provided anti-epidemic supplies to Sumgait, a city in Azerbaijan. The donated supplies included disposable medical surgical masks, KN95 protective masks, infrared forehead thermometers, and protective medical clothing.   The specific amount and monetary value of this donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Anti-epidemic supplies including masks, thermometers, and medical clothing"
+94394,HEALTH,Sichuan Provincial Government provides anti-epidemic supplies to Azerbaijan in May 2020,"On May 11, 2020, the Sichuan Provincial Government of China provided anti-epidemic supplies to Baku, the capital city of Azerbaijan. The donated supplies will be used to improve COVID-19 prevention and response efforts in Azerbaijan.   The specific type, amount and monetary value of this donation are unknown, but at least some or most of the supplies are from Chengdu Xinjin Shifeng Medical Apparatus & Instrument Co. Ltd., a Chinese medical instrument manufacturer.",NA,"# Sector
+HEALTH
+
+# Title
+Sichuan Provincial Government provides anti-epidemic supplies to Azerbaijan in May 2020
+
+# Description
+On May 11, 2020, the Sichuan Provincial Government of China provided anti-epidemic supplies to Baku, the capital city of Azerbaijan. The donated supplies will be used to improve COVID-19 prevention and response efforts in Azerbaijan.   The specific type, amount and monetary value of this donation are unknown, but at least some or most of the supplies are from Chengdu Xinjin Shifeng Medical Apparatus & Instrument Co. Ltd., a Chinese medical instrument manufacturer.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare supplies with no direct environmental or energy transition impact,"Anti-epidemic supplies, COVID-19 prevention focus, medical instrument manufacturer involvement"
+94395,HEALTH,"Quzhou City provides anti-epidemic supplies to Sumgait City, Azerbaijan in April 2020","On April 28, 2020, Quzhou City, a municipality in the Zhejiang Province of China, provided anti-epidemic supplies to Sumgait City in Azerbaijan. These supplies will be used to improve COVID-19 prevention and response efforts in Azerbaijan. The supplies will be distributed to major hospitals and frontline medical staff in Sumgait City.   The specific type, amount, and  monetary value of this donation are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Quzhou City provides anti-epidemic supplies to Sumgait City, Azerbaijan in April 2020
+
+# Description
+On April 28, 2020, Quzhou City, a municipality in the Zhejiang Province of China, provided anti-epidemic supplies to Sumgait City in Azerbaijan. These supplies will be used to improve COVID-19 prevention and response efforts in Azerbaijan. The supplies will be distributed to major hospitals and frontline medical staff in Sumgait City.   The specific type, amount, and  monetary value of this donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on healthcare support and epidemic prevention, unrelated to energy or environmental impacts","Anti-epidemic supplies for COVID-19 prevention, distribution to hospitals and medical staff"
+95836,BUSINESS AND OTHER SERVICES,Bank of China contributes  to $210 million syndicated loan to help Azerbaijan’s state-owned oil company (SOCAR),"In August 2020, SOCAR Trading S.A. — the international marketing and development arm of the State Oil Company of Azerbaijan Republic (SOCAR) — secured a $210 million syndicated loan with 10 banks. Bank of China reportedly contributed $21 million. The proceeds of the loan were to be used by the borrower to amend, extend and increase an existing syndicated credit facility.",NA,"# Sector
+BUSINESS AND OTHER SERVICES
+
+# Title
+Bank of China contributes  to $210 million syndicated loan to help Azerbaijan’s state-owned oil company (SOCAR)
+
+# Description
+In August 2020, SOCAR Trading S.A. — the international marketing and development arm of the State Oil Company of Azerbaijan Republic (SOCAR) — secured a $210 million syndicated loan with 10 banks. Bank of China reportedly contributed $21 million. The proceeds of the loan were to be used by the borrower to amend, extend and increase an existing syndicated credit facility.",TRUE,NA,BROWN,HIGH,Financial Services,"Loan supports Azerbaijan's state-owned oil company, directly enabling fossil fuel operations","Funding provided to SOCAR Trading S.A., the international marketing arm of Azerbaijan's state oil company"
+70002,HEALTH,Chinese Embassy donates anti-epidemic supplies to Bahamas Ministry of Health in April 2020,"On April 4, 2020, the Chinese Embassy in the Commonwealth of the Bahamas donated 1,000 Coronavirus testing kits, KN-95 masks, gloves, and other supplies to the Bahamas Ministry of Health in order to combat the Coronavirus. The Chinese Embassy in the Commonwealth of the Bahamas handed over the supplies.",The Commonwealth of the Bahamas was not ODA-Eligible in 2020.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates anti-epidemic supplies to Bahamas Ministry of Health in April 2020
+
+# Description
+On April 4, 2020, the Chinese Embassy in the Commonwealth of the Bahamas donated 1,000 Coronavirus testing kits, KN-95 masks, gloves, and other supplies to the Bahamas Ministry of Health in order to combat the Coronavirus. The Chinese Embassy in the Commonwealth of the Bahamas handed over the supplies.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare and epidemic response, with no direct environmental or energy transition impact","Donation of medical supplies including testing kits, masks, and gloves for Coronavirus response"
+70005,HEALTH,Chinese Embassy donates anti-epidemic supplies to the Bahamas Ministry of Health,"On June 9, 2020, the Chinese Embassy in the Commonwealth of the Bahamas donated a fourth batch of anti-epidemic supplies to the Commonwealth of the Bahamas' Ministry of Health. The specific number of supplies and type of supplies are unknown. Chinese Ambassador Huang Qinguo was present at the ceremony.",The Commonwealth of the Bahamas was not an ODA-Eligible country.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates anti-epidemic supplies to the Bahamas Ministry of Health
+
+# Description
+On June 9, 2020, the Chinese Embassy in the Commonwealth of the Bahamas donated a fourth batch of anti-epidemic supplies to the Commonwealth of the Bahamas' Ministry of Health. The specific number of supplies and type of supplies are unknown. Chinese Ambassador Huang Qinguo was present at the ceremony.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of anti-epidemic supplies to Ministry of Health, healthcare focus"
+70034,HEALTH,Chinese Government donates anti-epidemic supplies to the Bahamas in April 2020,"On April 24, 2020, the Chinese Government donated anti-epidemic supplies to the Commonwealth of the Bahamas. These medical supplies were donated in order to help the commonwealth of the Bahamas combat the Coronavirus. The specific contents and worth of the supplies are unknown. The receiving ceremony was held on April 28, 2020.",The Commonwealth of the Bahamas was not an ODA-Eligible Country during 2020.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates anti-epidemic supplies to the Bahamas in April 2020
+
+# Description
+On April 24, 2020, the Chinese Government donated anti-epidemic supplies to the Commonwealth of the Bahamas. These medical supplies were donated in order to help the commonwealth of the Bahamas combat the Coronavirus. The specific contents and worth of the supplies are unknown. The receiving ceremony was held on April 28, 2020.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for public health purposes, with no direct environmental or energy transition impact","Donation of anti-epidemic supplies, healthcare focus, no energy-related components"

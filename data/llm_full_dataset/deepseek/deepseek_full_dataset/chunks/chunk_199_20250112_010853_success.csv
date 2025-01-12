@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93386,HEALTH,China donates anti-epidemic supplies to Guinea-Bissau in April 2020,"On April 18, 2020, protective and preventative equipment amidst COVID arrived in Guinea-Bissau.  Secretary of State for Hospital Management Cornelia Aleluia Lopes Man indicated that this batch of equipment includes 2,000 protective masks, 10,000 surgical masks, 2,000 disposable coveralls, 500 infrared thermometers, 2,000 glasses, 1,000 pairs of disposable nitrile gloves and 10,000 pairs of disposable shoe covers.   It was reported reported that the World Food Program (WFP) coordinated the transportation of the materials.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates anti-epidemic supplies to Guinea-Bissau in April 2020
+
+# Description
+On April 18, 2020, protective and preventative equipment amidst COVID arrived in Guinea-Bissau.  Secretary of State for Hospital Management Cornelia Aleluia Lopes Man indicated that this batch of equipment includes 2,000 protective masks, 10,000 surgical masks, 2,000 disposable coveralls, 500 infrared thermometers, 2,000 glasses, 1,000 pairs of disposable nitrile gloves and 10,000 pairs of disposable shoe covers.   It was reported reported that the World Food Program (WFP) coordinated the transportation of the materials.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,Donation of protective equipment and medical supplies for COVID-19 response
+93416,HEALTH,Sichuan Donates Face Masks and Protective Suits to Guinea-Bissau,"On December 7, 2020, the Sichuan province donated 8,000 face masks and waterproof protective suits to Guinea-Bissau to aid their fight against COVID-19.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Sichuan Donates Face Masks and Protective Suits to Guinea-Bissau
+
+# Description
+On December 7, 2020, the Sichuan province donated 8,000 face masks and waterproof protective suits to Guinea-Bissau to aid their fight against COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,Donation of face masks and protective suits for COVID-19 response
+70494,HEALTH,Chinese Government Provides Donation of Anti-Epidemic Supplies to Guyana Council of Organizations for Persons with Disabilities in May 2020,"On May 12th, 2020, the Chinese government donated 1.1 million GYD worth of emergency life and epidemic prevention materials to the Guyana Council of Organizations for Persons with Disabilities (GCOPD). The donation consisted of rice, flour, disinfectants, sanitation hampers and other materials to prevent the spread of Covid-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government Provides Donation of Anti-Epidemic Supplies to Guyana Council of Organizations for Persons with Disabilities in May 2020
+
+# Description
+On May 12th, 2020, the Chinese government donated 1.1 million GYD worth of emergency life and epidemic prevention materials to the Guyana Council of Organizations for Persons with Disabilities (GCOPD). The donation consisted of rice, flour, disinfectants, sanitation hampers and other materials to prevent the spread of Covid-19.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on social development and public health support without direct environmental or energy transition impacts,Donation of emergency life and epidemic prevention materials to support persons with disabilities during COVID-19 pandemic
+70519,HEALTH,"Fuzhou donates 30,000 masks to Guyana in May 2020","On May 29th, 2020, Fuzhou donated Covid-19 medical supplies in the form of 30,0000 masks to Georgetown, Guyana. The masks were donated by Fuzhou to greatly enhance the city of Georgetown's ability to deal with the Covid-19 Pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Fuzhou donates 30,000 masks to Guyana in May 2020
+
+# Description
+On May 29th, 2020, Fuzhou donated Covid-19 medical supplies in the form of 30,0000 masks to Georgetown, Guyana. The masks were donated by Fuzhou to greatly enhance the city of Georgetown's ability to deal with the Covid-19 Pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of 30,000 masks for Covid-19 response, healthcare sector focus"
+70797,HEALTH,Chinese Government provides donation of Covid-19 equipment to Guyana in April 2020,"On April 27th, 2020, a handover ceremony was held for the donation of Covid-19 medical equipment from China to Guyana (Source ID #105524). The equipment included 500 masks, 500 sets of PPE, 100 thermometers, 500 pairs of medical goggles, 500 pairs of gloves, and 500 shoe covers (Source ID #157526).",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides donation of Covid-19 equipment to Guyana in April 2020
+
+# Description
+On April 27th, 2020, a handover ceremony was held for the donation of Covid-19 medical equipment from China to Guyana (Source ID #105524). The equipment included 500 masks, 500 sets of PPE, 100 thermometers, 500 pairs of medical goggles, 500 pairs of gloves, and 500 shoe covers (Source ID #157526).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical equipment unrelated to energy or environmental impacts,"Donation of Covid-19 medical equipment including masks, PPE, thermometers, and other medical supplies"
+90929,HEALTH,Chinese Government provides donation of anti-epidemic supplies to Georgetown Public Hospital in June 2020,"On June 11th, 2020, the Chinese Government provided a donation of protective clothing, goggles, thermometers, and more unlisted items to the Georgetown Public Hospital (Source ID #157158). The donation ceremony was attended by embassy officials as well as a representative of the hospital (Source ID #105521).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides donation of anti-epidemic supplies to Georgetown Public Hospital in June 2020
+
+# Description
+On June 11th, 2020, the Chinese Government provided a donation of protective clothing, goggles, thermometers, and more unlisted items to the Georgetown Public Hospital (Source ID #157158). The donation ceremony was attended by embassy officials as well as a representative of the hospital (Source ID #105521).",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of medical supplies to hospital, healthcare focus"
+90931,TRADE POLICIES AND REGULATIONS,China donates shipping container scanners worth USD 5 million to Guyana in August 2020,"On August 14th, 2020, China donated NUCTECH mobile container scanners worth USD 5 million to Guyana. The ceremony was held at Guyana National Industries Corporation. The donation includes a relocatable 1 container/vehicle inspection system, 1 container code recognition system, 1 radioactivity monitor, and 2 x-ray inspection systems.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+China donates shipping container scanners worth USD 5 million to Guyana in August 2020
+
+# Description
+On August 14th, 2020, China donated NUCTECH mobile container scanners worth USD 5 million to Guyana. The ceremony was held at Guyana National Industries Corporation. The donation includes a relocatable 1 container/vehicle inspection system, 1 container code recognition system, 1 radioactivity monitor, and 2 x-ray inspection systems.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves donation of security and inspection equipment without clear environmental or energy transition impacts,"Container scanners, code recognition system, radioactivity monitor, x-ray inspection systems - all related to trade security"
+90932,HEALTH,Chinese Embassy provides donation of anti-epidemic supplies to Guyana in August 2020,"On August 14th, 2020, the Chinese Embassy in Guyana handed over a donation of anti-epidemic materials to Guyana's Ministry of Health. The materials included 350 sets of PPE, 900 goggles, 4 RESmart BPAP machines, and 5520 KN95 masks. The handover ceremony was held at a meeting between the Chinese Ambassador to Guyana and the Minister of Health of Guyana. The supplies are intended to help Guyana fight the COVID-19 pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy provides donation of anti-epidemic supplies to Guyana in August 2020
+
+# Description
+On August 14th, 2020, the Chinese Embassy in Guyana handed over a donation of anti-epidemic materials to Guyana's Ministry of Health. The materials included 350 sets of PPE, 900 goggles, 4 RESmart BPAP machines, and 5520 KN95 masks. The handover ceremony was held at a meeting between the Chinese Ambassador to Guyana and the Minister of Health of Guyana. The supplies are intended to help Guyana fight the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of anti-epidemic materials including PPE, goggles, BPAP machines, and masks for COVID-19 response"
+90938,HEALTH,Jiangsu Province provides donation of testing equipment worth GYD 17.2 million to Guyana in October 2020,"On October 9th, 2020, the Jiangsu Province and Association of Chinese Enterprises in Guyana donated testing equipment worth GYD 17.2 million to Guyana. The testing equipment included a PCR nucleic acid extractor and 10,080 sets of reagents. This testing equipment will greatly shorten the time needed to run COVID-19 tests.",NA,"# Sector
+HEALTH
+
+# Title
+Jiangsu Province provides donation of testing equipment worth GYD 17.2 million to Guyana in October 2020
+
+# Description
+On October 9th, 2020, the Jiangsu Province and Association of Chinese Enterprises in Guyana donated testing equipment worth GYD 17.2 million to Guyana. The testing equipment included a PCR nucleic acid extractor and 10,080 sets of reagents. This testing equipment will greatly shorten the time needed to run COVID-19 tests.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare equipment donation with no direct environmental or energy transition impact,"Testing equipment donation for COVID-19 testing, healthcare sector focus"
+91097,HEALTH,Chinese Government deploys 16th medical team to Guyana in October 2020 (Linked to Project ID#90941),"On October 1st, 2020, the 16th Chinese Medical Brigade arrived at Georgetown Public Hospital in Guyana. This is a 15-person team and will assist Georgetown Public Hospital for a 1-year tenure. Additionally, on December 22, 2020, this team provided Georgetown Hospital with a donation of medical supplies, which is detailed and captured in Project ID#90941.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government deploys 16th medical team to Guyana in October 2020 (Linked to Project ID#90941)
+
+# Description
+On October 1st, 2020, the 16th Chinese Medical Brigade arrived at Georgetown Public Hospital in Guyana. This is a 15-person team and will assist Georgetown Public Hospital for a 1-year tenure. Additionally, on December 22, 2020, this team provided Georgetown Hospital with a donation of medical supplies, which is detailed and captured in Project ID#90941.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare assistance and medical supplies donation without direct environmental or energy transition impacts,"Medical team deployment, healthcare assistance, medical supplies donation"

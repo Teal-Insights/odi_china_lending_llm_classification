@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93591,HEALTH,First Lady of China donates anti-epidemic materials to First Lady of Mali on behalf of the Chinese Government for the fight against COVID-19,"On July 28th, 2020, Zhu Liying, the Chinese Ambassador to Mali, and his wife handed over the donation of anti-epidemic materials on behalf of Peng Liyuan, the first lady of China, to Keïta Aminata Maïga, the first lady of Mali. Peng Liyuan's donation, in turn, was on behalf of the Chinese Government. The donated supplies included masks, thermometers, household appliances, and school supplies kits. The handover ceremony took place at Base B, Bamako, Mali.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates anti-epidemic materials to First Lady of Mali on behalf of the Chinese Government for the fight against COVID-19
+
+# Description
+On July 28th, 2020, Zhu Liying, the Chinese Ambassador to Mali, and his wife handed over the donation of anti-epidemic materials on behalf of Peng Liyuan, the first lady of China, to Keïta Aminata Maïga, the first lady of Mali. Peng Liyuan's donation, in turn, was on behalf of the Chinese Government. The donated supplies included masks, thermometers, household appliances, and school supplies kits. The handover ceremony took place at Base B, Bamako, Mali.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

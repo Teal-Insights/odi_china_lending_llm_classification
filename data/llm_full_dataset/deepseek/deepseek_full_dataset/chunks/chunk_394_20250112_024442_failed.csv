@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+68996,HEALTH,"Chinese First Lady donates 100,000 RMB to China-Mongolia Tuberculosis Prevention and Control Project","On February 27, 2019, the Chinese First Lady, Peng Liyuan, donated 100,000 RMB through the Chinese Embassy in Mongolia to support the Enheli Erdeng Foundation (Mongolian: “Энхрий-Эрдэнэ” сангийн); specifically, its initiative, ‘Mongolia without Tuberculosis’, founded by Miss E.Enkhriimaa, winner of ""Miss World 2018."" Chinese Ambassador to Mongolia Xing Haiming handed over the donation in a ceremony that was attended by E.Enkhriimaa and representatives of the Mongolian Ministry of Foreign Affairs, the Ministry of Health, the local parliament, the infectious disease prevention and control center and other leaders of the foundation.   The donation was allocated to the ""China-Mongolia Tuberculosis Prevention and Control Project"" (Chinese: 中蒙结核病防治项目, Mongolian: Сүрьеэгийн эсрэг хамтдаа тэмцэцгээе - хятад монголын найрамдал). A launch ceremony for the project was held on May 16, 2019.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese First Lady donates 100,000 RMB to China-Mongolia Tuberculosis Prevention and Control Project
+
+# Description
+On February 27, 2019, the Chinese First Lady, Peng Liyuan, donated 100,000 RMB through the Chinese Embassy in Mongolia to support the Enheli Erdeng Foundation (Mongolian: “Энхрий-Эрдэнэ” сангийн); specifically, its initiative, ‘Mongolia without Tuberculosis’, founded by Miss E.Enkhriimaa, winner of ""Miss World 2018."" Chinese Ambassador to Mongolia Xing Haiming handed over the donation in a ceremony that was attended by E.Enkhriimaa and representatives of the Mongolian Ministry of Foreign Affairs, the Ministry of Health, the local parliament, the infectious disease prevention and control center and other leaders of the foundation.   The donation was allocated to the ""China-Mongolia Tuberculosis Prevention and Control Project"" (Chinese: 中蒙结核病防治项目, Mongolian: Сүрьеэгийн эсрэг хамтдаа тэмцэцгээе - хятад монголын найрамдал). A launch ceremony for the project was held on May 16, 2019.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

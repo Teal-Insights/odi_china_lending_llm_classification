@@ -1,0 +1,56 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+54643,ACTION RELATING TO DEBT,China gives 10 year extensions on 4 Cuban interest-free loans,"In November 2004, Bo Xilai, China's Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban Minister, signed an agreement postponing Cuba's payment of 4 interest-free loans for 10 additional years. These government loans (collectively worth $50 million) were granted to Cuba between 1990-1994  They included a 1990 loan for a bicycle and fan factory; a 1992 loan for bicycles, fans, and fish farming programs; a 1992 loan for bicycles; and a 1994 loan for pharmaceutical raw materials, equipment, and medicines.",NA,"# Sector
+ACTION RELATING TO DEBT
+
+# Title
+China gives 10 year extensions on 4 Cuban interest-free loans
+
+# Description
+In November 2004, Bo Xilai, China's Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban Minister, signed an agreement postponing Cuba's payment of 4 interest-free loans for 10 additional years. These government loans (collectively worth $50 million) were granted to Cuba between 1990-1994  They included a 1990 loan for a bicycle and fan factory; a 1992 loan for bicycles, fans, and fish farming programs; a 1992 loan for bicycles; and a 1994 loan for pharmaceutical raw materials, equipment, and medicines.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54699,HEALTH,China loans 50 million RMB to Cuban Hospitals through Economic and Technical Cooperation Agreement,"In November 2004, China agreed to provide a 50 million RMB ($6.1 million) governmental loan to be used in the acquisition of expendable material for hospitals and polyclinics, parts replacement for medical equipment; resources for stomatology and optics. The Economic and Technical Cooperation agreement to provide the loan was signed by Bo Xilai of China's Ministry of Commerce and Ricardo Cabrisas Ruiz of Cuba. The loan is for 15 years including a grace period of five years without interest (Opciones).  ",NA,"# Sector
+HEALTH
+
+# Title
+China loans 50 million RMB to Cuban Hospitals through Economic and Technical Cooperation Agreement
+
+# Description
+In November 2004, China agreed to provide a 50 million RMB ($6.1 million) governmental loan to be used in the acquisition of expendable material for hospitals and polyclinics, parts replacement for medical equipment; resources for stomatology and optics. The Economic and Technical Cooperation agreement to provide the loan was signed by Bo Xilai of China's Ministry of Commerce and Ricardo Cabrisas Ruiz of Cuba. The loan is for 15 years including a grace period of five years without interest (Opciones).  ",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54739,GOVERNMENT AND CIVIL SOCIETY,Chinese 2004 Agreement to Modernization of Cuba's Meteorological Service,"On November 22nd, 2004, the Chinese and Cuban governments exchanged agreements about getting a Chinese team to do a study on the modernization of Cuba's meteorological system services. This agreement was signed by Bo Xilai, Minister of Commerce, and Fernando González Bermúdez, acting Minister of CITMA (Ministerio de ciencia, tecnología y medio ambiente).This project's primary objective is to strengthen the technological capacities of Cuba's Meteorological Service in a three year period. It's oriented principally towards the modernization of the monitoring network of meteorological observations, the modernization of the system of meteorological telecommunications, and insurances for the carrying out of the project. The signed document is entitled: ""Canje de Notas entre el Gobierno de la República de Cuba y el Gobierno de la República Popular China, sobre el Envío de una Misión de Especialistas a Cuba por el Gobierno de China para Realizar Estudios sobre el Proyecto de Modernización del Sistema de Servicios Meteorológicos de Cuba.""",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese 2004 Agreement to Modernization of Cuba's Meteorological Service
+
+# Description
+On November 22nd, 2004, the Chinese and Cuban governments exchanged agreements about getting a Chinese team to do a study on the modernization of Cuba's meteorological system services. This agreement was signed by Bo Xilai, Minister of Commerce, and Fernando González Bermúdez, acting Minister of CITMA (Ministerio de ciencia, tecnología y medio ambiente).This project's primary objective is to strengthen the technological capacities of Cuba's Meteorological Service in a three year period. It's oriented principally towards the modernization of the monitoring network of meteorological observations, the modernization of the system of meteorological telecommunications, and insurances for the carrying out of the project. The signed document is entitled: ""Canje de Notas entre el Gobierno de la República de Cuba y el Gobierno de la República Popular China, sobre el Envío de una Misión de Especialistas a Cuba por el Gobierno de China para Realizar Estudios sobre el Proyecto de Modernización del Sistema de Servicios Meteorológicos de Cuba.""",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54740,TRADE POLICIES AND REGULATIONS,Chinese loan to fund purchase of X-ray Equipment for container inspection to Cuba,"In 2004, China provided a loan to Cuba for the acquisition of a special X-ray system for the inspection of containers, the aforementioned equipment is already installed and operating in the Port, whose value is 3.0 million dollars. The transaction amount is then recorded as 3 million USD. The project is completed and is operating in the port of Havana. The loan was signed by Bo Xilai, China's Minister of Commerce, and Pedro Pupo, head of the Aduana General de la República de Cuba.  On November 22, 2004, Bo Xilai, Minister of Commerce and Pedro Pupo, head of the General Customs of the Republic of Cuba signed the government loan. The x-ray equipment was inaugurated on January 14, 2005.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese loan to fund purchase of X-ray Equipment for container inspection to Cuba
+
+# Description
+In 2004, China provided a loan to Cuba for the acquisition of a special X-ray system for the inspection of containers, the aforementioned equipment is already installed and operating in the Port, whose value is 3.0 million dollars. The transaction amount is then recorded as 3 million USD. The project is completed and is operating in the port of Havana. The loan was signed by Bo Xilai, China's Minister of Commerce, and Pedro Pupo, head of the Aduana General de la República de Cuba.  On November 22, 2004, Bo Xilai, Minister of Commerce and Pedro Pupo, head of the General Customs of the Republic of Cuba signed the government loan. The x-ray equipment was inaugurated on January 14, 2005.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54853,"AGRICULTURE, FORESTRY, FISHING",Chinese Technical Assistance for Cuban Aquaculture Technical Assistance Project (linked to #69684),"On 22 November, 2004, China signed an Exchange of Letters agreement for the provision of technical assistance for Cuba's ""Aquaculture Technical Assistance Project"".  China agreed to send three technicians - two in fish breeding and one in fish nutrition - to work in Cuba for two years.  This agreement was signed by Bo Xilai, the Chinese Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban minister.  The second phase of the Aquaculture Technical Assistance Project was agreed upon in March 2010.  The fifth phase of the Aquaculture Technical Assistance Project is captured in linked project #69684.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Technical Assistance for Cuban Aquaculture Technical Assistance Project (linked to #69684)
+
+# Description
+On 22 November, 2004, China signed an Exchange of Letters agreement for the provision of technical assistance for Cuba's ""Aquaculture Technical Assistance Project"".  China agreed to send three technicians - two in fish breeding and one in fish nutrition - to work in Cuba for two years.  This agreement was signed by Bo Xilai, the Chinese Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban minister.  The second phase of the Aquaculture Technical Assistance Project was agreed upon in March 2010.  The fifth phase of the Aquaculture Technical Assistance Project is captured in linked project #69684.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+53914,GENERAL ENVIRONMENTAL PROTECTION,China and Sri Lanka form Marine and Coastal Zone Joint Research Center,"In 2016, it was reported that China and Sri Lanka had developed a Marine and Coastal Zone Joint Research Center.",NA,"# Sector
+GENERAL ENVIRONMENTAL PROTECTION
+
+# Title
+China and Sri Lanka form Marine and Coastal Zone Joint Research Center
+
+# Description
+In 2016, it was reported that China and Sri Lanka had developed a Marine and Coastal Zone Joint Research Center.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on research and environmental protection without clear energy transition impact,"Marine and coastal zone research center, environmental protection focus"
+54311,EMERGENCY RESPONSE,"Chinese CGC donates 200,000 Rs. to Sri Lanka for floods and landslides relief (Linked to project #54310)","On June 13th, 2016, Chinese state-owned China Geo-Engineering Corporation (CGC) donated Rs. 200,000 to Sri Lanka for flood and landslide relief. CGC's Deputy General Manager Shu Dehua handed over the cheque to S. S Miyanawala, the secretary of Ministry of Disaster Management. CGC made another donation of Rs. 500,000 relief aid to Sri Lanka in June, 2017. #54310",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese CGC donates 200,000 Rs. to Sri Lanka for floods and landslides relief (Linked to project #54310)
+
+# Description
+On June 13th, 2016, Chinese state-owned China Geo-Engineering Corporation (CGC) donated Rs. 200,000 to Sri Lanka for flood and landslide relief. CGC's Deputy General Manager Shu Dehua handed over the cheque to S. S Miyanawala, the secretary of Ministry of Disaster Management. CGC made another donation of Rs. 500,000 relief aid to Sri Lanka in June, 2017. #54310",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation for disaster relief with no direct environmental or energy transition impact,"Donation for flood and landslide relief, no infrastructure or energy components mentioned"
+68943,EDUCATION,Chinese Government provides grant for China-Sri Lanka Friendship Primary School in Yatagampitiya (linked to #71768),"In October 2016, a grant to reconstruct China-Sri Lanka Friendship Primary School in Yatagampitiya was provided by the Chinese government through the Chinese Embassy in Sri Lanka. On July 5, 2018, a ceremony was held to celebrate the completion of the reconstruction.   China Machinery Engineering Co., Ltd undertook the reconstruction project and also donated educational supplies such as computers and school equipment (captured in #71768). The school is also known as the Faxian Shicun School.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides grant for China-Sri Lanka Friendship Primary School in Yatagampitiya (linked to #71768)
+
+# Description
+In October 2016, a grant to reconstruct China-Sri Lanka Friendship Primary School in Yatagampitiya was provided by the Chinese government through the Chinese Embassy in Sri Lanka. On July 5, 2018, a ceremony was held to celebrate the completion of the reconstruction.   China Machinery Engineering Co., Ltd undertook the reconstruction project and also donated educational supplies such as computers and school equipment (captured in #71768). The school is also known as the Faxian Shicun School.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on educational infrastructure development without direct environmental or energy transition impacts,"School reconstruction, educational supplies donation, no energy-related components mentioned"
+91649,OTHER MULTISECTOR,China Development Bank provides $65 million loan for AVIC Astoria Tower One Project,"In 2013, AVIC International Hotels Lanka Ltd. [中航国际酒店(斯里兰卡)有限公司] — a special purpose vehicle and joint venture of AVIC International Engineering (Hong Kong) Limited and Nice View Investment Ltd of Hong Kong — entered into a supplementary agreement with the Government of Sri Lanka’s Board of Investment (BOI) under Strategic Development Act to undertake an apartment complex including 528 apartment units, a clubhouse, commercial space and car parking facility at R A De Mel Mawatha, Colombo 03 with an envisaged investment of $250 million. AVIC International Hotels Lanka Ltd. and China Development Bank subsequently signed a $65 million loan agreement for the AVIC Astoria Tower One Project. The purpose of the project was to construct four 41-story towers — in a construction area of 144,358 square meters — with 608 apartments that are separated into 2, 3 and 4 bedroom units in Colombo 03, a residential and commercial region of the capital city of Colombo. China State Construction Engineering Corporation Limited (CSCEC) is the contractor responsible for project implementation. The project was officially launched on December 21, 2016.","1. This project is also known as the AVIC Astoria Project. The Chinese project title is 斯里兰卡Astoria公寓. 2. Aviation Industry Corporation of China (AVIC) is a state-owned mega incorporation administrated by the Chinese government. 3. Evidence of a $65 million loan from CDB can be found here (0https://www.dropbox.com/s/rfilib6i1yo2owu/JT%26N%20%E9%87%91%E8%AF%9A%E5%90%8C%E8%BE%BE%E5%BE%8B%E5%B8%88%E4%BA%8B%E5%8A%A1%E6%89%80.pdf?dl=0). 4. AVIC International Hotels Lanka Ltd. [中航国际酒店(斯里兰卡)有限公司] is also known as M/s AVIC International Hotels Lanka (Pvt) Ltd. 5. The loan commitment date is unknown. For the time being, AidData uses the project implementation start date as a proxy for the loan commitment date. This issue warrants further investigation.","# Sector
+OTHER MULTISECTOR
+
+# Title
+China Development Bank provides $65 million loan for AVIC Astoria Tower One Project
+
+# Description
+In 2013, AVIC International Hotels Lanka Ltd. [中航国际酒店(斯里兰卡)有限公司] — a special purpose vehicle and joint venture of AVIC International Engineering (Hong Kong) Limited and Nice View Investment Ltd of Hong Kong — entered into a supplementary agreement with the Government of Sri Lanka’s Board of Investment (BOI) under Strategic Development Act to undertake an apartment complex including 528 apartment units, a clubhouse, commercial space and car parking facility at R A De Mel Mawatha, Colombo 03 with an envisaged investment of $250 million. AVIC International Hotels Lanka Ltd. and China Development Bank subsequently signed a $65 million loan agreement for the AVIC Astoria Tower One Project. The purpose of the project was to construct four 41-story towers — in a construction area of 144,358 square meters — with 608 apartments that are separated into 2, 3 and 4 bedroom units in Colombo 03, a residential and commercial region of the capital city of Colombo. China State Construction Engineering Corporation Limited (CSCEC) is the contractor responsible for project implementation. The project was officially launched on December 21, 2016.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project is a residential and commercial development with no clear environmental or energy transition impacts,"Apartment complex with 608 units, clubhouse, commercial space, and parking facilities; no mention of energy or environmental features"
+98668,OTHER MULTISECTOR,"China National Aero-technology International Engineering Corporation (AVIC-ENG) donates Rs 300,000 worth of essential supplies to Lawris Girls’ Home in 2016","In April, 2016, the China National Aero-technology International Engineering Corporation (AVIC-ENG) donated Rs 300,000 worth of essential supplies to the Lawris Girls’ Home in Colombo as a part of its ""Raise the Future with Love"" campaign. The donation consisted of food, supplies, stationary, cooking utensils, and other essential items. This donation was AVIC-ENG's third yearly donation to Lawris Girls’ Home since 2014.  The Lawris Girls’ Home was founded by the wife of famous Sri Lankan educationalist and former principal of Nalanda College, D.C. Lawris. Since its establishment, the home has adopted and provided a caring abode for orphaned children.",NA,"# Sector
+OTHER MULTISECTOR
+
+# Title
+China National Aero-technology International Engineering Corporation (AVIC-ENG) donates Rs 300,000 worth of essential supplies to Lawris Girls’ Home in 2016
+
+# Description
+In April, 2016, the China National Aero-technology International Engineering Corporation (AVIC-ENG) donated Rs 300,000 worth of essential supplies to the Lawris Girls’ Home in Colombo as a part of its ""Raise the Future with Love"" campaign. The donation consisted of food, supplies, stationary, cooking utensils, and other essential items. This donation was AVIC-ENG's third yearly donation to Lawris Girls’ Home since 2014.  The Lawris Girls’ Home was founded by the wife of famous Sri Lankan educationalist and former principal of Nalanda College, D.C. Lawris. Since its establishment, the home has adopted and provided a caring abode for orphaned children.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of essential supplies to an orphanage, with no direct environmental or energy transition impact","Donation of food, supplies, stationary, cooking utensils to Lawris Girls’ Home, part of social welfare campaign"
+98677,EDUCATION,Chinese Embassy in Sri Lanka and China Machinery Engineering Corporation (CMEC) donate 300 sets of pencil cases and backpacks to Fa-Hsien GALA Sri-Lanka-China Friendship Village School,"On November 10, 2016, the Chinese Embassy in Sri Lanka and China Machinery Engineering Corporation (CMEC) donated a total of 300 sets of pencil cases and backpacks to the Fa-Hsien GALA Sri-Lanka-China Friendship Village School in Kalutara. On November 10, Chinese Ambassador Yi Xianliang visited the school to donate the materials. During the visit, three scholarships from CMEC totaling Rs 30,000 were donated to the school. (captured via project ID #98678)  Fa-Hsien GALA Sri-Lanka-China Friendship Village School is a rural school in Kalutara, 40 km south of the capital Colombo, located near the Fa-Hien caves. The financial value of the donation is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Sri Lanka and China Machinery Engineering Corporation (CMEC) donate 300 sets of pencil cases and backpacks to Fa-Hsien GALA Sri-Lanka-China Friendship Village School
+
+# Description
+On November 10, 2016, the Chinese Embassy in Sri Lanka and China Machinery Engineering Corporation (CMEC) donated a total of 300 sets of pencil cases and backpacks to the Fa-Hsien GALA Sri-Lanka-China Friendship Village School in Kalutara. On November 10, Chinese Ambassador Yi Xianliang visited the school to donate the materials. During the visit, three scholarships from CMEC totaling Rs 30,000 were donated to the school. (captured via project ID #98678)  Fa-Hsien GALA Sri-Lanka-China Friendship Village School is a rural school in Kalutara, 40 km south of the capital Colombo, located near the Fa-Hien caves. The financial value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves educational donations without clear environmental or energy transition impacts,"Donation of pencil cases, backpacks, and scholarships to a rural school"
+98678,EDUCATION,"China Machinery Engineering Corporation (CMEC) donates scholarships totaling Rs 30,000 to students at Fa-Hsien GALA Sri-Lanka-China Friendship Village School in 2016","On November 10, 2016, China Machinery Engineering Corporation (CMEC) donated three scholarships totaling Rs 30,000 to students at the Fa-Hsien GALA Sri-Lanka-China Friendship Village School in Kalutara. The scholarships have been donated to the school annually since 2014.  Fa-Hsien GALA Sri-Lanka-China Friendship Village School is a rural school in Kalutara, 40 km south of the capital Colombo, located near the Fa-Hien caves.",NA,"# Sector
+EDUCATION
+
+# Title
+China Machinery Engineering Corporation (CMEC) donates scholarships totaling Rs 30,000 to students at Fa-Hsien GALA Sri-Lanka-China Friendship Village School in 2016
+
+# Description
+On November 10, 2016, China Machinery Engineering Corporation (CMEC) donated three scholarships totaling Rs 30,000 to students at the Fa-Hsien GALA Sri-Lanka-China Friendship Village School in Kalutara. The scholarships have been donated to the school annually since 2014.  Fa-Hsien GALA Sri-Lanka-China Friendship Village School is a rural school in Kalutara, 40 km south of the capital Colombo, located near the Fa-Hien caves.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on educational scholarships with no direct environmental or energy transition impact,"Scholarship donations to rural school, education sector focus"
+98681,EMERGENCY RESPONSE,Asia Pacific Daily donates to Sri Lanka Ministry of Disaster Management following 2016 floods,"In May, 2016, Asia Pacific Daily donated an unknown amount of funds to the Sri Lanka Ministry of Disaster Management following extreme flooding in Sri Lanka. At least 102 people were killed in the floods. The disaster was recorded as one of the worst in Sri Lanka's history.",1. Asia Pacific Daily is a branch of the Chinese state-controlled Xinhua News Agency.,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Asia Pacific Daily donates to Sri Lanka Ministry of Disaster Management following 2016 floods
+
+# Description
+In May, 2016, Asia Pacific Daily donated an unknown amount of funds to the Sri Lanka Ministry of Disaster Management following extreme flooding in Sri Lanka. At least 102 people were killed in the floods. The disaster was recorded as one of the worst in Sri Lanka's history.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves disaster relief funding with no direct environmental or energy transition impact,"Donation to Ministry of Disaster Management for flood response, humanitarian focus"
+53307,EDUCATION,Chinese Embassy in Sudan donates school uniforms to Yarmouk Primary school in Khartoum State,"On January 7, 2016, the Chinese Ambassador to Sudan, Li Lianhe, went to the Yarmouk Elementary School in Jabal Awliya, Khartoum State, Sudan to attend the handover ceremony of school uniforms. The value of the donation is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Sudan donates school uniforms to Yarmouk Primary school in Khartoum State
+
+# Description
+On January 7, 2016, the Chinese Ambassador to Sudan, Li Lianhe, went to the Yarmouk Elementary School in Jabal Awliya, Khartoum State, Sudan to attend the handover ceremony of school uniforms. The value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a social development initiative with no direct environmental or energy transition impact,"Donation of school uniforms to primary school, education sector focus"
+53308,EDUCATION,Chinese Embassy in Sudan donates school uniforms to Mustafa Primary School in Khartoum State,"On December 15, 2016, the Chinese Embassy in Sudan donated school uniforms to the Mustafa Primary School in East Nile District, Khartoum State, Sudan. Chinese Ambassador to Sudan Li Lianhe attended the handover ceremony at the Sudanese Primary School.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Sudan donates school uniforms to Mustafa Primary School in Khartoum State
+
+# Description
+On December 15, 2016, the Chinese Embassy in Sudan donated school uniforms to the Mustafa Primary School in East Nile District, Khartoum State, Sudan. Chinese Ambassador to Sudan Li Lianhe attended the handover ceremony at the Sudanese Primary School.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is purely a social development initiative with no direct environmental or energy transition impact,"Donation of school uniforms, education sector focus, no energy or infrastructure components"

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91200,TRANSPORT AND STORAGE,Chinese Government donates 4 buses to Colombian Ministry of the Interior,"On November 6, 2020, the economic counselor of the Chinese embassy, ​​Dong Wei, donated four buses on behalf of the Chinese Government to the municipalities of Montería and Armenia and the governments of Putumayo and Valle del Cauca. The Colombian Ministry of the Interior and representatives from APC Colombia (Agencia Presidencial de Cooperación Internacional de Colombia) also attended the ceremony.   According to the Minister of the Interior, the buses were part of a request from April 2015 by the Directorate for Democracy, Citizen Participation and Community Action that was approved by the Chinese Government.","1. An agreement or sources related to the referenced 'request' from April 2015 could not be identified. Therefore, the commitment date was set to the completion date.","# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Government donates 4 buses to Colombian Ministry of the Interior
+
+# Description
+On November 6, 2020, the economic counselor of the Chinese embassy, ​​Dong Wei, donated four buses on behalf of the Chinese Government to the municipalities of Montería and Armenia and the governments of Putumayo and Valle del Cauca. The Colombian Ministry of the Interior and representatives from APC Colombia (Agencia Presidencial de Cooperación Internacional de Colombia) also attended the ceremony.   According to the Minister of the Interior, the buses were part of a request from April 2015 by the Directorate for Democracy, Citizen Participation and Community Action that was approved by the Chinese Government.",TRUE,NA,NEUTRAL,HIGH,Social Development,Donation of buses for municipal use without clear environmental or energy transition impacts,"Donation of 4 buses to municipalities and governments for general use, no mention of energy or environmental characteristics"
+91208,HEALTH,"ZTE donates 80,000 masks in April 2020 to Colombian Government for Covid-19 relief","On April 1, 2020, 50,000 masks and 500 protection garments donated by ZTE corporation arrived in Colombia. Prior to this donation, an agreement was signed by ZTE for the donation of 80,000 masks with an initial shipment of 30,000 followed by the remaining 50,000. The arrival date of the first shipment remains unknown, but the completed donation consists of all 80,000. The value of the total 80,000 masks is USD 90,000. The masks were donated to the Colombia Ministry of Health and Social Protection.",NA,"# Sector
+HEALTH
+
+# Title
+ZTE donates 80,000 masks in April 2020 to Colombian Government for Covid-19 relief
+
+# Description
+On April 1, 2020, 50,000 masks and 500 protection garments donated by ZTE corporation arrived in Colombia. Prior to this donation, an agreement was signed by ZTE for the donation of 80,000 masks with an initial shipment of 30,000 followed by the remaining 50,000. The arrival date of the first shipment remains unknown, but the completed donation consists of all 80,000. The value of the total 80,000 masks is USD 90,000. The masks were donated to the Colombia Ministry of Health and Social Protection.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of 80,000 masks for Covid-19 relief to Colombian Ministry of Health"
+91209,HEALTH,Government of Chongqing donates medical supplies in April 2020 to Colombia Ministry of Health for Covid-19 relief,"On April 2, 2020, the Government of Chongqing donated 1,605 hazmat suits, 5,000 N95 masks, and 20,000 disposable surgical masks to the Colombian Government. The supplies also had motivational messages affixed to the boxes prior to their delivery to Colombia. The donation was received by the Colombia Ministry of Health and Social Protection.","1. There are discrepancies in the amounts of various supplies reported. According to APC Colombia, there were 1,605 hazmat suits, 5,000 N95 masks, and 20,000 disposable surgical masks donated whereas Chinese news sources report 1,000 protective suits, 1,000 isolation gowns, 2,000 nucleic acid testing kits, 5,000 N95 masks, and 20,000 disposable surgical masks.","# Sector
+HEALTH
+
+# Title
+Government of Chongqing donates medical supplies in April 2020 to Colombia Ministry of Health for Covid-19 relief
+
+# Description
+On April 2, 2020, the Government of Chongqing donated 1,605 hazmat suits, 5,000 N95 masks, and 20,000 disposable surgical masks to the Colombian Government. The supplies also had motivational messages affixed to the boxes prior to their delivery to Colombia. The donation was received by the Colombia Ministry of Health and Social Protection.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of medical supplies (hazmat suits, masks) for Covid-19 relief"
+91221,HEALTH,"Nanjing Government donates 30,000 masks worth CNY 6,900 in April 2020 to City of Barranquilla","On April 7, 2020, the Director-General of the Foreign Affairs Office of Nanjing's Municipal Government sent a letter of intent for the donation of 30,000 surgical masks (10 cases) worth CNY 69,000 to the city of Barranquilla. The letter was addressed to the Embassy of the Republic of Colombia in Beijing and indicated that the masks were to be delivered to the Colombian Embassy in Beijing. The masks are reported as having been received, but the date of delivery is unknown.   This is part of the South-South Cooperation initiative.",NA,"# Sector
+HEALTH
+
+# Title
+Nanjing Government donates 30,000 masks worth CNY 6,900 in April 2020 to City of Barranquilla
+
+# Description
+On April 7, 2020, the Director-General of the Foreign Affairs Office of Nanjing's Municipal Government sent a letter of intent for the donation of 30,000 surgical masks (10 cases) worth CNY 69,000 to the city of Barranquilla. The letter was addressed to the Embassy of the Republic of Colombia in Beijing and indicated that the masks were to be delivered to the Colombian Embassy in Beijing. The masks are reported as having been received, but the date of delivery is unknown.   This is part of the South-South Cooperation initiative.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 30,000 surgical masks as part of South-South Cooperation initiative"
+91226,HEALTH,"Xian Government donates medical supplies to Neiva, Colombia in September 2020 t for Covid-19 relief","In the week of September 21, 2020, the Xian Provincial Government donated medical supplies to the Alcaldia de Neiva (Mayorship of Neiva) for Covid-19 relief. The supplies included 20,000 surgical masks, 1,000 N95 masks, 500 hazmat suits, 100 protective goggles, and 30 thermometers. The Mayor's office began distributing the supplies by September 29th. In addition, 5,000 face masks were donated for the personnel in the Neiva Mayor's office.   The donation was reportedly authorized by the Chinese Government and Xian province in April 2020, but due to transportation and other delays the donation arrived the week of September 21, 2020. Donation locations for the supplies received included Hernando Moncaleano University Hospital.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Xian Government donates medical supplies to Neiva, Colombia in September 2020 t for Covid-19 relief
+
+# Description
+In the week of September 21, 2020, the Xian Provincial Government donated medical supplies to the Alcaldia de Neiva (Mayorship of Neiva) for Covid-19 relief. The supplies included 20,000 surgical masks, 1,000 N95 masks, 500 hazmat suits, 100 protective goggles, and 30 thermometers. The Mayor's office began distributing the supplies by September 29th. In addition, 5,000 face masks were donated for the personnel in the Neiva Mayor's office.   The donation was reportedly authorized by the Chinese Government and Xian province in April 2020, but due to transportation and other delays the donation arrived the week of September 21, 2020. Donation locations for the supplies received included Hernando Moncaleano University Hospital.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation for Covid-19 relief, focus on healthcare support"
+91227,HEALTH,"Suzhou Government donates medical supplies to Cartagena, Colombia in 2020 for Covid-19 relief","In 2020, the Provincial Government of Suzhou donated medical supplies to Cartagena, Colombia for Covid-19 relief. Exact quantities and dates are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Suzhou Government donates medical supplies to Cartagena, Colombia in 2020 for Covid-19 relief
+
+# Description
+In 2020, the Provincial Government of Suzhou donated medical supplies to Cartagena, Colombia for Covid-19 relief. Exact quantities and dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on healthcare and humanitarian aid without direct environmental or energy transition implications,"Medical supplies donation for Covid-19 relief, healthcare focus"
+91229,HEALTH,"Chengdu Government donates 20,000 masks in July 2020 to Ibagué, Colombia (linked to project ID#93158)","On June 29, 2022, Javier Triana, general secretary of the Mayor's office of Ibagué announced the donation of 20,000 masks from the city of Chengdu. This announcement reported that the donation was confirmed with an expected arrival of 20-22 days following the announcement. The donation was intended to be distributed to the most vulnerable populations in the city of Ibagué. As of the announcement, the shipment was confirmed to have left the Shanghai seaport.  The Chengdu government donated a total of 40,000 masks to Colombia in June 2020. 20,000 of the masks went to Ibagué and 20,000 went to Bogotá (see project ID#93158).",NA,"# Sector
+HEALTH
+
+# Title
+Chengdu Government donates 20,000 masks in July 2020 to Ibagué, Colombia (linked to project ID#93158)
+
+# Description
+On June 29, 2022, Javier Triana, general secretary of the Mayor's office of Ibagué announced the donation of 20,000 masks from the city of Chengdu. This announcement reported that the donation was confirmed with an expected arrival of 20-22 days following the announcement. The donation was intended to be distributed to the most vulnerable populations in the city of Ibagué. As of the announcement, the shipment was confirmed to have left the Shanghai seaport.  The Chengdu government donated a total of 40,000 masks to Colombia in June 2020. 20,000 of the masks went to Ibagué and 20,000 went to Bogotá (see project ID#93158).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of 20,000 masks to vulnerable populations, healthcare-related humanitarian aid"
+91230,HEALTH,"Guangzhou Government donates 50,000 surgical masks and 200 thermometers in 2020 to the Colombian Government","In 2020, the Guangzhou Government donated 50,000 surgical masks and 200 thermometers to the Colombia Government. This is part of the South-South Cooperation initiative. Exact dates are unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Guangzhou Government donates 50,000 surgical masks and 200 thermometers in 2020 to the Colombian Government
+
+# Description
+In 2020, the Guangzhou Government donated 50,000 surgical masks and 200 thermometers to the Colombia Government. This is part of the South-South Cooperation initiative. Exact dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of surgical masks and thermometers, healthcare focus"
+91232,HEALTH,"Zhejiang Electric Co. donates 8,750 hazmat suits and 740 protective glasses in 2020 to Colombian Government for Covid-19 relief","In 2020, Zhejiang Electric Co. donated 8,750 hazmat suits and 740 protective glasses to the Colombian Government for Covid-19 relief. The PPE was purchased from Colombian producers.  Exact commitment and delivery dates are unknown.",1. Zhejiang Electric Power Construction Co. is assumed to be the same as Zhejiang China Electric.,"# Sector
+HEALTH
+
+# Title
+Zhejiang Electric Co. donates 8,750 hazmat suits and 740 protective glasses in 2020 to Colombian Government for Covid-19 relief
+
+# Description
+In 2020, Zhejiang Electric Co. donated 8,750 hazmat suits and 740 protective glasses to the Colombian Government for Covid-19 relief. The PPE was purchased from Colombian producers.  Exact commitment and delivery dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical equipment for public health purposes, with no direct environmental or energy transition impact","Donation of hazmat suits and protective glasses for Covid-19 relief, healthcare sector focus"
+91233,HEALTH,"Zijin Mining donates USD 100,000 and medical supplies in April 2020 to Antioquia hospital network in Colombia","On March 31, 2020, Zijin-Continental Gold announced a USD 100,000 grant to strengthen the hospital network in Western Antioquia. In addition, the company announced it would deliver 1,000 gowns, 200 boxes of gloves, 100 protective suits for hospital personnel, antibacterial gel, four protective kits for health care personnel while taking samples or assessing infected patients, and 1,000 N95 masks. Also, the San Juan de Dios Hospital, located in Santa Fe de Antioquia, will receive four vital signs monitors for capnography,  and the local hospitals of Buriticá, Giraldo and Cañasgordas will be equipped with blood detection tests for Covid-19.   Exact dates of delivery are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Zijin Mining donates USD 100,000 and medical supplies in April 2020 to Antioquia hospital network in Colombia
+
+# Description
+On March 31, 2020, Zijin-Continental Gold announced a USD 100,000 grant to strengthen the hospital network in Western Antioquia. In addition, the company announced it would deliver 1,000 gowns, 200 boxes of gloves, 100 protective suits for hospital personnel, antibacterial gel, four protective kits for health care personnel while taking samples or assessing infected patients, and 1,000 N95 masks. Also, the San Juan de Dios Hospital, located in Santa Fe de Antioquia, will receive four vital signs monitors for capnography,  and the local hospitals of Buriticá, Giraldo and Cañasgordas will be equipped with blood detection tests for Covid-19.   Exact dates of delivery are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on healthcare donations and medical supplies without direct environmental or energy transition impacts,"USD 100,000 grant, medical supplies including gowns, gloves, protective suits, antibacterial gel, N95 masks, vital signs monitors, and blood detection tests for Covid-19"

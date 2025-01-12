@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+35222,HEALTH,China donates 3 ambulances worth 1.05 million RMB to Namibia,"In October 2007, Sheng Changli, vice governor of Zhejiang Province, visited Namibia and donated 3 ambulances worth 1.05 million RMB.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 3 ambulances worth 1.05 million RMB to Namibia
+
+# Description
+In October 2007, Sheng Changli, vice governor of Zhejiang Province, visited Namibia and donated 3 ambulances worth 1.05 million RMB.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of ambulances for healthcare purposes
+43675,"AGRICULTURE, FORESTRY, FISHING",Chinese Government commits RMB 30 million grant for Green Scheme Project (linked to projects #1315 and #62351),"On February 5, 2007, President Hu Jintao agreed to provide an RMB 30 million grant to the Government of Namibia for the Green Scheme Project. The Green Scheme Project is a national initiative to develop irrigation-based, agronomic production, seeking to maximize agricultural output through efficient water usage. Another goal of the project is to increase large-scale commercial crop production in Namibia.   Also on this date, President Hu Jintao agreed to provide an RMB 30 million interest-free loan for the Green Scheme Project, which is recorded in the linked project #1315. At the same official visit to Namibia, President Hu Jintao also pledged to provide several other financial flows (recorded in the umbrella project #62351). It is unclear if these projects were financed under an ETCA.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Government commits RMB 30 million grant for Green Scheme Project (linked to projects #1315 and #62351)
+
+# Description
+On February 5, 2007, President Hu Jintao agreed to provide an RMB 30 million grant to the Government of Namibia for the Green Scheme Project. The Green Scheme Project is a national initiative to develop irrigation-based, agronomic production, seeking to maximize agricultural output through efficient water usage. Another goal of the project is to increase large-scale commercial crop production in Namibia.   Also on this date, President Hu Jintao agreed to provide an RMB 30 million interest-free loan for the Green Scheme Project, which is recorded in the linked project #1315. At the same official visit to Namibia, President Hu Jintao also pledged to provide several other financial flows (recorded in the umbrella project #62351). It is unclear if these projects were financed under an ETCA.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on agricultural development and water efficiency, with no clear direct impact on energy transition or significant environmental harm","Irrigation-based agronomic production, focus on water usage efficiency and commercial crop production"
+46960,GOVERNMENT AND CIVIL SOCIETY,China grants 16.1 Million RMB to Namibia Meteorological Communication System,"On Feb. 5, 2007 and April 2, 2012 the Chinese Government signed two grants totaling 16,100,000 RMB to construct a Meteorological Communication System. These grant agreements were signed under the Technical Cooperation Agreement between the Government of the Republic of Namibia and the Government of the People’s Republic of China. These grants include expansion of automatic weather stations, manual observing systems, FY-3 (风云三号) meteorological satellite data receiving and processing systems, meteorological early warning radio control system, meteorological professional communication system and meteorological information comprehensive analysis and processing systems. The project began implementation in 2014 and was completed in July 2018. The monetary breakdown of the two grants is unknown.  According to the embassy sources, the China Meteorological Administration assisted in the implementation of the communication system, offering guidance and assistance where needed.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China grants 16.1 Million RMB to Namibia Meteorological Communication System
+
+# Description
+On Feb. 5, 2007 and April 2, 2012 the Chinese Government signed two grants totaling 16,100,000 RMB to construct a Meteorological Communication System. These grant agreements were signed under the Technical Cooperation Agreement between the Government of the Republic of Namibia and the Government of the People’s Republic of China. These grants include expansion of automatic weather stations, manual observing systems, FY-3 (风云三号) meteorological satellite data receiving and processing systems, meteorological early warning radio control system, meteorological professional communication system and meteorological information comprehensive analysis and processing systems. The project began implementation in 2014 and was completed in July 2018. The monetary breakdown of the two grants is unknown.  According to the embassy sources, the China Meteorological Administration assisted in the implementation of the communication system, offering guidance and assistance where needed.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on meteorological systems and early warning capabilities, which are primarily social development initiatives without direct environmental or energy transition impacts","Meteorological Communication System, automatic weather stations, early warning systems, information processing systems"
+61500,EDUCATION,Chinese Government provides RMB 7 million RMB grant for Tsumkwe Primary School Construction Project (Linked to projects #30338 and #62351),"On February 5, 2007 during an official visit to Namibia, President Hu Jintao pledged an RMB 7 million grant for the construction of a third primary school in Tsumkwe within the Otjozondjupa Region. Zhengtai Group was the contractor responsible for implementation of the project. The Government of Namibia reportedly spent almost all of these funds by April 2007. The construction completion ceremony took place on November 26, 2009. This project is completed. The Chinese project title is 援纳米比亚第三所农村小学校项目.  In September 2009, the construction for two other Chinese-funded primary schools was completed (recorded in the linked project #30338). At the same official visit to Namibia where President Hu Jintao pledged funding for the Tsumkwe Primary School Construction Project, he also pledged to provide several other financial flows (recorded in the umbrella project #62351).",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides RMB 7 million RMB grant for Tsumkwe Primary School Construction Project (Linked to projects #30338 and #62351)
+
+# Description
+On February 5, 2007 during an official visit to Namibia, President Hu Jintao pledged an RMB 7 million grant for the construction of a third primary school in Tsumkwe within the Otjozondjupa Region. Zhengtai Group was the contractor responsible for implementation of the project. The Government of Namibia reportedly spent almost all of these funds by April 2007. The construction completion ceremony took place on November 26, 2009. This project is completed. The Chinese project title is 援纳米比亚第三所农村小学校项目.  In September 2009, the construction for two other Chinese-funded primary schools was completed (recorded in the linked project #30338). At the same official visit to Namibia where President Hu Jintao pledged funding for the Tsumkwe Primary School Construction Project, he also pledged to provide several other financial flows (recorded in the umbrella project #62351).",TRUE,NA,NEUTRAL,HIGH,Social Development,Primary purpose is education infrastructure development with no direct environmental or energy transition impact,"Construction of primary school, education sector focus, no energy-related components mentioned"
+62296,"AGRICULTURE, FORESTRY, FISHING","China Grants Equipment worth 577,200 NAD to Kamutjonga Inland Fisheries Institute in Namibia","During the 2007/08 fiscal year, China granted aquaculture lab equipment worth 577,200 NAD to the Kamutjonga Inland Fisheries Institute (KIFI) in Namibia. KIFI is a research and training center and also produces fish. The types of equipment and the official donation ceremony date are unknown.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China Grants Equipment worth 577,200 NAD to Kamutjonga Inland Fisheries Institute in Namibia
+
+# Description
+During the 2007/08 fiscal year, China granted aquaculture lab equipment worth 577,200 NAD to the Kamutjonga Inland Fisheries Institute (KIFI) in Namibia. KIFI is a research and training center and also produces fish. The types of equipment and the official donation ceremony date are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of equipment to a research and training institute, with no clear environmental or energy transition impact","Aquaculture lab equipment donation to research/training center, no specific energy-related components mentioned"
+34384,GOVERNMENT AND CIVIL SOCIETY,China donates 1.3 million USD worth of logistic materials for the constituent assembly election in Nepal,"In July 2007, Chinese Assistant Minister of Commerce Wang Chao and Nepali Prime Minister Girija Prasad Koirala signed letters of exchange on China's logistic materials aid worth 1.3 million USD for the November 2007 constituent assembly elections. In November 2007, China handed over the logistic materials for the elections and both parties signed and exchanged the delivery and receipt certificates.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates 1.3 million USD worth of logistic materials for the constituent assembly election in Nepal
+
+# Description
+In July 2007, Chinese Assistant Minister of Commerce Wang Chao and Nepali Prime Minister Girija Prasad Koirala signed letters of exchange on China's logistic materials aid worth 1.3 million USD for the November 2007 constituent assembly elections. In November 2007, China handed over the logistic materials for the elections and both parties signed and exchanged the delivery and receipt certificates.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of logistic materials for elections, which is unrelated to energy or environmental impacts","Logistic materials aid for constituent assembly elections, no energy or environmental components mentioned"
+34385,TRADE POLICIES AND REGULATIONS,Chinese Government provides technical support for Mobile Container/Vehicle X-Ray Inspection System,"On July 25, 2007, Nepali Prime Minister Girija Prasad Koirala and Chinese Assistant Minister of Commerce Wang Chao signed an exchange of letters, which committed an unspecified amount of funding for the provision of technical service in support of a Mobile Container/Vehicle X-Ray Inspection System. No evidence of project implementation could be identified.",The Chinese project title is 集装箱X光检查系统.,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese Government provides technical support for Mobile Container/Vehicle X-Ray Inspection System
+
+# Description
+On July 25, 2007, Nepali Prime Minister Girija Prasad Koirala and Chinese Assistant Minister of Commerce Wang Chao signed an exchange of letters, which committed an unspecified amount of funding for the provision of technical service in support of a Mobile Container/Vehicle X-Ray Inspection System. No evidence of project implementation could be identified.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves technical support for inspection systems unrelated to energy or environmental impacts,"Mobile Container/Vehicle X-Ray Inspection System, technical service support"
+34386,HEALTH,"China donates 18,000 USD worth of medicine and equipment to B.P. Koirala Memorial Cancer Hospital in Nepal (linked to #34393 and #38346)","In August 2007, Chinese Ambassador to Nepal Zheng Xianglin handed over a donation consisting of cancer treatment medicine and equipment to Secretary of Nepali Ministry of Health and Population Ram Chandra Man Singh. The donation, worth around 18,000 USD, was given to B.P. Koirala Memorial Cancer Hospital. In February 2000, both sides exchanged a letter concerning technical aid to the B. P. Koirala Memorial Cancer Hospital.",B.P. Koirala Memorial Cancer Hospital is a comprehensive cancer care center with 450 beds and equipped with diagnostic and therapeutic machine in the country. It was established in the 1990s with financial aid from China.,"# Sector
+HEALTH
+
+# Title
+China donates 18,000 USD worth of medicine and equipment to B.P. Koirala Memorial Cancer Hospital in Nepal (linked to #34393 and #38346)
+
+# Description
+In August 2007, Chinese Ambassador to Nepal Zheng Xianglin handed over a donation consisting of cancer treatment medicine and equipment to Secretary of Nepali Ministry of Health and Population Ram Chandra Man Singh. The donation, worth around 18,000 USD, was given to B.P. Koirala Memorial Cancer Hospital. In February 2000, both sides exchanged a letter concerning technical aid to the B. P. Koirala Memorial Cancer Hospital.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of cancer treatment medicine and equipment to hospital, healthcare sector focus"
+34387,GOVERNMENT AND CIVIL SOCIETY,China donates meteorological satellite data receiver to Nepal,"In 2007, the Chinese Embassy in Nepal donated a China FY-2D satellite data receiving and processing system from the Chinese Meteorological Administration to the Department of Hydrology and Meteorology of the Ministry of Environment, Science and Technology of the Nepali government. Chinese ambassador Zheng Xianglin formally handed over the equipment in a ceremony at the Chinese embassy in Kathmandu.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates meteorological satellite data receiver to Nepal
+
+# Description
+In 2007, the Chinese Embassy in Nepal donated a China FY-2D satellite data receiving and processing system from the Chinese Meteorological Administration to the Department of Hydrology and Meteorology of the Ministry of Environment, Science and Technology of the Nepali government. Chinese ambassador Zheng Xianglin formally handed over the equipment in a ceremony at the Chinese embassy in Kathmandu.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of meteorological equipment for government use, with no direct energy or environmental impact","Meteorological satellite data receiver donation, government-to-government transfer, no energy production or infrastructure development"
+38341,EMERGENCY RESPONSE,"China donates 300,000 RMB flood relief materials to Nepal","On August 16 2007, Chinese ambassador to Nepal Zheng Xianglin announced that the government of China's Tibet Autonomous Region will provide relief materials equivalent to 300,000 RMB (39,600 USD) to Nepal's flood-stricken areas, including tents, carpets, pure water and food. The relief materials were handed over to the Nepal Red Cross Society in the Nepali capital of Kathmandu on Thursday, 13 September 2007.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates 300,000 RMB flood relief materials to Nepal
+
+# Description
+On August 16 2007, Chinese ambassador to Nepal Zheng Xianglin announced that the government of China's Tibet Autonomous Region will provide relief materials equivalent to 300,000 RMB (39,600 USD) to Nepal's flood-stricken areas, including tents, carpets, pure water and food. The relief materials were handed over to the Nepal Red Cross Society in the Nepali capital of Kathmandu on Thursday, 13 September 2007.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian aid project with no direct environmental or energy transition impact,"Flood relief materials including tents, carpets, water, and food"

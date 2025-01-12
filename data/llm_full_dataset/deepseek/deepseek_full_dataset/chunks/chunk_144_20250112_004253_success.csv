@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94254,HEALTH,Chinese companies donate FCFA 52.33 million-worth of anti-epidemic materials to Benin Ministry of Health (linked to #93299),"On June 26, 2020, PetroChina Nibei Pipeline Company, Chinese Center for Economic and Commercial Development of Benin (CCDECB), Yunnan Construction Investment Benin Branch, Hunan Road and Bridge, Zhongcheng Benin Sugar Industry Co., Ltd., China Railway Fifth Bureau Benin Branch, Guangdong Yueken International (Benin) Co., Ltd. , China Railway 14th Bureau Group Benin Branch, and China Geo-Engineering Group Benin Branch donated 72.33 million CFA francs (about $122,953)-worth of cash and materials to Benin's Ministry of Health.  The Chinese Center for Economic and Commercial Development of Benin (CCDECB) donated anti-epidemic materials to the Benin Ministry of Health, and according to a photo of a large check found on the Embassy's website, the donation was worth 20,000,000 CFA francs (see linked ProjectID#93299), so the remaining Chinese companies are assumed to have donated a total of 52.33 million CFA francs.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese companies donate FCFA 52.33 million-worth of anti-epidemic materials to Benin Ministry of Health (linked to #93299)
+
+# Description
+On June 26, 2020, PetroChina Nibei Pipeline Company, Chinese Center for Economic and Commercial Development of Benin (CCDECB), Yunnan Construction Investment Benin Branch, Hunan Road and Bridge, Zhongcheng Benin Sugar Industry Co., Ltd., China Railway Fifth Bureau Benin Branch, Guangdong Yueken International (Benin) Co., Ltd. , China Railway 14th Bureau Group Benin Branch, and China Geo-Engineering Group Benin Branch donated 72.33 million CFA francs (about $122,953)-worth of cash and materials to Benin's Ministry of Health.  The Chinese Center for Economic and Commercial Development of Benin (CCDECB) donated anti-epidemic materials to the Benin Ministry of Health, and according to a photo of a large check found on the Embassy's website, the donation was worth 20,000,000 CFA francs (see linked ProjectID#93299), so the remaining Chinese companies are assumed to have donated a total of 52.33 million CFA francs.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of anti-epidemic materials and cash to support public health, with no direct environmental or energy transition impact","Donation of anti-epidemic materials to Benin Ministry of Health, focus on public health support"
+94367,HEALTH,Ningxia Health and Welfare Commission donates anti-epidemic medical supplies to the Government of Benin (September 2020),"On September 8, 2020, the Chinese Embassy in Benin facilitated the handover of anti-epidemic medical materials from the National Health Commission of China and the Health Commission of Ningxia Hui Autonomous Region to the Government of Benin. Members of the 24th Chinese medical team to Benin were present at the ceremony (see ProjectID#87413).","1. It is unclear exactly what this donation consisted-of.2. The National Health Commission of China and the Health Commission of Ningxia Hui Autonomous Region had previously provided a donation of anti-epidemic medical supplies to the Government of Benin on August 12, 2020 (see ProjectID#93509).","# Sector
+HEALTH
+
+# Title
+Ningxia Health and Welfare Commission donates anti-epidemic medical supplies to the Government of Benin (September 2020)
+
+# Description
+On September 8, 2020, the Chinese Embassy in Benin facilitated the handover of anti-epidemic medical materials from the National Health Commission of China and the Health Commission of Ningxia Hui Autonomous Region to the Government of Benin. Members of the 24th Chinese medical team to Benin were present at the ceremony (see ProjectID#87413).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Anti-epidemic medical materials donation, healthcare sector focus"
+95850,HEALTH,Poly Technologies Inc. donates 1 million surgical masks to support Covid-19 response efforts,"In April 2020, Poly Technologies Inc. — a Chinese state-owned company — donated 1 million surgical masks to the Government of Benin in order to support its Covid-19 response efforts.",1. The French project title is 1 million de masques chirurgicaux.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Poly Technologies Inc. donates 1 million surgical masks to support Covid-19 response efforts
+
+# Description
+In April 2020, Poly Technologies Inc. — a Chinese state-owned company — donated 1 million surgical masks to the Government of Benin in order to support its Covid-19 response efforts.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation of surgical masks for Covid-19 response, healthcare focus"
+97949,HEALTH,"Chinese Government provides USD 982,617 for COVID-19 support via World Health Organization in Benin in March 2020","In March 2020, Chinese government provides USD 982,617 to support WHO response to COVID-19 outbreak in Benin.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides USD 982,617 for COVID-19 support via World Health Organization in Benin in March 2020
+
+# Description
+In March 2020, Chinese government provides USD 982,617 to support WHO response to COVID-19 outbreak in Benin.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare support without direct environmental or energy transition implications,"COVID-19 support through WHO, healthcare sector focus"
+69769,HEALTH,China International Development Cooperation Agency donates medical supplies worth CNY 1.19 million to Bolivia in May 2020 to fight COVID-19,"On May 12, 2020, the China International Development Cooperation Agency (CIDCA) donated medical equipment and supplies to the Bolivian Ministry of Health to fight COVID-19 in the country. The donation included 30,000 surgical masks, 2,000 goggles, medical gloves, 2,000 disposable surgical gloves, 200 pieces of disposable protective clothing, and 500 infrared thermometers worth a total of CNY 1.19 million.",NA,"# Sector
+HEALTH
+
+# Title
+China International Development Cooperation Agency donates medical supplies worth CNY 1.19 million to Bolivia in May 2020 to fight COVID-19
+
+# Description
+On May 12, 2020, the China International Development Cooperation Agency (CIDCA) donated medical equipment and supplies to the Bolivian Ministry of Health to fight COVID-19 in the country. The donation included 30,000 surgical masks, 2,000 goggles, medical gloves, 2,000 disposable surgical gloves, 200 pieces of disposable protective clothing, and 500 infrared thermometers worth a total of CNY 1.19 million.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support and has no direct environmental or energy transition impact,Medical equipment and supplies donation for COVID-19 response
+70272,COMMUNICATIONS,China provides technical support for installation of new capabilities at La Guardia Ground Station (linked to #35922),"On January 10, 2020, a launch ceremony took place for the renovated La Guardia Earth Station (Estación Terrena La Guardia) located in Santa Cruz. The earth station, originally constructed in 2013 through the Tupac Katri Satellite project, underwent updates in which new commercial measurement and control capabilities were installed. Through these updates, companies and other countries are now able to use the station to track and control their own satellites.   Expanding the capabilities of the La Guardia Earth Station is both an important new source of income for the Bolivian Space Agency and important for developing Bolivia's space program as a whole. The first company to take advantage of the new program will be the China Great Wall Industry Corporation (CGWIC) according to the Bolivian Ministry of Public Works, Services and Housing.   The update was carried out by the Bolivian Ministry of Public Works, Services and Housing (MOPSV), though the Chinese government was thanked also thanked by Bolivian government officials for its contribution to the implementation of this project. The China Great Wall Industry Corporation also provided the project with technical support.","1. Flow type has been set to free-standing technical assistance because this is explicitly mentioned as a way the Chinese government/the China Great Wall Company assisted with the project. It is possible there was direct funding involved as well, but current evidence does not support this. 2. This project fulfills some of the purposes described in project 36269, specifically capturing images of satellites from other countries or companies. While they cannot be the same project, the La Guardia Ground Control station was built in 2013 and the new station was not announced until April 2014, it is possible this project is an alternative solution to some of the roles project ID #36269 was intended to fulfill.","# Sector
+COMMUNICATIONS
+
+# Title
+China provides technical support for installation of new capabilities at La Guardia Ground Station (linked to #35922)
+
+# Description
+On January 10, 2020, a launch ceremony took place for the renovated La Guardia Earth Station (Estación Terrena La Guardia) located in Santa Cruz. The earth station, originally constructed in 2013 through the Tupac Katri Satellite project, underwent updates in which new commercial measurement and control capabilities were installed. Through these updates, companies and other countries are now able to use the station to track and control their own satellites.   Expanding the capabilities of the La Guardia Earth Station is both an important new source of income for the Bolivian Space Agency and important for developing Bolivia's space program as a whole. The first company to take advantage of the new program will be the China Great Wall Industry Corporation (CGWIC) according to the Bolivian Ministry of Public Works, Services and Housing.   The update was carried out by the Bolivian Ministry of Public Works, Services and Housing (MOPSV), though the Chinese government was thanked also thanked by Bolivian government officials for its contribution to the implementation of this project. The China Great Wall Industry Corporation also provided the project with technical support.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on communications infrastructure upgrades without clear environmental or energy transition impacts,"Renovation of earth station, installation of satellite tracking and control capabilities, communications sector focus"
+71319,HEALTH,China National Aero Technology Import and Export Corporation (CATIC) donates face masks to Bolivian Armed Forces in April 2020 to fight COVID-19,"On April 2, 2020, the China National Aero Technology Import and Export Corporation (CATIC) handed over a grant of 10,000 face masks to the Defense Attaché in the Bolivian Embassy in China. The masks were to be given to the Bolivian Armed Forces (FF.AA.) to combat COVID-19.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China National Aero Technology Import and Export Corporation (CATIC) donates face masks to Bolivian Armed Forces in April 2020 to fight COVID-19
+
+# Description
+On April 2, 2020, the China National Aero Technology Import and Export Corporation (CATIC) handed over a grant of 10,000 face masks to the Defense Attaché in the Bolivian Embassy in China. The masks were to be given to the Bolivian Armed Forces (FF.AA.) to combat COVID-19.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of 10,000 face masks to Bolivian Armed Forces for COVID-19 response"
+71674,HEALTH,Nuclear Industry Nanjing Construction Group donates 50 cots to Bolivia in March 2020 for COVID-19 relief,"On March 31, 2020, the Nuclear Industry Company Nanjing Construction Group Co. Ltd. granted approximately 50 cots to the Oruro Departmental Health Service (Servicio Departamental de Salud (SEDES) de Oruro). They were previously used by workers for the Chinese company while constructing the Caracollo-Confital dual track highway, which was recently finished. The Bolivian Highway Administration (ABC) helped facilitate the donation.  The cots are intended to help care for COVID-19 (coronavirus) patients and will be distributed throughout the Oruro Department.",NA,"# Sector
+HEALTH
+
+# Title
+Nuclear Industry Nanjing Construction Group donates 50 cots to Bolivia in March 2020 for COVID-19 relief
+
+# Description
+On March 31, 2020, the Nuclear Industry Company Nanjing Construction Group Co. Ltd. granted approximately 50 cots to the Oruro Departmental Health Service (Servicio Departamental de Salud (SEDES) de Oruro). They were previously used by workers for the Chinese company while constructing the Caracollo-Confital dual track highway, which was recently finished. The Bolivian Highway Administration (ABC) helped facilitate the donation.  The cots are intended to help care for COVID-19 (coronavirus) patients and will be distributed throughout the Oruro Department.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical equipment for COVID-19 relief, unrelated to energy or environmental impacts","Donation of 50 cots for COVID-19 patient care, humanitarian aid focus"
+90921,HEALTH,"Chinese Government donates three scanners COVID-19 detection worth USD 1890 to Huacareta Airport, Chuquisaca Department of Bolivia in February 2020","On February 26th, 2020, the Chinese government donated three scanners worth 1890 USD in total to Huacareta Airport, Chuquisaca Department of Bolivia. The scanners were for measuring the temperature of passengers to prevent the spread of COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates three scanners COVID-19 detection worth USD 1890 to Huacareta Airport, Chuquisaca Department of Bolivia in February 2020
+
+# Description
+On February 26th, 2020, the Chinese government donated three scanners worth 1890 USD in total to Huacareta Airport, Chuquisaca Department of Bolivia. The scanners were for measuring the temperature of passengers to prevent the spread of COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on public health measures unrelated to energy or environmental impacts,"Donation of COVID-19 detection scanners for airport use, health sector focus"
+91066,HEALTH,The Chinese Embassy in Bolivia donates medical supplies to La Paz Provincial Government in October 2020 for COVID-19 prevention,"On October 22nd, 2020, The handover ceremony of the Chinese embassy in Bolivia's assistance to the La Paz provincial government's anti-COVID-19 pandemic medical supplies was held in the provincial government conference hall. Huang Yazhong, the Chinese ambassador to Bolivia, attended the ceremony and signed a handover document with the Governor of La Paz Province.",NA,"# Sector
+HEALTH
+
+# Title
+The Chinese Embassy in Bolivia donates medical supplies to La Paz Provincial Government in October 2020 for COVID-19 prevention
+
+# Description
+On October 22nd, 2020, The handover ceremony of the Chinese embassy in Bolivia's assistance to the La Paz provincial government's anti-COVID-19 pandemic medical supplies was held in the provincial government conference hall. Huang Yazhong, the Chinese ambassador to Bolivia, attended the ceremony and signed a handover document with the Governor of La Paz Province.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for COVID-19 prevention, unrelated to energy or environmental impacts","Medical supplies donation, COVID-19 prevention focus, health sector project"

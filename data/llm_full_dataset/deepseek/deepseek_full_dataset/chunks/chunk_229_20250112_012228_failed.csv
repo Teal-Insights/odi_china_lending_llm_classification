@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92229,HEALTH,Chinese government donates COVID medical materials to Mauritius,"On July 23, 2020, Chinese Ambassador Sun Gongyi and his wife Wang Ju handed over anti-epidemic materials donated by the Chinese government to the wife of the Prime Minister of Mauritius, Kobita Jagannath, on behalf of first lady Peng Liyuan. The handover ceremony took place at the treasury building in Port-Louis, the capital of Mauritius.  The donated materials included medical protection gear, face masks, and body temperature scanning devices.   The supplies were donated at the request of the Organization of African First Ladies for Development. The donation to Mauritius was part of a larger series of donations to 53 African countries sent on the behalf of first lady Peng Liyuan.    The Mauritian Ministers of Social Integration, Social Security and National Solidarity, and Gender Equality and Family Welfare, as well as several female parliamentary representatives were also present at the handover ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates COVID medical materials to Mauritius
+
+# Description
+On July 23, 2020, Chinese Ambassador Sun Gongyi and his wife Wang Ju handed over anti-epidemic materials donated by the Chinese government to the wife of the Prime Minister of Mauritius, Kobita Jagannath, on behalf of first lady Peng Liyuan. The handover ceremony took place at the treasury building in Port-Louis, the capital of Mauritius.  The donated materials included medical protection gear, face masks, and body temperature scanning devices.   The supplies were donated at the request of the Organization of African First Ladies for Development. The donation to Mauritius was part of a larger series of donations to 53 African countries sent on the behalf of first lady Peng Liyuan.    The Mauritian Ministers of Social Integration, Social Security and National Solidarity, and Gender Equality and Family Welfare, as well as several female parliamentary representatives were also present at the handover ceremony.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

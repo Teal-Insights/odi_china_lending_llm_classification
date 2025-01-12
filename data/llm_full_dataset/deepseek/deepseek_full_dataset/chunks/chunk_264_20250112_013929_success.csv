@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91659,HEALTH,China provides medical supplies to the Panama Ministry of Agricultural Development in April 2020,"On April 3, 2020, China donated masks, gloves and other hygienic supplies to the Ministry of Agricultural Development in Panama. These supplies will be used to support collaborators who are working on the front lines of the pandemic to prepare and distribute food bags throughout the country. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China provides medical supplies to the Panama Ministry of Agricultural Development in April 2020
+
+# Description
+On April 3, 2020, China donated masks, gloves and other hygienic supplies to the Ministry of Agricultural Development in Panama. These supplies will be used to support collaborators who are working on the front lines of the pandemic to prepare and distribute food bags throughout the country. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for pandemic response, unrelated to energy or environmental impacts","Donation of masks, gloves and hygienic supplies for pandemic response"
+91663,HEALTH,Chinese government provides masks to Mayor's Office of Panama City in April 2020,"On April 8, 2020, the Chinese government donated 10,000 masks to the Mayor’s Office of Panama City. These masks will be utilized by staff and working personnel of the office. They will be distributed among collaborators of the Municipality of Panama, the Houses of Peace, and the Municipal Police. The monetary value of this donation is unknown. Mayor José Luis Fábrega accepted this donation which was handed over by the Chinese Embassy.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government provides masks to Mayor's Office of Panama City in April 2020
+
+# Description
+On April 8, 2020, the Chinese government donated 10,000 masks to the Mayor’s Office of Panama City. These masks will be utilized by staff and working personnel of the office. They will be distributed among collaborators of the Municipality of Panama, the Houses of Peace, and the Municipal Police. The monetary value of this donation is unknown. Mayor José Luis Fábrega accepted this donation which was handed over by the Chinese Embassy.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,Donation of masks for municipal staff and public health purposes
+91664,HEALTH,China provides health supplies to the Institutional Protection Service of Panama in April 2020,"On April 9, 2020, the Chinese Ambassador to Panama, Wei Qiang, donated health supplies to the Institutional Protection Service (SPI) of Panama. Major Mario Pitty accepted the donation on behalf of the institution. The specific type, amount, and monetary value of the donation are unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China provides health supplies to the Institutional Protection Service of Panama in April 2020
+
+# Description
+On April 9, 2020, the Chinese Ambassador to Panama, Wei Qiang, donated health supplies to the Institutional Protection Service (SPI) of Panama. Major Mario Pitty accepted the donation on behalf of the institution. The specific type, amount, and monetary value of the donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of health supplies without clear environmental or energy transition impacts,Health supplies donation to Institutional Protection Service of Panama
+91667,HEALTH,"CCCC Shanghai Dredging Co., Ltd. provides medical supplies to the Panama Maritime Authority in April 2020","On April 14, 2020, CCCC Shanghai Dredging Co., Ltd. America Corp. (SDC), a state-owned Chinese infrastructure and construction company, donated masks, gloves and other health supplies to the Panama Maritime Authority. These supplies will be used to combat COVID-19 in Panama. The specific type and amount of supplies, and the monetary value of this donation are unknown. The donation was announced through a tweet by the head of the Chinese Embassy's Economic and Commercial Counsellor's Office, Wang Jian.",NA,"# Sector
+HEALTH
+
+# Title
+CCCC Shanghai Dredging Co., Ltd. provides medical supplies to the Panama Maritime Authority in April 2020
+
+# Description
+On April 14, 2020, CCCC Shanghai Dredging Co., Ltd. America Corp. (SDC), a state-owned Chinese infrastructure and construction company, donated masks, gloves and other health supplies to the Panama Maritime Authority. These supplies will be used to combat COVID-19 in Panama. The specific type and amount of supplies, and the monetary value of this donation are unknown. The donation was announced through a tweet by the head of the Chinese Embassy's Economic and Commercial Counsellor's Office, Wang Jian.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for COVID-19 response, with no direct environmental or energy transition impact","Donation of masks, gloves and health supplies to combat COVID-19, healthcare sector focus"
+91668,HEALTH,Chinese Embassy donates masks to the Los Santos Government in April 2020,"On April 22, 2020, the Chinese Embassy in Panama, through the Las Tablas Chamber of Commerce, donated 2,000 surgical masks to the Los Santos Governor's office. The masks were to be distributed to workers on the front line combatting COVID-19. The donation was announced through a tweet by the head of the Chinese Embassy's Economic and Commercial Counsellor's Office, Wang Jian.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates masks to the Los Santos Government in April 2020
+
+# Description
+On April 22, 2020, the Chinese Embassy in Panama, through the Las Tablas Chamber of Commerce, donated 2,000 surgical masks to the Los Santos Governor's office. The masks were to be distributed to workers on the front line combatting COVID-19. The donation was announced through a tweet by the head of the Chinese Embassy's Economic and Commercial Counsellor's Office, Wang Jian.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 2000 surgical masks for COVID-19 response, healthcare focus"
+91669,HEALTH,Chinese automaker Jiangling Motors (JMC) donates ambulance to Panama in April 2020,"On April 21, 2020, Chinese automaker Jiangling Motors (JMC) donated an ambulance to Panamanian Ministry of Health to support their fight against COVID-19.  Ambulances were also sent to the Ministries of Health of Bolivia, Egypt, Myanmar and Vietnam. A donation ceremony for the ambulances was held at the JMC Factory in Xiaolan. Qiu Tiangao, secretary of the party committee and chairman of Jiangling Group, and chairman of Jiangling Co., Ltd., announced the donation. Jin Wenhui, the first executive vice president of JMC presided over the donation ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese automaker Jiangling Motors (JMC) donates ambulance to Panama in April 2020
+
+# Description
+On April 21, 2020, Chinese automaker Jiangling Motors (JMC) donated an ambulance to Panamanian Ministry of Health to support their fight against COVID-19.  Ambulances were also sent to the Ministries of Health of Bolivia, Egypt, Myanmar and Vietnam. A donation ceremony for the ambulances was held at the JMC Factory in Xiaolan. Qiu Tiangao, secretary of the party committee and chairman of Jiangling Group, and chairman of Jiangling Co., Ltd., announced the donation. Jin Wenhui, the first executive vice president of JMC presided over the donation ceremony.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical equipment with no direct environmental or energy transition impact,"Ambulance donation to support healthcare, specifically COVID-19 response"
+91671,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Qingyuan Municipal Government grants 500 bags of food to the Colón District of Panama for anti-epidemic efforts in April 2020,"On April 28, 2020, 500 bags of food were delivered to the Colón District Mayor's Office by the Qingyuan Municipal Government of the People's Republic of China.   These food bags will be distributed among families in need across different sectors, according to Alex Lee, the Mayor of the District of Colón, in the wake of the pandemic. The monetary value of this donation is unknown.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Qingyuan Municipal Government grants 500 bags of food to the Colón District of Panama for anti-epidemic efforts in April 2020
+
+# Description
+On April 28, 2020, 500 bags of food were delivered to the Colón District Mayor's Office by the Qingyuan Municipal Government of the People's Republic of China.   These food bags will be distributed among families in need across different sectors, according to Alex Lee, the Mayor of the District of Colón, in the wake of the pandemic. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves food aid for pandemic relief, with no direct environmental or energy transition impact",500 bags of food delivered for distribution to families in need during pandemic
+91672,HEALTH,Guangzhou Automobile Industry Group donates masks to Panama in May 2020,"In May 2020, Guangzhou Automobile Industry Group Co Ltd. (GAC Motor), a Chinese car company, donated 10,000 surgical masks to Panama. These masks will be used to support COVID-19 prevention efforts in Panama. The supply of masks was made available to the public Hospital del Niño and the National Institute of Physical Medicine and Rehabilitation. The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Guangzhou Automobile Industry Group donates masks to Panama in May 2020
+
+# Description
+In May 2020, Guangzhou Automobile Industry Group Co Ltd. (GAC Motor), a Chinese car company, donated 10,000 surgical masks to Panama. These masks will be used to support COVID-19 prevention efforts in Panama. The supply of masks was made available to the public Hospital del Niño and the National Institute of Physical Medicine and Rehabilitation. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies unrelated to energy or environmental impacts,"Donation of 10,000 surgical masks for COVID-19 prevention, distributed to public health institutions"
+91673,HEALTH,China's Nuctech donates masks to National Customs Authority of Panama in April 2020,"On April 30, 2020, President Zhao Liang of Chinese company Nuctech delivered a donation of 1,500 surgical masks to the National Customs Authority of the Republic of Panama. Customs General Director, Tayra Barsallo, received the donation.   The monetary value of this donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China's Nuctech donates masks to National Customs Authority of Panama in April 2020
+
+# Description
+On April 30, 2020, President Zhao Liang of Chinese company Nuctech delivered a donation of 1,500 surgical masks to the National Customs Authority of the Republic of Panama. Customs General Director, Tayra Barsallo, received the donation.   The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 1,500 surgical masks to National Customs Authority, health sector focus"
+91674,HEALTH,Chinese Embassy donates anti-epidemic supplies to the Fire Department of Panama in May 2020,"On May 5, 2020, the Chinese Embassy in Panama donated surgical masks and gloves to the Fire Department of Panama. These supplies will be used to support public service members who are working on the front lines against COVID-19.   The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates anti-epidemic supplies to the Fire Department of Panama in May 2020
+
+# Description
+On May 5, 2020, the Chinese Embassy in Panama donated surgical masks and gloves to the Fire Department of Panama. These supplies will be used to support public service members who are working on the front lines against COVID-19.   The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Donation of surgical masks and gloves for COVID-19 response, healthcare sector"

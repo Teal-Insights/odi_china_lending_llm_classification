@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+17994,EDUCATION,China Donates Equipment to Bunda College of Agriculture in Malawi,"In a speech on April 5, 2011, ambassador Pan Hejun donated items such as computers, soccer balls, and volleyballs to the Bunda College of Agriculture in Malawi. The financial value for this project cannot be found.",NA,"# Sector
+EDUCATION
+
+# Title
+China Donates Equipment to Bunda College of Agriculture in Malawi
+
+# Description
+In a speech on April 5, 2011, ambassador Pan Hejun donated items such as computers, soccer balls, and volleyballs to the Bunda College of Agriculture in Malawi. The financial value for this project cannot be found.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of educational equipment with no direct environmental or energy transition impact,Donation of computers and sports equipment to educational institution
+23346,HEALTH,China sends 2nd Medical Team to Malawi (linked to #35417),"On March 15, 2011, 10 medical personnel left from Shaanxi province for a medical mission in Malawi. They were joined by 6 remaining personnel from the 1st medical mission (#35417). The 16 member team left Malawi on March 13, 2013.  Since 2008, China has sent a medical team to Malawi about every two years. Part of the team goes to Kamuzu Central Hospital in the capital Lilongwe and another part goes to Mzuzu Central Hospital in Malawi's Northern Region city of Mzuzu.",NA,"# Sector
+HEALTH
+
+# Title
+China sends 2nd Medical Team to Malawi (linked to #35417)
+
+# Description
+On March 15, 2011, 10 medical personnel left from Shaanxi province for a medical mission in Malawi. They were joined by 6 remaining personnel from the 1st medical mission (#35417). The 16 member team left Malawi on March 13, 2013.  Since 2008, China has sent a medical team to Malawi about every two years. Part of the team goes to Kamuzu Central Hospital in the capital Lilongwe and another part goes to Mzuzu Central Hospital in Malawi's Northern Region city of Mzuzu.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare provision with no direct environmental or energy transition impact,"Medical mission, healthcare personnel, hospital operations"
+30048,GOVERNMENT AND CIVIL SOCIETY,Chinese Government donates equipment to Malawi's Parliament (Linked to Project ID#778),"On September 27, 2011, the Chinese Ambassador to Malawi Pan Hujen fulfilled an earlier pledge to furnish the new Malawian Parliament building that was completed with financial support from the Chinese Government in 2010 (as captured via Project ID#778). The Chinese Government donated 25 million MWK worth of equipment which included 25 desktop computers and 12 LCD TVs, which were to be used to digitize transcripts of parliamentary debates.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government donates equipment to Malawi's Parliament (Linked to Project ID#778)
+
+# Description
+On September 27, 2011, the Chinese Ambassador to Malawi Pan Hujen fulfilled an earlier pledge to furnish the new Malawian Parliament building that was completed with financial support from the Chinese Government in 2010 (as captured via Project ID#778). The Chinese Government donated 25 million MWK worth of equipment which included 25 desktop computers and 12 LCD TVs, which were to be used to digitize transcripts of parliamentary debates.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of equipment for parliamentary operations with no direct environmental or energy transition impact,"Donation of computers and LCD TVs for digitizing parliamentary debates, no energy-related components"
+57598,TRADE POLICIES AND REGULATIONS,Chinese government donates three mobile container scanners to Malawi for major border posts,"In 2011, the Chinese government donated three mobile container scanners to the Malawian government for major border posts. On March 26, 2012, the scanners were handed over to the Malawi government. The value of the scanners is unknown.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese government donates three mobile container scanners to Malawi for major border posts
+
+# Description
+In 2011, the Chinese government donated three mobile container scanners to the Malawian government for major border posts. On March 26, 2012, the scanners were handed over to the Malawi government. The value of the scanners is unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"Project involves donation of security equipment for border control, with no clear environmental or energy transition impact","Mobile container scanners for border posts, no energy-related components mentioned"
+58117,GOVERNMENT AND CIVIL SOCIETY,Chinese embassy donates computers to Malawi police headquarters,"On December 7, 2011, Chinese embassy donated computers to Malawi police headquarters in Lilongwe. The value and amount of these computers is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese embassy donates computers to Malawi police headquarters
+
+# Description
+On December 7, 2011, Chinese embassy donated computers to Malawi police headquarters in Lilongwe. The value and amount of these computers is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of computers to government institution without clear environmental or energy transition impact,"Computer donation to Malawi police headquarters, no energy-related components mentioned"
+58120,EDUCATION,Chinese government provides scholarships for 29 students,"On August 27, 2011, a farewell reception was held for 29 Malawi students who won the Chinese government scholarship to study in China for the 2011/2012 academic year. The 29 Malawian Chinese government scholarship students for the 2011/2012 academic year will study undergraduate, master and doctorate degrees in 23 universities in China, specializing in clinical medicine, computing, environmental science, agricultural product processing and many other fields. The return date for the students is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government provides scholarships for 29 students
+
+# Description
+On August 27, 2011, a farewell reception was held for 29 Malawi students who won the Chinese government scholarship to study in China for the 2011/2012 academic year. The 29 Malawian Chinese government scholarship students for the 2011/2012 academic year will study undergraduate, master and doctorate degrees in 23 universities in China, specializing in clinical medicine, computing, environmental science, agricultural product processing and many other fields. The return date for the students is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education and human development without direct environmental or energy transition impacts,"Scholarships for students in various fields including medicine, computing, environmental science, and agriculture"
+58124,EDUCATION,"Chinese embassy donates bicycles, footballs, radios, and books to Enzando Orphanage","On June 1, 2011, the Chinese embassy donated bicycles, footballs, radios, and books to Enzando Orphanage in Lilongwe, Malawi. The value of this donation is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese embassy donates bicycles, footballs, radios, and books to Enzando Orphanage
+
+# Description
+On June 1, 2011, the Chinese embassy donated bicycles, footballs, radios, and books to Enzando Orphanage in Lilongwe, Malawi. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a social development initiative with no direct environmental or energy transition impact,"Donation of bicycles, footballs, radios, and books to an orphanage"
+58126,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese embassy donates sports equipment to Malawi Ministry of Youth Development,"On May 19, 2011, the Chinese embassy donated sports equipment to the Malawi Ministry of Youth Development. Donations included 300 sets of football uniforms and 300 football balls.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese embassy donates sports equipment to Malawi Ministry of Youth Development
+
+# Description
+On May 19, 2011, the Chinese embassy donated sports equipment to the Malawi Ministry of Youth Development. Donations included 300 sets of football uniforms and 300 football balls.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a social development initiative with no direct environmental or energy transition impact,"Donation of sports equipment to youth development ministry, no energy or environmental components"
+58129,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese embassy grants 2 million kwacha for Malawian religious seminar,"On May 13, 2011, the Chinese embassy granted 2 million kwacha for the ""Religious Leaders in Malawi"" seminar, led by Rev. Billy Gama, the Malawian President's Advisor on Religious Affairs. The seminar was held on December 9, 2011.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese embassy grants 2 million kwacha for Malawian religious seminar
+
+# Description
+On May 13, 2011, the Chinese embassy granted 2 million kwacha for the ""Religious Leaders in Malawi"" seminar, led by Rev. Billy Gama, the Malawian President's Advisor on Religious Affairs. The seminar was held on December 9, 2011.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a grant for a religious seminar with no direct environmental or energy transition impact,"Funding for religious seminar, no energy or infrastructure components mentioned"
+96677,TRANSPORT AND STORAGE,ICBC Leasing enters into a sale and leaseback agreement with AirAsia for four Airbus A320 aircraft,"In 2011, ICBC Financial Leasing Co., Ltd. (ICBC Leasing) entered into a sale-and-leaseback agreement with Capital A Berhad (AirAsia), a Malaysian low-cost airline, for four Airbus A320 aircraft. The terms of this agreement are unknown.",1. Sale and leaseback (or sale-leaseback) agreements are generally considered to be off-balance-sheet hybrid debt products.,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+ICBC Leasing enters into a sale and leaseback agreement with AirAsia for four Airbus A320 aircraft
+
+# Description
+In 2011, ICBC Financial Leasing Co., Ltd. (ICBC Leasing) entered into a sale-and-leaseback agreement with Capital A Berhad (AirAsia), a Malaysian low-cost airline, for four Airbus A320 aircraft. The terms of this agreement are unknown.",TRUE,NA,NEUTRAL,HIGH,Financial Services,"The project involves financial leasing of aircraft, which does not have a direct environmental or energy transition impact","Sale-and-leaseback agreement for aircraft, financial services nature of transaction"

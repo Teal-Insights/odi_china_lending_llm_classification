@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+56568,EMERGENCY RESPONSE,Chinese government donates humanitarian aid to Chad in 2010,"On June 1 and June 4, 2010, Chinese government donated a batch of humanitarian aid supplies to Chad. The humanitarian aid materials include rice, tricycles for the disabled, towels, quilts, summer mats, rain cloths, solar stoves, etc. According to the agreement between the two parties, half of the batch of materials will be transferred to the Presidential Palace, and the other half will be transferred to the Ministry of Social Action, National Unity and Family.Ambassador to Chad Yang Guangyu and Chad Minister of Social Action, Ms. Carmel, co-chaired the handover ceremony of China’s humanitarian aid to Chad and signed the handover certificate. ",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese government donates humanitarian aid to Chad in 2010
+
+# Description
+On June 1 and June 4, 2010, Chinese government donated a batch of humanitarian aid supplies to Chad. The humanitarian aid materials include rice, tricycles for the disabled, towels, quilts, summer mats, rain cloths, solar stoves, etc. According to the agreement between the two parties, half of the batch of materials will be transferred to the Presidential Palace, and the other half will be transferred to the Ministry of Social Action, National Unity and Family.Ambassador to Chad Yang Guangyu and Chad Minister of Social Action, Ms. Carmel, co-chaired the handover ceremony of China’s humanitarian aid to Chad and signed the handover certificate. ",TRUE,NA,NEUTRAL,HIGH,Social Development,"Humanitarian aid project focused on social welfare and emergency response, with no clear environmental or energy transition impacts","Donation of humanitarian aid supplies including food, disability equipment, and basic living necessities"
+56780,EDUCATION,China awards Chinese Government Scholarships to Chadian students in 2010,"In 2010, multiple students from Chad were awarded the 2010-2011 Chinese Government Scholarship. This helped finance each student's study abroad at various universities in China. The value of each scholarship is unknown.",Chinese project title: 2010年中国政府奖学金,"# Sector
+EDUCATION
+
+# Title
+China awards Chinese Government Scholarships to Chadian students in 2010
+
+# Description
+In 2010, multiple students from Chad were awarded the 2010-2011 Chinese Government Scholarship. This helped finance each student's study abroad at various universities in China. The value of each scholarship is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education with no direct environmental or energy transition impact,Education-focused scholarship program for Chadian students
+71609,HEALTH,Chinese government donates the fifth batch of anti-malaria drugs to Chad in 2010,"On December 4, 2010, Chinese government donated anti-malaria drugs to the Ministry of Public Health of Chad. This is the fifth batch of antimalarial drugs provided by the Chinese government to Chad since the resumption of diplomatic relations between China and Chad. My Ambassador to Chad Yang Guangyu and Chad’s State Secretary of Public Health Muhammad Mamadou Adi signed the handover certificate on behalf of the two governments.",the fourth batch of anti-malarial drugs was donated the same year on January 21 (described in #56038).,"# Sector
+HEALTH
+
+# Title
+Chinese government donates the fifth batch of anti-malaria drugs to Chad in 2010
+
+# Description
+On December 4, 2010, Chinese government donated anti-malaria drugs to the Ministry of Public Health of Chad. This is the fifth batch of antimalarial drugs provided by the Chinese government to Chad since the resumption of diplomatic relations between China and Chad. My Ambassador to Chad Yang Guangyu and Chad’s State Secretary of Public Health Muhammad Mamadou Adi signed the handover certificate on behalf of the two governments.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of anti-malaria drugs, healthcare focus"
+37013,EMERGENCY RESPONSE,China donates US$1 million to Chile for earthquake disaster relief,"On March 24, 2010, China donated US$1 million for earthquake relief efforts in Chile. The 8.8-magnitude quake killed 425 people and left 500,000 others homeless. Additionally, the earthquake caused about $30 billion USD of damage to buildings and infrastructure.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates US$1 million to Chile for earthquake disaster relief
+
+# Description
+On March 24, 2010, China donated US$1 million for earthquake relief efforts in Chile. The 8.8-magnitude quake killed 425 people and left 500,000 others homeless. Additionally, the earthquake caused about $30 billion USD of damage to buildings and infrastructure.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on disaster relief and humanitarian aid without direct environmental or energy transition implications,"Donation for earthquake relief, humanitarian focus, no energy or infrastructure development components"
+37020,EMERGENCY RESPONSE,China sends 2 million USD worth of supplies to Chile for earthquake disaster relief,"On March 5, 2010, a chartered plane from the Chinese Government arrived in Chile with 2 million USD worth of earthquake relief including 700 tents, 10,000 blankets, 100 portable generators and two water purifiers. This aid was in response to an 8.8-magnitude earthquake that struck Chile on February 27, 2010.   This project is linked to the 1 million USD grant China also sent following the earthquake in Chile (project ID #37013).",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China sends 2 million USD worth of supplies to Chile for earthquake disaster relief
+
+# Description
+On March 5, 2010, a chartered plane from the Chinese Government arrived in Chile with 2 million USD worth of earthquake relief including 700 tents, 10,000 blankets, 100 portable generators and two water purifiers. This aid was in response to an 8.8-magnitude earthquake that struck Chile on February 27, 2010.   This project is linked to the 1 million USD grant China also sent following the earthquake in Chile (project ID #37013).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on humanitarian aid and disaster relief, with no direct environmental or energy transition impact","Earthquake relief supplies including tents, blankets, generators, and water purifiers"
+37049,GOVERNMENT AND CIVIL SOCIETY,"All-China Federation of Trade Unions donates $30,000 USD to the Workers' United Center of Chile to rebuild union building","In May 2010, All-China Federation of Trade Unions donated $30,000 USD to the Workers' United Center of Chile to rebuild the building of the trade union after it was damaged in the February 27 earthquake. While it appears that the donation was made, the trade union building was never fully reconstructed, and was demolished in 2017.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+All-China Federation of Trade Unions donates $30,000 USD to the Workers' United Center of Chile to rebuild union building
+
+# Description
+In May 2010, All-China Federation of Trade Unions donated $30,000 USD to the Workers' United Center of Chile to rebuild the building of the trade union after it was damaged in the February 27 earthquake. While it appears that the donation was made, the trade union building was never fully reconstructed, and was demolished in 2017.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves a donation for rebuilding a trade union building, which is unrelated to energy or environmental impacts","Donation for rebuilding trade union building, no energy or environmental components mentioned"
+54800,EDUCATION,China Donates Scientific Equipment to Universities in Chile,"In December 2010, the Chinese state councilor Lui Yandong signed an agreement to donate US$750,000 worth of scientific equipment to five Chilean universities that were rocked by the February 2010 earthquake. The equipment was said to be donated as part of an ongoing commitment from China to help Chile research and develop clean energy, biotechnology, astronomy, and seismology. According to data from the University of Chile, the awarded equipment was delivered on April 10th, and April 12th of 2012. The equipment included gas chromatograph, FT-IR spectrometer, binocular biological microscope, spectrophotometer.","The more conservative of the two figures mentioned in attached articles was coded as the transaction amount. The Chinese Embassy in Chile indicates an approximate value of 800,000 USD, while a Chilean news source indicates an approximate value of 750,000 USD. The English version of the Chilean news source incorrectly translates the original Spanish to 750 million, but the original Spanish indicates 750 thousand ('750 mil').","# Sector
+EDUCATION
+
+# Title
+China Donates Scientific Equipment to Universities in Chile
+
+# Description
+In December 2010, the Chinese state councilor Lui Yandong signed an agreement to donate US$750,000 worth of scientific equipment to five Chilean universities that were rocked by the February 2010 earthquake. The equipment was said to be donated as part of an ongoing commitment from China to help Chile research and develop clean energy, biotechnology, astronomy, and seismology. According to data from the University of Chile, the awarded equipment was delivered on April 10th, and April 12th of 2012. The equipment included gas chromatograph, FT-IR spectrometer, binocular biological microscope, spectrophotometer.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational support and scientific equipment donation without clear environmental or energy transition impacts,"Donation of scientific equipment to universities, focus on education and research support"
+69152,COMMUNICATIONS,CDB contributes to a $150 million syndicated loan to Nextel Chile to finance telecommunications equipment,"In December 2010, China Development Bank and HSBC Bank USA entered into a syndicated loan (equipment financing) agreement with Nextel Chile, authorizing Nextel Chile to borrow up to $150 million to finance equipment and certain other costs related to the deployment of its WCDMA network in Chile. This loan had a floating interest rate based on LIBOR plus 2.50% (2.81% as of December 31, 2012).  During the second quarter of 2013, the entire amount outstanding ($150 million) under Nextel Chile's loan was repaid by NII Holdings. Nextel Chile was originally a subsidiary mobile phone company of the US-based communications company of the same name, NII Holdings Inc.  In 2015, the company was acquired by a British firm, Novator Partners, and in July of that year, Nextel Chile was dissolved and rebranded as WOM (Word of Mouth).","1. The exact size of CDB’s contribution is unknown. For the time being, AidData assumes that the 2 members of the lending syndicate contributed equally ($75 million) to the $150 million loan.","# Sector
+COMMUNICATIONS
+
+# Title
+CDB contributes to a $150 million syndicated loan to Nextel Chile to finance telecommunications equipment
+
+# Description
+In December 2010, China Development Bank and HSBC Bank USA entered into a syndicated loan (equipment financing) agreement with Nextel Chile, authorizing Nextel Chile to borrow up to $150 million to finance equipment and certain other costs related to the deployment of its WCDMA network in Chile. This loan had a floating interest rate based on LIBOR plus 2.50% (2.81% as of December 31, 2012).  During the second quarter of 2013, the entire amount outstanding ($150 million) under Nextel Chile's loan was repaid by NII Holdings. Nextel Chile was originally a subsidiary mobile phone company of the US-based communications company of the same name, NII Holdings Inc.  In 2015, the company was acquired by a British firm, Novator Partners, and in July of that year, Nextel Chile was dissolved and rebranded as WOM (Word of Mouth).",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"Project focuses on telecommunications equipment financing, which has no direct environmental or energy transition impact","Financing for WCDMA network deployment, telecommunications equipment focus"
+98543,TRANSPORT AND STORAGE,BOC Aviation leases one Airbus A320-200 aircraft to LAN Airline,"In or around December 2010, BOC Aviation signed a lease agreement with LAN Airline S.A., a Chilean airliner, for one Airbus A320-200 aircraft. The aircraft was scheduled for delivery in the first quarter of 2011.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+BOC Aviation leases one Airbus A320-200 aircraft to LAN Airline
+
+# Description
+In or around December 2010, BOC Aviation signed a lease agreement with LAN Airline S.A., a Chilean airliner, for one Airbus A320-200 aircraft. The aircraft was scheduled for delivery in the first quarter of 2011.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Aircraft leasing is a standard commercial transaction with no direct environmental or energy transition impact,"Lease of single commercial aircraft, no specific environmental features mentioned"
+36353,EMERGENCY RESPONSE,China and Russia provide aid to victims of flooding in Colombia,"In 2010, Russia and China provided support to Colombia in light of intense rains that have left 303 dead and 2.2 million victims as a result of La Niña. The donation was announced on December 28, 2010 with the assurance that the donation would come the following day. On December 29, 2010 the both the Russian and Chinese donations were delivered. Russia provided 25 tonnes worth of humanitarian aid, and China donated $200,000 for emergency response efforts.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China and Russia provide aid to victims of flooding in Colombia
+
+# Description
+In 2010, Russia and China provided support to Colombia in light of intense rains that have left 303 dead and 2.2 million victims as a result of La Niña. The donation was announced on December 28, 2010 with the assurance that the donation would come the following day. On December 29, 2010 the both the Russian and Chinese donations were delivered. Russia provided 25 tonnes worth of humanitarian aid, and China donated $200,000 for emergency response efforts.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian aid for emergency response to natural disaster,"Donation of $200,000 and humanitarian aid for flood victims"

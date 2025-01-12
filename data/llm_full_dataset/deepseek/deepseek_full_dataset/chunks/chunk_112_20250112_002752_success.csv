@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95795,HEALTH,"Chinese Government donates 200,000 Sinopharm Covid-19 vaccine doses worth $3.6 million in December 2021","The Chinese Government delivered 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand on May 17, 2021 (see project ID#95790). Then, on June 5, 2021, the Chinese Government delivered another 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand. The Red Cross Society of China delivered an additional 100,000 donated Sinopharm COVID-19 vaccine doses to the Government of Thailand on August 28, 2021 (see project ID#95792). Then, in October 2021, the Government of Thailand announced that it would not place orders for further shipments of Sinovac vaccines once its supply ran out at the end of the month, since the country’s public health authorities planned to switch to AstraZeneca and Pfizer COVID-19 vaccine doses. The decision to end the use of the China-made vaccine came after over 31.5 million Sinovac doses had been administered throughout the country. Then, on November 12, 2021, the Chinese Government delivered another 1,500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand (see project ID#95793). Approximately one month later, on December 8, 2021, the Chinese Government delivered 200,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Thailand for use by members of the royal family (see project ID#95795). Then, on January 8, 2022, the Chinese Government delivered another 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand (see project ID#95796). Less than a month later, on February 4, 2022, the Chinese Government delivered 100,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Thailand (see project ID#95797).","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinovac/Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the December 2021 donation as $3.6 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 200,000 Sinopharm Covid-19 vaccine doses worth $3.6 million in December 2021
+
+# Description
+The Chinese Government delivered 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand on May 17, 2021 (see project ID#95790). Then, on June 5, 2021, the Chinese Government delivered another 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand. The Red Cross Society of China delivered an additional 100,000 donated Sinopharm COVID-19 vaccine doses to the Government of Thailand on August 28, 2021 (see project ID#95792). Then, in October 2021, the Government of Thailand announced that it would not place orders for further shipments of Sinovac vaccines once its supply ran out at the end of the month, since the country’s public health authorities planned to switch to AstraZeneca and Pfizer COVID-19 vaccine doses. The decision to end the use of the China-made vaccine came after over 31.5 million Sinovac doses had been administered throughout the country. Then, on November 12, 2021, the Chinese Government delivered another 1,500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand (see project ID#95793). Approximately one month later, on December 8, 2021, the Chinese Government delivered 200,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Thailand for use by members of the royal family (see project ID#95795). Then, on January 8, 2022, the Chinese Government delivered another 500,000 donated doses of Sinovac Covid-19 vaccines to the Government of Thailand (see project ID#95796). Less than a month later, on February 4, 2022, the Chinese Government delivered 100,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Thailand (see project ID#95797).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of vaccines for public health purposes, with no direct environmental or energy transition impact","Donation of 200,000 Sinopharm Covid-19 vaccine doses for healthcare purposes"
+96332,HEALTH,Chinese Embassy in Thailand donates two nucleic acid testing vehicles to Thai Ministry of Health in July 2021,"On July 7, 2021 the Chinese Embassy in Thailand donated two nucleic acid testing vehicles to the Thai Ministry of Health to help the Thai government carry out large-scale nucleic acid testing and fight the COVID-19 pandemic. The donation was received the Thai Ministry of Health. The monetary value of the donated vehicles is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Thailand donates two nucleic acid testing vehicles to Thai Ministry of Health in July 2021
+
+# Description
+On July 7, 2021 the Chinese Embassy in Thailand donated two nucleic acid testing vehicles to the Thai Ministry of Health to help the Thai government carry out large-scale nucleic acid testing and fight the COVID-19 pandemic. The donation was received the Thai Ministry of Health. The monetary value of the donated vehicles is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of nucleic acid testing vehicles for COVID-19 response, healthcare sector focus"
+96337,HEALTH,The Consulate General of China donated 20 air purifiers to Chiang Mai Red Cross,"On December 22, 2021, on behalf of the Consulate General of the People’s Republic of China in Chiang Mai, Vice Consul General Pan Jin visited Mrs. Duangjit Pratsakul, President of Chiang Mai Red Cross Chapter in order to make a donation of 20 Xiaomi air purifiers to Chiang Mai Red Cross. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+The Consulate General of China donated 20 air purifiers to Chiang Mai Red Cross
+
+# Description
+On December 22, 2021, on behalf of the Consulate General of the People’s Republic of China in Chiang Mai, Vice Consul General Pan Jin visited Mrs. Duangjit Pratsakul, President of Chiang Mai Red Cross Chapter in order to make a donation of 20 Xiaomi air purifiers to Chiang Mai Red Cross. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical equipment with no direct environmental or energy transition impact,"Donation of 20 air purifiers to healthcare facility, no energy-related components mentioned"
+96407,HEALTH,"Gansu province donates 9,000 boxes of traditional Chinese medicine granules to Thailand in August 2021","On August 11, 2021, the Gansu Province of China sent 9,000 boxes of traditional Chinese medicine (TCM) granules in order to help fight the COVID-19 pandemic. Gansu is a major TCM production base in China and has a long history of growing herbs used in the Chinese system of medicine. The Gansu University of Chinese Medicine is prominent producer and supported this shipment. The type of TCM that made up this donation is said to prevent mild COVID-19 cases from becoming severe ones. It is unclear exactly what type of medicine this was, or the monetary value of this donation.",NA,"# Sector
+HEALTH
+
+# Title
+Gansu province donates 9,000 boxes of traditional Chinese medicine granules to Thailand in August 2021
+
+# Description
+On August 11, 2021, the Gansu Province of China sent 9,000 boxes of traditional Chinese medicine (TCM) granules in order to help fight the COVID-19 pandemic. Gansu is a major TCM production base in China and has a long history of growing herbs used in the Chinese system of medicine. The Gansu University of Chinese Medicine is prominent producer and supported this shipment. The type of TCM that made up this donation is said to prevent mild COVID-19 cases from becoming severe ones. It is unclear exactly what type of medicine this was, or the monetary value of this donation.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of traditional Chinese medicine granules for COVID-19 treatment, healthcare focus"
+96577,EDUCATION,Lancang-Mekong Special Fund provides funds for Book House in Bangkok in December 2021,"On December 3, 2021, a Lancang-Mekong charity project co-sponsored by Beijing MW Foundation (BMWF) and China International Communications Group (CICG) was launched in Bangkok. During the launch event, an unveiling ceremony for the ""Lancang-Mekong Book House"" was held at Kong Lee Chong Son School.   The Lancang-Mekong charity project provided students at Kong Lee Chong Son School with nearly 1,000 books suitable for Chinese teaching in kindergartens and elementary schools, as well as for extracurricular reading. It also provided anti-pandemic supplies and daily necessities to the school.",NA,"# Sector
+EDUCATION
+
+# Title
+Lancang-Mekong Special Fund provides funds for Book House in Bangkok in December 2021
+
+# Description
+On December 3, 2021, a Lancang-Mekong charity project co-sponsored by Beijing MW Foundation (BMWF) and China International Communications Group (CICG) was launched in Bangkok. During the launch event, an unveiling ceremony for the ""Lancang-Mekong Book House"" was held at Kong Lee Chong Son School.   The Lancang-Mekong charity project provided students at Kong Lee Chong Son School with nearly 1,000 books suitable for Chinese teaching in kindergartens and elementary schools, as well as for extracurricular reading. It also provided anti-pandemic supplies and daily necessities to the school.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational and social development without clear environmental or energy transition impacts,"Provision of books, anti-pandemic supplies, and daily necessities to a school"
+95430,HEALTH,"Chinese Government donates 100,000 Sinovac Covid-19 vaccine doses worth $1.8 million in June 2021","On June 5, 2021, the Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines and syringes to the Government of Timor-Leste. Timor-Leste's Vice Prime Minister Armanda Berta dos Santos, Chinese Ambassador to Timor-Leste Xiao Jianguo, Representatives of the World Food Programme (WFP) and the World Health Organization (WHO) to Timor-Leste, and other officials from the Timor-Leste Government attended the vaccine handover ceremony at Dili International airport. The WFP helped transport the vaccines donated throughout Timor-Leste.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinovac COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the June 2021 donation as $1.8 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 100,000 Sinovac Covid-19 vaccine doses worth $1.8 million in June 2021
+
+# Description
+On June 5, 2021, the Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines and syringes to the Government of Timor-Leste. Timor-Leste's Vice Prime Minister Armanda Berta dos Santos, Chinese Ambassador to Timor-Leste Xiao Jianguo, Representatives of the World Food Programme (WFP) and the World Health Organization (WHO) to Timor-Leste, and other officials from the Timor-Leste Government attended the vaccine handover ceremony at Dili International airport. The WFP helped transport the vaccines donated throughout Timor-Leste.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Vaccine donation, healthcare sector, no energy or infrastructure components"
+96276,HEALTH,China donates medical supplies to Timor-Leste in November 2021,"In November 2021, China donated medical supplies to Timor-Leste Theses medical supplies included nuclear magnetic imagers and lithotripters. The monetary value of this donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China donates medical supplies to Timor-Leste in November 2021
+
+# Description
+In November 2021, China donated medical supplies to Timor-Leste Theses medical supplies included nuclear magnetic imagers and lithotripters. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical equipment with no direct environmental or energy transition impact,"Medical supplies including nuclear magnetic imagers and lithotripters, healthcare sector focus"
+96277,GOVERNMENT AND CIVIL SOCIETY,Chinese government donates police supplies to Timor-Leste National Police,"On January 22, 2021, the Chinese government donated police supplies to the Timor-Leste National Police (PNTL). The donated supplies included boots, rainproof uniforms, and other goods. The handover ceremony took place at Timor Leste National Police Headquarters.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese government donates police supplies to Timor-Leste National Police
+
+# Description
+On January 22, 2021, the Chinese government donated police supplies to the Timor-Leste National Police (PNTL). The donated supplies included boots, rainproof uniforms, and other goods. The handover ceremony took place at Timor Leste National Police Headquarters.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of police supplies without clear environmental or energy transition impacts,"Donation of police supplies including boots and rainproof uniforms, no energy-related components"
+96343,GOVERNMENT AND CIVIL SOCIETY,China donates flashlights to Timor-Leste National Police,"On January 28, 2021, the Chinese government donated 200 flashlights to Timor-Leste National Police (PNTL). The handover ceremony took place at Timor Leste National Police Headquarters.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China donates flashlights to Timor-Leste National Police
+
+# Description
+On January 28, 2021, the Chinese government donated 200 flashlights to Timor-Leste National Police (PNTL). The handover ceremony took place at Timor Leste National Police Headquarters.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of equipment with no direct environmental or energy transition impact,"Donation of flashlights to police force, no energy-related components"
+96346,COMMUNICATIONS,"Chinese embassy in Timor-Leste donates 30,000 set-top boxes to Timor-Leste (linked to project ID#63425)","On February 16, 2021, the Chinese embassy in Timor-Leste donated 30,000 set-top boxes to Timor-Leste. The donation took place at the launching ceremony for the Digital Terrestrial Television Transmission System (DTMB) (see project ID#63425).",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese embassy in Timor-Leste donates 30,000 set-top boxes to Timor-Leste (linked to project ID#63425)
+
+# Description
+On February 16, 2021, the Chinese embassy in Timor-Leste donated 30,000 set-top boxes to Timor-Leste. The donation took place at the launching ceremony for the Digital Terrestrial Television Transmission System (DTMB) (see project ID#63425).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of set-top boxes for digital television, which is unrelated to energy or environmental impacts","Donation of 30,000 set-top boxes, part of digital television transmission system"
