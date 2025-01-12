@@ -147,16 +147,82 @@ llama_result
 
 ## Test DeepSeek V3
 
-``` {r}
-# chat <- chat_vllm(
-#   base_url = "https://api.deepseek.com/v1/",
-#   system_prompt = system_prompt_txt,
-#   model = "deepseek-chat",
-#   api_key=Sys.getenv("DEEPSEEK_API_KEY")
-# )
-# 
-# llama_result <- chat$chat(coal_example)
+```{r}
+chat <- chat_vllm(
+  base_url = "https://api.deepseek.com/v1/",
+  system_prompt = system_prompt_txt,
+  model = "deepseek-chat",
+  api_key=Sys.getenv("DEEPSEEK_API_KEY")
+)
+
+deepseek_result <- chat$chat(coal_example)
+
+deepseek_result
 ```
+
+```{r}
+chat <- chat_vllm(
+  base_url = "https://api.deepseek.com/v1/",
+  system_prompt = paste(
+    system_prompt_txt,
+    "\nIMPORTANT: You must return valid JSON without any markdown formatting.",
+    sep = "\n"
+  ),
+  model = "deepseek-chat",
+  api_key = Sys.getenv("DEEPSEEK_API_KEY"),
+  api_args = list(response_format = list(type = "json_object"))
+)
+
+deepseek_result <- chat$extract_data(coal_example, type = project_analysis_spec)
+```
+
+```{r}
+process_deepseek_response <- function(response) {
+  # Remove everything between and including ```json and ``` 
+  clean_text <- gsub("```json\\s*\\{", "{", response)
+  clean_text <- gsub("\\s*```\\s*$", "", clean_text)
+  
+  tryCatch({
+    # Parse the JSON into a list structure
+    parsed <- jsonlite::fromJSON(clean_text, simplifyVector = TRUE)
+    
+    # Convert into simple vectors where appropriate
+    list(
+      classification = list(
+        primary = as.character(parsed$classification$primary),
+        confidence = as.character(parsed$classification$confidence),
+        project_type = as.character(parsed$classification$project_type)
+      ),
+      justification = as.character(parsed$justification),
+      evidence = as.character(parsed$evidence)
+    )
+  }, error = function(e) {
+    cli::cli_abort(
+      c("Failed to parse DeepSeek response",
+        i = "Original response: {response}",
+        x = "Error: {conditionMessage(e)}")
+    )
+  })
+}
+
+chat <- chat_vllm(
+  base_url = "https://api.deepseek.com/v1/",
+  system_prompt = paste(
+    system_prompt_txt,
+    "\nIMPORTANT: Return ONLY raw JSON without any markdown code blocks, backticks, or formatting. The response should start with '{' and end with '}'.",
+    sep = "\n"
+  ),
+  model = "deepseek-chat",
+  api_key = Sys.getenv("DEEPSEEK_API_KEY")
+)
+
+deepseek_result <- chat$chat(coal_example, echo = FALSE) |> 
+  process_deepseek_response()
+
+# Print result
+print(deepseek_result)
+```
+deepseek_result
 
 # Run 300 Examples
 
@@ -224,7 +290,6 @@ write_csv(
 
 ```
 
-
 ### GPT 4o-mini
 
 ```{r}
@@ -291,21 +356,48 @@ write_csv(
 claude_run_results
 ```
 
+## Deepseek
 ```{r}
-df_with_tokens <- gcdf_data_for_llm %>%
-  mutate(
-    char_count = str_length(combined_text),
-    approx_tokens = char_count / 4
-  )
+deepseek_test <- gcdf_sample_for_validation |> 
+  head(3)
 
-df_with_tokens %>%
-  summarize(
-    avg_tokens = mean(approx_tokens),
-    percentile_75 = quantile(approx_tokens, probs = 0.75),
-    max_tokens = max(approx_tokens)
-  )
+deepseek_test
+```
+
+
+
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  gcdf_sample_for_validation,
+  chunk_size = 10,
+  chat_provider = "deepseek",  
+  output_dir = "data/validation_results",
+  run_name = "llm_validation"
+)
+end_time <- Sys.time()
+#beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed <- end_time - start_time
+deepseek_time_elapsed
+
+deepseek_time_elapsed_per_loan <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan
+
+# Collect results
+deepseek_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider =  "deepseek",
+  run_id = "llm_validation"
+)
 ```
 
 ```{r}
-str_length(system_prompt_txt)/4
+deepseek_time_elapsed_per_loan * 18000 / 60
 ```
+
+```{r}
+deepseek_run_results
+```
+
