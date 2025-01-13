@@ -45,7 +45,7 @@ system_prompt_txt <- here(
 system_prompt_txt
 ```
 
-## Get GCDF Data
+## Get AidData GCDF Data
 
 ```{r}
 gcdf_data_for_llm <- get_gcdf3_dataset() |> 
@@ -72,6 +72,8 @@ gcdf_data_for_llm
 ```
 
 # Run Full Dataset with Deepseek
+
+## Round 1: Initial Run
 
 ```{r}
 start_time <- Sys.time()
@@ -101,8 +103,611 @@ deepseek_run_results <- collect_results(
 ```
 
 
-
+Look at the results:
 ```{r}
 deepseek_run_results
+```
+Total processing time: 15.45 hours
+Successful: 17899
+Failed: 58
+
+
+Look at the error message for the failed observations:
+```{r}
+deepseek_run_results$failed |> 
+  group_by(error_message) |> 
+  count(sort = TRUE) 
+```
+56 observations:
+[1] "Error in `httr2::req_perform()`:\n! HTTP 400 Bad Request.\n• Content Exists Risk\n"
+
+2 Observations:
+[2] "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n" 
+
+## Round 2: Try re-running failed observations
+
+Initial hypothesis: perhaps some of the observations just got rate limited, so they might work when run again.
+
+```{r}
+round_1_failed_for_rerun <- deepseek_run_results$failed |> 
+  select(
+    aid_data_record_id:combined_text
+  )
+
+round_1_failed_for_rerun
+```
+
+
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  round_1_failed_for_rerun,
+  chunk_size = 10,
+  chat_provider = "deepseek",  
+  output_dir = "data/llm_full_dataset",
+  run_name = "deepseek_full_dataset_round_2"
+)
+end_time <- Sys.time()
+beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed_2 <- end_time - start_time
+deepseek_time_elapsed_2
+
+deepseek_time_elapsed_per_loan_2 <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan_2
+
+# Collect results
+deepseek_run_results_2 <- collect_results(
+  "data/llm_full_dataset",
+  chat_provider =  "deepseek",
+  run_id = "deepseek_full_dataset_round_2"
+)
+```
+
+That took care of the two observations with the "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n" 
+
+The 56 observations with the "Error in `httr2::req_perform()`:\n! HTTP 400 Bad Request.\n• Content Exists Risk\n" remain
+
+```{r}
+deepseek_run_results_2$failed |> 
+  group_by(error_message) |> 
+  count(sort = TRUE)
+```
+
+Most observations still produced errors, and they all had the following message: `[1] "Error in httr2::req_perform():\n! HTTP 400 Bad Request.\n• Content Exists Risk\n"`
+
+
+Pulling a few examples of the remaining failed observations.
+```{r}
+deepseek_run_results_2$failed |> 
+  slice(
+    c(
+      5, 
+      15,
+      35
+    )
+  ) |> 
+  pull(combined_text)
+```
+
+## Round 3: Check for UTF8 encoding + formatting
+
+Is it just technical issues with special character and UTF8 encoding that is causing the remaining errors?
+
+```{r}
+clean_text_for_api <- function(text) {
+  text |> 
+    # First ensure UTF-8 encoding
+    enc2utf8() |>
+    # Remove any non-printable characters
+    stringr::str_replace_all("[^\x20-\x7E\n]", "") |>
+    # Ensure consistent line endings
+    stringr::str_replace_all("\r\n", "\n") |>
+    # Remove markdown headers but keep the text
+    stringr::str_replace_all("^#\\s+(.*?)$", "\\1") |>
+    # Ensure consistent spacing
+    stringr::str_trim() |>
+    # Remove multiple consecutive newlines
+    stringr::str_replace_all("\n{3,}", "\n\n")
+}
+
+# To use with your dataframe:
+process_failed_texts <- function(df) {
+  df |>
+    mutate(
+      cleaned_text = clean_text_for_api(combined_text)
+    )
+}
+```
+
+Clean combined text field
+```{r}
+
+round_2_failed_for_rerun <- deepseek_run_results_2$failed |> 
+  select(
+    aid_data_record_id:combined_text
+  ) |> 
+  process_failed_texts() |> 
+  select(
+    -combined_text,
+    combined_text = cleaned_text
+  )
+
+round_2_failed_for_rerun
+
+```
+
+Re run with the cleaned combined text field.
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  round_2_failed_for_rerun,
+  chunk_size = 10,
+  chat_provider = "deepseek",  
+  output_dir = "data/llm_full_dataset",
+  run_name = "deepseek_full_dataset_round_3"
+)
+end_time <- Sys.time()
+#beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed_3 <- end_time - start_time
+deepseek_time_elapsed_3
+
+deepseek_time_elapsed_per_loan_3 <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan_3
+
+# Collect results
+deepseek_run_results_3 <- collect_results(
+  "data/llm_full_dataset",
+  chat_provider =  "deepseek",
+  run_id = "deepseek_full_dataset_round_3"
+)
+```
+
+```{r}
+deepseek_run_results_3
+```
+1 successful
+55 failed
+
+
+print out the text of all of the remaining failed observations and put them into ChatGPT and Claude to see if we can find patterns.
+```{r}
+# deepseek_run_results_3$failed$combined_text
+```
+
+## Round 4: Politically Sensitive People
+Maybe it's "politically sensitive people" who show up in a lot of these observations
+
+### Peng Liyuan
+Peng Liyuan, Xi Jinping's wife, shows up in 35 of the 55 observations.
+```{r}
+deepseek_run_results_3$failed |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Peng Liyuan"
+    )
+  ) |> nrow()
+```
+
+Her name shows up zero time in the initial 17899 successfully processed observations.
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Peng Liyuan",
+    )
+  ) |> nrow()
+```
+
+
+### Bo Xilai
+Bo Xilai shows up 15 times in the failed observations, and zero times in the initial successfully run observations.
+
+```{r}
+deepseek_run_results_3$failed |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Bo Xilai"
+    )
+  ) |> nrow()
+```
+
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Bo Xilai",
+    )
+  ) |> nrow()
+```
+
+
+
+
+### Zhang Gaoli
+Zhang Gaoli shows up in 3 of the failed observations, and zero times in the successfully run observations.
+
+```{r}
+deepseek_run_results_3$failed |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Zhang Gaoli"
+    )
+  ) |> nrow()
+```
+
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Zhang Gaoli",
+    )
+  ) |> nrow()
+```
+
+### Combined
+The three of these politically sensitive names show up in 53 of 55 of the failed observations. They show up in zero of the succesfully processed observations.
+
+```{r}
+deepseek_run_results_3$failed |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Peng Liyuan|Bo Xilai|Zhang Gaoli"
+    )
+  ) |> nrow()
+```
+
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Peng Liyuan|Bo Xilai|Zhang Gaoli"
+    )
+  ) |> nrow()
+```
+
+### Remaining 2 observations
+
+What is causing the problem for the remaining two observations?
+
+Here is the full text of the two
+```{r}
+deepseek_run_results_3$failed |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Peng Liyuan|Bo Xilai|Zhang Gaoli",
+      negate = TRUE
+    )
+  ) |> 
+  pull(combined_text)
+```
+#### Testing potential names
+Let's test some of the potential "politically sensitive" names to see if they show up in the successfully run observations.
+
+Xi Jinping shows up in 188 succesfully processed observations, so not likely causing the block.
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Xi Jinping",
+    )
+  ) |> nrow()
+```
+
+Hanban shows up 256 times.
+```{r}
+deepseek_run_results$successful |> 
+  filter(
+    str_detect(
+      combined_text,
+      "Hanban",
+    )
+  ) |> nrow()
+```
+
+### Remove Politically Sensitive Names
+
+```{r}
+sanitize_sensitive_names <- function(text) {
+  text |>
+    # Remove the three sensitive names, replace with generic "Chinese official"
+    stringr::str_replace_all(
+      "(?i)Bo Xilai|Peng Liyuan|Zhang Gaoli",
+      "a Chinese official"
+    ) |>
+    # Clean up any double spaces that might result
+    stringr::str_replace_all("\\s+", " ") |>
+    stringr::str_trim()
+}
+
+# Test the function on your failed cases
+test_sanitized <- deepseek_run_results_3$failed |>
+  mutate(
+    sanitized_text = sanitize_sensitive_names(combined_text)
+  )
+
+# To verify the changes:
+verify_changes <- test_sanitized |>
+  filter(sanitized_text != combined_text) |>
+  select(combined_text, sanitized_text)
+```
+Process data to remove politically sensitive names
+```{r}
+
+round_3_failed_for_rerun <- deepseek_run_results_3$failed |> 
+  select(
+    aid_data_record_id:combined_text
+  ) |> 
+  process_failed_texts() |> 
+  select(
+    -combined_text,
+    combined_text = cleaned_text
+  ) |> 
+  mutate(
+    combined_text = sanitize_sensitive_names(combined_text)
+  )
+
+round_3_failed_for_rerun
+
+```
+Run Round 4
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  round_3_failed_for_rerun,
+  chunk_size = 10,
+  chat_provider = "deepseek",  
+  output_dir = "data/llm_full_dataset",
+  run_name = "deepseek_full_dataset_round_4"
+)
+end_time <- Sys.time()
+#beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed_4 <- end_time - start_time
+deepseek_time_elapsed_4
+
+deepseek_time_elapsed_per_loan_4 <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan_4
+
+# Collect results
+deepseek_run_results_4 <- collect_results(
+  "data/llm_full_dataset",
+  chat_provider =  "deepseek",
+  run_id = "deepseek_full_dataset_round_4"
+)
+```
+
+
+```{r}
+deepseek_run_results_4
+```
+
+Only the two that didn't mention Bo Xilai|Peng Liyuan|Zhang Gaoli remain.
+
+It's clear that what was causing them to error.  It's less clear what is blocking the last two from running. I'll try blocking out any potentially politically sensitive names or subjects.  This doesn't impact.  
+
+## Round 5: Remove Anything Politcally Sensitive
+Both of the two remaining projects are clearly "Neutral" in our classification framework.  While it would be fun to pinpoint exactly what is being flagged here, it's more important to complete the dataset. Taking out anything possibly politically sensitive will not change the information needed to assess the project classification. 
+
+Pull out the remaining text
+```{r}
+deepseek_run_results_4$failed |> 
+  pull(combined_text)
+```
+
+Create a function to sanitize any potentially politically sensitive names.
+```{r}
+sanitize_sensitive_content <- function(text) {
+  text |>
+    # Remove or generalize military references
+    stringr::str_replace_all(
+      "(?i)Peoples Liberation Army of China|PLA",
+      "Chinese entity"
+    ) |>
+    stringr::str_replace_all(
+      "(?i)armed forces of Belarus|Belarusian Army",
+      "Belarusian entity"
+    ) |>
+    # Remove or generalize institutional references
+    stringr::str_replace_all(
+      "(?i)Confucius Institute Headquarters/Hanban Party Committee",
+      "Chinese educational organization"
+    ) |>
+    stringr::str_replace_all(
+      "(?i)Confucius Institute",
+      "Chinese language and cultural center"
+    ) |>
+    # Remove specific names of officials/ambassadors
+    stringr::str_replace_all(
+      "(?i)Ma Jianfei|Hu Changchun|Wu Chunfeng",
+      "an official"
+    ) |>
+    # Generalize political titles
+    stringr::str_replace_all(
+      "(?i)General Secretary Xi Jinping",
+      "Chinese leadership"
+    ) |>
+    # Remove references to Party structures
+    stringr::str_replace_all(
+      "(?i)Party Committee",
+      "administrative committee"
+    ) |>
+    # Clean up any resulting double spaces
+    stringr::str_replace_all("\\s+", " ") |>
+    stringr::str_trim()
+}
+
+# Test the function on your failed cases
+test_sanitized <- deepseek_run_results_4$failed |>
+  mutate(
+    sanitized_text = sanitize_sensitive_content(combined_text)
+  )
+
+test_sanitized$sanitized_text
+```
+
+Create updated dataset
+```{r}
+round_4_failed_for_rerun <- deepseek_run_results_4$failed |> 
+  select(
+    aid_data_record_id:combined_text
+  ) |> 
+  mutate(
+    cleaned_text = sanitize_sensitive_content(combined_text)
+  ) |> 
+  select(
+    -combined_text,
+    combined_text = cleaned_text
+  ) |> 
+  mutate(
+    combined_text = sanitize_sensitive_names(combined_text)
+  )
+
+round_4_failed_for_rerun
+```
+
+
+Run it again.
+```{r}
+start_time <- Sys.time()
+results <- process_all_chunks(
+  round_4_failed_for_rerun,
+  chunk_size = 1,
+  chat_provider = "deepseek",  
+  output_dir = "data/llm_full_dataset",
+  run_name = "deepseek_full_dataset_round_5"
+)
+end_time <- Sys.time()
+beep(3)
+
+# # How long did it take?
+deepseek_time_elapsed_5 <- end_time - start_time
+deepseek_time_elapsed_5
+
+deepseek_time_elapsed_per_loan_5 <- deepseek_time_elapsed/300
+deepseek_time_elapsed_per_loan_5
+
+# Collect results
+deepseek_run_results_5 <- collect_results(
+  "data/llm_full_dataset",
+  chat_provider =  "deepseek",
+  run_id = "deepseek_full_dataset_round_5"
+)
+```
+
+Look at the results
+```{r}
+deepseek_run_results_5
+```
+
+
+
+Great. That worked!  
+
+Both were clearly Neutral, so nice to have that out of the way.
+
+# Constructing the full dataset
+
+```{r}
+full_dataset <- 
+  deepseek_run_results$successful |> 
+  bind_rows(
+    deepseek_run_results_2$successful
+  ) |> 
+  bind_rows(
+    deepseek_run_results_3$successful
+  ) |> 
+  bind_rows(
+    deepseek_run_results_4$successful
+  ) |> 
+  bind_rows(
+    deepseek_run_results_5$successful
+  ) 
+
+full_dataset
+```
+
+```{r}
+full_dataset |> glimpse()
+```
+```{r}
+# Check 1: Compare aid_data_record_ids
+id_check <- list(
+  all_gcdf_ids_in_full = all(gcdf_data_for_llm$aid_data_record_id %in% full_dataset$aid_data_record_id),
+  all_full_ids_in_gcdf = all(full_dataset$aid_data_record_id %in% gcdf_data_for_llm$aid_data_record_id),
+  n_unique_gcdf = n_distinct(gcdf_data_for_llm$aid_data_record_id),
+  n_unique_full = n_distinct(full_dataset$aid_data_record_id)
+)
+
+id_check
+```
+```{r}
+write_csv(
+  full_dataset,
+  here(
+    "data",
+    "llm_full_dataset",
+    "gcdf3_llm_classified_full.csv"
+  )
+)
+
+write_rds(
+  full_dataset,
+  here(
+    "data",
+    "llm_full_dataset",
+    "gcdf3_llm_classified_full.rds"
+  ),
+  compress = "xz"
+)
+```
+
+
+Create a subset that just has the AidData ID + the LLM output, for joining to the GCDF 3.0 dataset.
+
+```{r}
+full_dataset_for_join <- full_dataset |> 
+  select(
+    aid_data_record_id,
+    primary_class:evidence
+  )
+
+full_dataset_for_join
+```
+
+
+```{r}
+write_csv(
+  full_dataset_for_join,
+  here(
+    "data",
+    "llm_full_dataset",
+    "gcdf3_llm_classified_for_join.csv"
+  )
+)
+
+write_rds(
+  full_dataset_for_join,
+  here(
+    "data",
+    "llm_full_dataset",
+    "gcdf3_llm_classified_for_join.rds"
+  ),
+  compress = "xz"
+)
 ```
 
