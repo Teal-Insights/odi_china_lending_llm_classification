@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+97826,HEALTH,"Chinese Government donates USD 116,600 to Ethiopia for COVID-19 pandemic relief through the World Health Organization in March 2020","In March 2020, Chinese government provides USD 116,600 to support WHO response to COVID-19 outbreak in Ethiopia.   This project is captured in UNOCHA Financial Tracking Service as Flow ID #218738.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates USD 116,600 to Ethiopia for COVID-19 pandemic relief through the World Health Organization in March 2020
+
+# Description
+In March 2020, Chinese government provides USD 116,600 to support WHO response to COVID-19 outbreak in Ethiopia.   This project is captured in UNOCHA Financial Tracking Service as Flow ID #218738.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a humanitarian donation for pandemic relief, unrelated to energy or environmental impacts","COVID-19 pandemic relief through WHO, health sector focus"
+97827,EMERGENCY RESPONSE,"Chinese Government donates USD 34,789 to Ethiopia through the International Organization for Migration in May 2020","In May 2020, Chinese government provides USD 34,789 Emergency Shelter Support for Displaced Persons in Ethiopia.  This project is captured in UNOCHA Financial Tracking Service as Flow ID #219157.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government donates USD 34,789 to Ethiopia through the International Organization for Migration in May 2020
+
+# Description
+In May 2020, Chinese government provides USD 34,789 Emergency Shelter Support for Displaced Persons in Ethiopia.  This project is captured in UNOCHA Financial Tracking Service as Flow ID #219157.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on emergency humanitarian aid without clear environmental or energy transition impacts,"Emergency shelter support for displaced persons, humanitarian focus"
+68647,HEALTH,Chinese Government donates 52 carton boxes of medical supplies for COVID-19 response in May 2020 (linked to project #68648),"On 4 May 2020, the Chinese Ambassador to Fiji handed over medical supplies to Fiji Ministry of Health and Medical Services to aid in the fight against COVID-19. This donation is the first batch of Chinese anti-epidemic materials given to Fiji. The second donation arrived in June 2020 (see project ID#68648). The medical supplies are intended to aid in the protection of Fiji’s front-line medical staff.  The medical supplies include 52 boxes of medical supplies that contained 1000 pieces of medical disposable protective clothing, 1000 pieces of medical protective goggles, 100 pieces of infrared thermometers, 1000 pieces of N95 protective face masks for medical use, 500 pairs of disposable sterilized rubber surgical gloves and 500 pairs of medical isolation shoe covers. The donation is worth 270,000 Fijian dollars (about $119,880).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates 52 carton boxes of medical supplies for COVID-19 response in May 2020 (linked to project #68648)
+
+# Description
+On 4 May 2020, the Chinese Ambassador to Fiji handed over medical supplies to Fiji Ministry of Health and Medical Services to aid in the fight against COVID-19. This donation is the first batch of Chinese anti-epidemic materials given to Fiji. The second donation arrived in June 2020 (see project ID#68648). The medical supplies are intended to aid in the protection of Fiji’s front-line medical staff.  The medical supplies include 52 boxes of medical supplies that contained 1000 pieces of medical disposable protective clothing, 1000 pieces of medical protective goggles, 100 pieces of infrared thermometers, 1000 pieces of N95 protective face masks for medical use, 500 pairs of disposable sterilized rubber surgical gloves and 500 pairs of medical isolation shoe covers. The donation is worth 270,000 Fijian dollars (about $119,880).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare support and COVID-19 response, with no direct environmental or energy transition implications","Medical supplies donation including protective equipment, focus on healthcare system support"
+68648,HEALTH,"Chinese Government and Guangdong Province Donate Second Batch of Medical Supplies worth USD 900,000 to Fiji to Combat COVID-19 in June 2020 (linked to project ID#68647)","On 1 June 2020, the Chinese ambassador to Fiji participated in a handover of ceremony of medical supplies worth 100,000 and a grant of USD 800,000 to Fiji from China. The donation also involved the assistance from the Provincial Government of Guangdong. Ambassador Qian Bo and Fiji's Minister of Health attended the handover ceremony. This is the second batch of Chinese anti-epidemic materials given to Fiji. The first donation occurred in May 2020 (see project ID#68647).   The donation included 200,000 face masks, 200,000 pairs of surgical gloves, 50,000 protective suits, 10,000 COVID-19 test kits, 300 infrared thermometers, and USD 800,000.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government and Guangdong Province Donate Second Batch of Medical Supplies worth USD 900,000 to Fiji to Combat COVID-19 in June 2020 (linked to project ID#68647)
+
+# Description
+On 1 June 2020, the Chinese ambassador to Fiji participated in a handover of ceremony of medical supplies worth 100,000 and a grant of USD 800,000 to Fiji from China. The donation also involved the assistance from the Provincial Government of Guangdong. Ambassador Qian Bo and Fiji's Minister of Health attended the handover ceremony. This is the second batch of Chinese anti-epidemic materials given to Fiji. The first donation occurred in May 2020 (see project ID#68647).   The donation included 200,000 face masks, 200,000 pairs of surgical gloves, 50,000 protective suits, 10,000 COVID-19 test kits, 300 infrared thermometers, and USD 800,000.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a medical donation with no direct environmental or energy transition impact,"Donation of medical supplies and grant for COVID-19 response, healthcare focus"
+89643,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Guangzhou Municipal People's Government donates two buses to the Fiji Rugby Union,"On May 21, 2020, the handover ceremony of two buses donated by the Guangzhou Municipal People's Government to the Fiji Rugby Union took place in Suva, Fiji. The buses will provide convenient transportation for Fiji rugby players to train daily and participate in competitions, and help the development of sports and youth in Fiji.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Guangzhou Municipal People's Government donates two buses to the Fiji Rugby Union
+
+# Description
+On May 21, 2020, the handover ceremony of two buses donated by the Guangzhou Municipal People's Government to the Fiji Rugby Union took place in Suva, Fiji. The buses will provide convenient transportation for Fiji rugby players to train daily and participate in competitions, and help the development of sports and youth in Fiji.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on social development through sports infrastructure support,"Donation of buses for rugby team transportation, supporting sports and youth development"
+90297,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"Chinese Embassy in Fiji Sponsors Volleyball Court in Nausori, Fiji","On March 4, 2020 the Chinese ambassador to Fiji attended a concrete pouring ceremony for a volleyball court being constructed on JP Maharaj Street in Nakasi in Fiji. The project was completed on August 19, 2020. The project was sponsored by the Chinese embassy in Fiji.   The court was constructed by China Railway First Bureau Fiji Company. It was expected that the volleyball court would be completed by the end of March, but it was delayed because of the pandemic.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Embassy in Fiji Sponsors Volleyball Court in Nausori, Fiji
+
+# Description
+On March 4, 2020 the Chinese ambassador to Fiji attended a concrete pouring ceremony for a volleyball court being constructed on JP Maharaj Street in Nakasi in Fiji. The project was completed on August 19, 2020. The project was sponsored by the Chinese embassy in Fiji.   The court was constructed by China Railway First Bureau Fiji Company. It was expected that the volleyball court would be completed by the end of March, but it was delayed because of the pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a community sports facility with no direct environmental or energy transition impact,"Construction of volleyball court, social infrastructure project"
+90298,EMERGENCY RESPONSE,"Chinese Embassy in Fiji donates 420,000 FJD to Fiji for Hurricane Yasa relief","On December 30, 2020 the Chinese Ambassador to Fiji, Qian Bo, transferred 420,000 FJD to the Fijian government upon meeting with the Prime Minister, Frank Bainimarama. The money is an emergency form of humanitarian assistance from China to Fiji. The money was wired to the Prime Minister's National Disaster Relief and Rehabilitation Fund.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Embassy in Fiji donates 420,000 FJD to Fiji for Hurricane Yasa relief
+
+# Description
+On December 30, 2020 the Chinese Ambassador to Fiji, Qian Bo, transferred 420,000 FJD to the Fijian government upon meeting with the Prime Minister, Frank Bainimarama. The money is an emergency form of humanitarian assistance from China to Fiji. The money was wired to the Prime Minister's National Disaster Relief and Rehabilitation Fund.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian assistance for disaster relief with no direct environmental or energy transition impact,"Emergency humanitarian assistance, disaster relief fund, no infrastructure or energy components"
+90705,HEALTH,"China donates FJD 310,000 in pandemic aid to Fiji in December 2020","On December 7, 2020 at the Fiji Parliament building, Chinese Ambassador to Fiji, Qian Bo, met with Mr. Bainimarama, the Prime Minister of Fiji. He delivered FJD 310,000 in aid for the prevention and treatment of COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+China donates FJD 310,000 in pandemic aid to Fiji in December 2020
+
+# Description
+On December 7, 2020 at the Fiji Parliament building, Chinese Ambassador to Fiji, Qian Bo, met with Mr. Bainimarama, the Prime Minister of Fiji. He delivered FJD 310,000 in aid for the prevention and treatment of COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and pandemic response without direct environmental or energy transition implications,"COVID-19 prevention and treatment aid, healthcare sector focus"
+90779,"AGRICULTURE, FORESTRY, FISHING","Chinese Ministry of Agriculture donates combine harvester worth USD 60,00 to Fijian farmers","On June 30, 2020, a representative from the Chinese Ministry of Agriculture and Fijian Prime Minister Bainimarama presided over the handover ceremony of a rice combine harvester worth USD 60,000. This was part of an event dedicated to diversifying Fiji's food supply and improving sufficiency.   The Chinese department of agriculture donated the machine to the Prime Minister, who subsequently gave it to the farmers. The harvester was donated to rice farmers in Vunivau-Tiritiri.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Ministry of Agriculture donates combine harvester worth USD 60,00 to Fijian farmers
+
+# Description
+On June 30, 2020, a representative from the Chinese Ministry of Agriculture and Fijian Prime Minister Bainimarama presided over the handover ceremony of a rice combine harvester worth USD 60,000. This was part of an event dedicated to diversifying Fiji's food supply and improving sufficiency.   The Chinese department of agriculture donated the machine to the Prime Minister, who subsequently gave it to the farmers. The harvester was donated to rice farmers in Vunivau-Tiritiri.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on agricultural development and food security without clear environmental or energy transition impacts,"Donation of combine harvester for rice farming, focus on food supply diversification and sufficiency"
+91039,EMERGENCY RESPONSE,"China Fiji donates FJD 220,000 for Tropical Cyclone Harold relief","On April 21st, 2020, the Chinese Embassy in Fiji held a donation ceremony for  FJD 220,000 from China to the Fijian Prime Minister's National Disaster Relief and Rehabilitation Fund. The aid was intended for Tropical Cyclone Harold relief, which destroyed many homes and businesses in Fiji.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China Fiji donates FJD 220,000 for Tropical Cyclone Harold relief
+
+# Description
+On April 21st, 2020, the Chinese Embassy in Fiji held a donation ceremony for  FJD 220,000 from China to the Fijian Prime Minister's National Disaster Relief and Rehabilitation Fund. The aid was intended for Tropical Cyclone Harold relief, which destroyed many homes and businesses in Fiji.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on disaster relief and humanitarian aid, with no direct environmental or energy transition implications","Donation for Tropical Cyclone Harold relief, humanitarian aid focus"

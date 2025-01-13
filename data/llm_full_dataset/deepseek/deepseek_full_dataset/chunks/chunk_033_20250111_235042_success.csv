@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+97204,HEALTH,Chinese Government provides COVID-19 supplies worth USD 1.6 million to Government of Dominica for pandemic relief,"On September 10, 2021, the Chinese Government handed over a donation of anti-COVID-19 supplies to Dominica. The packages included COVID-19 test kits. The supplies included 10,000 PCR test kits and 30,000 rapid antigen test kits. The grant was worth USD 1.6 million.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides COVID-19 supplies worth USD 1.6 million to Government of Dominica for pandemic relief
+
+# Description
+On September 10, 2021, the Chinese Government handed over a donation of anti-COVID-19 supplies to Dominica. The packages included COVID-19 test kits. The supplies included 10,000 PCR test kits and 30,000 rapid antigen test kits. The grant was worth USD 1.6 million.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare and pandemic relief without direct environmental or energy transition impacts,"COVID-19 test kits, healthcare supplies, pandemic relief focus"
+97205,HEALTH,"Chinese government provides 20,000 COVID-19 vaccines to Government of Dominica in February 2021 for pandemic relief","In mid-February 2021, the Chinese Government announced its intention to grant 20,000 COVID-19 vaccines to the Dominican government as part of its donation of 10 million COVID-19 vaccines to the global COVID-19 Vaccine Global Access (COVAX) initiative. According to Dominica News Online, an official handover ceremony for the vaccines was held on March 4, 2021. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government provides 20,000 COVID-19 vaccines to Government of Dominica in February 2021 for pandemic relief
+
+# Description
+In mid-February 2021, the Chinese Government announced its intention to grant 20,000 COVID-19 vaccines to the Dominican government as part of its donation of 10 million COVID-19 vaccines to the global COVID-19 Vaccine Global Access (COVAX) initiative. According to Dominica News Online, an official handover ceremony for the vaccines was held on March 4, 2021. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare provision with no direct environmental or energy transition impact,"COVID-19 vaccine donation, healthcare sector focus"
+97206,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese embassy provides table tennis tables of unspecified value to the Government of Dominica,"On December 7, 2021, the Chinese Embassy in Dominica donated table tennis tables to the Dominican government. The ceremony took place at Windsor Park Stadium in Roseau, the capital of Dominica. The monetary value of the donation is unknown.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese embassy provides table tennis tables of unspecified value to the Government of Dominica
+
+# Description
+On December 7, 2021, the Chinese Embassy in Dominica donated table tennis tables to the Dominican government. The ceremony took place at Windsor Park Stadium in Roseau, the capital of Dominica. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of sports equipment with no clear environmental or energy transition impact,"Donation of table tennis tables, social development focus"
+97207,HEALTH,Chinese Government donates masks and test kits of unspecified value to Dominica in February 2021,"During the last week of February 2021, the Chinese Government handed over a donation of 110,000 N95 and surgical masks and thousands of test kits to the Dominican government, according to local media source Dominica News Online and the Chinese Ministry of Commerce. The monetary value of these donations is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates masks and test kits of unspecified value to Dominica in February 2021
+
+# Description
+During the last week of February 2021, the Chinese Government handed over a donation of 110,000 N95 and surgical masks and thousands of test kits to the Dominican government, according to local media source Dominica News Online and the Chinese Ministry of Commerce. The monetary value of these donations is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of masks and test kits for healthcare purposes
+97208,HEALTH,China’s National Health Commission (NHC) donated cardiology related medical equipment and supplies to Dominica-China Friendship Hospital,"China’s National Health Commission (NHC, 中华人民共和国国家卫生健康委员会) donated cardiology related medical equipment and supplies to support the establishment of Dominica’s first cardiology department in the Dominica-China Friendship Hospital (中多友谊医院). This cardiology department was officially opened with a formal launching ceremony on May 21, 2021.  On May 22, 2021, doctors at the Dominica-China Friendship Hospital utilized the equipment to conduct the first temporary pacemaker implant implemented in the hospital's history. They were able to resuscitate the life of a critically ill patient who suffered from severe bradycardia (very low heart rate).",NA,"# Sector
+HEALTH
+
+# Title
+China’s National Health Commission (NHC) donated cardiology related medical equipment and supplies to Dominica-China Friendship Hospital
+
+# Description
+China’s National Health Commission (NHC, 中华人民共和国国家卫生健康委员会) donated cardiology related medical equipment and supplies to support the establishment of Dominica’s first cardiology department in the Dominica-China Friendship Hospital (中多友谊医院). This cardiology department was officially opened with a formal launching ceremony on May 21, 2021.  On May 22, 2021, doctors at the Dominica-China Friendship Hospital utilized the equipment to conduct the first temporary pacemaker implant implemented in the hospital's history. They were able to resuscitate the life of a critically ill patient who suffered from severe bradycardia (very low heart rate).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical equipment for healthcare purposes without direct environmental or energy transition impacts,"Cardiology related medical equipment and supplies, establishment of cardiology department, healthcare focus"
+97209,"AGRICULTURE, FORESTRY, FISHING","Chinese Government donates over 300,000 seedlings to Dominica for Agricultural Technical Cooperation Project [linked to Project #56148 and #56179]","In the 2021-2022 fiscal year, the Chinese Government donated 300,000 high quality vegetable seedlings and 6,427 fruit tree seedlings to the Dominica Government under the China-aided Dominica Agricultural Technical Cooperation Project (中国援多农业技术合作项目). The monetary value of the grant is unknown.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Government donates over 300,000 seedlings to Dominica for Agricultural Technical Cooperation Project [linked to Project #56148 and #56179]
+
+# Description
+In the 2021-2022 fiscal year, the Chinese Government donated 300,000 high quality vegetable seedlings and 6,427 fruit tree seedlings to the Dominica Government under the China-aided Dominica Agricultural Technical Cooperation Project (中国援多农业技术合作项目). The monetary value of the grant is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Agricultural development project focused on food production and technical cooperation without clear environmental or energy transition impacts,"Donation of vegetable and fruit tree seedlings, agricultural technical cooperation focus"
+97313,HEALTH,"China sends fourth medical team to Dominica in the fifth phase of the China-aided medical service cooperation project (linked to project ID#73211, #91554, and #97208)","In 2021, a medical team from China arrived in Dominica as part of the China-aided medical service cooperation project in Dominica. The team was comprised of four consultants from the Sun Yat-Sen University in Guangdong, China: cardiologist (Dr. Dexi Wu), urologist (Dr. Hao Zhang), ophthalmologist (Dr. Fan Duan), and oncologist (Dr. Qiaoqiao Li). Three of the doctors were posted in Dominica for a one-year term of service at the China-Dominica Friendship Hospital. Dr. Qiaoqiao Li, the fourth doctor, had been living and working in Dominica for over three years.  The team was instrumental in assisting with procurement of medical supplies and equipment. The main objective of the Chinese medical team was to build capacity at major departments in the hospital, with close cooperation with the Dominican Ministry of Health in terms of medical exchange and training.  Lin Xianjiang, the Chinese Ambassador to Dominica, met the four consultants on December 28, 2021. A farewell ceremony for this team of consultants was held in September 2022. The umbrella project for all phases of the medical team project in Dominica is #73211.",NA,"# Sector
+HEALTH
+
+# Title
+China sends fourth medical team to Dominica in the fifth phase of the China-aided medical service cooperation project (linked to project ID#73211, #91554, and #97208)
+
+# Description
+In 2021, a medical team from China arrived in Dominica as part of the China-aided medical service cooperation project in Dominica. The team was comprised of four consultants from the Sun Yat-Sen University in Guangdong, China: cardiologist (Dr. Dexi Wu), urologist (Dr. Hao Zhang), ophthalmologist (Dr. Fan Duan), and oncologist (Dr. Qiaoqiao Li). Three of the doctors were posted in Dominica for a one-year term of service at the China-Dominica Friendship Hospital. Dr. Qiaoqiao Li, the fourth doctor, had been living and working in Dominica for over three years.  The team was instrumental in assisting with procurement of medical supplies and equipment. The main objective of the Chinese medical team was to build capacity at major departments in the hospital, with close cooperation with the Dominican Ministry of Health in terms of medical exchange and training.  Lin Xianjiang, the Chinese Ambassador to Dominica, met the four consultants on December 28, 2021. A farewell ceremony for this team of consultants was held in September 2022. The umbrella project for all phases of the medical team project in Dominica is #73211.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project focuses on healthcare capacity building and medical services, with no direct environmental or energy transition impact","Medical team deployment, capacity building at hospital, medical exchange and training, procurement of medical supplies and equipment"
+95392,HEALTH,Chinese Government donates 1.05 million Sinovac and Sinopharm Covid-19 vaccine doses worth $18.9 million in March 2021,"On March 17, 2021 Chinese Government delivered 1.05 million donated doses of Covid-19 vaccines — including 1 million Sinovac doses and 50,000 Sinopharm doses — and 51,200 syringes to the Government of Dominican Republic. Then, on June 3, 2021, the Chinese Government delivered another 1 million donated doses of Sinovac Covid-19 vaccines — as well as 2.7 million syringes and 178,000 masks — to the Government of Dominican Republic.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm/Sinovac COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the March 2021 donation as $18.9 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 1.05 million Sinovac and Sinopharm Covid-19 vaccine doses worth $18.9 million in March 2021
+
+# Description
+On March 17, 2021 Chinese Government delivered 1.05 million donated doses of Covid-19 vaccines — including 1 million Sinovac doses and 50,000 Sinopharm doses — and 51,200 syringes to the Government of Dominican Republic. Then, on June 3, 2021, the Chinese Government delivered another 1 million donated doses of Sinovac Covid-19 vaccines — as well as 2.7 million syringes and 178,000 masks — to the Government of Dominican Republic.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is focused on healthcare delivery with no direct environmental or energy transition impact,"Donation of Covid-19 vaccines, syringes, and masks for public health purposes"
+95393,HEALTH,Chinese Government donates 1 million Sinovac Covid-19 vaccine doses worth $18 million in June 2021,"On March 17, 2021 Chinese Government delivered 1.05 donated doses of Covid-19 vaccines — including 1 million Sinovac doses and 50,000 Sinopharm doses — and 51,200 syringes to the Government of Dominican Republic. Then, on June 3, 2021, the Chinese Government delivered another 1 million donated doses of Sinovac Covid-19 vaccines — as well as 2.7 million syringes and 178,000 masks — to the Government of Dominican Republic.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinovac COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the June 2021 donation as $18 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 1 million Sinovac Covid-19 vaccine doses worth $18 million in June 2021
+
+# Description
+On March 17, 2021 Chinese Government delivered 1.05 donated doses of Covid-19 vaccines — including 1 million Sinovac doses and 50,000 Sinopharm doses — and 51,200 syringes to the Government of Dominican Republic. Then, on June 3, 2021, the Chinese Government delivered another 1 million donated doses of Sinovac Covid-19 vaccines — as well as 2.7 million syringes and 178,000 masks — to the Government of Dominican Republic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Covid-19 vaccine doses, syringes, and masks donated for healthcare purposes"
+97217,HEALTH,"Chinese embassy donates 64 respirators and 100,000 masks to the Dominican Republic in March 2021","On March 11, 2021, the Chinese Embassy donated 64 respirators and 100,000 masks to the Dominican Republic through the Vice Ministry of International Cooperation, of the Ministry of Economy, Planning and Development. The donation was carried out in coordination with the Health Cabinet and was delivered to the National Health Service, the entity responsible for carrying out the distribution of the donation in the different health centers of the country. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese embassy donates 64 respirators and 100,000 masks to the Dominican Republic in March 2021
+
+# Description
+On March 11, 2021, the Chinese Embassy donated 64 respirators and 100,000 masks to the Dominican Republic through the Vice Ministry of International Cooperation, of the Ministry of Economy, Planning and Development. The donation was carried out in coordination with the Health Cabinet and was delivered to the National Health Service, the entity responsible for carrying out the distribution of the donation in the different health centers of the country. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of respirators and masks for healthcare purposes

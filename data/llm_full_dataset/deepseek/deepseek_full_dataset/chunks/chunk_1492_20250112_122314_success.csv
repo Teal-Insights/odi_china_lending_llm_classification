@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+54506,WATER SUPPLY AND SANITATION,Chinese Government provides $1 million loan for improvement of waste water treatment system of Samarkand (Linked to Project ID#54507),"In 2008, the Chinese Government provided a $1 million loan to the Government of Uzbekistan for the improvement of the wastewater treatment system of Samarkand. The total investment for the project was $1.1 million. The treatment plant's reconstruction was completed at the end of 2017 after starting in 2009.","1. This project is recorded in a 2008 IMF report, but loan may have been issued before 2008. This issue warrants further investigation.2. This project is linked to a similar project in Bukhara (captured via Project ID#54507).","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides $1 million loan for improvement of waste water treatment system of Samarkand (Linked to Project ID#54507)
+
+# Description
+In 2008, the Chinese Government provided a $1 million loan to the Government of Uzbekistan for the improvement of the wastewater treatment system of Samarkand. The total investment for the project was $1.1 million. The treatment plant's reconstruction was completed at the end of 2017 after starting in 2009.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"Project focuses on wastewater treatment system improvement, which is unrelated to energy transition goals","Wastewater treatment system improvement, no energy-related components mentioned"
+54507,WATER SUPPLY AND SANITATION,Chinese Government provides $1 million loan for improvement of waste water treatment system of Bukhara (Linked to Project ID#54506),"In 2008, the Chinese Government provided a $1 million loan to the Government of Uzbekistan for the improvement of the wastewater treatment system of Samarkand. The total investment for the project was $1.1 million. The project was approved on August 4, 2009 with construction starting on September 30, 2013. The project was completed on November 30, 2021.","1. This project is recorded in a 2008 IMF report, but loan may have been issued before 2008. This issue warrants further investigation.2. This project is linked to a similar commitment in Samarkand (as captured via Project ID#54506)","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides $1 million loan for improvement of waste water treatment system of Bukhara (Linked to Project ID#54506)
+
+# Description
+In 2008, the Chinese Government provided a $1 million loan to the Government of Uzbekistan for the improvement of the wastewater treatment system of Samarkand. The total investment for the project was $1.1 million. The project was approved on August 4, 2009 with construction starting on September 30, 2013. The project was completed on November 30, 2021.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water treatment infrastructure without clear energy transition implications,"Wastewater treatment system improvement, no energy-related components mentioned"
+54508,WATER SUPPLY AND SANITATION,"Chinese Government loans $19.1 million for reconstruction of the water intake facility WF-1, WF-3 in Tashkent oblast","In 2008, China provided a $19.1 million government loan in 2008 for reconstruction of the water intake facility WF-1, WF-3 for water supply to the rural population of Chinaz, and part of Yangy-Uyl rayon of Tashkent oblast. Current project status and loan details are unknown.","Project reported in 2008 Uzbekistan IMF report, but exact commitment year is uncertain. Project could not be confirmed with any additional sources.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government loans $19.1 million for reconstruction of the water intake facility WF-1, WF-3 in Tashkent oblast
+
+# Description
+In 2008, China provided a $19.1 million government loan in 2008 for reconstruction of the water intake facility WF-1, WF-3 for water supply to the rural population of Chinaz, and part of Yangy-Uyl rayon of Tashkent oblast. Current project status and loan details are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Water supply infrastructure project with no clear environmental or energy transition impacts,"Reconstruction of water intake facility for rural water supply, no energy-related components mentioned"
+54509,WATER SUPPLY AND SANITATION,Chinese Government provides a $40 million USD for the improvement of water supply of Jizzakh,"In 2008, the Chinese Government provided a $40 million USD government loan to Uzbekistan for improvement of the water supply of Jizzakh. Total investments in the project was $42.1 million. Loan and project details are unknown.","This project is recorded in 2008 IMF report, but loan could have been committed earlier, so commitment year has been estimated. Project could not be confirmed with any additional sources.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides a $40 million USD for the improvement of water supply of Jizzakh
+
+# Description
+In 2008, the Chinese Government provided a $40 million USD government loan to Uzbekistan for improvement of the water supply of Jizzakh. Total investments in the project was $42.1 million. Loan and project details are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"Project focuses on water supply improvement, which is unrelated to energy transition or direct environmental impact","Water supply improvement project, no energy-related components mentioned"
+54510,WATER SUPPLY AND SANITATION,Chinese Government provides a $19.9 million USD loan for expansion and reconstruction of sewage treatment plants of Chirchik,"In 2008, the Chinese Government provided a government loan of $19.9 million USD to Uzbekistan for the expansion and reconstruction of the sewage treatment plants of Chirchik. Total investments for the project were $20.9 million USD. Loan and project details are unknown","This project was recorded in Uzbekistan's 2008 IMF report, but loan could have been committed earlier, so the commitment year has been estimated. Project could not be confirmed with any additional sources.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides a $19.9 million USD loan for expansion and reconstruction of sewage treatment plants of Chirchik
+
+# Description
+In 2008, the Chinese Government provided a government loan of $19.9 million USD to Uzbekistan for the expansion and reconstruction of the sewage treatment plants of Chirchik. Total investments for the project were $20.9 million USD. Loan and project details are unknown",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply and sanitation infrastructure without clear environmental or energy transition impacts,"Expansion and reconstruction of sewage treatment plants, water supply and sanitation sector"
+54511,WATER SUPPLY AND SANITATION,Chinese Government provides a $15 million USD for the reconstruction and expansion of sewage treatment plants of Namangan,"In 2008, the Chinese Government provided a $15 million USD government loan to Uzbekistan for the reconstruction and expansion of the sewage treatment plants of Namangan. Total investments for the project were $15.8 million USD. Additional loan and project details are unknown.","This project was recorded in Uzbekistan's 2008 IMF report, but loan could have been committed earlier, so the commitment year has been estimated. This project could not be confirmed with any additional sources.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides a $15 million USD for the reconstruction and expansion of sewage treatment plants of Namangan
+
+# Description
+In 2008, the Chinese Government provided a $15 million USD government loan to Uzbekistan for the reconstruction and expansion of the sewage treatment plants of Namangan. Total investments for the project were $15.8 million USD. Additional loan and project details are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply and sanitation infrastructure without clear environmental or energy transition impacts,"Reconstruction and expansion of sewage treatment plants, water supply and sanitation sector"
+54512,WATER SUPPLY AND SANITATION,China loans $14.3 million for development of the water pipe network in the Republic of Karakalpakstan,"China provided a government loan of $14.3 million to Uzbekistan for the development of the water pipe network in the cities and settlements of the Republic of Karakalpakstan, an autonomous region within Uzbekistan, as reported by Uzbekistan's 2008 IMF country report. Current project status and loan details are unknown.","Project was recorded in Uzbekistan's 2008 IMF report but loan could have been committed earlier, so year is marked uncertain.This project could not be confirmed by any other sources.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China loans $14.3 million for development of the water pipe network in the Republic of Karakalpakstan
+
+# Description
+China provided a government loan of $14.3 million to Uzbekistan for the development of the water pipe network in the cities and settlements of the Republic of Karakalpakstan, an autonomous region within Uzbekistan, as reported by Uzbekistan's 2008 IMF country report. Current project status and loan details are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Water supply infrastructure project with no direct environmental or energy transition impacts,"Development of water pipe network, focus on water supply and sanitation"
+54515,WATER SUPPLY AND SANITATION,China Eximbank provides $8.8 million loan for rehabilitation of the pump station 'Ulugnar' in Andijan oblast,"In 2008, China Eximbank provided an $8.8 million loan to the Government of Uzbekistan for a pumping station located in the Ulugnar district within the Andijan oblast. This project was reportedly completed in 2010. China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation.","Project was recorded in the 2008 IMF report but loan could have been committed earlier, so year is marked uncertain.","# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China Eximbank provides $8.8 million loan for rehabilitation of the pump station 'Ulugnar' in Andijan oblast
+
+# Description
+In 2008, China Eximbank provided an $8.8 million loan to the Government of Uzbekistan for a pumping station located in the Ulugnar district within the Andijan oblast. This project was reportedly completed in 2010. China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply infrastructure without clear environmental or energy transition impacts,"Pump station rehabilitation, water supply and sanitation sector"
+54516,WATER SUPPLY AND SANITATION,China Eximbank provides $6 million loan for rehabilitation of Gulbakhor pumping station in Andijan oblast,"On October 2, 2008, China Eximbank and the National Bank for Foreign Economic Activity of Uzbekistan signed a $5,759,830 loan agreement for the rehabilitation of Gulbakhor pumping station in Andijan oblast. The loan carried the following terms: 20 year maturity, 5 year grace period. 2% interest rate, 0.3% commitment fee, and 0.3% management fee. The National Bank for Foreign Economic Activity of Uzbekistan use the proceeds of this loan to on-lend to an unidentified entity at a 2.2% interest rate.  China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation. This project was reportedly completed in 2010.",1. The Russian name of this project is  «Реконструкция насосной станции «Гульбахор 1К».,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China Eximbank provides $6 million loan for rehabilitation of Gulbakhor pumping station in Andijan oblast
+
+# Description
+On October 2, 2008, China Eximbank and the National Bank for Foreign Economic Activity of Uzbekistan signed a $5,759,830 loan agreement for the rehabilitation of Gulbakhor pumping station in Andijan oblast. The loan carried the following terms: 20 year maturity, 5 year grace period. 2% interest rate, 0.3% commitment fee, and 0.3% management fee. The National Bank for Foreign Economic Activity of Uzbekistan use the proceeds of this loan to on-lend to an unidentified entity at a 2.2% interest rate.  China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation. This project was reportedly completed in 2010.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply infrastructure rehabilitation without clear environmental or energy transition impacts,"Rehabilitation of Gulbakhor pumping station, water supply and sanitation sector"
+54517,WATER SUPPLY AND SANITATION,China Eximbank provides $2.1 million loan for rehabilitation of the Raish Khakent-1 pumping station in Andijan oblast (linked to #72138),"On September 12, 2008, China Eximbank and the National Bank for Foreign Economic Activity of Uzbekistan signed a $2.1 million loan agreement for the rehabilitation Raish Khakent-1 (or RaishKhakent-1) pumping station located within the Andijan oblast. This loan carried the following terms: 15 year maturity, 5 year grace period, 3% interest rate, 0.3% management fee, and 0.3% commitment. National Bank for Foreign Economic Activity of Uzbekistan use the proceeds of this loan to on-lend to an unidentified entity at a 3.2% interest rate.  China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation. According to the President's office source, the project had a set completion date of October 1, 2010. This project was reportedly completed in 2010.  This project is linked to a loan for Raish Khakent-2 in 2014 (captured in #72138).",The Russian project title is Реконструкция насосной станции «Раиш-Хакент-1» в Андижанской области.,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China Eximbank provides $2.1 million loan for rehabilitation of the Raish Khakent-1 pumping station in Andijan oblast (linked to #72138)
+
+# Description
+On September 12, 2008, China Eximbank and the National Bank for Foreign Economic Activity of Uzbekistan signed a $2.1 million loan agreement for the rehabilitation Raish Khakent-1 (or RaishKhakent-1) pumping station located within the Andijan oblast. This loan carried the following terms: 15 year maturity, 5 year grace period, 3% interest rate, 0.3% management fee, and 0.3% commitment. National Bank for Foreign Economic Activity of Uzbekistan use the proceeds of this loan to on-lend to an unidentified entity at a 3.2% interest rate.  China National Electric Equipment Corporation (CNEEC) was the contractor responsible for project implementation. According to the President's office source, the project had a set completion date of October 1, 2010. This project was reportedly completed in 2010.  This project is linked to a loan for Raish Khakent-2 in 2014 (captured in #72138).",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply infrastructure rehabilitation without clear environmental or energy transition impacts,"Rehabilitation of pumping station, water supply and sanitation sector"

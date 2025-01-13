@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92253,HEALTH,Chinese government donates first batch of anti-epidemic materials to Thailand in 2020,"On March 24th, 2020, the Chinese government donated its first batch of anti-epidemic materials to Thailand in a handover ceremony at the Thai Ministry of Public Health office in Bangkok, Thailand. The equipment included masks, testing kits, protective clothing, and more.   The ceremony was attended by Chargé d'Affaires of the Chinese Embassy to Thailand Yang Xin and Deputy Prime Minister and Minister of Health of Thailand Anutin Charnvirakul. The materials arrived on March 23, 2020 at the Suvarnabhumi Airport.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates first batch of anti-epidemic materials to Thailand in 2020
+
+# Description
+On March 24th, 2020, the Chinese government donated its first batch of anti-epidemic materials to Thailand in a handover ceremony at the Thai Ministry of Public Health office in Bangkok, Thailand. The equipment included masks, testing kits, protective clothing, and more.   The ceremony was attended by Chargé d'Affaires of the Chinese Embassy to Thailand Yang Xin and Deputy Prime Minister and Minister of Health of Thailand Anutin Charnvirakul. The materials arrived on March 23, 2020 at the Suvarnabhumi Airport.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Anti-epidemic materials including masks, testing kits, protective clothing; healthcare sector focus"
+92854,HEALTH,Chinese Embassy and ICBC donated medical masks to Siriaj Public Hospital in Thailand,"On May 20th, 2020, the Industrial and Commercial Bank of China (ICBC) in conjunction with the Chinese Embassy, donated 51,200 medical masks to the Siriaj Public Hospital.  The Chairman of the Board of Directors, Dr. Zhigang Li, with Executive Vice President Mrs. Orapin Sreesangkom handed over the donation.","1. From May 19th through the 22nd, mask donations were made to the Thai Red Cross (Project ID# 91596) and various hospitals (Project ID#92855, #92856, #92857, #92858). These donations totaled to 120,000 masks. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy and ICBC donated medical masks to Siriaj Public Hospital in Thailand
+
+# Description
+On May 20th, 2020, the Industrial and Commercial Bank of China (ICBC) in conjunction with the Chinese Embassy, donated 51,200 medical masks to the Siriaj Public Hospital.  The Chairman of the Board of Directors, Dr. Zhigang Li, with Executive Vice President Mrs. Orapin Sreesangkom handed over the donation.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of medical masks to hospital, healthcare focus"
+92855,HEALTH,Chinese Embassy and ICBC donated medical masks to the Ramathibodi Hospital in Thailand,"On May 21, 2020, the Industrial and Commercial Bank of China (ICBC) along with the Chinese Embassy in Thailand donated medical masks to the Ramathibodi Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Rajavithi hospital (Project ID#92856).","1. From May 19th through the 22nd, mask donations were made to the Thai Red Cross (Project ID# 91596) and various hospitals (Project ID#92854, #92856, #92857, #92858). These donations totaled to 120,000 masks. The exact number of masks to Rajavithi and  Ramathibodi Hospitals, as well as Bamrasnaradura Infectious Diseases Institute  and King Chulalongkorn Memorial Hospital is unkown. The aggregate for these hospitals is 8,800.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy and ICBC donated medical masks to the Ramathibodi Hospital in Thailand
+
+# Description
+On May 21, 2020, the Industrial and Commercial Bank of China (ICBC) along with the Chinese Embassy in Thailand donated medical masks to the Ramathibodi Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Rajavithi hospital (Project ID#92856).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to healthcare facilities, with no direct environmental or energy transition impact","Donation of medical masks to hospitals, healthcare sector focus"
+92856,HEALTH,Chinese Embassy in Thailand and ICBC donated medical masks to the Rajavithi Hospital.,"On May 21, 2020, the Chinese Embassy and the Industrial and Commercial Bank of China (ICBC) in Thailand donated medical masks to the Rajavithi Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Ramathibodi hospital. (project 92855)","1. From May 19th through the 22nd, mask donations were made to the Thai Red Cross (Project ID# 91596) and various hospitals (Project ID#92854, #92855, #92857, #92858). These donations totaled to 120,000 masks. The exact number of masks to Rajavithi and Ramathibodi Hospitals, as well as Bamrasnaradura Infectious Diseases Institute and King Chulalongkorn Memorial Hospital is unkown. The aggregate for these hospitals is 8,800.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Thailand and ICBC donated medical masks to the Rajavithi Hospital.
+
+# Description
+On May 21, 2020, the Chinese Embassy and the Industrial and Commercial Bank of China (ICBC) in Thailand donated medical masks to the Rajavithi Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Ramathibodi hospital. (project 92855)",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to hospitals, with no direct environmental or energy transition impact","Donation of medical masks to hospitals, healthcare sector focus"
+92857,HEALTH,Chinese Embassy and ICBC in Thailand donated medical masks to the Bamrasnaradura Infectious Diseases Institute,"On May 22, 2020, the Industrial and Commercial Bank of China (ICBC) with Chinese Embassy in Thailand donated medical masks to the Bamrasnaradura Infectious Diseases Institute. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the King Chulalongkorn Memorial Hospital (Project ID#92858).","1. From May 19th through the 22nd, mask donations were made to the Thai Red Cross (Project ID# 91596) and various hospitals (Project ID#92854, #92855, #92856, #92858). These donations totaled to 120,000 masks. The exact number of masks to Rajavithi and Ramathibodi Hospitals, as well as Bamrasnaradura Infectious Diseases Institute and King Chulalongkorn Memorial Hospital is unkown. The aggregate for these hospitals is 8,800.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy and ICBC in Thailand donated medical masks to the Bamrasnaradura Infectious Diseases Institute
+
+# Description
+On May 22, 2020, the Industrial and Commercial Bank of China (ICBC) with Chinese Embassy in Thailand donated medical masks to the Bamrasnaradura Infectious Diseases Institute. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the King Chulalongkorn Memorial Hospital (Project ID#92858).",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical mask donation to healthcare institutions, no energy-related components"
+92858,HEALTH,Chinese Embassy and ICBC donated medical masks to the King Chulalongkorn Memorial Hospital in Thailand,"On May 22, 2020, the Industrial and Commercial Bank of China (ICBC) and Chinese Embassy in Thailand donated medical masks to the King Chulalongkorn Memorial Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Bamrasnaradura Infectious Diseases Institute (Project ID#92857).","1. From May 19th through the 22nd, mask donations were made to the Thai Red Cross (Project ID# 91596) and various hospitals (Project ID#92854, #92855, #92856, #92857). These donations totaled to 120,000 masks. The exact number of masks to Rajavithi and Ramathibodi Hospitals, as well as Bamrasnaradura Infectious Diseases Institute and King Chulalongkorn Memorial Hospital is unkown. The aggregate for these hospitals is 8,800.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy and ICBC donated medical masks to the King Chulalongkorn Memorial Hospital in Thailand
+
+# Description
+On May 22, 2020, the Industrial and Commercial Bank of China (ICBC) and Chinese Embassy in Thailand donated medical masks to the King Chulalongkorn Memorial Hospital. The exact number of masks is unknown.  The Chairman of the Board of Directors, Dr. Zhigang Li handed over the donation. On the same day, masks were also donated to the Bamrasnaradura Infectious Diseases Institute (Project ID#92857).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to healthcare facilities, with no direct environmental or energy transition impact","Donation of medical masks to hospitals, healthcare sector focus"
+98130,HEALTH,"Nanning Municipal Government donates 3,000 N95 masks to Khon Kaen","In late March 2020, Nanning Municipal Government donated 3,000 N95 masks to the city of Khon Kaen city, Thailand.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Nanning Municipal Government donates 3,000 N95 masks to Khon Kaen
+
+# Description
+In late March 2020, Nanning Municipal Government donated 3,000 N95 masks to the city of Khon Kaen city, Thailand.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on healthcare support without direct environmental or energy transition implications,Donation of N95 masks for healthcare purposes
+90657,HEALTH,Chinese Embassy in Timor-Leste provides Covid supplies to the Timor-Leste Ministry of the Interior and the Department of Immigration in December 2020,"On December 21, 2020,  Ambassador Xiao Jianguo donated 4 infrared thermal imagers and 10,000 masks to the Timor-Leste Ministry of Interior and Department of Immigration. These materials will be used to help front-line border inspectors cope with the risk of imported epidemics. The monetary value of this donation is unknown.  A handover ceremony took place for this donation at the Chinese Embassy in Timor-Leste. The Deputy Minister of the East Ministry of Internal Affairs, the Director of Immigration, and Ambassador Xiao Jianguo attended the ceremony.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Timor-Leste provides Covid supplies to the Timor-Leste Ministry of the Interior and the Department of Immigration in December 2020
+
+# Description
+On December 21, 2020,  Ambassador Xiao Jianguo donated 4 infrared thermal imagers and 10,000 masks to the Timor-Leste Ministry of Interior and Department of Immigration. These materials will be used to help front-line border inspectors cope with the risk of imported epidemics. The monetary value of this donation is unknown.  A handover ceremony took place for this donation at the Chinese Embassy in Timor-Leste. The Deputy Minister of the East Ministry of Internal Affairs, the Director of Immigration, and Ambassador Xiao Jianguo attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for pandemic response, with no direct environmental or energy transition impact","Infrared thermal imagers and masks for COVID-19 prevention, healthcare focus"
+90658,HEALTH,"China provides Covid supplies the Timor-Leste Ministry of Education, Youth and Sports in October 2020","On October 15, 2020, the Chinese Embassy in Timor-Leste donated 40,000 masks and 10,000 bottles of hand sanitizer to the Timor-Leste Ministry of Education, Youth and Sports. The materials will be used to help young students in East Timor prevent and control the Covid-19 epidemic. The monetary value of this donation is unknown.  A handover ceremony took place for this donation at the Chinese Embassy in Timor-Leste. Ambassador Xiao Jianguo of China and Sports Minister Ma Ya of Timor-Leste attended the ceremony.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China provides Covid supplies the Timor-Leste Ministry of Education, Youth and Sports in October 2020
+
+# Description
+On October 15, 2020, the Chinese Embassy in Timor-Leste donated 40,000 masks and 10,000 bottles of hand sanitizer to the Timor-Leste Ministry of Education, Youth and Sports. The materials will be used to help young students in East Timor prevent and control the Covid-19 epidemic. The monetary value of this donation is unknown.  A handover ceremony took place for this donation at the Chinese Embassy in Timor-Leste. Ambassador Xiao Jianguo of China and Sports Minister Ma Ya of Timor-Leste attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on public health support through donation of medical supplies, with no direct environmental or energy transition impact","Donation of masks and hand sanitizer for Covid-19 prevention, targeted at education sector"
+90661,HEALTH,"Chinese Embassy in Timor-Leste provides 40,000 face masks to the Timor-Leste Ministry of the Interior in August 2020","On August 27, 2020, the Chinese Embassy in Timor-Leste donated 40,000 face masks to the Timor-Leste Ministry of the Interior. The monetary value of this donation is unknown. The materials will be distributed to the Border Patrol Unite Police (UPF) and immigration services for efforts against the COVID-19 pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Timor-Leste provides 40,000 face masks to the Timor-Leste Ministry of the Interior in August 2020
+
+# Description
+On August 27, 2020, the Chinese Embassy in Timor-Leste donated 40,000 face masks to the Timor-Leste Ministry of the Interior. The monetary value of this donation is unknown. The materials will be distributed to the Border Patrol Unite Police (UPF) and immigration services for efforts against the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation of face masks for COVID-19 pandemic response, healthcare focus"

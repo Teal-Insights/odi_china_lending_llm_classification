@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+39708,GOVERNMENT AND CIVIL SOCIETY,China completes donation of 1 million RMB worth of goods to Lady Hochoy Home in Trinidad and Tobago,"On December 23, 2014, Ambassador Huang Xingyuan handed over 1 Million RMB worth of supplies to Lady Hochoy Home in Cocorite, which serves as a day care and education center for physically-challenged children. This donation included two new ramp-accessible buses, six nursing beds, three computers and more than a dozen kitchenware items. The donation followed a 2013 visit to the home by First Lady of China Peng Liyuan to the home, where the aid was initially promised. The donation ceremony was attended by Ambassador Huang Xingyuan and First Lady of Trinidad and Tobago Reema Carmona, who handed over the materials to superintendent Sister Bertill Dean.",Trinidad and Tobago is not ODA eligible after 2011,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China completes donation of 1 million RMB worth of goods to Lady Hochoy Home in Trinidad and Tobago
+
+# Description
+On December 23, 2014, Ambassador Huang Xingyuan handed over 1 Million RMB worth of supplies to Lady Hochoy Home in Cocorite, which serves as a day care and education center for physically-challenged children. This donation included two new ramp-accessible buses, six nursing beds, three computers and more than a dozen kitchenware items. The donation followed a 2013 visit to the home by First Lady of China Peng Liyuan to the home, where the aid was initially promised. The donation ceremony was attended by Ambassador Huang Xingyuan and First Lady of Trinidad and Tobago Reema Carmona, who handed over the materials to superintendent Sister Bertill Dean.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95080,HEALTH,Government of the Xinjiang Uygur Autonomous Region donates 10 tons of anti-epidemic medical supplies (linked to ProjectID#94329),"On March 28, 2020, the 8-person Chinese medical team sent to Pakistan handed over 10 tons of anti-epidemic supplies to Pakistan on behalf of the Government of the Xinjiang Uygur Autonomous Region. The supplies included 10,000 test kits, 10,000 N95 masks, 100,000 disposable medical masks, 5,000 medical protective clothes, 5 ventilators, 11 defibrillator monitors and 62,000 sets of drugs for treating COVID-19 patients. These supplies will be used to improve COVID-19 response efforts in Pakistan. The monetary value of this donation is unknown.  A handover of these supplies was held during the welcome ceremony for the medical expert team at the Islamabad International Airport in Islamabad, the capital of Pakistan. China’s Ambassador to Pakistan, Yao Jing, Pakistan’s Foreign Minister, Shah Mahmood Qureshi, Director of the Pakistan Health Commission, Major General Akram, and the health advisor to Pakistan’s prime minister attended the ceremony. The dispatch of the 8-member medical team is captured via linked ProjectID#94329.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Government of the Xinjiang Uygur Autonomous Region donates 10 tons of anti-epidemic medical supplies (linked to ProjectID#94329)
+
+# Description
+On March 28, 2020, the 8-person Chinese medical team sent to Pakistan handed over 10 tons of anti-epidemic supplies to Pakistan on behalf of the Government of the Xinjiang Uygur Autonomous Region. The supplies included 10,000 test kits, 10,000 N95 masks, 100,000 disposable medical masks, 5,000 medical protective clothes, 5 ventilators, 11 defibrillator monitors and 62,000 sets of drugs for treating COVID-19 patients. These supplies will be used to improve COVID-19 response efforts in Pakistan. The monetary value of this donation is unknown.  A handover of these supplies was held during the welcome ceremony for the medical expert team at the Islamabad International Airport in Islamabad, the capital of Pakistan. China’s Ambassador to Pakistan, Yao Jing, Pakistan’s Foreign Minister, Shah Mahmood Qureshi, Director of the Pakistan Health Commission, Major General Akram, and the health advisor to Pakistan’s prime minister attended the ceremony. The dispatch of the 8-member medical team is captured via linked ProjectID#94329.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies and equipment for COVID-19 response, with no direct environmental or energy transition impact","10 tons of anti-epidemic medical supplies including test kits, masks, protective clothing, ventilators, and medications"
+95130,EDUCATION,Chinese Government donates CNY 27 million-worth of training equipment to vocational institutes in Pakistan,"On July 8, 2020, the ""Vocational School Equipment and Material Letters of Exchange"" agreement was signed whereby the Chinese Government agreed to donate CNY 27 million (USD 4 million) in training equipment to vocational institutes in Pakistan. The signing ceremony was held at the office of Pakistan's Ministry of Economic Affairs. Yao Jing, Ambassador of People’s Republic of China to Pakistan, and Dr. Wang Zhihua, Minister Counsellor, Embassy of China in Pakistan attended the ceremony. From Pakistan side, Noor Ahmed, Federal Secretary of Economic Affairs Division, signed the LOE.  The equipment will be used to help train skilled workers and to improve the socio-economic development in Pakistan. The equipment is comprised of diesel generators, computers, printers, projectors, and classroom furniture. The donation is to go towards 50 different vocational schools.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government donates CNY 27 million-worth of training equipment to vocational institutes in Pakistan
+
+# Description
+On July 8, 2020, the ""Vocational School Equipment and Material Letters of Exchange"" agreement was signed whereby the Chinese Government agreed to donate CNY 27 million (USD 4 million) in training equipment to vocational institutes in Pakistan. The signing ceremony was held at the office of Pakistan's Ministry of Economic Affairs. Yao Jing, Ambassador of People’s Republic of China to Pakistan, and Dr. Wang Zhihua, Minister Counsellor, Embassy of China in Pakistan attended the ceremony. From Pakistan side, Noor Ahmed, Federal Secretary of Economic Affairs Division, signed the LOE.  The equipment will be used to help train skilled workers and to improve the socio-economic development in Pakistan. The equipment is comprised of diesel generators, computers, printers, projectors, and classroom furniture. The donation is to go towards 50 different vocational schools.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and vocational training without clear environmental or energy transition impacts,"Donation of training equipment to vocational schools, including computers, printers, projectors, and classroom furniture"
+95152,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,China Electric Power Equipment and Technology Company Limited donates foodstuffs to Nankana and Matiari District Administration for families in need,"On June 9, 2020, China Electric Power Equipment and Technology Company Limited donated 10000 kg of flour and 10,000kg of rice to the Administrations of the Nankana(Balloki) and Matiari districts. The donation comprised of 500 twenty-kilogram bags of each product. The donation is to be distributed appropriately by the administrations to families in need.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China Electric Power Equipment and Technology Company Limited donates foodstuffs to Nankana and Matiari District Administration for families in need
+
+# Description
+On June 9, 2020, China Electric Power Equipment and Technology Company Limited donated 10000 kg of flour and 10,000kg of rice to the Administrations of the Nankana(Balloki) and Matiari districts. The donation comprised of 500 twenty-kilogram bags of each product. The donation is to be distributed appropriately by the administrations to families in need.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on food aid and social welfare, with no direct environmental or energy transition impact","Food donation of flour and rice to families in need, administered through local government"
+95160,HEALTH,Chinese Government donates walk-through COVID-testing machine to National Disaster Management Authority (NDMA),"On March 26, 2020, the chairman of the Pakistan National Disaster Management Authority(NDMA) announced that the Chinese Government was donating a large walk through machine designed for testing for COVID-19. The donation was projected to arrive within a week at the Khunjerap Pass on the border of China and Pakistan. The donation will help Pakistan screen multiple people at once for COVID-19",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates walk-through COVID-testing machine to National Disaster Management Authority (NDMA)
+
+# Description
+On March 26, 2020, the chairman of the Pakistan National Disaster Management Authority(NDMA) announced that the Chinese Government was donating a large walk through machine designed for testing for COVID-19. The donation was projected to arrive within a week at the Khunjerap Pass on the border of China and Pakistan. The donation will help Pakistan screen multiple people at once for COVID-19",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"COVID-19 testing machine donation, healthcare sector focus"
+95177,HEALTH,Provincial Government of the Xinjiang Uyghur Autonomous Region donates anti-epidemic medical equipment to the Government of Gilgit-Baltistan,"On March 26, 2020, the Provincial Government of the Xinjiang Uyghur Autonomous Region donated medical aid to the Government of Gilgit-Baltistan. The donation consisted of 200,000 face masks, 2,000 N95 masks, five ventilators, 2,000 COVID-19 testing kits, and medical protective gears. The donation is worth 67 million Pakistani Rupees. The handover took place at the Khunjerab Pass.",NA,"# Sector
+HEALTH
+
+# Title
+Provincial Government of the Xinjiang Uyghur Autonomous Region donates anti-epidemic medical equipment to the Government of Gilgit-Baltistan
+
+# Description
+On March 26, 2020, the Provincial Government of the Xinjiang Uyghur Autonomous Region donated medical aid to the Government of Gilgit-Baltistan. The donation consisted of 200,000 face masks, 2,000 N95 masks, five ventilators, 2,000 COVID-19 testing kits, and medical protective gears. The donation is worth 67 million Pakistani Rupees. The handover took place at the Khunjerab Pass.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a medical donation with no direct environmental or energy transition impact,"Donation of medical equipment including face masks, N95 masks, ventilators, and COVID-19 testing kits"
+95213,HEALTH,ICBC donates medical supplies worth 36.68 million rupees to Pakistan,"On May 15, 2020, The Industrial and Commercial Bank of China (ICBC) donated 36.68 million rupees worth of medical supplies to Pakistan. The medical supplies consists of 60,000 surgical masks, 50,000 KN95 masks, 4,000 testing kits, and ventilators.",NA,"# Sector
+HEALTH
+
+# Title
+ICBC donates medical supplies worth 36.68 million rupees to Pakistan
+
+# Description
+On May 15, 2020, The Industrial and Commercial Bank of China (ICBC) donated 36.68 million rupees worth of medical supplies to Pakistan. The medical supplies consists of 60,000 surgical masks, 50,000 KN95 masks, 4,000 testing kits, and ventilators.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Medical supplies donation including masks, testing kits, and ventilators"
+95242,HEALTH,Government of China donates medical equipment to Government of Pakistan,"On April 27 2020, an airplane carrying a donation of medical equipment from China arrived in Pakistan. The donation was sent from the Government of China to the Government of Pakistan to assist with the COVID-19 response. The donation consists of 15 X-ray machines, 119 Ventilators, and 200 infrared thermometer.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Government of China donates medical equipment to Government of Pakistan
+
+# Description
+On April 27 2020, an airplane carrying a donation of medical equipment from China arrived in Pakistan. The donation was sent from the Government of China to the Government of Pakistan to assist with the COVID-19 response. The donation consists of 15 X-ray machines, 119 Ventilators, and 200 infrared thermometer.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a medical donation with no direct environmental or energy transition impact,"Medical equipment donation for COVID-19 response, including X-ray machines, ventilators, and thermometers"
+95246,HEALTH,"Jiangsu Provincial Government contributes to donation of anti-epidemic supplies to Pakistan’s Punjab Province in May 2020 (Linked to Project ID#94463, 95574)","On May 11, 2020, the provincial governments of Shandong, Jiangsu and Ningxia donated personal protection equipment (PPE) worth Rs 100 million to Pakistan’s Punjab Province. The materials included protective suits, N-95 and surgical masks, gloves and disposable medical protectors for medical professionals and janitorial staff. A handover ceremony was held for this donation at an airport in Lahore. Consul General Long Dingbin, Chief Minister Buzdar of Pakistan's Punjab Province, the Provincial Health Minister, and officials of the Punjab Provincial Government attended the ceremony.  The contributions of Shandong and Ningxia are captured in Project IDs#94463, 95574.",1. The individual contribution of each provincial government to this Rs 100 million donation is unknown. AidData has estimated the contribution of the Jiangsu provincial government by assuming that each lender contributed an equal amount (Rs 273972.60274) to the donation.,"# Sector
+HEALTH
+
+# Title
+Jiangsu Provincial Government contributes to donation of anti-epidemic supplies to Pakistan’s Punjab Province in May 2020 (Linked to Project ID#94463, 95574)
+
+# Description
+On May 11, 2020, the provincial governments of Shandong, Jiangsu and Ningxia donated personal protection equipment (PPE) worth Rs 100 million to Pakistan’s Punjab Province. The materials included protective suits, N-95 and surgical masks, gloves and disposable medical protectors for medical professionals and janitorial staff. A handover ceremony was held for this donation at an airport in Lahore. Consul General Long Dingbin, Chief Minister Buzdar of Pakistan's Punjab Province, the Provincial Health Minister, and officials of the Punjab Provincial Government attended the ceremony.  The contributions of Shandong and Ningxia are captured in Project IDs#94463, 95574.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Donation of PPE including masks, gloves, and protective suits for medical professionals and janitorial staff"
+95305,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"China's Ministry of Ecology and Environment donate 4,000 sets of solar photovoltaic systems and LED lights to Balochistan Provincial Government","On September 23, 2020, the Chinese Ministry of Ecology and Environment donated 4,000 sets of solar photovoltaic systems and LED lights to the Provincial Government of Balochistan. The donation will help residents of Balochistan who have suffered from power outages. The donation was implemented by the Chinese company, Zhejiang Yankon.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China's Ministry of Ecology and Environment donate 4,000 sets of solar photovoltaic systems and LED lights to Balochistan Provincial Government
+
+# Description
+On September 23, 2020, the Chinese Ministry of Ecology and Environment donated 4,000 sets of solar photovoltaic systems and LED lights to the Provincial Government of Balochistan. The donation will help residents of Balochistan who have suffered from power outages. The donation was implemented by the Chinese company, Zhejiang Yankon.",TRUE,NA,GREEN,HIGH,Solar Power,"Primary purpose is providing solar photovoltaic systems for energy access, directly supporting renewable energy adoption","4,000 sets of solar photovoltaic systems, LED lights, addressing power outages through renewable energy"
+95310,HEALTH,China Road and Bridge Corporation donates medical supplies to Government of Pakistan,"On May 1, 2020, the China Road and Bridge Corporation donated medical supplies to the Government of Pakistan. The donation consists of 20,000 surgical masks, 5,000 N95 masks, 300 protection gowns, 1,000 surgical gloves and 20 temperature check guns.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Road and Bridge Corporation donates medical supplies to Government of Pakistan
+
+# Description
+On May 1, 2020, the China Road and Bridge Corporation donated medical supplies to the Government of Pakistan. The donation consists of 20,000 surgical masks, 5,000 N95 masks, 300 protection gowns, 1,000 surgical gloves and 20 temperature check guns.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation including masks, gowns, gloves, and temperature check guns"

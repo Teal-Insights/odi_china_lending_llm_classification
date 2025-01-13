@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+85829,HEALTH,Chinese Embassy donates an ophthalmic operating microscope to Georgetown Public Hospital Corporation,"On March 11, 2005, the Chinese Embassy in Guyana donated an advanced ophthalmic operating microscope to Georgetown Public Hospital Corporation (GPHC). The microscope was produced by 66 Vision Tech Co., Ltd. The microscope was capable of cataract removal through the use of phacoemulsification surgery. This was the first time this technology had been introduced to Guyana. The Chinese Embassy donated the microscope to help GPHC handle eye disease and reduce its large backlog of cataract removal procedures.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates an ophthalmic operating microscope to Georgetown Public Hospital Corporation
+
+# Description
+On March 11, 2005, the Chinese Embassy in Guyana donated an advanced ophthalmic operating microscope to Georgetown Public Hospital Corporation (GPHC). The microscope was produced by 66 Vision Tech Co., Ltd. The microscope was capable of cataract removal through the use of phacoemulsification surgery. This was the first time this technology had been introduced to Guyana. The Chinese Embassy donated the microscope to help GPHC handle eye disease and reduce its large backlog of cataract removal procedures.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare equipment donation with no direct environmental or energy transition impact,"Donation of ophthalmic operating microscope for cataract surgery, healthcare sector focus"
+96710,BANKING AND FINANCIAL SERVICES,Industrial and Commercial Bank of China (Asia) participates in USD 125 million syndicated loan to HDFC Bank,"In August 2005, Industrial and Commercial Bank of China (Asia) participated in a USD 125 million syndicated loan to HDFC Bank. The loan had a maturity of three years. The interest rate is unknown. BNP Paribas, Bank of Tokyo-Mitsubishi, Calyon, and Natexis Banques Populaires participated in the syndicate. The purpose of the loan is unknown.",1. AidData assumes equal contributions from each member of the syndicate. USD 125 million divided by 5 participants is a USD 25 million contribution from each lender.,"# Sector
+BANKING AND FINANCIAL SERVICES
+
+# Title
+Industrial and Commercial Bank of China (Asia) participates in USD 125 million syndicated loan to HDFC Bank
+
+# Description
+In August 2005, Industrial and Commercial Bank of China (Asia) participated in a USD 125 million syndicated loan to HDFC Bank. The loan had a maturity of three years. The interest rate is unknown. BNP Paribas, Bank of Tokyo-Mitsubishi, Calyon, and Natexis Banques Populaires participated in the syndicate. The purpose of the loan is unknown.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves financial services with no clear environmental or energy transition impacts,"Syndicated loan to a bank, no specified environmental purpose or energy-related use"
+98568,BANKING AND FINANCIAL SERVICES,ICBC (Asia) contributes to a USD $125 million syndicated loan to ICICI Bank,"In August 2005, Industrial and Commercial Bank of China (Asia) Limited (ICBC (Asia)) participated in a $125 million USD syndicated loan to ICICI Bank. Along with ICBC (Asia), BNP Paribas, Bank of Tokyo-Mitsubishi, Calyon, and Natexis Banques Populaires were the lead banks. This loan carried a maturity period of three years.","1. The exact size of ICBC’s financial contributions to the $125 million syndicated loan are unknown. For the time being, AidData assumes that all five members of the lending syndicate contributed equal amounts ($25,000,000).","# Sector
+BANKING AND FINANCIAL SERVICES
+
+# Title
+ICBC (Asia) contributes to a USD $125 million syndicated loan to ICICI Bank
+
+# Description
+In August 2005, Industrial and Commercial Bank of China (Asia) Limited (ICBC (Asia)) participated in a $125 million USD syndicated loan to ICICI Bank. Along with ICBC (Asia), BNP Paribas, Bank of Tokyo-Mitsubishi, Calyon, and Natexis Banques Populaires were the lead banks. This loan carried a maturity period of three years.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves financial services with no direct environmental or energy transition impact,"Syndicated loan to ICICI Bank, banking sector involvement"
+35013,EMERGENCY RESPONSE,Chinese medical team sent to Indonesia following Indian Ocean earthquake,"In January 2005, a 35 person Chinese medical team began work in Banda Aceh, Indonesia. Four medical teams in total were sent from China to Indonesia for earthquake relief in early 2005, with the last returning to China on January 25.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese medical team sent to Indonesia following Indian Ocean earthquake
+
+# Description
+In January 2005, a 35 person Chinese medical team began work in Banda Aceh, Indonesia. Four medical teams in total were sent from China to Indonesia for earthquake relief in early 2005, with the last returning to China on January 25.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on emergency medical response and humanitarian aid, unrelated to energy or environmental impacts","Medical team deployment for earthquake relief, humanitarian focus"
+35034,EMERGENCY RESPONSE,China airlifted humanitarian aid worth RMB 15M to Indonesia after tsunami,"On January 2, 2005, the second consignment of Chinese goods arrived in Aceh Indonesia by airlift. The 100 tons of goods for the tsunami-stricken area included tents, blankets, sheets, generators, food and cost about 15 million Chinese yuan.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China airlifted humanitarian aid worth RMB 15M to Indonesia after tsunami
+
+# Description
+On January 2, 2005, the second consignment of Chinese goods arrived in Aceh Indonesia by airlift. The 100 tons of goods for the tsunami-stricken area included tents, blankets, sheets, generators, food and cost about 15 million Chinese yuan.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian aid project with no direct environmental or energy transition impact,"Emergency response, humanitarian aid including tents, blankets, food, and generators"
+35066,EMERGENCY RESPONSE,China donates relief supplies to earthquake and tsunami affected areas of Indonesia,"On 5 January 2005 Chinese Premier Wen Jiabao brought along with him 16 tons of relief materials to earthquake and Tsunami affected areas of Indonesia. The materials included food, medicine, and disaster relief equipment.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates relief supplies to earthquake and tsunami affected areas of Indonesia
+
+# Description
+On 5 January 2005 Chinese Premier Wen Jiabao brought along with him 16 tons of relief materials to earthquake and Tsunami affected areas of Indonesia. The materials included food, medicine, and disaster relief equipment.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on humanitarian aid and disaster relief without clear environmental or energy transition impacts,"Relief materials including food, medicine, and disaster relief equipment for earthquake and tsunami affected areas"
+35112,EMERGENCY RESPONSE,"Chinese Government donates $300,000 for disaster relief in Indonesia after 2004 tsunami","In February 2005, the Chinese Government officially donated $300,000 to Indonesia for aid to tsunami victims in Aceh province.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government donates $300,000 for disaster relief in Indonesia after 2004 tsunami
+
+# Description
+In February 2005, the Chinese Government officially donated $300,000 to Indonesia for aid to tsunami victims in Aceh province.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on disaster relief and humanitarian aid without direct environmental or energy transition implications,"Donation for tsunami victims, humanitarian aid focus"
+35113,EMERGENCY RESPONSE,Chinese medical team sent over to help Indonesian tsunami survivors,"On January 25, 2005, a 20-person Chinese medical team arrived in Banda Aceh for a relief mission. The team, also known as the fourth international medical team for Indian Ocean Tsunami relief, comprised 20 medical personnel from different hospitals and health organizations in Beijing and Tianjin. In the following 11 days, the doctors treated more than 1,200 people at the General Hospital of Banda Aceh, one-third of patients at the hospital. During their work in Banda Aceh, the Chinese medical team inspected camps of displaced people around the city and conducted emergency hygienic assessments of the camps in cooperation with the United Nations Children's Fund. The team returned to China on February 6.","The four international medical teams for Indian Ocean Tsunami relief are #34816 (2 teams to Thailand), #33231 (1 team to Sri Lanka), and #35113 (1 team to Indonesia). China contributed 63 million USD for tsunami relief in total, most of the individual project are captured (see projects linked with resource #41811).","# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese medical team sent over to help Indonesian tsunami survivors
+
+# Description
+On January 25, 2005, a 20-person Chinese medical team arrived in Banda Aceh for a relief mission. The team, also known as the fourth international medical team for Indian Ocean Tsunami relief, comprised 20 medical personnel from different hospitals and health organizations in Beijing and Tianjin. In the following 11 days, the doctors treated more than 1,200 people at the General Hospital of Banda Aceh, one-third of patients at the hospital. During their work in Banda Aceh, the Chinese medical team inspected camps of displaced people around the city and conducted emergency hygienic assessments of the camps in cooperation with the United Nations Children's Fund. The team returned to China on February 6.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on humanitarian medical assistance without direct environmental or energy transition impacts,"Medical team providing emergency relief, treating patients, conducting hygienic assessments"
+35149,EMERGENCY RESPONSE,"China donates disaster relief supplies worth $500,000 USD to Indonesia following an earthquake","On 29 March 2005, an 8.7 magnitude earthquake hit Nias island, North Sumatra in Indonesia. In response, on 27 April 2005, the Chinese Government donated relief goods worth $500,000 USD to the Government of Indonesia. The goods included 500 gasoline power generators, 4 large-scale diesel power generators, 100 walkie-talkies, 3000 pieces of sheets, 3000 pieces of carpets, and other goods.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates disaster relief supplies worth $500,000 USD to Indonesia following an earthquake
+
+# Description
+On 29 March 2005, an 8.7 magnitude earthquake hit Nias island, North Sumatra in Indonesia. In response, on 27 April 2005, the Chinese Government donated relief goods worth $500,000 USD to the Government of Indonesia. The goods included 500 gasoline power generators, 4 large-scale diesel power generators, 100 walkie-talkies, 3000 pieces of sheets, 3000 pieces of carpets, and other goods.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is humanitarian aid with no direct environmental or energy transition impact,"Disaster relief supplies including generators, communication equipment, and basic necessities"
+35151,EMERGENCY RESPONSE,China agreed to grant 30 million yuan of assistance to Indonesia,"On Apr 25, 2005, Chinese president Hu Jintao signed an agreement to grant 30 million Yuan (US$3.63 million) worth of assistance to Indonesia to the earthquake-stricken area of ​​Nias Island. The distribution of the grant is unclear. It is also unclear when this grant was handed over to Indonesia.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China agreed to grant 30 million yuan of assistance to Indonesia
+
+# Description
+On Apr 25, 2005, Chinese president Hu Jintao signed an agreement to grant 30 million Yuan (US$3.63 million) worth of assistance to Indonesia to the earthquake-stricken area of ​​Nias Island. The distribution of the grant is unclear. It is also unclear when this grant was handed over to Indonesia.",TRUE,NA,NEUTRAL,HIGH,Social Development,Emergency response aid for earthquake relief with no clear environmental or energy transition impact,"30 million yuan grant for earthquake-stricken area, humanitarian assistance focus"

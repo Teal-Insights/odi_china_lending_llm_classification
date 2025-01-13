@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+60995,HEALTH,"Chinese medical experts visit Madagascar to provide expertise on disease treatment and prevention issues (Linked to Project ID #60996, #58725, #58729)","On December 8, 2017, Chinese medical experts met with Madagascar officials to discuss plague prevention and treatment. The expertise was intended to help prevent further outbreaks of the disease. The Chinese Government has provided help in preventing the plague in Madagascar in the past, sending donations to treat those affected by plague (projects #60996, #58725, #58729).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese medical experts visit Madagascar to provide expertise on disease treatment and prevention issues (Linked to Project ID #60996, #58725, #58729)
+
+# Description
+On December 8, 2017, Chinese medical experts met with Madagascar officials to discuss plague prevention and treatment. The expertise was intended to help prevent further outbreaks of the disease. The Chinese Government has provided help in preventing the plague in Madagascar in the past, sending donations to treat those affected by plague (projects #60996, #58725, #58729).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project focuses on healthcare expertise and disease prevention, with no direct environmental or energy transition impact","Medical experts providing disease treatment and prevention expertise, focus on plague prevention"
+60996,HEALTH,"Chinese Government donates batch of medical equipment to fight plague (Linked to Project ID#58725, #58729, #60995)","On November 8, 2017, the Chinese government handed over a shipment of medical equipment including cleaning, sanitation, and disease prevention supplies to two Madagascar districts in order to fight a plague outbreak. This is one of several donations made in 2017 from China to Madagascar; the Chinese government also sent medical experts to consult on the treatment and containment of the plague (#60995) and provided additional assistance (projects #58725, #58729).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates batch of medical equipment to fight plague (Linked to Project ID#58725, #58729, #60995)
+
+# Description
+On November 8, 2017, the Chinese government handed over a shipment of medical equipment including cleaning, sanitation, and disease prevention supplies to two Madagascar districts in order to fight a plague outbreak. This is one of several donations made in 2017 from China to Madagascar; the Chinese government also sent medical experts to consult on the treatment and containment of the plague (#60995) and provided additional assistance (projects #58725, #58729).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare assistance and disease prevention, with no direct environmental or energy transition impact","Medical equipment donation, disease prevention supplies, medical expert consultation"
+61002,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy donates police equipment to Madagascar’s Ministry of Public Security,"On October 19, 2017, the Chinese Ambassador to Madagascar officially donated police equipment — including bulletproof vests — to Madagascar’s Ministry of Public Security. The monetary value of this donation is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy donates police equipment to Madagascar’s Ministry of Public Security
+
+# Description
+On October 19, 2017, the Chinese Ambassador to Madagascar officially donated police equipment — including bulletproof vests — to Madagascar’s Ministry of Public Security. The monetary value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of police equipment with no clear environmental or energy transition impact,"Donation of police equipment to Ministry of Public Security, no energy-related components"
+61006,EDUCATION,"Chinese Government Awards 30 Scholarships to Malagasy Students 2017-2018 school year (Linked to Projects #60902, #61216)","On 11 August 2017, the Chinese Embassy in Madagascar hosted a send-off ceremony and issued acceptance letters for 30 Malagasy students sponsored by the Chinese Government Scholarship to study in China. The students will be focusing on economic growth and development for Madagascar at more than 20 universities in China.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government Awards 30 Scholarships to Malagasy Students 2017-2018 school year (Linked to Projects #60902, #61216)
+
+# Description
+On 11 August 2017, the Chinese Embassy in Madagascar hosted a send-off ceremony and issued acceptance letters for 30 Malagasy students sponsored by the Chinese Government Scholarship to study in China. The students will be focusing on economic growth and development for Madagascar at more than 20 universities in China.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Scholarship program focused on education and human capital development, with no direct environmental or energy transition impact","Education scholarships, focus on economic growth and development studies"
+61007,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,Chinese Embassy hosts 2017 Beijing Film and TV Drama Exhibition in Madagascar,"On August 7, 2017, the Chinese Embassy hosted the opening ceremony for the 2017 Beijing Film and TV Drama Exhibition in Madagascar.  The exhibition is hosted annually by the Beijing Municipal Bureau of Press, Publication, Radio, and Television. The objective of the exhibition is to showcase Chinese media productions and to introduce new audiences.  This project is distinct from #61028, which captures the 2017 Chinese Film Festival.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Embassy hosts 2017 Beijing Film and TV Drama Exhibition in Madagascar
+
+# Description
+On August 7, 2017, the Chinese Embassy hosted the opening ceremony for the 2017 Beijing Film and TV Drama Exhibition in Madagascar.  The exhibition is hosted annually by the Beijing Municipal Bureau of Press, Publication, Radio, and Television. The objective of the exhibition is to showcase Chinese media productions and to introduce new audiences.  This project is distinct from #61028, which captures the 2017 Chinese Film Festival.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cultural exchange project with no direct environmental or energy transition impact,Film and TV drama exhibition focused on cultural exchange and media promotion
+61015,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy donates office supplies to Madagascar's Independent Anti-Corruption Bureau.,"On 5 July 2017, the Chinese Embassy in Madagascar officially donated office supplies to Madagascar's Independent Anti-Corruption Bureau (BIANCO). The value and details about the donation are unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy donates office supplies to Madagascar's Independent Anti-Corruption Bureau.
+
+# Description
+On 5 July 2017, the Chinese Embassy in Madagascar officially donated office supplies to Madagascar's Independent Anti-Corruption Bureau (BIANCO). The value and details about the donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Donation of office supplies to government agency unrelated to energy or environmental impacts,"Donation to anti-corruption bureau, no energy or environmental components mentioned"
+72748,HEALTH,"Chinese Government provides $1,979,282 grant for Phase 2 of the Anosiala Hospital Technical Cooperation Project (Linked to Project ID#53131, #72747)","On January 16, 2017, the Chinese Government signed a grant agreement with the Government of Madagascar for Phase 2 of the Anosiala Hospital Technical Cooperation Project. According to the Government of Madagascar’s Aid Management Platform, the Chinese Government officially committed $1,979,282 of grant funding for this project. This project involved the dispatching Chinese technicians to help maintain Anosiala University Hospital, which was constructed with a separate grant from the Chinese Government (captured in Project ID#53131).  It is also linked to #72747, the $2,880,204 grant from the Chinese government for the phase 1 of the project.",The French project title is Coopération Technique de l’hôpital d'Anosiala (Phase II) or Coopération Technique de l’hôpital d'Anosiala.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides $1,979,282 grant for Phase 2 of the Anosiala Hospital Technical Cooperation Project (Linked to Project ID#53131, #72747)
+
+# Description
+On January 16, 2017, the Chinese Government signed a grant agreement with the Government of Madagascar for Phase 2 of the Anosiala Hospital Technical Cooperation Project. According to the Government of Madagascar’s Aid Management Platform, the Chinese Government officially committed $1,979,282 of grant funding for this project. This project involved the dispatching Chinese technicians to help maintain Anosiala University Hospital, which was constructed with a separate grant from the Chinese Government (captured in Project ID#53131).  It is also linked to #72747, the $2,880,204 grant from the Chinese government for the phase 1 of the project.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare infrastructure and technical cooperation without direct environmental or energy transition impacts,"Grant for hospital technical cooperation, healthcare sector focus"
+72958,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"Chinese Government provides grant for Sports Coaching Technical Cooperation Project (Linked to Project ID #60914, #60915)","In 2017, the Chinese Government and the Government of Madagascar signed letters of exchange for a Sports Coaching Technical Cooperation Project for the provision of sporting equipment. The size of the grant commitment supporting this project is unknown. This project involved the deployment of 8 Chinese experts to Madagascar to train local athletes for 30 days and the deployment of 99 Malagasy athletes to China for 4 months of training in table tennis, swimming, weight lifting, badminton, and track and field. It also involved the provision of sporting equipment. The project officially commenced on April 28, 2018 and ended on or around February 27, 2019.",The Chinese project title is 马达加斯加体育教练项目 and 援马达加斯加体育教练技术援助项目. The French project title is Projet d'Assistance de la Cooperation Technique du Sport Chine-Madagascar.,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Government provides grant for Sports Coaching Technical Cooperation Project (Linked to Project ID #60914, #60915)
+
+# Description
+In 2017, the Chinese Government and the Government of Madagascar signed letters of exchange for a Sports Coaching Technical Cooperation Project for the provision of sporting equipment. The size of the grant commitment supporting this project is unknown. This project involved the deployment of 8 Chinese experts to Madagascar to train local athletes for 30 days and the deployment of 99 Malagasy athletes to China for 4 months of training in table tennis, swimming, weight lifting, badminton, and track and field. It also involved the provision of sporting equipment. The project officially commenced on April 28, 2018 and ended on or around February 27, 2019.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on sports training and equipment provision without clear environmental or energy transition impacts,"Sports coaching technical cooperation, training of athletes, provision of sporting equipment"
+57555,TRANSPORT AND STORAGE,China Eximbank commits to $20 million loan for Mzuzu International Airport Project,"In July 2017, according to the Malawi Ministry of Finance, Economic Planning and Development, China Exim Bank loaned $20 million USD to Malawi for the construction of the Mzuzu airport in Lusangazi. The project construction was intended to start in January 2018. According for the Center for Aviation, the airport will be developed on a 90 acre site with two 2000m runways. The project is expected to be completed on December 31, 2020.  Loan details and actual start date are unknown.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+China Eximbank commits to $20 million loan for Mzuzu International Airport Project
+
+# Description
+In July 2017, according to the Malawi Ministry of Finance, Economic Planning and Development, China Exim Bank loaned $20 million USD to Malawi for the construction of the Mzuzu airport in Lusangazi. The project construction was intended to start in January 2018. According for the Center for Aviation, the airport will be developed on a 90 acre site with two 2000m runways. The project is expected to be completed on December 31, 2020.  Loan details and actual start date are unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Airport construction project with no clear environmental or energy transition impacts,"Construction of Mzuzu International Airport with two runways, no mention of energy or environmental features"
+57601,HEALTH,Chinese Ministry of Health donates 58 million kwacha of antimalarial drugs to Salima Regional Hospital,"On April 21, 2017, the Chinese Ministry of Health granted 58 million kwacha of antimalarial drugs (specifically artemisinin) to the Salima Regional Hospital, according to China MOFCOM and Nyssa Times. It appears to be a one-time donation.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Ministry of Health donates 58 million kwacha of antimalarial drugs to Salima Regional Hospital
+
+# Description
+On April 21, 2017, the Chinese Ministry of Health granted 58 million kwacha of antimalarial drugs (specifically artemisinin) to the Salima Regional Hospital, according to China MOFCOM and Nyssa Times. It appears to be a one-time donation.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of antimalarial drugs to hospital, healthcare sector focus"

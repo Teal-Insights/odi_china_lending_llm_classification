@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+96985,HEALTH,"The Chinese Consulate General in Mandalay and Chinese enterprises donate Ks 100,000,000 to Myanmar hospital","On July 23rd, 2021, the Chinese Consulate General in Mandalay and Chinese enterprises donated Ks 100,000,000 to a new Myanmar COVID-19 hospital for the purchase of daily consumables.    Construction of the hospital was funded by Yunnan Province (captured via Project #96232).",NA,"# Sector
+HEALTH
+
+# Title
+The Chinese Consulate General in Mandalay and Chinese enterprises donate Ks 100,000,000 to Myanmar hospital
+
+# Description
+On July 23rd, 2021, the Chinese Consulate General in Mandalay and Chinese enterprises donated Ks 100,000,000 to a new Myanmar COVID-19 hospital for the purchase of daily consumables.    Construction of the hospital was funded by Yunnan Province (captured via Project #96232).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation for healthcare purposes without direct environmental or energy transition impact,"Donation for COVID-19 hospital, healthcare focus"
+98031,ACTION RELATING TO DEBT,CDB suspends debt service payments from Government of Myanmar in 2021 (Linked to Project ID#98030),"In response to the COVID-19 pandemic and the G20 Finance Ministers and Central Bank Governors meeting that took place on April 15, 2020 and on November 13, 2020, the Chinese Government agreed to work with other G20 members to implement the Debt Service Suspension Initiative (DSSI). Then, in 2021, China Development Bank and the Government of Myanmar signed a debt suspension agreement. Under the terms of the agreement, the lender agreed to suspend principal and interest payments due in 2021 under 5 loan agreements. The total estimated suspension amount is unknown.","1. The debt suspension agreement with CDB is documented in the Government of Myanmar’s Annual Government Debt Reports, which can be accessed via https://treasury.gov.mm/mm/Annual%20Report/5?language=eng and https://www.dropbox.com/s/l4y62ftatlyf5ik/2020-2021%20Fiscal%20Year%2C%20Annual%20Government%20Debt%20Report.pdf?dl=0 and https://www.dropbox.com/s/gw4ansfleditxkn/2019-2020%20Fiscal%20Year%2C%20Annual%20Government%20Debt%20Report.pdf?dl=0 and https://www.dropbox.com/s/9jxog87dmzfsfgw/Government%20Debt%20Report%20for%20FY%2019-20%20V%20Final%20%2821-12-2021%29.pdf?dl=0.","# Sector
+ACTION RELATING TO DEBT
+
+# Title
+CDB suspends debt service payments from Government of Myanmar in 2021 (Linked to Project ID#98030)
+
+# Description
+In response to the COVID-19 pandemic and the G20 Finance Ministers and Central Bank Governors meeting that took place on April 15, 2020 and on November 13, 2020, the Chinese Government agreed to work with other G20 members to implement the Debt Service Suspension Initiative (DSSI). Then, in 2021, China Development Bank and the Government of Myanmar signed a debt suspension agreement. Under the terms of the agreement, the lender agreed to suspend principal and interest payments due in 2021 under 5 loan agreements. The total estimated suspension amount is unknown.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Debt suspension agreement is a financial arrangement without direct environmental or energy transition impacts,"Debt service suspension agreement, financial terms adjustment"
+93258,HEALTH,"Chinese Embassy donates N$ 1 million worth of COVID-19 equipment to 7 schools in Windhoek, Namibia","On April 29, 2021, the Chinese Embassy in Namibia donated 45,000 surgical masks, 4,000 N95 masks, and 35 forehead thermometers to 7 primary and secondary schools in Windhoek, Namibia. According to the Chinese Embassy, the donation is worth 1 million Namibian dollars. The donation is intended to assist these schools during the COVID-19 pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates N$ 1 million worth of COVID-19 equipment to 7 schools in Windhoek, Namibia
+
+# Description
+On April 29, 2021, the Chinese Embassy in Namibia donated 45,000 surgical masks, 4,000 N95 masks, and 35 forehead thermometers to 7 primary and secondary schools in Windhoek, Namibia. According to the Chinese Embassy, the donation is worth 1 million Namibian dollars. The donation is intended to assist these schools during the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical equipment to schools with no direct environmental or energy transition impact,"Donation of COVID-19 equipment (masks, thermometers) to schools, health sector focus"
+93259,HEALTH,"Chinese Government donates 100,000 Sinovac Covid-19 vaccine doses worth $1.8 million to the Government of Namibia in July 2021","In 2021, the Chinese Government donated approximately 350,000 doses of Covid-19 vaccines to the Government of Namibia. The Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines to the Government of Zambia on March 16, 2021. The shipment arrived at Hosea Kutako International Airport and Namibian Deputy Prime Minister and Minister of International Relations and Cooperation Netumbo Nandi-Ndaitwah attended the vaccine handover ceremony. Then, on July 16, 2021, the Chinese Government delivered another 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Namibia.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinovac COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the March 2021 donation as $1.8 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 100,000 Sinovac Covid-19 vaccine doses worth $1.8 million to the Government of Namibia in July 2021
+
+# Description
+In 2021, the Chinese Government donated approximately 350,000 doses of Covid-19 vaccines to the Government of Namibia. The Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines to the Government of Zambia on March 16, 2021. The shipment arrived at Hosea Kutako International Airport and Namibian Deputy Prime Minister and Minister of International Relations and Cooperation Netumbo Nandi-Ndaitwah attended the vaccine handover ceremony. Then, on July 16, 2021, the Chinese Government delivered another 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Namibia.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of vaccines for public health purposes, with no direct environmental or energy transition impact","Donation of 100,000 Sinovac Covid-19 vaccine doses, healthcare sector focus"
+93302,HEALTH,Chinese Embassy in Namibia donates COVID-19 supplies to the Ministry of Health and Social Services of Namibia,"On April 8, 2021, the Chinese Embassy in Namibia donated COVID-19 supplies to the Ministry of Health and Social Services of Namibia. According to the Chinese Embassy in Namibia, the donation's purpose is to thank Namibia for caring for Chinese citizens in Namibia during the COVID-19 pandemic and assist Namibia against COVID-19. The donation included 20 oxygenators and 12,000 masks, among other unknown supplies. The monetary value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Namibia donates COVID-19 supplies to the Ministry of Health and Social Services of Namibia
+
+# Description
+On April 8, 2021, the Chinese Embassy in Namibia donated COVID-19 supplies to the Ministry of Health and Social Services of Namibia. According to the Chinese Embassy in Namibia, the donation's purpose is to thank Namibia for caring for Chinese citizens in Namibia during the COVID-19 pandemic and assist Namibia against COVID-19. The donation included 20 oxygenators and 12,000 masks, among other unknown supplies. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support and social development, with no direct environmental or energy transition impact","Donation of COVID-19 supplies including oxygenators and masks, healthcare sector focus"
+93312,HEALTH,Chinese Embassy and Swakop Uranium donate N$ 1 million to the One Economy Foundation #BeFree Project,"On February 18, 2021, the Chinese Embassy and Swakop Uranium donated 1 million Namibian dollars to the One Economy Foundation. The donation was made with the aim of helping children, young people and women fight COVID-19, and was distributed to youth-led organizations, shelters for GBV survivors, HIV teen clubs, out-of-school youth, and young entrepreneurs.","1. Since the breakdown of the donation value is not known between the Chinese Embassy (an official Chinese agency) and Swakop Uranium (not an official Chinese agency), AidData estimates the official portion as half the total value (1 million Namibian dollars), so 500,000 Namibian dollars.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy and Swakop Uranium donate N$ 1 million to the One Economy Foundation #BeFree Project
+
+# Description
+On February 18, 2021, the Chinese Embassy and Swakop Uranium donated 1 million Namibian dollars to the One Economy Foundation. The donation was made with the aim of helping children, young people and women fight COVID-19, and was distributed to youth-led organizations, shelters for GBV survivors, HIV teen clubs, out-of-school youth, and young entrepreneurs.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on social development and healthcare support without direct environmental or energy transition impacts,"Donation to support COVID-19 response, youth organizations, and social services"
+93439,HEALTH,Chinese medical team in Namibia donates anti-epidemic materials to Katutura State Hospital,"On April 15, 2021, the Chinese medical team in Namibia donated masks, isolation gowns, goggles, disinfectants, and other anti-epidemic materials to the Katutura State Hospital where the medical team is located. This donation is part of the medical team's assistance to Katutura State Hopsital. The team and its donations are intended to assist the hospital in combatting COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese medical team in Namibia donates anti-epidemic materials to Katutura State Hospital
+
+# Description
+On April 15, 2021, the Chinese medical team in Namibia donated masks, isolation gowns, goggles, disinfectants, and other anti-epidemic materials to the Katutura State Hospital where the medical team is located. This donation is part of the medical team's assistance to Katutura State Hopsital. The team and its donations are intended to assist the hospital in combatting COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare assistance and donation of medical supplies, with no direct environmental or energy transition impact","Donation of masks, isolation gowns, goggles, disinfectants, and other anti-epidemic materials to combat COVID-19"
+93440,HEALTH,National Health Commission of China donates medical equipment to the Ministry of Health and Social Services of Namibia,"On January 12, 2021, the Chinese Embassy in Namibia held a ceremony to deliver a batch of medical equipment donated by the National Health Commission of China to the Ministry of Health and Social Services of Namibia. The equipment included an unknown quantity of oxygen concentrators and ventilators. The donation was meant to help in the fight against COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+National Health Commission of China donates medical equipment to the Ministry of Health and Social Services of Namibia
+
+# Description
+On January 12, 2021, the Chinese Embassy in Namibia held a ceremony to deliver a batch of medical equipment donated by the National Health Commission of China to the Ministry of Health and Social Services of Namibia. The equipment included an unknown quantity of oxygen concentrators and ventilators. The donation was meant to help in the fight against COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of medical equipment (oxygen concentrators and ventilators) for COVID-19 response
+93441,HEALTH,"Chinese government donates 200,000 doses of COVID-19 vaccine to Namibia","On November 25, 2021, Ambassador Zhang Yiming announced that the Chinese Government will once again donate 200,000 doses of the Sinopharm vaccine to Namibia. According to the Chinese Embassy in Namibia, the ambassador made this announcement at the signing ceremony of the Economic and Technological Cooperation Agreement between China and Namibia. This donation follows an earlier donation of 100,000 Sinopharm vaccines from China made in March 2021. According to a media report, it is unclear when the donation will take place.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 200,000 doses of COVID-19 vaccine to Namibia
+
+# Description
+On November 25, 2021, Ambassador Zhang Yiming announced that the Chinese Government will once again donate 200,000 doses of the Sinopharm vaccine to Namibia. According to the Chinese Embassy in Namibia, the ambassador made this announcement at the signing ceremony of the Economic and Technological Cooperation Agreement between China and Namibia. This donation follows an earlier donation of 100,000 Sinopharm vaccines from China made in March 2021. According to a media report, it is unclear when the donation will take place.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Vaccine donation, healthcare sector, no energy or infrastructure components"
+93448,HEALTH,"Chinese Government donates 250,000 Sinopharm Covid-19 vaccine doses worth $4.5 million to the Government of Namibia in July 2021","In 2021, the Chinese Government donated approximately 350,000 doses of Covid-19 vaccines to the Government of Namibia. The Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines to the Government of Zambia on March 16, 2021. The shipment arrived at Hosea Kutako International Airport and Namibian Deputy Prime Minister and Minister of International Relations and Cooperation Netumbo Nandi-Ndaitwah attended the vaccine handover ceremony. Then, on July 16, 2021, the Chinese Government delivered another 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Namibia.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the July 2021 donation as $4.5 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 250,000 Sinopharm Covid-19 vaccine doses worth $4.5 million to the Government of Namibia in July 2021
+
+# Description
+In 2021, the Chinese Government donated approximately 350,000 doses of Covid-19 vaccines to the Government of Namibia. The Chinese Government delivered 100,000 donated doses of Sinovac Covid-19 vaccines to the Government of Zambia on March 16, 2021. The shipment arrived at Hosea Kutako International Airport and Namibian Deputy Prime Minister and Minister of International Relations and Cooperation Netumbo Nandi-Ndaitwah attended the vaccine handover ceremony. Then, on July 16, 2021, the Chinese Government delivered another 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Namibia.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Vaccine donation, healthcare sector, no energy or infrastructure components"

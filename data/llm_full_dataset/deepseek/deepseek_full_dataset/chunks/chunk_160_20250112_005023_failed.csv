@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92938,HEALTH,Chinese government donates masks and frontal guards to the Central African Republic in June 2020,"In June 2020, the Chinese Government provided 18,000 surgical masks and 120 frontal guards to the Central African Republic. The First Lady of China, Peng Liyuan, donated the supplies on behalf of the Chinese Government, and the Organization of African First Ladies for Development (OAFLAD) coordinated the donation. Brigitte Touadera, First Lady of the Central African Republic, received the supplies. The monetary value of the donations is unknown.   The donation detailed in the project is part of a series of donations from the Government of China to 53 African countries across the OAPDAD. Further information regarding the agreement can be found in Project ID #92937.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates masks and frontal guards to the Central African Republic in June 2020
+
+# Description
+In June 2020, the Chinese Government provided 18,000 surgical masks and 120 frontal guards to the Central African Republic. The First Lady of China, Peng Liyuan, donated the supplies on behalf of the Chinese Government, and the Organization of African First Ladies for Development (OAFLAD) coordinated the donation. Brigitte Touadera, First Lady of the Central African Republic, received the supplies. The monetary value of the donations is unknown.   The donation detailed in the project is part of a series of donations from the Government of China to 53 African countries across the OAPDAD. Further information regarding the agreement can be found in Project ID #92937.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

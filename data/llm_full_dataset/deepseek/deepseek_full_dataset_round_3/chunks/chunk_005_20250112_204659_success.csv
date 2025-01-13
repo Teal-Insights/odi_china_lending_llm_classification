@@ -1,0 +1,9 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93058,HEALTH,"China's First Lady donates COVID-19 relief supplies to Mauritania for the fight against Covid-19 on July 14, 2020","On July 14, 2020, the Chinese Embassy handed over China's First Lady, Peng Liyuan’s, donation of COVID-19 relief supplies to Mauritania’s First Lady. The donation included personal protective medical supplies for health personnel, thermometers and other equipment.This batch of supplies were targeted for women, children, and youth. The exact value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+China's First Lady donates COVID-19 relief supplies to Mauritania for the fight against Covid-19 on July 14, 2020
+
+# Description
+On July 14, 2020, the Chinese Embassy handed over China's First Lady, Peng Liyuans, donation of COVID-19 relief supplies to Mauritanias First Lady. The donation included personal protective medical supplies for health personnel, thermometers and other equipment.This batch of supplies were targeted for women, children, and youth. The exact value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support and humanitarian aid without direct environmental or energy transition implications,"COVID-19 relief supplies including personal protective equipment and medical supplies targeted at women, children, and youth"

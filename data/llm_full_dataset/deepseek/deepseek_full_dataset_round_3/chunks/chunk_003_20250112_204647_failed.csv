@@ -1,0 +1,100 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+2071,GENERAL BUDGET SUPPORT,Chinese Ministry of Commerce provides a $1.5 million USD grant for balance of payments support to Seychelles,"In February of 2007, government officials of China and Seychelles signed a series of five agreements, one of which included a $1.5 million USD grant for balance of payment support. It is unclear how exactly the funds were used. The accords were signed by Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai.",NA,"# Sector
+GENERAL BUDGET SUPPORT
+
+# Title
+Chinese Ministry of Commerce provides a $1.5 million USD grant for balance of payments support to Seychelles
+
+# Description
+In February of 2007, government officials of China and Seychelles signed a series of five agreements, one of which included a $1.5 million USD grant for balance of payment support. It is unclear how exactly the funds were used. The accords were signed by Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+2048,WATER SUPPLY AND SANITATION,Chinese Government issues MAD 22 million grant for provision of engineering equipment to support hydraulic projects,"On April 24, 2006, Bo Xilai, China’s Minister of Commerce of China, and M. Fathallah Oulalou, Minister of Finance and Privatization of Morocco, signed letters of exchange, committing MAD 22 million of grant funding for the provision of engineering equipment to support hydraulic projects. The equipment was successfully delivered on October 20, 2006.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government issues MAD 22 million grant for provision of engineering equipment to support hydraulic projects
+
+# Description
+On April 24, 2006, Bo Xilai, Chinas Minister of Commerce of China, and M. Fathallah Oulalou, Minister of Finance and Privatization of Morocco, signed letters of exchange, committing MAD 22 million of grant funding for the provision of engineering equipment to support hydraulic projects. The equipment was successfully delivered on October 20, 2006.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+92938,HEALTH,Chinese government donates masks and frontal guards to the Central African Republic in June 2020,"In June 2020, the Chinese Government provided 18,000 surgical masks and 120 frontal guards to the Central African Republic. The First Lady of China, Peng Liyuan, donated the supplies on behalf of the Chinese Government, and the Organization of African First Ladies for Development (OAFLAD) coordinated the donation. Brigitte Touadera, First Lady of the Central African Republic, received the supplies. The monetary value of the donations is unknown.   The donation detailed in the project is part of a series of donations from the Government of China to 53 African countries across the OAPDAD. Further information regarding the agreement can be found in Project ID #92937.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates masks and frontal guards to the Central African Republic in June 2020
+
+# Description
+In June 2020, the Chinese Government provided 18,000 surgical masks and 120 frontal guards to the Central African Republic. The First Lady of China, Peng Liyuan, donated the supplies on behalf of the Chinese Government, and the Organization of African First Ladies for Development (OAFLAD) coordinated the donation. Brigitte Touadera, First Lady of the Central African Republic, received the supplies. The monetary value of the donations is unknown.   The donation detailed in the project is part of a series of donations from the Government of China to 53 African countries across the OAPDAD. Further information regarding the agreement can be found in Project ID #92937.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54643,ACTION RELATING TO DEBT,China gives 10 year extensions on 4 Cuban interest-free loans,"In November 2004, Bo Xilai, China's Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban Minister, signed an agreement postponing Cuba's payment of 4 interest-free loans for 10 additional years. These government loans (collectively worth $50 million) were granted to Cuba between 1990-1994  They included a 1990 loan for a bicycle and fan factory; a 1992 loan for bicycles, fans, and fish farming programs; a 1992 loan for bicycles; and a 1994 loan for pharmaceutical raw materials, equipment, and medicines.",NA,"# Sector
+ACTION RELATING TO DEBT
+
+# Title
+China gives 10 year extensions on 4 Cuban interest-free loans
+
+# Description
+In November 2004, Bo Xilai, China's Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban Minister, signed an agreement postponing Cuba's payment of 4 interest-free loans for 10 additional years. These government loans (collectively worth $50 million) were granted to Cuba between 1990-1994  They included a 1990 loan for a bicycle and fan factory; a 1992 loan for bicycles, fans, and fish farming programs; a 1992 loan for bicycles; and a 1994 loan for pharmaceutical raw materials, equipment, and medicines.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54699,HEALTH,China loans 50 million RMB to Cuban Hospitals through Economic and Technical Cooperation Agreement,"In November 2004, China agreed to provide a 50 million RMB ($6.1 million) governmental loan to be used in the acquisition of expendable material for hospitals and polyclinics, parts replacement for medical equipment; resources for stomatology and optics. The Economic and Technical Cooperation agreement to provide the loan was signed by Bo Xilai of China's Ministry of Commerce and Ricardo Cabrisas Ruiz of Cuba. The loan is for 15 years including a grace period of five years without interest (Opciones).",NA,"# Sector
+HEALTH
+
+# Title
+China loans 50 million RMB to Cuban Hospitals through Economic and Technical Cooperation Agreement
+
+# Description
+In November 2004, China agreed to provide a 50 million RMB ($6.1 million) governmental loan to be used in the acquisition of expendable material for hospitals and polyclinics, parts replacement for medical equipment; resources for stomatology and optics. The Economic and Technical Cooperation agreement to provide the loan was signed by Bo Xilai of China's Ministry of Commerce and Ricardo Cabrisas Ruiz of Cuba. The loan is for 15 years including a grace period of five years without interest (Opciones).",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54739,GOVERNMENT AND CIVIL SOCIETY,Chinese 2004 Agreement to Modernization of Cuba's Meteorological Service,"On November 22nd, 2004, the Chinese and Cuban governments exchanged agreements about getting a Chinese team to do a study on the modernization of Cuba's meteorological system services. This agreement was signed by Bo Xilai, Minister of Commerce, and Fernando González Bermúdez, acting Minister of CITMA (Ministerio de ciencia, tecnología y medio ambiente).This project's primary objective is to strengthen the technological capacities of Cuba's Meteorological Service in a three year period. It's oriented principally towards the modernization of the monitoring network of meteorological observations, the modernization of the system of meteorological telecommunications, and insurances for the carrying out of the project. The signed document is entitled: ""Canje de Notas entre el Gobierno de la República de Cuba y el Gobierno de la República Popular China, sobre el Envío de una Misión de Especialistas a Cuba por el Gobierno de China para Realizar Estudios sobre el Proyecto de Modernización del Sistema de Servicios Meteorológicos de Cuba.""",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese 2004 Agreement to Modernization of Cuba's Meteorological Service
+
+# Description
+On November 22nd, 2004, the Chinese and Cuban governments exchanged agreements about getting a Chinese team to do a study on the modernization of Cuba's meteorological system services. This agreement was signed by Bo Xilai, Minister of Commerce, and Fernando Gonzlez Bermdez, acting Minister of CITMA (Ministerio de ciencia, tecnologa y medio ambiente).This project's primary objective is to strengthen the technological capacities of Cuba's Meteorological Service in a three year period. It's oriented principally towards the modernization of the monitoring network of meteorological observations, the modernization of the system of meteorological telecommunications, and insurances for the carrying out of the project. The signed document is entitled: ""Canje de Notas entre el Gobierno de la Repblica de Cuba y el Gobierno de la Repblica Popular China, sobre el Envo de una Misin de Especialistas a Cuba por el Gobierno de China para Realizar Estudios sobre el Proyecto de Modernizacin del Sistema de Servicios Meteorolgicos de Cuba.""",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54740,TRADE POLICIES AND REGULATIONS,Chinese loan to fund purchase of X-ray Equipment for container inspection to Cuba,"In 2004, China provided a loan to Cuba for the acquisition of a special X-ray system for the inspection of containers, the aforementioned equipment is already installed and operating in the Port, whose value is 3.0 million dollars. The transaction amount is then recorded as 3 million USD. The project is completed and is operating in the port of Havana. The loan was signed by Bo Xilai, China's Minister of Commerce, and Pedro Pupo, head of the Aduana General de la República de Cuba.  On November 22, 2004, Bo Xilai, Minister of Commerce and Pedro Pupo, head of the General Customs of the Republic of Cuba signed the government loan. The x-ray equipment was inaugurated on January 14, 2005.",NA,"# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese loan to fund purchase of X-ray Equipment for container inspection to Cuba
+
+# Description
+In 2004, China provided a loan to Cuba for the acquisition of a special X-ray system for the inspection of containers, the aforementioned equipment is already installed and operating in the Port, whose value is 3.0 million dollars. The transaction amount is then recorded as 3 million USD. The project is completed and is operating in the port of Havana. The loan was signed by Bo Xilai, China's Minister of Commerce, and Pedro Pupo, head of the Aduana General de la Repblica de Cuba.  On November 22, 2004, Bo Xilai, Minister of Commerce and Pedro Pupo, head of the General Customs of the Republic of Cuba signed the government loan. The x-ray equipment was inaugurated on January 14, 2005.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+54853,"AGRICULTURE, FORESTRY, FISHING",Chinese Technical Assistance for Cuban Aquaculture Technical Assistance Project (linked to #69684),"On 22 November, 2004, China signed an Exchange of Letters agreement for the provision of technical assistance for Cuba's ""Aquaculture Technical Assistance Project"".  China agreed to send three technicians - two in fish breeding and one in fish nutrition - to work in Cuba for two years.  This agreement was signed by Bo Xilai, the Chinese Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban minister.  The second phase of the Aquaculture Technical Assistance Project was agreed upon in March 2010.  The fifth phase of the Aquaculture Technical Assistance Project is captured in linked project #69684.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Technical Assistance for Cuban Aquaculture Technical Assistance Project (linked to #69684)
+
+# Description
+On 22 November, 2004, China signed an Exchange of Letters agreement for the provision of technical assistance for Cuba's ""Aquaculture Technical Assistance Project"".  China agreed to send three technicians - two in fish breeding and one in fish nutrition - to work in Cuba for two years.  This agreement was signed by Bo Xilai, the Chinese Minister of Commerce, and Ricardo Cabrisas Ruiz, a Cuban minister.  The second phase of the Aquaculture Technical Assistance Project was agreed upon in March 2010.  The fifth phase of the Aquaculture Technical Assistance Project is captured in linked project #69684.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+500,COMMUNICATIONS,Chinese Government provides RMB 30 million grant for Phase 2 of Egyptian Remote Education Project (Linked to Project ID#543 and #65829),"In 2002, China’s Ministry of Commerce (MOFCOM) provided a $4 million grant to the Government of Egypt for Phase 1 of the Egyptian Remote Education Project (captured in Project ID#543). Then, on December 6, 2004, Egypt's Minister of State for International Cooperation, Fayza Abul Nagaa, and China's Minister of Commerce, Bo Xilai, signed an RMB 30,000,000 (approximately $4.5 million) grant agreement for Phase 2 of the Egyptian Remote Education Project (captured in Project ID#500).  Then, on October 27, 2018, the Chinese Government and the Government of Egypt signed an exchange of letters, committing RMB 79 million ($11.5 million) of grant funding for Phase 3 of the Egyptian Remote Education Project (captured in Project ID#65829). Egyptian Presidential Order No. (2019) ratified the exchange of letters into Egyptian law on June 24, 2019. The grant proceeds for Phase 3 were drawn from an Economic and Technical Cooperation Agreement (ETCA) that the two governments signed on December 23, 2014.    The purpose of the Egyptian Remote Education Project was to establish a distance learning network for Egypt's Ministry of Education. The network was designed to support basic educational courses, lectures, and teacher training activities. The project was implemented in three phases. Phase 1 involved the establishment of 33 distance learning terminals in 27 Egyptian governorates. It also sought to connect these terminals to a training center in ‘Mubarak Education City’ in the city of ‘6th of October’ (Arabic: السادس من أكتوبر‎) within Giza Governorate. Each terminal was equipped with video, audio, and remote white board devices. Phase 2 involved an expansion of the network from 33 terminals to 143 terminals in 27 Egyptian governorates. The purpose of Phase 3 is to expand, upgrade, and  transform the measures and technologies already put in place during Phase 1 and 2. It involves an expansion of the network from 143 terminals to 200 terminals (through the installation of audio-visual technologies in 57 additional Egyptian schools). Its ultimate aim is to address a lack of teachers in some schools by connecting students and teachers through audio-visual technologies. Phase 1 project design work began in late 2001. MOFCOM then issued a Phase 1 implementation contract to ZTE Corporation in August 2002.    Phase 1 was officially completed and handed over to the local authorities on March 18, 2003.  On May 21, 2006, the Government of Egypt’s General Authority For Educational Buildings and China International Telecommunication Construction Corporation (CITCC) signed a Phase 2 implementation contract. Phase 2 commenced on January 31, 2007 and reached completion on June 30, 2007. Then, on January 19, 2016, the Egyptian Ministry of Education and ZTE Corporation signed a cooperation agreement related to Phase 3.  As of early 2021, Phase 3 had not yet entered implementation.",1. Egypt’s Ministry of International Cooperation identifies an RMB 79 million grant for the Implementation of Remote Education System Upgrade 'Phases 1 and 2' and Extension 'Phase 3' Project. It is unclear if this grant commitment is separate from and additional to the grant commitments captured via Project ID#500 and Project ID#543. This issue warrants further investigation.  See https://moic.gov.eg/project/84 and https://www.dropbox.com/s/lm2ar2kowlrk7ox/Implementation%20of%20Remote%20Education%20System%20Upgrade%20%22Phases%201%20and%202%22%20and%20Extension%20%22Phase%203%22.pdf?dl=02. This project is also known as Phase 2 of the China-Aided Distance Education Project in Egypt.  The Chinese project title is 我援埃远程教育二期项目.  The Arabic project title is مشروع التعليم عن بعد.,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese Government provides RMB 30 million grant for Phase 2 of Egyptian Remote Education Project (Linked to Project ID#543 and #65829)
+
+# Description
+In 2002, Chinas Ministry of Commerce (MOFCOM) provided a $4 million grant to the Government of Egypt for Phase 1 of the Egyptian Remote Education Project (captured in Project ID#543). Then, on December 6, 2004, Egypt's Minister of State for International Cooperation, Fayza Abul Nagaa, and China's Minister of Commerce, Bo Xilai, signed an RMB 30,000,000 (approximately $4.5 million) grant agreement for Phase 2 of the Egyptian Remote Education Project (captured in Project ID#500).  Then, on October 27, 2018, the Chinese Government and the Government of Egypt signed an exchange of letters, committing RMB 79 million ($11.5 million) of grant funding for Phase 3 of the Egyptian Remote Education Project (captured in Project ID#65829). Egyptian Presidential Order No. (2019) ratified the exchange of letters into Egyptian law on June 24, 2019. The grant proceeds for Phase 3 were drawn from an Economic and Technical Cooperation Agreement (ETCA) that the two governments signed on December 23, 2014.    The purpose of the Egyptian Remote Education Project was to establish a distance learning network for Egypt's Ministry of Education. The network was designed to support basic educational courses, lectures, and teacher training activities. The project was implemented in three phases. Phase 1 involved the establishment of 33 distance learning terminals in 27 Egyptian governorates. It also sought to connect these terminals to a training center in Mubarak Education City in the city of 6th of October (Arabic:   ) within Giza Governorate. Each terminal was equipped with video, audio, and remote white board devices. Phase 2 involved an expansion of the network from 33 terminals to 143 terminals in 27 Egyptian governorates. The purpose of Phase 3 is to expand, upgrade, and  transform the measures and technologies already put in place during Phase 1 and 2. It involves an expansion of the network from 143 terminals to 200 terminals (through the installation of audio-visual technologies in 57 additional Egyptian schools). Its ultimate aim is to address a lack of teachers in some schools by connecting students and teachers through audio-visual technologies. Phase 1 project design work began in late 2001. MOFCOM then issued a Phase 1 implementation contract to ZTE Corporation in August 2002.    Phase 1 was officially completed and handed over to the local authorities on March 18, 2003.  On May 21, 2006, the Government of Egypts General Authority For Educational Buildings and China International Telecommunication Construction Corporation (CITCC) signed a Phase 2 implementation contract. Phase 2 commenced on January 31, 2007 and reached completion on June 30, 2007. Then, on January 19, 2016, the Egyptian Ministry of Education and ZTE Corporation signed a cooperation agreement related to Phase 3.  As of early 2021, Phase 3 had not yet entered implementation.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

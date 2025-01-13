@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+1259,GOVERNMENT AND CIVIL SOCIETY,Ongwediva Town Council donation,"In 2004, after the completion of the Ongwediva Town Council building, the managing director of China Jiangsu International Namibia, Wang Yun, donated N$30,000 to the town council, which is to be used for development activities in the town.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Ongwediva Town Council donation
+
+# Description
+In 2004, after the completion of the Ongwediva Town Council building, the managing director of China Jiangsu International Namibia, Wang Yun, donated N$30,000 to the town council, which is to be used for development activities in the town.",TRUE,NA,NEUTRAL,HIGH,Social Development,Donation for development activities with no direct environmental or energy transition impact,"Donation to town council for development activities, no specific energy or environmental focus mentioned"
+1266,EDUCATION,"China trains 10,000 Africans and sends Chinese experts to Africa","On November 18th, 2004, Minister of Works and Transport Dr Moses Amweelo and some high-ranking officials from the ministry expressed their satisfaction with the Ministry of Commerce of China's commitment regarding the training of 10,000 Africans for the next three years or source experts to African countries. It is unclear if this is a multi-recipient project.",NA,"# Sector
+EDUCATION
+
+# Title
+China trains 10,000 Africans and sends Chinese experts to Africa
+
+# Description
+On November 18th, 2004, Minister of Works and Transport Dr Moses Amweelo and some high-ranking officials from the ministry expressed their satisfaction with the Ministry of Commerce of China's commitment regarding the training of 10,000 Africans for the next three years or source experts to African countries. It is unclear if this is a multi-recipient project.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and training without direct environmental or energy transition impacts,"Training of 10,000 Africans, sending Chinese experts, education sector focus"
+1269,GOVERNMENT AND CIVIL SOCIETY,"Chinese Government provides N$1,443,000 grant for Regional Assembly Buildings in Outapi and Rundu","In 2004, China's Ministry of Commerce provided a N$1.443 million grant for the construction of two regional council buildings in Namibia. The first building was built in the town of Outapi in Omusati Region, while the second building was constructed in the town of Rundu within Kavango Province. China Jiangxi Corporation for International Economic and Technical Cooperation was the contractor responsible for implementation. Construction began on December 8, 2004 and ended on April 28, 2006.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government provides N$1,443,000 grant for Regional Assembly Buildings in Outapi and Rundu
+
+# Description
+In 2004, China's Ministry of Commerce provided a N$1.443 million grant for the construction of two regional council buildings in Namibia. The first building was built in the town of Outapi in Omusati Region, while the second building was constructed in the town of Rundu within Kavango Province. China Jiangxi Corporation for International Economic and Technical Cooperation was the contractor responsible for implementation. Construction began on December 8, 2004 and ended on April 28, 2006.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves construction of government buildings with no direct environmental or energy transition impact,"Construction of regional council buildings, no energy or industrial components mentioned"
+23105,TRANSPORT AND STORAGE,Chinese Government issues N$30 million interest-free loan to TransNamib for acquisition of 4 diesel locomotives and 1 DMU passenger train,"In 2004, the Chinese Government and TransNamib — a state-owned railway enterprise in Namibia — signed a N$30 million interest-free loan to facilitate TransNamib’s acquisition of 4 diesel locomotives and 1 DMU passenger train. China Railway Materials Export and Import Company (now known as China Railway Materials Group Corporation) and China South Locomotive & Rolling Stock Corp., Ltd. were the contractors responsible for implementation of the project. This project was completed on July 25, 2004, when the products were shipped from China to Namibia.","The loan is not included in the database of Chinese loan commitments that SAIS-CARI released in July 2020. Since loan terms for the interest-free loan are unavailable, AidData has set maturity period to 20 years by default and grace period to 10 years by default per China's Foreign Assistance White Paper (http://www.cidca.gov.cn/2018-08/06/c_129925064_3.htm) which states that the maturity period of interest-free loans is 20 years, with a drawdown period of 5 years, grace period of 5 years, and repayment over 10 years. AidData treats the drawdown period as providing 5 years of additional grace.","# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Government issues N$30 million interest-free loan to TransNamib for acquisition of 4 diesel locomotives and 1 DMU passenger train
+
+# Description
+In 2004, the Chinese Government and TransNamib — a state-owned railway enterprise in Namibia — signed a N$30 million interest-free loan to facilitate TransNamib’s acquisition of 4 diesel locomotives and 1 DMU passenger train. China Railway Materials Export and Import Company (now known as China Railway Materials Group Corporation) and China South Locomotive & Rolling Stock Corp., Ltd. were the contractors responsible for implementation of the project. This project was completed on July 25, 2004, when the products were shipped from China to Namibia.",TRUE,NA,BROWN,HIGH,Green Transportation,"Project involves acquisition of diesel-powered locomotives and trains, which contribute to fossil fuel dependency and emissions","Diesel locomotives, DMU passenger train, fossil fuel-powered transportation"
+62364,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"China Donates 2,000 tons of Corn to Namibia","On 22 March 2004, the Chinese Government donated 2,000 tons of corn to Namibia in response to an ongoing drought. The value of this donation is unknown.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China Donates 2,000 tons of Corn to Namibia
+
+# Description
+On 22 March 2004, the Chinese Government donated 2,000 tons of corn to Namibia in response to an ongoing drought. The value of this donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on food aid and drought relief without direct environmental or energy transition impacts,"Donation of 2,000 tons of corn for food security assistance"
+73230,HEALTH,Chinese Government dispatches 5th Chinese medical team to Katutura State Hospital (linked to project #62439),"The Chinese Government has been sending medical teams to Namibia since 1996. Zhejiang Province has been responsible for sending the medical teams. In 2004, the Chinese Government dispatched the 5th medical team to Namibia. The 5th medical team consisted of 4 members (2 doctors and 2 nurses) who were stationed at the acupuncture department of Katutura State Hospital (首都卡图图拉医院) in the capital city of Windhoek. The team completed its term of service between 2004 and 2006.  This project is part of the umbrella project #62439, which captures all medical teams sent to Katutura State Hospital since 1996.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government dispatches 5th Chinese medical team to Katutura State Hospital (linked to project #62439)
+
+# Description
+The Chinese Government has been sending medical teams to Namibia since 1996. Zhejiang Province has been responsible for sending the medical teams. In 2004, the Chinese Government dispatched the 5th medical team to Namibia. The 5th medical team consisted of 4 members (2 doctors and 2 nurses) who were stationed at the acupuncture department of Katutura State Hospital (首都卡图图拉医院) in the capital city of Windhoek. The team completed its term of service between 2004 and 2006.  This project is part of the umbrella project #62439, which captures all medical teams sent to Katutura State Hospital since 1996.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare services without direct environmental or energy transition impacts,"Medical team deployment to hospital, healthcare focus, no energy or infrastructure components"
+64893,GOVERNMENT AND CIVIL SOCIETY,"Chinese Government grant for the Clerk of Parliament and the A/Parliamentary Counsel to participate in two international conferences in Korolevu, Fiji","In 2004, the Chinese government provided a grant that enabled the Clerk of Parliament and the A/Parliamentary Counsel to participate in two international conferences. The first conference was held in Korolevu, Fiji from August 17th to 20th, and was the Asia Pacific Parliamentarians Conference on Environment and Development (APPCED). The second conference was also held in Korolevu, Fiji, over the 23rd and 24th of August, and was the Pacific Parliamentary Assembly Meeting on Population and Development (PPAPD). The exact amount of Chinese assistance to support members of the Government of Nauru attending these conferences is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government grant for the Clerk of Parliament and the A/Parliamentary Counsel to participate in two international conferences in Korolevu, Fiji
+
+# Description
+In 2004, the Chinese government provided a grant that enabled the Clerk of Parliament and the A/Parliamentary Counsel to participate in two international conferences. The first conference was held in Korolevu, Fiji from August 17th to 20th, and was the Asia Pacific Parliamentarians Conference on Environment and Development (APPCED). The second conference was also held in Korolevu, Fiji, over the 23rd and 24th of August, and was the Pacific Parliamentary Assembly Meeting on Population and Development (PPAPD). The exact amount of Chinese assistance to support members of the Government of Nauru attending these conferences is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves government participation in international conferences without direct environmental or energy transition impacts,"Participation in parliamentary conferences on environment, development, population; no direct infrastructure or energy components"
+64913,GOVERNMENT AND CIVIL SOCIETY,"Chinese Government grant for a delegation from the Government of Nauru to participate in the 35th Pacific Islands Forum in Apia, Samoa","In 2004, the Chinese Government funded the Presidential and Ministerial delegation and officials to attend the 35th Pacific Islands Forum held in Apia, Samoa. The Forum was held from August 5th-7th.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government grant for a delegation from the Government of Nauru to participate in the 35th Pacific Islands Forum in Apia, Samoa
+
+# Description
+In 2004, the Chinese Government funded the Presidential and Ministerial delegation and officials to attend the 35th Pacific Islands Forum held in Apia, Samoa. The Forum was held from August 5th-7th.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves funding for participation in a diplomatic forum, with no direct environmental or energy transition impact",Government grant for delegation attendance at Pacific Islands Forum
+65065,UNALLOCATED/UNSPECIFIED,Chinese Government provides a $1 million USD grant for unspecified purposes,"On May 13, 2004, the Government of Nauru received a $1 million USD grant from the Chinese Government for unspecified purposes. In January 2005, the Public Accounts Committee of the Congress of the Federated States of Micronesia was ""seeking information concerning the disbursement of these funds"" and asked Micronesia's Treasury ""to reconcile the various payments issued by the government using these funds"".",It is likely that this grant came from an Economic and Technical Cooperation Agreement (ETCA) signed by the two countries in April 2004.Project_status was set to Completion because it clears that all Chinese financing was disbursed to Micronesia.,"# Sector
+UNALLOCATED/UNSPECIFIED
+
+# Title
+Chinese Government provides a $1 million USD grant for unspecified purposes
+
+# Description
+On May 13, 2004, the Government of Nauru received a $1 million USD grant from the Chinese Government for unspecified purposes. In January 2005, the Public Accounts Committee of the Congress of the Federated States of Micronesia was ""seeking information concerning the disbursement of these funds"" and asked Micronesia's Treasury ""to reconcile the various payments issued by the government using these funds"".",TRUE,NA,NEUTRAL,HIGH,Financial Services,Unspecified grant with no clear environmental or energy transition impacts,"Unspecified purposes, financial grant nature"
+65066,OTHER MULTISECTOR,Chinese government grants $1 million to Nauru for multiple purposes,"In August of 2004, the Chinese government granted Nauru $1 million after an agreement was reached during the Apia Forum (August 5th-7th). According to ""Votes and Proceedings of the Fifteenth Parliament, No. 50"", the grant is equal to 1.3 million AUD, with approximately AUD300,000 allocated to purchasing fuel on September 1st, 2004. In addition to the fuel shipment, an unspecified amount of the grant was ""to assist to the extent possible our overseas students’ critical accounts to settle their unpaid accounts and get on environment at least until the end of the school year,"" and AUD72,000 was put towards redundancy packages for staff working in Melbourne, AUS (page 11).",NA,"# Sector
+OTHER MULTISECTOR
+
+# Title
+Chinese government grants $1 million to Nauru for multiple purposes
+
+# Description
+In August of 2004, the Chinese government granted Nauru $1 million after an agreement was reached during the Apia Forum (August 5th-7th). According to ""Votes and Proceedings of the Fifteenth Parliament, No. 50"", the grant is equal to 1.3 million AUD, with approximately AUD300,000 allocated to purchasing fuel on September 1st, 2004. In addition to the fuel shipment, an unspecified amount of the grant was ""to assist to the extent possible our overseas students’ critical accounts to settle their unpaid accounts and get on environment at least until the end of the school year,"" and AUD72,000 was put towards redundancy packages for staff working in Melbourne, AUS (page 11).",TRUE,NA,NEUTRAL,HIGH,Social Development,"The grant is primarily for social and educational purposes, with no clear environmental or energy transition impact","Funds allocated for student support, staff redundancy packages, and unspecified general assistance"

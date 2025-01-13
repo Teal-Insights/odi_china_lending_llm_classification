@@ -1,0 +1,73 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91629,HEALTH,The Chinese Embassy in Liberia donates anti-COVID-19 pandemic medical supplies and daily necessities to Liberia in November 2020,"In November 2020, The Chinese Embassy in Liberia donated anti-pandemic medical supplies, and other daily necessities like grain and oil to government departments such as the Presidential Palace, the Vice Presidential Palace, Parliament, and the Ministry of Foreign Affairs, as well as the media, think tanks, civil organizations and other social circles in Liberia in batches.",NA,"# Sector
+HEALTH
+
+# Title
+The Chinese Embassy in Liberia donates anti-COVID-19 pandemic medical supplies and daily necessities to Liberia in November 2020
+
+# Description
+In November 2020, The Chinese Embassy in Liberia donated anti-pandemic medical supplies, and other daily necessities like grain and oil to government departments such as the Presidential Palace, the Vice Presidential Palace, Parliament, and the Ministry of Foreign Affairs, as well as the media, think tanks, civil organizations and other social circles in Liberia in batches.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on health-related donations and social support without direct environmental or energy transition impacts,Anti-pandemic medical supplies and daily necessities donation to various government and social organizations
+91631,EDUCATION,China grants the 2019/2020 'Chinese Ambassador Scholarship' to Liberian students,"On October 28th, 2020, The Chinese Embassy in Liberia held an online ceremony to grant the ""Chinese Ambassador Scholarship"" to Liberian students. This scholarship benefitted more than 130 students from three Liberian universities: the University of Liberia, Cuttington University and Tubman University.  The students were selected with the help of the Liberian Ministry of Foreign Affairs and Ministry of Education. The purpose of the scholarship is to help Liberian students to realize their personal ideals and making contributions to Liberia's education.   More than 30 people including Chinese ambassador Ren Yisheng, Deputy Minister of Education of Liberia, Latim, President of the University of Liberia, Nielsen, representatives of Cardington University and Tubman University, representatives of award-winning students, and media reporters attended online. The ceremony was streamed from Monrovia.",NA,"# Sector
+EDUCATION
+
+# Title
+China grants the 2019/2020 'Chinese Ambassador Scholarship' to Liberian students
+
+# Description
+On October 28th, 2020, The Chinese Embassy in Liberia held an online ceremony to grant the ""Chinese Ambassador Scholarship"" to Liberian students. This scholarship benefitted more than 130 students from three Liberian universities: the University of Liberia, Cuttington University and Tubman University.  The students were selected with the help of the Liberian Ministry of Foreign Affairs and Ministry of Education. The purpose of the scholarship is to help Liberian students to realize their personal ideals and making contributions to Liberia's education.   More than 30 people including Chinese ambassador Ren Yisheng, Deputy Minister of Education of Liberia, Latim, President of the University of Liberia, Nielsen, representatives of Cardington University and Tubman University, representatives of award-winning students, and media reporters attended online. The ceremony was streamed from Monrovia.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on education and human development without direct environmental or energy transition impacts,"Scholarship program for Liberian students, education sector focus"
+91632,DISASTER PREVENTION AND PREPAREDNESS,Chinese Government donates the first batch of anti-COVID-19 medical supplies to Liberia in April 2020,"On April 23rd, 2020, the Chinese interim agent Xu Kun to Liberia was invited to the Ministry of Foreign Affairs of Liberia to attend the donation ceremony of the Chinese government's aid to Liberia for COVID-19 pandemic prevention. This donation included 2000 N95 masks, 10,000 Normal medical masks, 2000 Medical protective gowns, 500 Infrared thermometers, 2000 Medical goggles, 10,000 Disposable rubber gloves and 10,000 Disposable shoes covers. They also donated USD $10,000. The purpose of this donation is to help Liberia fight against the pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+DISASTER PREVENTION AND PREPAREDNESS
+
+# Title
+Chinese Government donates the first batch of anti-COVID-19 medical supplies to Liberia in April 2020
+
+# Description
+On April 23rd, 2020, the Chinese interim agent Xu Kun to Liberia was invited to the Ministry of Foreign Affairs of Liberia to attend the donation ceremony of the Chinese government's aid to Liberia for COVID-19 pandemic prevention. This donation included 2000 N95 masks, 10,000 Normal medical masks, 2000 Medical protective gowns, 500 Infrared thermometers, 2000 Medical goggles, 10,000 Disposable rubber gloves and 10,000 Disposable shoes covers. They also donated USD $10,000. The purpose of this donation is to help Liberia fight against the pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on pandemic relief and medical supplies donation without direct environmental or energy transition impacts,"Donation of medical supplies and funds for COVID-19 prevention, humanitarian aid focus"
+91691,HEALTH,Chinese Government donates the second batch of anti-COVID-19 pandemic medical supplies in June 2020,"On June 12th, 2020, Charge d'Affaires Xu Kun of the Chinese Embassy in Liberia was invited to the Ministry of Foreign Affairs of Liberia to attend the donation ceremony of the second batch of anti-pandemic materials aided by the Chinese government. This batch of anti-pandemic materials assisted by the Chinese government includes COVID-19 detection reagents and sampling and extraction materials, N95 masks, medical masks, protective clothing, isolation goggles, gloves, and shoe covers.   As a friendly province, the Henan Provincial People's Government also assisted medical masks and other materials to Liberia. The purpose of this donation is to help Liberia fight against the pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates the second batch of anti-COVID-19 pandemic medical supplies in June 2020
+
+# Description
+On June 12th, 2020, Charge d'Affaires Xu Kun of the Chinese Embassy in Liberia was invited to the Ministry of Foreign Affairs of Liberia to attend the donation ceremony of the second batch of anti-pandemic materials aided by the Chinese government. This batch of anti-pandemic materials assisted by the Chinese government includes COVID-19 detection reagents and sampling and extraction materials, N95 masks, medical masks, protective clothing, isolation goggles, gloves, and shoe covers.   As a friendly province, the Henan Provincial People's Government also assisted medical masks and other materials to Liberia. The purpose of this donation is to help Liberia fight against the pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for pandemic response, with no direct environmental or energy transition impact","COVID-19 detection reagents, masks, protective equipment, and other medical supplies donated for pandemic response"
+91693,HEALTH,China donates a batch of anti-COVID-19 pandemic medical supplies to Liberian Ministry of Health in September 2020,"On September 23rd, 2020, The Political Counselor of the Chinese Embassy in Liberia, Xu Kun, and the Minister of Health of Liberia, Jala, jointly attended the handover ceremony for the donation of anti-COVID-19 pandemic materials held at the Overseas Chinese Chamber of Commerce in Liberia. The contents and value of the donation is unknown.  This batch of anti-pandemic material assistance from China is very timely and will help to enhance the nucleic acid detection capability of Lili and make every effort to prevent and control the COVID-19 pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+China donates a batch of anti-COVID-19 pandemic medical supplies to Liberian Ministry of Health in September 2020
+
+# Description
+On September 23rd, 2020, The Political Counselor of the Chinese Embassy in Liberia, Xu Kun, and the Minister of Health of Liberia, Jala, jointly attended the handover ceremony for the donation of anti-COVID-19 pandemic materials held at the Overseas Chinese Chamber of Commerce in Liberia. The contents and value of the donation is unknown.  This batch of anti-pandemic material assistance from China is very timely and will help to enhance the nucleic acid detection capability of Lili and make every effort to prevent and control the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Donation of anti-COVID-19 medical supplies, healthcare focus"
+91777,HEALTH,"Chongqing International Construction Corporation donates a batch of anti-COVID-19 medical materials to King Grey Community, Liberia in March 2020","On March 28th, 2020, The Liberia branch of Chongqing Foreign Construction Co., Ltd. donated 20 hand-washing and sanitizing buckets, 120 bottles of disinfectant water, and 5 boxes of hand-sanitizing powder, and other anti-pandemic materials to the King Grey community. The purpose of this donation is to help Liberia fight against the pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chongqing International Construction Corporation donates a batch of anti-COVID-19 medical materials to King Grey Community, Liberia in March 2020
+
+# Description
+On March 28th, 2020, The Liberia branch of Chongqing Foreign Construction Co., Ltd. donated 20 hand-washing and sanitizing buckets, 120 bottles of disinfectant water, and 5 boxes of hand-sanitizing powder, and other anti-pandemic materials to the King Grey community. The purpose of this donation is to help Liberia fight against the pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on healthcare support and pandemic response, with no direct environmental or energy transition impact","Donation of medical materials for COVID-19 response, healthcare focus"
+91924,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Chinese government donates 300 bags of rice to the Office of the Vice President of Liberia in May 2020,"On May 9, 2020, the Chinese government, via the Chinese Ambassador to Liberia, donated 300 bags of rice to Liberian Vice President Howard-Taylor. The purpose of this donation is to help Liberia fight against the pandemic.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese government donates 300 bags of rice to the Office of the Vice President of Liberia in May 2020
+
+# Description
+On May 9, 2020, the Chinese government, via the Chinese Ambassador to Liberia, donated 300 bags of rice to Liberian Vice President Howard-Taylor. The purpose of this donation is to help Liberia fight against the pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Food aid donation with no direct environmental or energy transition impact,"300 bags of rice donated for pandemic relief, developmental food aid purpose"
+91932,HEALTH,China donates materials to combat coronavirus in March 2020,"On March 18, 2020, the China donated medical supplies. The materials were given to the Liberian Ministry of Health, and included e 50 barrels, 200 pair of gloves,100 sets of protective clothing, eight cases of isopropyl rubbing alcohol, among others.  The purpose of this donation is to help Liberia fight against the pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China donates materials to combat coronavirus in March 2020
+
+# Description
+On March 18, 2020, the China donated medical supplies. The materials were given to the Liberian Ministry of Health, and included e 50 barrels, 200 pair of gloves,100 sets of protective clothing, eight cases of isopropyl rubbing alcohol, among others.  The purpose of this donation is to help Liberia fight against the pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Medical supplies donation for pandemic response, no energy or infrastructure components"
+96882,HEALTH,Chinese Government Makes Donation to National Public Health Institute of Liberia (NPHIL) for assistance of both ribavirin injections and tablets,"In October 2020, the Chinese Embassy received a formal request from the National Public Health Institute of Liberia (NPHIL) for assistance with both ribavirin injections and tablets.  The Chinese government made a special arrangement to urgently procure and transport a consignment of 9,090 packs of ribavirin injection and 1,200 packs of ribavirin tablets to support Liberia in tackling the ongoing Lassa fever outbreak.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government Makes Donation to National Public Health Institute of Liberia (NPHIL) for assistance of both ribavirin injections and tablets
+
+# Description
+In October 2020, the Chinese Embassy received a formal request from the National Public Health Institute of Liberia (NPHIL) for assistance with both ribavirin injections and tablets.  The Chinese government made a special arrangement to urgently procure and transport a consignment of 9,090 packs of ribavirin injection and 1,200 packs of ribavirin tablets to support Liberia in tackling the ongoing Lassa fever outbreak.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support and disease prevention, with no direct environmental or energy transition impact",Donation of ribavirin injections and tablets to support public health efforts against Lassa fever outbreak

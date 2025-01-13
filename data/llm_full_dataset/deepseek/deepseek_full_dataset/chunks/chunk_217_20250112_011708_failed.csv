@@ -1,0 +1,23 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91915,HEALTH,Chinese Government donates second batch of anti-COVID-19 pandemic materials to Madagascar in July 2020 (linked to project ID#91877 and 91912),"On July 13th, 2020, a donation ceremony for the second batch of anti-pandemic materials was held at the Chinese Embassy in Madagascar. Minister Naharimamy, the Minister of Population, Social Protection and Promotion of Women, Chinese Ambassador Yang Xiaorong, and Brigadier General Elack Andriankaja, General Coordinator of COVID-19, were in attendance. The donation was made to the Fitia association, a charitable organization founded by Mialy Rajoelina Razakandisa, wife of Andry Rajoelina, the president of Madagascar. The grant was organized on the initiative of Peng Liyuan, the first lady of China, and was given by the Chinese government through the the African First Ladies Federation for Development (OAFLAD).   This batch of supplies included medical masks, forehead thermometers, and 7.5 tons of rice. The first donation was in May 2020 (see project ID#91877), and the third batch was handed over in August 2020 (see project ID#91912).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates second batch of anti-COVID-19 pandemic materials to Madagascar in July 2020 (linked to project ID#91877 and 91912)
+
+# Description
+On July 13th, 2020, a donation ceremony for the second batch of anti-pandemic materials was held at the Chinese Embassy in Madagascar. Minister Naharimamy, the Minister of Population, Social Protection and Promotion of Women, Chinese Ambassador Yang Xiaorong, and Brigadier General Elack Andriankaja, General Coordinator of COVID-19, were in attendance. The donation was made to the Fitia association, a charitable organization founded by Mialy Rajoelina Razakandisa, wife of Andry Rajoelina, the president of Madagascar. The grant was organized on the initiative of Peng Liyuan, the first lady of China, and was given by the Chinese government through the the African First Ladies Federation for Development (OAFLAD).   This batch of supplies included medical masks, forehead thermometers, and 7.5 tons of rice. The first donation was in May 2020 (see project ID#91877), and the third batch was handed over in August 2020 (see project ID#91912).",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+92590,HEALTH,First Lady of China donates anti-epidemic supplies to First Lady of Malawi,"On July 28, 2020, a ceremony was held at the Kamuzu Presidential Palace for the donation of anti-epidemic materials to Malawi's First Lady, Monica Chakwera, on the behalf of China’s First Lady Peng Liyuan.  Chinese Ambassador to Malawi, Liu Hongyang, the First Lady of Malawi, and Malawi’s Minister of Health attended the ceremony and delivered speeches. The supplies, which included thermometers and face masks, are intended to help mothers, youths, and health workers.  The donation was made at the behest of the Organization of African First Ladies for Development and was part of a larger donation initiative of COVID supplies to 53 African countries.   The Political Counselor of the Chinese Embassy in Malawi and the Malawi Minister of Health signed the handover certificate for the anti-epidemic materials on behalf of the two governments.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates anti-epidemic supplies to First Lady of Malawi
+
+# Description
+On July 28, 2020, a ceremony was held at the Kamuzu Presidential Palace for the donation of anti-epidemic materials to Malawi's First Lady, Monica Chakwera, on the behalf of China’s First Lady Peng Liyuan.  Chinese Ambassador to Malawi, Liu Hongyang, the First Lady of Malawi, and Malawi’s Minister of Health attended the ceremony and delivered speeches. The supplies, which included thermometers and face masks, are intended to help mothers, youths, and health workers.  The donation was made at the behest of the Organization of African First Ladies for Development and was part of a larger donation initiative of COVID supplies to 53 African countries.   The Political Counselor of the Chinese Embassy in Malawi and the Malawi Minister of Health signed the handover certificate for the anti-epidemic materials on behalf of the two governments.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

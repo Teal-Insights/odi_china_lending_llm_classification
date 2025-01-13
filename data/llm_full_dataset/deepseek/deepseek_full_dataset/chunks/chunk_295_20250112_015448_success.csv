@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95175,HEALTH,"Chinese Embassy donates 30,000 masks and 121,000 posters to Sri Lankan Transport Board and Health Promotion Bureau","On August 17, 2020, the Chinese Embassy in Sri Lanka donated 30,000 surgical masks and 21,000 COVID-19 prevention posters to the Sri Lanka Transport Board (SLTB) and 100,000 COVID-19 prevention posters to the Health Promotion Bureau (HPB). The posters were in the Sinhala and Tamil languages. The masks and posters were intended to be distributed to thousands of bus drivers and conductors and to be distributed in public places including bus stops, railway stations, markets, hospitals, schools, health institutions, government offices, and workplaces across Sri Lanka. The monetary value of this donation is unknown.  A handover ceremony was held for this donation. Hu Wei, the Chargé d'affaires of the Chinese Embassy in Sri Lanka, handed over the medical masks to Kinsley Ranawaka, the Chairman of the Sri Lanka Transport Board (SLTB). The Chinese Envoy also handed over the COVID-19 prevention posters to Dr. Uthpala Amarasinghe, a representative of the Health Promotion Bureau (HPB) of Sri Lanka, during the ceremony.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 30,000 masks and 121,000 posters to Sri Lankan Transport Board and Health Promotion Bureau
+
+# Description
+On August 17, 2020, the Chinese Embassy in Sri Lanka donated 30,000 surgical masks and 21,000 COVID-19 prevention posters to the Sri Lanka Transport Board (SLTB) and 100,000 COVID-19 prevention posters to the Health Promotion Bureau (HPB). The posters were in the Sinhala and Tamil languages. The masks and posters were intended to be distributed to thousands of bus drivers and conductors and to be distributed in public places including bus stops, railway stations, markets, hospitals, schools, health institutions, government offices, and workplaces across Sri Lanka. The monetary value of this donation is unknown.  A handover ceremony was held for this donation. Hu Wei, the Chargé d'affaires of the Chinese Embassy in Sri Lanka, handed over the medical masks to Kinsley Ranawaka, the Chairman of the Sri Lanka Transport Board (SLTB). The Chinese Envoy also handed over the COVID-19 prevention posters to Dr. Uthpala Amarasinghe, a representative of the Health Promotion Bureau (HPB) of Sri Lanka, during the ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies and health education materials without direct environmental or energy transition impacts,Donation of surgical masks and COVID-19 prevention posters for public health purposes
+95233,HEALTH,"Chinese Embassy donates 1,500 face masks to General Sir John Kotelawala Defence University","On May 21, 2020, the Defense Attaché of the Chinese Embassy in Sri Lanka donated 1,500 face masks to General Sir John Kotelawala Defence University (KDU).",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 1,500 face masks to General Sir John Kotelawala Defence University
+
+# Description
+On May 21, 2020, the Defense Attaché of the Chinese Embassy in Sri Lanka donated 1,500 face masks to General Sir John Kotelawala Defence University (KDU).",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of face masks to university, healthcare sector focus"
+95241,HEALTH,"Sinopharm International Corporation donates 50,000 face masks worth $25,850 USD to Sri Lanka's Ministry of Health and Indigenous Medical Services","On March 26, 2020, Sinopharm International Corporation donated 50,000 face masks worth $25,850 USD to Sri Lanka's Ministry of Health and Indigenous Medical Services to aid in the country's response to the COVID-19 pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Sinopharm International Corporation donates 50,000 face masks worth $25,850 USD to Sri Lanka's Ministry of Health and Indigenous Medical Services
+
+# Description
+On March 26, 2020, Sinopharm International Corporation donated 50,000 face masks worth $25,850 USD to Sri Lanka's Ministry of Health and Indigenous Medical Services to aid in the country's response to the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of face masks for COVID-19 response, healthcare sector focus"
+95250,HEALTH,"Chinese Embassy donates 200 coveralls, 198 pairs of goggles, 10 thermometers, 10,000 masks, and 2,500 surgical gloves to the Sri Lanka Navy","On April 24, 2020, the Defense Attaché of the Chinese Embassy in Sri Lanka donated 200 coveralls, 198 pairs of goggles, 10 thermometers, 10,000 masks, and 2,500 surgical gloves to the Sri Lanka Navy (SLN) to assist its COVID-19 pandemic response. This donation came amidst an outbreak of COVID-19 that infected dozens of SLN personnel at Welisara Base testing positive for COVID19.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 200 coveralls, 198 pairs of goggles, 10 thermometers, 10,000 masks, and 2,500 surgical gloves to the Sri Lanka Navy
+
+# Description
+On April 24, 2020, the Defense Attaché of the Chinese Embassy in Sri Lanka donated 200 coveralls, 198 pairs of goggles, 10 thermometers, 10,000 masks, and 2,500 surgical gloves to the Sri Lanka Navy (SLN) to assist its COVID-19 pandemic response. This donation came amidst an outbreak of COVID-19 that infected dozens of SLN personnel at Welisara Base testing positive for COVID19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of medical supplies (coveralls, goggles, thermometers, masks, gloves) for COVID-19 response"
+95351,HEALTH,CHEC donates a PCR machine and test equipment to the Sri Lanka Ports Authority,"On March 1, 2020, the Sri Lanka Division of China Harbour Engineering Co., Ltd. (CHEC) donated Polymerase Chain Reaction (PCR) machine and test equipment to Sri Lanka Ports Authority (SLPA) to assist its COVID-19 pandemic response. This donation was made at the request of Chairman of SLPA General Daya Ratnayake.",NA,"# Sector
+HEALTH
+
+# Title
+CHEC donates a PCR machine and test equipment to the Sri Lanka Ports Authority
+
+# Description
+On March 1, 2020, the Sri Lanka Division of China Harbour Engineering Co., Ltd. (CHEC) donated Polymerase Chain Reaction (PCR) machine and test equipment to Sri Lanka Ports Authority (SLPA) to assist its COVID-19 pandemic response. This donation was made at the request of Chairman of SLPA General Daya Ratnayake.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,PCR machine and test equipment donation for COVID-19 response
+95354,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"China Merchants Foundation contributes to a donation of three wheelchairs worth $9,000 USD to wheelchair tennis players (Linked to Project ID#95355)","In late June 2020, China Merchants Foundation (CMF), a foundation established by the China Merchants Group (CMG) for philanthropic endeavors, and Colombo International Container Terminals (CICT) — a joint venture between China Merchants Port (CMPort) Holdings Company Limited and Sri Lanka Ports Authority (SLPA) — collaborated donate three custom-made, professional grade, titanium wheelchairs worth $9,000 USD (£7,200 GBP; €8,000 EUR) to three internationally-ranked Sri Lankan wheelchair tennis players, as part of CMF and CICT's support for the Wheelchair Tennis Programme of the Sri Lanka Tennis Association (SLTA). The three players were all veterans of Sri Lanka Army that became para-athletes after injuries sustained during the Sri Lankan Civil War.  CMF's contribution to the donation is captured in Project ID#95354. CICT's contribution to the donation is captured in Project ID#95355.","1. The specific breakdown of CMF and CICT to this $9,000 USD donation is unknown. For now, AidData has assumed that each donor contributed approximately $4,500 USD to the donation.","# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China Merchants Foundation contributes to a donation of three wheelchairs worth $9,000 USD to wheelchair tennis players (Linked to Project ID#95355)
+
+# Description
+In late June 2020, China Merchants Foundation (CMF), a foundation established by the China Merchants Group (CMG) for philanthropic endeavors, and Colombo International Container Terminals (CICT) — a joint venture between China Merchants Port (CMPort) Holdings Company Limited and Sri Lanka Ports Authority (SLPA) — collaborated donate three custom-made, professional grade, titanium wheelchairs worth $9,000 USD (£7,200 GBP; €8,000 EUR) to three internationally-ranked Sri Lankan wheelchair tennis players, as part of CMF and CICT's support for the Wheelchair Tennis Programme of the Sri Lanka Tennis Association (SLTA). The three players were all veterans of Sri Lanka Army that became para-athletes after injuries sustained during the Sri Lankan Civil War.  CMF's contribution to the donation is captured in Project ID#95354. CICT's contribution to the donation is captured in Project ID#95355.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a philanthropic donation of medical equipment to support disabled athletes, with no direct environmental or energy transition impact","Donation of wheelchairs to para-athletes, social development focus"
+95355,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"Colombo International Container Terminals contributes to a donation of three wheelchairs worth $9,000 USD to wheelchair tennis players (Linked to Project ID#95354)","In late June 2020, China Merchants Foundation (CMF), a foundation established by the China Merchants Group (CMG) for philanthropic endeavors, and Colombo International Container Terminals (CICT) — a joint venture between China Merchants Port (CMPort) Holdings Company Limited and Sri Lanka Ports Authority (SLPA) — collaborated donate three custom-made, professional grade, titanium wheelchairs worth $9,000 USD (£7,200 GBP; €8,000 EUR) to three internationally-ranked Sri Lankan wheelchair tennis players, as part of CMF and CICT's support for the Wheelchair Tennis Programme of the Sri Lanka Tennis Association (SLTA). The three players were all veterans of Sri Lanka Army that became para-athletes after injuries sustained during the Sri Lankan Civil War.  CMF's contribution to the donation is captured in Project ID#95354. CICT's contribution to the donation is captured in Project ID#95355.","1. The specific breakdown of CMF and CICT to this $9,000 USD donation is unknown. For now, AidData has assumed that each donor contributed approximately $4,500 USD to the donation.","# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Colombo International Container Terminals contributes to a donation of three wheelchairs worth $9,000 USD to wheelchair tennis players (Linked to Project ID#95354)
+
+# Description
+In late June 2020, China Merchants Foundation (CMF), a foundation established by the China Merchants Group (CMG) for philanthropic endeavors, and Colombo International Container Terminals (CICT) — a joint venture between China Merchants Port (CMPort) Holdings Company Limited and Sri Lanka Ports Authority (SLPA) — collaborated donate three custom-made, professional grade, titanium wheelchairs worth $9,000 USD (£7,200 GBP; €8,000 EUR) to three internationally-ranked Sri Lankan wheelchair tennis players, as part of CMF and CICT's support for the Wheelchair Tennis Programme of the Sri Lanka Tennis Association (SLTA). The three players were all veterans of Sri Lanka Army that became para-athletes after injuries sustained during the Sri Lankan Civil War.  CMF's contribution to the donation is captured in Project ID#95354. CICT's contribution to the donation is captured in Project ID#95355.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of wheelchairs for para-athletes, focusing on social welfare and support for disabled individuals","Donation of three custom-made titanium wheelchairs to wheelchair tennis players, support for Wheelchair Tennis Programme"
+95431,HEALTH,"China Merchants Port Group donates 1,000 protective suits to the Government of Sri Lanka","On March 25, 2020, China Merchants Port Group (CMPort) donated 1,000 protective suits to the Government of Sri Lanka to support its response to the COVID-19 pandemic. The suits were specifically intended for doctors and medical staff that were treating infected patients in key government hospitals.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Merchants Port Group donates 1,000 protective suits to the Government of Sri Lanka
+
+# Description
+On March 25, 2020, China Merchants Port Group (CMPort) donated 1,000 protective suits to the Government of Sri Lanka to support its response to the COVID-19 pandemic. The suits were specifically intended for doctors and medical staff that were treating infected patients in key government hospitals.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical equipment with no direct environmental or energy transition impact,"Donation of 1,000 protective suits for COVID-19 response, healthcare sector focus"
+95499,HEALTH,"China Merchants Foundation donates USD 200,000 to Government of Sri Lanka's COVID-19 Healthcare and Social Security Fund","In May 2020, China Merchants Foundation, a grant-making foundation established by the China Merchants Group, donated USD 200,000 to the Government of Sri Lanka's COVID-19 Healthcare and Social Security Fund.",NA,"# Sector
+HEALTH
+
+# Title
+China Merchants Foundation donates USD 200,000 to Government of Sri Lanka's COVID-19 Healthcare and Social Security Fund
+
+# Description
+In May 2020, China Merchants Foundation, a grant-making foundation established by the China Merchants Group, donated USD 200,000 to the Government of Sri Lanka's COVID-19 Healthcare and Social Security Fund.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation to COVID-19 Healthcare and Social Security Fund, healthcare focus"
+95502,HEALTH,"Chinese government donates 25,000 PCR test kits to Sri Lanka","As of October 24, 2020, the Chinese Government donated 25,000 PCR test kits to Sri Lanka for the purpose of diagnosing COVID-19 patients within the country.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 25,000 PCR test kits to Sri Lanka
+
+# Description
+As of October 24, 2020, the Chinese Government donated 25,000 PCR test kits to Sri Lanka for the purpose of diagnosing COVID-19 patients within the country.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is focused on healthcare and disease diagnosis, with no direct environmental or energy transition impact","Donation of PCR test kits for COVID-19 diagnosis, healthcare sector focus"

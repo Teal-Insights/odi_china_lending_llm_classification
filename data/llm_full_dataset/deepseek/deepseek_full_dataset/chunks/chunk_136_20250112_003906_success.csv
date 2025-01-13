@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94029,HEALTH,Chongqing Municipal Government donates medical supplies to City of Buenos Aires in June 2020,"On June 25, 2020, the Buenos Aires Municipal Sub-Secretary of Health System Administration accepted a donation of medical supplies from the Chongqing Municipal Government. The donation was worth a total of USD 51,496 and included 1,700 N95 Surgical Masks, 1,200 disposable protective suits, and 1,500 disposable face shields. The supplies will be used to combat the COVID-19 pandemic in Buenos Aires.  On July 30, 2020, the CABA Secretary-General Fernando Straface, thanked the Chinese Embassy on a video call for the donation from Chongqing and other municipal governments, on behalf of the City of Buenos Aires.","1. This project should not be confused with Project ID#91137, which captures a donation of medical supplies by the Chongqing Municipal Government to the Cordoba Province. While the donors are the same, these supplies arrived in Córdoba on June 2, 2020, and included different materials: 1,100 face shields, 1,520 N95 masks and 1,350 protective suits.","# Sector
+HEALTH
+
+# Title
+Chongqing Municipal Government donates medical supplies to City of Buenos Aires in June 2020
+
+# Description
+On June 25, 2020, the Buenos Aires Municipal Sub-Secretary of Health System Administration accepted a donation of medical supplies from the Chongqing Municipal Government. The donation was worth a total of USD 51,496 and included 1,700 N95 Surgical Masks, 1,200 disposable protective suits, and 1,500 disposable face shields. The supplies will be used to combat the COVID-19 pandemic in Buenos Aires.  On July 30, 2020, the CABA Secretary-General Fernando Straface, thanked the Chinese Embassy on a video call for the donation from Chongqing and other municipal governments, on behalf of the City of Buenos Aires.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project is a donation of medical supplies for pandemic response, with no direct environmental or energy transition impact","Donation of medical supplies including masks, protective suits, and face shields for COVID-19 response"
+94438,HEALTH,Chinese Embassy donates two sets of Huawei infrared imaging equipment to National Migration Directorate in November 2020 (Linked to Project ID#93422),"On November 18, 2020, the Chinese Embassy in Argentina donated two infrared thermal imaging equipment sets to Argentina's National Migration Directorate to help combat the COVID-19 pandemic. The cameras were manufactured by Huawei. The location at which the Migration Directorate installed the cameras is unknown.","1. This donation may have been committed on March 17, 2020, as part of a larger donation of supplies to address the COVID-19 pandemic from public and private Chinese organizations to Argentina (umbrella project captured via Project ID#91387). While it is likely Huawei's contribution to this larger donation is captured via Project ID#93422, inconsistencies in reporting around Project ID#93422 leave open the possibility that the donation in November 2020 is also under the umbrella of Project ID#91387. However, insofar as (1) Project ID#91387 is an umbrella and (2) sources indicate this donation came from the Chinese Embassy rather than Huawei itself, there is little risk of double counting.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates two sets of Huawei infrared imaging equipment to National Migration Directorate in November 2020 (Linked to Project ID#93422)
+
+# Description
+On November 18, 2020, the Chinese Embassy in Argentina donated two infrared thermal imaging equipment sets to Argentina's National Migration Directorate to help combat the COVID-19 pandemic. The cameras were manufactured by Huawei. The location at which the Migration Directorate installed the cameras is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a donation of medical equipment unrelated to energy or environmental impacts,"Infrared thermal imaging equipment for COVID-19 response, healthcare sector"
+97499,HEALTH,"Meheco donates supplies to Argentina for the fight against COVID-19 worth USD $9,864,698.20","On June 12th, 2020, Meheco signed a contract for the procurement of medical supplies worth USD $9,864,698.20. These medical supplies consisted of 3,806,500 units, including 187,000 chinstraps, 250,500 coveralls, 1,119,000 goggles and 2,300,000 gloves. The approval of the process and contract occurred on July 1st, 2020.  In May 2021, the official bulletin of Argentina made reference to receiving donations from Meheco during the COVID-19 pandemic, stating: ""That the MINISTRY OF HEALTH, with the objective of having adequate equipment, supplies and protection elements in the country, and in a timely manner, accepted various donations that demanded such services, including the one made by the company CHINA MEHECO CO. LTD. of the PEOPLE'S REPUBLIC OF CHINA, by Ministerial Resolution RESOL-2021-749-APN-MS.""",NA,"# Sector
+HEALTH
+
+# Title
+Meheco donates supplies to Argentina for the fight against COVID-19 worth USD $9,864,698.20
+
+# Description
+On June 12th, 2020, Meheco signed a contract for the procurement of medical supplies worth USD $9,864,698.20. These medical supplies consisted of 3,806,500 units, including 187,000 chinstraps, 250,500 coveralls, 1,119,000 goggles and 2,300,000 gloves. The approval of the process and contract occurred on July 1st, 2020.  In May 2021, the official bulletin of Argentina made reference to receiving donations from Meheco during the COVID-19 pandemic, stating: ""That the MINISTRY OF HEALTH, with the objective of having adequate equipment, supplies and protection elements in the country, and in a timely manner, accepted various donations that demanded such services, including the one made by the company CHINA MEHECO CO. LTD. of the PEOPLE'S REPUBLIC OF CHINA, by Ministerial Resolution RESOL-2021-749-APN-MS.""",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Medical supplies donation for COVID-19 response, including chinstraps, coveralls, goggles and gloves"
+98366,HEALTH,China Zhongyuan International Engineering Co (CZEC) donates 10 BIPAP respirators to the Ministry of Health in May 2020,"On May 15, 2020, China Zhongyuan International Engineering Co (CZEC) donated 10 BIPAP respirators to Argentina's Ministry of Health.",NA,"# Sector
+HEALTH
+
+# Title
+China Zhongyuan International Engineering Co (CZEC) donates 10 BIPAP respirators to the Ministry of Health in May 2020
+
+# Description
+On May 15, 2020, China Zhongyuan International Engineering Co (CZEC) donated 10 BIPAP respirators to Argentina's Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of 10 BIPAP respirators to Ministry of Health
+98368,HEALTH,"Chinese government donates 65,000 disposable surgical masks to Argentina Ministry of Health in May 2020","On May 27, 2020, the Communist Party of China donated 65,000 disposable surgical face masks to the Argentina Ministry of Health.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 65,000 disposable surgical masks to Argentina Ministry of Health in May 2020
+
+# Description
+On May 27, 2020, the Communist Party of China donated 65,000 disposable surgical face masks to the Argentina Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 65,000 disposable surgical masks to Argentina Ministry of Health"
+98370,HEALTH,"China Railway 14th Bureau Group Co. donates 70,000 disposable masks to Argentina Ministry of Health in May 2020","On May 29th, 2020, China Railway 14th Bureau Group Co. donated 70,000 disposable masks to the Argentina Ministry of Health.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Railway 14th Bureau Group Co. donates 70,000 disposable masks to Argentina Ministry of Health in May 2020
+
+# Description
+On May 29th, 2020, China Railway 14th Bureau Group Co. donated 70,000 disposable masks to the Argentina Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 70,000 disposable masks to Ministry of Health, healthcare-related"
+98372,HEALTH,"China Railway Construction Corporation donates 10,000 medical surgical masks to Argentina Ministry of Health in July 2020","On July 6th, 2020, China Railway Construction Corporation donated 10,000 medical surgical masks to the Argentina Ministry of Health.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Railway Construction Corporation donates 10,000 medical surgical masks to Argentina Ministry of Health in July 2020
+
+# Description
+On July 6th, 2020, China Railway Construction Corporation donated 10,000 medical surgical masks to the Argentina Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of medical surgical masks to Ministry of Health
+98376,ENERGY,ICBC’s Argentina branch provides $11.25 million USD towards $45 million USD syndicated loan for Compañía General de Combustibles in October 2020,"On October 7, 2020, Compañía General de Combustibles S.A. entered into a $45 million USD syndicated loan agreement with four banks. ICBC (Argentina) contributed $11,250,000 USD to the loan and also served as an administrative agent. Other lenders in the syndicated loan included Bank of Galicia and Buenos Aires S.A.U., Banco Santander Río S.A., and Citibank. The proceeds of the loan were to be used for refinancing purposes.  The loan was repayable in five equal, quarterly and consecutive installments, payable as of August 24, 2021. Other borrowing terms of the loan are unknown. In February and May 2021, Compañía General de Combustibles S.A. received two installments of the syndicated loan for an equivalent amount in pesos of $2,751,025. With the funds received from the loan syndicated in dollars, the syndicated loan in pesos has been pre-paid in its entirety.","1. Specific contributions of each financier are unknown. To calculate ICBC’s contribution to this loan facility, AidData a) assumes that each official sector financing institution from China contributed an equal amount to the syndicated loan and (b) estimates the contributions of each financier by dividing the total face value of the loan ($45million USD) by the total number of financiers in the syndicate (4 financiers). This brings the contribution of each individual financier to $11,250,000 USD.","# Sector
+ENERGY
+
+# Title
+ICBC’s Argentina branch provides $11.25 million USD towards $45 million USD syndicated loan for Compañía General de Combustibles in October 2020
+
+# Description
+On October 7, 2020, Compañía General de Combustibles S.A. entered into a $45 million USD syndicated loan agreement with four banks. ICBC (Argentina) contributed $11,250,000 USD to the loan and also served as an administrative agent. Other lenders in the syndicated loan included Bank of Galicia and Buenos Aires S.A.U., Banco Santander Río S.A., and Citibank. The proceeds of the loan were to be used for refinancing purposes.  The loan was repayable in five equal, quarterly and consecutive installments, payable as of August 24, 2021. Other borrowing terms of the loan are unknown. In February and May 2021, Compañía General de Combustibles S.A. received two installments of the syndicated loan for an equivalent amount in pesos of $2,751,025. With the funds received from the loan syndicated in dollars, the syndicated loan in pesos has been pre-paid in its entirety.",TRUE,NA,BROWN,HIGH,Other Energy (Fossil Fuels),"Loan provided to a company primarily involved in fossil fuel operations, supporting refinancing of existing fossil fuel-related activities","Compañía General de Combustibles is a fossil fuel company, loan used for refinancing purposes"
+98396,HEALTH,"Chinese Government provides 10,000 surgical masks to Argentina in June 2020","On June 12, 2020, the Chinese government made a donation of 10,000 surgical masks to the Governor of the Jujuy province in Argentina and the Minister of Security. The masks will be dispersed throughout the different sectors in Jujuy that need them the most.   The donation was part of the ""Jujuy Seguro e Interconectado"" (Safe and Interconnected Jujuy) Project.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides 10,000 surgical masks to Argentina in June 2020
+
+# Description
+On June 12, 2020, the Chinese government made a donation of 10,000 surgical masks to the Governor of the Jujuy province in Argentina and the Minister of Security. The masks will be dispersed throughout the different sectors in Jujuy that need them the most.   The donation was part of the ""Jujuy Seguro e Interconectado"" (Safe and Interconnected Jujuy) Project.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of 10,000 surgical masks, healthcare-related assistance"
+98432,HEALTH,"Chinese Government provides 20,000 masks to the city of Lanús in Argentina","On December 2, 2020, the Chinese community and Chinese officials in Argentina donated 20,000 masks to the city of Lanús in Argentina. The city will disperse the masks to the staff of the Lanusense Emergency Medical Care System (SAME), doctors, and nurses in Lanús to assist fighting the pandemic.",1. AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides 20,000 masks to the city of Lanús in Argentina
+
+# Description
+On December 2, 2020, the Chinese community and Chinese officials in Argentina donated 20,000 masks to the city of Lanús in Argentina. The city will disperse the masks to the staff of the Lanusense Emergency Medical Care System (SAME), doctors, and nurses in Lanús to assist fighting the pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"20,000 masks donated for pandemic response, healthcare sector focus"

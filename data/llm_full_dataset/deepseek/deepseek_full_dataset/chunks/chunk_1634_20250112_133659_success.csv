@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+59103,GOVERNMENT AND CIVIL SOCIETY,"Chinese Government provides $694,863 grant for purchase of furniture and fixtures","According to internal records that the Government of Grenada shared with AidData in June 2018, the Chinese Government provided a $694,863 grant to the Government of Grenada in 2005 for the purchase of furniture and fixtures.","1. The main source (see Dropbox link) was provided to AidData by a Ministry of Finance official in Grenada. 2. It appears that this purchase supported the ministries of education and labor. However, this issue warrants further investigation.","# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government provides $694,863 grant for purchase of furniture and fixtures
+
+# Description
+According to internal records that the Government of Grenada shared with AidData in June 2018, the Chinese Government provided a $694,863 grant to the Government of Grenada in 2005 for the purchase of furniture and fixtures.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves purchase of furniture and fixtures without clear environmental or energy transition impacts,"Grant for purchase of furniture and fixtures, no energy-related components mentioned"
+61055,"AGRICULTURE, FORESTRY, FISHING",Grenada Agricultural Technology Cooperation Project Phase 1 (linked to #54764),"The China-Aided Grenada Agricultural Technical Cooperation Project started in 2005, but there exist a multitude of small projects which fall under this larger framework.  Phase 1 included training local farmers; the establishment of a demonstration farm in Grenada; as well as providing seedlings, tractors, and a plowing machine. The handover ceremony took place on May 30, 2007, and Chinese Ambassador Qian Hongshan signed the handover certificate to Grenadian Minister of Agriculture Gregory Bowen.",This project is linked to umbrella project #54764. It ties into the wider Grenada Agricultural Technical Cooperation Project effort established from 2005 which aims to share agricultural technology and knowledge between China and Grenada.,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Grenada Agricultural Technology Cooperation Project Phase 1 (linked to #54764)
+
+# Description
+The China-Aided Grenada Agricultural Technical Cooperation Project started in 2005, but there exist a multitude of small projects which fall under this larger framework.  Phase 1 included training local farmers; the establishment of a demonstration farm in Grenada; as well as providing seedlings, tractors, and a plowing machine. The handover ceremony took place on May 30, 2007, and Chinese Ambassador Qian Hongshan signed the handover certificate to Grenadian Minister of Agriculture Gregory Bowen.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on agricultural development and capacity building without clear environmental or energy transition impacts,"Training local farmers, establishment of demonstration farm, provision of agricultural equipment"
+2354,ACTION RELATING TO DEBT,Chinese Government cancels $45 million of the Government of Guinea’s outstanding debt obligations,"In September 2005, the Chinese Government reportedly canceled $45 million of the Government of Guinea’s outstanding debt obligations.","1. This dataset does not capture any loans that are not umbrella projects prior to 2006, so this project is not marked as umbrella as there is no risk of double counting. 2. One academic source identifies the value of the debt forgiveness that was provided as $52 million.","# Sector
+ACTION RELATING TO DEBT
+
+# Title
+Chinese Government cancels $45 million of the Government of Guinea’s outstanding debt obligations
+
+# Description
+In September 2005, the Chinese Government reportedly canceled $45 million of the Government of Guinea’s outstanding debt obligations.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Debt cancellation is a financial service with no direct environmental or energy transition impact,"Debt cancellation of $45 million, no specific project or environmental component mentioned"
+748,EMERGENCY RESPONSE,"China donates US$20,000 to Guinea Bissau to help fight the cholera epidemic","In July of 2005, China donated $20,000 to support Guinea-Bissau in dealing with a cholera outbreak. The ambassador of China to Bissau, Tiang Guangfeng handed over the grant to health minister Maria Odete Semedo. A report in August of 2005, stated that China had given $100,000 to Guinea-Bissau to help fight the epidemic.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates US$20,000 to Guinea Bissau to help fight the cholera epidemic
+
+# Description
+In July of 2005, China donated $20,000 to support Guinea-Bissau in dealing with a cholera outbreak. The ambassador of China to Bissau, Tiang Guangfeng handed over the grant to health minister Maria Odete Semedo. A report in August of 2005, stated that China had given $100,000 to Guinea-Bissau to help fight the epidemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a financial donation for healthcare purposes without direct environmental or energy transition impacts,"Donation to fight cholera epidemic, healthcare focus"
+884,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,China donates 52.5 million CFA in rice,"On January 6, 2005, Guinea Bissau received 5,000 tonnes of rice donated by the Chinese government, intended to stabilize prices in Guinea Bissau's market. According to the Trade Ministry's calculations, each bag of rice will cost 10,500 CFA. The delivery ceremony was preceded by the signing of the official protocol in the Foreign Affairs Ministry, during which the Guinea Bissau foreign minister promised to use the donation effectively.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+China donates 52.5 million CFA in rice
+
+# Description
+On January 6, 2005, Guinea Bissau received 5,000 tonnes of rice donated by the Chinese government, intended to stabilize prices in Guinea Bissau's market. According to the Trade Ministry's calculations, each bag of rice will cost 10,500 CFA. The delivery ceremony was preceded by the signing of the official protocol in the Foreign Affairs Ministry, during which the Guinea Bissau foreign minister promised to use the donation effectively.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on food aid and price stabilization, with no direct environmental or energy transition impact","5,000 tonnes of rice donated for market stabilization, developmental food aid purpose"
+887,GENERAL BUDGET SUPPORT,Chinese Government provides $1 million grant for budget support (Linked to Project ID#22580),"In November 2005, the Chinese Government signed an agreement with Government of Guinea-Bissau to provide a $3.7 million grant to address the country’s fiscal deficit and support other unspecified projects. The agreement was signed by China’s Deputy Foreign Minister Lee Guozeng. This transaction is referenced in Deborah Brautigam's book 'The Dragon's Gift.'  She writes that “[j]ust after its 2005 election, Guinea-Bissau... received a cash transfer of about $4 million to help pay public workers' salaries.” However, according to a Chinese news source, only $1 million of the $3.7 million contribution went to budget support and the remaining $2.7 million was earmarked for refurbishing military barracks and a military officers’ mess in Bissau (see Project ID#22580).",Title amount and description amount mismatch,"# Sector
+GENERAL BUDGET SUPPORT
+
+# Title
+Chinese Government provides $1 million grant for budget support (Linked to Project ID#22580)
+
+# Description
+In November 2005, the Chinese Government signed an agreement with Government of Guinea-Bissau to provide a $3.7 million grant to address the country’s fiscal deficit and support other unspecified projects. The agreement was signed by China’s Deputy Foreign Minister Lee Guozeng. This transaction is referenced in Deborah Brautigam's book 'The Dragon's Gift.'  She writes that “[j]ust after its 2005 election, Guinea-Bissau... received a cash transfer of about $4 million to help pay public workers' salaries.” However, according to a Chinese news source, only $1 million of the $3.7 million contribution went to budget support and the remaining $2.7 million was earmarked for refurbishing military barracks and a military officers’ mess in Bissau (see Project ID#22580).",TRUE,NA,NEUTRAL,HIGH,Financial Services,General budget support with no clear environmental or energy transition impacts,"Grant for fiscal deficit support, unspecified projects, and public worker salaries"
+57504,GOVERNMENT AND CIVIL SOCIETY,Chinese Government provides $1.2 million grant to help Guinea-Bissau host the CPLP Summit,"In early 2005, the Chinese Government provided a $1.2 million grant to the Government of Guinea-Bissau to help it host the Cumunidade de Paises the Lingua Portuguesa (CPLP) Heads of State Summit in July 2006. The CPLP Summit is the meeting of governments from Portuguese-speaking nations. The exact project implementation start and end dates are unknown.","Some sources identify the value of this grant commitment as $800,000.","# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government provides $1.2 million grant to help Guinea-Bissau host the CPLP Summit
+
+# Description
+In early 2005, the Chinese Government provided a $1.2 million grant to the Government of Guinea-Bissau to help it host the Cumunidade de Paises the Lingua Portuguesa (CPLP) Heads of State Summit in July 2006. The CPLP Summit is the meeting of governments from Portuguese-speaking nations. The exact project implementation start and end dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a grant for hosting an international summit, with no direct environmental or energy transition impact","$1.2 million grant for hosting CPLP Summit, no energy or infrastructure components mentioned"
+36660,BUSINESS AND OTHER SERVICES,China commits USD $3.8 million in equipment for Sanata Textile Mill (linked to project #56346 and #70472),"In 2005, China and Guyana signed an agreement on bilateral cooperation worth USD $3.8 million. The agreement stipulated that China will provide equipment and raw materials to the Sanata Textile Mill. The agreement also included a feasibility study on the supply of new river ferries conducted by a Chinese survey team.  This textile mill was originally a Chinese investment project that was later privatized (project #56346).",the Chinese name for this project is '萨那塔纺织厂”.,"# Sector
+BUSINESS AND OTHER SERVICES
+
+# Title
+China commits USD $3.8 million in equipment for Sanata Textile Mill (linked to project #56346 and #70472)
+
+# Description
+In 2005, China and Guyana signed an agreement on bilateral cooperation worth USD $3.8 million. The agreement stipulated that China will provide equipment and raw materials to the Sanata Textile Mill. The agreement also included a feasibility study on the supply of new river ferries conducted by a Chinese survey team.  This textile mill was originally a Chinese investment project that was later privatized (project #56346).",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,"Project focuses on textile manufacturing equipment and raw materials, with no clear environmental or energy transition impacts","Provision of equipment and raw materials for textile mill, no energy-related components mentioned"
+73728,EMERGENCY RESPONSE,"Chinese Government donates $100,000 USD in cash for flood relief (Linked to Project ID#85736)","In January 2005, Guyana experienced one of its largest natural disasters. Torrential rainfall caused extensive flooding along the densely populated coast,  particularly in the stretch of coast between the capital of Georgetown and Mahaica on the eastern bank of Demerara River. The flooding impacted over 290,000 people (39% of the Guyanese population). Weeks after the initial flood, many houses and villages remained filled with water and were only accessible by boat, while the risk of a disease outbreak remained high (see pg.1 of ""Emergency Humanitarian Aid Decision""). In response to this crisis, on February 5, 2005, the Chinese Government provided a $100,000 USD grant to the Government of Guyana to support flood recovery efforts. The Chinese Government also donated pumps to Guyana, as captured by linked project ID#85736.",Project status was set as 'Completion' because it is clear that all Chinese financing was disbursed.,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government donates $100,000 USD in cash for flood relief (Linked to Project ID#85736)
+
+# Description
+In January 2005, Guyana experienced one of its largest natural disasters. Torrential rainfall caused extensive flooding along the densely populated coast,  particularly in the stretch of coast between the capital of Georgetown and Mahaica on the eastern bank of Demerara River. The flooding impacted over 290,000 people (39% of the Guyanese population). Weeks after the initial flood, many houses and villages remained filled with water and were only accessible by boat, while the risk of a disease outbreak remained high (see pg.1 of ""Emergency Humanitarian Aid Decision""). In response to this crisis, on February 5, 2005, the Chinese Government provided a $100,000 USD grant to the Government of Guyana to support flood recovery efforts. The Chinese Government also donated pumps to Guyana, as captured by linked project ID#85736.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cash donation for flood relief is a humanitarian aid project without direct environmental or energy transition impacts,"Flood recovery efforts, humanitarian aid focus, no energy or infrastructure components"
+85736,EMERGENCY RESPONSE,Chinese Government donates pumps to support flood recovery efforts (Linked to Project ID#73728,"In January 2005, Guyana experienced one of its largest natural disasters. Torrential rainfall caused extensive flooding along the densely populated coast, particularly in the stretch of coast between the capital of Georgetown and Mahaica on the eastern bank of Demerara River. The flooding impacted over 290,000 people (39% of the Guyanese population). Weeks after the initial flood, many houses and villages remained filled with water and were only accessible by boat, while the risk of a disease outbreak remained high. In response to this crisis, in January or February 2005, the Chinese Government donated pumps to Guyana to support flood recovery efforts. The Chinese Government also provided a $100,000 USD cash donation to Guyana, as captured by linked project ID#73728.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government donates pumps to support flood recovery efforts (Linked to Project ID#73728
+
+# Description
+In January 2005, Guyana experienced one of its largest natural disasters. Torrential rainfall caused extensive flooding along the densely populated coast, particularly in the stretch of coast between the capital of Georgetown and Mahaica on the eastern bank of Demerara River. The flooding impacted over 290,000 people (39% of the Guyanese population). Weeks after the initial flood, many houses and villages remained filled with water and were only accessible by boat, while the risk of a disease outbreak remained high. In response to this crisis, in January or February 2005, the Chinese Government donated pumps to Guyana to support flood recovery efforts. The Chinese Government also provided a $100,000 USD cash donation to Guyana, as captured by linked project ID#73728.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on emergency response and humanitarian aid without clear environmental or energy transition impacts,"Donation of pumps and cash for flood recovery efforts, humanitarian focus"

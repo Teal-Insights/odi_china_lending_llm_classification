@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95588,HEALTH,"Chinese Consulate General in Laoag City, Ilocos Norte donates 20,000 surgical masks and 1,500 face masks to Mariano Marcos State University","On August 8, 2020, The Consulate of the People’s Republic of China in Laoag City, Ilocos Norte on Friday donated 11 boxes of face masks to the Mariano Marcos State University (MMSU) to be used by its front-liners in the fight against the coronavirus disease (COVID-19). The boxes contained 20,000 surgical masks and 1,500 face masks in total.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General in Laoag City, Ilocos Norte donates 20,000 surgical masks and 1,500 face masks to Mariano Marcos State University
+
+# Description
+On August 8, 2020, The Consulate of the People’s Republic of China in Laoag City, Ilocos Norte on Friday donated 11 boxes of face masks to the Mariano Marcos State University (MMSU) to be used by its front-liners in the fight against the coronavirus disease (COVID-19). The boxes contained 20,000 surgical masks and 1,500 face masks in total.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 20,000 surgical masks and 1,500 face masks for COVID-19 response"
+95612,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"Chinese Consulate General donates 30,000 kilograms of rice to the Philippines","On June 11, 2020, the Chinese Consulate General, represented by Consul General Jia Li, turned over 3,000 10-kilo bags of rice during the 45th anniversary of the establishment of diplomatic relations between the Republic of China and the Philippines. The Office of the Presidential Assistant for the Visayas (OPAV) will be distributing to the some local government units (LGU), the Armed Forces of the Philippines and the Philippine National Police the rice the Chinese government has donated.  In a statement, OPAV Secretary Michael Lloyd Dino said the Chinese government will allocate 400 bags each to the cities of Mandaue and Lapu-Lapu; 300 bags each to the PNP and AFP; and 800 bags each to Region 6 and 8 for distribution to their LGUs where there are quarantine centers and those with rising number of COVID-19 cases.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Consulate General donates 30,000 kilograms of rice to the Philippines
+
+# Description
+On June 11, 2020, the Chinese Consulate General, represented by Consul General Jia Li, turned over 3,000 10-kilo bags of rice during the 45th anniversary of the establishment of diplomatic relations between the Republic of China and the Philippines. The Office of the Presidential Assistant for the Visayas (OPAV) will be distributing to the some local government units (LGU), the Armed Forces of the Philippines and the Philippine National Police the rice the Chinese government has donated.  In a statement, OPAV Secretary Michael Lloyd Dino said the Chinese government will allocate 400 bags each to the cities of Mandaue and Lapu-Lapu; 300 bags each to the PNP and AFP; and 800 bags each to Region 6 and 8 for distribution to their LGUs where there are quarantine centers and those with rising number of COVID-19 cases.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves food aid donation with no direct environmental or energy transition impact,"30,000 kilograms of rice donated for distribution to local government units and security forces, focused on food security and COVID-19 response"
+95614,DISASTER PREVENTION AND PREPAREDNESS,Chinese government donates 1 million RMB to Philippines,"On February 2, 2020, the Philippine government is set to receive RMB 1 million (P7.3 million) in cash donation from the People's Republic of China to aid relief operations in areas affected by the eruption of Taal Volcano.",NA,"# Sector
+DISASTER PREVENTION AND PREPAREDNESS
+
+# Title
+Chinese government donates 1 million RMB to Philippines
+
+# Description
+On February 2, 2020, the Philippine government is set to receive RMB 1 million (P7.3 million) in cash donation from the People's Republic of China to aid relief operations in areas affected by the eruption of Taal Volcano.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cash donation for disaster relief with no direct environmental or energy transition impact,"Cash donation for relief operations, no infrastructure or energy components"
+95615,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Chinese Consulate in Laoag City donates 10 tons of rice to the Philippines,"On September 18, 2020, through its consulate office in Laoag City in Ilocos Norte province, the People's Republic of China donated 10 tons of rice to the provincial government. Carlos Padilla said that the 10 tons consisted of 5,000 packs of 2 kilograms each of locally manufactured premium rice for the provincial government's food-relief efforts and Covid-19 response.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Consulate in Laoag City donates 10 tons of rice to the Philippines
+
+# Description
+On September 18, 2020, through its consulate office in Laoag City in Ilocos Norte province, the People's Republic of China donated 10 tons of rice to the provincial government. Carlos Padilla said that the 10 tons consisted of 5,000 packs of 2 kilograms each of locally manufactured premium rice for the provincial government's food-relief efforts and Covid-19 response.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on food aid and social development, with no direct environmental or energy transition impact",Donation of 10 tons of rice for food-relief efforts and Covid-19 response
+95616,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Chinese Embassy in Manila donates 3.075 million kilograms of rice to the Philippines,"On June 15, 2020, the Chinese embassy in Manila on Monday announced the donation of 3.075 million kilograms of rice to the Philippines for distribution to families most affected by the COVID-19 (coronavirus disease) pandemic.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Embassy in Manila donates 3.075 million kilograms of rice to the Philippines
+
+# Description
+On June 15, 2020, the Chinese embassy in Manila on Monday announced the donation of 3.075 million kilograms of rice to the Philippines for distribution to families most affected by the COVID-19 (coronavirus disease) pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on food aid and social welfare without direct environmental or energy transition implications,"Donation of rice for COVID-19 relief, developmental food aid focus"
+95618,HEALTH,Chinese Embassy in Manila donates 1 million pesos to the Philippines,"On August 14, 2020, the Chinese Embassy in Manila on Friday donated 1 million pesos cash and some personal protective equipment (PPE) to medical frontliners in the Philippines as a token of appreciation and support for their hard work in battling the COVID-19 (coronavirus disease 2019) pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Manila donates 1 million pesos to the Philippines
+
+# Description
+On August 14, 2020, the Chinese Embassy in Manila on Friday donated 1 million pesos cash and some personal protective equipment (PPE) to medical frontliners in the Philippines as a token of appreciation and support for their hard work in battling the COVID-19 (coronavirus disease 2019) pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation for healthcare purposes with no direct environmental or energy transition impact,"Cash donation and PPE for medical frontliners, COVID-19 pandemic support"
+95619,HEALTH,Chinese government donates 130 ventilators to the Philippines,"On August 13, 2020, China, through its Embassy in Manila, has donated 130 ventilators to the Philippines as part of its commitment to helping the country fighting the COVID-19 COVID-19 pandemic. Chinese Ambassador to the Philippines Huang Xilian handed over the ventilators to Philippine Foreign Secretary Teodoro Locsin during a ceremony at the Philippines' Department of Foreign Affairs headquarters. With the last batch of 50 ventilators, Huang said all 130 ventilators donated by the Chinese government have been turned over to the Philippines.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 130 ventilators to the Philippines
+
+# Description
+On August 13, 2020, China, through its Embassy in Manila, has donated 130 ventilators to the Philippines as part of its commitment to helping the country fighting the COVID-19 COVID-19 pandemic. Chinese Ambassador to the Philippines Huang Xilian handed over the ventilators to Philippine Foreign Secretary Teodoro Locsin during a ceremony at the Philippines' Department of Foreign Affairs headquarters. With the last batch of 50 ventilators, Huang said all 130 ventilators donated by the Chinese government have been turned over to the Philippines.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of 130 ventilators for COVID-19 response, healthcare focus"
+95621,HEALTH,Chinese government donates face masks and shields to the Philippines,"On October 30, 2020, the Chinese government, through its Ministry of Public Security (MPS), donated over 40 boxes of face masks and face shields to the Bureau of Customs (BOC). The donation from the MPS of the People's Republic of China was received by Commissioner Rey Leonardo Guerrero together with Deputy Commissioner for Intelligence Group (IG) Raniel Ramiro, during the turnover ceremony on Friday at the OCOM Conference Room, Port of Manila, the BOC said in a statement. According to the BOC, this batch of medical supplies consisting of 20 boxes of face masks and 22 boxes of face shields, the personal protective equipment shall be used in ensuring the safety and health of the men and women of the Bureau in the delivery of efficient public service.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates face masks and shields to the Philippines
+
+# Description
+On October 30, 2020, the Chinese government, through its Ministry of Public Security (MPS), donated over 40 boxes of face masks and face shields to the Bureau of Customs (BOC). The donation from the MPS of the People's Republic of China was received by Commissioner Rey Leonardo Guerrero together with Deputy Commissioner for Intelligence Group (IG) Raniel Ramiro, during the turnover ceremony on Friday at the OCOM Conference Room, Port of Manila, the BOC said in a statement. According to the BOC, this batch of medical supplies consisting of 20 boxes of face masks and 22 boxes of face shields, the personal protective equipment shall be used in ensuring the safety and health of the men and women of the Bureau in the delivery of efficient public service.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies with no direct environmental or energy transition impact,Donation of face masks and shields for public health purposes
+95637,HEALTH,"State Grid Corporation of China donates 500,000 surgical face masks to the Philippine Red Cross","On May 12, 2020, the State Grid Corp. of China, through State Grid International Development Co. Ltd., a shareholder of the National Grid Corp. of the Philippines, turned over 500,000 surgical face masks to the Philippine Red Cross.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+State Grid Corporation of China donates 500,000 surgical face masks to the Philippine Red Cross
+
+# Description
+On May 12, 2020, the State Grid Corp. of China, through State Grid International Development Co. Ltd., a shareholder of the National Grid Corp. of the Philippines, turned over 500,000 surgical face masks to the Philippine Red Cross.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impact,"Donation of 500,000 surgical face masks to Philippine Red Cross, healthcare focus"
+95640,EDUCATION,International Department of the Communist Party of China donates 100 tablets to Dabawenyo students,"On October 1, 2020, the acting Mayor Sebastian Z. Duterte led the distribution of 100 Lenovo tablets to qualified junior and senior high school pupils under the ""Student Siblings Tablet Sharing Project"" at the People's Park. The gadgets intended for online classes of the city's indigent students were donated by the International Department of the Communist Party of China, through the China Foundation.",NA,"# Sector
+EDUCATION
+
+# Title
+International Department of the Communist Party of China donates 100 tablets to Dabawenyo students
+
+# Description
+On October 1, 2020, the acting Mayor Sebastian Z. Duterte led the distribution of 100 Lenovo tablets to qualified junior and senior high school pupils under the ""Student Siblings Tablet Sharing Project"" at the People's Park. The gadgets intended for online classes of the city's indigent students were donated by the International Department of the Communist Party of China, through the China Foundation.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on educational support through technology donation, with no direct environmental or energy transition impact","Donation of 100 tablets for student education, no energy or environmental components mentioned"

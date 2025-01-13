@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95918,HEALTH,"Chinese Government donates 300,000 Sinopharm Covid-19 vaccine doses worth $5.4 million in August 2021","In 2021 and 2022, the Chinese Government donated approximately 3 million doses of Covid-19 vaccines to the Government of Sri Lanka. The Chinese Government delivered 600,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka on March 31, 2021 (see project ID#95884).  Then, on May 25, 2021, the Chinese Government delivered 500,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka (see project ID#95887).  The Chinese Government delivered an additional 1 million donated Sinopharm COVID-19 vaccine doses to the Government of Sri Lanka on June 6, 2021 (see project ID#95913).  Then, on July 27, 2021, the Chinese Government delivered 1.6 million donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka (see project ID#95046).  One month later, on August 28, 2021, the People’s Liberation Army (PLA) of China delivered 300,000 donated doses of Sinopharm Covid-19 vaccines to the Sri Lankan Armed Forces (see project ID#95918).  Then, in September 2021, the Chinese Government announced that it would donate 1 million Sinovac doses to the Government of Sri Lanka in September 2021 (see project ID#95923). However, it is unclear if this batch of vaccines was ever delivered.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the August 2021 donation as $5.4 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 300,000 Sinopharm Covid-19 vaccine doses worth $5.4 million in August 2021
+
+# Description
+In 2021 and 2022, the Chinese Government donated approximately 3 million doses of Covid-19 vaccines to the Government of Sri Lanka. The Chinese Government delivered 600,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka on March 31, 2021 (see project ID#95884).  Then, on May 25, 2021, the Chinese Government delivered 500,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka (see project ID#95887).  The Chinese Government delivered an additional 1 million donated Sinopharm COVID-19 vaccine doses to the Government of Sri Lanka on June 6, 2021 (see project ID#95913).  Then, on July 27, 2021, the Chinese Government delivered 1.6 million donated doses of Sinopharm Covid-19 vaccines to the Government of Sri Lanka (see project ID#95046).  One month later, on August 28, 2021, the People’s Liberation Army (PLA) of China delivered 300,000 donated doses of Sinopharm Covid-19 vaccines to the Sri Lankan Armed Forces (see project ID#95918).  Then, in September 2021, the Chinese Government announced that it would donate 1 million Sinovac doses to the Government of Sri Lanka in September 2021 (see project ID#95923). However, it is unclear if this batch of vaccines was ever delivered.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of vaccines for public health purposes, with no direct environmental or energy transition impact","Donation of 300,000 Sinopharm Covid-19 vaccine doses for public health purposes"
+97176,EMERGENCY RESPONSE,"China Merchants Charity Foundation donates USD 30,000 million to Sri Lanka flood victims (linked to project ID#97177)","On February 25, 2021, the China Merchants Charity Foundation (CMCF), the charitable arm of China Merchants Group participated in a donation of relief materials worth LKR 5 million with Colombo International Container Terminal Co., Ltd. (CICT) (see project ID#97177). CMCF donated USD 30,000 to the flood relief effort.","1. The donation amount is unclear. CMCF donated USD 30,000 as part of the LKR 5 million donation, but LKR 5 million is less than USD 30,000.","# Sector
+EMERGENCY RESPONSE
+
+# Title
+China Merchants Charity Foundation donates USD 30,000 million to Sri Lanka flood victims (linked to project ID#97177)
+
+# Description
+On February 25, 2021, the China Merchants Charity Foundation (CMCF), the charitable arm of China Merchants Group participated in a donation of relief materials worth LKR 5 million with Colombo International Container Terminal Co., Ltd. (CICT) (see project ID#97177). CMCF donated USD 30,000 to the flood relief effort.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on humanitarian aid and disaster relief, with no direct environmental or energy transition impact","Donation for flood victims, emergency response focus"
+97177,EMERGENCY RESPONSE,"Colombo International Container Terminal Co., Ltd. donates LKR 5 million to Sri Lanka flood victims (linked to project ID#97176)","On February 25, 2021, Colombo International Container Terminal Co., Ltd. (CICT) with the China Merchants Charity Foundation (CMCF), the charitable arm of China Merchants Group (see project ID#97176), participated in a donation of relief materials worth LKR 5 million to the Sri Lanka Ministry of Disaster Management.","1. The donation amount is unclear. CMCF donated USD 30,000 as part of the LKR 5 million donation, but LKR 5 million is less than USD 30,000.","# Sector
+EMERGENCY RESPONSE
+
+# Title
+Colombo International Container Terminal Co., Ltd. donates LKR 5 million to Sri Lanka flood victims (linked to project ID#97176)
+
+# Description
+On February 25, 2021, Colombo International Container Terminal Co., Ltd. (CICT) with the China Merchants Charity Foundation (CMCF), the charitable arm of China Merchants Group (see project ID#97176), participated in a donation of relief materials worth LKR 5 million to the Sri Lanka Ministry of Disaster Management.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation of relief materials to flood victims, social development focus"
+97452,HEALTH,China National Aero-Technology International Engineering Corporation provides a quarantine center to Mulleriyawa Hospital in Sri Lanka in May 2021,"On May 21, 2021, at the call of China Embassy and China Chamber of Commerce in Sri Lanka, China National Aero-Technology International Engineering Corporation (AVIC-ENG) handed over temporary tent facilities (dimensions 30.48m x 12.20m) to the Government of Sri Lanka for the Mulleriyawa Hospital. The tent was to serve as a quarantine center to help combat the COVID-19 pandemic.",NA,"# Sector
+HEALTH
+
+# Title
+China National Aero-Technology International Engineering Corporation provides a quarantine center to Mulleriyawa Hospital in Sri Lanka in May 2021
+
+# Description
+On May 21, 2021, at the call of China Embassy and China Chamber of Commerce in Sri Lanka, China National Aero-Technology International Engineering Corporation (AVIC-ENG) handed over temporary tent facilities (dimensions 30.48m x 12.20m) to the Government of Sri Lanka for the Mulleriyawa Hospital. The tent was to serve as a quarantine center to help combat the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare infrastructure with no direct environmental or energy transition impact,"Temporary tent facilities for quarantine center at hospital, COVID-19 pandemic response"
+97454,HEALTH,Chinese Embassy in Sri Lanka donates Covid-19 supplies to Sri Lankan Civil Aviation in March 2021,"On March 16, 2021, Chinese Ambassador to Sri Lanka Qi Zhenhong met Sri Lankan Civil Aviation Director General and CEO Capt. Themiya Abeywickrama at the Chinese Embassy premises. On behalf of the Chinese Embassy, Ambassador Qi handed over 270 PPEs sets, 24,000 disposable face masks, 4,800 KN95 face masks, 120 goggles, 500 pairs of disposable gloves, and five SterilAmps to the Civil Aviation Authority for its airport frontline workers' protection against COVID-19.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Sri Lanka donates Covid-19 supplies to Sri Lankan Civil Aviation in March 2021
+
+# Description
+On March 16, 2021, Chinese Ambassador to Sri Lanka Qi Zhenhong met Sri Lankan Civil Aviation Director General and CEO Capt. Themiya Abeywickrama at the Chinese Embassy premises. On behalf of the Chinese Embassy, Ambassador Qi handed over 270 PPEs sets, 24,000 disposable face masks, 4,800 KN95 face masks, 120 goggles, 500 pairs of disposable gloves, and five SterilAmps to the Civil Aviation Authority for its airport frontline workers' protection against COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for COVID-19 protection, unrelated to energy or environmental impacts","PPE sets, face masks, goggles, gloves, and SterilAmps donated for airport workers' COVID-19 protection"
+97481,GOVERNMENT AND CIVIL SOCIETY,Chinese Government provides 7.68 billion rupees to renovate the Supreme Court complex in Sri Lanka in December 2021,"On December 6, 2021, the Government of China has allocated 7.68 billion rupees as a grant to completely renovate the Supreme Court complex where the Supreme Court and the Court of Appeal are currently located. The project was implemented under the patronage of Justice Minister Ali Sabri.   The agreement was signed between the Secretary to the Ministry of Justice Priyantha Mayadunne and the Chinese Economic and Commercial Affairs adviser LI Guangjun. Chinese Ambassador to Sri Lanka Qi Zhenhong was also present on the occasion.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Government provides 7.68 billion rupees to renovate the Supreme Court complex in Sri Lanka in December 2021
+
+# Description
+On December 6, 2021, the Government of China has allocated 7.68 billion rupees as a grant to completely renovate the Supreme Court complex where the Supreme Court and the Court of Appeal are currently located. The project was implemented under the patronage of Justice Minister Ali Sabri.   The agreement was signed between the Secretary to the Ministry of Justice Priyantha Mayadunne and the Chinese Economic and Commercial Affairs adviser LI Guangjun. Chinese Ambassador to Sri Lanka Qi Zhenhong was also present on the occasion.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves renovation of a government building with no direct environmental or energy transition impact,"Supreme Court complex renovation, government building infrastructure"
+97482,HEALTH,Chinese local governments donate medical supplies to Sri Lanka in March 2021,"On Wednesday 17, 2021, Ambassador of China to Sri Lanka Qi Zhenhong handed over the anti-epidemic materials donated by the local governments of Beijing, Shanghai, and Chengdu to the Mayor of Colombo Rosy Senanayake at the Colombo City Hall combating Covid-19. This donation includes ventilators, testing reagents, masks, and protective suits. The monetary value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese local governments donate medical supplies to Sri Lanka in March 2021
+
+# Description
+On Wednesday 17, 2021, Ambassador of China to Sri Lanka Qi Zhenhong handed over the anti-epidemic materials donated by the local governments of Beijing, Shanghai, and Chengdu to the Mayor of Colombo Rosy Senanayake at the Colombo City Hall combating Covid-19. This donation includes ventilators, testing reagents, masks, and protective suits. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare support through medical supplies donation, with no direct environmental or energy transition impact","Donation of medical supplies including ventilators, testing reagents, masks, and protective suits for Covid-19 response"
+97484,"AGRICULTURE, FORESTRY, FISHING",Chinese Government donates fishing gears worth 60 million rupees to the fisheries’ associations in Sri Lanka,"In December 2021, China donated fishing gear valued at Rs. 60 million to the fisheries’ associations based in Jaffna. The purpose of this donation is to support the development fisheries sector in the Northern Province.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Government donates fishing gears worth 60 million rupees to the fisheries’ associations in Sri Lanka
+
+# Description
+In December 2021, China donated fishing gear valued at Rs. 60 million to the fisheries’ associations based in Jaffna. The purpose of this donation is to support the development fisheries sector in the Northern Province.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on social development through fisheries support without clear environmental or energy transition impacts,Donation of fishing gear to support fisheries sector development
+97485,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy in Sri Lanka donates materials valued 1.5 million rupees to the Seva Vanitha Unit of the Sri Lanka Air Force in November 2021,"On November 12, 2021, the Embassy of China made a donation of over Rs. 1.5 million to the Seva Vanitha Unit of the Sri Lanka Air Force. This was delivered by the Chinese delegation led by the Defence Attache of the Chinese Embassy in Sri Lanka, Senior Colonel Wan Dong. The purpose of this donation is to continue the dedicated work by the SLAF Seva Vanitha Unit to uplift the living standards of families of service and civilian personnel who are in need through welfare projects in the year 2022.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy in Sri Lanka donates materials valued 1.5 million rupees to the Seva Vanitha Unit of the Sri Lanka Air Force in November 2021
+
+# Description
+On November 12, 2021, the Embassy of China made a donation of over Rs. 1.5 million to the Seva Vanitha Unit of the Sri Lanka Air Force. This was delivered by the Chinese delegation led by the Defence Attache of the Chinese Embassy in Sri Lanka, Senior Colonel Wan Dong. The purpose of this donation is to continue the dedicated work by the SLAF Seva Vanitha Unit to uplift the living standards of families of service and civilian personnel who are in need through welfare projects in the year 2022.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation for social welfare purposes with no direct environmental or energy transition impact,"Donation to welfare projects for families of service and civilian personnel, no energy or infrastructure components"
+98742,HEALTH,Chinese Government donates 8 kidney dialysis machines to hospitals in Sri Lanka's Northern and Eastern provinces,"On December 23, 2021, the Chinese Government donates 8 kidney dialysis machines to unspecified hospitals in Sri Lanka's Northern and Eastern provinces. Ambassador of China to Sri Lanka, Qi Zhenhong symbolically handed over the donation to Sri Lankan Opposition Leader, Sajith Premadasa in a ceremony on December 23. The medical equipment was donated in response to a request made by Samagi Jana Balawegaya, leader for the party’s ""Husmak"" initiative.  The machines are worth approximately Rs. 20 million.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates 8 kidney dialysis machines to hospitals in Sri Lanka's Northern and Eastern provinces
+
+# Description
+On December 23, 2021, the Chinese Government donates 8 kidney dialysis machines to unspecified hospitals in Sri Lanka's Northern and Eastern provinces. Ambassador of China to Sri Lanka, Qi Zhenhong symbolically handed over the donation to Sri Lankan Opposition Leader, Sajith Premadasa in a ceremony on December 23. The medical equipment was donated in response to a request made by Samagi Jana Balawegaya, leader for the party’s ""Husmak"" initiative.  The machines are worth approximately Rs. 20 million.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of kidney dialysis machines to hospitals, healthcare sector focus"

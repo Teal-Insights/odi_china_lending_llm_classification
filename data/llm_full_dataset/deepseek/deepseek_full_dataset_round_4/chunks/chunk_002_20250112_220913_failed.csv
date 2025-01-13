@@ -1,0 +1,5 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94312,HEALTH,The People’s Liberation Army of China provides anti-epidemic materials to Belarusian Army in June 2020,"On June 13, 2020, the People’s Liberation Army of China provided anti-epidemic materials to the armed forces of Belarus. The donated materials included protective suits, medical masks, and other anti epidemic materials.    The monetary value of this donation is unknown.",NA,"# Sector HEALTH # Title The Peoples Liberation Army of China provides anti-epidemic materials to Belarusian Army in June 2020 # Description On June 13, 2020, the Peoples Liberation Army of China provided anti-epidemic materials to the armed forces of Belarus. The donated materials included protective suits, medical masks, and other anti epidemic materials. The monetary value of this donation is unknown.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

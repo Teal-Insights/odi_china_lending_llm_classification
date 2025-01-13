@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95423,HEALTH,"Chinese Government donates 50,000 Sinopharm Covid-19 vaccine doses worth $900,000 in April 2021","On April 29, 2021, the Chinese Government delivered 50,000 donated doses of Sinopharm Covid-19 vaccines to the Federation of Bosnia and Herzegovina. The estimated monetary value of the donation is $900,000.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18. As such, AidData has estimated the monetary value of the April 2021 donation as $50,000. (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En).","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 50,000 Sinopharm Covid-19 vaccine doses worth $900,000 in April 2021
+
+# Description
+On April 29, 2021, the Chinese Government delivered 50,000 donated doses of Sinopharm Covid-19 vaccines to the Federation of Bosnia and Herzegovina. The estimated monetary value of the donation is $900,000.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of Covid-19 vaccines, healthcare focus"
+97465,HEALTH,Chinese Embassy donates biological safety cabinet to Serbian Hospital in East Sarajevo,"On June 10, 2021, the Chinese Embassy in Bosnia and Herzegovina donates a biological safety cabinet (also known as cyto chamber) to the Serbian Hospital in East Sarajevo. The machine aims to help with the treatment of local cancer patients. Previously, the hospital had been using an old device that has undergone many repairs.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates biological safety cabinet to Serbian Hospital in East Sarajevo
+
+# Description
+On June 10, 2021, the Chinese Embassy in Bosnia and Herzegovina donates a biological safety cabinet (also known as cyto chamber) to the Serbian Hospital in East Sarajevo. The machine aims to help with the treatment of local cancer patients. Previously, the hospital had been using an old device that has undergone many repairs.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of biological safety cabinet for cancer treatment, healthcare sector focus"
+97466,HEALTH,Sinopharm donates 36 boxes of anti-epidemic materials to Sveti Hospital in January 2021,"On January 22, 2021, a donation ceremony was held at the Sveti Apostol Luka Hospital in Doboj. The donation by China Sinopharm International Corporation's Central Eastern Europe Branch included 36 boxes of anti-epidemic supplies, containing protective suits and surgical masks, for the mitigation of the spread of COVID-19.",NA,"# Sector
+HEALTH
+
+# Title
+Sinopharm donates 36 boxes of anti-epidemic materials to Sveti Hospital in January 2021
+
+# Description
+On January 22, 2021, a donation ceremony was held at the Sveti Apostol Luka Hospital in Doboj. The donation by China Sinopharm International Corporation's Central Eastern Europe Branch included 36 boxes of anti-epidemic supplies, containing protective suits and surgical masks, for the mitigation of the spread of COVID-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of anti-epidemic supplies including protective suits and surgical masks
+95564,HEALTH,"Chinese Government donates 200,000 Sinovac Covid-19 vaccine doses worth $3.6 million in April 2021","On April 25, 2021, the Chinese Government delivered 200,000 donated doses of Sinovac Covid-19 vaccines to the Government of Botswana.  The Chinese Government pledged to donate an additional 2 million COVID-19 vaccine doses to the Government of Botswana in 2022.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinovac COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the April 2021 donation as $3.6 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 200,000 Sinovac Covid-19 vaccine doses worth $3.6 million in April 2021
+
+# Description
+On April 25, 2021, the Chinese Government delivered 200,000 donated doses of Sinovac Covid-19 vaccines to the Government of Botswana.  The Chinese Government pledged to donate an additional 2 million COVID-19 vaccine doses to the Government of Botswana in 2022.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare through vaccine donation, with no direct environmental or energy transition impact","Donation of 200,000 Sinovac Covid-19 vaccine doses, healthcare focus"
+96921,HEALTH,Chinese Embassy donates anti-epidemic supplies to Botswana Ministry of Health in August 2021,"On August 4, 2021, the Chinese Embassy donated a batch of Covid supplies to the Botswana Ministry of Health. The donation included an unknown quantity of oxygen generators and ventilators. The purpose of the project is to help Botswana fight the COVID-19 epidemic.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates anti-epidemic supplies to Botswana Ministry of Health in August 2021
+
+# Description
+On August 4, 2021, the Chinese Embassy donated a batch of Covid supplies to the Botswana Ministry of Health. The donation included an unknown quantity of oxygen generators and ventilators. The purpose of the project is to help Botswana fight the COVID-19 epidemic.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,Donation of medical supplies (oxygen generators and ventilators) for COVID-19 response
+96922,HEALTH,Chinese Embassy donates medical supplies to Sidilega Hospital in Botswana in August 2021,"On August 16, 2021, the Chinese Embassy donated medical supplies to Sidilega Hospital in Gaborone, Botswana to help support the hospital's anti-COVID-19 efforts. The contents of the donation are CPAP machines, oxygen concentrators and thermometers. The medical supplies were handed over by Chinese Ambassador Wang Xuefeng and his team.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates medical supplies to Sidilega Hospital in Botswana in August 2021
+
+# Description
+On August 16, 2021, the Chinese Embassy donated medical supplies to Sidilega Hospital in Gaborone, Botswana to help support the hospital's anti-COVID-19 efforts. The contents of the donation are CPAP machines, oxygen concentrators and thermometers. The medical supplies were handed over by Chinese Ambassador Wang Xuefeng and his team.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Medical supplies donation, healthcare sector, COVID-19 support"
+96927,"AGRICULTURE, FORESTRY, FISHING",Chinese Embassy donates drone to Botswana Ministry of Agricultural Development and Food Security in August 2021,"On August 26, 2021, the Chinese Embassy donated a drone to Botswana's Ministry of Agricultural Development and Food Security to aid the country's agricultural sector. The drone was handed over by  Ambassador of the People's Republic of China to Botswana Wang Xuefeng.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Embassy donates drone to Botswana Ministry of Agricultural Development and Food Security in August 2021
+
+# Description
+On August 26, 2021, the Chinese Embassy donated a drone to Botswana's Ministry of Agricultural Development and Food Security to aid the country's agricultural sector. The drone was handed over by  Ambassador of the People's Republic of China to Botswana Wang Xuefeng.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of equipment for agricultural purposes without clear environmental or energy transition impacts,"Drone donation to Ministry of Agricultural Development and Food Security, agricultural sector support"
+96928,EDUCATION,Chinese Embassy donates electronics and anti-epidemic supplies to Botswana Ministry of Education and Skills Development in May 2021,"On May 31, 2021, the Chinese Embassy in Botswana donated 50 radio and CD players, 50 computers, and 10,000 face masks to Botswana's Ministry of Education and Skills Development. The donation will support the Botswana Ministry of Education's prevention efforts during the COVID-19 pandemic.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy donates electronics and anti-epidemic supplies to Botswana Ministry of Education and Skills Development in May 2021
+
+# Description
+On May 31, 2021, the Chinese Embassy in Botswana donated 50 radio and CD players, 50 computers, and 10,000 face masks to Botswana's Ministry of Education and Skills Development. The donation will support the Botswana Ministry of Education's prevention efforts during the COVID-19 pandemic.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational support and pandemic response without direct environmental or energy transition impacts,"Donation of electronics and anti-epidemic supplies to education ministry, COVID-19 prevention focus"
+96935,EDUCATION,China provides the Chinese Government Scholarship for Botswana citizens in 2021,"The Government of China offered Chinese Government Scholarship for eligible citizens of Botswana in the 2021/2022 school year for a master degree, doctoral degree, general scholar or senior scholars. The scholarship amount and the number of recipients remain unknown, and scholarship recipients would study in China for one to two years",NA,"# Sector
+EDUCATION
+
+# Title
+China provides the Chinese Government Scholarship for Botswana citizens in 2021
+
+# Description
+The Government of China offered Chinese Government Scholarship for eligible citizens of Botswana in the 2021/2022 school year for a master degree, doctoral degree, general scholar or senior scholars. The scholarship amount and the number of recipients remain unknown, and scholarship recipients would study in China for one to two years",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education and human development without direct environmental or energy transition impacts,Education-focused scholarship for Botswana citizens to study in China
+96939,HEALTH,China donates anti-epidemic materials to Botswana in August 2021,"On August 5, 2021, the Chinese Embassy in Botswana, the United Nations Population Fund in Botswana and the Ministry of Health and Wellness jointly held the handover ceremony of China's anti-epidemic personal protective materials. The US$60,000 PPE includes 1,900 isolation gowns, 20 boxes of examination gloves, 40 boxes of surgical gloves, 40 boxes of surgical masks, 1,650 goggles, 1,980 face shields and 1,900 coveralls, which will be used to protect frontline workers amid the third wave of the COVID-19 pandemic.   This donation is a project carried out by China and the United Nations Population Fund under the framework of the South-South Cooperation Assistance Fund.","Since the breakdown of the donation value is not known between the Chinese Embassy in Botswana (an official Chinese agency) and the United Nations Population Fund (not an official Chinese agency), AidData estimates the official portion as half the total value (US$60 thousand), so US$30 thousand.","# Sector
+HEALTH
+
+# Title
+China donates anti-epidemic materials to Botswana in August 2021
+
+# Description
+On August 5, 2021, the Chinese Embassy in Botswana, the United Nations Population Fund in Botswana and the Ministry of Health and Wellness jointly held the handover ceremony of China's anti-epidemic personal protective materials. The US$60,000 PPE includes 1,900 isolation gowns, 20 boxes of examination gloves, 40 boxes of surgical gloves, 40 boxes of surgical masks, 1,650 goggles, 1,980 face shields and 1,900 coveralls, which will be used to protect frontline workers amid the third wave of the COVID-19 pandemic.   This donation is a project carried out by China and the United Nations Population Fund under the framework of the South-South Cooperation Assistance Fund.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies for public health purposes, with no direct environmental or energy transition impact","Donation of personal protective equipment (PPE) for COVID-19 response, including isolation gowns, gloves, masks, and other protective gear"

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+33031,HEALTH,China Sends 21st Medical Team to Tanzania,"China has been sending medical teams to Tanzania every two years since 1968. Shandong Province has been responsible for sending the teams (not to be confused with medical teams to Zanzibar, which are sent by Jiangsu Province). On August 7, 2009, the 21st Chinese medical team arrived in Dar es Salaam. The team of 23 medical experts was to give medical aid to Muhimbili National Hospital, Dodoma provincial hospital and Tabora and Mara hospitals. The team completed the mission and returned to China in August 2011. ",NA,"# Sector
+HEALTH
+
+# Title
+China Sends 21st Medical Team to Tanzania
+
+# Description
+China has been sending medical teams to Tanzania every two years since 1968. Shandong Province has been responsible for sending the teams (not to be confused with medical teams to Zanzibar, which are sent by Jiangsu Province). On August 7, 2009, the 21st Chinese medical team arrived in Dar es Salaam. The team of 23 medical experts was to give medical aid to Muhimbili National Hospital, Dodoma provincial hospital and Tabora and Mara hospitals. The team completed the mission and returned to China in August 2011. ",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on providing medical aid and does not have direct environmental or energy transition impacts,"Medical team providing aid to hospitals, healthcare sector focus"
+33036,EDUCATION,China Donates 1 Million CNY worth of Teaching Equipment to Dar es Salaam University in Tanzania,"On December 29, 2009 a handover ceremony took place for a Chinese donation of teaching equipment to Dar es Salaam University. The value of this equipment is approximately 1 million RMB. The commitment date for this project is unknown. ",NA,"# Sector
+EDUCATION
+
+# Title
+China Donates 1 Million CNY worth of Teaching Equipment to Dar es Salaam University in Tanzania
+
+# Description
+On December 29, 2009 a handover ceremony took place for a Chinese donation of teaching equipment to Dar es Salaam University. The value of this equipment is approximately 1 million RMB. The commitment date for this project is unknown. ",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of educational equipment with no direct environmental or energy transition impact,"Donation of teaching equipment to university, education sector focus"
+33039,"INDUSTRY, MINING, CONSTRUCTION",Chinese Companies Made Donations to Support the Construction of Ginger Processing Plant,"In 2009, several Chinese companies made donations to support the construction of a ginger processing plant in Dar es Salaam, Tanzania. This aid totaled 45,000 USD and was donated by China Railway Construction Engineering Group Tanzania Corporation, Henan International Cooperation Group Co., Ltd, SINOHYDRO Corporation, China Civil Engineering Construction Corporation, Jiangxi Geo-Engineering (Group) Corporation, China Road and Bridge Corporation, Hunan Construction Engineering Group Corporation, Chongqing International Construction Corporation and China Geo-Engineering Group Corporation. The commitment date of this project is unknown.",NA,"# Sector
+INDUSTRY, MINING, CONSTRUCTION
+
+# Title
+Chinese Companies Made Donations to Support the Construction of Ginger Processing Plant
+
+# Description
+In 2009, several Chinese companies made donations to support the construction of a ginger processing plant in Dar es Salaam, Tanzania. This aid totaled 45,000 USD and was donated by China Railway Construction Engineering Group Tanzania Corporation, Henan International Cooperation Group Co., Ltd, SINOHYDRO Corporation, China Civil Engineering Construction Corporation, Jiangxi Geo-Engineering (Group) Corporation, China Road and Bridge Corporation, Hunan Construction Engineering Group Corporation, Chongqing International Construction Corporation and China Geo-Engineering Group Corporation. The commitment date of this project is unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves construction of a food processing facility with no clear environmental or energy transition impacts,"Ginger processing plant construction, no energy or environmental components mentioned"
+35666,HEALTH,China sends 23rd medical team to Zanzibar,"China has been sending medical teams to Zanzibar every two years since 1964. Jiangsu Province is responsible for sending the teams (not to be confused with medical teams sent to Tanzania, which are sent by Shandong Pronvince). In June 2009, the 23rd medical team of 21 members arrived in Zanzibar, Tanzania. The team handed over optical equipment donated by the Chinese government in August 2009. The team completed their mission and returned to China in June 2011.",NA,"# Sector
+HEALTH
+
+# Title
+China sends 23rd medical team to Zanzibar
+
+# Description
+China has been sending medical teams to Zanzibar every two years since 1964. Jiangsu Province is responsible for sending the teams (not to be confused with medical teams sent to Tanzania, which are sent by Shandong Pronvince). In June 2009, the 23rd medical team of 21 members arrived in Zanzibar, Tanzania. The team handed over optical equipment donated by the Chinese government in August 2009. The team completed their mission and returned to China in June 2011.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare services and medical assistance, with no direct environmental or energy transition impact","Medical team deployment, healthcare services, optical equipment donation"
+60842,HEALTH,China's Jiangsu Provincial Government donates medical equipment to Mnazi Mmoja Hospital in Zanzibar,"On July 13, 2009, representatives from China's 23th medical mission to Tanzania donated equipment and medicine funded by Jiangsu Provincial Government to Mnazi Mmoja Hospital in the island of Unguja in Zanzibar. The donation included a complete set of opthalmic surgical equipment.",NA,"# Sector
+HEALTH
+
+# Title
+China's Jiangsu Provincial Government donates medical equipment to Mnazi Mmoja Hospital in Zanzibar
+
+# Description
+On July 13, 2009, representatives from China's 23th medical mission to Tanzania donated equipment and medicine funded by Jiangsu Provincial Government to Mnazi Mmoja Hospital in the island of Unguja in Zanzibar. The donation included a complete set of opthalmic surgical equipment.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a medical donation with no direct environmental or energy transition impact,"Donation of medical equipment and medicine to hospital, healthcare sector focus"
+34590,HEALTH,China donates 4 million Baht to fire victims in Thailand,"In September 2009, the Ministry of the Public Health (MOPH) distributed 4 million Baht in donations from the Chinese government to 18 seriously injured victims of the Zantika Pub fire. Deputy Public Health Minister, Manit Nop-amornbodi, and the Chinese Ambassador to Thailand, Guan Mu, presided over the presentation ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+China donates 4 million Baht to fire victims in Thailand
+
+# Description
+In September 2009, the Ministry of the Public Health (MOPH) distributed 4 million Baht in donations from the Chinese government to 18 seriously injured victims of the Zantika Pub fire. Deputy Public Health Minister, Manit Nop-amornbodi, and the Chinese Ambassador to Thailand, Guan Mu, presided over the presentation ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation to fire victims, health sector focus, no energy or infrastructure components"
+38906,HEALTH,Overseas Chinese Affairs Office sends traditional Chinese physicians to Thailand in March 2009,"On March 24, 2009, a team of 7 traditional Chinese physicians arrived in Thailand to give free medical consultations and lectures on traditional Chinese medicine. The team spent 4 days in Bangkok and they spent the rest of their two weeks giving consultations in Chiang Mai, Hat Yai, and Phuket Island. This project was financed by the Overseas Chinese Affairs Office.",NA,"# Sector
+HEALTH
+
+# Title
+Overseas Chinese Affairs Office sends traditional Chinese physicians to Thailand in March 2009
+
+# Description
+On March 24, 2009, a team of 7 traditional Chinese physicians arrived in Thailand to give free medical consultations and lectures on traditional Chinese medicine. The team spent 4 days in Bangkok and they spent the rest of their two weeks giving consultations in Chiang Mai, Hat Yai, and Phuket Island. This project was financed by the Overseas Chinese Affairs Office.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare services without clear environmental or energy transition impacts,"Traditional Chinese physicians providing medical consultations and lectures, healthcare focus"
+43930,EDUCATION,Hanban provides grant for the establishment of Confucius Institute at Burapha University,"In December 2006, the Office of Chinese Language Council International and Thailand Burapha University signed an agreement to cooperatively establish a Confucius Institute. Chinese Wenzhou University and the Wenzhou Medicine Institute worked directly with Burapha University. The Confucius Institute at Burapha University was officially inaugurated on September 15, 2009.",The monetary value of the grant commitment from Hanban that supported this project is unknown.,"# Sector
+EDUCATION
+
+# Title
+Hanban provides grant for the establishment of Confucius Institute at Burapha University
+
+# Description
+In December 2006, the Office of Chinese Language Council International and Thailand Burapha University signed an agreement to cooperatively establish a Confucius Institute. Chinese Wenzhou University and the Wenzhou Medicine Institute worked directly with Burapha University. The Confucius Institute at Burapha University was officially inaugurated on September 15, 2009.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational and cultural exchange without direct environmental or energy transition impacts,Establishment of Confucius Institute for language and cultural education
+34454,GOVERNMENT AND CIVIL SOCIETY,China deploys 14th team of peacekeeping police in Timor-Leste,"China's 14th peacekeeping squad to Timor Leste arrived in 2009. The 21-person squad was sent to work with the UN mission in East Timor for one year, setting the end date to be in February 2010. Seven out of the 21 members had previously participated in UN peacekeeping missions. The squad, which includes staff from the criminal investigation, public security, traffic and entry and exit sections in the southeastern Jiangxi Province, all passed strict exams in the regional situation, world affairs, international law, driving, first aid, and English.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China deploys 14th team of peacekeeping police in Timor-Leste
+
+# Description
+China's 14th peacekeeping squad to Timor Leste arrived in 2009. The 21-person squad was sent to work with the UN mission in East Timor for one year, setting the end date to be in February 2010. Seven out of the 21 members had previously participated in UN peacekeeping missions. The squad, which includes staff from the criminal investigation, public security, traffic and entry and exit sections in the southeastern Jiangxi Province, all passed strict exams in the regional situation, world affairs, international law, driving, first aid, and English.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves peacekeeping and civil society support without direct environmental or energy transition impacts,"Peacekeeping mission, UN collaboration, focus on public security and law enforcement"
+38188,ENERGY,China Nuclear Industry 22nd Construction Company donates power generator set to Timor-Leste,"The China Nuclear Industry 22nd Construction Company Limited [核工业第22建设有限公司] donated a 5,000-kilowatt generator set and was installed on 20th December 2009. The gift was targeted at relieving the power shortage in Dili.",NA,"# Sector
+ENERGY
+
+# Title
+China Nuclear Industry 22nd Construction Company donates power generator set to Timor-Leste
+
+# Description
+The China Nuclear Industry 22nd Construction Company Limited [核工业第22建设有限公司] donated a 5,000-kilowatt generator set and was installed on 20th December 2009. The gift was targeted at relieving the power shortage in Dili.",TRUE,NA,NEUTRAL,MEDIUM,General Infrastructure,Project involves donation of power generation equipment without clear specification of energy source or environmental impact,"5,000-kilowatt generator set, unspecified energy source, targeted at relieving power shortage"

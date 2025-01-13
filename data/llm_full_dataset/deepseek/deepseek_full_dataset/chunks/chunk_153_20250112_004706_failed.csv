@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92005,EMERGENCY RESPONSE,Chinese Government donates anti-epidemic aid to the 'Good Deeds Foundation' for the fight against Covid-19 in July 2020,"On July 27, 2020, Professor Peng Liyuan donated anti-epidemic aid on behalf of the Chinese government to Burundi's ""Good Deeds Foundation"". The materials were donated by Professor Peng Liyuan, the First Lady of China, to An Jelina, the First Lady of Burundi, to support her organization, the ""Good Deeds Foundation."" Details about the kinds and quantities of materials included in the donation are unknown..",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government donates anti-epidemic aid to the 'Good Deeds Foundation' for the fight against Covid-19 in July 2020
+
+# Description
+On July 27, 2020, Professor Peng Liyuan donated anti-epidemic aid on behalf of the Chinese government to Burundi's ""Good Deeds Foundation"". The materials were donated by Professor Peng Liyuan, the First Lady of China, to An Jelina, the First Lady of Burundi, to support her organization, the ""Good Deeds Foundation."" Details about the kinds and quantities of materials included in the donation are unknown..",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

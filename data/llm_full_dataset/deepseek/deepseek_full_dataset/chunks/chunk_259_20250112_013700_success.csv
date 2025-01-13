@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95313,HEALTH,China Railway Group donates masks and hand sanitizers to Pakistan Railways,"On April 06, 2020, the China Railway Group donated masks and hand sanitizers to Pakistan Railways to help them with their return from lockdown. The donation consists of 5,000 masks and sanitizers.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Railway Group donates masks and hand sanitizers to Pakistan Railways
+
+# Description
+On April 06, 2020, the China Railway Group donated masks and hand sanitizers to Pakistan Railways to help them with their return from lockdown. The donation consists of 5,000 masks and sanitizers.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,Donation of masks and hand sanitizers to Pakistan Railways
+95326,HEALTH,"China Gezhouba Group Company donates 12,000 surgical disposable masks to Pakhtunkhwa Energy Development Organization","On April 11, 2020, the China Gezhouba Group Company donated 12,000 masks to Pakhtunkhwa Energy Development Organization",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Gezhouba Group Company donates 12,000 surgical disposable masks to Pakhtunkhwa Energy Development Organization
+
+# Description
+On April 11, 2020, the China Gezhouba Group Company donated 12,000 masks to Pakhtunkhwa Energy Development Organization",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies unrelated to energy or environmental impacts,"Donation of 12,000 surgical disposable masks to energy organization"
+95327,HEALTH,Chinese Government donates anti-epidemic medical supplies to the Government of Pakistan,"On March 27, 2020, a donation of medical aid arrived at Karachi Airport. The donation consists of 56,000 testing kits, an unknown amount of N95 masks, and other medical emergency equipment. The donation was received by Sindh Governor Imran Ismaili on behalf of the Pakistani Government.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates anti-epidemic medical supplies to the Government of Pakistan
+
+# Description
+On March 27, 2020, a donation of medical aid arrived at Karachi Airport. The donation consists of 56,000 testing kits, an unknown amount of N95 masks, and other medical emergency equipment. The donation was received by Sindh Governor Imran Ismaili on behalf of the Pakistani Government.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical aid donation consisting of testing kits, masks, and emergency equipment"
+95347,HEALTH,Jiangsu Power Design Institute Company Limited donates medical masks to National Transmission and Despatch Company,"On March 31, 2020, Jiangsu Power Design Institute Company Limited, subsidiary of China Energy Engineering Group, donated 10,000 medical masks to National Transmission and Despatch Company.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Jiangsu Power Design Institute Company Limited donates medical masks to National Transmission and Despatch Company
+
+# Description
+On March 31, 2020, Jiangsu Power Design Institute Company Limited, subsidiary of China Energy Engineering Group, donated 10,000 medical masks to National Transmission and Despatch Company.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies unrelated to energy or environmental impacts,"Donation of 10,000 medical masks to National Transmission and Despatch Company"
+95360,HEALTH,China Gezhouba Group Company donates masks and protective suits to Khyber Pakhtunkhwa Provincial Government,"On April 03, 2020, the China Gezhouba Group Company donates masks and protective suits to the Khyber Pakhtunkhwa Provincial Government. The donation consists 60,000 protective masks and 1000 3M protective suits.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China Gezhouba Group Company donates masks and protective suits to Khyber Pakhtunkhwa Provincial Government
+
+# Description
+On April 03, 2020, the China Gezhouba Group Company donates masks and protective suits to the Khyber Pakhtunkhwa Provincial Government. The donation consists 60,000 protective masks and 1000 3M protective suits.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project involves donation of medical supplies without direct environmental or energy transition impact,"Donation of masks and protective suits, healthcare sector focus"
+95361,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,"Embassy of China in Islamabad donates 8,000 food packages to the Pakistani Government for Afghan Refugees in May 2020 (linked to #95632)","On May 20, 2020, the Chinese Embassy to Pakistan donated 8,000 food packages to the Ministry of States and Frontier Regions (SAFRON) of Pakistan to be redistributed to Afghan Refugees in Baluchistan, Cape and Punjab provinces in Pakistan for Eid Al Fitr. A handover ceremony was held at the Chinese Embassy and attended by the Pakistani Minister of SAFRON, Sahibzada Muhammad Mehboob Sultan, and the Chinese Ambassador to Pakistan Yao Jing.   This donation is not to be confused with the food packages donated by the Chinese Embassy for the beginning of Ramadan, which is captured in project #95632.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Embassy of China in Islamabad donates 8,000 food packages to the Pakistani Government for Afghan Refugees in May 2020 (linked to #95632)
+
+# Description
+On May 20, 2020, the Chinese Embassy to Pakistan donated 8,000 food packages to the Ministry of States and Frontier Regions (SAFRON) of Pakistan to be redistributed to Afghan Refugees in Baluchistan, Cape and Punjab provinces in Pakistan for Eid Al Fitr. A handover ceremony was held at the Chinese Embassy and attended by the Pakistani Minister of SAFRON, Sahibzada Muhammad Mehboob Sultan, and the Chinese Ambassador to Pakistan Yao Jing.   This donation is not to be confused with the food packages donated by the Chinese Embassy for the beginning of Ramadan, which is captured in project #95632.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on humanitarian food aid with no direct environmental or energy transition impact,"Donation of 8,000 food packages to Afghan refugees, humanitarian focus"
+95362,TRANSPORT AND STORAGE,Chinese Consulate General donates tractors and trolleys to the Sindh Provincial Government,"On December 10, 2020, the Chinese Consulate General in Pakistan donated tractors and trolleys to the Sindh Provincial Government. The contents of the donation are worth 5.2 million rupees. A handover ceremony was held at the Sindh Governor House, and was attended by Consul General of the Peoples Republic of China, Li Bijian, and Sindh Governor Imran Ismail. The tractors were to be used in District East, District Korangi, and District Central under supervision of the local MPAs.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+Chinese Consulate General donates tractors and trolleys to the Sindh Provincial Government
+
+# Description
+On December 10, 2020, the Chinese Consulate General in Pakistan donated tractors and trolleys to the Sindh Provincial Government. The contents of the donation are worth 5.2 million rupees. A handover ceremony was held at the Sindh Governor House, and was attended by Consul General of the Peoples Republic of China, Li Bijian, and Sindh Governor Imran Ismail. The tractors were to be used in District East, District Korangi, and District Central under supervision of the local MPAs.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of agricultural equipment without clear environmental or energy transition impacts,"Donation of tractors and trolleys for use in local districts, no energy or environmental components mentioned"
+95407,"AGRICULTURE, FORESTRY, FISHING","CNPC donates $100,000 to Pakistan to fight locust infestation in August 2020 (linked to #95445 and #95634)","On August 18, 2020, China National Petroleum Corporation (CNPC) donated $100,000 to the Pakistani Ministry of National Food Security and Research. The donation goes towards helping fight the desert locust infestation in Pakistan. The donation was received by Federal Minister Syed Fakhar Imam in ceremony in Islamabad that was also attended by Chinese Ambassador Yao Jing. CNPC representatives expressed that they were concerned about the locusts' impact on agriculture and larger food security in Pakistan.   This donation is part of a series of efforts made by the Chinese government to help fight a severe locust infestation that affected Pakistan in 2020. See projects #95445 and #95634 for more",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+CNPC donates $100,000 to Pakistan to fight locust infestation in August 2020 (linked to #95445 and #95634)
+
+# Description
+On August 18, 2020, China National Petroleum Corporation (CNPC) donated $100,000 to the Pakistani Ministry of National Food Security and Research. The donation goes towards helping fight the desert locust infestation in Pakistan. The donation was received by Federal Minister Syed Fakhar Imam in ceremony in Islamabad that was also attended by Chinese Ambassador Yao Jing. CNPC representatives expressed that they were concerned about the locusts' impact on agriculture and larger food security in Pakistan.   This donation is part of a series of efforts made by the Chinese government to help fight a severe locust infestation that affected Pakistan in 2020. See projects #95445 and #95634 for more",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a financial donation for agricultural pest control, with no direct environmental or energy transition impact","Donation for locust infestation control, focus on agriculture and food security"
+95444,HEALTH,"Jiangxi University of Science and Technology donates 30,000 face masks to the University of Punjab in September 2020","On September 29, 2020, the Jiangxi University of Science and Technology donated 30,000 face masks to the University of Punjab. These masks will be used to improve COVID-19 prevention efforts in Pakistan. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at Punjab University. Punjab University Vice Chancellor Professor Niaz Ahmed, Pro Vice Chancellor Professor Dr. Saleem Mazhar, Registrar Dr. Muhammad Khalid Khan, Dean Faculty of Economics and Management Sciences Professor Dr. Khalid Mehmood, Confucius Center director Professor Dr. Rana Ijaz, Director of External Linkages Dr. Sobia Khuram, and others attended the ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Jiangxi University of Science and Technology donates 30,000 face masks to the University of Punjab in September 2020
+
+# Description
+On September 29, 2020, the Jiangxi University of Science and Technology donated 30,000 face masks to the University of Punjab. These masks will be used to improve COVID-19 prevention efforts in Pakistan. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at Punjab University. Punjab University Vice Chancellor Professor Niaz Ahmed, Pro Vice Chancellor Professor Dr. Saleem Mazhar, Registrar Dr. Muhammad Khalid Khan, Dean Faculty of Economics and Management Sciences Professor Dr. Khalid Mehmood, Confucius Center director Professor Dr. Rana Ijaz, Director of External Linkages Dr. Sobia Khuram, and others attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Donation of 30,000 face masks for COVID-19 prevention, health sector focus"
+95445,"AGRICULTURE, FORESTRY, FISHING",China provides drones to Pakistan for fight against locust infestation (Iinked to #95407 and #95634),"On July 23, 2020, the Chinese Ministry of Agriculture and Rural Affairs donated 12 DJI Agras T16 drones to the Embassy of Pakistan in Beijing. At the handover ceremony were Ahmed Farooq, Charge d’ Affaires of the Embassy, Ms. Ma Hongtao, Counsel, Ministry of Agriculture and Rural Affairs of China, and Yasha Chen, Head of SZ DJI Technology Co., Ltd. The drones were to go towards Pakistan's efforts to eradicate desert locusts. The drones were valued at RMB 670,000.   This donation is part of a series of efforts made by the Chinese government to help fight a severe locust infestation that affected Pakistan in 2020. See projects #95407 and #95634 for more.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China provides drones to Pakistan for fight against locust infestation (Iinked to #95407 and #95634)
+
+# Description
+On July 23, 2020, the Chinese Ministry of Agriculture and Rural Affairs donated 12 DJI Agras T16 drones to the Embassy of Pakistan in Beijing. At the handover ceremony were Ahmed Farooq, Charge d’ Affaires of the Embassy, Ms. Ma Hongtao, Counsel, Ministry of Agriculture and Rural Affairs of China, and Yasha Chen, Head of SZ DJI Technology Co., Ltd. The drones were to go towards Pakistan's efforts to eradicate desert locusts. The drones were valued at RMB 670,000.   This donation is part of a series of efforts made by the Chinese government to help fight a severe locust infestation that affected Pakistan in 2020. See projects #95407 and #95634 for more.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on agricultural support and pest control without clear environmental or energy transition impacts,"Donation of agricultural drones for locust control, humanitarian assistance focus"

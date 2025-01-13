@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93845,HEALTH,Chinese Government donates medical supplies to the Early Care Foundation in South Africa in August 2020,"On August 28, 2020, the Chinese Embassy in Pretoria, South Africa donated 18,000 medical masks and 120 forehead temperature guns to the Early Care Foundation. The foundation is a non-profit organization that provides early-childhood development support programs for home-based crèches in disadvantaged communities. Tshepo Motsepe, wife of South African President Cyril Ramaphosa, is described as a ""patron"" of the organization. The donation occurred on the urging of the First Lady of China, Peng Liyuan.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates medical supplies to the Early Care Foundation in South Africa in August 2020
+
+# Description
+On August 28, 2020, the Chinese Embassy in Pretoria, South Africa donated 18,000 medical masks and 120 forehead temperature guns to the Early Care Foundation. The foundation is a non-profit organization that provides early-childhood development support programs for home-based crèches in disadvantaged communities. Tshepo Motsepe, wife of South African President Cyril Ramaphosa, is described as a ""patron"" of the organization. The donation occurred on the urging of the First Lady of China, Peng Liyuan.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

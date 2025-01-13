@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+30589,GOVERNMENT AND CIVIL SOCIETY,China's First Lady Donates To WAMA in Tanzania,"On March 23, 2013, Peng Liyuan, the Chinese President's wife, visited the Women and Development Foundation (WAMA) with the Tanzanian President's wife, Salma Kikwete. During the visit, Peng donated 20 sewing machines, 100 school bags, and other gifts. The donation will directly benefit the WAMA-Nakayama Secondary School in the Coast Region. Salma had started the foundation to improve the health and education of women and children in Tanzania.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China's First Lady Donates To WAMA in Tanzania
+
+# Description
+On March 23, 2013, Peng Liyuan, the Chinese President's wife, visited the Women and Development Foundation (WAMA) with the Tanzanian President's wife, Salma Kikwete. During the visit, Peng donated 20 sewing machines, 100 school bags, and other gifts. The donation will directly benefit the WAMA-Nakayama Secondary School in the Coast Region. Salma had started the foundation to improve the health and education of women and children in Tanzania.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

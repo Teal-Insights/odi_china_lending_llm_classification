@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+31026,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"Chinese first lady donates toys, schoolbags, and computers to Congolese orphanage","On March 29, 2013 Chinese President Xi Jinping's wife Peng Liyuan on Saturday donated computers, toys, and schoolbags to a Brazzaville orphanage that focuses in fighting HIV/AIDS. A World Health Organization goodwill ambassador, Peng visited the orphanage with Congolese First Lady Antoinette Sassou-Nguesso.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese first lady donates toys, schoolbags, and computers to Congolese orphanage
+
+# Description
+On March 29, 2013 Chinese President Xi Jinping's wife Peng Liyuan on Saturday donated computers, toys, and schoolbags to a Brazzaville orphanage that focuses in fighting HIV/AIDS. A World Health Organization goodwill ambassador, Peng visited the orphanage with Congolese First Lady Antoinette Sassou-Nguesso.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

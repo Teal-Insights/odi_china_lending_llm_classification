@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94293,HEALTH,First Lady Peng Liyuan provides anti-epidemic supplies to l’Union des Femmes Marocaines in Morocco in July 2020,"On July 21, 2020, the Chinese First Lady, Peng Liyuan, provided anti-epidemic supplies to the  l’Union des Femmes Marocaines in Morocco. These supplies will be used to improve COVID-19 response efforts in Morocco. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. Mao Jun, the Chargé d'affaires of the Chinese Embassy in Morocco, handed over the supplies on behalf of Peng Liyuan and the Chinese Government. Mrs. Fatima Dahbi and Mrs. Farida El Khamlichi, respectively vice-president and general secretary of the union, attended the ceremonny. After handing over the supplies, a handover certificate was jointly signed by China and Morocco.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady Peng Liyuan provides anti-epidemic supplies to l’Union des Femmes Marocaines in Morocco in July 2020
+
+# Description
+On July 21, 2020, the Chinese First Lady, Peng Liyuan, provided anti-epidemic supplies to the  l’Union des Femmes Marocaines in Morocco. These supplies will be used to improve COVID-19 response efforts in Morocco. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. Mao Jun, the Chargé d'affaires of the Chinese Embassy in Morocco, handed over the supplies on behalf of Peng Liyuan and the Chinese Government. Mrs. Fatima Dahbi and Mrs. Farida El Khamlichi, respectively vice-president and general secretary of the union, attended the ceremonny. After handing over the supplies, a handover certificate was jointly signed by China and Morocco.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

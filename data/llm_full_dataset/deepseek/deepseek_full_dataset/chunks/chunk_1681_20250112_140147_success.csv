@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+41121,TRANSPORT AND STORAGE,China Eximbank provides buyer’s credit loan for Tehran Metro Line 4 Construction Project (Linked to Project ID#41122 and ID#41123),"Preliminary agreements on the construction of Tehran Metro Line 4 began during Iranian President Mohammad Khatami's state visit to China on June 23, 2000. Then, on June 15, 2004, China North Industries Corporation (NORINCO) — a Chinese state owned enterprise (SOE) — signed a $836,000,000 engineering, procurement, and construction (EPC) contract with Tehran Urban and Suburban Railway Company (TUSRC) for the Tehran Metro Line 4 Construction Project. China Eximbank reportedly issued a buyer’s credit loan to support the financing of the EPC contract. This loan was also reportedly insured by China Export & Credit Insurance Corporation (Sinosure).   The purpose of the project was to construct a 22 km metro line (‘Line 4’) — running from east to west in the city of Tehran — that links 19 metro stations. Line 4 was constructed in four sections (phases). Section 1 runs from Ferdowsi Square to Darvazeh Shemiran. Section 2 runs from Darvazeh Shemiran to Shohada Square. Section 3 runs from Ferdowsi Square to Engelab Square. Section 4 runs from Meydan-e Azadi to Ekbatan. NORINCO entrusted the project's implementation and financing to NORINCO International Cooperation LTD., its wholly owned subsidiary.   Construction on Section 1 began in June 2007 and it opened on April 19, 2008. Section 2 opened on March 16, 2009. Section 3 opened on May 31, 2009. Section 4 opened on July 23, 2012.","1. The Chinese project title is 德黑兰地铁4号线项目 or 北方工业公司承包德黑兰地铁项目 or 德黑兰地铁4号线 or 德黑兰地铁4号线项目. . 2. The face value of the buyer’s credit loan from China Eximbank is unknown. For the time being, AidData assumes that the face value of the loan is equivalent to 85% of the value of the $836 million commercial (EPC) contract between TUSRC and NORINCO ($710.6 million).","# Sector
+TRANSPORT AND STORAGE
+
+# Title
+China Eximbank provides buyer’s credit loan for Tehran Metro Line 4 Construction Project (Linked to Project ID#41122 and ID#41123)
+
+# Description
+Preliminary agreements on the construction of Tehran Metro Line 4 began during Iranian President Mohammad Khatami's state visit to China on June 23, 2000. Then, on June 15, 2004, China North Industries Corporation (NORINCO) — a Chinese state owned enterprise (SOE) — signed a $836,000,000 engineering, procurement, and construction (EPC) contract with Tehran Urban and Suburban Railway Company (TUSRC) for the Tehran Metro Line 4 Construction Project. China Eximbank reportedly issued a buyer’s credit loan to support the financing of the EPC contract. This loan was also reportedly insured by China Export & Credit Insurance Corporation (Sinosure).   The purpose of the project was to construct a 22 km metro line (‘Line 4’) — running from east to west in the city of Tehran — that links 19 metro stations. Line 4 was constructed in four sections (phases). Section 1 runs from Ferdowsi Square to Darvazeh Shemiran. Section 2 runs from Darvazeh Shemiran to Shohada Square. Section 3 runs from Ferdowsi Square to Engelab Square. Section 4 runs from Meydan-e Azadi to Ekbatan. NORINCO entrusted the project's implementation and financing to NORINCO International Cooperation LTD., its wholly owned subsidiary.   Construction on Section 1 began in June 2007 and it opened on April 19, 2008. Section 2 opened on March 16, 2009. Section 3 opened on May 31, 2009. Section 4 opened on July 23, 2012.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project is focused on urban transportation infrastructure without clear environmental or energy transition impacts,"Construction of 22 km metro line with 19 stations, general urban transportation infrastructure"
+41240,EMERGENCY RESPONSE,"Chinese embassy donates US$20,000 to female survivors of the Bam earthquake in Iran","In 2004, the Chinese Embassy in Iran donated US$20,000 to female survivors of the Bam Earthquake that hit Iran in 2003.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese embassy donates US$20,000 to female survivors of the Bam earthquake in Iran
+
+# Description
+In 2004, the Chinese Embassy in Iran donated US$20,000 to female survivors of the Bam Earthquake that hit Iran in 2003.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian aid project with no direct environmental or energy transition impact,"Donation to earthquake survivors, social development focus"
+91294,EDUCATION,"Chinese Embassy Donates 1,000 copies of 'Tongjian' to Hebrew University of Jerusalem","On July 8, 2004, Chinese ambassador to Israel Chen Yonglong donated 1,000 copies of the Chinese book ""Tongjian"" to the Hebrew University of Jerusalem's  school on Chinese culture and archaeology.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy Donates 1,000 copies of 'Tongjian' to Hebrew University of Jerusalem
+
+# Description
+On July 8, 2004, Chinese ambassador to Israel Chen Yonglong donated 1,000 copies of the Chinese book ""Tongjian"" to the Hebrew University of Jerusalem's  school on Chinese culture and archaeology.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a cultural donation with no direct environmental or energy transition impact,"Book donation to university, focus on cultural exchange and education"
+57121,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China donates toys and writing materials to children in Jamaica,"On November 24, 2004, the Chinese ambassador met with Governor-General of Jamaica and the First Lady at the King's House and provided the First Lady children's toys and writing materials worth US$500. The toys will be sent to children in need living around Montego Bay for Christmas.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China donates toys and writing materials to children in Jamaica
+
+# Description
+On November 24, 2004, the Chinese ambassador met with Governor-General of Jamaica and the First Lady at the King's House and provided the First Lady children's toys and writing materials worth US$500. The toys will be sent to children in need living around Montego Bay for Christmas.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of toys and writing materials to children, with no direct environmental or energy transition impact","Donation of toys and writing materials, focus on social welfare and children's needs"
+57130,EMERGENCY RESPONSE,China donates US$100 thousand to Jamaica after Hurricane Ivan,"On October 7, 2004, the Government of People's Republic of China granted $100,000 of humanitarian aid to the Government of Jamaica for the reconstruction after Hurricane Ivan. The project is complete.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates US$100 thousand to Jamaica after Hurricane Ivan
+
+# Description
+On October 7, 2004, the Government of People's Republic of China granted $100,000 of humanitarian aid to the Government of Jamaica for the reconstruction after Hurricane Ivan. The project is complete.",TRUE,NA,NEUTRAL,HIGH,Social Development,Humanitarian aid for disaster recovery with no direct environmental or energy transition impact,"Humanitarian aid for reconstruction after hurricane, no energy or infrastructure components mentioned"
+41023,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"Chinese Government provides $20,000 grant to RCC to support cultural activities","On May 3, 2004, the Chinese Government donated US$20,000 to the Jordanian Royal Cultural Center (RCC) to support its culture activities.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+Chinese Government provides $20,000 grant to RCC to support cultural activities
+
+# Description
+On May 3, 2004, the Chinese Government donated US$20,000 to the Jordanian Royal Cultural Center (RCC) to support its culture activities.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on cultural activities without direct environmental or energy transition impact,"Grant for cultural activities at Royal Cultural Center, no energy or infrastructure components"
+41024,EDUCATION,Chinese Government provides $1.2 million grant for provision of school equipment,"On October 14, 2004, during King Abdullah's visit to China, the acting Jordanian Planning and International Cooperation Minister Hazem Al Nasser and Chinese deputy commerce minister Liao Xiaoqi signed a $1.2 million grant agreement. The grant proceeds were to be used to equip 21 schools and support an information center within the Prime Minister's Office. This agreement represented the fulfillment of pledges that were made during the visit of King Abdullah II to China in July 2004.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides $1.2 million grant for provision of school equipment
+
+# Description
+On October 14, 2004, during King Abdullah's visit to China, the acting Jordanian Planning and International Cooperation Minister Hazem Al Nasser and Chinese deputy commerce minister Liao Xiaoqi signed a $1.2 million grant agreement. The grant proceeds were to be used to equip 21 schools and support an information center within the Prime Minister's Office. This agreement represented the fulfillment of pledges that were made during the visit of King Abdullah II to China in July 2004.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and school equipment without direct environmental or energy transition impacts,"Provision of school equipment, support for information center, education sector focus"
+90676,UNALLOCATED/UNSPECIFIED,"Chinese Embassy grants 5,000 garments to the JNRCS in 2004","On August 12, 2004, Mohammed Hadid, the President of the Jordan National Red Crescent Society (JNRCS), received a donation of 5,000 pieces of garments from the Chinese Charge d’affaires ad interim, Mr. Li Chen. According to an article by the Chinese Embassy in Jordan, Chinese enterprises manufactured the garments, yet the specific firms are unknown.",NA,"# Sector
+UNALLOCATED/UNSPECIFIED
+
+# Title
+Chinese Embassy grants 5,000 garments to the JNRCS in 2004
+
+# Description
+On August 12, 2004, Mohammed Hadid, the President of the Jordan National Red Crescent Society (JNRCS), received a donation of 5,000 pieces of garments from the Chinese Charge d’affaires ad interim, Mr. Li Chen. According to an article by the Chinese Embassy in Jordan, Chinese enterprises manufactured the garments, yet the specific firms are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation of 5,000 garments to Jordan National Red Crescent Society"
+90677,EDUCATION,"Chinese Embassy grants 3,000 garments to the YMWASEC in 2004","On September 27, 2004, the Young Muslim Women’s Association Special Education Center (YMWASEC) President, Princess Sarvath Al-Hassan, received a donation of 3,000 garments from Chinese Ambassador Luo Xingwu. According to an article by the Chinese Embassy in Jordan, Chinese enterprises manufactured the garments, yet the specific firms and the use of the garments are unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy grants 3,000 garments to the YMWASEC in 2004
+
+# Description
+On September 27, 2004, the Young Muslim Women’s Association Special Education Center (YMWASEC) President, Princess Sarvath Al-Hassan, received a donation of 3,000 garments from Chinese Ambassador Luo Xingwu. According to an article by the Chinese Embassy in Jordan, Chinese enterprises manufactured the garments, yet the specific firms and the use of the garments are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of garments for social development purposes with no direct environmental or energy transition impact,"Donation of 3,000 garments to education center, no energy or industrial components mentioned"
+73449,EDUCATION,China National Petroleum Corporation provides $1.35 million USD to set up a scholarship for Kazakhstani students to study in China,"On September 27, 2004, China National Petroleum Corporation (CNPC) signed an agreement with the Ministry of Education and Science of the Republic of Kazakhstan in which CNPC agreed to provide $1.35 million USD to the ministry for the creation of the ""Presidential Scholarship."" The scholarship was to finance higher level education in China for excellent Kazakhstani students. The scholarship fund was active as of September 2011.","1. 'Project status' was coded as 'Completion' because CNPC stated in 2008 that it had 'provided' the $1.35 million USD, implying that all Chinese funds had been disbursed (see pg.4 of 'CNPC in Kazakhstan Sustainability Report 2008').","# Sector
+EDUCATION
+
+# Title
+China National Petroleum Corporation provides $1.35 million USD to set up a scholarship for Kazakhstani students to study in China
+
+# Description
+On September 27, 2004, China National Petroleum Corporation (CNPC) signed an agreement with the Ministry of Education and Science of the Republic of Kazakhstan in which CNPC agreed to provide $1.35 million USD to the ministry for the creation of the ""Presidential Scholarship."" The scholarship was to finance higher level education in China for excellent Kazakhstani students. The scholarship fund was active as of September 2011.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on education and human development without direct environmental or energy transition impacts,"Scholarship program for Kazakhstani students to study in China, funded by CNPC but focused on education"

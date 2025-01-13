@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92422,HEALTH,"First Lady of China donates medical supplies to First Lady of Rwanda for the fight against Covid-19 on July 7, 2020","On July 7, 2020, the Rwanda Biomedical Center (RBC) received 120,000 body temperature testers and 18,000 surgical face masks from the First Lady of China, Peng Liyuan. The supplies were a donation for the First Lady of Rwanda, Jeannette Kagame, and were delivered to Dr. Sabin Nsanzimana, the Director General of RBC. The First Lady of China donated the supplies to the Organization of African First Ladies, which then donated supplies to Rwanda.   The handover ceremony was held at the MPPC warehouse of Rwanda Biomedical Center (RBC) in Kigali. The Political Counselor of the Chinese Embassy in Rwanda, Xing Yuchun, the Advisor to the First Lady of Rwanda, Radegonde Ndejuru, and RBC’s Dr. Sabin Nsanzimana attended the ceremony.",Rwanda Biomedical Center (RBC) is also known as Centre Biomédical du Rwanda.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates medical supplies to First Lady of Rwanda for the fight against Covid-19 on July 7, 2020
+
+# Description
+On July 7, 2020, the Rwanda Biomedical Center (RBC) received 120,000 body temperature testers and 18,000 surgical face masks from the First Lady of China, Peng Liyuan. The supplies were a donation for the First Lady of Rwanda, Jeannette Kagame, and were delivered to Dr. Sabin Nsanzimana, the Director General of RBC. The First Lady of China donated the supplies to the Organization of African First Ladies, which then donated supplies to Rwanda.   The handover ceremony was held at the MPPC warehouse of Rwanda Biomedical Center (RBC) in Kigali. The Political Counselor of the Chinese Embassy in Rwanda, Xing Yuchun, the Advisor to the First Lady of Rwanda, Radegonde Ndejuru, and RBC’s Dr. Sabin Nsanzimana attended the ceremony.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

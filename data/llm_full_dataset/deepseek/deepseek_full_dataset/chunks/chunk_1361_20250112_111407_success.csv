@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+67345,ENERGY,ICBC provides $28.6 million loan for 405 (3x135) MW Şırnak Silopi Thermal Power Plant Project,"In 2010, ICBC provided a $28,612,000 buyer’s credit loan to Silopi Elektrik Üretim A.Ş. — a special purpose vehicle and a joint venture of Ciner Holding (85% ownership stake) and GSD Holding (15% ownership stake)— for the 405 (3x135) MW Şırnak Silopi Thermal Power Plant Project. This loan carried the following terms: a 13-year maturity and an interest rate of 2.465%. Its final maturity date is December 20, 2022. Sinosure provided the buyer’s credit insurance. The proceeds of the loan were to be used by the borrower to support the construction of second and third of the three 135MW power-generating units at the Silopi Thermal Power Plant in the village of Selçık within the district of Silopi and the provinces of Şırnak. China Machinery Engineering Corporation (CMEC) was the contractor responsible for implementation.   In 2004, a production license was obtained for the installation of the first 135MW power-generating unit and a contract was signed with CMEC. An Environmental Impact Assessment (EIA) report was received in 2005. After the contract with CMEC came into force in 2006, the construction and installation works were undertaken and the first 135-MW unit went online in May 2009. It was eventually decided to install 2 additional 135 MW units at the power plant. A second contract with CMEC, which went into effect in February 2011, supported the installation of these units. Unit 2 went into operation on May 8, 2015, and Unit 3 went into operation on December 18, 2015.","GSD Holding, a Turkish company, bought a 15% stake in Silopi Electricity Company (Silopi Elektrik) from Park Holding in 2015 for $125 million.  Also, note that there are conflicting reports about the amount of funding provided by ICBC. One source indicates that ICBC provided ‘account custody service’ for $220 million of export credits, which could be what was spent to buy 75.5% shares in Tekstil Bankası from GSD Holdings on May 22, 2015. The amount spent in Turkish dollars was 668,810,011.63 Turkish lira (TRY)","# Sector
+ENERGY
+
+# Title
+ICBC provides $28.6 million loan for 405 (3x135) MW Şırnak Silopi Thermal Power Plant Project
+
+# Description
+In 2010, ICBC provided a $28,612,000 buyer’s credit loan to Silopi Elektrik Üretim A.Ş. — a special purpose vehicle and a joint venture of Ciner Holding (85% ownership stake) and GSD Holding (15% ownership stake)— for the 405 (3x135) MW Şırnak Silopi Thermal Power Plant Project. This loan carried the following terms: a 13-year maturity and an interest rate of 2.465%. Its final maturity date is December 20, 2022. Sinosure provided the buyer’s credit insurance. The proceeds of the loan were to be used by the borrower to support the construction of second and third of the three 135MW power-generating units at the Silopi Thermal Power Plant in the village of Selçık within the district of Silopi and the provinces of Şırnak. China Machinery Engineering Corporation (CMEC) was the contractor responsible for implementation.   In 2004, a production license was obtained for the installation of the first 135MW power-generating unit and a contract was signed with CMEC. An Environmental Impact Assessment (EIA) report was received in 2005. After the contract with CMEC came into force in 2006, the construction and installation works were undertaken and the first 135-MW unit went online in May 2009. It was eventually decided to install 2 additional 135 MW units at the power plant. A second contract with CMEC, which went into effect in February 2011, supported the installation of these units. Unit 2 went into operation on May 8, 2015, and Unit 3 went into operation on December 18, 2015.",TRUE,NA,BROWN,HIGH,Coal Power,"Project involves construction of thermal power plant units, which are typically coal-fired and contribute to fossil fuel dependency","405 MW thermal power plant, three 135MW units, coal-fired technology implied by 'thermal' designation"
+68410,GOVERNMENT AND CIVIL SOCIETY,China Foreign Languages Administration Donates Books to Turkish International Strategic Research Organization,"On March 4, 2010, the Chinese International Publishing Group (a.k.a. China Foreign Language Publishing and Distribution Bureau) donated books to Turkish International Strategic Research Organization (USAK).The book donation ceremony was held in USAK's headquarters. The donated books and magazines cover Chinese politics, economy, culture and ethnic and religious policies. China International Publishing Group hopes to help USAK scholars understand and study China. The project has been coded as representational intent due to the material covered in the donated books.  USAK is one of the earliest established, largest, and most influential academic institutions in Turkey. It has a unique influence on the Turkish government's diplomatic decision-making. The Asia-Pacific Library is planning to build a library of 150,000 volumes, which will be the largest professional library for Asia-Pacific research in the Middle East, Transcaucasia, and Southern Europe.  The value of the donated books is unknown.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China Foreign Languages Administration Donates Books to Turkish International Strategic Research Organization
+
+# Description
+On March 4, 2010, the Chinese International Publishing Group (a.k.a. China Foreign Language Publishing and Distribution Bureau) donated books to Turkish International Strategic Research Organization (USAK).The book donation ceremony was held in USAK's headquarters. The donated books and magazines cover Chinese politics, economy, culture and ethnic and religious policies. China International Publishing Group hopes to help USAK scholars understand and study China. The project has been coded as representational intent due to the material covered in the donated books.  USAK is one of the earliest established, largest, and most influential academic institutions in Turkey. It has a unique influence on the Turkish government's diplomatic decision-making. The Asia-Pacific Library is planning to build a library of 150,000 volumes, which will be the largest professional library for Asia-Pacific research in the Middle East, Transcaucasia, and Southern Europe.  The value of the donated books is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves book donation for academic purposes without clear environmental or energy transition impacts,"Donation of books covering Chinese politics, economy, culture and ethnic/religious policies to academic institution"
+14359,HEALTH,"2010 Donation of US $400,000-worth anti-malaria drugs batch 1 (Linked to #63793)","On January 18, 2010, the Chinese government donated over 244,000 doses of anti-malarial drugs worth 400,000 USD to Uganda. China's ambassador to Uganda, Sun Heping, handed over the donation of 144,000 doses of Arco and 100,000 doses of Duo-Cotexin to Richard Nduhuura, State Minister for General Duties in the Health Ministry.",NA,"# Sector
+HEALTH
+
+# Title
+2010 Donation of US $400,000-worth anti-malaria drugs batch 1 (Linked to #63793)
+
+# Description
+On January 18, 2010, the Chinese government donated over 244,000 doses of anti-malarial drugs worth 400,000 USD to Uganda. China's ambassador to Uganda, Sun Heping, handed over the donation of 144,000 doses of Arco and 100,000 doses of Duo-Cotexin to Richard Nduhuura, State Minister for General Duties in the Health Ministry.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of anti-malarial drugs, healthcare sector focus"
+14484,EMERGENCY RESPONSE,"China National Offshore Oil Corporation donated 50,000 USD to the Ugandan Red Cross","On March 4, 2010, the China National Offshore Oil Corporation donated 50,000 USD to the Ugandan Red Cross to support disaster relief for Ugandan landslide victims. The current status and start and end dates are unknown.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China National Offshore Oil Corporation donated 50,000 USD to the Ugandan Red Cross
+
+# Description
+On March 4, 2010, the China National Offshore Oil Corporation donated 50,000 USD to the Ugandan Red Cross to support disaster relief for Ugandan landslide victims. The current status and start and end dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation with no direct environmental or energy transition impact,"Donation to Ugandan Red Cross for disaster relief, no energy or infrastructure components"
+14612,HEALTH,2010 Donation of 4 million RMB worth anti-malaria drugs batch 2 (Linked to #63793),"On October 8, 2010, the Chinese government donated anti-malarial drugs worth 4,000,000 RMB to Uganda. China's ambassador to Uganda, Sun Heping, handed over the donation to Richard Nduhuura, State Minister for General Duties in the Health Ministry.",NA,"# Sector
+HEALTH
+
+# Title
+2010 Donation of 4 million RMB worth anti-malaria drugs batch 2 (Linked to #63793)
+
+# Description
+On October 8, 2010, the Chinese government donated anti-malarial drugs worth 4,000,000 RMB to Uganda. China's ambassador to Uganda, Sun Heping, handed over the donation to Richard Nduhuura, State Minister for General Duties in the Health Ministry.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of anti-malarial drugs, healthcare sector focus"
+30976,"AGRICULTURE, FORESTRY, FISHING",China Donates Tractors to Uganda,"In May 2010, the Chinese Government donated 30 18-horsepower hand tractors worth $88,000 in Kakiri, Uganda.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China Donates Tractors to Uganda
+
+# Description
+In May 2010, the Chinese Government donated 30 18-horsepower hand tractors worth $88,000 in Kakiri, Uganda.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of agricultural equipment without clear environmental or energy transition impacts,"Donation of 30 hand tractors for agricultural use, no energy or environmental components mentioned"
+35618,HEALTH,Donation of medicine and equipment to China-Uganda Friendship Hospital,"On November 13, 2014, the 16th Chinese medical team donated medicine and medical equipment worth 10 million RMB to the China-Uganda Friendship Hospital.  According to the exchange agreement signed on December 13 and December 27, 2010, the Chinese Government committed to providing a batch of medical equipment and supplies to the China-Uganda Friendship Hospital, including purifying air conditioners, pulse oximeters, ventilators, and manufacturing facilities. Oxygen machine, desk and other materials.",NA,"# Sector
+HEALTH
+
+# Title
+Donation of medicine and equipment to China-Uganda Friendship Hospital
+
+# Description
+On November 13, 2014, the 16th Chinese medical team donated medicine and medical equipment worth 10 million RMB to the China-Uganda Friendship Hospital.  According to the exchange agreement signed on December 13 and December 27, 2010, the Chinese Government committed to providing a batch of medical equipment and supplies to the China-Uganda Friendship Hospital, including purifying air conditioners, pulse oximeters, ventilators, and manufacturing facilities. Oxygen machine, desk and other materials.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare support without direct environmental or energy transition impacts,"Donation of medicine and medical equipment to hospital, healthcare sector focus"
+35622,HEALTH,"14th Chinese medical team in Uganda donates 100,000 RMB worth of medicine and equipment","On October 22, 2010, the 14th Chinese medical team donated medicine and medical equipment worth over 100,000 RMB to Jinja Hospital in Jinja, Uganda on behalf of the Chinese government.",NA,"# Sector
+HEALTH
+
+# Title
+14th Chinese medical team in Uganda donates 100,000 RMB worth of medicine and equipment
+
+# Description
+On October 22, 2010, the 14th Chinese medical team donated medicine and medical equipment worth over 100,000 RMB to Jinja Hospital in Jinja, Uganda on behalf of the Chinese government.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare donation without clear environmental or energy transition impacts,"Donation of medicine and medical equipment, healthcare sector focus"
+69137,HEALTH,"Chinese Government grants $598,175.56 for health sector activities","On October 25, 2010, the Chinese Government committed a grant worth $598,175.56 to the Government of Uganda. This grant is provided for general health sector activities. According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, this grant has been fully disbursed.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government grants $598,175.56 for health sector activities
+
+# Description
+On October 25, 2010, the Chinese Government committed a grant worth $598,175.56 to the Government of Uganda. This grant is provided for general health sector activities. According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, this grant has been fully disbursed.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on general health sector activities with no direct environmental or energy transition impact,"Grant for general health sector activities, no energy or infrastructure components mentioned"
+69138,HEALTH,"Chinese Government grants $439,560.40 to Uganda for health sector activities","On January 4, 2010, the Chinese Government committed a grant worth $439,560.40 to the Government of Uganda. This grant is provided for general health sector activities. According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, this grant has been fully disbursed.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government grants $439,560.40 to Uganda for health sector activities
+
+# Description
+On January 4, 2010, the Chinese Government committed a grant worth $439,560.40 to the Government of Uganda. This grant is provided for general health sector activities. According to the Aid Management Platform (AMP) of the Government of Uganda's Ministry of Finance, Planning, and Economic Development, this grant has been fully disbursed.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on general health sector activities without direct environmental or energy transition impacts,"Grant for general health sector activities, no energy or environmental components mentioned"

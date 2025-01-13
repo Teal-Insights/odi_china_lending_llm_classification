@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92083,HEALTH,Chinese government donates anti-epidemic materials to the National Women's Union of Djibouti in August 2020,"On August 5, 2020, the Chinese government donated anti-epidemic materials to the National Women’s Union of Djibouti. The wife of President Xi Jinping, Peng Liyuan, donated these materials on behalf of the Chinese government. These materials will be used for COVID-19 response and prevention efforts in Djibouti. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. At the ceremony, China’s Ambassador to Djibouti, Zhuo Ruisheng, met with the National Women's Union of Djibouti Vice Chairman and handed over the materials. The Minister of Women and Family, representatives from the National Assembly, and the Minister of Health also attended the ceremony. Ambassador Zhuo and Vice Chairman Hasna signed the handover certificate on behalf of China and Djibouti respectively.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates anti-epidemic materials to the National Women's Union of Djibouti in August 2020
+
+# Description
+On August 5, 2020, the Chinese government donated anti-epidemic materials to the National Women’s Union of Djibouti. The wife of President Xi Jinping, Peng Liyuan, donated these materials on behalf of the Chinese government. These materials will be used for COVID-19 response and prevention efforts in Djibouti. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. At the ceremony, China’s Ambassador to Djibouti, Zhuo Ruisheng, met with the National Women's Union of Djibouti Vice Chairman and handed over the materials. The Minister of Women and Family, representatives from the National Assembly, and the Minister of Health also attended the ceremony. Ambassador Zhuo and Vice Chairman Hasna signed the handover certificate on behalf of China and Djibouti respectively.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

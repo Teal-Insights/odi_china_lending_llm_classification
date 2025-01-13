@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+60070,HEALTH,China sent the 19th medical team to Uganda in 2018,"On September 18, 2018, China sent the 19th medical team to Uganda to take over from the 18th medical team. There were nine members on this medical team selected from The First People's Hospital of Qujing (曲靖市第一人民医院), the Second People's Hospital of Qujing, Qujing Hospital of Traditional Chinese Medicine (曲靖市中医医院), and Qujing Medical College (曲靖医学高等专科学校) in Qujing, Yunnan Province. Outpatient visits reached 9,410 and 240 surgeries were performed. They began on September 30, 2018 and ended on October 14, 2019. During their tenure, they not only performed many surgeries, but also provided traditional Chinese medicine training to Ugandan doctors in China-Uganda Friendship Hospital.  China has sent 19 batches of medical teams, totaling up to about 200 doctors, to Uganda since 1983. By 2018, the doctors had treated thousands of Ugandan patients and trained interns, as well as staff, at local hospitals.",NA,"# Sector
+HEALTH
+
+# Title
+China sent the 19th medical team to Uganda in 2018
+
+# Description
+On September 18, 2018, China sent the 19th medical team to Uganda to take over from the 18th medical team. There were nine members on this medical team selected from The First People's Hospital of Qujing (曲靖市第一人民医院), the Second People's Hospital of Qujing, Qujing Hospital of Traditional Chinese Medicine (曲靖市中医医院), and Qujing Medical College (曲靖医学高等专科学校) in Qujing, Yunnan Province. Outpatient visits reached 9,410 and 240 surgeries were performed. They began on September 30, 2018 and ended on October 14, 2019. During their tenure, they not only performed many surgeries, but also provided traditional Chinese medicine training to Ugandan doctors in China-Uganda Friendship Hospital.  China has sent 19 batches of medical teams, totaling up to about 200 doctors, to Uganda since 1983. By 2018, the doctors had treated thousands of Ugandan patients and trained interns, as well as staff, at local hospitals.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare services and medical training, with no direct environmental or energy transition impact","Medical team deployment, outpatient visits, surgeries performed, traditional Chinese medicine training"
+60176,ENERGY,"Chinese Government granted $352,821 for construction of demonstration biogas digesters in Uganda","In October 2018, the Ugandan Principal Energy Officer Wafula Wilson visited Hunan to study the biogas digesters. On December 18, 2018, Yiyang Jincan Agricultural Technology Development Company signed the ""Automatic Circulation FRP Biogas Digester Implementation Agreement"" (自动循环玻璃钢沼气池) under the witness of Hunan and Ugandan government officials. According to Ugandan government's record, $352,821.25 was granted for construction of demonstration biogas digesters.   On March 26, 2019, 50 sets of pilot project products were shipped to Uganda. 100 younger and middle aged people with higher education were selected to learn how to use the equipment.  Yiyang Jincan Agricultural Technology Development company implemented this project.   The biogas digesters aim to improve the treatment of organic waste such as manure and fruit peel, alleviating energy shortage, preventing tree felling and improving the quality of life in Uganda. According to the company, if the project is successful, more equipment will come.",This project is also known as Hunan Rural Clean Energy Project (湖南农村清洁能源项目).,"# Sector
+ENERGY
+
+# Title
+Chinese Government granted $352,821 for construction of demonstration biogas digesters in Uganda
+
+# Description
+In October 2018, the Ugandan Principal Energy Officer Wafula Wilson visited Hunan to study the biogas digesters. On December 18, 2018, Yiyang Jincan Agricultural Technology Development Company signed the ""Automatic Circulation FRP Biogas Digester Implementation Agreement"" (自动循环玻璃钢沼气池) under the witness of Hunan and Ugandan government officials. According to Ugandan government's record, $352,821.25 was granted for construction of demonstration biogas digesters.   On March 26, 2019, 50 sets of pilot project products were shipped to Uganda. 100 younger and middle aged people with higher education were selected to learn how to use the equipment.  Yiyang Jincan Agricultural Technology Development company implemented this project.   The biogas digesters aim to improve the treatment of organic waste such as manure and fruit peel, alleviating energy shortage, preventing tree felling and improving the quality of life in Uganda. According to the company, if the project is successful, more equipment will come.",TRUE,NA,GREEN,HIGH,Other Low-Carbon Energy,"Project focuses on biogas production from organic waste, a renewable energy source that supports energy transition and environmental improvement","Construction of biogas digesters, treatment of organic waste, alleviation of energy shortage, prevention of tree felling"
+60298,EDUCATION,China granted for China-Uganda Friendship Multimedia Classroom Project in 2018,"On May 16th 2018, the inauguration ceremony of the China-Uganda Friendship Multimedia Classroom Project was held in Iganga, Uganda. The school is called Buwabe Primary School (伊甘加区中心小学). Chinese Ambassador Zheng Zhuqiang and Second Deputy PM, Minister for East African Affairs, Ali Kirunda Kivejinja, attended the ceremony.  This donation comes as a part of a Chinese initiative to improve the quality and access to education available in Uganda.",NA,"# Sector
+EDUCATION
+
+# Title
+China granted for China-Uganda Friendship Multimedia Classroom Project in 2018
+
+# Description
+On May 16th 2018, the inauguration ceremony of the China-Uganda Friendship Multimedia Classroom Project was held in Iganga, Uganda. The school is called Buwabe Primary School (伊甘加区中心小学). Chinese Ambassador Zheng Zhuqiang and Second Deputy PM, Minister for East African Affairs, Ali Kirunda Kivejinja, attended the ceremony.  This donation comes as a part of a Chinese initiative to improve the quality and access to education available in Uganda.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education infrastructure without direct environmental or energy transition impacts,"Multimedia classroom project, education quality improvement initiative"
+60305,EMERGENCY RESPONSE,"Chinese government donated USD 500,000 with refugee resettlement project to Uganda in 2018","On June 27, 2018, the Chinese government donated $500,000 USD to help with refugee resettlement in Uganda.  The donation comes at a critical time for Uganda, as a UN report states that the refugee population in Uganda has grown by 44% in 2017. Over 1.4 million refugees were reported to be in dire need of relief.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese government donated USD 500,000 with refugee resettlement project to Uganda in 2018
+
+# Description
+On June 27, 2018, the Chinese government donated $500,000 USD to help with refugee resettlement in Uganda.  The donation comes at a critical time for Uganda, as a UN report states that the refugee population in Uganda has grown by 44% in 2017. Over 1.4 million refugees were reported to be in dire need of relief.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on humanitarian aid and refugee resettlement without direct environmental or energy transition implications,"Donation for refugee resettlement, humanitarian focus, no energy or infrastructure components mentioned"
+60343,EMERGENCY RESPONSE,Chinese government granted 70 million RMB for emergency humanitarian relief activities,"On September 6, 2018, the Chinese Government agreed to provide Uganda with RMB 70 million in the form of either a grant or an interest-free loan as a part of an Economic and Technical Cooperation Agreement (经济技术合作协议).  The money will be used for unspecified emergency humanitarian relief.","It is likely that it is a grant because the purpose is for humanitarian relief. However, as of January 2022, no new evidence on the project is found.","# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese government granted 70 million RMB for emergency humanitarian relief activities
+
+# Description
+On September 6, 2018, the Chinese Government agreed to provide Uganda with RMB 70 million in the form of either a grant or an interest-free loan as a part of an Economic and Technical Cooperation Agreement (经济技术合作协议).  The money will be used for unspecified emergency humanitarian relief.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on emergency humanitarian relief without clear environmental or energy transition impacts,"Emergency humanitarian relief activities, unspecified use of funds"
+60480,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China donates a garbage truck worth Shs 200 million to newly-made Town Council of Nkoma-Katalyeba in Uganda,"On September 20th, 2018 China donated a garbage truck worth Shs 200 million to the new Town Council of Nkoma-Katalyeba.  The handover ceremony took place in Rwanmuwanga, Kamwenge district in Uganda and was attended by Chinese Ambassador Zheng Zhuqiang, Uganda Minister of Information and Information and Communication Technology Tumwe Baze, and local government officials.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China donates a garbage truck worth Shs 200 million to newly-made Town Council of Nkoma-Katalyeba in Uganda
+
+# Description
+On September 20th, 2018 China donated a garbage truck worth Shs 200 million to the new Town Council of Nkoma-Katalyeba.  The handover ceremony took place in Rwanmuwanga, Kamwenge district in Uganda and was attended by Chinese Ambassador Zheng Zhuqiang, Uganda Minister of Information and Information and Communication Technology Tumwe Baze, and local government officials.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of municipal equipment without clear environmental or energy transition impact,Garbage truck donation to support local government services
+60597,EDUCATION,China grants 69 Chinese Government scholarships to Ugandan students in 2018,"On August  25, 2018, the Chinese embassy held a reception ceremony for the 69 Ugandan students that received the Chinese government scholarship for the 2018-2019 school year.  The scholarship is available for undergraduate, masters, and doctoral programs. The scholarships last 4-7 years for undergraduates, 2-5 years for masters students, and 3-6 years for doctorate students.   China gives this scholarship to students in developing countries every year. The total cost of the scholarships and the Chinese government financing agency are not known.",NA,"# Sector
+EDUCATION
+
+# Title
+China grants 69 Chinese Government scholarships to Ugandan students in 2018
+
+# Description
+On August  25, 2018, the Chinese embassy held a reception ceremony for the 69 Ugandan students that received the Chinese government scholarship for the 2018-2019 school year.  The scholarship is available for undergraduate, masters, and doctoral programs. The scholarships last 4-7 years for undergraduates, 2-5 years for masters students, and 3-6 years for doctorate students.   China gives this scholarship to students in developing countries every year. The total cost of the scholarships and the Chinese government financing agency are not known.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program for education with no direct environmental or energy transition impact,"Education sector, scholarship program for Ugandan students"
+60598,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy donates a 22-seater bus to the Ugandan International Police,"On August 14, 2018, Zheng Zhuqiang handed over a 22 - seater bus to Uganda Police Force at function held at the offices of Directorate of INTERPOL and International Relations in Kololo, Mabua road.  The Deputy Inspector General of Police, Brig. Sabiiti Muzeyi thanked the Chinese embassy for its continued support towards Uganda Police Force.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy donates a 22-seater bus to the Ugandan International Police
+
+# Description
+On August 14, 2018, Zheng Zhuqiang handed over a 22 - seater bus to Uganda Police Force at function held at the offices of Directorate of INTERPOL and International Relations in Kololo, Mabua road.  The Deputy Inspector General of Police, Brig. Sabiiti Muzeyi thanked the Chinese embassy for its continued support towards Uganda Police Force.",TRUE,NA,NEUTRAL,HIGH,Social Development,Donation of a bus to a police force is a social development project with no direct environmental or energy transition impact,"22-seater bus donation to Uganda Police Force, categorized under government and civil society sector"
+60599,HEALTH,"China donates US$70,000 worth of medical supplies to the China-Uganda Friendship Hospital in Naguru, Uganda","On August 9th of 2018, China donated medical supplies worth US$70,000 to the China-Uganda Friendship Hospital in Naguru, Kampala, Uganda. The batch included a wide range of items for all departments, including supplies and those used for acupuncture and Chinese doctrine.  The handover ceremony was attended by Chinese Ambassador Zheng Zhuqiang, Ugandan Minister of Health Jane Ayi, and the Chinese medical team. The China-Uganda Friendship Hospital was built with Chinese aid in 2008 (project #23467, #12177).",NA,"# Sector
+HEALTH
+
+# Title
+China donates US$70,000 worth of medical supplies to the China-Uganda Friendship Hospital in Naguru, Uganda
+
+# Description
+On August 9th of 2018, China donated medical supplies worth US$70,000 to the China-Uganda Friendship Hospital in Naguru, Kampala, Uganda. The batch included a wide range of items for all departments, including supplies and those used for acupuncture and Chinese doctrine.  The handover ceremony was attended by Chinese Ambassador Zheng Zhuqiang, Ugandan Minister of Health Jane Ayi, and the Chinese medical team. The China-Uganda Friendship Hospital was built with Chinese aid in 2008 (project #23467, #12177).",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves donation of medical supplies to a hospital, with no direct environmental or energy transition impact","Medical supplies donation, healthcare sector focus, no energy-related components"
+60608,EDUCATION,China donates school supplies to Ugandan students in SIEMP Initiative in 2018,"On March 6, 2018, China donated school supplies to students in Luuka, Uganda during the Launch Special Impact Education Project in the Safe Future Initiative created by Minister for the Presidency Hon Esther M. Mbayo in 2017. Uganda's Minister for the Presidency Mbayo, Chinese Ambassador Zheng Zhujiang, Chinese enterprise officials and Luuka officials attended the handover ceremony.",NA,"# Sector
+EDUCATION
+
+# Title
+China donates school supplies to Ugandan students in SIEMP Initiative in 2018
+
+# Description
+On March 6, 2018, China donated school supplies to students in Luuka, Uganda during the Launch Special Impact Education Project in the Safe Future Initiative created by Minister for the Presidency Hon Esther M. Mbayo in 2017. Uganda's Minister for the Presidency Mbayo, Chinese Ambassador Zheng Zhujiang, Chinese enterprise officials and Luuka officials attended the handover ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and social development without clear environmental or energy transition impacts,"Donation of school supplies, education sector focus, social development initiative"

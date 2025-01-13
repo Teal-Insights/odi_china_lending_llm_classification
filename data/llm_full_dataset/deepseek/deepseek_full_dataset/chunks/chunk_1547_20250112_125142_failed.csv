@@ -1,0 +1,23 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+2070,EDUCATION,Chinese Government provides $4.5 million grant for Au Cap Primary School Construction Project,"On February 10, 2007, Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai, signed a series of agreements in an event that was witnessed by President Hu Jintao of China and President James Michel of Seychelles. One of the agreements related to the construction of a new primary school at Au Cap. Then, on February 13, 2007, the Chinese Government and the Government of Seychelles signed letters of exchange related to the Au Cap Primary School Construction Project. China’s Ministry of Commerce was the source of funding and it committed $4.5 million in total. The contractor responsible for implementation is unknown.   The project involved the construction of a primary school in Au Cap district with the capacity to accommodate 400 and 500 pupils. Construction began in May 2008 and the project was officially completed and handed over to the Government of Seychelles on May 5, 2010. The school officially opened on October 7, 2010.","The Chinese project title is 奥凯普地区小学及幼儿园项目 or 奥凯普地区小学校.In May 2020 email correspondence with AidData’s Executive Director, Seychelles’ Ministry of Finance provided a list of loans that the Government of Seychelles had contracted with Chinese Government institutions and this list did not include a loan for the Au Cap Primary School Construction Project. Therefore, AidData has coded this project as grant-financed rather than loan-financed.","# Sector
+EDUCATION
+
+# Title
+Chinese Government provides $4.5 million grant for Au Cap Primary School Construction Project
+
+# Description
+On February 10, 2007, Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai, signed a series of agreements in an event that was witnessed by President Hu Jintao of China and President James Michel of Seychelles. One of the agreements related to the construction of a new primary school at Au Cap. Then, on February 13, 2007, the Chinese Government and the Government of Seychelles signed letters of exchange related to the Au Cap Primary School Construction Project. China’s Ministry of Commerce was the source of funding and it committed $4.5 million in total. The contractor responsible for implementation is unknown.   The project involved the construction of a primary school in Au Cap district with the capacity to accommodate 400 and 500 pupils. Construction began in May 2008 and the project was officially completed and handed over to the Government of Seychelles on May 5, 2010. The school officially opened on October 7, 2010.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+2071,GENERAL BUDGET SUPPORT,Chinese Ministry of Commerce provides a $1.5 million USD grant for balance of payments support to Seychelles,"In February of 2007, government officials of China and Seychelles signed a series of five agreements, one of which included a $1.5 million USD grant for balance of payment support. It is unclear how exactly the funds were used. The accords were signed by Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai.",NA,"# Sector
+GENERAL BUDGET SUPPORT
+
+# Title
+Chinese Ministry of Commerce provides a $1.5 million USD grant for balance of payments support to Seychelles
+
+# Description
+In February of 2007, government officials of China and Seychelles signed a series of five agreements, one of which included a $1.5 million USD grant for balance of payment support. It is unclear how exactly the funds were used. The accords were signed by Seychelles Minister for Industries, Investment and Technology Jacquelin Dugasse and China's Minister for Commerce Bo Xilai.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+72439,EDUCATION,China donates supplies to Anié No. 2 Middle School and Abangdou Primary School,"On October 30, 2015, the Chinese Ambassador officially donated teaching supplies to Anié No. 2 Middle School and Abangdou Primary School in the Plateaux region of Togo. The donation consisted of 200 sets of desks and chairs, school bags, stationery boxes, exercise books, writing boards, footballs and other teaching materials to the two schools.",NA,"# Sector
+EDUCATION
+
+# Title
+China donates supplies to Anié No. 2 Middle School and Abangdou Primary School
+
+# Description
+On October 30, 2015, the Chinese Ambassador officially donated teaching supplies to Anié No. 2 Middle School and Abangdou Primary School in the Plateaux region of Togo. The donation consisted of 200 sets of desks and chairs, school bags, stationery boxes, exercise books, writing boards, footballs and other teaching materials to the two schools.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational support without direct environmental or energy transition impacts,"Donation of school supplies, desks, chairs, and teaching materials to educational institutions"
+72458,WATER SUPPLY AND SANITATION,Chinese Government provides funding for Lomé Regional Hospital Center Sewage Treatment System Project,"On August 5, 2015 and August 13, 2015, the Chinese Government and the Government of Togo signed an exchange of notes for the Lomé Regional Hospital Center Sewage Treatment System Project. China’s Ministry of Commerce (MOFCOM) is the source of funding. It almost certainly provided a grant or interest-free loan for this project, but the monetary value and nature of its financial commitment is unknown.   This project involved the installation of a sewage treatment system at the Centre Hospitalier Régional de Lomé commune (CHR), which is located in the capital city of Lomé. China Railway First Group Co., Ltd. was the contractor responsible for implementation. This project was ultimately completed but its precise implementation start and end dates are unknown.",1. The flow_class field is set to ODA-Like because the project has development intent and grants and interest-free loans from MOFCOM always exceed the OECD concessionality threshold of 25%. 2. The Chinese project title is 多哥洛美医院污水处理系统改造项目 or 洛美医院污水处理系统项目. 3. The Chinese Government provided a grant worth CFA 4 billion for the construction of CHR (as captured via Project ID#2174).,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government provides funding for Lomé Regional Hospital Center Sewage Treatment System Project
+
+# Description
+On August 5, 2015 and August 13, 2015, the Chinese Government and the Government of Togo signed an exchange of notes for the Lomé Regional Hospital Center Sewage Treatment System Project. China’s Ministry of Commerce (MOFCOM) is the source of funding. It almost certainly provided a grant or interest-free loan for this project, but the monetary value and nature of its financial commitment is unknown.   This project involved the installation of a sewage treatment system at the Centre Hospitalier Régional de Lomé commune (CHR), which is located in the capital city of Lomé. China Railway First Group Co., Ltd. was the contractor responsible for implementation. This project was ultimately completed but its precise implementation start and end dates are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project focuses on hospital sewage treatment, which is primarily a social development and public health initiative","Sewage treatment system at regional hospital center, no direct energy or environmental transition implications"
+88155,EDUCATION,"China Merchants Holdings International Foundation grants University of Lome CFA 117,000,000 to promote academic excellence over the course of five years","In 2015 China Merchants Holdings International Foundation granted the University of Lome 117 million CFA to promote academic excellence over a 5-year period. The grant funds 20 months of study, 10 months per year, for 50 selected students. These students are also required to enroll in a Chinese language course at the Confucius Institute at the University.",NA,"# Sector
+EDUCATION
+
+# Title
+China Merchants Holdings International Foundation grants University of Lome CFA 117,000,000 to promote academic excellence over the course of five years
+
+# Description
+In 2015 China Merchants Holdings International Foundation granted the University of Lome 117 million CFA to promote academic excellence over a 5-year period. The grant funds 20 months of study, 10 months per year, for 50 selected students. These students are also required to enroll in a Chinese language course at the Confucius Institute at the University.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and academic development without clear environmental or energy transition impacts,"Grant for academic excellence, funding for student studies, Chinese language course requirement"
+49232,EDUCATION,Chinese government funds 25 scholarships for Tongan students,"On 4 August 2015, the Chinese government awarded scholarships to 25 Tongan students to study in China, including 18 for their bachelor's degree, 6 for master's degrees and 1 for a doctorate. In the past, China has already provided more than 170 scholarships to Tongan students.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government funds 25 scholarships for Tongan students
+
+# Description
+On 4 August 2015, the Chinese government awarded scholarships to 25 Tongan students to study in China, including 18 for their bachelor's degree, 6 for master's degrees and 1 for a doctorate. In the past, China has already provided more than 170 scholarships to Tongan students.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and human development without direct environmental or energy transition impacts,"Scholarships for Tongan students, education-focused initiative"
+49233,EDUCATION,Chinese government funds reconstruction of a dormitory on Uiha island in Tonga,"On 2 September 2015, the Embassy of the People’s Republic of China in the Kingdom of Tonga announced that it would provide financial assistance in the form of a $33,200 grant for the reconstruction of the dormitory in Pangai for the students from ‘Uiha island in Ha’apai. The dormitory was seriously damaged during Cyclone Ian in January 2014. The construction is expected to start later in September 2015 and finish in December 2015.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government funds reconstruction of a dormitory on Uiha island in Tonga
+
+# Description
+On 2 September 2015, the Embassy of the People’s Republic of China in the Kingdom of Tonga announced that it would provide financial assistance in the form of a $33,200 grant for the reconstruction of the dormitory in Pangai for the students from ‘Uiha island in Ha’apai. The dormitory was seriously damaged during Cyclone Ian in January 2014. The construction is expected to start later in September 2015 and finish in December 2015.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational infrastructure reconstruction without direct environmental or energy transition impacts,"Dormitory reconstruction for students, education sector focus, no energy or environmental components mentioned"
+49234,WATER SUPPLY AND SANITATION,"Chinese government donates 69,000 TOP for water tanks in Niuafo'ou to the Tongan Red Cross Society","On 18 November 2015, the Embassy of the People’s Republic of China in Tonga donated $69,000 TOP to the Tonga Red Cross Society to assist with the Water Catchment Project for the people of Niuafo'ou.  The project provides water tanks to those affected by lack of water in the Niuas.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese government donates 69,000 TOP for water tanks in Niuafo'ou to the Tongan Red Cross Society
+
+# Description
+On 18 November 2015, the Embassy of the People’s Republic of China in Tonga donated $69,000 TOP to the Tonga Red Cross Society to assist with the Water Catchment Project for the people of Niuafo'ou.  The project provides water tanks to those affected by lack of water in the Niuas.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on water supply improvement for community welfare without clear energy transition implications,"Donation for water tanks to address water scarcity, implemented through Red Cross Society"
+49236,HEALTH,Chinese government donates 2 million TOP worth of medical supplies to Tonga,"On 26 November 2015, the Embassy of the People’s Republic of China in the Kingdom of Tonga handed over a package of medical materials valued at about 2 million Pa’anga provided by Chinese Government to support the health development of Tonga.  The medical materials from China include bandages, surgical blades, disposable syringes, incubators and blood pressure monitors.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 2 million TOP worth of medical supplies to Tonga
+
+# Description
+On 26 November 2015, the Embassy of the People’s Republic of China in the Kingdom of Tonga handed over a package of medical materials valued at about 2 million Pa’anga provided by Chinese Government to support the health development of Tonga.  The medical materials from China include bandages, surgical blades, disposable syringes, incubators and blood pressure monitors.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Medical materials donation including bandages, surgical blades, syringes, incubators, and blood pressure monitors"
+49237,EDUCATION,China opened new classroom in Beulah College in Tonga,"On 8 December, 2015, a new home economic classroom, funded by China, was opened at Beulah college in Tonga. The classroom was opened at the 7th Day Adventist college on its the 120 year anniversary. The new classroom would play a positive role in enhancing the teaching environment of Beulah and improve the skills of the students to better prepare for the future employment. The project was located in Tongatapu. ",NA,"# Sector
+EDUCATION
+
+# Title
+China opened new classroom in Beulah College in Tonga
+
+# Description
+On 8 December, 2015, a new home economic classroom, funded by China, was opened at Beulah college in Tonga. The classroom was opened at the 7th Day Adventist college on its the 120 year anniversary. The new classroom would play a positive role in enhancing the teaching environment of Beulah and improve the skills of the students to better prepare for the future employment. The project was located in Tongatapu. ",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is focused on education infrastructure without direct environmental or energy transition impacts,"New home economics classroom at Beulah College, education sector project"
+49238,WATER SUPPLY AND SANITATION,China funds Eua Water Supply Project in Tonga,"On 11 January 2016, the Tongan village of Houma celebrated the completion of the Chinese-funded water supply project in 'Eua. The project includes a new solar pump to bring spring water from Vai ‘a Hina (a spring in the region) up to the 160-meter cliff in the north of 'Eua and then transfer the water to more than 50 houses in Houma village. The project started in mid-October of 2015 and finished one week before Christmas. This project was worth over TOP100,000. The contractor was Mele Anitema Tonga Services. According to the estimate by the engineer, the flow of the spring is 5 liters per second.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China funds Eua Water Supply Project in Tonga
+
+# Description
+On 11 January 2016, the Tongan village of Houma celebrated the completion of the Chinese-funded water supply project in 'Eua. The project includes a new solar pump to bring spring water from Vai ‘a Hina (a spring in the region) up to the 160-meter cliff in the north of 'Eua and then transfer the water to more than 50 houses in Houma village. The project started in mid-October of 2015 and finished one week before Christmas. This project was worth over TOP100,000. The contractor was Mele Anitema Tonga Services. According to the estimate by the engineer, the flow of the spring is 5 liters per second.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply infrastructure with solar pump as auxiliary component,"Water supply project for village, includes solar pump but primary purpose is water delivery"
+65428,TRADE POLICIES AND REGULATIONS,Chinese government donated x-ray machines worth TOP 3 million to Tonga,"In 2015, Chinese government donated X-ray machine to Tonga, worth TOP 3 million. Official sources state that this machine was donated as a customs container scanning machine.","The Lowy Institute database states that this machine was donated as medical equipment, citing shortages of this equipment in Tonga. While it does appear that Tonga was experiencing medical equipment shortages, the official 2015 Tongan budget report states that this machine was granted for container inspection purposes.","# Sector
+TRADE POLICIES AND REGULATIONS
+
+# Title
+Chinese government donated x-ray machines worth TOP 3 million to Tonga
+
+# Description
+In 2015, Chinese government donated X-ray machine to Tonga, worth TOP 3 million. Official sources state that this machine was donated as a customs container scanning machine.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical/security equipment without clear environmental or energy transition impact,"X-ray machine for customs container scanning, donated as part of social development assistance"

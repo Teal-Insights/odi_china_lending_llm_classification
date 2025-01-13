@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+36678,COMMUNICATIONS,"China gives 350,000 USD to Suriname's state owned television network (linked to #63828)","On January 6, 2003, as part of the 2003 Economic and Technical Cooperation Agreement (#63828), China granted $350,000 USD to Suriname's state-owned television network to improve its communication facilities and public information system. State Councilor Wu Yi singed on behalf of China and Vice President Sudug Aduja signed on behalf of Suriname.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+China gives 350,000 USD to Suriname's state owned television network (linked to #63828)
+
+# Description
+On January 6, 2003, as part of the 2003 Economic and Technical Cooperation Agreement (#63828), China granted $350,000 USD to Suriname's state-owned television network to improve its communication facilities and public information system. State Councilor Wu Yi singed on behalf of China and Vice President Sudug Aduja signed on behalf of Suriname.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on improving communication facilities and public information system without clear environmental or energy transition impacts,"Funding for state-owned television network, improvement of communication facilities and public information system"
+38308,GOVERNMENT AND CIVIL SOCIETY,China Dalian International completes donation of 40 TCL computers to Suriname government,"On April 8, 2003, China Dalian International Cooperation Group (CDIG) donated 40 TCL computers to the government of Suriname. The value of this donation is unknown. The donation was intended to express gratitude to Suriname for support on the 270km road reparation project that CDIG had constructed (#36690).",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China Dalian International completes donation of 40 TCL computers to Suriname government
+
+# Description
+On April 8, 2003, China Dalian International Cooperation Group (CDIG) donated 40 TCL computers to the government of Suriname. The value of this donation is unknown. The donation was intended to express gratitude to Suriname for support on the 270km road reparation project that CDIG had constructed (#36690).",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of computers for government use, with no direct environmental or energy transition impact","Donation of 40 TCL computers to government, no energy-related components mentioned"
+40220,EMERGENCY RESPONSE,Chinese Government provides food aid worth RMB 15 million to Tajikistan,"On March 12, 2003, as part of a humanitarian relief package, China sent Tajikistan RMB 15 million worth of food aid. The food aid was intended to help alleviate Tajikistan's food issues, as the country is not self-sufficient in food production. The food aid included 2,340 tons of sugar, 1,200 tons of rice, and 320 tons of soybean.","The May 2018 Flat Export from Tajikistan AIMS reported that the food aid was worth USD 1,812,000. This is approximately equal to RMB 15 million. The AIMS project ID is TJK/042050. The CNY amount was coded because it came from a Chinese official source from Chinese Embassy's Economic and Commercial office. The AIMS project ID is TJK/042050. This project is not to be confused with humanitarian aid provided by China in November 2002 (captured in project ID#72328).","# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese Government provides food aid worth RMB 15 million to Tajikistan
+
+# Description
+On March 12, 2003, as part of a humanitarian relief package, China sent Tajikistan RMB 15 million worth of food aid. The food aid was intended to help alleviate Tajikistan's food issues, as the country is not self-sufficient in food production. The food aid included 2,340 tons of sugar, 1,200 tons of rice, and 320 tons of soybean.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is purely humanitarian aid with no direct environmental or energy transition impact,"Food aid package consisting of sugar, rice, and soybean for humanitarian purposes"
+40221,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China opens Cultural Exhibition in Tajikistan,"On February 26, 2003, Chinese Ambassador Wu Hongbin opened a Chinese culture exhibition in Dushanbe. The exhibition, called 'The Silk Route and Chinese Culture', features silk, ceramics, porcelain, and tapestry. There are more than 200 exhibits in total. Ambassador Wu also declared that all exhibits will be donated to Tajikistan's Bekhzoda National Museum.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China opens Cultural Exhibition in Tajikistan
+
+# Description
+On February 26, 2003, Chinese Ambassador Wu Hongbin opened a Chinese culture exhibition in Dushanbe. The exhibition, called 'The Silk Route and Chinese Culture', features silk, ceramics, porcelain, and tapestry. There are more than 200 exhibits in total. Ambassador Wu also declared that all exhibits will be donated to Tajikistan's Bekhzoda National Museum.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cultural exhibition with no direct environmental or energy transition impact,"Cultural exhibition focused on art and history, donation to museum"
+70463,COMMUNICATIONS,Chinese Government provides RMB 8 million grant for provision of switches in the Danghara region and equipment related to CDMA projects by ZTE,"According to the Economic and Commercial Office of the Chinese Embassy in Tajikistan, sometime before July 2003, China provided a RMB 8 million grant to Tajikistan. As agreed by China and Tajikistan, the aid was to be used to provide switches to the Danghara region and to provide equipment for the implementation of CDMA projects. ZTE was responsible for its implementation, and as of July 2003, the project was progressing smoothly in its implementation phase.",NA,"# Sector
+COMMUNICATIONS
+
+# Title
+Chinese Government provides RMB 8 million grant for provision of switches in the Danghara region and equipment related to CDMA projects by ZTE
+
+# Description
+According to the Economic and Commercial Office of the Chinese Embassy in Tajikistan, sometime before July 2003, China provided a RMB 8 million grant to Tajikistan. As agreed by China and Tajikistan, the aid was to be used to provide switches to the Danghara region and to provide equipment for the implementation of CDMA projects. ZTE was responsible for its implementation, and as of July 2003, the project was progressing smoothly in its implementation phase.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on communication infrastructure without clear environmental or energy transition impacts,"Provision of switches and CDMA equipment, communications sector focus"
+1492,TRANSPORT AND STORAGE,China donates 30 vehicles to Zanibar,"On October 26, 2003, the Chinese government donated 30 vehicles to Zanzibar in a ceremony attended by President Abeid Amani Karume and Ambassador Yu Qingtai. The value for this project is unknown.",NA,"# Sector
+TRANSPORT AND STORAGE
+
+# Title
+China donates 30 vehicles to Zanibar
+
+# Description
+On October 26, 2003, the Chinese government donated 30 vehicles to Zanzibar in a ceremony attended by President Abeid Amani Karume and Ambassador Yu Qingtai. The value for this project is unknown.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Vehicle donation without specific environmental or energy transition context,"30 vehicles donated, no mention of energy or environmental characteristics"
+1493,GOVERNMENT AND CIVIL SOCIETY,China Donates Police Vehicles to Tanzania,"On March 17, 2003, China donated five Toyota vehicles worth 200,000 USD to the Tanzanian police force to strength it's capacity. Commissioner of Police Wilson Mwansasu and Chinese Chief Economic and Commercial Representative Yu Yingfu were in attendance.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+China Donates Police Vehicles to Tanzania
+
+# Description
+On March 17, 2003, China donated five Toyota vehicles worth 200,000 USD to the Tanzanian police force to strength it's capacity. Commissioner of Police Wilson Mwansasu and Chinese Chief Economic and Commercial Representative Yu Yingfu were in attendance.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of vehicles to police force, unrelated to energy or environmental impact","Donation of police vehicles, government sector project"
+1496,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China funds and builds a housing project in Zanzibar's West District,"In 2003, the Chinese Government granted an unspecified amount of money for a housing project in Zanzibar's West District. The project involved the construction of four three-story residential buildings, one shop, one pump house, exterior roads, and fences, covering 3,162 square meters. China Jiangxi International Economic and Technical Cooperation Corporation was the contractor responsible for project implementation. The groundbreaking ceremony took place on January 18, 2003 and works were complete by January 4, 2004.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China funds and builds a housing project in Zanzibar's West District
+
+# Description
+In 2003, the Chinese Government granted an unspecified amount of money for a housing project in Zanzibar's West District. The project involved the construction of four three-story residential buildings, one shop, one pump house, exterior roads, and fences, covering 3,162 square meters. China Jiangxi International Economic and Technical Cooperation Corporation was the contractor responsible for project implementation. The groundbreaking ceremony took place on January 18, 2003 and works were complete by January 4, 2004.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on residential housing and basic infrastructure without clear environmental or energy transition impacts,"Construction of residential buildings, shop, pump house, roads, and fences; social infrastructure focus"
+35677,HEALTH,China sends 20th medical team to Zanzibar,"On December 27, 2002, a Chinese government official signed a protocol sending the 20th Chinese medical team to Zanzibar. The 21-member medical group worked alongside Zanzibar medical staff at Zanzibar Naz Moga Hospital and Pemba Abdullah Mucai Hospital to carry out medical work, provide technical guidance, and exchange medical experience. Their mission began on July 19, 2003 and ended in June 2005.  Under the agreement, Zanzibar was responsible for covering the housing, transportation, and living expenses of the medical team, in addition to all drugs and equipment they require. China was responsible for providing some equipment and transportation to Zanzibar. Jiangsu Province was responsible for selecting and preparing the team. China has been sending medical teams to Zanzibar every two years since 1964.",China sends separate medical teams to Zanzibar and Tanzania,"# Sector
+HEALTH
+
+# Title
+China sends 20th medical team to Zanzibar
+
+# Description
+On December 27, 2002, a Chinese government official signed a protocol sending the 20th Chinese medical team to Zanzibar. The 21-member medical group worked alongside Zanzibar medical staff at Zanzibar Naz Moga Hospital and Pemba Abdullah Mucai Hospital to carry out medical work, provide technical guidance, and exchange medical experience. Their mission began on July 19, 2003 and ended in June 2005.  Under the agreement, Zanzibar was responsible for covering the housing, transportation, and living expenses of the medical team, in addition to all drugs and equipment they require. China was responsible for providing some equipment and transportation to Zanzibar. Jiangsu Province was responsible for selecting and preparing the team. China has been sending medical teams to Zanzibar every two years since 1964.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project is focused on healthcare provision and medical knowledge exchange, with no direct environmental or energy transition impacts","Medical team deployment, healthcare focus, no energy-related components"
+35681,HEALTH,China sends 18th Medical Team to Tanzania,"On June 13, 2003, a Chinese government official signed a protocol sending the 18th Medical Team to Tanzania. The 25-person medical team includes team leaders and an interpreter, among others. The team will work in four hospitals: Mhibili National Hospital, Dodoma, Msoma and Tabora Provincial Hospital. The medical team will assist Tanzanian medical staff with medical tasks, provide specialized training, and exchange medical experience. Their mission began in August 2003 and ended on August 15, 2005.   Under the agreement, Tanzania is responsible for providing the medical team with living expenses, while China and Tanzania share joint responsibility for providing salaries, transportation, and medical expenses. Shandong Province was responsible for selecting and preparing the team members. China has been sending medical teams to Tanzania every two years since 1968.",China sends separate medical teams to Tanzania and Zanzibar,"# Sector
+HEALTH
+
+# Title
+China sends 18th Medical Team to Tanzania
+
+# Description
+On June 13, 2003, a Chinese government official signed a protocol sending the 18th Medical Team to Tanzania. The 25-person medical team includes team leaders and an interpreter, among others. The team will work in four hospitals: Mhibili National Hospital, Dodoma, Msoma and Tabora Provincial Hospital. The medical team will assist Tanzanian medical staff with medical tasks, provide specialized training, and exchange medical experience. Their mission began in August 2003 and ended on August 15, 2005.   Under the agreement, Tanzania is responsible for providing the medical team with living expenses, while China and Tanzania share joint responsibility for providing salaries, transportation, and medical expenses. Shandong Province was responsible for selecting and preparing the team members. China has been sending medical teams to Tanzania every two years since 1968.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare assistance and medical training without direct environmental or energy transition impacts,"Medical team deployment, healthcare training, no energy-related components"

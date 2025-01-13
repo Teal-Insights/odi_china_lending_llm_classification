@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+38846,WATER SUPPLY AND SANITATION,"China donates well-drilling equipment worth 500,000 RMB","On December 9, 2009, the Communist Party of China Tianjin Municipal Committee donated well-drilling equipment worth 500,000 RMB to the Funcinpec Party of Cambodia. The equipment was pledged by Zhang Gaoli, Secretary of Tianjin, in November 2008.",NA,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+China donates well-drilling equipment worth 500,000 RMB
+
+# Description
+On December 9, 2009, the Communist Party of China Tianjin Municipal Committee donated well-drilling equipment worth 500,000 RMB to the Funcinpec Party of Cambodia. The equipment was pledged by Zhang Gaoli, Secretary of Tianjin, in November 2008.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

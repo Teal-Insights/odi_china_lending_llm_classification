@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91689,HEALTH,Chinese government provides anti-epidemic materials to Office of the First Lady of Botswana in July 2020,"On July 16, 2020, the First Lady of China, Peng Liyuan, provided anti-epidemic materials to the Office of the First Lady in Botswana. The donated supplies included medical supplies, 1,000 blankets, and other cold-proof materials. Peng Liyuan provided the supplies on behalf of the Chinese government. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at the Botswana Presidential Affairs Department. China’s Ambassador Zhao Yanbo, Madam Mao Xuehong, the Ambassador's wife, Wang Bangfu, the Political Counselor of the Embassy, ​​and the Acting Minister of the Botswana Presidential Affairs Department attended the event.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government provides anti-epidemic materials to Office of the First Lady of Botswana in July 2020
+
+# Description
+On July 16, 2020, the First Lady of China, Peng Liyuan, provided anti-epidemic materials to the Office of the First Lady in Botswana. The donated supplies included medical supplies, 1,000 blankets, and other cold-proof materials. Peng Liyuan provided the supplies on behalf of the Chinese government. The monetary value of this donation is unknown.  A handover ceremony was held for this donation at the Botswana Presidential Affairs Department. China’s Ambassador Zhao Yanbo, Madam Mao Xuehong, the Ambassador's wife, Wang Bangfu, the Political Counselor of the Embassy, ​​and the Acting Minister of the Botswana Presidential Affairs Department attended the event.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

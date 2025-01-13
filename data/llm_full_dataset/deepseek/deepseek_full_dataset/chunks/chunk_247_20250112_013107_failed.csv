@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93216,HEALTH,Chinese First Lady donates 30 sewing machines to the Namibian first lady's One Economy Foundation (linked to Project ID#93215),"On July 10, 2020, the Chinese First Lady, Peng Liyuan, donated 30 sewing machines to Monica Geingob, First Lady of the Republic of Namibia, Monica Geingos' One Economy Foundation. The donation was made in support of women and children in Namibia. The Chinese Embassy in Namibia facilitated the donation, which was intended to support women's employment.   The donation was made alongside a donation of COVID-19 equipment from China's first lady (Project ID#93215).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese First Lady donates 30 sewing machines to the Namibian first lady's One Economy Foundation (linked to Project ID#93215)
+
+# Description
+On July 10, 2020, the Chinese First Lady, Peng Liyuan, donated 30 sewing machines to Monica Geingob, First Lady of the Republic of Namibia, Monica Geingos' One Economy Foundation. The donation was made in support of women and children in Namibia. The Chinese Embassy in Namibia facilitated the donation, which was intended to support women's employment.   The donation was made alongside a donation of COVID-19 equipment from China's first lady (Project ID#93215).",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

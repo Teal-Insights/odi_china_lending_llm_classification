@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94685,HEALTH,Chinese government donates anti-epidemic materials to Libyan Ministry for Women and Social Development Affairs in July 2020,"On July 17, 2020, a handover ceremony was held for the donation of anti-epidemic materials from the Chinese government to the Libyan government. The purpose of the donation was to mitigate the spread of COVID-19 in Libya, particularly among women, children, and teenagers. The Chinese Charge d'Affaires to Libya, Wang Qimin, and the Libyan Charge d'Affaires to Tunisia, Mohamed Bin Mustafa, signed the handover certificate in Tunis, Tunisia. The exact materials donated are unknown.   This project is part of a larger initiative by the Chinese First Lady, Peng Liyuan. The initiative involved providing COVID relief supplies for vulnerable women and children to 53 African countries at the behest of the Organization of African First Ladies for Development.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates anti-epidemic materials to Libyan Ministry for Women and Social Development Affairs in July 2020
+
+# Description
+On July 17, 2020, a handover ceremony was held for the donation of anti-epidemic materials from the Chinese government to the Libyan government. The purpose of the donation was to mitigate the spread of COVID-19 in Libya, particularly among women, children, and teenagers. The Chinese Charge d'Affaires to Libya, Wang Qimin, and the Libyan Charge d'Affaires to Tunisia, Mohamed Bin Mustafa, signed the handover certificate in Tunis, Tunisia. The exact materials donated are unknown.   This project is part of a larger initiative by the Chinese First Lady, Peng Liyuan. The initiative involved providing COVID relief supplies for vulnerable women and children to 53 African countries at the behest of the Organization of African First Ladies for Development.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

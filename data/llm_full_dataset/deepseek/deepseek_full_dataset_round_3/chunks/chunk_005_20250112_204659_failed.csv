@@ -1,0 +1,89 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+91915,HEALTH,Chinese Government donates second batch of anti-COVID-19 pandemic materials to Madagascar in July 2020 (linked to project ID#91877 and 91912),"On July 13th, 2020, a donation ceremony for the second batch of anti-pandemic materials was held at the Chinese Embassy in Madagascar. Minister Naharimamy, the Minister of Population, Social Protection and Promotion of Women, Chinese Ambassador Yang Xiaorong, and Brigadier General Elack Andriankaja, General Coordinator of COVID-19, were in attendance. The donation was made to the Fitia association, a charitable organization founded by Mialy Rajoelina Razakandisa, wife of Andry Rajoelina, the president of Madagascar. The grant was organized on the initiative of Peng Liyuan, the first lady of China, and was given by the Chinese government through the the African First Ladies Federation for Development (OAFLAD).   This batch of supplies included medical masks, forehead thermometers, and 7.5 tons of rice. The first donation was in May 2020 (see project ID#91877), and the third batch was handed over in August 2020 (see project ID#91912).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government donates second batch of anti-COVID-19 pandemic materials to Madagascar in July 2020 (linked to project ID#91877 and 91912)
+
+# Description
+On July 13th, 2020, a donation ceremony for the second batch of anti-pandemic materials was held at the Chinese Embassy in Madagascar. Minister Naharimamy, the Minister of Population, Social Protection and Promotion of Women, Chinese Ambassador Yang Xiaorong, and Brigadier General Elack Andriankaja, General Coordinator of COVID-19, were in attendance. The donation was made to the Fitia association, a charitable organization founded by Mialy Rajoelina Razakandisa, wife of Andry Rajoelina, the president of Madagascar. The grant was organized on the initiative of Peng Liyuan, the first lady of China, and was given by the Chinese government through the the African First Ladies Federation for Development (OAFLAD).   This batch of supplies included medical masks, forehead thermometers, and 7.5 tons of rice. The first donation was in May 2020 (see project ID#91877), and the third batch was handed over in August 2020 (see project ID#91912).",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+92590,HEALTH,First Lady of China donates anti-epidemic supplies to First Lady of Malawi,"On July 28, 2020, a ceremony was held at the Kamuzu Presidential Palace for the donation of anti-epidemic materials to Malawi's First Lady, Monica Chakwera, on the behalf of China’s First Lady Peng Liyuan.  Chinese Ambassador to Malawi, Liu Hongyang, the First Lady of Malawi, and Malawi’s Minister of Health attended the ceremony and delivered speeches. The supplies, which included thermometers and face masks, are intended to help mothers, youths, and health workers.  The donation was made at the behest of the Organization of African First Ladies for Development and was part of a larger donation initiative of COVID supplies to 53 African countries.   The Political Counselor of the Chinese Embassy in Malawi and the Malawi Minister of Health signed the handover certificate for the anti-epidemic materials on behalf of the two governments.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates anti-epidemic supplies to First Lady of Malawi
+
+# Description
+On July 28, 2020, a ceremony was held at the Kamuzu Presidential Palace for the donation of anti-epidemic materials to Malawi's First Lady, Monica Chakwera, on the behalf of Chinas First Lady Peng Liyuan.  Chinese Ambassador to Malawi, Liu Hongyang, the First Lady of Malawi, and Malawis Minister of Health attended the ceremony and delivered speeches. The supplies, which included thermometers and face masks, are intended to help mothers, youths, and health workers.  The donation was made at the behest of the Organization of African First Ladies for Development and was part of a larger donation initiative of COVID supplies to 53 African countries.   The Political Counselor of the Chinese Embassy in Malawi and the Malawi Minister of Health signed the handover certificate for the anti-epidemic materials on behalf of the two governments.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+93591,HEALTH,First Lady of China donates anti-epidemic materials to First Lady of Mali on behalf of the Chinese Government for the fight against COVID-19,"On July 28th, 2020, Zhu Liying, the Chinese Ambassador to Mali, and his wife handed over the donation of anti-epidemic materials on behalf of Peng Liyuan, the first lady of China, to Keïta Aminata Maïga, the first lady of Mali. Peng Liyuan's donation, in turn, was on behalf of the Chinese Government. The donated supplies included masks, thermometers, household appliances, and school supplies kits. The handover ceremony took place at Base B, Bamako, Mali.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates anti-epidemic materials to First Lady of Mali on behalf of the Chinese Government for the fight against COVID-19
+
+# Description
+On July 28th, 2020, Zhu Liying, the Chinese Ambassador to Mali, and his wife handed over the donation of anti-epidemic materials on behalf of Peng Liyuan, the first lady of China, to Keta Aminata Maga, the first lady of Mali. Peng Liyuan's donation, in turn, was on behalf of the Chinese Government. The donated supplies included masks, thermometers, household appliances, and school supplies kits. The handover ceremony took place at Base B, Bamako, Mali.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+92229,HEALTH,Chinese government donates COVID medical materials to Mauritius,"On July 23, 2020, Chinese Ambassador Sun Gongyi and his wife Wang Ju handed over anti-epidemic materials donated by the Chinese government to the wife of the Prime Minister of Mauritius, Kobita Jagannath, on behalf of first lady Peng Liyuan. The handover ceremony took place at the treasury building in Port-Louis, the capital of Mauritius.  The donated materials included medical protection gear, face masks, and body temperature scanning devices.   The supplies were donated at the request of the Organization of African First Ladies for Development. The donation to Mauritius was part of a larger series of donations to 53 African countries sent on the behalf of first lady Peng Liyuan.    The Mauritian Ministers of Social Integration, Social Security and National Solidarity, and Gender Equality and Family Welfare, as well as several female parliamentary representatives were also present at the handover ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates COVID medical materials to Mauritius
+
+# Description
+On July 23, 2020, Chinese Ambassador Sun Gongyi and his wife Wang Ju handed over anti-epidemic materials donated by the Chinese government to the wife of the Prime Minister of Mauritius, Kobita Jagannath, on behalf of first lady Peng Liyuan. The handover ceremony took place at the treasury building in Port-Louis, the capital of Mauritius.  The donated materials included medical protection gear, face masks, and body temperature scanning devices.   The supplies were donated at the request of the Organization of African First Ladies for Development. The donation to Mauritius was part of a larger series of donations to 53 African countries sent on the behalf of first lady Peng Liyuan.    The Mauritian Ministers of Social Integration, Social Security and National Solidarity, and Gender Equality and Family Welfare, as well as several female parliamentary representatives were also present at the handover ceremony.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+94293,HEALTH,First Lady Peng Liyuan provides anti-epidemic supplies to l’Union des Femmes Marocaines in Morocco in July 2020,"On July 21, 2020, the Chinese First Lady, Peng Liyuan, provided anti-epidemic supplies to the  l’Union des Femmes Marocaines in Morocco. These supplies will be used to improve COVID-19 response efforts in Morocco. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. Mao Jun, the Chargé d'affaires of the Chinese Embassy in Morocco, handed over the supplies on behalf of Peng Liyuan and the Chinese Government. Mrs. Fatima Dahbi and Mrs. Farida El Khamlichi, respectively vice-president and general secretary of the union, attended the ceremonny. After handing over the supplies, a handover certificate was jointly signed by China and Morocco.",NA,"# Sector
+HEALTH
+
+# Title
+First Lady Peng Liyuan provides anti-epidemic supplies to lUnion des Femmes Marocaines in Morocco in July 2020
+
+# Description
+On July 21, 2020, the Chinese First Lady, Peng Liyuan, provided anti-epidemic supplies to the  lUnion des Femmes Marocaines in Morocco. These supplies will be used to improve COVID-19 response efforts in Morocco. The specific type, amount, and monetary value of this donation are unknown.  A handover ceremony was held for this donation. Mao Jun, the Charg d'affaires of the Chinese Embassy in Morocco, handed over the supplies on behalf of Peng Liyuan and the Chinese Government. Mrs. Fatima Dahbi and Mrs. Farida El Khamlichi, respectively vice-president and general secretary of the union, attended the ceremonny. After handing over the supplies, a handover certificate was jointly signed by China and Morocco.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+93216,HEALTH,Chinese First Lady donates 30 sewing machines to the Namibian first lady's One Economy Foundation (linked to Project ID#93215),"On July 10, 2020, the Chinese First Lady, Peng Liyuan, donated 30 sewing machines to Monica Geingob, First Lady of the Republic of Namibia, Monica Geingos' One Economy Foundation. The donation was made in support of women and children in Namibia. The Chinese Embassy in Namibia facilitated the donation, which was intended to support women's employment.   The donation was made alongside a donation of COVID-19 equipment from China's first lady (Project ID#93215).",NA,"# Sector
+HEALTH
+
+# Title
+Chinese First Lady donates 30 sewing machines to the Namibian first lady's One Economy Foundation (linked to Project ID#93215)
+
+# Description
+On July 10, 2020, the Chinese First Lady, Peng Liyuan, donated 30 sewing machines to Monica Geingob, First Lady of the Republic of Namibia, Monica Geingos' One Economy Foundation. The donation was made in support of women and children in Namibia. The Chinese Embassy in Namibia facilitated the donation, which was intended to support women's employment.   The donation was made alongside a donation of COVID-19 equipment from China's first lady (Project ID#93215).",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+92422,HEALTH,"First Lady of China donates medical supplies to First Lady of Rwanda for the fight against Covid-19 on July 7, 2020","On July 7, 2020, the Rwanda Biomedical Center (RBC) received 120,000 body temperature testers and 18,000 surgical face masks from the First Lady of China, Peng Liyuan. The supplies were a donation for the First Lady of Rwanda, Jeannette Kagame, and were delivered to Dr. Sabin Nsanzimana, the Director General of RBC. The First Lady of China donated the supplies to the Organization of African First Ladies, which then donated supplies to Rwanda.   The handover ceremony was held at the MPPC warehouse of Rwanda Biomedical Center (RBC) in Kigali. The Political Counselor of the Chinese Embassy in Rwanda, Xing Yuchun, the Advisor to the First Lady of Rwanda, Radegonde Ndejuru, and RBC’s Dr. Sabin Nsanzimana attended the ceremony.",Rwanda Biomedical Center (RBC) is also known as Centre Biomédical du Rwanda.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+First Lady of China donates medical supplies to First Lady of Rwanda for the fight against Covid-19 on July 7, 2020
+
+# Description
+On July 7, 2020, the Rwanda Biomedical Center (RBC) received 120,000 body temperature testers and 18,000 surgical face masks from the First Lady of China, Peng Liyuan. The supplies were a donation for the First Lady of Rwanda, Jeannette Kagame, and were delivered to Dr. Sabin Nsanzimana, the Director General of RBC. The First Lady of China donated the supplies to the Organization of African First Ladies, which then donated supplies to Rwanda.   The handover ceremony was held at the MPPC warehouse of Rwanda Biomedical Center (RBC) in Kigali. The Political Counselor of the Chinese Embassy in Rwanda, Xing Yuchun, the Advisor to the First Lady of Rwanda, Radegonde Ndejuru, and RBCs Dr. Sabin Nsanzimana attended the ceremony.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA
+93037,HEALTH,Chinese government donates covid supplies to the Red Cross Society of Sao Tome and Principe in July 2020,"On July 24, 2020, Wang Wei, Ambassador to Sao Tome and Principe, handed over to Lima, Director-General of the Red Cross Society of Sao Tome and Principe, the anti-epidemic materials donated to Sao Tome and Principe by Professor Peng Liyuan, wife of Chinese President Xi Jinping, on behalf of the Chinese government. The donation consisted of 10,000 masks and some infrared thermometers.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates covid supplies to the Red Cross Society of Sao Tome and Principe in July 2020
+
+# Description
+On July 24, 2020, Wang Wei, Ambassador to Sao Tome and Principe, handed over to Lima, Director-General of the Red Cross Society of Sao Tome and Principe, the anti-epidemic materials donated to Sao Tome and Principe by Professor Peng Liyuan, wife of Chinese President Xi Jinping, on behalf of the Chinese government. The donation consisted of 10,000 masks and some infrared thermometers.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

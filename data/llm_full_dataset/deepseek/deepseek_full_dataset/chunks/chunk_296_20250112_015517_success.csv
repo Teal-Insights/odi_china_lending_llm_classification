@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+95503,HEALTH,"Metallurgical Corporation of China donates 1,800 masks and 2,000 gloves to the Sri Lanka Navy","On April 2, 2020, the Metallurgical Corporation of China Ltd. (MCC) donated 1,800 protective masks and 2,000 surgical gloves to the Sri Lanka Navy (SLN) to aid its COVID-19 response.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Metallurgical Corporation of China donates 1,800 masks and 2,000 gloves to the Sri Lanka Navy
+
+# Description
+On April 2, 2020, the Metallurgical Corporation of China Ltd. (MCC) donated 1,800 protective masks and 2,000 surgical gloves to the Sri Lanka Navy (SLN) to aid its COVID-19 response.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impacts,"Donation of masks and gloves for COVID-19 response, health sector focus"
+95504,HEALTH,"AVIC-ENG donates 3,000 masks to three Colombo police stations","On March 28, 2020, China National Aero-technology International Engineering Corporation (AVIC-ENG) donated 3,000 face masks to the Cinnamon Gardens Police Station, the Borella Police Station, and the Kollupitiya Police Station in central Colombo. The masks were intended to help police officers enforcing Colombo's curfew amidst the COVID-19 lockdown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+AVIC-ENG donates 3,000 masks to three Colombo police stations
+
+# Description
+On March 28, 2020, China National Aero-technology International Engineering Corporation (AVIC-ENG) donated 3,000 face masks to the Cinnamon Gardens Police Station, the Borella Police Station, and the Kollupitiya Police Station in central Colombo. The masks were intended to help police officers enforcing Colombo's curfew amidst the COVID-19 lockdown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies unrelated to energy or environmental impact,"Donation of 3,000 face masks to police stations for COVID-19 response"
+95506,HEALTH,"Chinese Embassy donates 11,000 masks to the University of Colombo","On May 27, 2020, the Chinese Embassy in Sri Lanka donated 11,000 medical masks to the University of Colombo (UoC). The masks were intended to be distributed to staff and students upon the university's reopening.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 11,000 masks to the University of Colombo
+
+# Description
+On May 27, 2020, the Chinese Embassy in Sri Lanka donated 11,000 medical masks to the University of Colombo (UoC). The masks were intended to be distributed to staff and students upon the university's reopening.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 11,000 medical masks to university staff and students"
+95509,HEALTH,"Sinopharm International Cooperation donates 20,016 PCR test kits, 10,000 face masks, 100,000 surgical masks, 10,000 coveralls, 1,000 goggles, and 50,000 pairs of gloves worth $1,057,482 USD to Sri Lanka's Ministry of Health","On April 10, 2020, Sinopharm International Corporation donated 20,016 PCR test kits, 10,000 face masks, 100,000 surgical masks, 10,000 disposable coveralls, 50,000 pairs of surgical gloves, and 1,000 goggles worth $1,057,482 USD to Sri Lanka's Ministry of Health.",NA,"# Sector
+HEALTH
+
+# Title
+Sinopharm International Cooperation donates 20,016 PCR test kits, 10,000 face masks, 100,000 surgical masks, 10,000 coveralls, 1,000 goggles, and 50,000 pairs of gloves worth $1,057,482 USD to Sri Lanka's Ministry of Health
+
+# Description
+On April 10, 2020, Sinopharm International Corporation donated 20,016 PCR test kits, 10,000 face masks, 100,000 surgical masks, 10,000 disposable coveralls, 50,000 pairs of surgical gloves, and 1,000 goggles worth $1,057,482 USD to Sri Lanka's Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies without direct environmental or energy transition impact,"PCR test kits, face masks, surgical masks, coveralls, goggles, and gloves donated to Ministry of Health"
+95514,HEALTH,"China State Construction Engineering Corporation donates 4,000 face masks to Sri Lanka's Ministry of Health","On April 10, 2020, China State Construction Engineering Corporation (CSCEC) donated 4,000 face masks to Sri Lanka's Ministry of Health. These masks were intended to support health sector staff such as doctors, nurses, and other medical personnel treating COVID-19 patients.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+China State Construction Engineering Corporation donates 4,000 face masks to Sri Lanka's Ministry of Health
+
+# Description
+On April 10, 2020, China State Construction Engineering Corporation (CSCEC) donated 4,000 face masks to Sri Lanka's Ministry of Health. These masks were intended to support health sector staff such as doctors, nurses, and other medical personnel treating COVID-19 patients.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 4,000 face masks to support healthcare workers during COVID-19 pandemic"
+95516,HEALTH,"Sinopharm International Corporation donates 50,000 pairs of surgical gloves worth $22,500 USD to Sri Lanka's Ministry of Health","On April 15, 2020, Sinopharm International Corporation donated 50,000 pairs of surgical gloves worth $22,500 USD to Sri Lanka's Ministry of Health.",NA,"# Sector
+HEALTH
+
+# Title
+Sinopharm International Corporation donates 50,000 pairs of surgical gloves worth $22,500 USD to Sri Lanka's Ministry of Health
+
+# Description
+On April 15, 2020, Sinopharm International Corporation donated 50,000 pairs of surgical gloves worth $22,500 USD to Sri Lanka's Ministry of Health.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of surgical gloves to Ministry of Health, healthcare sector focus"
+95517,HEALTH,"Chinese Embassy donates 50,000 face masks and 35,000 posters to the All-Island Three-Wheeler Drivers' Union","On July 29, 2020, the Chinese Embassy in Sri Lanka donated 50,000 face masks and 35,000 COVID-19 awareness posters to the All-Island Three-Wheeler Drivers' Union, a union of Sri Lankan three-wheel drivers ('tuk-tuks'). The masks were intended to be distribute to union members.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 50,000 face masks and 35,000 posters to the All-Island Three-Wheeler Drivers' Union
+
+# Description
+On July 29, 2020, the Chinese Embassy in Sri Lanka donated 50,000 face masks and 35,000 COVID-19 awareness posters to the All-Island Three-Wheeler Drivers' Union, a union of Sri Lankan three-wheel drivers ('tuk-tuks'). The masks were intended to be distribute to union members.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on public health support during COVID-19 pandemic, with no direct energy or environmental implications",Donation of face masks and awareness posters for public health purposes
+95518,HEALTH,"Chinese Embassy donates 8,725 antigen test kits worth Rs.10 million LKR to the Sri Lanka Air Force","On December 18, 2020, the Chinese Embassy in Sri Lanka donated 8,725 COVID-19 rapid antigen test kits worth Rs.10 million LKR to the Sri Lanka Air Force (SLAF). The donation was offered and accept during a visit by the Chinese Defense Attaché. The test kits were delivered to the Air Force Hospital in Guwanpura. The donated test kits were intended to help quickly screen SLAF personnel.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 8,725 antigen test kits worth Rs.10 million LKR to the Sri Lanka Air Force
+
+# Description
+On December 18, 2020, the Chinese Embassy in Sri Lanka donated 8,725 COVID-19 rapid antigen test kits worth Rs.10 million LKR to the Sri Lanka Air Force (SLAF). The donation was offered and accept during a visit by the Chinese Defense Attaché. The test kits were delivered to the Air Force Hospital in Guwanpura. The donated test kits were intended to help quickly screen SLAF personnel.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of COVID-19 test kits to military hospital, healthcare sector focus"
+95519,HEALTH,"Chinese Embassy donates 10,000 masks to the University of Peradeniya","On June 11, 2020, the Chinese Embassy in Sri Lanka donated 10,000 medical masks to the University of Peradeniya through Chinese Language Teaching Spots affiliated to Confucius Institute of the University of Colombo. The masks were intended to be distributed to the students of the university.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 10,000 masks to the University of Peradeniya
+
+# Description
+On June 11, 2020, the Chinese Embassy in Sri Lanka donated 10,000 medical masks to the University of Peradeniya through Chinese Language Teaching Spots affiliated to Confucius Institute of the University of Colombo. The masks were intended to be distributed to the students of the university.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 10,000 medical masks to university students, healthcare-related social development"
+95521,HEALTH,"Chinese Embassy donates 100,000 face masks to the Election Commission of Sri Lanka prior to 2020 Sri Lankan parliamentary election","On July 14, 2020, the Chinese Embassy in Sri Lanka released a statement in which it stated that it had donated 100,000 face masks to the Election Commission of Sri Lanka. This donation came ahead of the August 5 2020 Sri Lankan parliamentary election and at the suggestion of Sri Lankan President Gotabaya Rajapaksa.","1. The precise donation date and commitment date is unknown; for now, AidData has coded the press release announcement of July 14, 2020 as the donation and commitment dates, which marking the date estimated fields for each.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.","# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates 100,000 face masks to the Election Commission of Sri Lanka prior to 2020 Sri Lankan parliamentary election
+
+# Description
+On July 14, 2020, the Chinese Embassy in Sri Lanka released a statement in which it stated that it had donated 100,000 face masks to the Election Commission of Sri Lanka. This donation came ahead of the August 5 2020 Sri Lankan parliamentary election and at the suggestion of Sri Lankan President Gotabaya Rajapaksa.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a health-related donation with no direct environmental or energy transition impact,"Donation of 100,000 face masks for election-related purposes"

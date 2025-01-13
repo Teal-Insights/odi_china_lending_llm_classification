@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+56160,EMERGENCY RESPONSE,Chinese government provides Chad with emergency foreign exchange assistance,"On December 5, 2012, Hu Zhiqiang, Chinese Ambassador to Chad, and Fatima Isa Ramadhan, Minister of Social Action, Family and National Solidarity of Chad, signed the certificate of emergency foreign exchange assistance from Chinese government to Chad in the city of N’Djamena. The exact assistance and its value is unknown",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Chinese government provides Chad with emergency foreign exchange assistance
+
+# Description
+On December 5, 2012, Hu Zhiqiang, Chinese Ambassador to Chad, and Fatima Isa Ramadhan, Minister of Social Action, Family and National Solidarity of Chad, signed the certificate of emergency foreign exchange assistance from Chinese government to Chad in the city of N’Djamena. The exact assistance and its value is unknown",TRUE,NA,NEUTRAL,HIGH,Financial Services,Project involves financial assistance without clear environmental or energy transition impacts,"Emergency foreign exchange assistance, no specific environmental or energy-related components mentioned"
+56220,HEALTH,Chinese Embassy donates materials to Chad National Blood Transfusion Center,"On April 26, 2012, Chinese Embassy in Chad donated materials to Chad's National Blood Transfusion Center. Chinese Ambassador to Chad, Qian Jin, oversaw the agreement and made a speech in which he discussed the state of Chinese-Chad healthcare relations. The donation included a television and a computer, among other things. The total value of the donation is not known.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy donates materials to Chad National Blood Transfusion Center
+
+# Description
+On April 26, 2012, Chinese Embassy in Chad donated materials to Chad's National Blood Transfusion Center. Chinese Ambassador to Chad, Qian Jin, oversaw the agreement and made a speech in which he discussed the state of Chinese-Chad healthcare relations. The donation included a television and a computer, among other things. The total value of the donation is not known.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no clear environmental or energy transition impact,"Donation to National Blood Transfusion Center, includes medical equipment and supplies"
+56609,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,China donates 51 million CFA to Chad to aid Chadian expatriates (duplicate of #56773),"On September 21,2012, the Chinese government donated 51 million CFA (approximately $100000) to Chad, allocated for the aid of Chadian expatriates who wanted to return from overseas. The agreement was overseen by Hu Zhiqiang, Chinese Ambassador to Chad.","deactivated, duplicate of #56773.","# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China donates 51 million CFA to Chad to aid Chadian expatriates (duplicate of #56773)
+
+# Description
+On September 21,2012, the Chinese government donated 51 million CFA (approximately $100000) to Chad, allocated for the aid of Chadian expatriates who wanted to return from overseas. The agreement was overseen by Hu Zhiqiang, Chinese Ambassador to Chad.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a financial donation for social welfare purposes with no direct environmental or energy transition impact,"Donation for aid of Chadian expatriates, social infrastructure sector"
+56773,EMERGENCY RESPONSE,19 Chinese companies including China National Petroleum Corporation donates 51 million CFA of flood relief aid to Chad,"On September 21, 2012, 19 Chinese-funded companies in Chad provided donations to Chad's Ministry of Foreign Affairs. Dou Lirong, the general manager of CNPC International (Chad) Co., Ltd., submitted a check for 51 million CFA francs (about USD100,000) Chad's Minister of Social Action, Family and National Solidarity of Chad, Fatima Isa Ramadhan. The donation was made up of contributions from several different sources, though it was given by CNPC. Hu Zhiqiang, the ambassador of Chad, the Commercial Counsellor Zheng Wei and representatives of several donation companies attended the donation ceremony.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+19 Chinese companies including China National Petroleum Corporation donates 51 million CFA of flood relief aid to Chad
+
+# Description
+On September 21, 2012, 19 Chinese-funded companies in Chad provided donations to Chad's Ministry of Foreign Affairs. Dou Lirong, the general manager of CNPC International (Chad) Co., Ltd., submitted a check for 51 million CFA francs (about USD100,000) Chad's Minister of Social Action, Family and National Solidarity of Chad, Fatima Isa Ramadhan. The donation was made up of contributions from several different sources, though it was given by CNPC. Hu Zhiqiang, the ambassador of Chad, the Commercial Counsellor Zheng Wei and representatives of several donation companies attended the donation ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is a humanitarian donation for flood relief, unrelated to energy or environmental impacts","Flood relief aid donation, no energy or industrial components mentioned"
+56778,EDUCATION,Chinese government donates school supplies to Masaguet China-Chad Friendship School in Chad,"On June 1, 2012, the Chinese government, represented by Ambassador Yang Guangyu, donated school supplies to the Masaguet China-Chad Friendship School (马萨格特中乍友谊学校), a school which China had funded the construction of. The handover ceremony took place in Masaget City. The donation included schoolbags, a football, and other school supplies. The Economic and Commercial Counselor Zheng Wei, the Mayor of Marsaguete, the Superintendent of the Ministry of Elementary Education and Civic Education in Marsaguete, the principal of Friendship School and more than 700 students from the school attended the handover ceremony. The value of the donation is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government donates school supplies to Masaguet China-Chad Friendship School in Chad
+
+# Description
+On June 1, 2012, the Chinese government, represented by Ambassador Yang Guangyu, donated school supplies to the Masaguet China-Chad Friendship School (马萨格特中乍友谊学校), a school which China had funded the construction of. The handover ceremony took place in Masaget City. The donation included schoolbags, a football, and other school supplies. The Economic and Commercial Counselor Zheng Wei, the Mayor of Marsaguete, the Superintendent of the Ministry of Elementary Education and Civic Education in Marsaguete, the principal of Friendship School and more than 700 students from the school attended the handover ceremony. The value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and social development without direct environmental or energy transition impacts,"Donation of school supplies to educational institution, no energy-related components"
+36960,EDUCATION,Columbia University opens Confucius Institute,"On May 7, 2013, the Columbia’s University of Jorge Tadeo Lozano (UJTL) opened a Confucius institute in partnership with the University of Foreign Studies in Tianjin and the Chinese Embassy in Colombia.  It will offer Chinese language classes and aims to bridge the cultural gap between the two countries to foster better understanding and relationship.  There will also be an annual Hanban scholarship which will bring students to the Tianjin for the summer. The Institute appears to continue to run at the University.",NA,"# Sector
+EDUCATION
+
+# Title
+Columbia University opens Confucius Institute
+
+# Description
+On May 7, 2013, the Columbia’s University of Jorge Tadeo Lozano (UJTL) opened a Confucius institute in partnership with the University of Foreign Studies in Tianjin and the Chinese Embassy in Colombia.  It will offer Chinese language classes and aims to bridge the cultural gap between the two countries to foster better understanding and relationship.  There will also be an annual Hanban scholarship which will bring students to the Tianjin for the summer. The Institute appears to continue to run at the University.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on cultural exchange and education without direct environmental or energy transition impacts,"Chinese language classes, cultural exchange program, educational scholarships"
+30076,EDUCATION,China provides scholarships for Chinese language and graduate students for Comoros,"In a speech on September 26, 2012, the Chinese Ambassador to Comoros mentioned that 47 students have received scholarships from China. These scholarships have gone to students wishing to pursue the Chinese language and those looking at higher education opportunities in China. The ambassador promised that this scholarship program would continue and grow in the future.",NA,"# Sector
+EDUCATION
+
+# Title
+China provides scholarships for Chinese language and graduate students for Comoros
+
+# Description
+In a speech on September 26, 2012, the Chinese Ambassador to Comoros mentioned that 47 students have received scholarships from China. These scholarships have gone to students wishing to pursue the Chinese language and those looking at higher education opportunities in China. The ambassador promised that this scholarship program would continue and grow in the future.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education and language training without direct environmental or energy transition impact,"Scholarships for Chinese language and graduate studies, education-focused initiative"
+30101,HEALTH,"China donates malarial medicine, lab equipment and other supplies to Comoros (linked to #409, #57366, #57367, #34813)","On April 21, 2012, the Chinese Embassy donated 800,000 doses of Artequick, two motocycles, laboratory equipment, and office equipment to the Comoran Ministry of Health.  This donation is planned to help eradicate malaria in the country and better prevent the disease in pregnant women and children under five years old. This donation was made as a part of the 2007 program initiated by the Guangzhou University of Chinese Medicine (GZUCM) for the island of Moheli in the Comoros to eliminate malaria (see project #409).  Since the start of the program, the persistence of malaria has been significantly decreased.","This project has been linked to projects #57366, #57367, and #34813, because they are also related to project #409.","# Sector
+HEALTH
+
+# Title
+China donates malarial medicine, lab equipment and other supplies to Comoros (linked to #409, #57366, #57367, #34813)
+
+# Description
+On April 21, 2012, the Chinese Embassy donated 800,000 doses of Artequick, two motocycles, laboratory equipment, and office equipment to the Comoran Ministry of Health.  This donation is planned to help eradicate malaria in the country and better prevent the disease in pregnant women and children under five years old. This donation was made as a part of the 2007 program initiated by the Guangzhou University of Chinese Medicine (GZUCM) for the island of Moheli in the Comoros to eliminate malaria (see project #409).  Since the start of the program, the persistence of malaria has been significantly decreased.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare donation without direct environmental or energy transition impacts,"Donation of malarial medicine, lab equipment, and supplies for disease prevention"
+31220,HEALTH,China provides materials for Confucius Classroom at University of Comoros,"In 2012, China donated materials to create a Confucius classroom at the University of Comoros in Moroni.",NA,"# Sector
+HEALTH
+
+# Title
+China provides materials for Confucius Classroom at University of Comoros
+
+# Description
+In 2012, China donated materials to create a Confucius classroom at the University of Comoros in Moroni.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational materials donation without clear environmental or energy transition impacts,"Donation of materials for Confucius classroom, educational focus"
+35696,HEALTH,"Chinese Government dispatches 9th medical team to El-Maarouf National Hospital Center, Fomboni Hospital, and Hombo Hospital","Since 1994, Guangxi Province has been sending medical teams to Comoros every two years. On February 24, 2012, the Chinese Government and the Government of Comoros signed a protocol agreement, dispatching the 9th Chinese medical team to Comoros. The team was stationed at El-Maarouf National Hospital Center (Le Centre hospitalier national El-Maarouf) on the island of Grande Comore, Fomboni Hospital (L’hôpital de Fomboni or Centre Hospitalier de Fomboni) on the island of Mwali, and Hombo Hospital (L’hôpital Hombo) on the island of Anjouan. The team completed its term of service between July 2012 and July 2014.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government dispatches 9th medical team to El-Maarouf National Hospital Center, Fomboni Hospital, and Hombo Hospital
+
+# Description
+Since 1994, Guangxi Province has been sending medical teams to Comoros every two years. On February 24, 2012, the Chinese Government and the Government of Comoros signed a protocol agreement, dispatching the 9th Chinese medical team to Comoros. The team was stationed at El-Maarouf National Hospital Center (Le Centre hospitalier national El-Maarouf) on the island of Grande Comore, Fomboni Hospital (L’hôpital de Fomboni or Centre Hospitalier de Fomboni) on the island of Mwali, and Hombo Hospital (L’hôpital Hombo) on the island of Anjouan. The team completed its term of service between July 2012 and July 2014.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project focuses on healthcare services without direct environmental or energy transition impacts,"Medical team deployment to hospitals, healthcare sector focus"

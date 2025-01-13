@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+66215,EDUCATION,China grants a fitness facility and equipment to a boarding school in Moscow,"On December 18, 2013, China held a ribbon-cutting ceremony for the donation of fitness equipment to the 15th boarding school in Moscow. Chinese President Xi Jinping's wife Peng Liyuan reportedly oversaw construction of the facility in March 2013. The grant also included 100 Russian books and 50 sets of audiovisual products to the school.","Russia is not ODA-eligible, so the flow class has been coded as OOF-like.","# Sector
+EDUCATION
+
+# Title
+China grants a fitness facility and equipment to a boarding school in Moscow
+
+# Description
+On December 18, 2013, China held a ribbon-cutting ceremony for the donation of fitness equipment to the 15th boarding school in Moscow. Chinese President Xi Jinping's wife Peng Liyuan reportedly oversaw construction of the facility in March 2013. The grant also included 100 Russian books and 50 sets of audiovisual products to the school.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

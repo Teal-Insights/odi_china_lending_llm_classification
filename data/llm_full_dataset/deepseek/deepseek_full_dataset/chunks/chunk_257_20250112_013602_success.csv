@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+94457,HEALTH,Chinese government provides anti-epidemic materials to Pakistan in March 2020,"On March 29, 2020, the Chinese government provided the fourth batch of anti-epidemic materials to Pakistan including 10,000 pieces of medical protective clothing, 20,000 N95 masks, 300,000 medical masks, 10 sets of ICU ventilator and 10 portable ventilators. The materials will be used to improve COVID-19 response efforts in Pakistan.   A handover ceremony was held for the materials at the Nur Khan Air Force Base after their arrival in Islamabad on the morning of the 29th. China’s Ambassador to Pakistan Yao Jing, the Chairman of the Pakistan Disaster Management Committee, and representatives of the Pakistani government and military attended the ceremony.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government provides anti-epidemic materials to Pakistan in March 2020
+
+# Description
+On March 29, 2020, the Chinese government provided the fourth batch of anti-epidemic materials to Pakistan including 10,000 pieces of medical protective clothing, 20,000 N95 masks, 300,000 medical masks, 10 sets of ICU ventilator and 10 portable ventilators. The materials will be used to improve COVID-19 response efforts in Pakistan.   A handover ceremony was held for the materials at the Nur Khan Air Force Base after their arrival in Islamabad on the morning of the 29th. China’s Ambassador to Pakistan Yao Jing, the Chairman of the Pakistan Disaster Management Committee, and representatives of the Pakistani government and military attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves provision of medical supplies for COVID-19 response, with no direct environmental or energy transition impact","Medical protective clothing, masks, ventilators, focus on healthcare and epidemic response"
+94458,HEALTH,Xinjiang Uygur Autonomous Region provides anti-epidemic materials to Pakistan in March 2020,"On March 20, 2020, the Xinjiang Uygur Autonomous Region of China provided anti-epidemic materials to Pakistan. The materials included masks and other protective gear. These materials will be used to improve COVID-19 response efforts in Pakistan. The monetary value of this donation is unknown.   A handover ceremony was held for this donation at the Chinese Embassy in Pakistan. Pang Chunxue, the Minister Counselor of the Chinese Embassy, the Director-General of the China Department of the Ministry of Foreign Affairs of Pakistan, the Deputy Mayor of Islamabad, and representatives of the Sindh Province attended the ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Xinjiang Uygur Autonomous Region provides anti-epidemic materials to Pakistan in March 2020
+
+# Description
+On March 20, 2020, the Xinjiang Uygur Autonomous Region of China provided anti-epidemic materials to Pakistan. The materials included masks and other protective gear. These materials will be used to improve COVID-19 response efforts in Pakistan. The monetary value of this donation is unknown.   A handover ceremony was held for this donation at the Chinese Embassy in Pakistan. Pang Chunxue, the Minister Counselor of the Chinese Embassy, the Director-General of the China Department of the Ministry of Foreign Affairs of Pakistan, the Deputy Mayor of Islamabad, and representatives of the Sindh Province attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Anti-epidemic materials (masks and protective gear) for COVID-19 response, healthcare focus"
+94459,EDUCATION,Chinese government awards Government Scholarship to 58 Pakistani students in 2020,"In 2020, the Chinese government awarded the “Chinese Government Scholarship” to 58 Pakistani students.  The Chinese Government Scholarship (CGS) is included in China’s Bilateral Program, established by the Chinese Ministry of Education, and includes a full or partial scholarship to various institutions, universities, and international organizations. The monetary value of each scholarship is unknown. The programme was launched in 2019 for Pakistani students to study in 289 designated Chinese universities. For additional years see Project IDs #95567, 95569.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese government awards Government Scholarship to 58 Pakistani students in 2020
+
+# Description
+In 2020, the Chinese government awarded the “Chinese Government Scholarship” to 58 Pakistani students.  The Chinese Government Scholarship (CGS) is included in China’s Bilateral Program, established by the Chinese Ministry of Education, and includes a full or partial scholarship to various institutions, universities, and international organizations. The monetary value of each scholarship is unknown. The programme was launched in 2019 for Pakistani students to study in 289 designated Chinese universities. For additional years see Project IDs #95567, 95569.",TRUE,NA,NEUTRAL,HIGH,Social Development,Scholarship program focused on education with no direct environmental or energy transition impact,"Education sector, scholarship program for students, no energy or infrastructure components"
+94462,HEALTH,Chinese Consulate General provides anti-epidemic supplies to the Special Protection Unit of Pakistan’s Punjab Province in May 2020,"On May 21, 2020, the Chinese Consulate General in Lahore, Long Dingbin, provided a second batch of anti-epidemic materials to the Special Protection Unit (SPU) of Pakistan’s Punjab Province. The specific type and amount of materials donated are unknown. The monetary value of this donation is also unknown. The handover ceremony was held for this donation on May 21, 2020. Consul General Long Dingbin, the Senior Police Superintendent of the Punjab Province, and other police officers attended the ceremony.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Consulate General provides anti-epidemic supplies to the Special Protection Unit of Pakistan’s Punjab Province in May 2020
+
+# Description
+On May 21, 2020, the Chinese Consulate General in Lahore, Long Dingbin, provided a second batch of anti-epidemic materials to the Special Protection Unit (SPU) of Pakistan’s Punjab Province. The specific type and amount of materials donated are unknown. The monetary value of this donation is also unknown. The handover ceremony was held for this donation on May 21, 2020. Consul General Long Dingbin, the Senior Police Superintendent of the Punjab Province, and other police officers attended the ceremony.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project involves donation of medical supplies with no clear environmental or energy transition impact,"Anti-epidemic materials donation, healthcare focus, no energy-related components"
+94463,HEALTH,"Shandong Provincial Government contributes to donation of anti-epidemic supplies to Pakistan’s Punjab Province in May 2020 (Linked to Project ID#95246, 95574)","On May 11, 2020, the provincial governments of Shandong, Jiangsu and Ningxia donated personal protection equipment (PPE) worth Rs 100 million to Pakistan’s Punjab Province. The materials included protective suits, N-95 and surgical masks, gloves and disposable medical protectors for medical professionals and janitorial staff. A handover ceremony was held for this donation at an airport in Lahore. Consul General Long Dingbin, Chief Minister Buzdar of Pakistan's Punjab Province, the Provincial Health Minister, and officials of the Punjab Provincial Government attended the ceremony.  The contributions of Jiangsu and Ningxia are captured in Project IDs#95246, 95574.",1. The individual contribution of each provincial government to this Rs 100 million donation is unknown. AidData has estimated the contribution of the Shandong provincial government by assuming that each lender contributed an equal amount (Rs 273972.60274) to the donation.,"# Sector
+HEALTH
+
+# Title
+Shandong Provincial Government contributes to donation of anti-epidemic supplies to Pakistan’s Punjab Province in May 2020 (Linked to Project ID#95246, 95574)
+
+# Description
+On May 11, 2020, the provincial governments of Shandong, Jiangsu and Ningxia donated personal protection equipment (PPE) worth Rs 100 million to Pakistan’s Punjab Province. The materials included protective suits, N-95 and surgical masks, gloves and disposable medical protectors for medical professionals and janitorial staff. A handover ceremony was held for this donation at an airport in Lahore. Consul General Long Dingbin, Chief Minister Buzdar of Pakistan's Punjab Province, the Provincial Health Minister, and officials of the Punjab Provincial Government attended the ceremony.  The contributions of Jiangsu and Ningxia are captured in Project IDs#95246, 95574.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of medical supplies for public health purposes, unrelated to energy or environmental impacts","Donation of personal protection equipment (PPE) including masks, gloves, and protective suits for medical professionals"
+94528,HEALTH,"Zhangjiajie city donates 20,000 masks to Karachi, Pakistan for fight against COVID-19","On July 20, 2020, the mayor of the city of Zhangjiajie, a city in China's Hunan province, donated 20,000 medical masks to the commissioner of Karachi, a city in Pakistan. The monetary value of the masks is unknown.",1. The commitment date was unspecified2. The specified type of mask was unspecifiedAidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Zhangjiajie city donates 20,000 masks to Karachi, Pakistan for fight against COVID-19
+
+# Description
+On July 20, 2020, the mayor of the city of Zhangjiajie, a city in China's Hunan province, donated 20,000 medical masks to the commissioner of Karachi, a city in Pakistan. The monetary value of the masks is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical supplies unrelated to energy or environmental impacts,"Donation of 20,000 medical masks for COVID-19 response"
+94529,HEALTH,"Communist Party of China donated 54,000 masks to the Ministry of Foreign Affairs of Pakistan","On October 7, 2020, The Communist Party of China donated 54,000 protective masks to the Pakistani Ministry of Foreign Affairs. The monetary value of the donation is unknown.",1. The monetary value of the donation is unknown.2. The type of mask donated was unspecifiedAidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Communist Party of China donated 54,000 masks to the Ministry of Foreign Affairs of Pakistan
+
+# Description
+On October 7, 2020, The Communist Party of China donated 54,000 protective masks to the Pakistani Ministry of Foreign Affairs. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a donation of medical supplies with no direct environmental or energy transition impact,"Donation of 54,000 protective masks to Ministry of Foreign Affairs"
+94530,HEALTH,Chinese government donates medical supplies to Pakistan National Disaster Management Authority (NDMA) for the fight against COVID-19,"On May 3, 2020, the Government of China donated medical supplies to Pakistan's National Disaster Management Authority (NDMA). The donation consisted of 24 X-ray machines and parts, 371,000 virus collection tubes (VTMs) for testing, and one million various types of masks. The donation weighed over 17 tons. The monetary value of the donation is unknown.",1. The monetary value of the donation is unknown.AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates medical supplies to Pakistan National Disaster Management Authority (NDMA) for the fight against COVID-19
+
+# Description
+On May 3, 2020, the Government of China donated medical supplies to Pakistan's National Disaster Management Authority (NDMA). The donation consisted of 24 X-ray machines and parts, 371,000 virus collection tubes (VTMs) for testing, and one million various types of masks. The donation weighed over 17 tons. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is focused on healthcare support with no direct environmental or energy transition impact,"Medical supplies donation including X-ray machines, virus collection tubes, and masks"
+94531,HEALTH,"Hubei Provincial Government sends medical experts and anti-pandemic supplies to Karot Hydropower Project (Linked to projects #53675, #54317, #54012, #37233)","On May 11, 2020,  The Hubei Provincial Government sent a team of Medical experts and anti-COVID-19 medical supplies to assist the workers of the Karot Hydropower Project in combating the Covid-19 pandemic. The medical team consisted of two doctors and four nurses. The supplies consisted of N-95 and surgical masks, gloves, and disposable medical protectors, and weighed 250 kilograms. The monetary value of the donation is unknown.",1. The monetary value of the donation is unknown.,"# Sector
+HEALTH
+
+# Title
+Hubei Provincial Government sends medical experts and anti-pandemic supplies to Karot Hydropower Project (Linked to projects #53675, #54317, #54012, #37233)
+
+# Description
+On May 11, 2020,  The Hubei Provincial Government sent a team of Medical experts and anti-COVID-19 medical supplies to assist the workers of the Karot Hydropower Project in combating the Covid-19 pandemic. The medical team consisted of two doctors and four nurses. The supplies consisted of N-95 and surgical masks, gloves, and disposable medical protectors, and weighed 250 kilograms. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,"Project involves medical assistance and supplies, unrelated to energy or environmental impacts","Medical experts and anti-COVID-19 supplies sent to assist workers, focus on healthcare"
+94532,HEALTH,Sichuan Normal University provides batch of masks to the University of Karachi,"On April 6, 2020, the Sichuan Normal University sent over 50 N95 facemasks and 7,000 surgical masks to the University of Karachi. The monetary value of the donation is unknown.  The masks were donated to teaching and non-teaching staff at the University of Karachi.",NA,"# Sector
+HEALTH
+
+# Title
+Sichuan Normal University provides batch of masks to the University of Karachi
+
+# Description
+On April 6, 2020, the Sichuan Normal University sent over 50 N95 facemasks and 7,000 surgical masks to the University of Karachi. The monetary value of the donation is unknown.  The masks were donated to teaching and non-teaching staff at the University of Karachi.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves donation of medical supplies with no direct environmental or energy transition impact,"Donation of N95 and surgical masks to university staff, healthcare-related assistance"

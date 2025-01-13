@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+311,ACTION RELATING TO DEBT,Chinese Government cancels FCFA 15.36 billion of the Government of Cameroon's outstanding obligations,"In 2007, Hu Jintao and his team -- including Minister of Commerce Bo Xilai, Foreign Minister Li Zhaoxing and other senior policy makers -- signed eight agreements with the Republic of Cameroon. One of these agreements cancelled the Government of Cameroon's outstanding debts through 2005, which amounted to 15.36 billion FCFA.  A publication in the South African Journal of International Affairs and SAIS-CARI record the amount as $32 million.","The French name of the debt cancellation agreement is 'Protocole d’Accord portant annulation des dettes du Cameroun visà-vis de la Chine au 31 décembre: 2005 15.360.000.000 FCFA'. 2. The Chinese Government made a concerted effort in 2007 to forgive the debts that resulted from interest-free loans maturing by the end of 2005 to heavily-indebted African countries (http://kp.china-embassy.org/chn//zgxw/zgzxxw/t293317.htm). Since interest-free loans from the Chinese Government usually have 20 year maturities (http://www.gov.cn/zwgk/2011-04/21/content_1850553.htm), we have assumed the loans included in this debt forgiveness package would have been contracted before 2000. As such, this project is not marked as umbrella, as there is little risk of double counting.","# Sector
+ACTION RELATING TO DEBT
+
+# Title
+Chinese Government cancels FCFA 15.36 billion of the Government of Cameroon's outstanding obligations
+
+# Description
+In 2007, Hu Jintao and his team -- including Minister of Commerce Bo Xilai, Foreign Minister Li Zhaoxing and other senior policy makers -- signed eight agreements with the Republic of Cameroon. One of these agreements cancelled the Government of Cameroon's outstanding debts through 2005, which amounted to 15.36 billion FCFA.  A publication in the South African Journal of International Affairs and SAIS-CARI record the amount as $32 million.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

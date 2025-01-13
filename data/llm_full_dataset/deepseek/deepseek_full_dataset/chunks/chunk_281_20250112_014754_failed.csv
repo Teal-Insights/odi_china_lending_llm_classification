@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+93037,HEALTH,Chinese government donates covid supplies to the Red Cross Society of Sao Tome and Principe in July 2020,"On July 24, 2020, Wang Wei, Ambassador to Sao Tome and Principe, handed over to Lima, Director-General of the Red Cross Society of Sao Tome and Principe, the anti-epidemic materials donated to Sao Tome and Principe by Professor Peng Liyuan, wife of Chinese President Xi Jinping, on behalf of the Chinese government. The donation consisted of 10,000 masks and some infrared thermometers.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates covid supplies to the Red Cross Society of Sao Tome and Principe in July 2020
+
+# Description
+On July 24, 2020, Wang Wei, Ambassador to Sao Tome and Principe, handed over to Lima, Director-General of the Red Cross Society of Sao Tome and Principe, the anti-epidemic materials donated to Sao Tome and Principe by Professor Peng Liyuan, wife of Chinese President Xi Jinping, on behalf of the Chinese government. The donation consisted of 10,000 masks and some infrared thermometers.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

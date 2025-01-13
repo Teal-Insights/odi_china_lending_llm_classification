@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+90193,HEALTH,"Chinese Embassy in Malaysia participates in donation of 40,000 N95 masks and 350,000 medical masks to Malaysia Ministry of Health in April 2020 (Linked to Project ID#93795, 93796)","On April 2, 2020, the Chinese Embassy in Malaysia (Project ID#90193), along with Guoqiang Public Welfare Foundation (Project ID#93795) and Country Garden Forest City (Project ID#93796) (both under the Chinese private enterprise Country Garden), donated 40,000 N95 masks and 350,000 medical masks to the Ministry of Health of Malaysia. These supplies come as a part of China's continued assistance to Malaysia in combatting the COVID-19 pandemic. The monetary value of the donation is unknown.","1. Because the Chinese Embassy in Malaysia, Guoqiang Public Welfare Foundation and Country Garden Forest City all contributed an unknown number of supplies to this donation, AidData assumes each donor made an equal contribution. The total value of the donation is estimated to be $273,000.00, with each donor contributing an estimated USD 91,000 (USD 273,000.00 / 3 known contributors = USD 91,000).","# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Malaysia participates in donation of 40,000 N95 masks and 350,000 medical masks to Malaysia Ministry of Health in April 2020 (Linked to Project ID#93795, 93796)
+
+# Description
+On April 2, 2020, the Chinese Embassy in Malaysia (Project ID#90193), along with Guoqiang Public Welfare Foundation (Project ID#93795) and Country Garden Forest City (Project ID#93796) (both under the Chinese private enterprise Country Garden), donated 40,000 N95 masks and 350,000 medical masks to the Ministry of Health of Malaysia. These supplies come as a part of China's continued assistance to Malaysia in combatting the COVID-19 pandemic. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of medical supplies for healthcare purposes, with no direct environmental or energy transition impact","Donation of 40,000 N95 masks and 350,000 medical masks to Ministry of Health for COVID-19 response"
+90195,HEALTH,Chinese Embassy in Malaysia donates protective gear to Kuala Lumpur Hospital and Sungai Buloh Hospital in April 2020,"On April 17, 2020, the Chinese Embassy in Malaysia donated protective suits and goggles to Kuala Lumpur Hospital for medical workers to aid against COVID-19. On the same morning, the embassy also made a donation of supplies such as protective clothing to Sungai Buloh Hospital in Klong Xue. The monetary value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Embassy in Malaysia donates protective gear to Kuala Lumpur Hospital and Sungai Buloh Hospital in April 2020
+
+# Description
+On April 17, 2020, the Chinese Embassy in Malaysia donated protective suits and goggles to Kuala Lumpur Hospital for medical workers to aid against COVID-19. On the same morning, the embassy also made a donation of supplies such as protective clothing to Sungai Buloh Hospital in Klong Xue. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,Donation of protective gear to hospitals for COVID-19 response
+90197,HEALTH,Chinese government donates Covid-19 medical supplies to Malaysia National Disaster Management Agency,"On May 15, 2020, the Chinese government provided a donation of 150,000 testing reagents, 70,000 protective suits, 70,000 N95 medical masks, and 1.3 million medical surgical masks to Malaysia, received by the Malaysia National Disaster Management Agency. This is the second large donation of medical aid China has provided to Malaysia to assist against the COVID-19 pandemic.  The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese government donates Covid-19 medical supplies to Malaysia National Disaster Management Agency
+
+# Description
+On May 15, 2020, the Chinese government provided a donation of 150,000 testing reagents, 70,000 protective suits, 70,000 N95 medical masks, and 1.3 million medical surgical masks to Malaysia, received by the Malaysia National Disaster Management Agency. This is the second large donation of medical aid China has provided to Malaysia to assist against the COVID-19 pandemic.  The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a humanitarian medical donation with no direct environmental or energy transition impact,"Donation of medical supplies including testing reagents, protective suits, and masks for COVID-19 response"
+90203,HEALTH,"Urumqi Municipal Government donates 20,000 disposable medical masks to Klang City, Malaysia","On June 16, 2020, the Chinese Embassy in Malaysia donated 20,000 disposable medical masks to the city of Klang in Selangor, Malaysia, on behalf of Klang's sister city, Urumqi, which is located in the Xinjiang Uygur Autonomous Region of China. The monetary value of the donation is unknown.  The Chinese city of Urumqi and the city of Klang in Malaysia became sister cities on August 12, 2020. According to the Chinese Embassy in Malaysia, the cities have exchanged resources in the fields of science and technology, people-to-people relationships, and cultural exchanges.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Urumqi Municipal Government donates 20,000 disposable medical masks to Klang City, Malaysia
+
+# Description
+On June 16, 2020, the Chinese Embassy in Malaysia donated 20,000 disposable medical masks to the city of Klang in Selangor, Malaysia, on behalf of Klang's sister city, Urumqi, which is located in the Xinjiang Uygur Autonomous Region of China. The monetary value of the donation is unknown.  The Chinese city of Urumqi and the city of Klang in Malaysia became sister cities on August 12, 2020. According to the Chinese Embassy in Malaysia, the cities have exchanged resources in the fields of science and technology, people-to-people relationships, and cultural exchanges.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 20,000 disposable medical masks, healthcare-related aid"
+90212,EDUCATION,Chinese Embassy in Malaysia donates remote classroom and remote conference room equipment to Mara University of Technology,"On September 28, 2020, the Chinese Embassy of Malaysia held a handover ceremony of a remote classroom and a remote conference room as donations to the Mara University of Technology in Malaysia. The equipment was created by Huawei technologies and will help teachers and students at the university create and maintain faster teaching and communication channels.  The monetary value of the donation is unknown.",The Malay name for Mara University of Technology is Universiti Teknologi MARA (UiTM).,"# Sector
+EDUCATION
+
+# Title
+Chinese Embassy in Malaysia donates remote classroom and remote conference room equipment to Mara University of Technology
+
+# Description
+On September 28, 2020, the Chinese Embassy of Malaysia held a handover ceremony of a remote classroom and a remote conference room as donations to the Mara University of Technology in Malaysia. The equipment was created by Huawei technologies and will help teachers and students at the university create and maintain faster teaching and communication channels.  The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on educational infrastructure without clear environmental or energy transition impacts,Donation of remote classroom and conference room equipment for educational purposes
+90221,HEALTH,"Bank of China donates 300,000 RM to Malaysia Ministry of Health for COVID-19 preparedness","On May 1, 2020, the Bank of China donated 300,000 RM to the Malaysian Ministry of Health for its COVID-19 fund. The donation's purpose is to help Malaysia's fight against COVID-19. The donation was handed over by the chief executive officer of the Malaysian branch of the Bank of China Zhang Min to the Malaysian Minister of Health Adham Baba.",NA,"# Sector
+HEALTH
+
+# Title
+Bank of China donates 300,000 RM to Malaysia Ministry of Health for COVID-19 preparedness
+
+# Description
+On May 1, 2020, the Bank of China donated 300,000 RM to the Malaysian Ministry of Health for its COVID-19 fund. The donation's purpose is to help Malaysia's fight against COVID-19. The donation was handed over by the chief executive officer of the Malaysian branch of the Bank of China Zhang Min to the Malaysian Minister of Health Adham Baba.",TRUE,NA,NEUTRAL,HIGH,Social Development,Financial donation for healthcare purposes with no direct environmental or energy transition impact,"Donation to Ministry of Health for COVID-19 preparedness, healthcare focus"
+90223,HEALTH,"Fujian Province donates 20,000 masks to Sarawak, Malaysia to fight against COVID-19 in March 2020","On March 26, 2020, the Consulate-General of the People's Republic of China in Kuching donated 20,000 masks to Sarawak, Malaysia on behalf of the Fujian Provincial Government. This donation is the first batch of donations under China's assistance program to Sarawak. According to the Chinese Consulate General, this donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Fujian Province donates 20,000 masks to Sarawak, Malaysia to fight against COVID-19 in March 2020
+
+# Description
+On March 26, 2020, the Consulate-General of the People's Republic of China in Kuching donated 20,000 masks to Sarawak, Malaysia on behalf of the Fujian Provincial Government. This donation is the first batch of donations under China's assistance program to Sarawak. According to the Chinese Consulate General, this donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a healthcare-related donation with no direct environmental or energy transition impact,"Donation of 20,000 masks to support COVID-19 response, distributed to medical staff"
+90224,HEALTH,Chinese Ministry of National Defense donates medical equipment for Covid-19 to Malaysian Ministry of Defense,"On May 12, 2020, the Chinese Ministry of National Defense donated 130,000 units of 13 different types of protective medical equipment and items to the Malaysian Ministry of Defense.  The donation consists of face masks, medical goggles, isolation gowns, medical boots sets, disposable nitrile gloves and thermal imaging smart helmets amongst other protective medical items. The donation is to be used to support the Malaysian Armed Forces.  The monetary value of the donation is unknown.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Ministry of National Defense donates medical equipment for Covid-19 to Malaysian Ministry of Defense
+
+# Description
+On May 12, 2020, the Chinese Ministry of National Defense donated 130,000 units of 13 different types of protective medical equipment and items to the Malaysian Ministry of Defense.  The donation consists of face masks, medical goggles, isolation gowns, medical boots sets, disposable nitrile gloves and thermal imaging smart helmets amongst other protective medical items. The donation is to be used to support the Malaysian Armed Forces.  The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Healthcare and Education Facilities,Project is a donation of medical equipment with no direct environmental or energy transition impact,"Medical equipment donation, focus on healthcare support"
+90225,HEALTH,"Government of Shandong Province donates 100,000 masks to Sarawak State Government in Malaysia","On March 27, 2020, the government of China's Shangdong Province provided a second donation of 100,000 masks to the Sarawak State Government in Malaysia. This donation is a part of China's assistance program to Sarawak. According to the Chinese Consulate General in Kuching, this donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The Shandong province and Sarawak are sister cities.  On the same day, the Chinese Consulate in Kuching handed over supplies donated by Fujian Provincial Government (Project ID#90223).",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Government of Shandong Province donates 100,000 masks to Sarawak State Government in Malaysia
+
+# Description
+On March 27, 2020, the government of China's Shangdong Province provided a second donation of 100,000 masks to the Sarawak State Government in Malaysia. This donation is a part of China's assistance program to Sarawak. According to the Chinese Consulate General in Kuching, this donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The Shandong province and Sarawak are sister cities.  On the same day, the Chinese Consulate in Kuching handed over supplies donated by Fujian Provincial Government (Project ID#90223).",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 100,000 masks to support COVID-19 response, distributed to medical staff"
+90230,HEALTH,"Chinese General Consulate in Kuching donates 30,000 masks to Government of Sarawak in Malaysia in April 2020","On April 1, 2020, the Chinese General Consulate in Kuching provided a donation of 30,000 masks to the Disaster Management Committee of the Government of Sarawak in Malaysia. This donation is part of China's assistance program to Sarawak to aid against COVID-19. This donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The monetary value of the donation is unknown.",AidData has estimated the transaction amount for this donation based on price catalogues from the World Health Organization (WHO). Please see the TUFF Methodology for additional details.,"# Sector
+HEALTH
+
+# Title
+Chinese General Consulate in Kuching donates 30,000 masks to Government of Sarawak in Malaysia in April 2020
+
+# Description
+On April 1, 2020, the Chinese General Consulate in Kuching provided a donation of 30,000 masks to the Disaster Management Committee of the Government of Sarawak in Malaysia. This donation is part of China's assistance program to Sarawak to aid against COVID-19. This donation was distributed to medical staff on the front lines of the COVID-19 pandemic. The monetary value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation of medical supplies with no direct environmental or energy transition impact,"Donation of 30,000 masks to aid COVID-19 response, distributed to medical staff"

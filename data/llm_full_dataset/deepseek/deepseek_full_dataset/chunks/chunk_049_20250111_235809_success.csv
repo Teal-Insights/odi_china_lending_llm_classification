@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+96593,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Chinese Consulate in Medan donates aid to Medan Indonesian Ulema Council in March 2021,"On March 20, 2021, the Chinese Consulate in Medan donated food aid to the Indonesian Ulema Council in Medan to help in the fight against Covid-19.  The contents and value of the donation are unknown.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Consulate in Medan donates aid to Medan Indonesian Ulema Council in March 2021
+
+# Description
+On March 20, 2021, the Chinese Consulate in Medan donated food aid to the Indonesian Ulema Council in Medan to help in the fight against Covid-19.  The contents and value of the donation are unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Food aid donation for social welfare purposes with no direct environmental or energy transition impact,"Food aid donation to Indonesian Ulema Council, focus on Covid-19 relief"
+96597,DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE,Chinese Consulate in Surabaya donates Ramadan care packages to Muslims in Indonesia in May 2021,"On May 6, 2021, the Chinese Consulate in Surabaya donated a batch of supplies to four local religious institutions: Zhenghe Mosque in Surabaya, Islamic Cleric Foundation, Muhammadiyah, and Council of Islamic Scholars. The donation included rice, sugar, instant noodles, and masks. The value of the donation is unknown.",NA,"# Sector
+DEVELOPMENTAL FOOD AID/FOOD SECURITY ASSISTANCE
+
+# Title
+Chinese Consulate in Surabaya donates Ramadan care packages to Muslims in Indonesia in May 2021
+
+# Description
+On May 6, 2021, the Chinese Consulate in Surabaya donated a batch of supplies to four local religious institutions: Zhenghe Mosque in Surabaya, Islamic Cleric Foundation, Muhammadiyah, and Council of Islamic Scholars. The donation included rice, sugar, instant noodles, and masks. The value of the donation is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves humanitarian aid with no direct environmental or energy transition impact,"Ramadan care packages containing food items and masks, donated to religious institutions"
+96599,HEALTH,Chinese government donates 10 liquid oxygen tanks to Indonesia for Covid relief in November 2021,"On November 13, 2021, the Chinese government donated ten liquid oxygen tanks. It arrived in Jakarta, Indonesia. The donation will help Indonesia in its fight against Covid-19.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donates 10 liquid oxygen tanks to Indonesia for Covid relief in November 2021
+
+# Description
+On November 13, 2021, the Chinese government donated ten liquid oxygen tanks. It arrived in Jakarta, Indonesia. The donation will help Indonesia in its fight against Covid-19.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project is a healthcare donation with no direct environmental or energy transition impact,"Donation of liquid oxygen tanks for Covid-19 relief, healthcare sector"
+95727,HEALTH,"Chinese Government donates 250,000 Sinopharm Covid-19 vaccine doses worth $4.5 million in February 2021","The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021. Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses (see project ID#95729) and the second batch consisted of 1,550,000 doses (see project ID#95730).","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the February 2021 donation as $4.5 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 250,000 Sinopharm Covid-19 vaccine doses worth $4.5 million in February 2021
+
+# Description
+The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021. Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses (see project ID#95729) and the second batch consisted of 1,550,000 doses (see project ID#95730).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of vaccines for public health purposes, with no direct environmental or energy transition impact","Donation of Sinopharm Covid-19 vaccine doses, healthcare sector focus"
+95729,HEALTH,"Chinese Government donates 700,000 Sinopharm Covid-19 vaccine doses worth $12.6 million in August 2021","The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021 (see project ID#95727). Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses and the second batch consisted of 1,550,000 doses (see project ID#95730).","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the August 2021 donation of 700,000 Sinopharm Covid-19 vaccine doses as $12.6 million.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 700,000 Sinopharm Covid-19 vaccine doses worth $12.6 million in August 2021
+
+# Description
+The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021 (see project ID#95727). Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses and the second batch consisted of 1,550,000 doses (see project ID#95730).",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of vaccines for public health purposes, with no direct environmental or energy transition impact","Donation of Sinopharm Covid-19 vaccine doses, healthcare sector focus"
+95731,HEALTH,Chinese Government donates 1.55 million Sinopharm Covid-19 vaccine doses worth $27.9 million in August 2021,"The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021 (see project ID#95727). Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses (see project ID#95729) and the second batch consisted of 1,550,000 doses.","1. According to the UNICEF COVID-19 Vaccine Market Dashboard, the price of a single Sinopharm COVID-19 vaccine dose is $18 (https://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2022)33&docLanguage=En). As such, AidData has estimated the monetary value of the August 2021 donation of 1.55 million Sinopharm Covid-19 vaccine doses as $27,900,000.","# Sector
+HEALTH
+
+# Title
+Chinese Government donates 1.55 million Sinopharm Covid-19 vaccine doses worth $27.9 million in August 2021
+
+# Description
+The Chinese Government delivered 250,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran on February 28, 2021 (see project ID#95727). Then, on April 15, 2021, the Chinese Red Cross Society delivered 400,000 donated doses of Sinopharm Covid-19 vaccines to the Government of Iran’s Ministry of Health (see project ID#95728). The Chinese Government delivered two additional batches of donated Sinopharm COVID-19 vaccine doses to the Government of Iran in August 2021. The first batch consisted of 700,000 doses (see project ID#95729) and the second batch consisted of 1,550,000 doses.",TRUE,NA,NEUTRAL,HIGH,Healthcare,"Project involves donation of vaccines for public health purposes, unrelated to energy or environmental impacts","Donation of Sinopharm Covid-19 vaccine doses, healthcare sector focus"
+97180,GOVERNMENT AND CIVIL SOCIETY,Chinese ambassador to Iran donates books to Secretary-General of the Expediency Discernment Council,"On December 27, 2021, the Chinese ambassador to Iran met with newly-appointed secretary of Iran's Expediency Discernment Council Mohammad Bagher Zolghadr (Persian: محمدباقر ذوالقدر). Ambassador Chang Hua gave Zolghadr books, including ""Xi Jinping: Governance of China"" and ""A Brief History of the Communist Party of China"".",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese ambassador to Iran donates books to Secretary-General of the Expediency Discernment Council
+
+# Description
+On December 27, 2021, the Chinese ambassador to Iran met with newly-appointed secretary of Iran's Expediency Discernment Council Mohammad Bagher Zolghadr (Persian: محمدباقر ذوالقدر). Ambassador Chang Hua gave Zolghadr books, including ""Xi Jinping: Governance of China"" and ""A Brief History of the Communist Party of China"".",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves cultural exchange and knowledge sharing without direct environmental or energy transition impacts,"Book donation, cultural exchange activity, no energy or infrastructure components"
+97181,GOVERNMENT AND CIVIL SOCIETY,Chinese ambassador to Iran gives book to President of Iran-China Chamber of Commerce,"On December 22, 2021, the Chinese ambassador to Iran gave a copy of ""A Brief History of the Communist Party of China"" to President Majidreza Hariri of the Iran China Chamber of Commerce.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese ambassador to Iran gives book to President of Iran-China Chamber of Commerce
+
+# Description
+On December 22, 2021, the Chinese ambassador to Iran gave a copy of ""A Brief History of the Communist Party of China"" to President Majidreza Hariri of the Iran China Chamber of Commerce.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cultural exchange activity with no direct environmental or energy transition impact,"Book donation, diplomatic cultural exchange"
+97183,GOVERNMENT AND CIVIL SOCIETY,Chinese ambassador to Iran donates Chinese stamps to Iran Post and Communications Museum,"On December 11, 2021 the Chinese ambassador to Iran attended a ceremony for the issuance of a commemorative stamp celebrating the 50th anniversary of China-Iran relations. During this ceremony, Ambassador Chang Hua donated an album of Chinese stamps to the museum. On the same day, a celebration for the stamps was held in Chaozhou City, Guangdong Province.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese ambassador to Iran donates Chinese stamps to Iran Post and Communications Museum
+
+# Description
+On December 11, 2021 the Chinese ambassador to Iran attended a ceremony for the issuance of a commemorative stamp celebrating the 50th anniversary of China-Iran relations. During this ceremony, Ambassador Chang Hua donated an album of Chinese stamps to the museum. On the same day, a celebration for the stamps was held in Chaozhou City, Guangdong Province.",TRUE,NA,NEUTRAL,HIGH,Social Development,Cultural exchange project with no direct environmental or energy transition impact,"Donation of stamp collection, cultural diplomacy activity"
+97998,"AGRICULTURE, FORESTRY, FISHING","Chinese Government provides USD 800,000 via Food & Agriculture Organization of the United Nations to Iran and Pakistan in June 2021","In June 2021, Chinese government provides USD 800,000 to Pakistan and Iran as a part of FAO-China SSC Programme supporting FAO's global action on the control of the Desert Locust.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+Chinese Government provides USD 800,000 via Food & Agriculture Organization of the United Nations to Iran and Pakistan in June 2021
+
+# Description
+In June 2021, Chinese government provides USD 800,000 to Pakistan and Iran as a part of FAO-China SSC Programme supporting FAO's global action on the control of the Desert Locust.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on agricultural support and pest control without clear environmental or energy transition impacts,"Funding through FAO for Desert Locust control, agricultural sector focus"

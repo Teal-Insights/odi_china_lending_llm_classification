@@ -1,0 +1,12 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+92529,HEALTH,Chinese government donated medical supplies to the Gabonese Government for COVID-19 relief in August 2020,"On August 3rd 2020, the Chinese Government donates medical supplies to the Gabonese Government via Gabon's Foreign Minister. The purpose of this donation is to help the women and children of Gabon fight against the epidemic and increase their welfare. The exact contents of the donation are unknown.  The Chinese government's donation was provided to its member countries through the African First Ladies' Federation for Development (OAFLAD) on the initiative of Professor Peng Liyuan, the wife of Chinese President Xi Jinping. The amount and value of this donation are not specified.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese government donated medical supplies to the Gabonese Government for COVID-19 relief in August 2020
+
+# Description
+On August 3rd 2020, the Chinese Government donates medical supplies to the Gabonese Government via Gabon's Foreign Minister. The purpose of this donation is to help the women and children of Gabon fight against the epidemic and increase their welfare. The exact contents of the donation are unknown.  The Chinese government's donation was provided to its member countries through the African First Ladies' Federation for Development (OAFLAD) on the initiative of Professor Peng Liyuan, the wife of Chinese President Xi Jinping. The amount and value of this donation are not specified.",FALSE,"Error in `httr2::req_perform()`:
+! HTTP 400 Bad Request.
+• Content Exists Risk
+",NA,NA,NA,NA,NA

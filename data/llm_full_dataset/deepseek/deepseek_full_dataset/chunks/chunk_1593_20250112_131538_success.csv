@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+1801,COMMUNICATIONS,CDB provides $20 million loan to Reltel wireless Limited to facilitate its acquisition of Huawei equipment,"In 2006, CDB and Reltel Wireless Limited — a private telecoms operator in Nigeria — signed a $20 million loan agreement. The proceeds from the loan were earmarked for the acquisition of telecommunication equipment from Huawei. Reltel Wireless Limited reportedly purchased three major switches for use in Lagos, Port Harcourt and in the capital Abuja. At the time that this loan agreement was signed, Reltel Wireless Limited had an installation capacity of 1.2 million subscribers, making it the largest fixed wireless operator in the country, where it served the key Nigerian cities of Lagos, Port Harcourt, Nnewi and Onitsha. Promptly after this deal, an India-based communications corp bought a majority stake in Reltel Wireless Limited.","Some source suggests that Huawei provided vendor financing (I.e. a supplier credit to Reltel Wireless Limited, and the CDB in turn provided an export seller’s credit to Huawei.","# Sector
+COMMUNICATIONS
+
+# Title
+CDB provides $20 million loan to Reltel wireless Limited to facilitate its acquisition of Huawei equipment
+
+# Description
+In 2006, CDB and Reltel Wireless Limited — a private telecoms operator in Nigeria — signed a $20 million loan agreement. The proceeds from the loan were earmarked for the acquisition of telecommunication equipment from Huawei. Reltel Wireless Limited reportedly purchased three major switches for use in Lagos, Port Harcourt and in the capital Abuja. At the time that this loan agreement was signed, Reltel Wireless Limited had an installation capacity of 1.2 million subscribers, making it the largest fixed wireless operator in the country, where it served the key Nigerian cities of Lagos, Port Harcourt, Nnewi and Onitsha. Promptly after this deal, an India-based communications corp bought a majority stake in Reltel Wireless Limited.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project involves telecommunications equipment acquisition with no direct environmental or energy transition impact,"Loan for acquisition of telecommunication equipment, focus on wireless network expansion"
+1821,HEALTH,Chinese Government provides RMB 5 million for anti-malarial activities,"On April 26, 2006, China and Nigeria signed an agreement for a CNY 5 million grant for anti-malaria drugs, training for Nigerians to control malaria and bird flu, and co-operation in technology. According to Nigeria's Minister of State for Petroleum Edmund Daukoru, this grant was decided upon to reciprocate Nigeria and China's formalization of four oil block contracts, which include the maintenance and management of the Kaduna refinery and setting up a power generation station.The status of this grant is uncertain.   In November 2007, the handover ceremony of the Chinese government's assistance to the Nigerian Ministry of Agriculture and Water Resources for the prevention and control of bird flue was held in Abuja, Nigeria. This was the second donation from the Chinese government: they had donated 429,000 boxes of anti-malarial drugs and 100,000 anti-malarial injections to the Nigerian Ministry of Health, which worth about RMB5 million.",NA,"# Sector
+HEALTH
+
+# Title
+Chinese Government provides RMB 5 million for anti-malarial activities
+
+# Description
+On April 26, 2006, China and Nigeria signed an agreement for a CNY 5 million grant for anti-malaria drugs, training for Nigerians to control malaria and bird flu, and co-operation in technology. According to Nigeria's Minister of State for Petroleum Edmund Daukoru, this grant was decided upon to reciprocate Nigeria and China's formalization of four oil block contracts, which include the maintenance and management of the Kaduna refinery and setting up a power generation station.The status of this grant is uncertain.   In November 2007, the handover ceremony of the Chinese government's assistance to the Nigerian Ministry of Agriculture and Water Resources for the prevention and control of bird flue was held in Abuja, Nigeria. This was the second donation from the Chinese government: they had donated 429,000 boxes of anti-malarial drugs and 100,000 anti-malarial injections to the Nigerian Ministry of Health, which worth about RMB5 million.",TRUE,NA,NEUTRAL,HIGH,Healthcare,Project focuses on healthcare and disease prevention without direct environmental or energy transition impacts,"Anti-malarial drugs, training for disease control, healthcare focus"
+42093,OTHER MULTISECTOR,"China gives 390,000 USD for various sectors in Niue","In 2006, China gave a grant of $US 0.39 million for goods, services and training. According to page 11 of ""China in the Pacific,"" as of 2011 the project had been completed.",NA,"# Sector
+OTHER MULTISECTOR
+
+# Title
+China gives 390,000 USD for various sectors in Niue
+
+# Description
+In 2006, China gave a grant of $US 0.39 million for goods, services and training. According to page 11 of ""China in the Pacific,"" as of 2011 the project had been completed.",TRUE,NA,NEUTRAL,HIGH,Social Development,"General grant for goods, services and training without specific environmental or energy focus","Grant for goods, services and training, no specific project details provided"
+42094,"AGRICULTURE, FORESTRY, FISHING",China sends two consultants to Agriculture department of Niue,"In 2006, China sent two consultants attached to Niue's Department of Agriculture, Forestry and Fisheries for four months.   These consultants may have been part of a pledge made in July 2004, wherein the United Nations' Food and Agricultural Organization (FAO) announced that the Chinese government would sent 36 agricultural experts and technicians specialized in agronomy, irrigation, livestock and fisheries, to eight Pacific Island nations.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China sends two consultants to Agriculture department of Niue
+
+# Description
+In 2006, China sent two consultants attached to Niue's Department of Agriculture, Forestry and Fisheries for four months.   These consultants may have been part of a pledge made in July 2004, wherein the United Nations' Food and Agricultural Organization (FAO) announced that the Chinese government would sent 36 agricultural experts and technicians specialized in agronomy, irrigation, livestock and fisheries, to eight Pacific Island nations.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves technical assistance and knowledge transfer in agriculture, which does not have direct environmental or energy transition impacts","Sending of agricultural consultants, focus on agronomy and fisheries expertise"
+42096,OTHER MULTISECTOR,"China gives 260,000 USD to Niue for Pacific Islands Forum","In summer 2006, the Chinese Foreign Minister, Li Zhaoxing, and his delegation visited Niue and handed over a grant worth $US 0.26 million for preparations for the Pacific Islands Forum in Niue. (For the amount, see China In the Pacific: The New Banker in Town. For accounts of the handover, see Niue to use China donation for possible Pacific Islands Forum meeting.)",NA,"# Sector
+OTHER MULTISECTOR
+
+# Title
+China gives 260,000 USD to Niue for Pacific Islands Forum
+
+# Description
+In summer 2006, the Chinese Foreign Minister, Li Zhaoxing, and his delegation visited Niue and handed over a grant worth $US 0.26 million for preparations for the Pacific Islands Forum in Niue. (For the amount, see China In the Pacific: The New Banker in Town. For accounts of the handover, see Niue to use China donation for possible Pacific Islands Forum meeting.)",TRUE,NA,NEUTRAL,HIGH,Social Development,"Grant for preparations of a regional forum, no direct environmental or energy transition impact","Grant for Pacific Islands Forum preparations, no energy or infrastructure components mentioned"
+42259,EDUCATION,Chinese Government provides $2.5 million grant — via ETCA — for provision of computers to schools,"On August 26, 2006, the Chinese Government and the Government of Macedonia signed an exchange of letters, which committed $2.5 million of grant funding for the provision of computers and other IT equipment to schools and educational facilities in Macedonia. The grant proceeds were drawn from an economic and technical cooperation agreement (ETCA) that the parties signed on September 10, 2004.    Then, on December 5, 2007, China’s Minister of Education and the Deputy Prime Minister of Macedonia signed an agreement called 《中华人民共和国教育部和马其顿共和国教育和科学部教育合作协议》(translated: a cooperation agreement between the Ministry of Education of China and the Ministry of Education and Science of FYR Macedonia), which appears to be related to the August 26, 2006 agreement.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides $2.5 million grant — via ETCA — for provision of computers to schools
+
+# Description
+On August 26, 2006, the Chinese Government and the Government of Macedonia signed an exchange of letters, which committed $2.5 million of grant funding for the provision of computers and other IT equipment to schools and educational facilities in Macedonia. The grant proceeds were drawn from an economic and technical cooperation agreement (ETCA) that the parties signed on September 10, 2004.    Then, on December 5, 2007, China’s Minister of Education and the Deputy Prime Minister of Macedonia signed an agreement called 《中华人民共和国教育部和马其顿共和国教育和科学部教育合作协议》(translated: a cooperation agreement between the Ministry of Education of China and the Ministry of Education and Science of FYR Macedonia), which appears to be related to the August 26, 2006 agreement.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and IT equipment provision without direct environmental or energy transition impacts,"Provision of computers and IT equipment to schools, education sector focus"
+35385,EMERGENCY RESPONSE,China grants Pakistan 2.5 million USD worth of relief aid for quake victims,"China sent relief goods worth 2.5 million dollars for the 2006 Pakistani earthquake victims. The relief goods consisted of 3,300 cotton tents and 33,000 blankets. The first consignment of the relief goods had already reached on 30th December, Radio China reported. This consignment was airlifted in 4 batches to Islamabad from Dec. 29, 2005 to Jan. 1, 2006.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China grants Pakistan 2.5 million USD worth of relief aid for quake victims
+
+# Description
+China sent relief goods worth 2.5 million dollars for the 2006 Pakistani earthquake victims. The relief goods consisted of 3,300 cotton tents and 33,000 blankets. The first consignment of the relief goods had already reached on 30th December, Radio China reported. This consignment was airlifted in 4 batches to Islamabad from Dec. 29, 2005 to Jan. 1, 2006.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is humanitarian aid with no direct environmental or energy transition impact,"Relief goods (tents and blankets) for earthquake victims, emergency response focus"
+35386,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy donates computers and printers to Pakistan's Ministry of Culture,"On 18 January 2006, the Chinese Embassy donated nine sets of computers and nine printers to Pakistan's Ministry of Culture, Sports and Youth affairs. The Chinese Ambassador Zhang Chunxiang handed over the equipments to Cultural Secretary Jalil Abbas at the Pakistani Ministry. Present at the handing over ceremony were Chinese Cultural Counsellor Shan Baoxiang, Additional Cultural Secretary Khalid Saeed Haroon, Executive Director of the Lok Virsa museum Uxi Mufti and other senior officials from both sides.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy donates computers and printers to Pakistan's Ministry of Culture
+
+# Description
+On 18 January 2006, the Chinese Embassy donated nine sets of computers and nine printers to Pakistan's Ministry of Culture, Sports and Youth affairs. The Chinese Ambassador Zhang Chunxiang handed over the equipments to Cultural Secretary Jalil Abbas at the Pakistani Ministry. Present at the handing over ceremony were Chinese Cultural Counsellor Shan Baoxiang, Additional Cultural Secretary Khalid Saeed Haroon, Executive Director of the Lok Virsa museum Uxi Mufti and other senior officials from both sides.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project involves donation of computer equipment to support cultural ministry operations, with no direct environmental or energy transition impact","Donation of computers and printers to Ministry of Culture, no energy-related components mentioned"
+35415,EMERGENCY RESPONSE,China donates 200000 USD to Pakistan for flood relief,"In 2006, the Chinese government donated 200,000 US dollars to the Pakistani government for flood relief; the donation signing ceremony was held in Islamabad.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+China donates 200000 USD to Pakistan for flood relief
+
+# Description
+In 2006, the Chinese government donated 200,000 US dollars to the Pakistani government for flood relief; the donation signing ceremony was held in Islamabad.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a humanitarian donation for flood relief with no direct environmental or energy transition impact,"200,000 USD donation for flood relief, humanitarian focus"
+35416,EMERGENCY RESPONSE,Bureau of Geophysical Prospecting donates 8 tons of flour to flood-hit Pakistan,"Following the flood that hit Charsadda District in July 2006, the Chinese Bureau of Geo Physical Prospecting (BGP) (Subsidiary of CNPC) donated 8000 kg of flour to the National Volunteer Movement as a part of NVM’s Emergency Relief program. The Deputy Chairman of NVM, Barrister Mohammad Ali Saif and WU Xian, the Country Manager of BGP signed a formal Memorandum of Understanding at the NVM headquarters. Two trucks, loaded with flour weighing 8000 kg, were transported to Charsadda.",NA,"# Sector
+EMERGENCY RESPONSE
+
+# Title
+Bureau of Geophysical Prospecting donates 8 tons of flour to flood-hit Pakistan
+
+# Description
+Following the flood that hit Charsadda District in July 2006, the Chinese Bureau of Geo Physical Prospecting (BGP) (Subsidiary of CNPC) donated 8000 kg of flour to the National Volunteer Movement as a part of NVM’s Emergency Relief program. The Deputy Chairman of NVM, Barrister Mohammad Ali Saif and WU Xian, the Country Manager of BGP signed a formal Memorandum of Understanding at the NVM headquarters. Two trucks, loaded with flour weighing 8000 kg, were transported to Charsadda.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves humanitarian aid with no direct environmental or energy transition impact,"Flour donation for emergency relief, no energy or infrastructure components"

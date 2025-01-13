@@ -1,0 +1,81 @@
+aid_data_record_id,sector_name,title,description,staff_comments,combined_text,success,error_message,primary_class,confidence,project_type,justification,evidence
+73825,ACTION RELATING TO DEBT,Chinese Government cancels RMB 17.38 million of the Government of Angola’s outstanding obligations (linked to #34749),"In January 2009, China’s Minister of Commerce Chen Yuan announced that the Chinese Government had cumulatively cancelled RMB 67.38 million ($10 million) of the Government of Angola’s outstanding debt obligations. Of that aggregate amount, RMB 50 million ($7 million) was forgiven on 27 December 2007 (see Project #34749) and the remaining RMB 17.38 million ($3 million) was cancelled between late 2007 and early 2009.","The loans forgiven through this action were almost certainly interest-free loans committed through previous ETCAs. As such, the loans likely had maturity lengths of 20 years and since they had reached maturity no later than 2009, they were almost certainly contracted prior to 2000. Therefore, AidData has not has not assigned this record to the umbrella category (as there is little risk of double counting the monetary value of the debts that were forgiven).","# Sector
+ACTION RELATING TO DEBT
+
+# Title
+Chinese Government cancels RMB 17.38 million of the Government of Angola’s outstanding obligations (linked to #34749)
+
+# Description
+In January 2009, China’s Minister of Commerce Chen Yuan announced that the Chinese Government had cumulatively cancelled RMB 67.38 million ($10 million) of the Government of Angola’s outstanding debt obligations. Of that aggregate amount, RMB 50 million ($7 million) was forgiven on 27 December 2007 (see Project #34749) and the remaining RMB 17.38 million ($3 million) was cancelled between late 2007 and early 2009.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Debt cancellation is a financial service with no direct environmental or energy transition impact,"Debt cancellation of RMB 17.38 million, no specific project or environmental context mentioned"
+69183,WATER SUPPLY AND SANITATION,Chinese Government grants 3.5 million USD for Gray’s Hill Reservoir renovation (Linked to project ID #64582),"In 2009, the Government of China committed to granting about $3.5 million USD for the Gray’s Hill Reservoir renovation. The Beijing Construction Engineering Group Co Ltd (BCEG) constructed the renovation with technical support from Antigua Public Utilities Authority (APUA). The signing ceremony for the technical inspection memorandum occurred on January 22, 2008. The project broke ground on October 8, 2009, and the handover ceremony occurred on March 23, 2011 when the plant went online. The plant had been damaged by Hurricane Luis in 1995 and became inoperable. The plant can produce 100,000 gallons of potable water per day and has a capacity of 1.25 million gallons.",The project received funding from project ID #64582 as detailed in 64582's description. The amount is unknown. Various sources conflicted about the capacity of the reservoir.,"# Sector
+WATER SUPPLY AND SANITATION
+
+# Title
+Chinese Government grants 3.5 million USD for Gray’s Hill Reservoir renovation (Linked to project ID #64582)
+
+# Description
+In 2009, the Government of China committed to granting about $3.5 million USD for the Gray’s Hill Reservoir renovation. The Beijing Construction Engineering Group Co Ltd (BCEG) constructed the renovation with technical support from Antigua Public Utilities Authority (APUA). The signing ceremony for the technical inspection memorandum occurred on January 22, 2008. The project broke ground on October 8, 2009, and the handover ceremony occurred on March 23, 2011 when the plant went online. The plant had been damaged by Hurricane Luis in 1995 and became inoperable. The plant can produce 100,000 gallons of potable water per day and has a capacity of 1.25 million gallons.",TRUE,NA,NEUTRAL,HIGH,General Infrastructure,Project focuses on water supply infrastructure renovation without clear environmental or energy transition impacts,"Reservoir renovation for potable water production, no energy-related components mentioned"
+70546,EDUCATION,Chinese Government provides 15 scholarships to students from Antigua and Barbuda in 2009,"On August 13, 2009, ​in the presence of Prime Minister of Antigua and Barbuda Baldwin Spencer, the Chinese Government awarded 15 government scholarships to students from Antigua and Barbuda to study in China. The monetary value of these scholarships is unknown.",NA,"# Sector
+EDUCATION
+
+# Title
+Chinese Government provides 15 scholarships to students from Antigua and Barbuda in 2009
+
+# Description
+On August 13, 2009, ​in the presence of Prime Minister of Antigua and Barbuda Baldwin Spencer, the Chinese Government awarded 15 government scholarships to students from Antigua and Barbuda to study in China. The monetary value of these scholarships is unknown.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project involves educational scholarships without direct environmental or energy transition impact,"Scholarships for students, education sector focus"
+44156,EDUCATION,China opens Confucius Institute at the University of Buenos Aires,"The Confucius Institute at the University of Buenos Aires was established 27 May, 2009. The partner Chinese institution is Jilin University.",NA,"# Sector
+EDUCATION
+
+# Title
+China opens Confucius Institute at the University of Buenos Aires
+
+# Description
+The Confucius Institute at the University of Buenos Aires was established 27 May, 2009. The partner Chinese institution is Jilin University.",TRUE,NA,NEUTRAL,HIGH,Social Development,Education-focused project with no direct environmental or energy transition impact,"Establishment of Confucius Institute, education sector focus"
+66389,OTHER SOCIAL INFRASTRUCTURE AND SERVICES,"China grants USD 650,000 to Armenia for the expense of the participation in Shanghai Expo 2010 World Exhibition","In 2009, China grants $650,000 to assist Armenia with its participation in the Shanghai Expo 2010 World Exhibition. This money was used for construction, design, maintenance, and other costs related to the Expo from May to October of 2010. On July 2, 2009, Prime Minister Tigran Sargsyan formally acknowledged Armenia's plan to participate in the Shanghai ""Better City, Better Lives"" 2010 expo, as well as China's financial assistance in funding Armenia's expo costs.",NA,"# Sector
+OTHER SOCIAL INFRASTRUCTURE AND SERVICES
+
+# Title
+China grants USD 650,000 to Armenia for the expense of the participation in Shanghai Expo 2010 World Exhibition
+
+# Description
+In 2009, China grants $650,000 to assist Armenia with its participation in the Shanghai Expo 2010 World Exhibition. This money was used for construction, design, maintenance, and other costs related to the Expo from May to October of 2010. On July 2, 2009, Prime Minister Tigran Sargsyan formally acknowledged Armenia's plan to participate in the Shanghai ""Better City, Better Lives"" 2010 expo, as well as China's financial assistance in funding Armenia's expo costs.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Project is focused on cultural exchange and exhibition participation, with no direct environmental or energy transition impact","Funding for participation in Shanghai Expo 2010 World Exhibition, focused on cultural exchange and exhibition costs"
+66576,GOVERNMENT AND CIVIL SOCIETY,Chinese Embassy donates clothes to Gegharkunik's State Children's Home,"On May 26, 2009, the Chinese Ambassador to Armenia and his wife visited the State Children's Home in the Gegharkunik region and donated tracksuits, shoes, and T-shirts, to celebrate International Children's Day.",NA,"# Sector
+GOVERNMENT AND CIVIL SOCIETY
+
+# Title
+Chinese Embassy donates clothes to Gegharkunik's State Children's Home
+
+# Description
+On May 26, 2009, the Chinese Ambassador to Armenia and his wife visited the State Children's Home in the Gegharkunik region and donated tracksuits, shoes, and T-shirts, to celebrate International Children's Day.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project is a social welfare initiative unrelated to energy or environmental impacts,"Donation of clothes to children's home, social development focus"
+87043,OTHER MULTISECTOR,PRC Poverty Reduction and Regional Cooperation Fund grants $2 million USD for 2009 Projects,"On 24 March 2005, the Chinese Government and Asian Development Bank (ADB) jointly established the People's Republic of China (PRC) Poverty Reduction and Regional Cooperation Fund. The China Ministry of Finance provided financing and ADB implemented the projects. The purpose of this special fund is to support the process of poverty reduction, regional cooperation and knowledge sharing for ADB developing member countries (DMCs) in the Asia-Pacific as well as Greater Mekong Subregion (GMS) and Central Asia Regional Economic Cooperation (CAREC) countries.  According to a 2019 Annual Report (p. 32-33), on 31 May 2009, the Chinese Ministry of Finance approved $1 million USD from this special fund for two different Batch 1 projects:  1) $500,000 USD for ""Central Asia Regional Economic Cooperation: Working with the Private Sector in Trade Facilitation."" Closed 31 December 2015.  2) $500,000 USD for ""Asia Pacific Procurement Partnership Initiative."" Closed 25 July 2017.   According to a 2019 Annual Report (p. 33), on 9 December 2009, the Chinese Ministry of Finance approved $1 million USD from this special fund for two different Batch 2 projects:  1) $500,000 USD for ""Strengthening Central Asia Regional Economic Cooperation, 2007–2011 (supplementary)."" Closed 31 August 2013.  2) $500,000 USD for ""GMS Phnom Penh Plan (PPP) for Development Management, Phase IV (supplementary)."" Closed31 July 2013.",Also called the PRC Fund or 中华人民共和国减贫与区域合作基金.Not marked as umbrella and did not separate batches 1 and 2 because the risk of duplication is very low.,"# Sector
+OTHER MULTISECTOR
+
+# Title
+PRC Poverty Reduction and Regional Cooperation Fund grants $2 million USD for 2009 Projects
+
+# Description
+On 24 March 2005, the Chinese Government and Asian Development Bank (ADB) jointly established the People's Republic of China (PRC) Poverty Reduction and Regional Cooperation Fund. The China Ministry of Finance provided financing and ADB implemented the projects. The purpose of this special fund is to support the process of poverty reduction, regional cooperation and knowledge sharing for ADB developing member countries (DMCs) in the Asia-Pacific as well as Greater Mekong Subregion (GMS) and Central Asia Regional Economic Cooperation (CAREC) countries.  According to a 2019 Annual Report (p. 32-33), on 31 May 2009, the Chinese Ministry of Finance approved $1 million USD from this special fund for two different Batch 1 projects:  1) $500,000 USD for ""Central Asia Regional Economic Cooperation: Working with the Private Sector in Trade Facilitation."" Closed 31 December 2015.  2) $500,000 USD for ""Asia Pacific Procurement Partnership Initiative."" Closed 25 July 2017.   According to a 2019 Annual Report (p. 33), on 9 December 2009, the Chinese Ministry of Finance approved $1 million USD from this special fund for two different Batch 2 projects:  1) $500,000 USD for ""Strengthening Central Asia Regional Economic Cooperation, 2007–2011 (supplementary)."" Closed 31 August 2013.  2) $500,000 USD for ""GMS Phnom Penh Plan (PPP) for Development Management, Phase IV (supplementary)."" Closed31 July 2013.",TRUE,NA,NEUTRAL,HIGH,Social Development,"Projects focus on poverty reduction, regional cooperation, and knowledge sharing without clear environmental or energy transition impacts","Poverty reduction and regional cooperation fund, focus on trade facilitation, procurement partnership, and development management"
+44157,EDUCATION,China opens Confucius Institute at the University of the Bahamas,"In 2009, China launched the Confucious Institute at the University of the Bahamas. It partners with Nanjing University of Information Science and Technology (NUIST). The Confucious Institutes was expanded in 2012.",NA,"# Sector
+EDUCATION
+
+# Title
+China opens Confucius Institute at the University of the Bahamas
+
+# Description
+In 2009, China launched the Confucious Institute at the University of the Bahamas. It partners with Nanjing University of Information Science and Technology (NUIST). The Confucious Institutes was expanded in 2012.",TRUE,NA,NEUTRAL,HIGH,Social Development,Project focuses on education and cultural exchange without direct environmental or energy transition impacts,Establishment of Confucius Institute for education and cultural partnership
+34159,ACTION RELATING TO DEBT,China extends repayment period of a 50 million RMB interest-free loan for Bangladesh (Linked to #34024),"On 24 April 2006, the Chinese Government signed an exchange of letters providing a 50 million RMB interest-free loan to the Government of Bangladesh (see Project #34024). There is no evidence that this loan was ever drawn down. Then, between 28 and 29 July 2009 during the 12th Joint Commission (JC) between Bangladesh and China in Beijing, the Chinese Government agreed to extend the term of this unutilized 50 million RMB interest-free loan by five years. The original maturity is unknown so it is unclear what the new terms are.",This debt rescheduling project is separate from project #34163 which captures debt relief of unspecified loans.,"# Sector
+ACTION RELATING TO DEBT
+
+# Title
+China extends repayment period of a 50 million RMB interest-free loan for Bangladesh (Linked to #34024)
+
+# Description
+On 24 April 2006, the Chinese Government signed an exchange of letters providing a 50 million RMB interest-free loan to the Government of Bangladesh (see Project #34024). There is no evidence that this loan was ever drawn down. Then, between 28 and 29 July 2009 during the 12th Joint Commission (JC) between Bangladesh and China in Beijing, the Chinese Government agreed to extend the term of this unutilized 50 million RMB interest-free loan by five years. The original maturity is unknown so it is unclear what the new terms are.",TRUE,NA,NEUTRAL,HIGH,Financial Services,Loan extension without specific project implementation or environmental impact,"Interest-free loan extension, no project implementation details provided"
+34162,"AGRICULTURE, FORESTRY, FISHING",China holds agricultural training program for Bangladesh (Linked to #33993),"In 2009, over 100 Bangladeshis participated in a training program held in China for agriculture and climate change industries. Since 2005, roughly 397 Bangladeshi officials as well as those in technical and economic positions have trained in China, as part of the 2005 MoU on Cooperation in the Field of Agriculture between the Ministry of Agriculture of China and the Ministry of Agriculture of Bangladesh. Project is linked to #33993.",NA,"# Sector
+AGRICULTURE, FORESTRY, FISHING
+
+# Title
+China holds agricultural training program for Bangladesh (Linked to #33993)
+
+# Description
+In 2009, over 100 Bangladeshis participated in a training program held in China for agriculture and climate change industries. Since 2005, roughly 397 Bangladeshi officials as well as those in technical and economic positions have trained in China, as part of the 2005 MoU on Cooperation in the Field of Agriculture between the Ministry of Agriculture of China and the Ministry of Agriculture of Bangladesh. Project is linked to #33993.",TRUE,NA,NEUTRAL,HIGH,Social Development,Training program focused on knowledge transfer without direct environmental or energy transition impacts,"Agricultural training program, focus on knowledge sharing and capacity building"
