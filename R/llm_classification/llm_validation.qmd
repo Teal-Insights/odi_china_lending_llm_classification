@@ -222,6 +222,7 @@ deepseek_result <- chat$chat(coal_example, echo = FALSE) |>
 # Print result
 print(deepseek_result)
 ```
+
 deepseek_result
 
 # Run 300 Examples
@@ -286,9 +287,6 @@ write_csv(
 # )
 ```
 
-```{r}
-
-```
 
 ### GPT 4o-mini
 
@@ -346,7 +344,7 @@ write_csv(
 # 
 # # Collect results
 # claude_run_results <- collect_results(
-#   "data/validation_results", 
+#   "data/validation_results",
 #   chat_provider =  "claude",
 #   run_id = "llm_validation"
 # )
@@ -356,15 +354,14 @@ write_csv(
 claude_run_results
 ```
 
-## Deepseek
+### Deepseek
+
 ```{r}
 deepseek_test <- gcdf_sample_for_validation |> 
   head(3)
 
 deepseek_test
 ```
-
-
 
 ```{r}
 start_time <- Sys.time()
@@ -400,4 +397,3 @@ deepseek_time_elapsed_per_loan * 18000 / 60
 ```{r}
 deepseek_run_results
 ```
-

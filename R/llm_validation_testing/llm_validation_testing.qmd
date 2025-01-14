@@ -1,0 +1,1289 @@
+---
+title: "LLM Validation Testing"
+author: "Teal Emery"
+format: html
+editor: visual
+---
+
+# Setup
+
+## Load Libraries
+
+```{r}
+library(tidyverse)
+library(ellmer)
+library(here)
+library(chinadevfin3)
+library(beepr)
+library(progressr)
+library(jsonlite)
+library(irr)
+library(gt)
+```
+
+## Source Scripts
+
+```{r}
+source(
+  here(
+    "R",
+    "llm_classification",
+    "llm_functions.R"
+  )
+)
+```
+
+```{r}
+gcdf_data_for_llm <- get_gcdf3_dataset() |> 
+  filter(
+    recommended_for_aggregates == "Yes"
+  ) 
+
+gcdf_data_for_llm
+```
+
+
+Load validation run results
+```{r}
+llama_results_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider = "ollama",
+  run_id = "llm_validation"
+)
+
+# Collect results
+gpt_4o_mini_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider = "openai-gpt-4o-mini",
+  run_id = "llm_validation"
+)
+
+claude_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider =  "claude",
+  run_id = "llm_validation"
+)
+
+deepseek_run_results <- collect_results(
+  "data/validation_results",
+  chat_provider =  "deepseek",
+  run_id = "llm_validation"
+)
+```
+
+```{r}
+llama_success <- llama_results_run_results$successful |> 
+  add_column(
+    llm_identifier = "Llama 3.3"
+  )
+
+gpt_4o_mini_success <- gpt_4o_mini_run_results$successful |> 
+  add_column(
+    llm_identifier = "GPT 4o-mini"
+  )
+
+claude_success <- claude_run_results$successful |> 
+  add_column(
+    llm_identifier = "Claude Sonnet 3.5 (October)"
+  )
+
+deepseek_success <- deepseek_run_results$successful |> 
+  add_column(
+    llm_identifier = "Deepseek v3"
+  )
+
+llm_validation_successful <- llama_success |> 
+  bind_rows(gpt_4o_mini_success) |> 
+  bind_rows(claude_success) |>
+  bind_rows(deepseek_success)
+
+llm_validation_successful
+```
+
+```{r}
+llama_failed <- llama_results_run_results$failed |> 
+  add_column(
+    llm_identifier = "Llama 3.3"
+  )
+
+gpt_4o_mini_failed <- gpt_4o_mini_run_results$failed |> 
+  add_column(
+    llm_identifier = "GPT 4o-mini"
+  )
+
+claude_failed <- claude_run_results$failed |> 
+  add_column(
+    llm_identifier = "Claude Sonnet 3.5 (October)"
+  )
+
+deepseek_failed <- deepseek_run_results$failed |> 
+  add_column(
+    llm_identifier = "Deepseek v3"
+  )
+
+llm_validation_failed <- llama_failed |> 
+  bind_rows(gpt_4o_mini_failed) |> 
+  bind_rows(claude_failed) |>
+  bind_rows(deepseek_failed)
+
+llm_validation_failed
+```
+# Time
+Processing time for 300 validation 
+(data from processing_log.txt in data/validation_results for each LLM)
+```{r}
+dataset_n <- nrow(gcdf_data_for_llm)
+
+
+llm_time_performance <- tribble(
+  ~llm_identifier, ~hrs_per_300,
+  "Llama 3.3", 5.64,
+  "GPT 4o-mini", 0.18,
+  "Claude Sonnet 3.5 (October)", 0.27, 
+  "Deepseek v3", 0.24
+) |> 
+  mutate(
+    hrs_for_dataset = hrs_per_300/300 * dataset_n
+  ) |> 
+  arrange(hrs_for_dataset)
+
+llm_time_performance
+```
+
+GPT 4.0-mini is the fastest.  Llama 3.3 70b, running on a Mac Mini Apple Late 2024 M4 Pro chip with 14‑core CPU, 20‑core GPU, 16-core Neural Engine, 64GB unified memory, 2TB SSD storage (beefy for the time) still took 5.64 hours.  Running the full dataset would take two weeks. 
+
+```{r}
+hours_for_dataset <- dataset_n * 5 / 60 # 5 min / 60 min per hr
+
+hours_for_dataset
+```
+
+```{r}
+days_for_dataset <- hours_for_dataset/24
+
+days_for_dataset
+```
+
+
+```{r}
+back_of_envelope_cost <- hours_for_dataset * 15
+
+back_of_envelope_cost
+```
+
+
+# Error Rate
+
+```{r}
+llm_validation_failed |> 
+  count(
+    llm_identifier,
+    sort = TRUE
+  ) |> 
+  mutate(
+    error_rate = n/300 * 100
+  )
+```
+
+# Success
+
+There are 9 observations where we don't have all four LLM responses.
+
+```{r}
+llm_validation_successful |> 
+  group_by(aid_data_record_id) |> 
+  count() |> 
+  filter(
+    n < 4
+  )
+```
+
+```{r}
+llm_observations_all_obvs <- llm_validation_successful |> 
+  group_by(aid_data_record_id) |> 
+  mutate(n = n()) |> 
+  filter(
+    n == 4
+  ) |> 
+  ungroup() |> 
+  select(-n)
+
+llm_observations_all_obvs
+```
+
+
+# IRR Functions
+
+## calculate_overall_agreement()
+```{r}
+#' Calculate Overall Agreement Statistics
+#' 
+#' @param data Tibble containing LLM classifications
+#' @param id_col Column name containing unique observation IDs
+#' @param class_col Column name containing classifications
+#' @param llm_col Column name identifying different LLMs
+#' @return List containing various agreement statistics
+calculate_overall_agreement <- function(data, 
+                                      id_col = aid_data_record_id,
+                                      class_col = primary_class,
+                                      llm_col = llm_identifier) {
+  
+  # Convert to wide format for agreement calculations
+  ratings_wide <- data |>
+    select({{id_col}}, {{class_col}}, {{llm_col}}) |>
+    pivot_wider(
+      names_from = {{llm_col}},
+      values_from = {{class_col}}
+    )
+  
+  # Calculate Fleiss' Kappa
+  ratings_matrix <- as.matrix(ratings_wide[,-1])
+  kappa <- kappam.fleiss(ratings_matrix)
+  
+  # Calculate percentage of complete agreement
+  complete_agreement <- data |>
+    group_by({{id_col}}) |>
+    summarise(
+      unique_classes = n_distinct({{class_col}}),
+      .groups = "drop"
+    ) |>
+    summarise(
+      complete_agreement = mean(unique_classes == 1),
+      partial_agreement = mean(unique_classes == 2),
+      no_agreement = mean(unique_classes > 2)
+    )
+  
+  list(
+    kappa = kappa$value,
+    complete_agreement = complete_agreement
+  )
+}
+```
+
+## analyze_category_agreement()
+```{r}
+#' Analyze Agreement by Category
+#' 
+#' @param data Tibble containing LLM classifications
+#' @param id_col Column name containing unique observation IDs
+#' @param class_col Column name containing classifications
+#' @param llm_col Column name identifying different LLMs
+#' @return Tibble with agreement statistics by category
+analyze_category_agreement <- function(data,
+                                     id_col = aid_data_record_id,
+                                     class_col = primary_class,
+                                     llm_col = llm_identifier) {
+  
+  data |>
+    group_by({{id_col}}) |>
+    mutate(
+      n_llms = n_distinct({{llm_col}}),
+      n_agreements = map_int({{class_col}}, 
+                           ~sum({{class_col}} == .x))
+    ) |>
+    group_by({{class_col}}) |>
+    summarise(
+      n_observations = n() / first(n_llms),  # Divide by number of LLMs to get unique cases
+      avg_agreement = mean(n_agreements / n_llms),
+      complete_agreement = mean(n_agreements == n_llms),
+      .groups = "drop"
+    ) |>
+    arrange(desc(n_observations))
+}
+```
+
+## generate_pairwise_matrix()
+```{r}
+#' Generate Pairwise Agreement Matrix
+#' 
+#' @param data Tibble containing LLM classifications
+#' @param id_col Column name containing unique observation IDs
+#' @param class_col Column name containing classifications
+#' @param llm_col Column name identifying different LLMs
+#' @return Matrix of pairwise agreement percentages
+generate_pairwise_matrix <- function(data,
+                                   id_col = aid_data_record_id,
+                                   class_col = primary_class,
+                                   llm_col = llm_identifier) {
+  
+  # Convert column name to string for subsetting
+  llm_col_name <- as_label(enquo(llm_col))
+  
+  llm_pairs <- expand_grid(
+    llm1 = unique(data[[llm_col_name]]),
+    llm2 = unique(data[[llm_col_name]])
+  ) |>
+    filter(llm1 < llm2)  # Keep only unique pairs
+  
+  agreement_matrix <- map2_dfr(
+    llm_pairs$llm1,
+    llm_pairs$llm2,
+    ~{
+      data |>
+        select({{id_col}}, {{class_col}}, {{llm_col}}) |>
+        pivot_wider(
+          names_from = all_of(llm_col_name),
+          values_from = {{class_col}}
+        ) |>
+        summarise(
+          llm1 = .x,
+          llm2 = .y,
+          agreement = mean(get(.x) == get(.y))
+        )
+    }
+  )
+  
+  agreement_matrix
+}
+```
+
+## analyze_confidence_patterns()
+```{r}
+#' Analyze Confidence Patterns
+#' 
+#' @param data Tibble containing LLM classifications
+#' @param id_col Column name containing unique observation IDs
+#' @param conf_col Column name containing confidence ratings
+#' @param class_col Column name containing classifications
+#' @param llm_col Column name identifying different LLMs
+#' @return Tibble with confidence analysis
+analyze_confidence_patterns <- function(data,
+                                      id_col = aid_data_record_id,
+                                      conf_col = confidence,
+                                      class_col = primary_class,
+                                      llm_col = llm_identifier) {
+  
+  data |>
+    group_by({{id_col}}) |>
+    summarise(
+      agreement = n_distinct({{class_col}}) == 1,
+      confidence_levels = list({{conf_col}}),
+      avg_confidence = case_when(
+        all({{conf_col}} == "HIGH") ~ "HIGH",
+        all({{conf_col}} %in% c("HIGH", "MEDIUM")) ~ "MEDIUM-HIGH",
+        any({{conf_col}} == "LOW") ~ "LOW",
+        TRUE ~ "MEDIUM"
+      ),
+      .groups = "drop"
+    ) |>
+    count(avg_confidence, agreement) |>
+    group_by(avg_confidence) |>
+    mutate(pct = n / sum(n)) |>
+    arrange(avg_confidence, desc(agreement))
+}
+```
+
+```{r}
+# Example usage:
+results <- list(
+  overall = calculate_overall_agreement(llm_observations_all_obvs),
+  by_category = analyze_category_agreement(llm_observations_all_obvs),
+  pairwise = generate_pairwise_matrix(llm_observations_all_obvs),
+  confidence = analyze_confidence_patterns(llm_observations_all_obvs)
+)
+
+results
+```
+
+
+
+```{r}
+library(tidyverse)
+library(patchwork)  # For combining plots
+
+# Theme settings for consistent, professional visualization
+theme_paper <- theme_minimal() +
+  theme(
+    text = element_text(family = "serif"),
+    plot.title = element_text(size = 11, face = "bold"),
+    plot.subtitle = element_text(size = 10),
+    axis.title = element_text(size = 10),
+    legend.position = "bottom"
+  )
+
+# 1. Category Agreement Plot
+category_plot <- results$by_category |>
+  mutate(
+    primary_class = fct_reorder(primary_class, avg_agreement),
+    n_label = sprintf("n=%d", round(n_observations))
+  ) |>
+  ggplot(aes(x = primary_class, y = avg_agreement)) +
+  geom_col(fill = "steelblue", alpha = 0.7) +
+  geom_text(aes(label = sprintf("%.1f%%", avg_agreement * 100)),
+            vjust = -0.5, size = 3) +
+  geom_text(aes(y = 0.1, label = n_label), 
+            color = "white", size = 3) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1)
+  ) +
+  labs(
+    title = "LLM Agreement by Project Category",
+    subtitle = "Average agreement between LLMs for each classification",
+    x = "Project Category",
+    y = "Agreement Rate"
+  ) +
+  theme_paper
+
+# 2. Pairwise Agreement Heatmap
+pairwise_matrix <- results$pairwise |>
+  # Create symmetric matrix by swapping llm1 and llm2
+  bind_rows(
+    results$pairwise |>
+      transmute(
+        llm1 = llm2,
+        llm2 = llm1,
+        agreement = agreement
+      )
+  ) |>
+  # Add diagonal (self-comparison = 1)
+  bind_rows(
+    tibble(
+      llm1 = unique(c(results$pairwise$llm1, results$pairwise$llm2)),
+      llm2 = unique(c(results$pairwise$llm1, results$pairwise$llm2)),
+      agreement = 1
+    )
+  )
+
+pairwise_plot <- pairwise_matrix |>
+  ggplot(aes(x = llm1, y = llm2, fill = agreement)) +
+  geom_tile() +
+  geom_text(aes(label = sprintf("%.1f%%", agreement * 100)),
+            color = "white", size = 3) +
+  scale_fill_gradient(
+    low = "steelblue",
+    high = "darkgreen",
+    labels = scales::percent
+  ) +
+  labs(
+    title = "Pairwise Agreement Between LLMs",
+    x = NULL,
+    y = NULL,
+    fill = "Agreement Rate"
+  ) +
+  theme_paper +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none"
+  )
+
+# 3. Confidence vs Agreement Plot
+confidence_plot <- results$confidence |>
+  mutate(
+    avg_confidence = factor(avg_confidence, 
+                          levels = c("HIGH", "MEDIUM-HIGH", "LOW")),
+    category = if_else(agreement, "Agree", "Disagree")
+  ) |>
+  ggplot(aes(x = avg_confidence, y = pct, fill = category)) +
+  geom_col() +
+  geom_text(aes(label = sprintf("%.1f%%", pct * 100)),
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 3) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_fill_manual(values = c("Agree" = "darkgreen", 
+                              "Disagree" = "firebrick")) +
+  labs(
+    title = "Agreement Rate by Confidence Level",
+    x = "LLM Confidence Level",
+    y = "Percentage of Cases",
+    fill = NULL
+  ) +
+  theme_paper
+
+# Combine plots
+combined_plots <- (category_plot + pairwise_plot) / confidence_plot +
+  plot_layout(heights = c(1, 0.8))
+
+# Save plots if needed
+# ggsave("llm_agreement_analysis.pdf", combined_plots, width = 10, height = 8)
+
+combined_plots
+```
+
+Excluding Llama 3.3
+
+```{r}
+
+llm_observations_minus_llama <- llm_observations_all_obvs |> 
+  filter(llm_identifier != "Llama 3.3")
+
+llm_observations_minus_llama
+# Example usage:
+results_minus_llama <- list(
+  overall = calculate_overall_agreement(llm_observations_minus_llama),
+  by_category = analyze_category_agreement(llm_observations_minus_llama),
+  pairwise = generate_pairwise_matrix(llm_observations_minus_llama),
+  confidence = analyze_confidence_patterns(llm_observations_minus_llama)
+)
+
+results_minus_llama
+```
+
+```{r}
+# 1. Category Agreement Plot
+category_plot <- results_minus_llama$by_category |>
+  mutate(
+    primary_class = fct_reorder(primary_class, avg_agreement),
+    n_label = sprintf("n=%d", round(n_observations))
+  ) |>
+  ggplot(aes(x = primary_class, y = avg_agreement)) +
+  geom_col(fill = "steelblue", alpha = 0.7) +
+  geom_text(aes(label = sprintf("%.1f%%", avg_agreement * 100)),
+            vjust = -0.5, size = 3) +
+  geom_text(aes(y = 0.1, label = n_label), 
+            color = "white", size = 3) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1)
+  ) +
+  labs(
+    title = "LLM Agreement by Project Category",
+    subtitle = "Average agreement between LLMs for each classification",
+    x = "Project Category",
+    y = "Agreement Rate"
+  ) +
+  theme_paper
+
+# 2. Pairwise Agreement Heatmap
+pairwise_matrix <- results_minus_llama$pairwise |>
+  # Create symmetric matrix by swapping llm1 and llm2
+  bind_rows(
+    results_minus_llama$pairwise |>
+      transmute(
+        llm1 = llm2,
+        llm2 = llm1,
+        agreement = agreement
+      )
+  ) |>
+  # Add diagonal (self-comparison = 1)
+  bind_rows(
+    tibble(
+      llm1 = unique(c(results_minus_llama$pairwise$llm1, results_minus_llama$pairwise$llm2)),
+      llm2 = unique(c(results_minus_llama$pairwise$llm1, results_minus_llama$pairwise$llm2)),
+      agreement = 1
+    )
+  )
+
+pairwise_plot <- pairwise_matrix |>
+  ggplot(aes(x = llm1, y = llm2, fill = agreement)) +
+  geom_tile() +
+  geom_text(aes(label = sprintf("%.1f%%", agreement * 100)),
+            color = "white", size = 3) +
+  scale_fill_gradient(
+    low = "steelblue",
+    high = "darkgreen",
+    labels = scales::percent
+  ) +
+  labs(
+    title = "Pairwise Agreement Between LLMs",
+    x = NULL,
+    y = NULL,
+    fill = "Agreement Rate"
+  ) +
+  theme_paper +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none"
+  )
+
+# 3. Confidence vs Agreement Plot
+confidence_plot <- results_minus_llama$confidence |>
+  mutate(
+    avg_confidence = factor(avg_confidence, 
+                          levels = c("HIGH", "MEDIUM-HIGH", "LOW")),
+    category = if_else(agreement, "Agree", "Disagree")
+  ) |>
+  ggplot(aes(x = avg_confidence, y = pct, fill = category)) +
+  geom_col() +
+  geom_text(aes(label = sprintf("%.1f%%", pct * 100)),
+            position = position_stack(vjust = 0.5),
+            color = "white", size = 3) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_fill_manual(values = c("Agree" = "darkgreen", 
+                              "Disagree" = "firebrick")) +
+  labs(
+    title = "Agreement Rate by Confidence Level",
+    x = "LLM Confidence Level",
+    y = "Percentage of Cases",
+    fill = NULL
+  ) +
+  theme_paper
+
+# Combine plots
+combined_plots <- (category_plot + pairwise_plot) / confidence_plot +
+  plot_layout(heights = c(1, 0.8))
+
+# Save plots if needed
+# ggsave("llm_agreement_analysis.pdf", combined_plots, width = 10, height = 8)
+
+combined_plots
+```
+
+
+
+```{r}
+library(tidyverse)
+library(openxlsx)  # For Excel output with formatting
+
+#' Prepare cases for manual validation
+#' @param data Tibble containing LLM classifications
+#' @param prioritize_disagreement Logical, whether to prioritize cases with disagreement
+#' @param n_cases Number of cases to include in validation set
+prepare_validation_cases <- function(data, 
+                                   prioritize_disagreement = TRUE,
+                                   n_cases = 100) {
+  
+  # Calculate agreement metrics per project
+  validation_cases <- data |>
+    group_by(aid_data_record_id) |>
+    summarize(
+      n_unique_classes = n_distinct(primary_class),
+      classes_present = paste(sort(unique(primary_class)), collapse = "; "),
+      has_green = any(primary_class == "GREEN"),
+      has_brown = any(primary_class == "BROWN"),
+      disagreement_level = case_when(
+        n_unique_classes == 1 ~ "None",
+        n_unique_classes == 2 ~ "Partial",
+        TRUE ~ "Major"
+      ),
+      # Take one example of description/title
+      title = first(title),
+      description = first(description),
+      sector = first(sector_name),
+      # Collect all LLM classifications
+      llm_classifications = paste(
+        paste(llm_identifier, primary_class, confidence, sep = ": "),
+        collapse = " | "
+      ),
+      .groups = "drop"
+    ) |>
+    # Add priority score for sampling
+    mutate(
+      priority_score = case_when(
+        has_green & has_brown ~ 3,  # Highest priority: contradictory classifications
+        disagreement_level == "Major" ~ 2,
+        disagreement_level == "Partial" & (has_green | has_brown) ~ 1,
+        TRUE ~ 0
+      )
+    )
+  
+  # Sample cases based on priority
+  if(prioritize_disagreement) {
+    selected_cases <- validation_cases |>
+      arrange(desc(priority_score)) |>
+      slice_head(n = n_cases)
+  } else {
+    selected_cases <- validation_cases |>
+      slice_sample(n = n_cases)
+  }
+  
+  # Add columns for manual validation
+  selected_cases <- selected_cases |>
+    mutate(
+      manual_classification = NA_character_,
+      reviewer_notes = NA_character_,
+      reviewer_confidence = NA_character_
+    )
+  
+  selected_cases
+}
+
+#' Export validation cases to Excel with formatting
+#' @param cases Tibble of validation cases
+#' @param output_file Output file path
+export_validation_sheet <- function(cases, output_file) {
+  
+  # Create workbook
+  wb <- createWorkbook()
+  addWorksheet(wb, "Validation Cases")
+  
+  # Write data
+  writeData(wb, "Validation Cases", cases)
+  
+  # Format headers
+  headerStyle <- createStyle(
+    textDecoration = "bold",
+    border = "bottom",
+    fgFill = "#E6E6E6"
+  )
+  addStyle(wb, "Validation Cases", headerStyle, rows = 1, cols = 1:ncol(cases))
+  
+  # Set column widths
+  setColWidths(wb, "Validation Cases", 
+               cols = 1:ncol(cases), 
+               widths = "auto")
+  
+  # Freeze pane for easier review
+  freezePane(wb, "Validation Cases", firstRow = TRUE)
+  
+  # Save workbook
+  saveWorkbook(wb, output_file, overwrite = TRUE)
+}
+
+# Example usage:
+validation_cases <- prepare_validation_cases(
+  llm_observations_all_obvs,
+  prioritize_disagreement = TRUE,
+  n_cases = 100  # Adjust as needed
+)
+
+# Export to Excel
+# export_validation_sheet(validation_cases, "validation_cases.xlsx")
+
+# Summary of what's included
+validation_summary <- validation_cases |>
+  count(disagreement_level, has_green, has_brown) |>
+  arrange(desc(n))
+
+print(validation_summary)
+```
+
+```{r}
+# Example usage:
+validation_cases <- prepare_validation_cases(
+  llm_observations_all_obvs,
+  prioritize_disagreement = TRUE,
+  n_cases = 291  # Adjust as needed
+)
+
+# Export to Excel
+export_validation_sheet(validation_cases, 
+                        here(
+                          "data",
+                          "validation_cases.xlsx"
+                        )
+                        )
+```
+
+# Sanity Checks
+
+
+```{r}
+library(tidyverse)
+
+#' Define keyword validation rules
+#' List of keywords and their expected classifications
+keyword_rules <- tibble(
+  keyword = c(
+    "coal", "coal-fired", "coal power",  # Brown
+    "solar", "photovoltaic", "PV",       # Green
+    "wind farm", "wind power",           # Green
+    "hydroelectric", "hydropower",       # Green (though might need nuance)
+    "oil refinery", "petroleum",         # Brown
+    "natural gas"                        # Grey
+  ),
+  expected_class = c(
+    "BROWN", "BROWN", "BROWN",
+    "GREEN", "GREEN", "GREEN",
+    "GREEN", "GREEN",
+    "GREEN", "GREEN",
+    "BROWN", "BROWN",
+    "GREY"
+  ),
+  category = c(
+    "Coal", "Coal", "Coal",
+    "Solar", "Solar", "Solar",
+    "Wind", "Wind",
+    "Hydro", "Hydro",
+    "Oil", "Oil",
+    "Gas"
+  )
+)
+
+#' Analyze keyword matches and LLM classifications
+#' @param data Tibble containing LLM classifications
+#' @param rules Tibble containing keyword rules
+#' @return List of analysis results
+analyze_keyword_classifications <- function(data, rules = keyword_rules) {
+  
+  # For each keyword, find matching projects and analyze classifications
+  keyword_analysis <- rules |>
+    group_by(keyword, expected_class, category) |>
+    summarise(
+      matches = list(
+        data |>
+          filter(str_detect(tolower(description), tolower(keyword))) |>
+          select(
+            aid_data_record_id, 
+            sector_name,
+            title,
+            description,
+            primary_class,
+            confidence,
+            llm_identifier
+          )
+      ),
+      n_matches = map_int(matches, nrow) / 4,  # Divide by 4 since each project appears 4 times
+      .groups = "drop"
+    ) |>
+    filter(n_matches > 0)  # Remove keywords with no matches
+  
+  # Analyze classification patterns for each keyword
+  classification_patterns <- keyword_analysis |>
+    mutate(
+      classification_summary = map(matches, ~{
+        .x |>
+          group_by(aid_data_record_id) |>
+          summarise(
+            classifications = paste(sort(unique(primary_class)), collapse = "; "),
+            n_unique_classes = n_distinct(primary_class),
+            matches_expected = any(primary_class == expected_class),
+            all_match_expected = all(primary_class == expected_class),
+            .groups = "drop"
+          )
+      }),
+      agreement_stats = map2(classification_summary, expected_class, ~{
+        tibble(
+          total_projects = nrow(.x),
+          full_agreement = mean(.x$n_unique_classes == 1),
+          matches_expected = mean(.x$matches_expected),
+          all_match_expected = mean(.x$all_match_expected)
+        )
+      })
+    )
+  
+  # Generate detailed report
+  detailed_report <- classification_patterns |>
+    select(category, keyword, expected_class, n_matches, agreement_stats) |>
+    unnest(agreement_stats) |>
+    arrange(category, desc(n_matches))
+  
+  # Find problematic cases
+  problematic_cases <- classification_patterns |>
+    select(category, keyword, matches, classification_summary) |>
+    unnest(classification_summary) |>
+    filter(n_unique_classes > 1) |>
+    arrange(desc(n_unique_classes))
+  
+  list(
+    summary = detailed_report,
+    problematic_cases = problematic_cases
+  )
+}
+
+# Example usage:
+results <- analyze_keyword_classifications(llm_observations_all_obvs)
+
+# Print summary table
+results$summary |>
+  mutate(across(where(is.numeric), ~sprintf("%.1f%%", .x * 100))) |>
+  gt::gt() |>
+  gt::tab_header(
+    title = "Keyword-Based Classification Analysis",
+    subtitle = "Agreement patterns for projects with clear indicators"
+  )
+
+# Get problematic cases for manual review
+problem_cases <- results$problematic_cases |>
+  left_join(
+    llm_observations_all_obvs |>
+      select(aid_data_record_id, title, description) |>
+      distinct(),
+    by = "aid_data_record_id"
+  )
+```
+
+
+```{r}
+
+
+#' Analyze LLM agreement patterns with focus on identifying outliers
+#' @param data Tibble containing LLM classifications
+analyze_llm_patterns <- function(data) {
+  
+  # Calculate how often each LLM agrees with the majority
+  majority_analysis <- data |>
+    group_by(aid_data_record_id) |>
+    mutate(
+      # Find the majority classification
+      majority_class = names(which.max(table(primary_class))),
+      agrees_with_majority = primary_class == majority_class,
+      n_unique_classes = n_distinct(primary_class)
+    ) |>
+    group_by(llm_identifier) |>
+    summarise(
+      n_observations = n(),
+      n_agreements = sum(agrees_with_majority),
+      agreement_rate = n_agreements / n_observations,
+      # Calculate rate when there was disagreement
+      n_disagreement_cases = sum(n_unique_classes > 1),
+      n_outlier_in_disagreements = sum(!agrees_with_majority & n_unique_classes > 1),
+      outlier_rate_in_disagreements = n_outlier_in_disagreements / n_disagreement_cases,
+      .groups = "drop"
+    )
+  
+  # Calculate pairwise agreement rates
+  pairwise_rates <- data |>
+    select(aid_data_record_id, llm_identifier, primary_class) |>
+    # Create all possible pairs for each aid_data_record_id
+    inner_join(
+      select(data, aid_data_record_id, llm_identifier, primary_class),
+      by = "aid_data_record_id",
+      suffix = c("1", "2")
+    ) |>
+    # Keep only unique pairs (avoid self-comparison and duplicates)
+    filter(llm_identifier1 < llm_identifier2) |>
+    # Calculate agreement rates
+    group_by(llm_identifier1, llm_identifier2) |>
+    summarise(
+      agreement_rate = mean(primary_class1 == primary_class2),
+      n_comparisons = n(),
+      .groups = "drop"
+    ) |>
+    rename(llm1 = llm_identifier1, llm2 = llm_identifier2)
+  
+  # Create agreement rate visualization
+  agreement_plot <- ggplot(majority_analysis,
+                          aes(x = reorder(llm_identifier, agreement_rate),
+                              y = agreement_rate)) +
+    geom_col(fill = "steelblue", alpha = 0.7) +
+    geom_text(aes(label = sprintf("%.1f%%", agreement_rate * 100)),
+              vjust = -0.5) +
+    scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+    labs(
+      title = "Agreement with Majority Classification",
+      subtitle = "How often each LLM agrees with the majority vote",
+      x = "LLM Model",
+      y = "Agreement Rate"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  # Create outlier rate visualization
+  outlier_plot <- ggplot(majority_analysis,
+                         aes(x = reorder(llm_identifier, -outlier_rate_in_disagreements),
+                             y = outlier_rate_in_disagreements)) +
+    geom_col(fill = "firebrick", alpha = 0.7) +
+    geom_text(aes(label = sprintf("%.1f%%", outlier_rate_in_disagreements * 100)),
+              vjust = -0.5) +
+    scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+    labs(
+      title = "Outlier Rate by LLM",
+      subtitle = "How often each LLM disagrees when there is disagreement",
+      x = "LLM Model",
+      y = "Outlier Rate"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  # Create heatmap of pairwise agreement
+  pairwise_plot <- pairwise_rates |>
+    ggplot(aes(x = llm1, y = llm2, fill = agreement_rate)) +
+    geom_tile() +
+    geom_text(aes(label = sprintf("%.1f%%", agreement_rate * 100)),
+              color = "white") +
+    scale_fill_gradient(low = "firebrick", high = "steelblue",
+                       labels = scales::percent) +
+    labs(
+      title = "Pairwise Agreement Rates",
+      x = NULL,
+      y = NULL,
+      fill = "Agreement Rate"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  list(
+    majority_stats = majority_analysis,
+    pairwise_stats = pairwise_rates,
+    plots = list(
+      agreement = agreement_plot,
+      outlier = outlier_plot,
+      pairwise = pairwise_plot
+    )
+  )
+}
+
+# Example usage:
+llm_comparison <- analyze_llm_patterns(llm_observations_all_obvs)
+
+# Print summary statistics
+print("Majority Agreement Statistics:")
+print(llm_comparison$majority_stats)
+print("\nPairwise Agreement Rates:")
+print(llm_comparison$pairwise_stats)
+
+# Display plots using patchwork
+(llm_comparison$plots$agreement + llm_comparison$plots$outlier) /
+  llm_comparison$plots$pairwise
+```
+
+```{r}
+
+#' Explore projects matching specific keywords
+#' @param data Tibble containing LLM classifications
+#' @param keywords Character vector of keywords to search for
+#' @param case_sensitive Logical, whether to use case-sensitive search
+explore_keyword_projects <- function(data, 
+                                   keywords, 
+                                   case_sensitive = FALSE) {
+  
+  # First get unique projects
+  matching_projects <- data |>
+    # Get unique projects first
+    distinct(aid_data_record_id, sector_name, title, description) |>
+    # Find matches
+    filter(
+      if (!case_sensitive) {
+        str_detect(tolower(description), paste(tolower(keywords), collapse = "|")) |
+        str_detect(tolower(title), paste(tolower(keywords), collapse = "|"))
+      } else {
+        str_detect(description, paste(keywords, collapse = "|")) |
+        str_detect(title, paste(keywords, collapse = "|"))
+      }
+    )
+  
+  # Now get classifications for matching projects
+  results <- matching_projects |>
+    left_join(
+      data |>
+        select(aid_data_record_id, llm_identifier, primary_class),
+      by = "aid_data_record_id"
+    ) |>
+    group_by(aid_data_record_id) |>
+    mutate(
+      # Create emoji indicators for each class
+      class_emoji = case_when(
+        primary_class == "GREEN" ~ "🟢",
+        primary_class == "GREY" ~ "⚪",
+        primary_class == "BROWN" ~ "🟤",
+        primary_class == "NEUTRAL" ~ "⚫",
+        TRUE ~ "❓"
+      )
+    ) |>
+    summarise(
+      sector = first(sector_name),
+      title = first(title),
+      description = first(description),
+      # Create compact classification display
+      classifications = paste(class_emoji, collapse = " "),
+      # Create detailed classification list
+      llm_details = paste(
+        paste(llm_identifier, primary_class, sep = ": "),
+        collapse = "\n"
+      ),
+      # Find matching keywords
+      matching_keywords = paste(
+        keywords[map_lgl(keywords, function(kw) {
+          if (!case_sensitive) {
+            str_detect(tolower(first(description)), tolower(kw)) |
+            str_detect(tolower(first(title)), tolower(kw))
+          } else {
+            str_detect(first(description), kw) |
+            str_detect(first(title), kw)
+          }
+        })],
+        collapse = ", "
+      ),
+      .groups = "drop"
+    )
+  
+  # Create formatted table
+  gt_table <- results |>
+    select(
+      `Record ID` = aid_data_record_id,
+      Sector = sector,
+      Title = title,
+      `Matching Keywords` = matching_keywords,
+      Classifications = classifications,
+      `LLM Details` = llm_details
+    ) |>
+    gt() |>
+    fmt_markdown(columns = c(Classifications, `LLM Details`)) |>
+    tab_header(
+      title = "Keyword Matching Projects",
+      subtitle = sprintf("Projects matching any of: %s", 
+                        paste(keywords, collapse = ", "))
+    ) |>
+    opt_row_striping() |>
+    tab_style(
+      style = cell_text(whitespace = "pre"),
+      locations = cells_body(columns = `LLM Details`)
+    )
+  
+  list(
+    data = results,
+    table = gt_table
+  )
+}
+
+# Example usage for coal-related projects:
+coal_projects <- explore_keyword_projects(
+  llm_observations_all_obvs,
+  keywords = c("coal", "coal-fired", "coal power")
+)
+
+# Display the table
+coal_projects$table
+
+# Example for renewable projects:
+renewable_projects <- explore_keyword_projects(
+  llm_observations_all_obvs,
+  keywords = c("solar", "wind", "hydroelectric", "renewable")
+)
+
+renewable_projects$table
+```
+
+```{r}
+library(tidyverse)
+library(gt)
+
+#' Analyze classification patterns for keyword-identified projects
+#' @param data Tibble containing LLM classifications
+analyze_keyword_classifications <- function(data) {
+  
+  # Define clear green and brown keywords
+  keyword_categories <- list(
+    clear_green = c(
+      "solar", "wind farm", "wind power", "photovoltaic",
+      "hydroelectric", "renewable", "clean energy"
+    ),
+    clear_brown = c(
+      "coal", "coal-fired", "coal power", "oil refinery",
+      "petroleum", "crude oil"
+    )
+  )
+  
+  # Function to find keyword matches
+  find_matches <- function(text, keywords) {
+    str_detect(
+      tolower(text),
+      paste(tolower(keywords), collapse = "|")
+    )
+  }
+  
+  # Get unique projects with their expected classification
+  project_categories <- data |>
+    distinct(aid_data_record_id, title, description) |>
+    mutate(
+      expected_category = case_when(
+        find_matches(description, keyword_categories$clear_green) |
+          find_matches(title, keyword_categories$clear_green) ~ "GREEN",
+        find_matches(description, keyword_categories$clear_brown) |
+          find_matches(title, keyword_categories$clear_brown) ~ "BROWN",
+        TRUE ~ NA_character_
+      ),
+      matching_keywords = case_when(
+        expected_category == "GREEN" ~ {
+          matched <- keyword_categories$clear_green[
+            map_lgl(keyword_categories$clear_green, ~any(
+              str_detect(tolower(description), tolower(.x)) |
+              str_detect(tolower(title), tolower(.x))
+            ))
+          ]
+          paste(matched, collapse = ", ")
+        },
+        expected_category == "BROWN" ~ {
+          matched <- keyword_categories$clear_brown[
+            map_lgl(keyword_categories$clear_brown, ~any(
+              str_detect(tolower(description), tolower(.x)) |
+              str_detect(tolower(title), tolower(.x))
+            ))
+          ]
+          paste(matched, collapse = ", ")
+        },
+        TRUE ~ NA_character_
+      )
+    ) |>
+    filter(!is.na(expected_category))
+  
+  # Join with LLM classifications
+  classification_analysis <- project_categories |>
+    inner_join(
+      data |> select(aid_data_record_id, llm_identifier, primary_class),
+      by = "aid_data_record_id"
+    ) |>
+    mutate(
+      is_correct = primary_class == expected_category,
+      error_type = case_when(
+        is_correct ~ "Correct",
+        expected_category == "GREEN" & primary_class == "BROWN" ~ "Green as Brown",
+        expected_category == "BROWN" & primary_class == "GREEN" ~ "Brown as Green",
+        TRUE ~ "Other Misclassification"
+      )
+    )
+  
+  # Calculate error rates by LLM
+  error_summary <- classification_analysis |>
+    group_by(llm_identifier, expected_category) |>
+    summarise(
+      n_total = n(),
+      n_correct = sum(is_correct),
+      accuracy = n_correct / n_total,
+      n_major_errors = sum(
+        (expected_category == "GREEN" & primary_class == "BROWN") |
+        (expected_category == "BROWN" & primary_class == "GREEN")
+      ),
+      major_error_rate = n_major_errors / n_total,
+      .groups = "drop"
+    )
+  
+  # Create error pattern visualization
+  error_plot <- classification_analysis |>
+    ggplot(aes(x = llm_identifier, fill = error_type)) +
+    geom_bar(position = "fill") +
+    facet_wrap(~expected_category) +
+    scale_fill_manual(
+      values = c(
+        "Correct" = "darkgreen",
+        "Green as Brown" = "darkred",
+        "Brown as Green" = "orange",
+        "Other Misclassification" = "grey50"
+      )
+    ) +
+    scale_y_continuous(labels = scales::percent) +
+    labs(
+      title = "Classification Error Patterns by LLM",
+      subtitle = "Analysis of clearly Green and Brown projects",
+      x = "LLM Model",
+      y = "Percentage of Classifications",
+      fill = "Classification Result"
+    ) +
+    theme_minimal() +
+    theme(
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      legend.position = "bottom"
+    )
+  
+  # Create detailed error examples table
+  error_examples <- classification_analysis |>
+    filter(!is_correct) |>
+    select(
+      aid_data_record_id,
+      title,
+      matching_keywords,
+      expected_category,
+      llm_identifier,
+      primary_class,
+      error_type
+    ) |>
+    arrange(error_type, aid_data_record_id)
+  
+  list(
+    summary = error_summary,
+    plot = error_plot,
+    examples = error_examples,
+    raw_data = classification_analysis
+  )
+}
+
+# Run analysis
+error_analysis <- analyze_keyword_classifications(llm_observations_all_obvs)
+
+# Print summary statistics
+print("Error Summary by LLM:")
+print(error_analysis$summary)
+
+# Display the plot
+print(error_analysis$plot)
+
+# Show examples of major errors
+major_errors <- error_analysis$examples |>
+  filter(error_type %in% c("Green as Brown", "Brown as Green")) |>
+  arrange(error_type, aid_data_record_id)
+
+print("\nMajor Classification Errors:")
+print(major_errors)
+```
+
