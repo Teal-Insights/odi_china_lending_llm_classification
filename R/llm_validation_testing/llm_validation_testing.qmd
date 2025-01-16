@@ -19,6 +19,7 @@ library(progressr)
 library(jsonlite)
 library(irr)
 library(gt)
+library(readxl)
 ```
 
 ## Source Scripts
@@ -42,8 +43,8 @@ gcdf_data_for_llm <- get_gcdf3_dataset() |>
 gcdf_data_for_llm
 ```
 
-
 Load validation run results
+
 ```{r}
 llama_results_run_results <- collect_results(
   "data/validation_results",
@@ -128,9 +129,11 @@ llm_validation_failed <- llama_failed |>
 
 llm_validation_failed
 ```
+
 # Time
-Processing time for 300 validation 
-(data from processing_log.txt in data/validation_results for each LLM)
+
+Processing time for 300 validation (data from processing_log.txt in data/validation_results for each LLM)
+
 ```{r}
 dataset_n <- nrow(gcdf_data_for_llm)
 
@@ -150,7 +153,7 @@ llm_time_performance <- tribble(
 llm_time_performance
 ```
 
-GPT 4.0-mini is the fastest.  Llama 3.3 70b, running on a Mac Mini Apple Late 2024 M4 Pro chip with 14‑core CPU, 20‑core GPU, 16-core Neural Engine, 64GB unified memory, 2TB SSD storage (beefy for the time) still took 5.64 hours.  Running the full dataset would take two weeks. 
+GPT 4.0-mini is the fastest. Llama 3.3 70b, running on a Mac Mini Apple Late 2024 M4 Pro chip with 14‑core CPU, 20‑core GPU, 16-core Neural Engine, 64GB unified memory, 2TB SSD storage (beefy for the time) still took 5.64 hours. Running the full dataset would take two weeks.
 
 ```{r}
 hours_for_dataset <- dataset_n * 5 / 60 # 5 min / 60 min per hr
@@ -164,13 +167,11 @@ days_for_dataset <- hours_for_dataset/24
 days_for_dataset
 ```
 
-
 ```{r}
 back_of_envelope_cost <- hours_for_dataset * 15
 
 back_of_envelope_cost
 ```
-
 
 # Error Rate
 
@@ -211,10 +212,10 @@ llm_observations_all_obvs <- llm_validation_successful |>
 llm_observations_all_obvs
 ```
 
-
 # IRR Functions
 
 ## calculate_overall_agreement()
+
 ```{r}
 #' Calculate Overall Agreement Statistics
 #' 
@@ -261,6 +262,7 @@ calculate_overall_agreement <- function(data,
 ```
 
 ## analyze_category_agreement()
+
 ```{r}
 #' Analyze Agreement by Category
 #' 
@@ -293,6 +295,7 @@ analyze_category_agreement <- function(data,
 ```
 
 ## generate_pairwise_matrix()
+
 ```{r}
 #' Generate Pairwise Agreement Matrix
 #' 
@@ -338,6 +341,7 @@ generate_pairwise_matrix <- function(data,
 ```
 
 ## analyze_confidence_patterns()
+
 ```{r}
 #' Analyze Confidence Patterns
 #' 
@@ -384,8 +388,6 @@ results <- list(
 
 results
 ```
-
-
 
 ```{r}
 library(tidyverse)
@@ -619,8 +621,6 @@ combined_plots <- (category_plot + pairwise_plot) / confidence_plot +
 combined_plots
 ```
 
-
-
 ```{r}
 library(tidyverse)
 library(openxlsx)  # For Excel output with formatting
@@ -757,7 +757,6 @@ export_validation_sheet(validation_cases,
 
 # Sanity Checks
 
-
 ```{r}
 library(tidyverse)
 
@@ -882,7 +881,6 @@ problem_cases <- results$problematic_cases |>
     by = "aid_data_record_id"
   )
 ```
-
 
 ```{r}
 
@@ -1286,4 +1284,222 @@ major_errors <- error_analysis$examples |>
 print("\nMajor Classification Errors:")
 print(major_errors)
 ```
+
+```{r}
+human_validated_observations <- here(
+  "data-raw",
+  "human_validated_observations",
+  "validation_cases_YC_TE.xlsx"
+  ) |> 
+  read_excel()
+
+human_validated_observations
+```
+
+
+```{r}
+human_validated_observations |> 
+  select(
+    manual_classification,
+    reviewer_confidence
+  ) |> 
+  map(unique)
+```
+
+
+```{r}
+library(tidyverse)
+
+#' Clean and standardize human validations
+#' @param data Tibble containing human validations
+clean_human_validations <- function(data) {
+  data |>
+    select(
+      aid_data_record_id,
+      manual_classification,
+      reviewer_confidence
+    ) |>
+    mutate(
+      manual_classification = str_to_upper(manual_classification),
+      reviewer_confidence = str_to_upper(str_trim(reviewer_confidence)),
+      reviewer_confidence = case_when(
+        reviewer_confidence %in% c("HIGH", "H") ~ "HIGH",
+        reviewer_confidence %in% c("MEDIUM", "MED", "M") ~ "MEDIUM",
+        reviewer_confidence %in% c("LOW", "L") ~ "LOW",
+        TRUE ~ reviewer_confidence
+      )
+    )
+}
+
+#' Compare human and LLM classifications
+#' @param human_data Tibble containing human validations
+#' @param llm_data Tibble containing LLM classifications
+analyze_human_llm_agreement <- function(human_data, llm_data) {
+  
+  # Clean human validation data
+  clean_human <- clean_human_validations(human_data)
+  
+  # Join human and LLM classifications
+  comparison_data <- clean_human |>
+    left_join(
+      llm_data |> 
+        select(aid_data_record_id, llm_identifier, primary_class),
+      by = "aid_data_record_id"
+    )
+  
+  # Calculate overall agreement metrics
+  overall_agreement <- comparison_data |>
+    group_by(llm_identifier) |>
+    summarise(
+      n_total = n(),
+      n_agree = sum(manual_classification == primary_class),
+      agreement_rate = n_agree / n_total,
+      # Calculate Cohen's Kappa
+      kappa = cohens_kappa(
+        manual_classification,
+        primary_class
+      ),
+      .groups = "drop"
+    )
+  
+  # Calculate agreement by human confidence level
+  confidence_agreement <- comparison_data |>
+    group_by(llm_identifier, reviewer_confidence) |>
+    summarise(
+      n_total = n(),
+      n_agree = sum(manual_classification == primary_class),
+      agreement_rate = n_agree / n_total,
+      .groups = "drop"
+    )
+  
+  # Calculate agreement by classification category
+  category_agreement <- comparison_data |>
+    group_by(llm_identifier, manual_classification) |>
+    summarise(
+      n_total = n(),
+      n_agree = sum(manual_classification == primary_class),
+      agreement_rate = n_agree / n_total,
+      .groups = "drop"
+    )
+  
+  # Analyze major disagreements (Green-Brown conflicts)
+  major_disagreements <- comparison_data |>
+    filter(
+      (manual_classification == "GREEN" & primary_class == "BROWN") |
+      (manual_classification == "BROWN" & primary_class == "GREEN")
+    ) |>
+    left_join(
+      human_data |> select(aid_data_record_id, title, description),
+      by = "aid_data_record_id"
+    )
+  
+  # Create visualization of agreement rates
+  agreement_plot <- overall_agreement |>
+    ggplot(aes(x = reorder(llm_identifier, agreement_rate),
+               y = agreement_rate)) +
+    geom_col(fill = "steelblue", alpha = 0.7) +
+    geom_text(aes(label = sprintf("%.1f%%", agreement_rate * 100)),
+              vjust = -0.5) +
+    scale_y_continuous(labels = scales::percent, limits = c(0, 1)) +
+    labs(
+      title = "Agreement Rate between Human and LLM Classifications",
+      x = "LLM Model",
+      y = "Agreement Rate"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  # Create heatmap of category-specific agreement
+  category_plot <- category_agreement |>
+    ggplot(aes(x = llm_identifier, 
+               y = manual_classification,
+               fill = agreement_rate)) +
+    geom_tile() +
+    geom_text(aes(label = sprintf("%.1f%%", agreement_rate * 100)),
+              color = "white") +
+    scale_fill_gradient(low = "firebrick", 
+                       high = "darkgreen",
+                       labels = scales::percent) +
+    labs(
+      title = "Agreement Rate by Classification Category",
+      x = "LLM Model",
+      y = "Human Classification",
+      fill = "Agreement Rate"
+    ) +
+    theme_minimal() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  # Create confusion matrices
+  confusion_matrices <- comparison_data |>
+    group_by(llm_identifier) |>
+    summarise(
+      conf_matrix = list(table(manual_classification, primary_class)),
+      .groups = "drop"
+    )
+  
+  # Return results
+  list(
+    overall_agreement = overall_agreement,
+    confidence_agreement = confidence_agreement,
+    category_agreement = category_agreement,
+    major_disagreements = major_disagreements,
+    confusion_matrices = confusion_matrices,
+    plots = list(
+      agreement = agreement_plot,
+      category = category_plot
+    )
+  )
+}
+
+#' Helper function to calculate Cohen's Kappa
+#' @param x First rater's classifications
+#' @param y Second rater's classifications
+cohens_kappa <- function(x, y) {
+  # Create contingency table
+  cont_table <- table(x, y)
+  
+  # Calculate observed agreement
+  obs_agree <- sum(diag(cont_table)) / sum(cont_table)
+  
+  # Calculate expected agreement
+  row_sums <- rowSums(cont_table) / sum(cont_table)
+  col_sums <- colSums(cont_table) / sum(cont_table)
+  exp_agree <- sum(row_sums * col_sums)
+  
+  # Calculate kappa
+  (obs_agree - exp_agree) / (1 - exp_agree)
+}
+
+# Example usage:
+results <- analyze_human_llm_agreement(
+  human_validated_observations,
+  llm_observations_all_obvs
+)
+
+# Display summary results
+print("Overall Agreement:")
+print(results$overall_agreement)
+
+print("\nAgreement by Confidence Level:")
+print(results$confidence_agreement)
+
+print("\nAgreement by Category:")
+print(results$category_agreement)
+
+print("\nMajor Disagreements (Green-Brown conflicts):")
+print(results$major_disagreements)
+
+# Display plots
+print(results$plots$agreement)
+print(results$plots$category)
+```
+
+
+
+
+
+
+
+
+
 
