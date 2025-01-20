@@ -1,6 +1,5 @@
 
-
-# Function to handle basic bank name standardization
+#Function to handle basic bank name standardization
 standardize_bank_names <- function(name) {
   case_when(
     # Chinese Banks
@@ -71,6 +70,16 @@ standardize_bank_names <- function(name) {
       name,
       "(?i)Banco\\s+ABC"
     ) ~ "Banco ABC",
+    
+    str_detect(
+      name,
+      "(?i)Emirates\\s+NBD(?:\\s+(?:Bank|Capital))"
+    ) ~ "Emirates NBD",
+    
+    str_detect(
+      name,
+      "(?i)Alternatifbank\\s+A\\.?Ş\\.?"
+    ) ~ "The Commercial Bank of Qatar (CBQ)",
     
     str_detect(
       name,
@@ -163,6 +172,11 @@ standardize_bank_names <- function(name) {
     
     str_detect(
       name,
+      "(?i)DBS\\s+Bank|Development\\s+Bank\\s+of\\s+Singapore|(?:PT\\s+)?Bank\\s+DBS(?:\\s+Indonesia)?"
+    ) ~ "DBS Bank",
+    
+    str_detect(
+      name,
       paste0(
         "(?i)Bank of New York Mellon|\\bBNY Mellon\\b|",
         "^Bank of New York$"
@@ -175,6 +189,11 @@ standardize_bank_names <- function(name) {
       name,
       "(?i)Natexis Banques Populaires"
     ) ~ "Natixis",
+    
+    str_detect(
+      name,
+      "(?i)Maybank|Malayan\\s+Banking\\s+Berhad"
+    ) ~ "Maybank",
     
     str_detect(name, "(?i)Mizuho") ~ "Mizuho",
     
@@ -245,7 +264,7 @@ standardize_bank_names <- function(name) {
     
     str_detect(
       name,
-      "(?i)Toronto-Dominion|TD Bank"
+      "(?i)Toronto-Dominion|TD\\s+(?:Bank|Securities)"
     ) ~ "TD Bank",
     
     str_detect(name, "(?i)VTB") ~ "VTB Bank",
@@ -286,6 +305,26 @@ standardize_bank_names <- function(name) {
     
     str_detect(
       name,
+      "(?i)OCBC(?:\\s+Bank)?(?:\\s+Berhad)?|Bank\\s+OCBC\\s+Indonesia"
+    ) ~ "OCBC",
+    
+    str_detect(
+      name,
+      "(?i)Bank\\s+SinoPac|SinoPac\\s+Financial\\s+Holding"
+    ) ~ "Bank SinoPac",
+    
+    str_detect(
+      name,
+      "(?i)Cr[ée]dit\\s+Industriel\\s+et\\s+Commercial(?:\\s+de\\s+Paris)?"
+    ) ~ "Credit Industriel et Commercial",
+    
+    str_detect(
+      name,
+    "(?i)Canadian\\s+Imperial\\s+Bank\\s+of\\s+Commerce|CIBC\\s+World\\s+Markets"
+  ) ~ "CIBC",
+    
+    str_detect(
+      name,
       "(?i)Credit Suisse|BankBoston"
     ) ~ "Credit Suisse",
     
@@ -301,17 +340,20 @@ standardize_bank_names <- function(name) {
       "(?i)Bank of Nova Scotia|\\bScotiabank\\b|\\bBNS\\b"
     ) ~ "Scotiabank",
     
-    str_detect(
-      name,
-      "(?i)Royal Bank of Scotland|RBS"
-    ) ~ "Royal Bank of Scotland",
+  str_detect(
+    name,
+    "(?i)Royal\\s+Bank\\s+of\\s+Scotland|RBS|NatWest\\s+Markets"
+  ) ~ "NatWest",
     
     str_detect(
       name,
       "(?i)Bank of Montreal|BMO"
     ) ~ "Bank of Montreal",
     
-    str_detect(name, "(?i)Erste Bank") ~ "Erste Bank",
+    str_detect(
+      name,
+      "(?i)Erste\\s+(?:Bank|Group)"
+    ) ~ "Erste",
     
     str_detect(
       name,
@@ -382,8 +424,6 @@ standardize_bank_names <- function(name) {
     TRUE ~ name
   )
 }
-
-
 
 # Function to handle government and state institution names
 standardize_government_names <- function(name) {
@@ -549,7 +589,7 @@ standardize_soe_names <- function(name) {
     
     str_detect(
       name,
-      "(?i)China Investment Corporation|CIC"
+      "(?i)China\\s+Investment\\s+Corporation(?:\\s+\\(CIC\\))?|^CIC$"
     ) ~ "China Investment Corporation",
     
     str_detect(
@@ -767,19 +807,59 @@ standardize_all_names <- function(df, name_column) {
     )
 }
 
-# Helper function to create a matching dictionary
-create_name_dictionary <- function(df, original_col, standardized_col) {
-  df |>
-    select({{original_col}}, {{standardized_col}}) |>
-    distinct() |>
-    arrange({{standardized_col}}, {{original_col}})
-}
-
-# Function to check for unmatched patterns
-check_unmatched_names <- function(df, name_column) {
-  df |>
-    filter({{name_column}} == standardized_name) |>
-    pull({{name_column}}) |>
-    unique() |>
-    sort()
+# Function to process funding agency data
+process_funding_agencies <- function(data, 
+                                     agency_col = "co_financing_agencies",
+                                     agency_type_col = "co_financing_agencies_type") {
+  
+  # Validate inputs
+  required_cols <- c("transaction_id", "aid_data_record_id", "country_name", 
+                     "commitment_year", agency_col, agency_type_col)
+  missing_cols <- setdiff(required_cols, names(data))
+  if (length(missing_cols) > 0) {
+    stop("Missing required columns: ", paste(missing_cols, collapse = ", "))
+  }
+  
+  # Process the data
+  result <- data |> 
+    # Filter out NA values in agency column
+    filter(!is.na(.data[[agency_col]])) |> 
+    
+    # Add counts and validation
+    mutate(
+      n_agencies = str_count(.data[[agency_col]], "\\|") + 1,
+      n_agency_types = str_count(.data[[agency_type_col]], "\\|") + 1,
+      counts_match = n_agencies == n_agency_types
+    ) |> 
+    
+    # Convert to long format
+    group_by(transaction_id, aid_data_record_id) |> 
+    mutate(row_id = row_number()) |> 
+    ungroup() |> 
+    
+    separate_rows(
+      all_of(c(agency_col, agency_type_col)),
+      sep = "\\|"
+    ) |> 
+    
+    # Clean whitespace
+    mutate(
+      across(all_of(c(agency_col, agency_type_col)), str_trim)
+    ) |> 
+    
+    # Add agency number
+    group_by(aid_data_record_id, row_id) |> 
+    mutate(agency_number = row_number()) |> 
+    ungroup() |> 
+    
+    # Select final columns - now including country_name
+    select(
+      country_name,
+      transaction_id,
+      aid_data_record_id,
+      agency_number,
+      all_of(c(agency_col, agency_type_col))
+    )
+  
+  return(result)
 }

@@ -1,25 +1,393 @@
 ---
 title: "Funder Name Standardization"
 author: "Teal Emery"
-format: revealjs
-editor: visual
 ---
 
-## Quarto
+```{r}
+library(tidyverse)
+library(janitor)
+library(here)
+library(tealviz)
+library(naniar)
+library(chinadevfin3)
+library(glue)
+```
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+#Setup
 
-## Bullets
+## Source functions
+```{r}
+here(
+  "R",
+  "name_standardization",
+  "name_standardization_functions.R"
+) |> 
+  source()
+```
 
-When you click the **Render** button a document will be generated that includes:
 
--   Content authored with markdown
--   Output from executable code
+## Get Data
+```{r}
+gcdf_data <- get_gcdf3_dataset() |> 
+  filter(
+    recommended_for_aggregates == "Yes"
+  )
 
-## Code
+gcdf_data
+```
+co_financing_agencies 
+co_financing_agencies_type
+funding_agencies  
+funding_agencies_type 
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Create Transaction IDs
+```{r}
+gcdf_data_transaction_ids <- gcdf_data |> 
+  replace_na(
+    list(
+      direct_receiving_agencies = "Not Available"
+    )
+  ) |> 
+  mutate(
+    transaction_id = glue(
+      "{direct_receiving_agencies}-{country_name}-{commitment_date_mm_dd_yyyy}"
+    )
+  ) |> 
+  select(
+    transaction_id,
+    everything()
+  )
+
+gcdf_data_transaction_ids
+```
+
+## Process Cofinancing Agencies
 
 ```{r}
-1 + 1
+# First, apply the filters
+filtered_gcdf <- gcdf_data_transaction_ids |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    co_financed == "Yes"
+  )
+
+# Then process the co-financing agencies data
+gcdf_cofinancing_processed <- process_funding_agencies(
+  filtered_gcdf,
+  agency_col = "co_financing_agencies",
+  agency_type_col = "co_financing_agencies_type"
+)
+
+gcdf_cofinancing_processed
+
 ```
+
+## Process Funding Agencies
+
+```{r}
+# First, apply the filters
+filtered_gcdf <- gcdf_data_transaction_ids |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    #co_financed == "Yes"
+  )
+
+# Process the funding agencies data
+gcdf_funding_processed <- process_funding_agencies(
+  filtered_gcdf,
+  agency_col = "funding_agencies",
+  agency_type_col = "funding_agencies_type"
+)
+
+gcdf_funding_processed
+```
+
+
+
+
+## Testing
+
+```{r}
+gcdf_cofinancing_processed |> glimpse()
+```
+
+```{r}
+combined_funding <- gcdf_funding_processed |> 
+  rename(
+    co_financing_agencies = funding_agencies,
+    co_financing_agencies_type = funding_agencies_type
+  ) |> 
+  bind_rows(
+    gcdf_cofinancing_processed
+  ) |> 
+  standardize_all_names(
+    name_column =  co_financing_agencies
+  ) |> 
+  select(
+    aid_data_record_id,
+    transaction_id,
+    original_lender_name = co_financing_agencies,
+    standardized_lender_name = standardized_name,
+    original_lender_type = co_financing_agencies_type
+  ) |> 
+  mutate(
+    standardized_lender_type = case_when(
+      original_lender_type == "State-owned Commercial Bank" ~ "Chinese State-owned Commercial Bank",
+      original_lender_type == "State-owned Policy Bank" ~ "Chinese State-owned Policy Bank",
+      original_lender_type == "Government Agency" ~ "Chinese Government Agency",
+      original_lender_type == "State-owned Fund" ~ "Chinese State-owned Fund",
+      original_lender_type == "State-owned Company" ~ "Chinese State-owned Company",
+      
+      .default = original_lender_type
+    ),
+    # some entities get misclassified
+    standardized_lender_type = case_when(
+      standardized_lender_name == "Export-Import Bank of China" ~ "Chinese State-owned Policy Bank",
+      standardized_lender_name == "China Development Bank" ~ "Chinese State-owned Policy Bank",
+      standardized_lender_name == "Bank of China" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "China Construction Bank" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "ICBC" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "Unspecified Chinese Government Institution" ~ "Chinese Government Agency",
+      standardized_lender_name == "Chinese Diplomatic Mission" ~ "Chinese Government Agency",
+      standardized_lender_name == "Standard Chartered" ~ "Other Private Sector",
+      standardized_lender_name == "Mitsubishi UFJ" ~ "Other Private Sector",
+      standardized_lender_name == "Mizuho" ~ "Other Private Sector",
+      standardized_lender_name == "BNP Paribas" ~ "Other Private Sector",
+      standardized_lender_name == "Citibank" ~ "Other Private Sector",
+      standardized_lender_name == "ING" ~ "Other Private Sector",
+      standardized_lender_name == "HSBC" ~ "Other Private Sector",
+      standardized_lender_name == "Deutsche Bank" ~ "Other Private Sector",
+      standardized_lender_name == "Natixis" ~ "Other Private Sector",
+      standardized_lender_name == "Credit Suisse" ~ "Other Private Sector",
+      standardized_lender_name == "Societe Generale" ~ "Other Private Sector",
+      standardized_lender_name == "UniCredit" ~ "Other Private Sector",
+      standardized_lender_name == "BBVA" ~ "Other Private Sector",
+      standardized_lender_name == "Bayerische Landesbank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Banco do Brasil" ~ "Other State-owned Bank",
+      standardized_lender_name == "Bank Pan Indonesia" ~ "Other Private Sector",
+      standardized_lender_name == "CIMB" ~ "Other Private Sector", 
+      standardized_lender_name == "CITIC" ~ "Chinese State-owned Company",
+      standardized_lender_name == "China International Publishing" ~ "Chinese State-owned Company",
+      standardized_lender_name == "China Merchants" ~ "Chinese State-owned Company",
+      standardized_lender_name == "Colombo International Container Terminals" ~ "Other Joint Venture/Special Purpose Vehicle",
+      standardized_lender_name == "DVB Merchant Bank" ~ "Other Private Sector",
+      standardized_lender_name == "Dexia" ~ "Other State-owned Bank",
+      standardized_lender_name == "Export-Import Bank of the Republic of China, Taipei" ~ "Other State-owned Bank",
+      standardized_lender_name == "Ghana International Bank" ~ "Other State-owned Bank",
+      standardized_lender_name == "HalkBank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Huawei Technologies" ~ "Chinese Private Sector",
+      standardized_lender_name == "Jack Ma Foundation" ~ "Chinese NGO/CSO/Foundation",
+      standardized_lender_name == "Liberia National Wushu Association" ~ "Other NGO/CSO/Foundation",
+      standardized_lender_name == "Nedbank" ~ "Other Private Sector",
+      standardized_lender_name == "Oversea-Chinese Banking Corporation" ~ "Other Private Sector",
+      standardized_lender_name == "Overseas Chinese Affairs Office of Sichuan Province" ~ "Chinese Government Agency",
+      standardized_lender_name == "Provincial Government of the Xinjiang Uyghur Autonomous Region" ~ "Chinese Government Agency",
+      standardized_lender_name == "QNB" ~ "Other State-owned Bank",
+      standardized_lender_name == "Rabobank" ~ "Other Private Sector",
+      standardized_lender_name == "NatWest" ~ "Other Private Sector",
+      standardized_lender_name == "Sberbank" ~ "Other State-owned Bank",
+      standardized_lender_name == "State Bank of India" ~ "Other State-owned Bank",
+      standardized_lender_name == "TD Bank" ~ "Other Private Sector",
+      standardized_lender_name == "United Overseas Bank" ~ "Other Private Sector",
+      standardized_lender_name == "OCBC" ~ "Other Private Sector",
+      standardized_lender_name == "VakifBank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Emirates NBD" ~ "Other State-owned Bank",
+      
+      
+      .default = standardized_lender_type
+    ),
+    lender_geography_type = case_when(
+      standardized_lender_type |> str_detect("Chinese") ~ "Chinese",
+      standardized_lender_type |> str_detect("Recipient") ~ "Recipient",
+      standardized_lender_type |> str_detect("Other") ~ "Other",
+      .default = "FIX THIS"
+    )
+  ) |> 
+  # Change so only Chinese & "Other"
+  mutate(
+    standardized_lender_type = str_replace(
+      string = standardized_lender_type, 
+      pattern = "Recipient",
+      replacement = "Other"
+    )
+  )
+  
+
+combined_funding |> glimpse()
+
+```
+
+```{r}
+combined_funding_check <- combined_funding |> 
+  group_by(
+    original_lender_name,
+    standardized_lender_name,
+    original_lender_type,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  count(sort = TRUE) |> 
+  ungroup()
+
+combined_funding_check
+```
+
+```{r}
+standardized_names_check <- combined_funding |> 
+  group_by(
+    standardized_lender_name,
+    standardized_lender_type
+  ) |> 
+  count(sort = TRUE) |> 
+  ungroup()
+
+standardized_names_check
+```
+
+
+
+
+```{r}
+standardized_names_check$standardized_lender_type |> unique() |> str_sort()
+```
+
+
+```{r}
+standardized_names_check$standardized_lender_name |> 
+  unique() |> 
+  str_sort() |> 
+  paste(collapse = ", ")
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other Intergovernmental Organization"
+  )
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other Government Agency"
+  )
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other Miscellaneous Agency Type"
+  )
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other NGO/CSO/Foundation"
+  )
+```
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other State-owned Bank"
+  )
+```
+
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other State-owned Commercial Bank"
+  )
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other State-owned Company"
+  )
+```
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other State-owned Fund"
+  )
+```
+
+```{r}
+standardized_names_check |> 
+  filter(
+    standardized_lender_type == "Other Private Sector"
+  )
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+standardized_names_check |> 
+  filter(
+    str_detect(
+      standardized_lender_name,
+      "Safra"
+    )
+  )
+```
+
+
+```{r}
+combined_funding |> glimpse()
+```
+
+```{r}
+multiple_types_check <- standardized_names_check |> 
+  group_by(standardized_lender_name) |> 
+  mutate(lender_types_n = n()) |> 
+  ungroup() |> 
+  filter(
+    lender_types_n > 1
+  ) |> 
+  arrange(
+    standardized_lender_name,
+    desc(n)
+    )
+
+multiple_types_check 
+```
+
+
+
+
+
+
+
+
+```{r}
+combined_funding |> 
+  group_by(
+    standardized_lender_name,
+    standardized_lender_type
+  ) |> 
+  count(sort = TRUE) |> 
+  ungroup()
+  
+```
+
