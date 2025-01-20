@@ -3,19 +3,20 @@ title: "Funder Name Standardization"
 author: "Teal Emery"
 ---
 
+# Setup
+
+## Load Packages
 ```{r}
 library(tidyverse)
-library(janitor)
 library(here)
-library(tealviz)
-library(naniar)
 library(chinadevfin3)
 library(glue)
 ```
 
-#Setup
 
 ## Source functions
+The cleaning functions involve very long lists of regular expression patterns.  We put them in a separate script to keep this document more legible. 
+
 ```{r}
 here(
   "R",
@@ -27,6 +28,7 @@ here(
 
 
 ## Get Data
+Getting the AidData GCDF 3.0 data from the {chinadevfin3} package. As suggested by the AidData methodology, we filter for Recommended for Aggregates = "Yes", given that we will be making claims about aggregate lending volumes. 
 ```{r}
 gcdf_data <- get_gcdf3_dataset() |> 
   filter(
@@ -35,12 +37,10 @@ gcdf_data <- get_gcdf3_dataset() |>
 
 gcdf_data
 ```
-co_financing_agencies 
-co_financing_agencies_type
-funding_agencies  
-funding_agencies_type 
 
 ## Create Transaction IDs
+
+We make a simplifying assumption that a transaction signed with a specific direct receiving agency in a give country on a given commitment day constitutes a single transaction.  There are edge cases where it could be argued that multiple transactions are signed with the same direct receiving agency, in the same country, on the same day. But in our exploratory work, these edge cases are relatively small, and the advantages of using a simple, reproducible, rules-based approach outweigh any added clarity by hand selecting transactions in a manner that introduces subjective judgement and reduces reproducibility. 
 ```{r}
 gcdf_data_transaction_ids <- gcdf_data |> 
   replace_na(
@@ -61,10 +61,15 @@ gcdf_data_transaction_ids <- gcdf_data |>
 gcdf_data_transaction_ids
 ```
 
+# Process Funders
+
+AidData's GCDF 3.0 database contains two fields with funders. For co-financed projects, there are potentially multiple AidData Record IDs per transaction, corresponding to lending by different Chinese entities.  For example, if ICBC, Bank of China, and the China Development Bank all lend to a transaction there will be three separate AidData Record IDs. This is why we take the step above to create the transaction IDs.  In this hypothetical example, in the first observation for this transaction, ICBC will be listed as the funding agency and Bank of China + CDB will be listed as co-financing agencies.  In the subsequent observations, ICBC will be listed as a co-financing agency.  So it is necessary to process them both in the same manner, and then filter for unique funding agencies. 
+
 ## Process Cofinancing Agencies
 
+First, we get all of the funders listed at co-financiers.  These only exist for AidData records where cof_financed == "Yes".  
+
 ```{r}
-# First, apply the filters
 filtered_gcdf <- gcdf_data_transaction_ids |> 
   filter(
     recommended_for_aggregates == "Yes",
@@ -104,12 +109,14 @@ gcdf_funding_processed
 
 
 
-
-## Testing
+Let's take a look.
 
 ```{r}
 gcdf_cofinancing_processed |> glimpse()
 ```
+
+
+## Processing Combined
 
 ```{r}
 combined_funding <- gcdf_funding_processed |> 
@@ -217,6 +224,8 @@ combined_funding |> glimpse()
 
 ```
 
+### Check Results
+
 ```{r}
 combined_funding_check <- combined_funding |> 
   group_by(
@@ -244,118 +253,7 @@ standardized_names_check <- combined_funding |>
 standardized_names_check
 ```
 
-
-
-
-```{r}
-standardized_names_check$standardized_lender_type |> unique() |> str_sort()
-```
-
-
-```{r}
-standardized_names_check$standardized_lender_name |> 
-  unique() |> 
-  str_sort() |> 
-  paste(collapse = ", ")
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other Intergovernmental Organization"
-  )
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other Government Agency"
-  )
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other Miscellaneous Agency Type"
-  )
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other NGO/CSO/Foundation"
-  )
-```
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other State-owned Bank"
-  )
-```
-
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other State-owned Commercial Bank"
-  )
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other State-owned Company"
-  )
-```
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other State-owned Fund"
-  )
-```
-
-```{r}
-standardized_names_check |> 
-  filter(
-    standardized_lender_type == "Other Private Sector"
-  )
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```{r}
-standardized_names_check |> 
-  filter(
-    str_detect(
-      standardized_lender_name,
-      "Safra"
-    )
-  )
-```
-
-
-```{r}
-combined_funding |> glimpse()
-```
+Check that the processing logic above makes it so all standardized entity only has one lender type.
 
 ```{r}
 multiple_types_check <- standardized_names_check |> 
@@ -374,20 +272,54 @@ multiple_types_check
 ```
 
 
+# Prep for Export
 
-
-
-
-
+Nest the unique lenders per transaction.
 
 ```{r}
-combined_funding |> 
+standardized_lenders_nested <- combined_funding |> 
+  unique() |> 
   group_by(
-    standardized_lender_name,
-    standardized_lender_type
+    aid_data_record_id,
+    transaction_id
   ) |> 
-  count(sort = TRUE) |> 
+  nest(
+    .key = "standardized_lenders"
+  ) |> 
   ungroup()
-  
+
+standardized_lenders_nested 
+```
+
+Put the nested data into the full GCDF data for later analysis. 
+```{r}
+gcdf_standardized_nested <- gcdf_data_transaction_ids |> 
+  left_join(
+    standardized_lenders_nested,
+    by = join_by(
+      transaction_id, 
+      aid_data_record_id
+      )
+  ) |> 
+  select(
+    transaction_id,
+    standardized_lenders,
+    everything()
+  )
+
+gcdf_standardized_nested  
+```
+
+Because it is a nested tibble, we need to save it as a .rds file. 
+
+```{r}
+write_rds(
+  gcdf_standardized_nested,
+  here(
+    "data",
+    "cofinancing_w_standardized_names.rds"
+  ),
+  compress = "gz"
+)
 ```
 
