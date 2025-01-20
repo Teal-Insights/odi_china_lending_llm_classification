@@ -1,0 +1,325 @@
+---
+title: "Funder Name Standardization"
+author: "Teal Emery"
+---
+
+# Setup
+
+## Load Packages
+```{r}
+library(tidyverse)
+library(here)
+library(chinadevfin3)
+library(glue)
+```
+
+
+## Source functions
+The cleaning functions involve very long lists of regular expression patterns.  We put them in a separate script to keep this document more legible. 
+
+```{r}
+here(
+  "R",
+  "name_standardization",
+  "name_standardization_functions.R"
+) |> 
+  source()
+```
+
+
+## Get Data
+Getting the AidData GCDF 3.0 data from the {chinadevfin3} package. As suggested by the AidData methodology, we filter for Recommended for Aggregates = "Yes", given that we will be making claims about aggregate lending volumes. 
+```{r}
+gcdf_data <- get_gcdf3_dataset() |> 
+  filter(
+    recommended_for_aggregates == "Yes"
+  )
+
+gcdf_data
+```
+
+## Create Transaction IDs
+
+We make a simplifying assumption that a transaction signed with a specific direct receiving agency in a give country on a given commitment day constitutes a single transaction.  There are edge cases where it could be argued that multiple transactions are signed with the same direct receiving agency, in the same country, on the same day. But in our exploratory work, these edge cases are relatively small, and the advantages of using a simple, reproducible, rules-based approach outweigh any added clarity by hand selecting transactions in a manner that introduces subjective judgement and reduces reproducibility. 
+```{r}
+gcdf_data_transaction_ids <- gcdf_data |> 
+  replace_na(
+    list(
+      direct_receiving_agencies = "Not Available"
+    )
+  ) |> 
+  mutate(
+    transaction_id = glue(
+      "{direct_receiving_agencies}-{country_name}-{commitment_date_mm_dd_yyyy}"
+    )
+  ) |> 
+  select(
+    transaction_id,
+    everything()
+  )
+
+gcdf_data_transaction_ids
+```
+
+# Process Funders
+
+AidData's GCDF 3.0 database contains two fields with funders. For co-financed projects, there are potentially multiple AidData Record IDs per transaction, corresponding to lending by different Chinese entities.  For example, if ICBC, Bank of China, and the China Development Bank all lend to a transaction there will be three separate AidData Record IDs. This is why we take the step above to create the transaction IDs.  In this hypothetical example, in the first observation for this transaction, ICBC will be listed as the funding agency and Bank of China + CDB will be listed as co-financing agencies.  In the subsequent observations, ICBC will be listed as a co-financing agency.  So it is necessary to process them both in the same manner, and then filter for unique funding agencies. 
+
+## Process Cofinancing Agencies
+
+First, we get all of the funders listed at co-financiers.  These only exist for AidData records where cof_financed == "Yes".  
+
+```{r}
+filtered_gcdf <- gcdf_data_transaction_ids |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    co_financed == "Yes"
+  )
+
+# Then process the co-financing agencies data
+gcdf_cofinancing_processed <- process_funding_agencies(
+  filtered_gcdf,
+  agency_col = "co_financing_agencies",
+  agency_type_col = "co_financing_agencies_type"
+)
+
+gcdf_cofinancing_processed
+
+```
+
+## Process Funding Agencies
+
+```{r}
+# First, apply the filters
+filtered_gcdf <- gcdf_data_transaction_ids |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    #co_financed == "Yes"
+  )
+
+# Process the funding agencies data
+gcdf_funding_processed <- process_funding_agencies(
+  filtered_gcdf,
+  agency_col = "funding_agencies",
+  agency_type_col = "funding_agencies_type"
+)
+
+gcdf_funding_processed
+```
+
+
+
+Let's take a look.
+
+```{r}
+gcdf_cofinancing_processed |> glimpse()
+```
+
+
+## Processing Combined
+
+```{r}
+combined_funding <- gcdf_funding_processed |> 
+  rename(
+    co_financing_agencies = funding_agencies,
+    co_financing_agencies_type = funding_agencies_type
+  ) |> 
+  bind_rows(
+    gcdf_cofinancing_processed
+  ) |> 
+  standardize_all_names(
+    name_column =  co_financing_agencies
+  ) |> 
+  select(
+    aid_data_record_id,
+    transaction_id,
+    original_lender_name = co_financing_agencies,
+    standardized_lender_name = standardized_name,
+    original_lender_type = co_financing_agencies_type
+  ) |> 
+  mutate(
+    standardized_lender_type = case_when(
+      original_lender_type == "State-owned Commercial Bank" ~ "Chinese State-owned Commercial Bank",
+      original_lender_type == "State-owned Policy Bank" ~ "Chinese State-owned Policy Bank",
+      original_lender_type == "Government Agency" ~ "Chinese Government Agency",
+      original_lender_type == "State-owned Fund" ~ "Chinese State-owned Fund",
+      original_lender_type == "State-owned Company" ~ "Chinese State-owned Company",
+      
+      .default = original_lender_type
+    ),
+    # some entities get misclassified
+    standardized_lender_type = case_when(
+      standardized_lender_name == "Export-Import Bank of China" ~ "Chinese State-owned Policy Bank",
+      standardized_lender_name == "China Development Bank" ~ "Chinese State-owned Policy Bank",
+      standardized_lender_name == "Bank of China" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "China Construction Bank" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "ICBC" ~ "Chinese State-owned Commercial Bank",
+      standardized_lender_name == "Unspecified Chinese Government Institution" ~ "Chinese Government Agency",
+      standardized_lender_name == "Chinese Diplomatic Mission" ~ "Chinese Government Agency",
+      standardized_lender_name == "Standard Chartered" ~ "Other Private Sector",
+      standardized_lender_name == "Mitsubishi UFJ" ~ "Other Private Sector",
+      standardized_lender_name == "Mizuho" ~ "Other Private Sector",
+      standardized_lender_name == "BNP Paribas" ~ "Other Private Sector",
+      standardized_lender_name == "Citibank" ~ "Other Private Sector",
+      standardized_lender_name == "ING" ~ "Other Private Sector",
+      standardized_lender_name == "HSBC" ~ "Other Private Sector",
+      standardized_lender_name == "Deutsche Bank" ~ "Other Private Sector",
+      standardized_lender_name == "Natixis" ~ "Other Private Sector",
+      standardized_lender_name == "Credit Suisse" ~ "Other Private Sector",
+      standardized_lender_name == "Societe Generale" ~ "Other Private Sector",
+      standardized_lender_name == "UniCredit" ~ "Other Private Sector",
+      standardized_lender_name == "BBVA" ~ "Other Private Sector",
+      standardized_lender_name == "Bayerische Landesbank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Banco do Brasil" ~ "Other State-owned Bank",
+      standardized_lender_name == "Bank Pan Indonesia" ~ "Other Private Sector",
+      standardized_lender_name == "CIMB" ~ "Other Private Sector", 
+      standardized_lender_name == "CITIC" ~ "Chinese State-owned Company",
+      standardized_lender_name == "China International Publishing" ~ "Chinese State-owned Company",
+      standardized_lender_name == "China Merchants" ~ "Chinese State-owned Company",
+      standardized_lender_name == "Colombo International Container Terminals" ~ "Other Joint Venture/Special Purpose Vehicle",
+      standardized_lender_name == "DVB Merchant Bank" ~ "Other Private Sector",
+      standardized_lender_name == "Dexia" ~ "Other State-owned Bank",
+      standardized_lender_name == "Export-Import Bank of the Republic of China, Taipei" ~ "Other State-owned Bank",
+      standardized_lender_name == "Ghana International Bank" ~ "Other State-owned Bank",
+      standardized_lender_name == "HalkBank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Huawei Technologies" ~ "Chinese Private Sector",
+      standardized_lender_name == "Jack Ma Foundation" ~ "Chinese NGO/CSO/Foundation",
+      standardized_lender_name == "Liberia National Wushu Association" ~ "Other NGO/CSO/Foundation",
+      standardized_lender_name == "Nedbank" ~ "Other Private Sector",
+      standardized_lender_name == "Oversea-Chinese Banking Corporation" ~ "Other Private Sector",
+      standardized_lender_name == "Overseas Chinese Affairs Office of Sichuan Province" ~ "Chinese Government Agency",
+      standardized_lender_name == "Provincial Government of the Xinjiang Uyghur Autonomous Region" ~ "Chinese Government Agency",
+      standardized_lender_name == "QNB" ~ "Other State-owned Bank",
+      standardized_lender_name == "Rabobank" ~ "Other Private Sector",
+      standardized_lender_name == "NatWest" ~ "Other Private Sector",
+      standardized_lender_name == "Sberbank" ~ "Other State-owned Bank",
+      standardized_lender_name == "State Bank of India" ~ "Other State-owned Bank",
+      standardized_lender_name == "TD Bank" ~ "Other Private Sector",
+      standardized_lender_name == "United Overseas Bank" ~ "Other Private Sector",
+      standardized_lender_name == "OCBC" ~ "Other Private Sector",
+      standardized_lender_name == "VakifBank" ~ "Other State-owned Bank",
+      standardized_lender_name == "Emirates NBD" ~ "Other State-owned Bank",
+      
+      
+      .default = standardized_lender_type
+    ),
+    lender_geography_type = case_when(
+      standardized_lender_type |> str_detect("Chinese") ~ "Chinese",
+      standardized_lender_type |> str_detect("Recipient") ~ "Recipient",
+      standardized_lender_type |> str_detect("Other") ~ "Other",
+      .default = "FIX THIS"
+    )
+  ) |> 
+  # Change so only Chinese & "Other"
+  mutate(
+    standardized_lender_type = str_replace(
+      string = standardized_lender_type, 
+      pattern = "Recipient",
+      replacement = "Other"
+    )
+  )
+  
+
+combined_funding |> glimpse()
+
+```
+
+### Check Results
+
+```{r}
+combined_funding_check <- combined_funding |> 
+  group_by(
+    original_lender_name,
+    standardized_lender_name,
+    original_lender_type,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  count(sort = TRUE) |> 
+  ungroup()
+
+combined_funding_check
+```
+
+```{r}
+standardized_names_check <- combined_funding |> 
+  group_by(
+    standardized_lender_name,
+    standardized_lender_type
+  ) |> 
+  count(sort = TRUE) |> 
+  ungroup()
+
+standardized_names_check
+```
+
+Check that the processing logic above makes it so all standardized entity only has one lender type.
+
+```{r}
+multiple_types_check <- standardized_names_check |> 
+  group_by(standardized_lender_name) |> 
+  mutate(lender_types_n = n()) |> 
+  ungroup() |> 
+  filter(
+    lender_types_n > 1
+  ) |> 
+  arrange(
+    standardized_lender_name,
+    desc(n)
+    )
+
+multiple_types_check 
+```
+
+
+# Prep for Export
+
+Nest the unique lenders per transaction.
+
+```{r}
+standardized_lenders_nested <- combined_funding |> 
+  unique() |> 
+  group_by(
+    aid_data_record_id,
+    transaction_id
+  ) |> 
+  nest(
+    .key = "standardized_lenders"
+  ) |> 
+  ungroup()
+
+standardized_lenders_nested 
+```
+
+Put the nested data into the full GCDF data for later analysis. 
+```{r}
+gcdf_standardized_nested <- gcdf_data_transaction_ids |> 
+  left_join(
+    standardized_lenders_nested,
+    by = join_by(
+      transaction_id, 
+      aid_data_record_id
+      )
+  ) |> 
+  select(
+    transaction_id,
+    standardized_lenders,
+    everything()
+  )
+
+gcdf_standardized_nested  
+```
+
+Because it is a nested tibble, we need to save it as a .rds file. 
+
+```{r}
+write_rds(
+  gcdf_standardized_nested,
+  here(
+    "data",
+    "cofinancing_w_standardized_names.rds"
+  ),
+  compress = "gz"
+)
+```
+
