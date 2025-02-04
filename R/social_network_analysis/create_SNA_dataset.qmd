@@ -1,0 +1,149 @@
+---
+title: "Create Social Network Analysis Dataset"
+author: "Teal Emery"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+
+```{r}
+gcdf_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+
+gcdf_data
+```
+
+```{r}
+gcdf_cofinanced_loans <- gcdf_data |> 
+  filter(
+    flow_type == "Loan",
+    co_financed == "Yes"
+    # data already filtered for recommended_for_aggregates == "Yes"
+  ) 
+  
+gcdf_cofinanced_loans
+```
+
+In the GCDF 3.0, a given co-financed transaction may be associated with multiple Aid Data Record IDs if multiple Chinese official lenders participate.  For example, if both ICBC and Bank of China participate in a given transaction, it would have two AidData record IDs, and the banks names will appear twice (once as the financing agency, and the second time as a co-financier). So we are selecting each transaction ID, which is "{direct_recieving_agency}-{country_name}-{commitment_date}", which may contain multiple AidData Record IDs, and then finding the unique standardized lender per transaction to avoid double counting. We also get rid of the original lender ID and lender type and only keep the standardized ID and type to consolidate corporate entities. We simplify lender geography type to "Chinese" and "Other", as some entities might be "Recipient" in some transactions in their home country and "Other" in other transactions. 
+
+
+```{r}
+cofinanced_loans_unique_lenders <- gcdf_cofinanced_loans |> 
+  select(
+    transaction_id,
+    standardized_lenders
+  ) |> 
+  unnest(
+    standardized_lenders
+  ) |> 
+  # Standardize to "Chinese" and "Other", to avoid double counting entities
+  # classified as "Recipient" and "Other" in different transactions.
+  mutate(
+    lender_geography_type = case_when(
+      lender_geography_type == "Recipient" ~ "Other",
+      .default = lender_geography_type
+    )
+  ) |>
+  # take out original names & classifications
+  # to avoid double counding
+  select(
+    -contains("original_")
+  ) |> 
+  unique() |> 
+  group_by(transaction_id) |> 
+  nest(.key = "unique_lenders") |> 
+  ungroup()
+  
+cofinanced_loans_unique_lenders 
+```
+
+
+```{r}
+transaction_features <- gcdf_cofinanced_loans |>
+  select(
+    transaction_id,
+    transaction_primary_class,
+    recipient,
+    recipient_region,
+    commitment_year,
+    involving_multilateral
+  ) |> 
+  mutate(
+    involving_multilateral = case_when(
+      # One of two record IDs is "Yes", so we set "Yes" to the entire transaction.
+      transaction_id == "Maamba Collieries Ltd. (MCL)-Zambia-2015-07-28" ~ "Yes"
+    )
+  ) |> 
+  unique()
+
+transaction_features 
+```
+
+
+```{r}
+transaction_features |> 
+  group_by(transaction_id) |> 
+  mutate(n = n()) |> 
+  ungroup() |> 
+  filter(
+    n > 1
+  )
+```
+
+
+
+
+```{r}
+data_for_sna <- cofinanced_loans_unique_lenders |> 
+  left_join(
+    transaction_features,
+    by = join_by(transaction_id)
+  )
+
+data_for_sna
+```
+
+
+```{r}
+data_for_sna |> 
+  count(transaction_primary_class, sort = TRUE)
+```
+
+```{r}
+write_rds(
+  data_for_sna,
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.rds"
+  ),
+  compress = "xz"
+)
+```
+
+```{r}
+data_for_sna_unnested <- data_for_sna |> 
+  unnest(unique_lenders) 
+
+data_for_sna_unnested
+```
+
+```{r}
+write_csv(
+  data_for_sna_unnested,
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.csv"
+  )
+)
+```
