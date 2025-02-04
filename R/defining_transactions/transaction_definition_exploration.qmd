@@ -1,0 +1,582 @@
+---
+title: "Defining Transactions"
+author: "Teal Emery"
+format: html
+---
+
+# Setup
+
+```{r}
+library(tidyverse)
+library(here)
+library(stringdist)
+options(scipen = 999)
+```
+
+```{r}
+gcdf_cofinancing <- here(
+  "data",
+  "cofinancing_w_standardized_names.rds"
+) |> 
+  read_rds()
+
+gcdf_cofinancing
+```
+
+```{r}
+gcdf_categorized <- here(
+  "data",
+  "llm_full_dataset",
+  "gcdf3_llm_classified_for_join.rds"
+) |> 
+  read_rds()
+
+gcdf_categorized
+```
+
+```{r}
+gcdf_with_green <- gcdf_cofinancing |> 
+  left_join(
+    gcdf_categorized,
+    by = join_by(aid_data_record_id)
+    )
+
+gcdf_with_green
+```
+
+## Initial Scoping
+
+Challenge:
+In the AidData GCDF 3.0, there are separate lines for each Chinese contributor to a transaction.  So for loans with multiple chinese co-financiers, it will be covered by multiple aid data record ids.
+
+1) The transaction IDs `{direct recipient agency}-{country}-{commitment date}` are a good proxy for `transactions`, but we know it is not perfect. Are there meaningful edge cases where this is not the case?  We want to perhaps check all that are over $1 billion.   
+2) How often are there multiple types of classifications per transaction? What makes sense as a reasonable way of marking a "green" transaction in this context?
+
+```{r}
+gcdf_scoping_size <- gcdf_with_green |> 
+  group_by(transaction_id) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9
+  ) 
+
+gcdf_scoping_size
+```
+
+more than 1 line
+
+```{r}
+gcdf_scoping_size |> 
+  filter(
+    n > 1
+  )
+```
+2,216 with more than one AidData Record ID
+
+```{r}
+multiple_records_over_1bn <- gcdf_scoping_size |> 
+  filter(
+    n > 1,
+    sum_bn > 1
+  ) |> 
+  arrange(desc(sum_bn)) |> 
+  mutate(multiple_transaction_number = row_number())
+
+multiple_records_over_1bn
+```
+105 of those with a combined total of over $1bn
+
+
+```{r}
+gcdf_scoping_size |> 
+  filter(
+    n > 1,
+    sum_bn > 1
+  ) |> 
+  ggplot(
+    aes(
+      n
+    )
+  ) + 
+  geom_histogram(
+    binwidth = 1
+  )
+```
+
+```{r}
+gcdf_scoping_size |> 
+  filter(
+    n > 1,
+    #sum_bn > 1
+  ) |> 
+  count(n)
+```
+Okay, so the vast majority have four or less.  A tail starts at 6.
+
+```{r}
+transactions_over_1bn_check <- gcdf_cofinancing |> 
+  right_join(
+    multiple_records_over_1bn,
+    by = join_by(transaction_id)
+    )
+
+transactions_over_1bn_check
+```
+```{r}
+transactions_over_1bn_check |> 
+  
+  select(
+    transaction_id,
+    title
+  )
+```
+
+```{r}
+
+
+# First, let's group the descriptions by transaction_id and calculate similarities
+description_similarity <- gcdf_with_green |>
+  group_by(transaction_id) |>
+  filter(sum(amount_constant_usd_2021, na.rm = TRUE) > 1e9) |>
+  filter(n() > 1) |>  # Only transactions with multiple records
+  summarise(
+    n_records = n(),
+    # Get unique descriptions to compare
+    descriptions = list(unique(description)),
+    # Calculate max string distance between any pair of descriptions
+    max_diff = map_dbl(descriptions, function(desc) {
+      if(length(desc) < 2) return(0)
+      # Create all pairs of descriptions
+      pairs <- combn(desc, 2, simplify = FALSE)
+      # Calculate maximum string distance
+      max(map_dbl(pairs, ~stringdist(.[1], .[2], method = "lv")))
+    }),
+    # Add total amount for reference
+    total_amount_billions = sum(amount_constant_usd_2021, na.rm = TRUE) / 1e9
+  ) |>
+  # Sort by string difference to highlight potential issues
+  arrange(desc(max_diff))
+
+# View results
+print(description_similarity)
+```
+```{r}
+# Look at transactions with significant differences
+suspicious_transactions <- description_similarity |>
+  filter(max_diff > 10) |>  # Adjust threshold as needed
+  select(transaction_id, n_records, max_diff, total_amount_billions)
+
+# View the full descriptions for these suspicious cases
+suspicious_details <- gcdf_with_green |>
+  filter(transaction_id %in% suspicious_transactions$transaction_id) |>
+  select(transaction_id, description, amount_constant_usd_2021) |>
+  arrange(transaction_id)
+
+print(suspicious_details)
+```
+
+```{r}
+# Add a transaction number for easy reference
+suspicious_details_numbered <- suspicious_details |>
+  group_by(transaction_id) |>
+  mutate(
+    transaction_num = cur_group_id(),  # Adds sequential transaction numbers
+    description_full = str_wrap(description, width = 100)  # Wraps text for better viewing
+  ) |>
+  ungroup() |>
+  mutate(
+    amount_bn = amount_constant_usd_2021 * 10^-9
+  ) |> 
+  select(
+    transaction_num,
+    transaction_id,
+    description_full,
+    amount_bn
+  ) 
+
+suspicious_details_numbered
+```
+Conclusion:  It's almost all transactions with governments or SOEs where a bunch of government-to-government deals get signed on the same day, perhaps during a summit or a diplomatic visit. While one could categorize these as separate transactions, it's not unreasonable to think of them as single transactions, and it has the merit of being rules-based and reproducible.  It's a worthwhile tradeoff for not building in a bunch of subjective judgements that won't be reproducible. 
+
+
+```{r}
+suspicious_details_numbered |> 
+  filter(transaction_num == 9) |> 
+  select(
+    transaction_id,
+    description_full,
+    amount_bn
+  ) |> 
+  pull(description_full)
+```
+
+## Green Projects
+
+How many have multiple 
+```{r}
+gcdf_with_green |> 
+  select(
+    transaction_id,
+    aid_data_record_id,
+    amount_constant_usd_2021,
+    primary_class:evidence
+    ) |> glimpse()
+```
+
+```{r}
+transaction_summary <- gcdf_with_green |>
+  # Group by transaction_id and summarize classifications
+  group_by(transaction_id) |>
+  summarize(
+    total_observations = n(),
+    green_count = sum(primary_class == "GREEN", na.rm = TRUE),
+    brown_count = sum(primary_class == "BROWN", na.rm = TRUE),
+    grey_count = sum(primary_class == "GREY", na.rm = TRUE),
+    neutral_count = sum(primary_class == "NEUTRAL", na.rm = TRUE),
+    total_amount_billions = sum(amount_constant_usd_2021, na.rm = TRUE) / 1e9,
+    # Calculate percentages
+    pct_green = green_count / total_observations * 100,
+    pct_brown = brown_count / total_observations * 100,
+    pct_grey = grey_count / total_observations * 100,
+    pct_neutral = neutral_count / total_observations * 100,
+    # Flag mixed Green/Brown
+    has_green_and_brown = green_count > 0 & brown_count > 0
+  ) |>
+  # Sort by total amount to see most significant transactions first
+  arrange(desc(total_amount_billions))
+
+# Let's look at the results
+glimpse(transaction_summary)
+```
+
+```{r}
+transaction_summary <- gcdf_with_green |>
+  # Group by transaction_id and summarize classifications
+  group_by(transaction_id) |>
+  summarise(
+    total_observations = n(),
+    green_count = sum(primary_class == "GREEN", na.rm = TRUE),
+    brown_count = sum(primary_class == "BROWN", na.rm = TRUE),
+    grey_count = sum(primary_class == "GREY", na.rm = TRUE),
+    neutral_count = sum(primary_class == "NEUTRAL", na.rm = TRUE),
+    total_amount_billions = sum(amount_constant_usd_2021, na.rm = TRUE) / 1e9,
+    # Calculate percentages
+    pct_green = green_count / total_observations * 100,
+    pct_brown = brown_count / total_observations * 100,
+    pct_grey = grey_count / total_observations * 100,
+    pct_neutral = neutral_count / total_observations * 100,
+    # Flag mixed Green/Brown
+    has_green_and_brown = green_count > 0 & brown_count > 0,
+    # Flag uniform transactions (100% one type)
+    is_uniform = (green_count == total_observations) |
+                (brown_count == total_observations) |
+                (grey_count == total_observations) |
+                (neutral_count == total_observations),
+    # Determine dominant class
+    dominant_class = case_when(
+      green_count == brown_count & 
+        green_count == grey_count & 
+        green_count == neutral_count ~ "Equal Split",
+      green_count > brown_count & 
+        green_count > grey_count & 
+        green_count > neutral_count ~ "GREEN",
+      brown_count > green_count & 
+        brown_count > grey_count & 
+        brown_count > neutral_count ~ "BROWN",
+      grey_count > green_count & 
+        grey_count > brown_count & 
+        grey_count > neutral_count ~ "GREY",
+      neutral_count > green_count & 
+        neutral_count > brown_count & 
+        neutral_count > grey_count ~ "NEUTRAL",
+      TRUE ~ "Mixed (No Clear Dominant)"
+    )
+  ) |>
+  # Sort by total amount to see most significant transactions first
+  arrange(desc(total_amount_billions))
+
+```
+
+
+```{r}
+transaction_summary |> 
+  group_by(is_uniform) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  )
+```
+Most are the all one thing:  98.5% by project numbers and 93.4% by dollar value.  
+
+```{r}
+transaction_summary |> 
+  filter(has_green_and_brown)
+```
+Okay, there are only two projects that have both GREEN and BROWN in them, and they are very small. They both have a dominant class of NEUTRAL.  So let's just keep them that way. 
+
+
+
+```{r}
+mixed_by_dominant <- transaction_summary |>
+  filter(!is_uniform) |>
+  group_by(dominant_class) |>
+  summarise(
+    n_transactions = n(),
+    total_amount_billions = sum(total_amount_billions),
+    avg_observations = mean(total_observations)
+  )
+
+mixed_by_dominant
+```
+Let's look at mixed
+```{r}
+transaction_summary |> 
+  filter(dominant_class == "Mixed (No Clear Dominant)")
+```
+
+```{r}
+transaction_summary |> 
+  filter(green_count > 0) 
+```
+```{r}
+transaction_summary |> 
+  filter(green_count > 0) |> 
+  filter(brown_count > 0 )
+```
+Okay, again, these are the only two that have Green + Brown, and we're going to go with Neutral.
+
+
+```{r}
+transaction_summary |> 
+  filter(!is_uniform) |> 
+  filter(!has_green_and_brown) |> 
+  filter(green_count > 0) 
+```
+
+```{r}
+transaction_summary |> 
+  filter(!is_uniform) |> 
+  filter(!has_green_and_brown) |> 
+  filter(green_count > 0) |> 
+  ggplot(
+    aes(
+      pct_green
+    )
+  ) +
+  geom_histogram()
+```
+Okay, it seems pretty obvious we should include "Green dominant" transactions (that are not Brown).  But what about the others?  My sense is that we should add them because we are trying to get a sense of the financing ecosystem of green projects, and so long as we are clear about it in the paper, we should take an expansive view (contains a green project, excludes any that are also brown). But it will be useful to understand how consequential this is in terms of numbers of projects.
+
+```{r}
+transaction_summary |> 
+  filter(!is_uniform) |> 
+  filter(!has_green_and_brown) |> 
+  filter(green_count > 0) |> 
+  group_by(dominant_class) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  )
+```
+Okay, 87.5% (by dollar amount) of projects that have a green element in them, and are not "green dominant" are neutral dominant. I feel comfortable with saying green + neutral = green. Approx 10% where they are mixed.  None are brown because we've already excluded those two records.
+
+
+```{r}
+transaction_summary |> 
+  filter(!is_uniform) |> 
+  filter(!has_green_and_brown) |> 
+  filter(brown_count > 0) |> 
+  group_by(dominant_class) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  )
+```
+
+Same analysis by Brown. The distribution is more spread out between categories.  
+
+Nevertheless, I think we can feel comfortable saying that "Green" and "Brown" are going to be the "dominant" categories, given the usefulness of that to our analysis. 
+
+So here's the proposed rule:
+
+- if it is mixed, but there is a green project in the transaction, it is green.
+- if it is mixed, but there is a brown project in the transaction, it is brown.
+- if there are both green and brown, we are going with the dominant (only valid for 2 very small projects.)
+
+This rule is aimed at trying to identify the funding ecosystem for green and brown projects, so we think this makes sense. 
+
+
+
+```{r}
+transaction_summary |> 
+  filter(!has_green_and_brown) |> 
+  mutate(dominant_class_uniform = glue::glue(
+    "{dominant_class}-{is_uniform}"
+    )) |> 
+  filter(green_count > 0) |> 
+  group_by(dominant_class_uniform) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  ) |> 
+  arrange(
+    desc(sum_bn)
+  )
+```
+
+Okay, 84% of projects that would be considered green are "purely" green. 14% billion of what would be considered green are neutral/green.  The remaining 2% are Mixed or green dominant but not uniform.
+
+In general:  for the amount of green spending, we can aggregate by the aid data record ID.  We will use transactions for the network analysis.
+
+```{r}
+transaction_summary |> 
+  filter(!has_green_and_brown) |> 
+  mutate(dominant_class_uniform = glue::glue(
+    "{dominant_class}-{is_uniform}"
+    )) |> 
+  filter(brown_count > 0) |> 
+  group_by(dominant_class_uniform) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  ) |> 
+  arrange(
+    desc(sum_bn)
+  )
+```
+
+90% of brown transactions are uniformly brown.
+
+
+```{r}
+classified_transactions <- transaction_summary |>
+  mutate(
+    transaction_class = case_when(
+      # Rule 1: If has both green and brown, use dominant class
+      has_green_and_brown ~ dominant_class,
+      # Rule 2: If has green (but no brown), mark as Green
+      green_count > 0 ~ "GREEN",
+      # Rule 3: If has brown (but no green), mark as Brown
+      brown_count > 0 ~ "BROWN",
+      # Rule 4: Otherwise use dominant class
+      .default = dominant_class
+    )
+  )
+
+classified_transactions
+```
+
+```{r}
+classified_transactions |> 
+  group_by(transaction_class) |> 
+  summarize(
+    n = n(),
+    sum_bn = sum(total_amount_billions, na.rm = TRUE)
+  ) |> 
+  mutate(
+    sum_n = sum(n),
+    sum_amount = sum(sum_bn),
+    n_pct = n/sum_n * 100,
+    usd_pct = sum_bn/sum_amount * 100
+  ) |> 
+  arrange(
+    desc(sum_bn)
+  )
+```
+48% Neutral, 38% Brown, 7.3% Grey, 6.6% Green 
+
+
+```{r}
+classified_transactions
+```
+
+```{r}
+transaction_class_for_join <- classified_transactions |> 
+  select(
+    transaction_id,
+    transaction_primary_class = transaction_class
+    )
+
+transaction_class_for_join
+```
+
+# Saving Transaction Classifications
+
+```{r}
+write_csv(
+  classified_transactions,
+  here(
+    "data",
+    "transaction_classification",
+    "transaction_classification_w_details.csv"
+  )
+)
+```
+
+
+```{r}
+write_csv(
+  transaction_class_for_join,
+  here(
+    "data",
+    "transaction_classification",
+    "transaction_classification_for_join.csv"
+  )
+)
+```
+
+
+```{r}
+gcdf_w_green_transactions <- gcdf_with_green |> 
+  left_join(
+    transaction_class_for_join,
+    by = join_by(transaction_id)
+            )
+
+gcdf_w_green_transactions 
+```
+
+
+```{r}
+write_rds(
+  gcdf_w_green_transactions,
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  ),
+  compress = "xz"
+)
+```
+
+
