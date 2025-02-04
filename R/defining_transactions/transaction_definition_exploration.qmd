@@ -514,3 +514,69 @@ classified_transactions |>
   )
 ```
 48% Neutral, 38% Brown, 7.3% Grey, 6.6% Green 
+
+
+```{r}
+classified_transactions
+```
+
+```{r}
+transaction_class_for_join <- classified_transactions |> 
+  select(
+    transaction_id,
+    transaction_primary_class = transaction_class
+    )
+
+transaction_class_for_join
+```
+
+# Saving Transaction Classifications
+
+```{r}
+write_csv(
+  classified_transactions,
+  here(
+    "data",
+    "transaction_classification",
+    "transaction_classification_w_details.csv"
+  )
+)
+```
+
+
+```{r}
+write_csv(
+  transaction_class_for_join,
+  here(
+    "data",
+    "transaction_classification",
+    "transaction_classification_for_join.csv"
+  )
+)
+```
+
+
+```{r}
+gcdf_w_green_transactions <- gcdf_with_green |> 
+  left_join(
+    transaction_class_for_join,
+    by = join_by(transaction_id)
+            )
+
+gcdf_w_green_transactions 
+```
+
+
+```{r}
+write_rds(
+  gcdf_w_green_transactions,
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  ),
+  compress = "xz"
+)
+```
+
+
