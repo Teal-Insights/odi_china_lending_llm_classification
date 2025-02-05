@@ -1,0 +1,129 @@
+---
+title: "Social Network Analysis - Exploration"
+author: "Teal Emery"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+
+```{r}
+sna_data_nested <- read_rds(
+  here(
+  "data",
+  "social_network_analysis",
+  "data_for_social_network_analysis.rds"
+  )
+)
+
+sna_data_nested
+```
+
+```{r}
+sna_data <- sna_data_nested |> 
+  unnest(unique_lenders)
+
+sna_data |> glimpse()
+```
+
+```{r}
+sna_data |> 
+  count(
+    standardized_lender_name,
+    sort = TRUE
+  )
+```
+
+```{r}
+sna_data |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  )
+```
+
+
+```{r}
+sna_data |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  ) |> 
+  mutate(
+    lender_type = str_remove(
+      standardized_lender_type,
+      pattern = "Other |Chinese "
+    )
+  ) |> 
+  select(lender_type) |> 
+  unique() |> 
+  arrange(lender_type) |> 
+  pull()
+```
+
+```{r}
+unique_other_lenders_and_types <- sna_data |> 
+  select(
+    contains("standardized_lender"),
+    lender_geography_type
+  ) |> 
+  unique() |> 
+  filter(
+    lender_geography_type != "Chinese"
+    #standardized_lender_type != "Other Private Sector"
+  ) |> 
+  arrange(standardized_lender_type)
+
+unique_other_lenders_and_types
+```
+
+Other Government Agency
+Other Intergovernmental Organization
+Other State-owned Fund 
+
+```{r}
+unique_other_lenders_and_types |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  )
+```
+
+```{r}
+chinese_lenders <- sna_data |> 
+  select(
+    contains("standardized_lender"),
+    lender_geography_type
+  ) |> 
+  filter(
+    lender_geography_type == "Chinese"
+  ) |> 
+  arrange(standardized_lender_type)
+
+chinese_lenders
+```
+
+
+
+```{r}
+chinese_lenders |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  )
+```
+
+```{r}
+chinese_lenders |> 
+  filter(
+    standardized_lender_type == "Chinese Government Agency"
+  ) |> 
+  count(
+    standardized_lender_name,
+    sort = TRUE
+  )
+```
+
