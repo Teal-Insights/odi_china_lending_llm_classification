@@ -66,6 +66,7 @@ cofinanced_loans_unique_lenders
 
 
 Process our unique lenders for the social network analysis:
+
 ```{r}
 processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
   
@@ -84,31 +85,34 @@ processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
   mutate(lender_core_type = str_remove(
     standardized_lender_type, 
     "^(Chinese |Other )"
-   )
-  ) |>
+  )) |>
   
-  # Step 3: Define lender profit orientation.
+  # Step 3: Define lender profit orientation with the refined rules.
   # Classify each lender into one of three groups:
-  #   - Profit Maximizing: Commercial lenders (i.e., "Private Sector").
-  #   - Mixed Mandate: State-owned or joint venture entities that blend commercial and policy roles.
-  #   - Policy Driven: Institutions with a clear focus on policy/development (e.g., policy banks, government agencies, MDBs).
+  #   - Profit Maximizing: Lenders that are purely commercial (i.e., "Private Sector").
+  #   - Mixed Mandate: Narrowly defined as only "State‑owned Commercial Bank" and 
+  #                  "Joint Venture/Special Purpose Vehicle".
+  #   - Policy Driven: All other state‑owned or policy‑oriented institutions,
+  #                    including "State‑owned Bank", "State‑owned Policy Bank", "Government Agency",
+  #                    "Intergovernmental Organization", "State‑owned Company", "State‑owned Fund",
+  #                    "Miscellaneous Agency Type", and "NGO/CSO/Foundation".
   mutate(lender_profit_orientation = case_when(
     lender_core_type == "Private Sector" ~ "Profit Maximizing",
     lender_core_type %in% c(
-      "State-owned Bank", 
       "State-owned Commercial Bank", 
-      "State-owned Company", 
       "Joint Venture/Special Purpose Vehicle"
     ) ~ "Mixed Mandate",
     lender_core_type %in% c(
+      "State-owned Bank", 
       "State-owned Policy Bank", 
-      "Intergovernmental Organization", 
       "Government Agency", 
-      "Miscellaneous Agency Type", 
+      "Intergovernmental Organization", 
+      "State-owned Company",      # Added missing category here.
       "State-owned Fund", 
+      "Miscellaneous Agency Type", 
       "NGO/CSO/Foundation"
     ) ~ "Policy Driven",
-    .default =  "Fix this"  # In case any unexpected values appear
+    .default = "Fix this"  # In case any unexpected values appear
   )) |>
   
   # Reorder/select columns for clarity.
@@ -116,15 +120,16 @@ processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
     transaction_id,
     standardized_lender_name,
     standardized_lender_type,
-    lender_geography,          # newly created: "Chinese" or "Non-Chinese"
-    lender_core_type,          # institutional type without geographic prefix
+    lender_geography,          # "Chinese" or "Non-Chinese"
+    lender_core_type,          # Institutional type without geographic prefix
     lender_profit_orientation  # "Profit Maximizing", "Mixed Mandate", or "Policy Driven"
   ) |> 
   unique()
 
-# Display the structure of the processed data for verification
+# Display the structure of the processed data for verification.
 glimpse(processed_cofinanced_loans)
 ```
+
 Test that nothing was missed in the processing.
 
 Should be: Chinese/Non-Chinese
@@ -142,6 +147,14 @@ Should not have: "Fix this"
 processed_cofinanced_loans$lender_profit_orientation |> unique()
 ```
 
+
+```{r}
+processed_cofinanced_loans |> 
+  filter(
+    lender_profit_orientation == "Fix this"
+  ) |> 
+  unique()
+```
 
 
 

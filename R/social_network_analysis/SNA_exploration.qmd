@@ -50,6 +50,9 @@ data_for_sna |>
   )
 ```
 
+
+
+
 # SNA Trial
 
 ## Build Cofinancing Network
@@ -163,39 +166,62 @@ build_cofinancing_network <- function(data, transaction_class = NULL, top_n = 50
 
 plot_network <- function(graph, title = "Co-Financing Network") {
   
-  # Define color mapping for lender_geography.
-  color_values <- c("Chinese" = "red", "Non-Chinese" = "blue")
+  # Modify nodes: create a combined label for coloring.
+  # Chinese lenders are labeled "Chinese" while Non-Chinese lenders
+  # are labeled with their profit orientation.
+  graph <- graph %>%
+    activate(nodes) %>%
+    mutate(
+      lender_color_label = if_else(
+        lender_geography == "Chinese",
+        "Chinese",
+        paste0("Non-Chinese: ", lender_profit_orientation)
+      )
+    )
   
-  # Define shape mapping for lender_profit_orientation.
+  # Define custom color mappings:
+  color_values <- c(
+    "Chinese" = "red",
+    "Non-Chinese: Profit Maximizing" = "dodgerblue",
+    "Non-Chinese: Mixed Mandate"     = "mediumorchid",
+    "Non-Chinese: Policy Driven"     = "forestgreen"
+  )
+  
+  # Define shape mapping for profit orientation.
   shape_values <- c(
     "Profit Maximizing" = 16,  # circle
     "Mixed Mandate"     = 17,  # triangle
     "Policy Driven"     = 18,  # diamond
-    "Uncategorized"     = 15   # fallback shape (square) for any unexpected values
+    "Uncategorized"     = 15   # fallback shape (square)
   )
   
-  # Create the network plot using a force-directed layout ("fr")
+  # Create the network plot using a force-directed layout ("fr").
   p <- ggraph(graph, layout = "fr") +
-    # Draw edges with width proportional to the number of collaborations
+    # Draw edges with width proportional to the number of collaborations.
     geom_edge_link(aes(width = weight), color = "gray", alpha = 0.5) +
-    # Draw nodes with color, shape, and size according to their attributes
-    geom_node_point(aes(color = lender_geography, 
+    # Draw nodes: color by lender_color_label, shape by profit orientation, and size by degree.
+    geom_node_point(aes(color = lender_color_label, 
                         shape = lender_profit_orientation, 
-                        size  = degree)) +
-    # Attach node labels that repel each other to reduce overlap.
-    # This uses ggraph's integration with ggrepel.
+                        size = degree)) +
+    # Add repelled text labels for each node.
     geom_node_text(aes(label = standardized_lender_name), 
                    repel = TRUE, 
                    size = 3, 
                    vjust = 1.5) +
+    # Apply manual scales.
     scale_color_manual(values = color_values) +
     scale_shape_manual(values = shape_values) +
-    theme_minimal() +
     labs(
       title = title,
-      color = "Lender Geography",
+      color = "Lender (Geography & Profit Orientation)",
       shape = "Profit Orientation",
       size  = "Degree"
+    ) +
+    # Remove axes, grid lines, and background for a clean network visualization.
+    theme_void() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "right"
     )
   
   return(p)
@@ -212,14 +238,14 @@ plot_network <- function(graph, title = "Co-Financing Network") {
 # 3. Generate and display the corresponding network plots.
 # ------------------------------------------------------------------------------
 # Overall co-financing network
-network_overall <- build_cofinancing_network(data_for_sna, top_n = 50, min_collabs = 2)
+network_overall <- build_cofinancing_network(data_for_sna, top_n = 25, min_collabs = 1)
 p_overall <- plot_network(network_overall, title = "Overall Co-Financing Network")
 print(p_overall)
 ```
 
 ```{r}
 # Co-financing network for GREEN transactions only
-network_green <- build_cofinancing_network(data_for_sna, transaction_class = "GREEN", top_n = 50, min_collabs = 2)
+network_green <- build_cofinancing_network(data_for_sna, transaction_class = "GREEN", top_n = 25, min_collabs = 1)
 p_green <- plot_network(network_green, title = "Green Projects Co-Financing Network")
 print(p_green)
 ```
