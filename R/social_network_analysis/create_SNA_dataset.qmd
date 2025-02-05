@@ -143,36 +143,6 @@ processed_cofinanced_loans$lender_profit_orientation |> unique()
 
 
 
-```{r}
-cofinanced_loans_unique_lenders <- gcdf_cofinanced_loans |> 
-  select(
-    transaction_id,
-    standardized_lenders
-  ) |> 
-  unnest(
-    standardized_lenders
-  ) |> 
-  # Standardize to "Chinese" and "Other", to avoid double counting entities
-  # classified as "Recipient" and "Other" in different transactions.
-  mutate(
-    lender_geography_type = case_when(
-      lender_geography_type == "Recipient" ~ "Other",
-      .default = lender_geography_type
-    )
-  ) |>
-  # take out original names & classifications
-  # to avoid double counding
-  select(
-    -contains("original_")
-  ) |> 
-  unique() |> 
-  group_by(transaction_id) |> 
-  nest(.key = "unique_lenders") |> 
-  ungroup()
-  
-cofinanced_loans_unique_lenders 
-```
-
 
 ```{r}
 transaction_features <- gcdf_cofinanced_loans |>
@@ -188,6 +158,12 @@ transaction_features <- gcdf_cofinanced_loans |>
     involving_multilateral = case_when(
       # One of two record IDs is "Yes", so we set "Yes" to the entire transaction.
       transaction_id == "Maamba Collieries Ltd. (MCL)-Zambia-2015-07-28" ~ "Yes"
+    ), 
+    # transform to Yes/No
+    involving_multilateral = case_when(
+      is.na(involving_multilateral) ~ "No",
+      involving_multilateral == "Yes" ~ "Yes",
+      .default = NA
     )
   ) |> 
   unique()
@@ -195,22 +171,21 @@ transaction_features <- gcdf_cofinanced_loans |>
 transaction_features 
 ```
 
-
+should be zero
 ```{r}
 transaction_features |> 
-  group_by(transaction_id) |> 
-  mutate(n = n()) |> 
-  ungroup() |> 
   filter(
-    n > 1
+    is.na(involving_multilateral)
   )
 ```
 
 
 
-
 ```{r}
-data_for_sna <- cofinanced_loans_unique_lenders |> 
+data_for_sna <- processed_cofinanced_loans |> 
+  group_by(transaction_id) |> 
+  nest(.key = "unique_lenders") |> 
+  ungroup() |> 
   left_join(
     transaction_features,
     by = join_by(transaction_id)
