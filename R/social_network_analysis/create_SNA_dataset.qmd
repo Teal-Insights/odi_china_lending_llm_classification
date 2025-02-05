@@ -119,7 +119,8 @@ processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
     lender_geography,          # newly created: "Chinese" or "Non-Chinese"
     lender_core_type,          # institutional type without geographic prefix
     lender_profit_orientation  # "Profit Maximizing", "Mixed Mandate", or "Policy Driven"
-  )
+  ) |> 
+  unique()
 
 # Display the structure of the processed data for verification
 glimpse(processed_cofinanced_loans)

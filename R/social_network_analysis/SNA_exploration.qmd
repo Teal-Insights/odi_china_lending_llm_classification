@@ -5,8 +5,12 @@ format: html
 ---
 
 ```{r}
-library(tidyverse)
-library(here)
+# Load required libraries
+library(tidyverse)   # For data manipulation
+library(tidygraph)   # For network objects and centrality measures
+library(ggraph)      # For network visualizations
+library(here)        # Relative paths
+library(ggrepel)     # Repelled text labels
 ```
 
 
@@ -23,14 +27,15 @@ sna_data_nested
 ```
 
 ```{r}
-sna_data <- sna_data_nested |> 
-  unnest(unique_lenders)
+data_for_sna <- sna_data_nested |> 
+  unnest(unique_lenders) |> 
+  unique()
 
-sna_data |> glimpse()
+data_for_sna |> glimpse()
 ```
 
 ```{r}
-sna_data |> 
+data_for_sna |> 
   count(
     standardized_lender_name,
     sort = TRUE
@@ -38,92 +43,206 @@ sna_data |>
 ```
 
 ```{r}
-sna_data |> 
+data_for_sna |> 
   count(
     standardized_lender_type,
     sort = TRUE
   )
 ```
 
+# SNA Trial
+
+## Build Cofinancing Network
 
 ```{r}
-sna_data |> 
-  count(
-    standardized_lender_type,
-    sort = TRUE
-  ) |> 
-  mutate(
-    lender_type = str_remove(
-      standardized_lender_type,
-      pattern = "Other |Chinese "
+# ------------------------------------------------------------------------------
+# Function: build_cofinancing_network
+#
+# This function constructs a co-financing network graph from the dataset.
+#
+# Arguments:
+#   data              - The processed dataset.
+#   transaction_class - (Optional) Filter to a specific transaction type (e.g., "GREEN").
+#   top_n             - The number of top nodes (by degree) to retain.
+#   min_collabs       - The minimum number of collaborations required to keep an edge.
+#
+# Returns:
+#   A tidygraph object with nodes (lenders) and edges (co-financing relationships),
+#   including computed centrality measures.
+# ------------------------------------------------------------------------------
+build_cofinancing_network <- function(data, transaction_class = NULL, top_n = 50, min_collabs = 2) {
+  
+  # Optionally filter the data to a specific transaction class (e.g., "GREEN")
+  if (!is.null(transaction_class)) {
+    data <- data %>% filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create the edge list:
+  #   - First, select the unique lender per transaction.
+  #   - Then, filter out transactions with fewer than 2 lenders.
+  #   - Next, for each transaction, list all unique pairs of lenders.
+  #   - Count the number of transactions (collaborations) between each pair.
+  edges <- data %>%
+    select(transaction_id, standardized_lender_name) %>%
+    distinct() %>%
+    group_by(transaction_id) %>%
+    # Only consider transactions with at least 2 lenders
+    filter(n() >= 2) %>%
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) %>%
+    unnest(pairs) %>%
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) %>%
+    select(from, to) %>%
+    # Ensure that the edge is undirected by sorting the lender names alphabetically
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) %>%
+    group_by(from, to) %>%
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build the nodes data by extracting unique lenders and their attributes.
+  nodes <- data %>%
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create a tidygraph object (an undirected network)
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures (degree, betweenness, and closeness)
+  graph <- graph %>%
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness()
     )
-  ) |> 
-  select(lender_type) |> 
-  unique() |> 
-  arrange(lender_type) |> 
-  pull()
+  
+  # Filter the network to only include the top_n lenders (by degree)
+  node_data <- graph %>% activate(nodes) %>% as_tibble()
+  top_lenders <- node_data %>%
+    arrange(desc(degree)) %>%
+    slice_head(n = top_n)
+  
+  graph_filtered <- graph %>%
+    activate(nodes) %>%
+    filter(standardized_lender_name %in% top_lenders$standardized_lender_name) %>%
+    convert(to_subgraph)
+  
+  # Filter out edges that do not meet the minimum collaboration threshold
+  graph_filtered <- graph_filtered %>%
+    activate(edges) %>%
+    filter(weight >= min_collabs) %>%
+    convert(to_subgraph)
+  
+  return(graph_filtered)
+}
 ```
 
-```{r}
-unique_other_lenders_and_types <- sna_data |> 
-  select(
-    contains("standardized_lender"),
-    lender_geography_type
-  ) |> 
-  unique() |> 
-  filter(
-    lender_geography_type != "Chinese"
-    #standardized_lender_type != "Other Private Sector"
-  ) |> 
-  arrange(standardized_lender_type)
 
-unique_other_lenders_and_types
-```
-
-Other Government Agency
-Other Intergovernmental Organization
-Other State-owned Fund 
 
 ```{r}
-unique_other_lenders_and_types |> 
-  count(
-    standardized_lender_type,
-    sort = TRUE
+# ------------------------------------------------------------------------------
+# Function: plot_network
+#
+# This function visualizes a tidygraph network object.
+#
+# Node Aesthetics:
+#   - Color: mapped to lender_geography ("Chinese" in red, "Non-Chinese" in blue)
+#   - Shape: mapped to lender_profit_orientation (e.g., circles for Profit Maximizing,
+#            triangles for Mixed Mandate, diamonds for Policy Driven)
+#   - Size: scaled by degree centrality.
+#
+# Edge Aesthetics:
+#   - Width: proportional to the number of collaborations (weight).
+#
+# ------------------------------------------------------------------------------
+
+plot_network <- function(graph, title = "Co-Financing Network") {
+  
+  # Define color mapping for lender_geography.
+  color_values <- c("Chinese" = "red", "Non-Chinese" = "blue")
+  
+  # Define shape mapping for lender_profit_orientation.
+  shape_values <- c(
+    "Profit Maximizing" = 16,  # circle
+    "Mixed Mandate"     = 17,  # triangle
+    "Policy Driven"     = 18,  # diamond
+    "Uncategorized"     = 15   # fallback shape (square) for any unexpected values
   )
+  
+  # Create the network plot using a force-directed layout ("fr")
+  p <- ggraph(graph, layout = "fr") +
+    # Draw edges with width proportional to the number of collaborations
+    geom_edge_link(aes(width = weight), color = "gray", alpha = 0.5) +
+    # Draw nodes with color, shape, and size according to their attributes
+    geom_node_point(aes(color = lender_geography, 
+                        shape = lender_profit_orientation, 
+                        size  = degree)) +
+    # Attach node labels that repel each other to reduce overlap.
+    # This uses ggraph's integration with ggrepel.
+    geom_node_text(aes(label = standardized_lender_name), 
+                   repel = TRUE, 
+                   size = 3, 
+                   vjust = 1.5) +
+    scale_color_manual(values = color_values) +
+    scale_shape_manual(values = shape_values) +
+    theme_minimal() +
+    labs(
+      title = title,
+      color = "Lender Geography",
+      shape = "Profit Orientation",
+      size  = "Degree"
+    )
+  
+  return(p)
+}
+```
+
+
+```{r}
+# ------------------------------------------------------------------------------
+# Example Usage
+#
+# 1. Build the network for overall transactions.
+# 2. Build the network for green transactions only.
+# 3. Generate and display the corresponding network plots.
+# ------------------------------------------------------------------------------
+# Overall co-financing network
+network_overall <- build_cofinancing_network(data_for_sna, top_n = 50, min_collabs = 2)
+p_overall <- plot_network(network_overall, title = "Overall Co-Financing Network")
+print(p_overall)
 ```
 
 ```{r}
-chinese_lenders <- sna_data |> 
-  select(
-    contains("standardized_lender"),
-    lender_geography_type
-  ) |> 
-  filter(
-    lender_geography_type == "Chinese"
-  ) |> 
-  arrange(standardized_lender_type)
-
-chinese_lenders
+# Co-financing network for GREEN transactions only
+network_green <- build_cofinancing_network(data_for_sna, transaction_class = "GREEN", top_n = 50, min_collabs = 2)
+p_green <- plot_network(network_green, title = "Green Projects Co-Financing Network")
+print(p_green)
 ```
 
 
 
-```{r}
-chinese_lenders |> 
-  count(
-    standardized_lender_type,
-    sort = TRUE
-  )
-```
 
 ```{r}
-chinese_lenders |> 
-  filter(
-    standardized_lender_type == "Chinese Government Agency"
-  ) |> 
-  count(
-    standardized_lender_name,
-    sort = TRUE
-  )
+
+
+
+# ------------------------------------------------------------------------------
+# Extract Centrality Measures for Further Quantitative Analysis
+#
+# These tibbles can be used to compare the overall network with the green sub-network.
+# ------------------------------------------------------------------------------
+centrality_overall <- network_overall |> activate(nodes) |> as_tibble() |> arrange(desc(degree))
+centrality_green   <- network_green   |> activate(nodes) |> as_tibble() |> arrange(desc(degree))
+
+# Optionally, write outputs to files
+# ggsave("outputs/overall_network.png", p_overall, width = 10, height = 8)
+# ggsave("outputs/green_network.png", p_green, width = 10, height = 8)
+# write_csv(centrality_overall, "outputs/centrality_overall.csv")
+# write_csv(centrality_green, "outputs/centrality_green.csv")
 ```
 
