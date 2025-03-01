@@ -580,3 +580,21 @@ write_rds(
 ```
 
 
+```{r}
+gcdf_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+
+gcdf_data
+```
+
+
+```{r}
+
+```
+
+

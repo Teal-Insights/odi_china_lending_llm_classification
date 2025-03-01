@@ -107,7 +107,7 @@ processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
       "State-owned Policy Bank", 
       "Government Agency", 
       "Intergovernmental Organization", 
-      "State-owned Company",      # Added missing category here.
+      "State-owned Company",       
       "State-owned Fund", 
       "Miscellaneous Agency Type", 
       "NGO/CSO/Foundation"
