@@ -280,6 +280,82 @@ p_green <- plot_network(network_green, title = "Green Projects Co-Financing Netw
 print(p_green)
 ```
 
+```{r}
+data_for_sna |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+
+```{r}
+data_for_sna |> 
+  filter(
+    standardized_lender_name == "People's Bank of China"
+  ) |> 
+  count(transaction_primary_class, sort = TRUE)
+```
+
+```{r}
+green_data_for_sna <- data_for_sna |> 
+  filter(
+    transaction_primary_class == "GREEN"
+  )
+
+green_data_for_sna
+```
+```{r}
+data_for_sna |> glimpse()
+```
+
+
+
+```{r}
+includes_pboc <- green_data_for_sna |> 
+  filter(standardized_lender_name == "People's Bank of China") |> 
+  select(transaction_id)
+
+includes_pboc |> 
+  left_join(green_data_for_sna) |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+```{r}
+includes_pboc |> 
+  left_join(green_data_for_sna) |> 
+  filter(standardized_lender_name != "People's Bank of China") |> 
+  group_by(transaction_id) |> 
+  summarize(
+    n = n()
+  )
+```
+
+
+```{r}
+green_data_for_sna |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+```{r}
+write_excel_csv(green_data_for_sna, "green_data_for_sna.csv")
+```
+
+```{r}
+green_data_for_sna_1 <- green_data_for_sna |> 
+  mutate(
+    standardized_lender_name = case_when(
+      standardized_lender_name == "People's Bank of China" ~ "PBoC",
+      standardized_lender_name == "Inter-American Development Bank" ~ "Inter American Development Bank",
+      .default = standardized_lender_name
+    )
+  )
+
+green_data_for_sna_1
+```
+
+
+
+```{r}
+# Co-financing network for GREEN transactions only
+network_green <- build_cofinancing_network(green_data_for_sna_1, top_n = 20, min_collabs = 1)
+p_green <- plot_network(network_green, title = "Green Projects Co-Financing Network")
+print(p_green)
+```
 
 ## Policy Driven Lenders SNA
 
