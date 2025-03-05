@@ -1,0 +1,1287 @@
+---
+title: "Social Network Analysis - Exploration"
+author: "Teal Emery"
+format: html
+---
+
+```{r}
+# Load required libraries
+library(tidyverse)   # For data manipulation
+library(tidygraph)   # For network objects and centrality measures
+library(ggraph)      # For network visualizations
+library(here)        # Relative paths
+library(ggrepel)     # Repelled text labels
+library(igraph)
+library(tealviz)
+
+options(scipen = 999)
+```
+
+
+```{r}
+sna_data_nested <- read_rds(
+  here(
+  "data",
+  "social_network_analysis",
+  "data_for_social_network_analysis.rds"
+  )
+)
+
+sna_data_nested
+```
+
+```{r}
+data_for_sna <- sna_data_nested |> 
+  unnest(unique_lenders) |> 
+  unique()
+
+data_for_sna |> glimpse()
+```
+
+```{r}
+data_for_sna |> 
+  count(
+    standardized_lender_name,
+    sort = TRUE
+  )
+```
+
+```{r}
+data_for_sna |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  )
+```
+
+```{r}
+data_for_sna |> 
+  select(
+    standardized_lender_name:lender_profit_orientation
+  ) |> 
+  unique() |> 
+  filter(
+    standardized_lender_name %in% c(
+      "Proparco",
+      "KfW",
+      "CDC"
+    )
+  )
+```
+
+```{r}
+data_for_sna |> 
+  select(
+    standardized_lender_name:lender_profit_orientation
+  ) |> 
+  unique() |> 
+  filter(
+    standardized_lender_type == "Other State-owned Bank"
+  ) |> 
+  pull(standardized_lender_name)
+```
+
+
+
+# SNA Trial
+
+## Build Cofinancing Network
+
+```{r}
+# ------------------------------------------------------------------------------
+# Function: build_cofinancing_network
+#
+# This function constructs a co-financing network graph from the dataset.
+#
+# Arguments:
+#   data              - The processed dataset.
+#   transaction_class - (Optional) Filter to a specific transaction type (e.g., "GREEN").
+#   top_n             - The number of top nodes (by degree) to retain.
+#   min_collabs       - The minimum number of collaborations required to keep an edge.
+#
+# Returns:
+#   A tidygraph object with nodes (lenders) and edges (co-financing relationships),
+#   including computed centrality measures.
+# ------------------------------------------------------------------------------
+build_cofinancing_network <- function(data, transaction_class = NULL, top_n = 50, min_collabs = 2) {
+  
+  # Optionally filter the data to a specific transaction class (e.g., "GREEN")
+  if (!is.null(transaction_class)) {
+    data <- data %>% filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create the edge list:
+  #   - First, select the unique lender per transaction.
+  #   - Then, filter out transactions with fewer than 2 lenders.
+  #   - Next, for each transaction, list all unique pairs of lenders.
+  #   - Count the number of transactions (collaborations) between each pair.
+  edges <- data %>%
+    select(transaction_id, standardized_lender_name) %>%
+    distinct() %>%
+    group_by(transaction_id) %>%
+    # Only consider transactions with at least 2 lenders
+    filter(n() >= 2) %>%
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) %>%
+    unnest(pairs) %>%
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) %>%
+    select(from, to) %>%
+    # Ensure that the edge is undirected by sorting the lender names alphabetically
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) %>%
+    group_by(from, to) %>%
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build the nodes data by extracting unique lenders and their attributes.
+  nodes <- data %>%
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create a tidygraph object (an undirected network)
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures (degree, betweenness, and closeness)
+  graph <- graph %>%
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness()
+    )
+  
+  # Filter the network to only include the top_n lenders (by degree)
+  node_data <- graph %>% activate(nodes) %>% as_tibble()
+  top_lenders <- node_data %>%
+    arrange(desc(degree)) %>%
+    slice_head(n = top_n)
+  
+  graph_filtered <- graph %>%
+    activate(nodes) %>%
+    filter(standardized_lender_name %in% top_lenders$standardized_lender_name) %>%
+    convert(to_subgraph)
+  
+  # Filter out edges that do not meet the minimum collaboration threshold
+  graph_filtered <- graph_filtered %>%
+    activate(edges) %>%
+    filter(weight >= min_collabs) %>%
+    convert(to_subgraph)
+  
+  return(graph_filtered)
+}
+```
+
+
+
+```{r}
+# ------------------------------------------------------------------------------
+# Function: plot_network
+#
+# This function visualizes a tidygraph network object.
+#
+# Node Aesthetics:
+#   - Color: mapped to lender_geography ("Chinese" in red, "Non-Chinese" in blue)
+#   - Shape: mapped to lender_profit_orientation (e.g., circles for Profit Maximizing,
+#            triangles for Mixed Mandate, diamonds for Policy Driven)
+#   - Size: scaled by degree centrality.
+#
+# Edge Aesthetics:
+#   - Width: proportional to the number of collaborations (weight).
+#
+# ------------------------------------------------------------------------------
+
+plot_network <- function(graph, title = "Co-Financing Network") {
+  
+  # Modify nodes: create a combined label for coloring.
+  # Chinese lenders are labeled "Chinese" while Non-Chinese lenders
+  # are labeled with their profit orientation.
+  graph <- graph %>%
+    activate(nodes) %>%
+    mutate(
+      lender_color_label = if_else(
+        lender_geography == "Chinese",
+        "Chinese",
+        paste0("Non-Chinese: ", lender_profit_orientation)
+      )
+    )
+  
+  # Define custom color mappings:
+  color_values <- c(
+    "Chinese" = "red",
+    "Non-Chinese: Profit Maximizing" = "dodgerblue",
+    "Non-Chinese: Mixed Mandate"     = "mediumorchid",
+    "Non-Chinese: Policy Driven"     = "forestgreen"
+  )
+  
+  # Define shape mapping for profit orientation.
+  shape_values <- c(
+    "Profit Maximizing" = 16,  # circle
+    "Mixed Mandate"     = 17,  # triangle
+    "Policy Driven"     = 18,  # diamond
+    "Uncategorized"     = 15   # fallback shape (square)
+  )
+  
+  # Create the network plot using a force-directed layout ("fr").
+  p <- ggraph(graph, layout = "fr") +
+    # Draw edges with width proportional to the number of collaborations.
+    geom_edge_link(aes(width = weight), color = "gray", alpha = 0.5) +
+    # Draw nodes: color by lender_color_label, shape by profit orientation, and size by degree.
+    geom_node_point(aes(color = lender_color_label, 
+                        shape = lender_profit_orientation, 
+                        size = degree)) +
+    # Add repelled text labels for each node.
+    geom_node_text(aes(label = standardized_lender_name), 
+                   repel = TRUE, 
+                   size = 3, 
+                   vjust = 1.5) +
+    # Apply manual scales.
+    scale_color_manual(values = color_values) +
+    scale_shape_manual(values = shape_values) +
+    labs(
+      title = title,
+      color = "Lender (Geography & Profit Orientation)",
+      shape = "Profit Orientation",
+      size  = "Degree"
+    ) +
+    # Remove axes, grid lines, and background for a clean network visualization.
+    theme_void() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "right"
+    )
+  
+  return(p)
+}
+```
+
+
+```{r}
+# ------------------------------------------------------------------------------
+# Example Usage
+#
+# 1. Build the network for overall transactions.
+# 2. Build the network for green transactions only.
+# 3. Generate and display the corresponding network plots.
+# ------------------------------------------------------------------------------
+# Overall co-financing network
+network_overall <- build_cofinancing_network(data_for_sna, top_n = 20, min_collabs = 1)
+p_overall <- plot_network(network_overall, title = "Overall Co-Financing Network")
+print(p_overall)
+```
+
+```{r}
+# Co-financing network for GREEN transactions only
+network_green <- build_cofinancing_network(data_for_sna, transaction_class = "GREEN", top_n = 20, min_collabs = 1)
+p_green <- plot_network(network_green, title = "Green Projects Co-Financing Network")
+print(p_green)
+```
+
+```{r}
+data_for_sna |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+
+```{r}
+data_for_sna |> 
+  filter(
+    standardized_lender_name == "People's Bank of China"
+  ) |> 
+  count(transaction_primary_class, sort = TRUE)
+```
+
+```{r}
+green_data_for_sna <- data_for_sna |> 
+  filter(
+    transaction_primary_class == "GREEN"
+  )
+
+green_data_for_sna
+```
+```{r}
+data_for_sna |> glimpse()
+```
+
+
+
+```{r}
+includes_pboc <- green_data_for_sna |> 
+  filter(standardized_lender_name == "People's Bank of China") |> 
+  select(transaction_id)
+
+includes_pboc |> 
+  left_join(green_data_for_sna) |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+```{r}
+includes_pboc |> 
+  left_join(green_data_for_sna) |> 
+  filter(standardized_lender_name != "People's Bank of China") |> 
+  group_by(transaction_id) |> 
+  summarize(
+    n = n()
+  )
+```
+
+
+```{r}
+green_data_for_sna |> 
+  count(standardized_lender_name, sort = TRUE)
+```
+```{r}
+write_excel_csv(green_data_for_sna, "green_data_for_sna.csv")
+```
+
+```{r}
+green_data_for_sna_1 <- green_data_for_sna |> 
+  mutate(
+    standardized_lender_name = case_when(
+      standardized_lender_name == "People's Bank of China" ~ "PBoC",
+      standardized_lender_name == "Inter-American Development Bank" ~ "Inter American Development Bank",
+      .default = standardized_lender_name
+    )
+  )
+
+green_data_for_sna_1
+```
+
+
+
+```{r}
+# Co-financing network for GREEN transactions only
+network_green <- build_cofinancing_network(green_data_for_sna_1, top_n = 20, min_collabs = 1)
+p_green <- plot_network(network_green, title = "Green Projects Co-Financing Network")
+print(p_green)
+```
+
+## Policy Driven Lenders SNA
+
+```{r}
+data_for_sna |> 
+  mutate(
+    lender_geography_orientation = paste0(lender_geography, "_", lender_profit_orientation)
+  ) |> 
+  filter(
+    lender_geography_orientation == "Non-Chinese_Policy Driven"
+  ) |> 
+  select(
+    standardized_lender_type
+  ) |> 
+  unique()
+```
+
+
+
+
+
+
+```{r}
+transactions_w_non_chinese_policy_driven <- data_for_sna |> 
+  mutate(
+    lender_geography_orientation = paste0(lender_geography, "_", lender_profit_orientation)
+  ) |> 
+  filter(
+    lender_geography_orientation == "Non-Chinese_Policy Driven"
+  ) |> 
+  pull(transaction_id) |>
+  unique()
+
+data_for_sna_policy_driven <- data_for_sna |> 
+  filter(transaction_id %in% transactions_w_non_chinese_policy_driven)
+
+data_for_sna_policy_driven 
+```
+
+```{r}
+# Co-financing network for GREEN transactions only
+network_policy_driven <- build_cofinancing_network(data_for_sna_policy_driven, top_n = 20, min_collabs = 1)
+p_policy_driven <- plot_network(network_policy_driven, title = "(Non Chinese) Policy-Driven Co-Financing Network")
+print(p_policy_driven)
+```
+
+```{r}
+data_for_sna |> 
+  filter(
+    lender_geography == "Non-Chinese",
+    lender_profit_orientation == "Policy Driven"
+  ) |> 
+  count(
+    standardized_lender_type,
+    sort = TRUE
+  )
+```
+
+
+Other State-owned Bank
+Other Government Agency
+Other Intergovernmental Organization
+
+```{r}
+transactions_w_non_chinese_pdbs <- data_for_sna |> 
+  filter(
+    standardized_lender_type %in% c(
+      "Other State-owned Bank",
+      "Other Government Agency",
+      "Other Intergovernmental Organization"
+    )
+  ) |> 
+  pull(transaction_id) |>
+  unique()
+
+data_for_sna_pdb <- data_for_sna |> 
+  filter(transaction_id %in% transactions_w_non_chinese_pdbs)
+
+data_for_sna_pdb 
+```
+
+```{r}
+# Co-financing network for 
+network_pdb <- build_cofinancing_network(data_for_sna_pdb, top_n = 20, min_collabs = 1)
+p_pdb <- plot_network(network_pdb, title = "(Non Chinese) Public Development Bank Co-Financing Network")
+print(p_pdb)
+```
+
+
+```{r}
+transactions_w_non_chinese_mdbs <- data_for_sna |> 
+  filter(
+    standardized_lender_type %in% c(
+      "Other Intergovernmental Organization"
+    )
+  ) |> 
+  pull(transaction_id) |>
+  unique()
+
+data_for_sna_mdb <- data_for_sna |> 
+  filter(transaction_id %in% transactions_w_non_chinese_mdbs)
+
+data_for_sna_mdb 
+```
+
+```{r}
+# Co-financing network for 
+network_mdb <- build_cofinancing_network(data_for_sna_mdb, top_n = 20, min_collabs = 1)
+p_mdb <- plot_network(network_pdb, title = "(Non Chinese) Multilateral Development Bank Co-Financing Network")
+print(p_mdb)
+```
+
+
+
+# Quantitative Analysis
+
+```{r}
+# ------------------------------------------------------------------------------
+# 1. Rationale for a One-Mode, Unweighted Network
+#
+# Policy Rationale:
+#   - Our core question is: "Who is financing transactions, and how do different 
+#     types of financiers structure their relationships?"
+#   - A one-mode network that focuses solely on the co-financing relationships among
+#     financiers directly answers this question. A two-mode network (including recipients)
+#     would answer a different question (e.g., which financiers target which recipients).
+#
+# Practical Rationale:
+#   - The AidData 3.0 dataset is much larger, and standardizing financier names was
+#     already a major effort. Extending this to recipient entities would greatly increase
+#     complexity without clear policy benefits.
+#
+# Unweighted Network Justification:
+#   - Missing data on non‑Chinese contributions make it difficult to confidently assign
+#     weights to edges. Weighting would introduce fragility and potential bias.
+#   - We therefore construct an unweighted network where an edge simply represents the
+#     existence of a co‑financing tie.
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# 2. Build the Full Co-Financing Networks for Quantitative Analysis
+#
+# We define a function that constructs a one‑mode, unweighted co‑financing network.
+# This function uses a minimum collaborations threshold (to filter noise) but does not
+# restrict the network to the top N nodes. (For visualizations, a top‑N filter is applied,
+# but for summary statistics we want the full network.)
+# ------------------------------------------------------------------------------
+
+build_cofinancing_network_full <- function(data, transaction_class = NULL, min_collabs = 2) {
+  
+  # Optionally filter to a specific transaction class (e.g., "GREEN")
+  if (!is.null(transaction_class)) {
+    data <- data |> filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create edge list by pairing lenders in each transaction (only if at least 2 lenders are present)
+  edges <- data |>
+    select(transaction_id, standardized_lender_name) |>
+    distinct() |>
+    group_by(transaction_id) |>
+    filter(n() >= 2) |>
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(pairs) |>
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) |>
+    select(from, to) |>
+    # Ensure undirected edges by alphabetical ordering of node names
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) |>
+    group_by(from, to) |>
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build node table (unique lenders and their attributes)
+  nodes <- data |>
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create the tidygraph object (undirected and unweighted)
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures (degree, betweenness, closeness)
+  graph <- graph |>
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness()
+    )
+  
+  # Filter edges based on a minimum collaboration threshold
+  graph_full <- graph |>
+    activate(edges) |>
+    filter(weight >= min_collabs) |>
+    convert(to_subgraph)
+  
+  return(graph_full)
+}
+
+```
+
+
+```{r}
+# Build the full overall network and the full green network
+network_overall_full <- build_cofinancing_network_full(data_for_sna, min_collabs = 1)
+network_green_full   <- build_cofinancing_network_full(data_for_sna, transaction_class = "GREEN", min_collabs = 1)
+
+# ------------------------------------------------------------------------------
+# 3. Incorporate Constraint as a Centrality Measure in the Green Network
+#
+# Constraint measures how much a node’s neighbors are connected to each other.
+# Lower constraint suggests a broker role, while higher constraint suggests embeddedness.
+# We calculate constraint using igraph and then add it to our tidygraph object.
+# ------------------------------------------------------------------------------
+
+# Convert the green network to an igraph object
+network_green_igraph <- as.igraph(network_green_full)
+
+# Compute constraint scores for each node (using igraph::constraint)
+V(network_green_igraph)$constraint <- constraint(network_green_igraph)
+
+# Add the constraint scores back into the tidygraph object
+network_green_full <- network_green_full |>
+  activate(nodes) |>
+  mutate(constraint = V(network_green_igraph)$constraint)
+
+# ------------------------------------------------------------------------------
+# 4. Normalize Centrality Measures in the Green Network
+#
+# Because the green network is smaller, absolute centrality values are lower.
+# We normalize degree and betweenness so that comparisons across networks are fair.
+# ------------------------------------------------------------------------------
+network_green_full <- network_green_full |>
+  activate(nodes) |>
+  mutate(
+    norm_degree = degree / (n() - 1),
+    norm_betweenness = betweenness / max(betweenness, na.rm = TRUE)
+  )
+
+# ------------------------------------------------------------------------------
+# 5. Extract and Summarize Centrality Data
+#
+# We extract node-level centrality measures from both the overall and green networks,
+# and then group by lender_profit_orientation and lender_geography to compare averages.
+# ------------------------------------------------------------------------------
+
+# Overall network centrality data
+centrality_overall_full <- network_overall_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness)
+
+# Green network centrality data (including constraint and normalized measures)
+centrality_green_full <- network_green_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness, constraint, norm_degree, norm_betweenness)
+
+# Summarize overall centrality measures by profit orientation and geography
+avg_centrality_overall <- centrality_overall_full |>
+  group_by(lender_profit_orientation, lender_geography) |>
+  summarise(
+    avg_degree = mean(degree, na.rm = TRUE),
+    avg_betweenness = mean(betweenness, na.rm = TRUE),
+    avg_closeness = mean(closeness, na.rm = TRUE),
+    count_overall = n(),
+    .groups = "drop"
+  )
+
+# Summarize green network centrality measures by profit orientation and geography
+avg_centrality_green <- centrality_green_full |>
+  group_by(lender_profit_orientation, lender_geography) |>
+  summarise(
+    avg_degree = mean(degree, na.rm = TRUE),
+    avg_betweenness = mean(betweenness, na.rm = TRUE),
+    avg_closeness = mean(closeness, na.rm = TRUE),
+    avg_constraint = mean(constraint, na.rm = TRUE),
+    avg_norm_degree = mean(norm_degree, na.rm = TRUE),
+    avg_norm_betweenness = mean(norm_betweenness, na.rm = TRUE),
+    count_green = n(),
+    .groups = "drop"
+  )
+
+# Merge the summaries for overall and green networks for comparison
+avg_centrality_comparison <- avg_centrality_overall |>
+  left_join(avg_centrality_green, by = c("lender_profit_orientation", "lender_geography"))
+
+print(avg_centrality_comparison)
+```
+
+```{r}
+avg_centrality_comparison |> 
+  select(
+    lender_profit_orientation,
+    lender_geography,
+    count_green,
+    count_overall,
+    avg_constraint,
+    contains("avg_norm")
+  ) 
+
+```
+
+
+
+```{r}
+# ------------------------------------------------------------------------------
+# 6. Rank Comparison: Compare Lender Ranks Between Overall and Green Networks
+#
+# We rank lenders by degree in each network and then join these rankings
+# to see how an institution's prominence changes between networks.
+# ------------------------------------------------------------------------------
+rank_overall <- centrality_overall_full |>
+  arrange(desc(degree)) |>
+  mutate(rank_overall = row_number()) |>
+  select(standardized_lender_name, rank_overall)
+
+rank_green <- centrality_green_full |>
+  arrange(desc(degree)) |>
+  mutate(rank_green = row_number()) |>
+  select(standardized_lender_name, rank_green)
+
+rank_comparison <- rank_overall |>
+  left_join(rank_green, by = "standardized_lender_name") |>
+  arrange(rank_overall)
+
+print(rank_comparison)
+```
+
+```{r}
+rank_comparison |> 
+  arrange(rank_green)
+```
+
+
+```{r}
+# ------------------------------------------------------------------------------
+# 9. Visualize Centrality Comparisons
+#
+# Here is an example bar chart comparing the average normalized degree by profit
+# orientation and geography in the green network.
+# ------------------------------------------------------------------------------
+avg_norm_degree <- avg_centrality_green |>
+  select(lender_profit_orientation, lender_geography, avg_norm_degree)
+
+ggplot(avg_norm_degree, aes(x = interaction(lender_profit_orientation, lender_geography), y = avg_norm_degree, fill = lender_profit_orientation)) +
+  geom_col(position = "dodge") +
+  labs(
+    title = "Average Normalized Degree by Profit Orientation & Geography (Green Network)",
+    x = "Profit Orientation & Geography",
+    y = "Average Normalized Degree"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+# Exploratory Analysis
+
+
+```{r}
+data_for_sna |> glimpse()
+```
+
+```{r}
+# Count of transactions by primary class and commitment year
+data_for_sna |>
+  distinct(transaction_id, transaction_primary_class, commitment_year) |>
+  count(transaction_primary_class, commitment_year) |>
+  ggplot(aes(x = commitment_year, y = n, fill = transaction_primary_class)) +
+  geom_col(position = "dodge") +
+  labs(title = "Transactions by Type Over Time",
+       x = "Year", y = "Number of Transactions") +
+  theme_minimal()
+```
+
+```{r}
+# Count lenders per transaction
+lenders_per_transaction <- data_for_sna |>
+  group_by(transaction_id) |>
+  summarise(num_lenders = n(), .groups = "drop")
+
+# Histogram of lenders per transaction
+lenders_per_transaction |>
+  ggplot(aes(x = num_lenders)) +
+  geom_histogram(binwidth = 1, fill = "skyblue", color = "black") +
+  labs(title = "Distribution of Number of Lenders per Transaction",
+       x = "Number of Lenders", y = "Count of Transactions") +
+  theme_minimal()
+```
+
+
+
+
+
+```{r}
+# Frequency table for lender_profit_orientation and lender_geography
+data_for_sna |>
+  count(lender_profit_orientation, lender_geography) |>
+  ggplot(aes(x = lender_profit_orientation, y = n, fill = lender_geography)) +
+  geom_col(position = "dodge") +
+  labs(title = "Frequency of Lender Profit Orientation by Geography",
+       x = "Lender Profit Orientation", y = "Count") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+# Create a contingency table
+data_for_sna |>
+  count(transaction_primary_class, lender_profit_orientation) |>
+  ggplot(aes(x = transaction_primary_class, y = n, fill = lender_profit_orientation)) +
+  geom_col(position = "fill") +  # position="fill" shows proportions
+  labs(title = "Proportion of Lender Types by Transaction Class",
+       x = "Transaction Primary Class", y = "Proportion") +
+  theme_minimal()
+```
+
+This is promising:  we can look at green vs. overall.  That is very straightforward.
+
+
+```{r}
+data_for_sna |>
+  distinct(transaction_id, commitment_year, transaction_primary_class) |>
+  left_join(
+    data_for_sna |>
+      group_by(transaction_id) |>
+      summarise(major_profit_orientation = first(lender_profit_orientation), .groups = "drop"),
+    by = "transaction_id"
+  ) |>
+  filter(transaction_primary_class == "GREEN") |>
+  count(commitment_year, major_profit_orientation) |>
+  group_by(commitment_year) |>
+  mutate(prop = n / sum(n)) |>
+  ggplot(aes(x = commitment_year, y = prop, fill = major_profit_orientation)) +
+  geom_col(position = "dodge") +
+  labs(title = "Trends in Lender Composition for Green Transactions",
+       x = "Year", y = "Proportion") +
+  theme_minimal()
+```
+
+```{r}
+data_for_sna |>
+  group_by(transaction_id, 
+           transaction_primary_class,
+           recipient,
+           recipient_region,
+           commitment_year, 
+           involving_multilateral
+           ) |>
+  summarise(num_lenders = n(), .groups = "drop") |>
+  group_by(transaction_primary_class) |>
+  summarise(avg_lenders = mean(num_lenders), .groups = "drop") |>
+  ggplot(aes(x = transaction_primary_class, y = avg_lenders, fill = transaction_primary_class)) +
+  geom_col() +
+  labs(title = "Average Number of Lenders by Transaction Type",
+       x = "Transaction Type", y = "Average Number of Lenders") +
+  theme_minimal()
+```
+
+```{r}
+data_for_sna |>
+  group_by(transaction_id) |>
+  summarise(num_orientations = n_distinct(lender_profit_orientation),
+            transaction_primary_class = first(transaction_primary_class),
+            .groups = "drop") |>
+  ggplot(aes(x = transaction_primary_class, y = num_orientations, fill = transaction_primary_class)) +
+  geom_boxplot() +
+  labs(title = "Diversity of Lender Profit Orientations per Transaction",
+       x = "Transaction Type", y = "Number of Distinct Lender Orientations") +
+  theme_minimal()
+```
+
+```{r}
+transaction_lender_summary <- data_for_sna |>
+  # Group by transaction so that each transaction_id appears once
+  group_by(
+    transaction_id, 
+    transaction_primary_class,
+    recipient,
+    recipient_region,
+    commitment_year, 
+    involving_multilateral
+    ) |>
+  summarise(
+    # Total number of lenders in the transaction
+    total_lenders = n(),
+    
+    # Count lenders in each profit orientation category
+    count_profit_maximizing = sum(lender_profit_orientation == "Profit Maximizing", na.rm = TRUE),
+    count_mixed_mandate     = sum(lender_profit_orientation == "Mixed Mandate", na.rm = TRUE),
+    count_policy_driven     = sum(lender_profit_orientation == "Policy Driven", na.rm = TRUE),
+    
+    # Calculate percentages for each category
+    pct_profit_maximizing = (count_profit_maximizing / total_lenders) * 100,
+    pct_mixed_mandate     = (count_mixed_mandate / total_lenders) * 100,
+    pct_policy_driven     = (count_policy_driven / total_lenders) * 100,
+    
+    # Determine the dominant lender type based on the highest count.
+    # If counts are equal across categories, label as "Mixed (No Clear Dominant)"
+    dominant_lender_type = case_when(
+      count_profit_maximizing > count_mixed_mandate &
+      count_profit_maximizing > count_policy_driven ~ "Profit Maximizing",
+      
+      count_mixed_mandate > count_profit_maximizing &
+      count_mixed_mandate > count_policy_driven ~ "Mixed Mandate",
+      
+      count_policy_driven > count_profit_maximizing &
+      count_policy_driven > count_mixed_mandate ~ "Policy Driven",
+      
+      TRUE ~ "Mixed (No Clear Dominant)"
+    )
+  ) |>
+  ungroup() |>
+  arrange(desc(total_lenders))
+
+# View the summary table
+print(transaction_lender_summary)
+```
+
+```{r}
+transaction_lender_summary |> 
+  ggplot(
+    aes(
+       x = pct_policy_driven,
+       y = transaction_primary_class
+    )
+  ) +
+  geom_boxplot()
+```
+
+```{r}
+transaction_lender_summary |> 
+  mutate(
+    green_or_not = case_when(
+      transaction_primary_class == "GREEN" ~ "Green Project",
+      .default = "All Other Lending"
+    )
+  ) |> 
+  ggplot(
+    aes(
+       x = pct_policy_driven,
+       y = green_or_not,
+       fill = green_or_not
+    )
+  ) +
+  geom_boxplot() +
+  geom_jitter() 
+  
+```
+
+very interesting.  A few takeaways from this.  
+
+1) this is a helpful chart, but to make the point more clearly it might be worth simply comparing the medians (or averages).  Also do the same analysis for private sector. 
+
+2) there are a minority of green projects that are getting cofinanced primarily by the private sector.  Which ones are those?   That is a very policy relevant question!
+
+
+```{r}
+transaction_lender_summary |> 
+  mutate(
+    green_or_not = case_when(
+      transaction_primary_class == "GREEN" ~ "Green Project",
+      .default = "All Other Lending"
+    )
+  ) |> 
+  ggplot(
+    aes(
+       x = pct_profit_maximizing,
+       y = green_or_not,
+       fill = green_or_not
+    )
+  ) +
+  geom_boxplot() +
+  geom_jitter() 
+  
+```
+It looks like the median project has ZERO profit maximizing co-financiers. 
+
+
+
+```{r}
+transaction_lender_summary |> 
+  mutate(
+    green_or_not = case_when(
+      transaction_primary_class == "GREEN" ~ "Green Project",
+      .default = "All Other Lending"
+    )
+  ) |> 
+  ggplot(
+    aes(
+       x = pct_mixed_mandate,
+       y = green_or_not,
+       fill = green_or_not
+    )
+  ) +
+  geom_boxplot() +
+  geom_jitter() 
+```
+
+Okay, that is great.  Here are the key takeaways
+- Beyond SNA, clear ways to show insight that green lending is policy driven. These approaches complement each other. 
+-- Median green project has a lot more policy lenders.
+-- Median green project has ZERO profit-maximizing co-financiers
+
+-- Green projects seem to be clustered.  Some of no profit maximizing financing, a few have a lot. 
+
+-- Let's find the characteristics of the green projects that are financed by the market.
+
+-- Q: has this changed over time?
+
+```{r}
+transaction_lender_summary |> 
+  filter(
+    transaction_primary_class == "GREEN"
+  ) |> 
+  ggplot(
+    aes(
+      x = commitment_year,
+      y = pct_policy_driven,
+      color = recipient_region
+    )
+  ) +
+  geom_jitter()
+```
+Okay, there has been some modest inrease in non-policy driven green lending over time, starting around start of BRI and picking up steam in 2015.
+
+
+
+# What green projects are co-financed by the market? 
+
+```{r}
+majority_profit_maximizing <- transaction_lender_summary |> 
+  filter(
+    transaction_primary_class == "GREEN",
+    dominant_lender_type == "Profit Maximizing"
+  ) |> 
+  arrange(pct_profit_maximizing |>  desc())
+
+majority_profit_maximizing
+```
+
+There are only 13 transactions that are majority "profit maximizing"
+
+
+```{r}
+majority_profit_maximizing |> 
+  count(
+    recipient,
+    sort = TRUE
+  ) |> 
+  ggplot(
+    aes(
+      x = n,
+      y = fct_reorder(
+        .f = recipient,
+        .x = n
+    )
+  )
+  ) + 
+  geom_col()
+```
+
+```{r}
+gcdf_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+
+gcdf_data
+```
+
+
+```{r}
+majority_profit_maximizing_detail <- majority_profit_maximizing |> 
+  select(
+    transaction_id,
+    total_lenders:dominant_lender_type
+  ) |> 
+  left_join(
+    gcdf_data,
+    by = join_by(transaction_id)
+  ) |> 
+  select(
+    transaction_id:dominant_lender_type,
+    amount_constant_usd_2021,
+    funding_agencies,
+    funding_agencies_type,
+    number_of_lenders,
+    sector_name,
+    direct_receiving_agencies,
+    direct_receiving_agencies_type,
+    recipient:commitment_year,
+    primary_class:transaction_primary_class,
+    title,
+    description
+  )
+
+majority_profit_maximizing_detail
+```
+```{r}
+majority_profit_maximizing_detail |> 
+  select(
+    transaction_id,
+    recipient,
+    project_type,
+    justification,
+    evidence
+    
+  ) |> 
+  arrange(
+    project_type
+  )
+```
+
+- Turkey
+-- Garanti Bank (2020) ESG-linked loan with specific KPIs targeting renewable energy adoption and coal power elimination
+-- Ministry of Finance (2020) - High-speed rail project explicitly aimed at reducing CO2 emissions and providing sustainable transportation alternative
+-- Kazancı Holding (2013) - Hydropower (new build, seemingly)
+-- Menzelet Kılavuzlu Elektrik Üretim (2018) Hydropower - privitatization of existing hydropower plan
+
+- Indonesia 
+-- 2 transactions (2017) The project involves acquisition of equity stakes in three geothermal power plants, which are renewable energy sources (probably actually 1 transaction)
+347MW Wayang Windu Power Plant, 377MW Salak Power Plant, and 271MW Darajat Power Plant - all geothermal power projects with long-term feed-in tariff contracts
+Geothermal assets acquisition in Indonesia, Wayang Windu geothermal asset ownership mentioned
+Proceeds used for acquisition of geothermal assets (Salak and Darajat fields), renewable energy focus
+
+- Malaysia:
+-- Xinyi Glass 2019 - Industrial efficiency - Project focuses on green loan for expansion of glass production with emphasis on low-emission coated glass production line, indicating environmental considerations
+
+- Vietnam:
+-- Phu Yen (2020) - Solar power - 	Primary purpose is solar power generation with clear renewable energy focus and green loan certification
+
+- Panama
+-- AES Panama (2002) - Hydropower - 233 MW Bayano Hydroelectric Expansion and Upgrade Project, 122 MW Estí Hydroelectric Project, focus on hydropower generation
+
+- Chile
+-- 2019 - Hidroelectrica La Higuera - 155MW La Higuera hydropower plant, run-of-the-river hydro power plant, renewable energy focus
+-- 2015 - Loan recipient is a photovoltaic generation company, indicating renewable energy focus
+
+- Colombia:
+-- 2017 - Empresas Públicas de Medellín-Colombia + Government of Antioquia (Colombia)-Colombia - Hydro plant
+
+
+
+## Policy driven lender network
+
+
+```{r}
+green_record_ids <- gcdf_data |> 
+  filter(
+    primary_class == "GREEN"
+  )
+
+green_record_ids
+```
+
+```{r}
+green_record_ids |> 
+  group_by(co_financed) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n()
+  )
+```
+
+```{r}
+green_record_ids |> 
+  filter(co_financed == "No") |> 
+  group_by(funding_agencies) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n()
+  ) |> 
+  ungroup() |> 
+  mutate(
+    usd_pct = amount_bn / sum(amount_bn, na.rm = TRUE) * 100
+  ) |> 
+  arrange(amount_bn |> desc())
+```
+
+
+```{r}
+green_record_ids |>
+  group_by(project_type) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n()
+  ) |> 
+  ungroup() |> 
+  mutate(
+    usd_pct = amount_bn / sum(amount_bn, na.rm = TRUE) * 100
+  ) |> 
+  arrange(amount_bn |> desc())
+```
+
+Very interesting, but not surprising.   It's 83% Hydro and nuclear.
+
+Might be interesting to look at solar. 
+
+Is solar co-financed?
+
+
+```{r}
+green_projects_summary <- green_record_ids |>
+  group_by(project_type, co_financed) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n()
+  ) |> 
+  ungroup() |> 
+  group_by(project_type) |> 
+  mutate(
+    category_usd_pct = amount_bn / sum(amount_bn, na.rm = TRUE) * 100,
+    category_sum_bn = sum(amount_bn, na.rm = TRUE)
+  ) |> 
+  ungroup() |> 
+  select(
+    project_type,
+    co_financed,
+    category_usd_pct,
+    category_sum_bn
+  ) |> 
+  filter(!is.na(category_usd_pct)) |> 
+  pivot_wider(
+    names_from = co_financed,
+    values_from = category_usd_pct,
+    names_prefix = "pct_",
+    values_fill = 0
+  ) |> 
+  arrange(desc(category_sum_bn))
+
+green_projects_summary
+```
+
+```{r}
+write_excel_csv(
+  green_projects_summary,
+  "green_projects_summary.csv"
+)
+```
+
+
+
+```{r}
+green_record_ids |> 
+  filter(
+    co_financed == "No",
+    project_type == "Solar Power"
+    ) |> 
+  group_by(funding_agencies) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n()
+  ) |> 
+  ungroup() |> 
+  mutate(
+    usd_pct = amount_bn / sum(amount_bn, na.rm = TRUE) * 100
+  ) |> 
+  arrange(amount_bn |> desc())
+```
+33% China ExiM
+30% China Development Bank
+1/3 other
+
+
+```{r}
+data_for_sna
+```
+
+
+```{r}
+transactions_w_solar <- gcdf_data |> 
+  filter(
+    project_type == "Solar Power",
+    co_financed == "Yes"
+  ) |> 
+  pull(transaction_id)
+
+data_for_sna_solar <- data_for_sna |> 
+  filter(transaction_id %in% transactions_w_solar)
+
+data_for_sna_solar
+```
+
+
+```{r}
+# Co-financing network for 
+network_solar <- build_cofinancing_network(data_for_sna_solar, top_n = 20, min_collabs = 1)
+p_solar <- plot_network(network_solar, title = "Solar Power Co-Financing Network")
+print(p_solar)
+```
+
+```{r}
+data_for_sna_solar |> 
+  count(standardized_lender_type, sort = TRUE)
+```
+
+```{r}
+transactions_w_hydro <- gcdf_data |> 
+  filter(
+    project_type == "Hydropower",
+    co_financed == "Yes"
+  ) |> 
+  pull(transaction_id)
+
+data_for_sna_hydro <- data_for_sna |> 
+  filter(transaction_id %in% transactions_w_hydro)
+
+data_for_sna_hydro
+```
+
+
+```{r}
+# Co-financing network for 
+network_hydro <- build_cofinancing_network(data_for_sna_hydro, top_n = 20, min_collabs = 1)
+p_hydro <- plot_network(network_hydro, title = "Hydro Power Co-Financing Network")
+print(p_hydro)
+```
+

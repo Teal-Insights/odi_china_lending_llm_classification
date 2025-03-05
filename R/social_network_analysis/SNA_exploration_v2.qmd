@@ -1,0 +1,1152 @@
+---
+title: "Chinese Co-Financing Network Analysis"
+author: "Teal Emery"
+format: 
+  html:
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    fig-width: 10
+    fig-height: 8
+  pdf:
+    toc: true
+    toc-depth: 3
+    fig-width: 8
+    fig-height: 6
+editor: visual
+---
+
+```{r setup, include=FALSE}
+# Load required libraries
+library(tidyverse)   # For data manipulation
+library(tidygraph)   # For network objects and centrality measures
+library(ggraph)      # For network visualizations
+library(here)        # Relative paths
+library(ggrepel)     # Repelled text labels
+library(igraph)      # For additional network metrics
+library(patchwork)   # For combining plots
+library(kableExtra)  # For nicer tables
+
+# Set options
+options(scipen = 999)  # Avoid scientific notation
+set.seed(12345)        # Set seed for reproducible network layouts
+```
+
+## Introduction
+
+This analysis explores the structure of co-financing networks in China's overseas development finance, with a particular focus on how these networks differ between conventional financing and green projects. Using social network analysis (SNA), we investigate which financial institutions play central roles in different types of project financing, and how their relative prominence changes across different sectors.
+
+A key question we explore is: **Do green projects rely on different institutional networks compared to traditional Belt and Road financing?** Understanding these network structures provides insight into the mechanisms through which China's financial institutions balance risk management with their mandate to support green development.
+
+## Data Loading and Preparation
+
+We first load the prepared dataset containing transaction-level co-financing information.
+
+```{r data-loading}
+sna_data_nested <- read_rds(
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.rds"
+  )
+)
+
+# Unnest the data to get all unique lender combinations
+data_for_sna <- sna_data_nested |> 
+  unnest(unique_lenders) |> 
+  unique()
+
+# Quick overview of the data structure
+glimpse(data_for_sna)
+```
+
+The dataset contains transaction-level information with the following key variables:
+
+- `transaction_id`: Unique identifier for each financing transaction
+- `standardized_lender_name`: Harmonized names of lending institutions
+- `lender_geography`: Whether the lender is Chinese or non-Chinese
+- `lender_profit_orientation`: Categorized as "Profit Maximizing," "Mixed Mandate," or "Policy Driven"
+- `transaction_primary_class`: Classification of transactions (e.g., "GREEN", "BROWN", "GREY")
+
+## Network Analysis Functions
+
+The following functions form the core of our network analysis, enabling us to construct and visualize co-financing relationships.
+
+### Building Co-Financing Networks
+
+```{r network-building-function}
+#| code-fold: show
+
+# ------------------------------------------------------------------------------
+# Function: build_cofinancing_network
+#
+# Constructs a co-financing network graph from transaction data.
+#
+# Arguments:
+#   data              - The processed dataset
+#   transaction_class - (Optional) Filter to specific transaction type (e.g., "GREEN")
+#   top_n             - Number of top nodes (by degree) to retain
+#   min_collabs       - Minimum number of collaborations required for an edge
+#
+# Returns:
+#   A tidygraph object with nodes (lenders) and edges (co-financing relationships)
+# ------------------------------------------------------------------------------
+build_cofinancing_network <- function(data, transaction_class = NULL, top_n = 50, min_collabs = 2) {
+  
+  # Optionally filter to a specific transaction class
+  if (!is.null(transaction_class)) {
+    data <- data |> filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create edge list
+  edges <- data |>
+    select(transaction_id, standardized_lender_name) |>
+    distinct() |>
+    group_by(transaction_id) |>
+    # Only consider transactions with at least 2 lenders
+    filter(n() >= 2) |>
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(pairs) |>
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) |>
+    select(from, to) |>
+    # Ensure edge is undirected by sorting lender names
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) |>
+    group_by(from, to) |>
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build node data
+  nodes <- data |>
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create tidygraph object (undirected network)
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures
+  graph <- graph |>
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness()
+    )
+  
+  # Add constraint measure
+  graph_igraph <- as.igraph(graph)
+  V(graph_igraph)$constraint <- constraint(graph_igraph)
+  
+  # Add constraint back to tidygraph object
+  graph <- graph |>
+    activate(nodes) |>
+    mutate(constraint = V(graph_igraph)$constraint)
+  
+  # Filter to top_n nodes by degree
+  node_data <- graph |> activate(nodes) |> as_tibble()
+  top_lenders <- node_data |>
+    arrange(desc(degree)) |>
+    slice_head(n = top_n)
+  
+  graph_filtered <- graph |>
+    activate(nodes) |>
+    filter(standardized_lender_name %in% top_lenders$standardized_lender_name) |>
+    convert(to_subgraph)
+  
+  # Filter edges by minimum collaborations
+  graph_filtered <- graph_filtered |>
+    activate(edges) |>
+    filter(weight >= min_collabs) |>
+    convert(to_subgraph)
+  
+  return(graph_filtered)
+}
+
+# Function to create a full network without top_n filtering (for quantitative analysis)
+build_cofinancing_network_full <- function(data, transaction_class = NULL, min_collabs = 2) {
+  
+  # Optionally filter to a specific transaction class
+  if (!is.null(transaction_class)) {
+    data <- data |> filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create edge list
+  edges <- data |>
+    select(transaction_id, standardized_lender_name) |>
+    distinct() |>
+    group_by(transaction_id) |>
+    filter(n() >= 2) |>
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(pairs) |>
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) |>
+    select(from, to) |>
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) |>
+    group_by(from, to) |>
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build node data
+  nodes <- data |>
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create tidygraph object
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures including constraint
+  graph_igraph <- as.igraph(graph)
+  V(graph_igraph)$constraint <- constraint(graph_igraph)
+  
+  graph <- graph |>
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness(),
+      constraint  = V(graph_igraph)$constraint
+    )
+  
+  # Filter edges by minimum collaborations
+  graph_full <- graph |>
+    activate(edges) |>
+    filter(weight >= min_collabs) |>
+    convert(to_subgraph)
+  
+  return(graph_full)
+}
+```
+
+### Visualizing Networks
+
+```{r plotting-function}
+#| code-fold: show
+
+# ------------------------------------------------------------------------------
+# Function: plot_network
+#
+# Visualizes a tidygraph network object with customized aesthetics.
+#
+# Node Aesthetics:
+#   - Color: by lender_geography/profit orientation
+#   - Shape: by lender_profit_orientation
+#   - Size: by degree centrality
+#
+# Edge Aesthetics:
+#   - Width: proportional to number of collaborations (weight)
+#
+# ------------------------------------------------------------------------------
+
+plot_network <- function(graph, title = "Co-Financing Network", repel_force = 1, for_export = FALSE) {
+  
+  # Create a combined label for coloring
+  graph <- graph |>
+    activate(nodes) |>
+    mutate(
+      lender_color_label = if_else(
+        lender_geography == "Chinese",
+        "Chinese",
+        paste0("Non-Chinese: ", lender_profit_orientation)
+      )
+    )
+  
+  # Define custom color and shape mappings
+  color_values <- c(
+    "Chinese" = "#E41A1C",  # Brighter red
+    "Non-Chinese: Profit Maximizing" = "#377EB8",  # Blue
+    "Non-Chinese: Mixed Mandate"     = "#984EA3",  # Purple
+    "Non-Chinese: Policy Driven"     = "#4DAF4A"   # Green
+  )
+  
+  shape_values <- c(
+    "Profit Maximizing" = 16,  # circle
+    "Mixed Mandate"     = 17,  # triangle
+    "Policy Driven"     = 18,  # diamond
+    "Uncategorized"     = 15   # square
+  )
+  
+  # Set seed for reproducible layout
+  set.seed(42)
+  
+  # Create the network plot with a force-directed layout
+  p <- ggraph(graph, layout = "fr") +
+    # Draw edges with enhanced visibility
+    geom_edge_link(
+      aes(width = weight, alpha = weight),
+      color = "gray40", 
+      lineend = "round"
+    ) +
+    # Draw nodes
+    geom_node_point(
+      aes(
+        color = lender_color_label, 
+        shape = lender_profit_orientation, 
+        size = degree
+      ),
+      stroke = 0.5
+    ) +
+    # Add repelled text labels
+    geom_node_text(
+      aes(label = standardized_lender_name), 
+      repel = TRUE, 
+      size = 3.2,
+      fontface = "bold",
+      bg.color = "white",
+      bg.r = 0.15,
+      force = repel_force,
+      max.overlaps = 30
+    ) +
+    # Apply manual scales
+    scale_color_manual(values = color_values) +
+    scale_shape_manual(values = shape_values) +
+    scale_edge_width(range = c(0.5, 2.5)) +
+    scale_edge_alpha(range = c(0.4, 0.9))
+    
+  # Conditionally add labels based on whether for export or not
+  if (!for_export) {
+    p <- p + 
+      labs(
+        title = title,
+        color = "Lender Type",
+        shape = "Profit Orientation",
+        size = "Degree Centrality"
+      )
+  }
+  
+  # Add theme
+  p <- p +
+    theme_void() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+      plot.subtitle = element_text(hjust = 0.5),
+      legend.position = "right",
+      legend.title = element_text(face = "bold"),
+      plot.margin = margin(10, 10, 10, 10)
+    )
+  
+  return(p)
+}
+```
+
+## Composition of Co-Financed Projects
+
+Before examining the network structure, we analyze the lender composition of co-financed projects to understand the fundamental differences between green and non-green projects.
+
+```{r project-composition}
+# Create a summary of lender composition per transaction
+transaction_lender_summary <- data_for_sna |>
+  group_by(
+    transaction_id, 
+    transaction_primary_class,
+    recipient,
+    recipient_region,
+    commitment_year, 
+    involving_multilateral
+  ) |>
+  summarise(
+    total_lenders = n(),
+    count_profit_maximizing = sum(lender_profit_orientation == "Profit Maximizing", na.rm = TRUE),
+    count_mixed_mandate = sum(lender_profit_orientation == "Mixed Mandate", na.rm = TRUE),
+    count_policy_driven = sum(lender_profit_orientation == "Policy Driven", na.rm = TRUE),
+    pct_profit_maximizing = (count_profit_maximizing / total_lenders) * 100,
+    pct_mixed_mandate = (count_mixed_mandate / total_lenders) * 100,
+    pct_policy_driven = (count_policy_driven / total_lenders) * 100,
+    dominant_lender_type = case_when(
+      count_profit_maximizing > count_mixed_mandate &
+      count_profit_maximizing > count_policy_driven ~ "Profit Maximizing",
+      count_mixed_mandate > count_profit_maximizing &
+      count_mixed_mandate > count_policy_driven ~ "Mixed Mandate",
+      count_policy_driven > count_profit_maximizing &
+      count_policy_driven > count_mixed_mandate ~ "Policy Driven",
+      TRUE ~ "Mixed (No Clear Dominant)"
+    ),
+    .groups = "drop"
+  )
+```
+
+### Non-Chinese Lender Composition Analysis
+
+```{r non-chinese-composition}
+# Filter to only non-Chinese lenders
+non_chinese_lenders <- data_for_sna |>
+  filter(lender_geography == "Non-Chinese")
+
+# Create transaction-level summary
+non_chinese_transaction_summary <- non_chinese_lenders |>
+  group_by(
+    transaction_id, 
+    transaction_primary_class
+  ) |>
+  summarise(
+    total_lenders = n(),
+    count_profit_maximizing = sum(lender_profit_orientation == "Profit Maximizing", na.rm = TRUE),
+    count_policy_driven = sum(lender_profit_orientation == "Policy Driven", na.rm = TRUE),
+    pct_profit_maximizing = (count_profit_maximizing / total_lenders) * 100,
+    pct_policy_driven = (count_policy_driven / total_lenders) * 100,
+    .groups = "drop"
+  )
+
+# Create summary by project type
+non_chinese_composition_summary <- non_chinese_transaction_summary |> 
+  mutate(
+    green_or_not = ifelse(transaction_primary_class == "GREEN", 
+                         "Green Projects", "All Other Lending")
+  ) |> 
+  group_by(green_or_not) |> 
+  summarise(
+    mean_policy_driven = mean(pct_policy_driven, na.rm = TRUE),
+    mean_profit_max = mean(pct_profit_maximizing, na.rm = TRUE),
+    count = n()
+  ) |> 
+  ungroup()
+
+# Convert to long format
+non_chinese_composition_long <- non_chinese_composition_summary |>
+  pivot_longer(
+    cols = c("mean_policy_driven", "mean_profit_max"),
+    names_to = "lender_type",
+    values_to = "percentage"
+  ) |>
+  mutate(
+    lender_type = case_when(
+      lender_type == "mean_policy_driven" ~ "Policy-Driven",
+      lender_type == "mean_profit_max" ~ "Profit-Maximizing"
+    )
+  )
+
+# Create bar chart
+ggplot(non_chinese_composition_long, 
+       aes(x = green_or_not, y = percentage, fill = lender_type)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_text(aes(label = paste0(round(percentage), "%")), 
+            position = position_dodge(width = 0.7),
+            vjust = -0.5, size = 4) +
+  scale_fill_manual(values = c("Policy-Driven" = "#4DAF4A", 
+                               "Profit-Maximizing" = "#377EB8")) +
+  labs(
+    title = "Average Composition of Non-Chinese Lenders in Co-Financed Projects",
+    subtitle = "Green projects rely heavily on policy-driven institutions",
+    x = "",
+    y = "Average Percentage",
+    fill = "Lender Type"
+  ) +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    panel.grid.minor = element_blank(),
+    text = element_text(size = 12),
+    axis.text.x = element_text(face = "bold", size = 12)
+  ) +
+  annotate("segment", x = "Green Projects", y = 65, xend = "Green Projects", yend = 72,
+           arrow = arrow(length = unit(0.3, "cm")), color = "darkgreen") +
+  annotate("text", x = "Green Projects", y = 78,
+           label = "Non-Chinese policy banks dominate\ngreen project co-financing", 
+           size = 4, color = "darkgreen", hjust = 0.5)
+```
+
+This analysis reveals a stark contrast in the composition of non-Chinese lenders between green and conventional projects:
+
+1. **Green projects** are heavily dominated by policy-driven institutions, which make up approximately 70% of non-Chinese co-financiers.
+
+2. **Conventional projects** show a much more balanced distribution, with profit-maximizing commercial banks playing a more significant role.
+
+This fundamental difference in lender composition suggests that green financing in China's overseas development portfolio operates through distinctly different institutional channels than conventional financing. The policy-driven nature of green co-financing has important implications for scaling such investments, as it indicates limited commercial bank participation to date.
+
+## Overall Co-Financing Network Analysis
+
+We now examine the overall co-financing network, which includes all transaction types.
+
+```{r overall-network}
+# Build the overall network visualization
+network_overall <- build_cofinancing_network(
+  data_for_sna,
+  top_n = 20,
+  min_collabs = 1
+)
+
+# Visualize the overall network for the document
+p_overall <- plot_network(
+  network_overall, 
+  title = "Overall Co-Financing Network: Top 20 Institutions"
+)
+
+# Display the plot
+print(p_overall)
+
+# Generate version for export (without title)
+p_overall_export <- plot_network(
+  network_overall, 
+  for_export = TRUE
+)
+
+# Export to the designer folder
+ggsave(
+  filename = here("R", "social_network_analysis", "output for designer", "overall_network.png"),
+  plot = p_overall_export,
+  width = 12, height = 10, dpi = 300
+)
+```
+
+In the overall co-financing network, we observe:
+
+1. **Dense Commercial Core**: The network has a densely interconnected structure dominated by commercial banks, both Chinese and international.
+
+2. **Chinese Banks as Central Coordinators**: Bank of China and ICBC occupy central positions, indicating their prominence in coordinating co-financing transactions across a wide range of partners.
+
+3. **Regional Integration**: Japanese banks (Sumitomo Mitsui, Mitsubishi UFJ, Mizuho) form a distinct regional cluster that is well-integrated with Chinese and Western banks.
+
+4. **Limited Policy Bank Presence**: While China Development Bank appears in the network, most policy-driven institutions are noticeably absent from the core of the overall network.
+
+### Top Lenders in Overall Network
+
+```{r overall-top-lenders}
+# Extract centrality measures from the overall network
+top_lenders_overall <- network_overall |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness, constraint) |>
+  arrange(desc(degree))
+
+# Display the top 10 lenders by degree centrality
+top_lenders_overall |>
+  slice_head(n = 10) |>
+  kable(
+    caption = "Top 10 Lenders by Degree Centrality (Overall Network)",
+    col.names = c("Lender", "Geography", "Profit Orientation", 
+                 "Degree", "Betweenness", "Closeness", "Constraint"),
+    digits = c(0, 0, 0, 0, 2, 3, 3)
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Export data for designer
+write_csv(
+  top_lenders_overall,
+  here("R", "social_network_analysis", "output for designer", "overall_top_lenders.csv")
+)
+```
+
+The centrality metrics reveal:
+
+- **High Degree**: Bank of China and Sumitomo Mitsui have the highest number of connections, followed closely by ICBC and other major international banks.
+- **High Betweenness**: Chinese banks, especially Bank of China and ICBC, have exceptionally high betweenness centrality, indicating their crucial role in bridging different parts of the network.
+- **Low Constraint**: The relatively low constraint scores for top banks indicate they maintain diverse connections across different financing ecosystems.
+
+## Green Co-Financing Network Analysis
+
+Now we examine the network structure specifically for green projects.
+
+```{r green-network}
+# Build the green network
+network_green <- build_cofinancing_network(
+  data_for_sna, 
+  transaction_class = "GREEN", 
+  top_n = 20, 
+  min_collabs = 1
+)
+
+# Visualize the green network
+p_green <- plot_network(
+  network_green, 
+  title = "Green Projects Co-Financing Network: Top 20 Institutions",
+  repel_force = 1.2
+)
+
+# Display the plot
+print(p_green)
+
+# Generate version for export (without title)
+p_green_export <- plot_network(
+  network_green, 
+  repel_force = 1.2,
+  for_export = TRUE
+)
+
+# Export to the designer folder
+ggsave(
+  filename = here("R", "social_network_analysis", "output for designer", "green_network.png"),
+  plot = p_green_export,
+  width = 12, height = 10, dpi = 300
+)
+```
+
+The green co-financing network displays striking differences from the overall network:
+
+1. **Bifurcated Structure**: The network clearly splits into two distinct clusters - a policy-driven cluster dominated by development banks and a smaller commercial cluster.
+
+2. **Policy Bank Dominance**: Public development banks (PDBs) such as KfW, French Development Agency (AFD), and the African Development Bank are prominently positioned, in stark contrast to their peripheral role in the overall network.
+
+3. **Chinese Banks as Bridges**: ICBC and Bank of China maintain important positions but take on a "bridging" role between the policy and commercial clusters.
+
+4. **Reduced Commercial Density**: The commercial cluster is less densely connected than in the overall network, suggesting more selective participation in green projects.
+
+### Top Lenders in Green Network
+
+```{r green-top-lenders}
+# Extract centrality measures from the green network
+top_lenders_green <- network_green |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness, constraint) |>
+  arrange(desc(degree))
+
+# Display the top 10 lenders by degree centrality
+top_lenders_green |>
+  slice_head(n = 10) |>
+  kable(
+    caption = "Top 10 Lenders by Degree Centrality (Green Network)",
+    col.names = c("Lender", "Geography", "Profit Orientation", 
+                 "Degree", "Betweenness", "Closeness", "Constraint"),
+    digits = c(0, 0, 0, 0, 2, 3, 3)
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Export data for designer
+write_csv(
+  top_lenders_green,
+  here("R", "social_network_analysis", "output for designer", "green_top_lenders.csv")
+)
+```
+
+The centrality metrics in the green network reveal:
+
+- **Changed Leadership**: While Societe Generale tops the list by degree, ICBC maintains an extremely high betweenness score (2211.87), confirming its crucial bridging role.
+- **Policy Banks Emerge**: KfW, IFC, and African Development Bank all appear in the top 10, with significant betweenness scores indicating their importance in the green financing ecosystem.
+- **Higher Constraint**: Most institutions in the green network show higher constraint scores than in the overall network, suggesting more clustered, less diverse connections.
+
+## Key Institution Analysis
+
+### Standard Bank Group Analysis
+
+Standard Bank Group (SBG) is a particularly interesting case in our network analysis, representing a unique South African financial institution with strong ties to Chinese lenders.
+
+```{r standard-bank-analysis}
+# Analyze Standard Bank's position
+standard_bank_data <- data_for_sna |>
+  filter(grepl("Standard Bank", standardized_lender_name))
+
+# Get Standard Bank's centrality metrics in the overall network
+standard_bank_metrics_overall <- network_overall_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  filter(grepl("Standard Bank", standardized_lender_name))
+
+# Look at Standard Bank's connections
+standard_bank_partners <- data_for_sna |>
+  filter(transaction_id %in% standard_bank_data$transaction_id) |>
+  filter(!grepl("Standard Bank", standardized_lender_name)) |>
+  count(standardized_lender_name, lender_geography, lender_profit_orientation, sort = TRUE)
+
+# Check if Standard Bank appears in green transactions
+standard_bank_green <- data_for_sna |>
+  filter(grepl("Standard Bank", standardized_lender_name), 
+         transaction_primary_class == "GREEN")
+
+# Display Standard Bank's metrics
+standard_bank_metrics_overall |>
+  select(standardized_lender_name, degree, betweenness, closeness, constraint) |>
+  kable(
+    caption = "Standard Bank Group Network Metrics (Overall Network)",
+    digits = c(0, 0, 2, 3, 3)
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Display Standard Bank's top partners
+standard_bank_partners |>
+  slice_head(n = 10) |>
+  kable(
+    caption = "Standard Bank Group's Top Co-Financing Partners",
+    col.names = c("Partner Institution", "Geography", "Profit Orientation", "Number of Co-Financed Transactions")
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+**Key Findings on Standard Bank Group:**
+
+1. **Strategic Position**: Standard Bank occupies a unique position as the most prominent African bank in the Chinese co-financing network, ranking among the top 25 institutions by degree centrality in the overall network.
+
+2. **ICBC Partnership**: Standard Bank's strongest relationship is with ICBC, which holds a 20% stake in the bank and maintains a joint venture with it (ICBC Standard Bank). This strategic partnership has enabled Standard Bank to access Chinese capital and expertise.
+
+3. **Regional Gateway Role**: Standard Bank serves as an important gateway for Chinese financing into Africa, leveraging its local knowledge and regional presence.
+
+4. **Green Finance Potential**: While our dataset doesn't show Standard Bank in many green transactions, the bank is known to be active in South Africa's Renewable Energy Independent Power Producer Procurement (REIPPP) program. Its established relationship with ICBC positions it as a potential key facilitator for channeling Chinese green finance into African renewable energy projects.
+
+5. **ESG Expertise**: Standard Bank has reportedly provided training to ICBC staff on environmental, social, and governance (ESG) risk management, indicating capacity for knowledge transfer in this critical area.
+
+This analysis suggests that the ICBC-Standard Bank partnership represents a promising model for how regional banks can facilitate Chinese participation in green financing in the Global South, even if this potential is not yet fully realized in our dataset.
+
+### People's Bank of China Analysis
+
+The People's Bank of China (PBOC) presents another intriguing case: a significant funder of green projects that has relatively low visibility in the network analysis.
+
+```{r pboc-analysis}
+# Analyze PBOC's transactions
+pboc_data <- data_for_sna |>
+  filter(standardized_lender_name == "People's Bank of China")
+
+# Count by transaction class
+pboc_transaction_count <- pboc_data |>
+  count(transaction_primary_class)
+
+# Get PBOC's co-financing partners
+pboc_partners <- data_for_sna |>
+  filter(transaction_id %in% pboc_data$transaction_id) |>
+  filter(standardized_lender_name != "People's Bank of China") |>
+  count(standardized_lender_name, lender_geography, lender_profit_orientation, sort = TRUE)
+
+# Get PBOC's network position in green network (if it exists)
+pboc_green_metrics <- network_green_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  filter(standardized_lender_name == "People's Bank of China")
+
+# Display PBOC's transaction counts
+pboc_transaction_count |>
+  kable(
+    caption = "PBOC Transactions by Project Class",
+    col.names = c("Project Class", "Number of Transactions")
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Display PBOC's metrics in green network if available
+if(nrow(pboc_green_metrics) > 0) {
+  pboc_green_metrics |>
+    select(standardized_lender_name, degree, betweenness, closeness, constraint) |>
+    kable(
+      caption = "PBOC Network Metrics (Green Network)",
+      digits = c(0, 0, 2, 3, 3)
+    ) |>
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+}
+
+# Display PBOC's top partners
+pboc_partners |>
+  slice_head(n = 10) |>
+  kable(
+    caption = "PBOC's Top Co-Financing Partners",
+    col.names = c("Partner Institution", "Geography", "Profit Orientation", "Number of Co-Financed Transactions")
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+```
+
+**Key Findings on People's Bank of China:**
+
+1. **High Transaction Count, Lower Network Centrality**: PBOC appears in 20 green transactions but has moderate network centrality metrics compared to other major funders. It has a degree of 12, suggesting a more concentrated set of partners.
+
+2. **Focused Co-Financing Strategy**: PBOC's co-financing is highly concentrated with multilateral development banks, with the Inter-American Development Bank (65 transactions) and African Development Bank (30 transactions) as its primary partners.
+
+3. **Fund-Based Approach**: Rather than participating directly in diverse co-financing arrangements, PBOC tends to establish dedicated funds that are administered by MDBs, such as the China Co-financing Fund for Latin America (at IDB) and the Africa Growing Together Fund (at AfDB).
+
+4. **Moderate Constraint (0.181)**: PBOC's constraint score is moderate, reflecting its position between highly constrained policy banks and less constrained commercial banks.
+
+This pattern of "high count, low centrality" reveals PBOC's strategic choice to deploy capital through trusted multilateral intermediaries rather than directly participating in diverse financing arrangements. While this limits its network influence, it may enhance the efficiency of capital deployment by leveraging MDBs' project selection expertise and risk management systems.
+
+## Comparative Network Analysis
+
+To rigorously compare the overall and green networks, we calculate network metrics for both and examine differences in centrality by lender type.
+
+```{r comparative-analysis}
+# Build full networks for quantitative comparison
+network_overall_full <- build_cofinancing_network_full(data_for_sna, min_collabs = 1)
+network_green_full <- build_cofinancing_network_full(data_for_sna, transaction_class = "GREEN", min_collabs = 1)
+
+# Add normalized centrality measures in the green network
+network_green_full <- network_green_full |>
+  activate(nodes) |>
+  mutate(
+    norm_degree = degree / (n() - 1),
+    norm_betweenness = betweenness / max(betweenness, na.rm = TRUE)
+  )
+
+# Extract centrality data
+centrality_overall_full <- network_overall_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness, constraint)
+
+centrality_green_full <- network_green_full |>
+  activate(nodes) |>
+  as_tibble() |>
+  select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+         degree, betweenness, closeness, constraint, norm_degree, norm_betweenness)
+
+# Summarize by profit orientation and geography
+avg_centrality_overall <- centrality_overall_full |>
+  group_by(lender_profit_orientation, lender_geography) |>
+  summarise(
+    avg_degree = mean(degree, na.rm = TRUE),
+    avg_betweenness = mean(betweenness, na.rm = TRUE),
+    avg_closeness = mean(closeness, na.rm = TRUE),
+    avg_constraint = mean(constraint, na.rm = TRUE),
+    count_overall = n(),
+    .groups = "drop"
+  )
+
+avg_centrality_green <- centrality_green_full |>
+  group_by(lender_profit_orientation, lender_geography) |>
+  summarise(
+    avg_degree = mean(degree, na.rm = TRUE),
+    avg_betweenness = mean(betweenness, na.rm = TRUE),
+    avg_closeness = mean(closeness, na.rm = TRUE),
+    avg_constraint = mean(constraint, na.rm = TRUE),
+    avg_norm_degree = mean(norm_degree, na.rm = TRUE),
+    avg_norm_betweenness = mean(norm_betweenness, na.rm = TRUE),
+    count_green = n(),
+    .groups = "drop"
+  )
+
+# Merge for comparison
+avg_centrality_comparison <- avg_centrality_overall |>
+  left_join(avg_centrality_green, by = c("lender_profit_orientation", "lender_geography"), 
+            suffix = c("_overall", "_green"))
+```
+
+### Centrality Comparison by Lender Type
+
+```{r centrality-comparison-table}
+# Create a focused comparison table
+centrality_comparison_table <- avg_centrality_comparison |>
+  select(
+    lender_profit_orientation,
+    lender_geography,
+    count_overall,
+    count_green,
+    avg_degree_overall,
+    avg_degree_green,
+    avg_constraint_overall,
+    avg_constraint_green
+  ) |>
+  rename(
+    "Profit Orientation" = lender_profit_orientation,
+    "Geography" = lender_geography,
+    "Count (Overall)" = count_overall,
+    "Count (Green)" = count_green,
+    "Avg Degree (Overall)" = avg_degree_overall,
+    "Avg Degree (Green)" = avg_degree_green,
+    "Avg Constraint (Overall)" = avg_constraint_overall,
+    "Avg Constraint (Green)" = avg_constraint_green
+  )
+
+# Display the comparison table
+centrality_comparison_table |>
+  kable(
+    caption = "Network Centrality Comparison by Lender Type",
+    digits = c(0, 0, 0, 0, 1, 1, 3, 3)
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Export data for designer
+write_csv(
+  centrality_comparison_table,
+  here("R", "social_network_analysis", "output for designer", "centrality_comparison.csv")
+)
+```
+
+### Visualizing Centrality Differences
+
+```{r centrality-visualization}
+# Prepare data for visualization focusing on normalized degree in green network
+centrality_plot_data <- avg_centrality_green |>
+  mutate(lender_category = paste(lender_geography, lender_profit_orientation, sep = ": "))
+
+# Create a bar chart of normalized degree by lender type
+p_centrality <- ggplot(centrality_plot_data, 
+       aes(x = reorder(lender_category, avg_norm_degree), 
+           y = avg_norm_degree, 
+           fill = lender_geography)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Average Normalized Degree Centrality in Green Co-Financing Network",
+    subtitle = "Higher values indicate more central position in the network",
+    x = "",
+    y = "Average Normalized Degree",
+    fill = "Geography"
+  ) +
+  scale_fill_manual(values = c("Chinese" = "#E41A1C", "Non-Chinese" = "#377EB8")) +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    plot.title = element_text(face = "bold"),
+    axis.text.y = element_text(face = "bold")
+  )
+
+print(p_centrality)
+
+# Create version for export
+p_centrality_export <- ggplot(centrality_plot_data, 
+       aes(x = reorder(lender_category, avg_norm_degree), 
+           y = avg_norm_degree, 
+           fill = lender_geography)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    x = "",
+    y = "Average Normalized Degree"
+  ) +
+  scale_fill_manual(values = c("Chinese" = "#E41A1C", "Non-Chinese" = "#377EB8")) +
+  theme_minimal() +
+  theme(
+    legend.position = "bottom",
+    axis.text.y = element_text(face = "bold")
+  )
+
+# Export for designer
+ggsave(
+  filename = here("R", "social_network_analysis", "output for designer", "normalized_degree.png"),
+  plot = p_centrality_export,
+  width = 10, height = 6, dpi = 300
+)
+```
+
+The comparative analysis reveals several important patterns:
+
+1. **Chinese Mixed-Mandate Banks**: These institutions (primarily ICBC and BOC) have the highest normalized degree centrality in the green network, confirming their crucial bridging role. They also have relatively low constraint (0.196), indicating they connect otherwise separate clusters.
+
+2. **Non-Chinese Profit-Maximizing Banks**: These maintain high degree centrality in both networks but show less relative prominence in the green network compared to the overall network.
+
+3. **Policy-Driven Institutions**: Both Chinese and non-Chinese policy banks show significantly higher network presence in the green network than in the overall network, but with high constraint scores (0.424 and 0.392 respectively), indicating they tend to finance within their own clusters.
+
+4. **Differences in Count vs. Centrality**: The number of institutions of each type differs significantly between networks. Non-Chinese policy banks appear much more frequently in the green network (66 vs. 23 institutions) but have moderate average degree centrality, suggesting many participate in a small number of transactions.
+
+### Rank Changes Between Networks
+
+We compare how institutions' centrality rankings change between the overall and green networks.
+
+```{r rank-comparison}
+# Rank lenders by degree in each network
+rank_overall <- centrality_overall_full |>
+  arrange(desc(degree)) |>
+  mutate(rank_overall = row_number()) |>
+  select(standardized_lender_name, rank_overall)
+
+rank_green <- centrality_green_full |>
+  arrange(desc(degree)) |>
+  mutate(rank_green = row_number()) |>
+  select(standardized_lender_name, rank_green)
+
+# Join rankings and calculate change
+rank_comparison <- rank_overall |>
+  inner_join(rank_green, by = "standardized_lender_name") |>
+  mutate(
+    rank_change = rank_overall - rank_green,
+    abs_change = abs(rank_change)
+  ) |>
+  arrange(desc(abs_change))
+
+# Display institutions with major rank changes
+rank_comparison |>
+  filter(abs_change >= 10) |>  # Filter to major changes
+  slice_head(n = 10) |>
+  kable(
+    caption = "Major Rank Changes Between Overall and Green Networks",
+    col.names = c("Institution", "Overall Rank", "Green Rank", "Rank Change", "Absolute Change")
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed")) |>
+  row_spec(which(rank_comparison$rank_change[rank_comparison$abs_change >= 10][1:10] > 0), 
+           background = "#ffdddd") |>  # Worse rank in green network
+  row_spec(which(rank_comparison$rank_change[rank_comparison$abs_change >= 10][1:10] < 0), 
+           background = "#ddffdd")     # Better rank in green network
+
+# Export for designer
+write_csv(
+  rank_comparison |> filter(abs_change >= 10) |> slice_head(n = 10),
+  here("R", "social_network_analysis", "output for designer", "rank_changes.csv")
+)
+```
+
+This rank comparison highlights institutions that change dramatically in prominence between networks:
+
+- **Rising in the Green Network** (green rows): Policy-driven institutions like KfW, AFD, and the African Development Bank leap dozens of places in the rankings, confirming their specialized role in green financing.
+
+- **Falling in the Green Network** (red rows): Several major commercial banks drop significantly in the rankings, indicating more selective participation in green projects.
+
+These rank changes further underscore the distinct nature of the green financing ecosystem compared to the overall Belt and Road financing network.
+
+## Co-Financing by Project Type
+
+Finally, we examine the extent of co-financing across different green project subtypes.
+
+```{r cofinancing-by-project-type}
+# Load additional dataset with project type information
+gcdf_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+
+# Analyze green projects by type and co-financing status
+green_projects_summary <- gcdf_data |>
+  filter(primary_class == "GREEN") |>
+  group_by(project_type, co_financed) |> 
+  summarize(
+    amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+    project_n = n(),
+    .groups = "drop"
+  ) |> 
+  group_by(project_type) |> 
+  mutate(
+    category_usd_pct = amount_bn / sum(amount_bn, na.rm = TRUE) * 100,
+    category_sum_bn = sum(amount_bn, na.rm = TRUE)
+  ) |> 
+  ungroup() |> 
+  filter(!is.na(category_usd_pct)) |> 
+  pivot_wider(
+    names_from = co_financed,
+    values_from = category_usd_pct,
+    names_prefix = "pct_",
+    values_fill = 0
+  ) |> 
+  arrange(desc(category_sum_bn))
+
+# Display the summary
+green_projects_summary |>
+  mutate(
+    total_bn = round(category_sum_bn, 1),
+    pct_No = round(pct_No, 1),
+    pct_Yes = round(pct_Yes, 1)
+  ) |>
+  rename(
+    "Project Type" = project_type,
+    "Total ($ Billion)" = total_bn,
+    "% Not Co-Financed" = pct_No,
+    "% Co-Financed" = pct_Yes
+  ) |>
+  kable(
+    caption = "Co-Financing Percentage by Green Project Type"
+  ) |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+# Visualize co-financing by project type
+p_project_types <- green_projects_summary |>
+  ggplot(
+    aes(x = reorder(project_type, category_sum_bn), y = category_sum_bn, fill = pct_Yes)
+  ) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_gradient(low = "#E6F5FF", high = "#0072B2") +
+  labs(
+    title = "Green Project Financing by Type",
+    subtitle = "Color intensity shows percentage that is co-financed",
+    x = "",
+    y = "Total Financing ($ Billion)",
+    fill = "% Co-Financed"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(face = "bold"),
+    axis.text.y = element_text(face = "bold")
+  )
+
+print(p_project_types)
+
+# Create version for export
+p_project_types_export <- green_projects_summary |>
+  ggplot(
+    aes(x = reorder(project_type, category_sum_bn), y = category_sum_bn, fill = pct_Yes)
+  ) +
+  geom_col() +
+  coord_flip() +
+  scale_fill_gradient(low = "#E6F5FF", high = "#0072B2") +
+  labs(
+    x = "",
+    y = "Total Financing ($ Billion)",
+    fill = "% Co-Financed"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.y = element_text(face = "bold")
+  )
+
+# Export for designer
+ggsave(
+  filename = here("R", "social_network_analysis", "output for designer", "project_types.png"),
+  plot = p_project_types_export,
+  width = 10, height = 6, dpi = 300
+)
+
+# Export data
+write_csv(
+  green_projects_summary,
+  here("R", "social_network_analysis", "output for designer", "green_projects_summary.csv")
+)
+```
+
+The analysis of co-financing by project type reveals:
+
+1. **Hydropower Dominance**: Hydropower projects account for the vast majority of green financing volume (approximately $61 billion) and show a roughly even split between co-financed and non-co-financed projects.
+
+2. **Nuclear Power**: The second-largest category is heavily dominated by non-co-financed projects, suggesting these are primarily bilateral arrangements.
+
+3. **Solar and Wind**: While much smaller in volume, these renewable technologies show higher co-financing rates (around 33% for solar and 25% for wind), indicating greater multilateral involvement.
+
+This breakdown highlights the concentrated nature of China's green financing portfolio, with traditional large hydro and nuclear projects dominating the volume. The newer renewable technologies, despite growing interest, remain a small fraction of the overall green portfolio by value.
+
+## Understanding Centrality Measures
+
+To interpret our network analysis, it's important to understand the centrality measures used:
+
+1. **Degree Centrality**
+   - **What it means**: The number of direct connections an institution has to others. High-degree institutions collaborate with many partners.
+   - **Policy implication**: Institutions with high degree centrality are key coordinators that bring together multiple financing partners.
+   - **Example**: Chinese mixed-mandate banks (ICBC, BOC) have high degree in both networks, showing their coordination role across different types of projects.
+
+2. **Betweenness Centrality**
+   - **What it means**: How often an institution serves as a bridge between others that wouldn't otherwise be connected.
+   - **Policy implication**: High-betweenness institutions connect different financing ecosystems that would otherwise remain separate.
+   - **Example**: ICBC has extremely high betweenness (2211.87) in the green network, indicating it's a crucial bridge between policy-driven and commercial lenders.
+
+3. **Constraint**
+   - **What it means**: Whether an institution's partners are also connected to each other (high constraint) or not (low constraint).
+   - **Policy implication**: Low-constraint institutions can leverage relationships across different financing ecosystems.
+   - **Example**: Chinese Mixed-Mandate banks have the lowest constraint (0.196), indicating their unique bridging position, while Policy-Driven institutions have much higher constraint (0.424 for Chinese, 0.392 for non-Chinese), showing they tend to finance together in tight clusters.
+
+4. **Closeness Centrality**
+   - **What it means**: How easily an institution can reach all others in the network (the inverse of the average shortest path).
+   - **Policy implication**: High-closeness institutions can efficiently disseminate information or practices across the network.
+   - **Example**: In both networks, closeness scores are generally low, reflecting the presence of distinct, somewhat separated clusters.
+
+These metrics together help us understand not just which institutions are most active, but how they structure their relationships and influence the overall financing ecosystem.
+
+## Policy Implications
+
+Our network analysis reveals several important findings with significant policy implications:
+
+1. **Bifurcated Financing Ecosystems**: Green projects rely on fundamentally different institutional networks than traditional Belt and Road financing. The green financing network is dominated by policy-driven institutions (PDBs and MDBs), with much less involvement from profit-maximizing commercial lenders.
+
+2. **Chinese Commercial Banks as Bridges**: Chinese state-owned commercial banks like ICBC and Bank of China play a critical "bridging" role between policy-driven and commercial lending networks. Their low constraint scores and high betweenness centrality indicate they connect financing ecosystems that would otherwise remain separate.
+
+3. **PBOC's "High Count, Low Centrality" Strategy**: The People's Bank of China demonstrates a distinctive approach to green financing by concentrating its activities through a small number of multilateral partners rather than participating broadly across the network. This reduces its network influence but may enhance the efficiency of capital deployment.
+
+4. **Regional Bank Potential**: Standard Bank's strategic relationship with ICBC illustrates the potential role of regional banks in facilitating Chinese green finance in the Global South. This model could be replicated with other regional partners.
+
+5. **Limited Commercial Participation**: The median green project has minimal profit-maximizing co-financiers, suggesting untapped potential for commercial lender participation in the green transition.
+
+For Chinese policymakers and development banks, these findings suggest opportunities to:
+
+- Leverage the bridging position of state-owned commercial banks to mobilize more commercial capital for green investments
+- Consider replenishing and expanding multilateral co-financing funds that have proven effective vehicles for green project financing
+- Develop more strategic partnerships with regional banks to enhance local knowledge and project pipeline development
+- Explore blended finance approaches that reduce risk for commercial partners in green projects
+
+## Conclusion
+
+This network analysis provides robust evidence that China's green overseas financing relies on fundamentally different institutional networks than traditional Belt and Road sectors. The stark contrast between the dense, commercially-oriented overall network and the bifurcated, policy-driven green network highlights both challenges and opportunities for scaling up green financing.
+
+While the policy bank dominance in green financing ensures alignment with environmental standards and development goals, it may constrain the scale of available capital. The strategic bridge position of Chinese commercial banks offers a potential pathway to channel more commercial resources toward green projects, if properly leveraged.
+
+As China balances financial risk management with its mandates to support green overseas investments, understanding these network dynamics can inform more effective strategies for mobilizing diverse sources of capital for the global green transition.

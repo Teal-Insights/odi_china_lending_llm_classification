@@ -1,0 +1,245 @@
+---
+title: "Create Social Network Analysis Dataset"
+author: "Teal Emery"
+format: html
+---
+
+
+# Setup
+
+## load libraries
+```{r}
+library(tidyverse)
+library(here)
+```
+
+## load data
+```{r}
+gcdf_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+
+gcdf_data
+```
+
+
+# Prepare Data
+
+Filter for cofinanced loans using AidData GCDF 3.0 flags. 
+```{r}
+gcdf_cofinanced_loans <- gcdf_data |> 
+  filter(
+    flow_type == "Loan",
+    co_financed == "Yes"
+    # data already filtered for recommended_for_aggregates == "Yes"
+  ) 
+  
+gcdf_cofinanced_loans
+```
+
+In the GCDF 3.0, a given co-financed transaction may be associated with multiple Aid Data Record IDs if multiple Chinese official lenders participate.  For example, if both ICBC and Bank of China participate in a given transaction, it would have two AidData record IDs, and the banks names will appear twice (once as the financing agency, and the second time as a co-financier). So we are selecting each transaction ID, which is "{direct_recieving_agency}-{country_name}-{commitment_date}", which may contain multiple AidData Record IDs, and then finding the unique standardized lender per transaction to avoid double counting. We also get rid of the original lender ID and lender type and only keep the standardized ID and type to consolidate corporate entities. We simplify lender geography type to "Chinese" and "Other", as some entities might be "Recipient" in some transactions in their home country and "Other" in other transactions. 
+
+
+Get unique standardized lenders per transaction.
+```{r}
+cofinanced_loans_unique_lenders <- gcdf_cofinanced_loans |> 
+  select(
+    transaction_id,
+    standardized_lenders
+  ) |> 
+  unnest(
+    standardized_lenders
+  ) |> 
+   # take out original names & classifications
+  # to avoid double counding
+  select(
+    -contains("original_")
+  ) |> 
+  unique()
+
+cofinanced_loans_unique_lenders
+```
+
+
+Process our unique lenders for the social network analysis:
+
+```{r}
+processed_cofinanced_loans <- cofinanced_loans_unique_lenders |>
+  
+  # Step 1: Consolidate lender geography.
+  # The original 'lender_geography_type' includes "Chinese", "Other", and "Recipient".
+  # For clarity, we recode "Other" and "Recipient" as "Non-Chinese".
+  mutate(lender_geography = case_when(
+    lender_geography_type == "Chinese" ~ "Chinese",
+    lender_geography_type %in% c("Other", "Recipient") ~ "Non-Chinese",
+    .default = "Fix this"  # fallback in case other values appear
+  )) |>
+  
+  # Step 2: Create a core lender type.
+  # Remove the geographic prefixes ("Chinese " or "Other ") from the standardized lender type,
+  # so that we have only the institutional type.
+  mutate(lender_core_type = str_remove(
+    standardized_lender_type, 
+    "^(Chinese |Other )"
+  )) |>
+  
+  # Step 3: Define lender profit orientation with the refined rules.
+  # Classify each lender into one of three groups:
+  #   - Profit Maximizing: Lenders that are purely commercial (i.e., "Private Sector").
+  #   - Mixed Mandate: Narrowly defined as only "State‑owned Commercial Bank" and 
+  #                  "Joint Venture/Special Purpose Vehicle".
+  #   - Policy Driven: All other state‑owned or policy‑oriented institutions,
+  #                    including "State‑owned Bank", "State‑owned Policy Bank", "Government Agency",
+  #                    "Intergovernmental Organization", "State‑owned Company", "State‑owned Fund",
+  #                    "Miscellaneous Agency Type", and "NGO/CSO/Foundation".
+  mutate(lender_profit_orientation = case_when(
+    lender_core_type == "Private Sector" ~ "Profit Maximizing",
+    lender_core_type %in% c(
+      "State-owned Commercial Bank", 
+      "Joint Venture/Special Purpose Vehicle"
+    ) ~ "Mixed Mandate",
+    lender_core_type %in% c(
+      "State-owned Bank", 
+      "State-owned Policy Bank", 
+      "Government Agency", 
+      "Intergovernmental Organization", 
+      "State-owned Company",       
+      "State-owned Fund", 
+      "Miscellaneous Agency Type", 
+      "NGO/CSO/Foundation"
+    ) ~ "Policy Driven",
+    .default = "Fix this"  # In case any unexpected values appear
+  )) |>
+  
+  # Reorder/select columns for clarity.
+  select(
+    transaction_id,
+    standardized_lender_name,
+    standardized_lender_type,
+    lender_geography,          # "Chinese" or "Non-Chinese"
+    lender_core_type,          # Institutional type without geographic prefix
+    lender_profit_orientation  # "Profit Maximizing", "Mixed Mandate", or "Policy Driven"
+  ) |> 
+  unique()
+
+# Display the structure of the processed data for verification.
+glimpse(processed_cofinanced_loans)
+```
+
+Test that nothing was missed in the processing.
+
+Should be: Chinese/Non-Chinese
+```{r}
+processed_cofinanced_loans$lender_geography |> unique()
+```
+
+Should not have: "Fix this"
+```{r}
+processed_cofinanced_loans$lender_core_type |> unique()
+```
+
+Should not have: "Fix this"
+```{r}
+processed_cofinanced_loans$lender_profit_orientation |> unique()
+```
+
+
+```{r}
+processed_cofinanced_loans |> 
+  filter(
+    lender_profit_orientation == "Fix this"
+  ) |> 
+  unique()
+```
+
+
+
+```{r}
+transaction_features <- gcdf_cofinanced_loans |>
+  select(
+    transaction_id,
+    transaction_primary_class,
+    recipient,
+    recipient_region,
+    commitment_year,
+    involving_multilateral
+  ) |> 
+  mutate(
+    involving_multilateral = case_when(
+      # One of two record IDs is "Yes", so we set "Yes" to the entire transaction.
+      transaction_id == "Maamba Collieries Ltd. (MCL)-Zambia-2015-07-28" ~ "Yes"
+    ), 
+    # transform to Yes/No
+    involving_multilateral = case_when(
+      is.na(involving_multilateral) ~ "No",
+      involving_multilateral == "Yes" ~ "Yes",
+      .default = NA
+    )
+  ) |> 
+  unique()
+
+transaction_features 
+```
+
+should be zero
+```{r}
+transaction_features |> 
+  filter(
+    is.na(involving_multilateral)
+  )
+```
+
+
+
+```{r}
+data_for_sna <- processed_cofinanced_loans |> 
+  group_by(transaction_id) |> 
+  nest(.key = "unique_lenders") |> 
+  ungroup() |> 
+  left_join(
+    transaction_features,
+    by = join_by(transaction_id)
+  )
+
+data_for_sna
+```
+
+
+```{r}
+data_for_sna |> 
+  count(transaction_primary_class, sort = TRUE)
+```
+
+```{r}
+write_rds(
+  data_for_sna,
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.rds"
+  ),
+  compress = "xz"
+)
+```
+
+```{r}
+data_for_sna_unnested <- data_for_sna |> 
+  unnest(unique_lenders) 
+
+data_for_sna_unnested
+```
+
+```{r}
+write_csv(
+  data_for_sna_unnested,
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.csv"
+  )
+)
+```
