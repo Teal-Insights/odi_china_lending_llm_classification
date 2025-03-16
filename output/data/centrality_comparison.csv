@@ -1,0 +1,12 @@
+lender_profit_orientation,lender_geography,avg_degree,avg_betweenness,avg_constraint,count,lender_type,network
+Mixed Mandate,Chinese,55.30769230769232,2455.7356210778617,0.2166479918459524,26,Chinese Mixed Mandate,Overall network
+Mixed Mandate,Non-Chinese,20,8.091198586786927,0.19051243149428837,8,Non-Chinese Mixed Mandate,Overall network
+Policy Driven,Chinese,18.48275862068966,1273.7324273121246,0.5846356036723425,29,Chinese Policy Driven,Overall network
+Policy Driven,Non-Chinese,29.969827586206858,219.63006993174477,0.22780545137200017,232,Non-Chinese Policy Driven,Overall network
+Profit Maximizing,Chinese,9.900000000000002,346.9669104808397,0.4746042909910134,10,Chinese Profit Maximizing,Overall network
+Profit Maximizing,Non-Chinese,46.10232558139545,385.38618265641145,0.15058477365064757,430,Non-Chinese Profit Maximizing,Overall network
+Mixed Mandate,Chinese,16.857142857142858,529.5683122389037,0.19603275899686287,7,Chinese Mixed Mandate,Green network
+Policy Driven,Chinese,9.125,229.23007907321852,0.4236092053286014,8,Chinese Policy Driven,Green network
+Policy Driven,Non-Chinese,9.696969696969695,57.27877280240284,0.391511418502166,66,Non-Chinese Policy Driven,Green network
+Profit Maximizing,Chinese,5.5,2.2121628371628375,0.37964186670200395,2,Chinese Profit Maximizing,Green network
+Profit Maximizing,Non-Chinese,12.666666666666664,64.42733072121071,0.29470010916671435,57,Non-Chinese Profit Maximizing,Green network

@@ -1,0 +1,85 @@
+delivery_channel,commitment_year,usd_bn,n
+Bilateral loan with co-financing,2001,0.174194603837557,1
+Bilateral loan with co-financing,2002,0.125972527060983,1
+Bilateral loan with co-financing,2003,0.054021736350224,1
+Bilateral loan with co-financing,2004,0.5657597624437518,3
+Bilateral loan with co-financing,2005,0.0368939669434405,1
+Bilateral loan with co-financing,2006,1.1360631836493598,6
+Bilateral loan with co-financing,2007,9.422659715084203,5
+Bilateral loan with co-financing,2008,4.512423674207133,7
+Bilateral loan with co-financing,2009,8.979291813599392,14
+Bilateral loan with co-financing,2010,8.097089990099194,15
+Bilateral loan with co-financing,2011,1.2419964123120941,9
+Bilateral loan with co-financing,2012,2.1637089045569686,7
+Bilateral loan with co-financing,2013,4.315408238268954,10
+Bilateral loan with co-financing,2014,0.8017682045179673,5
+Bilateral loan with co-financing,2015,2.755074275416806,19
+Bilateral loan with co-financing,2016,3.2778517053194953,13
+Bilateral loan with co-financing,2017,5.069562141406958,19
+Bilateral loan with co-financing,2018,3.4518236879393256,10
+Bilateral loan with co-financing,2019,2.579492628554716,14
+Bilateral loan with co-financing,2020,0.8324624034379821,5
+Bilateral loan with co-financing,2021,0.02,1
+Bilateral loan without co-financing,2000,3.268199934632531,50
+Bilateral loan without co-financing,2001,4.5581857804893895,54
+Bilateral loan without co-financing,2002,4.654532674925368,49
+Bilateral loan without co-financing,2003,7.835103380996787,52
+Bilateral loan without co-financing,2004,6.9764731730366965,66
+Bilateral loan without co-financing,2005,12.94194843167939,104
+Bilateral loan without co-financing,2006,25.999086790077165,111
+Bilateral loan without co-financing,2007,22.33840283800877,149
+Bilateral loan without co-financing,2008,13.161366970158502,123
+Bilateral loan without co-financing,2009,101.66743021471227,186
+Bilateral loan without co-financing,2010,75.26725246995079,199
+Bilateral loan without co-financing,2011,41.42775223901756,202
+Bilateral loan without co-financing,2012,49.35791144676045,217
+Bilateral loan without co-financing,2013,93.19201963353206,214
+Bilateral loan without co-financing,2014,47.06084615666477,204
+Bilateral loan without co-financing,2015,70.03120373943358,207
+Bilateral loan without co-financing,2016,55.9021825805901,265
+Bilateral loan without co-financing,2017,53.99359142622467,226
+Bilateral loan without co-financing,2018,49.10046032677645,203
+Bilateral loan without co-financing,2019,32.76035725647619,135
+Bilateral loan without co-financing,2020,13.813219597907905,75
+Bilateral loan without co-financing,2021,15.289894614137745,51
+Involves multilateral co-financing,2001,0.015189636675173,1
+Involves multilateral co-financing,2002,0.0150987626422349,1
+Involves multilateral co-financing,2003,1.48112675415015,1
+Involves multilateral co-financing,2004,0.024766284909265603,3
+Involves multilateral co-financing,2005,0.0110681900830321,1
+Involves multilateral co-financing,2006,2.913988681490439,5
+Involves multilateral co-financing,2007,0.8368054315772062,4
+Involves multilateral co-financing,2008,0.8128143442531023,5
+Involves multilateral co-financing,2009,2.0459096383169553,10
+Involves multilateral co-financing,2010,0.09141552945277913,4
+Involves multilateral co-financing,2011,0.6248382316121662,5
+Involves multilateral co-financing,2012,0.3968606129529181,5
+Involves multilateral co-financing,2013,4.560671600117728,9
+Involves multilateral co-financing,2014,2.0055723189973236,22
+Involves multilateral co-financing,2015,3.5035427747263928,40
+Involves multilateral co-financing,2016,3.5885851322809224,33
+Involves multilateral co-financing,2017,4.506302557021404,47
+Involves multilateral co-financing,2018,3.1972181232893213,40
+Involves multilateral co-financing,2019,2.1741663370942956,25
+Involves multilateral co-financing,2020,1.3801874019669265,28
+Involves multilateral co-financing,2021,1.1022916030588237,19
+Syndicated loan,2002,1.0729604459879543,6
+Syndicated loan,2003,0.2517265832576967,3
+Syndicated loan,2004,0.6268978642216431,12
+Syndicated loan,2005,16.150105447599312,22
+Syndicated loan,2006,2.0142526317943226,20
+Syndicated loan,2007,2.0092445141996094,19
+Syndicated loan,2008,21.522822794101724,18
+Syndicated loan,2009,6.574330529065985,18
+Syndicated loan,2010,7.811846750820603,32
+Syndicated loan,2011,9.480002800126824,39
+Syndicated loan,2012,14.078246531052438,35
+Syndicated loan,2013,6.503483879996362,48
+Syndicated loan,2014,22.111161294452486,49
+Syndicated loan,2015,14.696106666479812,74
+Syndicated loan,2016,41.32902819316108,97
+Syndicated loan,2017,19.713938644390158,118
+Syndicated loan,2018,18.6155901129223,116
+Syndicated loan,2019,25.096314866268845,132
+Syndicated loan,2020,17.824381053292047,81
+Syndicated loan,2021,15.014115625825541,69

@@ -1,0 +1,21 @@
+standardized_lender_name,lender_geography,n,region
+ICBC,Chinese,418,Chinese
+Bank of China,Chinese,355,Chinese
+Export-Import Bank of China,Chinese,205,Chinese
+China Development Bank,Chinese,190,Chinese
+Sumitomo Mitsui,Non-Chinese,190,Japanese
+Mitsubishi UFJ,Non-Chinese,189,Japanese
+Citibank,Non-Chinese,163,US
+Standard Chartered,Non-Chinese,160,European
+Mizuho,Non-Chinese,152,Japanese
+BNP Paribas,Non-Chinese,128,European
+HSBC,Non-Chinese,128,European
+Societe Generale,Non-Chinese,115,European
+China Construction Bank,Chinese,114,Chinese
+Credit Agricole,Non-Chinese,101,European
+ING,Non-Chinese,101,European
+People's Bank of China,Chinese,95,Chinese
+Intesa Sanpaolo,Non-Chinese,90,European
+Commerzbank,Non-Chinese,87,European
+JPMorgan,Non-Chinese,83,US
+Deutsche Bank,Non-Chinese,73,European

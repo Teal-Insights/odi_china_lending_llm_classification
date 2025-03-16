@@ -1,0 +1,10 @@
+income,delivery_channel,usd_bn,total_by_income,pct_of_income
+Low income,Bilateral loan without co-financing,71.6878359936454,83.84978155830497,85.49555486175862
+Low income,Involves multilateral co-financing,1.1887110107479146,83.84978155830497,1.4176673912040476
+Low income,Syndicated loan,10.973234553911672,83.84978155830497,13.086777747037337
+Lower middle income,Bilateral loan without co-financing,319.6272016650601,421.9379050255208,75.75218956583849
+Lower middle income,Involves multilateral co-financing,10.123153476204605,421.9379050255208,2.3992045643759616
+Lower middle income,Syndicated loan,92.18754988425611,421.9379050255208,21.848605869785548
+Upper middle income,Bilateral loan without co-financing,316.0927408486173,465.1624258966912,67.95319725992205
+Upper middle income,Involves multilateral co-financing,4.14352606348562,465.1624258966912,0.8907697253272695
+Upper middle income,Syndicated loan,144.92615898458826,465.1624258966912,31.156033014750673
