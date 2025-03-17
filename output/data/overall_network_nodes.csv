@@ -1,0 +1,21 @@
+standardized_lender_name,lender_geography,lender_core_type,lender_profit_orientation,degree,betweenness,closeness,constraint,.tidygraph_node_index
+ICBC,Chinese,State-owned Commercial Bank,Mixed Mandate,340,20923.02644572366,9.132420091324201e-4,0.053008747500496806,1
+Citibank,Non-Chinese,Private Sector,Profit Maximizing,327,12157.194199933665,9.009009009009009e-4,0.05442169495457501,2
+Commerzbank,Non-Chinese,Private Sector,Profit Maximizing,236,3165.0458011400938,8.264462809917355e-4,0.05793109888940828,3
+HSBC,Non-Chinese,Private Sector,Profit Maximizing,309,8895.167473418609,8.952551477170994e-4,0.05301034447001852,4
+Mizuho,Non-Chinese,Private Sector,Profit Maximizing,331,8260.398502429714,9.049773755656109e-4,0.052945480929319125,5
+Mitsubishi UFJ,Non-Chinese,Private Sector,Profit Maximizing,345,11340.483220654613,9.191176470588235e-4,0.05155905486107075,6
+Sumitomo Mitsui,Non-Chinese,Private Sector,Profit Maximizing,367,12567.05950947974,9.389671361502347e-4,0.05138997707404709,7
+Standard Chartered,Non-Chinese,Private Sector,Profit Maximizing,345,12615.887995631407,9.199632014719411e-4,0.04891564984487111,8
+Bank of China,Chinese,State-owned Commercial Bank,Mixed Mandate,386,26999.056245962216,9.532888465204957e-4,0.0514892069357685,9
+ING,Non-Chinese,Private Sector,Profit Maximizing,262,5116.732199032669,8.431703204047217e-4,0.061123473032995944,10
+Credit Agricole,Non-Chinese,Private Sector,Profit Maximizing,259,4751.5028203351785,8.488964346349745e-4,0.061000647125026335,11
+Societe Generale,Non-Chinese,Private Sector,Profit Maximizing,266,7845.161650449304,8.517887563884157e-4,0.061493551524735325,12
+China Development Bank,Chinese,State-owned Policy Bank,Policy Driven,209,21676.273499695486,8.090614886731392e-4,0.05418976953292436,13
+BNP Paribas,Non-Chinese,Private Sector,Profit Maximizing,297,6347.787461813797,8.802816901408451e-4,0.05660227913979601,14
+China Construction Bank,Chinese,State-owned Commercial Bank,Mixed Mandate,236,5592.083925201608,8.19000819000819e-4,0.05512517980487334,15
+Natixis,Non-Chinese,Private Sector,Profit Maximizing,225,3274.453657615182,8.149959250203749e-4,0.05981274822555396,16
+Intesa Sanpaolo,Non-Chinese,Private Sector,Profit Maximizing,273,5604.564577995454,8.658008658008658e-4,0.05501397371992592,17
+Credit Suisse,Non-Chinese,Private Sector,Profit Maximizing,213,7904.418105698465,8.012820512820513e-4,0.052521961411721045,18
+JPMorgan,Non-Chinese,Private Sector,Profit Maximizing,235,4071.3120267486806,8.230452674897119e-4,0.0632067732345522,19
+DZ Bank,Non-Chinese,Private Sector,Profit Maximizing,234,2316.706558099624,8.163265306122449e-4,0.051411224138399346,20

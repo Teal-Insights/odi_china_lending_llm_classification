@@ -1,0 +1,655 @@
+standardized_lender_name,standardized_lender_type,lender_color_group,n
+ICBC,Chinese State-owned Commercial Bank,Chinese Institution,385
+Bank of China,Chinese State-owned Commercial Bank,Chinese Institution,339
+Sumitomo Mitsui,Other Private Sector,Non-Chinese Institution,181
+Mitsubishi UFJ,Other Private Sector,Non-Chinese Institution,179
+Citibank,Other Private Sector,Non-Chinese Institution,157
+Standard Chartered,Other Private Sector,Non-Chinese Institution,155
+Mizuho,Other Private Sector,Non-Chinese Institution,151
+China Development Bank,Chinese State-owned Policy Bank,Chinese Institution,137
+Export-Import Bank of China,Chinese State-owned Policy Bank,Chinese Institution,127
+HSBC,Other Private Sector,Non-Chinese Institution,122
+BNP Paribas,Other Private Sector,Non-Chinese Institution,119
+Societe Generale,Other Private Sector,Non-Chinese Institution,113
+China Construction Bank,Chinese State-owned Commercial Bank,Chinese Institution,109
+ING,Other Private Sector,Non-Chinese Institution,99
+Credit Agricole,Other Private Sector,Non-Chinese Institution,97
+Intesa Sanpaolo,Other Private Sector,Non-Chinese Institution,89
+Commerzbank,Other Private Sector,Non-Chinese Institution,86
+JPMorgan,Other Private Sector,Non-Chinese Institution,81
+Natixis,Other Private Sector,Non-Chinese Institution,71
+Deutsche Bank,Other Private Sector,Non-Chinese Institution,69
+Bank of America,Other Private Sector,Non-Chinese Institution,67
+UniCredit,Other Private Sector,Non-Chinese Institution,57
+DBS Bank,Other Private Sector,Non-Chinese Institution,55
+Credit Suisse,Other Private Sector,Non-Chinese Institution,53
+DZ Bank,Other Private Sector,Non-Chinese Institution,51
+Barclays,Other Private Sector,Non-Chinese Institution,46
+Raiffeisen Bank,Other Private Sector,Non-Chinese Institution,44
+State Bank of India,Other State-owned Bank,Non-Chinese Institution,40
+BBVA,Other Private Sector,Non-Chinese Institution,39
+Mega International Commercial Bank,Other Private Sector,Non-Chinese Institution,39
+Maybank,Other Private Sector,Non-Chinese Institution,37
+ANZ,Other Private Sector,Non-Chinese Institution,36
+Bank of Taiwan,Other State-owned Bank,Non-Chinese Institution,36
+Standard Bank,Other Private Sector,Non-Chinese Institution,36
+ABN Amro,Other Private Sector,Non-Chinese Institution,34
+OCBC,Other Private Sector,Non-Chinese Institution,34
+Korea Development Bank,Other State-owned Bank,Non-Chinese Institution,32
+Agricultural Bank of China,Chinese State-owned Commercial Bank,Chinese Institution,30
+Cathay United Bank,Other Private Sector,Non-Chinese Institution,30
+Emirates NBD,Other State-owned Bank,Non-Chinese Institution,30
+Hua Nan Commercial Bank,Other Private Sector,Non-Chinese Institution,30
+United Overseas Bank,Other Private Sector,Non-Chinese Institution,28
+Banco Santander,Other Private Sector,Non-Chinese Institution,27
+Bayerische Landesbank,Other State-owned Bank,Non-Chinese Institution,27
+Chang Hwa Commercial Bank,Other Private Sector,Non-Chinese Institution,27
+KfW,Other State-owned Bank,Non-Chinese Institution,27
+Rabobank,Other Private Sector,Non-Chinese Institution,27
+Goldman Sachs,Other Private Sector,Non-Chinese Institution,26
+CTBC Bank,Other Private Sector,Non-Chinese Institution,25
+Taiwan Cooperative Bank,Other State-owned Bank,Non-Chinese Institution,25
+First Commercial Bank,Other Private Sector,Non-Chinese Institution,23
+Bank ABC,Other State-owned Bank,Non-Chinese Institution,22
+CITIC,Chinese State-owned Company,Chinese Institution,22
+First Abu Dhabi Bank,Other State-owned Bank,Non-Chinese Institution,22
+International Finance Corporation,Other Intergovernmental Organization,Non-Chinese Institution,22
+WestLB,Other State-owned Bank,Non-Chinese Institution,20
+Bank of Communications,Chinese State-owned Commercial Bank,Chinese Institution,19
+CIMB,Other Private Sector,Non-Chinese Institution,19
+Taiwan Business Bank,Other Private Sector,Non-Chinese Institution,19
+Chinatrust Commercial Bank,Other Private Sector,Non-Chinese Institution,18
+Erste,Other Private Sector,Non-Chinese Institution,18
+Itau,Other Private Sector,Non-Chinese Institution,18
+NatWest,Other Private Sector,Non-Chinese Institution,18
+Scotiabank,Other Private Sector,Non-Chinese Institution,18
+The Shanghai Commercial & Savings Bank,Other Private Sector,Non-Chinese Institution,18
+BNY Mellon,Other Private Sector,Non-Chinese Institution,17
+"Export-Import Bank of the Republic of China, Taipei",Other State-owned Bank,Non-Chinese Institution,17
+QNB,Other State-owned Bank,Non-Chinese Institution,17
+Abu Dhabi Commercial Bank,Other State-owned Bank,Non-Chinese Institution,16
+China Minsheng Banking,Chinese Private Sector,Chinese Institution,16
+Hamburg Commercial Bank,Other State-owned Bank,Non-Chinese Institution,16
+Land Bank of Taiwan,Other State-owned Bank,Non-Chinese Institution,16
+Wells Fargo,Other Private Sector,Non-Chinese Institution,16
+Bank Negara Indonesia,Other State-owned Bank,Non-Chinese Institution,15
+CaixaBank,Other Private Sector,Non-Chinese Institution,15
+European Bank for Reconstruction and Development,Other Intergovernmental Organization,Non-Chinese Institution,15
+KBC,Other Private Sector,Non-Chinese Institution,15
+Nedbank,Other Private Sector,Non-Chinese Institution,15
+Sberbank,Other State-owned Bank,Non-Chinese Institution,15
+Taishin International Bank,Other Private Sector,Non-Chinese Institution,15
+Afrasia Bank,Other Private Sector,Non-Chinese Institution,14
+Bangkok Bank Public,Other Private Sector,Non-Chinese Institution,14
+Export Development Canada,Other State-owned Bank,Non-Chinese Institution,14
+Mashreqbank,Other Private Sector,Non-Chinese Institution,14
+Nordea,Other Private Sector,Non-Chinese Institution,14
+Absa,Other Private Sector,Non-Chinese Institution,13
+Banco Santander Río,Other Private Sector,Non-Chinese Institution,13
+Bank Mandiri,Other State-owned Bank,Non-Chinese Institution,13
+Bank of Montreal,Other Private Sector,Non-Chinese Institution,13
+Commonwealth Bank of Australia,Other Private Sector,Non-Chinese Institution,13
+Indonesia Eximbank,Other State-owned Bank,Non-Chinese Institution,13
+National Bank of Abu Dhabi,Other State-owned Bank,Non-Chinese Institution,13
+Taipei Fubon Commercial Bank,Other Private Sector,Non-Chinese Institution,13
+Bank Central Asia,Other Private Sector,Non-Chinese Institution,12
+Bank Pan Indonesia,Other Private Sector,Non-Chinese Institution,12
+National Bank of Ras Al-Khaimah,Other State-owned Bank,Non-Chinese Institution,12
+Banco Hipotecario,Other Private Sector,Non-Chinese Institution,11
+Bank of East Asia,Other Private Sector,Non-Chinese Institution,11
+E.SUN Commercial Bank,Other Private Sector,Non-Chinese Institution,11
+Ecobank,Other Private Sector,Non-Chinese Institution,11
+Isbank,Other Private Sector,Non-Chinese Institution,11
+Lloyds Bank,Other Private Sector,Non-Chinese Institution,11
+National Australia Bank,Other Private Sector,Non-Chinese Institution,11
+Taiwan Shin Kong Commercial Bank,Other Private Sector,Non-Chinese Institution,11
+Westpac Banking Corporation,Other Private Sector,Non-Chinese Institution,11
+Banco de Galicia y Buenos Aires,Other Private Sector,Non-Chinese Institution,10
+Bank of Baroda,Other Private Sector,Non-Chinese Institution,10
+DNB Bank,Other State-owned Bank,Non-Chinese Institution,10
+Ghana International Bank,Other State-owned Bank,Non-Chinese Institution,10
+Morgan Stanley,Other Private Sector,Non-Chinese Institution,10
+Rand Merchant Bank,Other Private Sector,Non-Chinese Institution,10
+African Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,9
+Asian Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,9
+Banco de Oro,Other Private Sector,Non-Chinese Institution,9
+Bank Rakyat Indonesia,Other State-owned Bank,Non-Chinese Institution,9
+Bank of Kaohsiung,Other Government Agency,Non-Chinese Institution,9
+Credit Industriel et Commercial,Other Private Sector,Non-Chinese Institution,9
+Dresdner Kleinwort,Other Private Sector,Non-Chinese Institution,9
+First Gulf Bank,Other State-owned Bank,Non-Chinese Institution,9
+FirstRand Bank,Other Private Sector,Non-Chinese Institution,9
+Gazprombank,Other State-owned Bank,Non-Chinese Institution,9
+Habib Bank,Other Private Sector,Non-Chinese Institution,9
+Japan Bank for International Corporation,Other State-owned Bank,Non-Chinese Institution,9
+National Bank of Kuwait,Other Private Sector,Non-Chinese Institution,9
+PJSC Rosbank,Other Private Sector,Non-Chinese Institution,9
+VakifBank,Other State-owned Bank,Non-Chinese Institution,9
+Zürcher Kantonalbank,Other State-owned Bank,Non-Chinese Institution,9
+Banca Monte dei Paschi di Siena,Other State-owned Bank,Non-Chinese Institution,8
+KEB Hana Bank of Korea,Other Private Sector,Non-Chinese Institution,8
+Siemens Bank,Other Private Sector,Non-Chinese Institution,8
+Taichung Commercial Bank,Other Private Sector,Non-Chinese Institution,8
+BACS Banco de Crédito y Securitización,Other Private Sector,Non-Chinese Institution,7
+Banco Macro,Other Private Sector,Non-Chinese Institution,7
+Bank Muscat,Other State-owned Bank,Non-Chinese Institution,7
+China Merchants,Chinese State-owned Company,Chinese Institution,7
+Credit Europe Bank,Other Private Sector,Non-Chinese Institution,7
+Doha Bank,Other Private Sector,Non-Chinese Institution,7
+Norddeutsche Landesbank Girozentrale,Other State-owned Bank,Non-Chinese Institution,7
+Permata Bank,Other State-owned Bank,Non-Chinese Institution,7
+Rosbank,Other Private Sector,Non-Chinese Institution,7
+Saudi National Bank (SNB AlAhli) (Formerly The National Commercial Bank (NCB)),Other State-owned Bank,Non-Chinese Institution,7
+The Hyakugo Bank,Other Private Sector,Non-Chinese Institution,7
+Alfa-Bank JSC,Other Private Sector,Non-Chinese Institution,6
+Arab Bank,Other Private Sector,Non-Chinese Institution,6
+Attijariwafa Bank,Other State-owned Bank,Non-Chinese Institution,6
+Bank SinoPac,Other Private Sector,Non-Chinese Institution,6
+Bank of Bahrain and Kuwait,Other Private Sector,Non-Chinese Institution,6
+DNB,Other Private Sector,Non-Chinese Institution,6
+Far Eastern International Bank,Other Private Sector,Non-Chinese Institution,6
+Harbin Bank,Chinese State-owned Commercial Bank,Chinese Institution,6
+Inter-American Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,6
+Landesbank Hessen-Thüringen,Other State-owned Bank,Non-Chinese Institution,6
+OPEC Fund for International Development,Other Intergovernmental Organization,Non-Chinese Institution,6
+Sarana Multi Infrastruktur,Other State-owned Company,Non-Chinese Institution,6
+Shinhan Bank,Other Private Sector,Non-Chinese Institution,6
+VTB Bank,Other State-owned Bank,Non-Chinese Institution,6
+Yapi Kredi,Other Private Sector,Non-Chinese Institution,6
+Akbank,Other Private Sector,Non-Chinese Institution,5
+Aozora Bank,Other Private Sector,Non-Chinese Institution,5
+Asian Infrastructure Investment Bank,Other Intergovernmental Organization,Non-Chinese Institution,5
+Axis Bank,Other Private Sector,Non-Chinese Institution,5
+BPER Banca,Other Private Sector,Non-Chinese Institution,5
+Banco de Galicia and Buenos Aires S.A.U,Other Private Sector,Non-Chinese Institution,5
+Bank Permata,Other Private Sector,Non-Chinese Institution,5
+Bank of Ireland,Other Private Sector,Non-Chinese Institution,5
+CIBC,Other Private Sector,Non-Chinese Institution,5
+CMB Wing Lung Bank,Chinese State-owned Commercial Bank,Chinese Institution,5
+Caterpillar Financial Services,Other Private Sector,Non-Chinese Institution,5
+Chiao Tung Bank,Other Miscellaneous Agency Type,Non-Chinese Institution,5
+Export-Import Bank of Korea,Other State-owned Bank,Non-Chinese Institution,5
+Export-Import Bank of Thailand,Other State-owned Bank,Non-Chinese Institution,5
+HalkBank,Other State-owned Bank,Non-Chinese Institution,5
+HypoVereinsbank,Other Private Sector,Non-Chinese Institution,5
+ICICI Bank,Other Private Sector,Non-Chinese Institution,5
+Investec Bank,Other Private Sector,Non-Chinese Institution,5
+Landesbank Baden-Württemberg,Other State-owned Bank,Non-Chinese Institution,5
+Mauritius Commercial Bank,Other Private Sector,Non-Chinese Institution,5
+Sanlam Investment Management,Other Private Sector,Non-Chinese Institution,5
+Sunny Bank,Other Private Sector,Non-Chinese Institution,5
+Woori Bank,Other Private Sector,Non-Chinese Institution,5
+Africa Finance Corporation,Other Intergovernmental Organization,Non-Chinese Institution,4
+Arab Petroleum Investments Corporation,Other Intergovernmental Organization,Non-Chinese Institution,4
+Banca IMI,Other Private Sector,Non-Chinese Institution,4
+Banco Bradesco BBI,Other Private Sector,Non-Chinese Institution,4
+Bank Danamon Indonesia,Other Private Sector,Non-Chinese Institution,4
+Bank Internasional Indonesia,Other State-owned Bank,Non-Chinese Institution,4
+Bayerische Hypo- und Vereinsbank,Other Private Sector,Non-Chinese Institution,4
+Black Sea Trade and Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,4
+Cassa Depositi e Prestiti,Other State-owned Bank,Non-Chinese Institution,4
+Commercial Bank of Dubai,Other Private Sector,Non-Chinese Institution,4
+Gulf International Bank,Other Joint Venture/Special Purpose Vehicle,Non-Chinese Institution,4
+Gunma Bank,Other Private Sector,Non-Chinese Institution,4
+KGI Bank,Other Private Sector,Non-Chinese Institution,4
+Kommunalkredit International Bank,Other Private Sector,Non-Chinese Institution,4
+Kuveyt Türk Katilim Bankasi,Other Private Sector,Non-Chinese Institution,4
+LRP Landesbank Rheinland-Pfalz,Other Private Sector,Non-Chinese Institution,4
+MMI,Other Private Sector,Non-Chinese Institution,4
+Netherlands Development Finance,Other State-owned Bank,Non-Chinese Institution,4
+Royal Bank of Canada,Other Private Sector,Non-Chinese Institution,4
+Shanghai Pudong Development Bank,Chinese State-owned Commercial Bank,Chinese Institution,4
+Shinsei Bank,Other State-owned Bank,Non-Chinese Institution,4
+Silk Road Fund,Chinese State-owned Fund,Chinese Institution,4
+The 77 Bank,Other Private Sector,Non-Chinese Institution,4
+UBS,Other Private Sector,Non-Chinese Institution,4
+Union National Bank,Other State-owned Bank,Non-Chinese Institution,4
+Union de Banques Arabes et Francaises,Other Private Sector,Non-Chinese Institution,4
+Unione di Banche Italiane,Other Private Sector,Non-Chinese Institution,4
+Yuanta Commercial Bank,Other Private Sector,Non-Chinese Institution,4
+Ziraat Bank,Other State-owned Bank,Non-Chinese Institution,4
+AKA Ausfuhrkredit-Gesellschaft,Other Private Sector,Non-Chinese Institution,3
+African Export-Import Bank,Other Intergovernmental Organization,Non-Chinese Institution,3
+Ahli United Bank,Other Private Sector,Non-Chinese Institution,3
+Al Ahli Bank,Other Private Sector,Non-Chinese Institution,3
+Askari Bank,Other Private Sector,Non-Chinese Institution,3
+Banco Nacional de México,Other Private Sector,Non-Chinese Institution,3
+Banco de Sabadell,Other Private Sector,Non-Chinese Institution,3
+Banco do Brasil,Other State-owned Bank,Non-Chinese Institution,3
+Bank AL Habib,Other Private Sector,Non-Chinese Institution,3
+Bank Riau Kepri,Other State-owned Bank,Non-Chinese Institution,3
+Bank Sulselbar,Other Private Sector,Non-Chinese Institution,3
+Bank of Panhsin,Other Private Sector,Non-Chinese Institution,3
+Bank of Panhsin (formerly Panchiao Credit Cooperatives (PCC)),Other Private Sector,Non-Chinese Institution,3
+Bank of the Philippine Islands,Other Private Sector,Non-Chinese Institution,3
+Banka Kombëtare Tregtare,Other Private Sector,Non-Chinese Institution,3
+Banorte,Other Private Sector,Non-Chinese Institution,3
+Banque Internationale Des Mascareignes,Other Private Sector,Non-Chinese Institution,3
+Bumiputra Commerce Bank,Other Private Sector,Non-Chinese Institution,3
+Canara Bank,Other State-owned Bank,Non-Chinese Institution,3
+Commercial Bank of Kuwait,Other Private Sector,Non-Chinese Institution,3
+DenizBank,Other Private Sector,Non-Chinese Institution,3
+Dexia,Other State-owned Bank,Non-Chinese Institution,3
+Eastspring Investments,Other Private Sector,Non-Chinese Institution,3
+Federated Project and Trade Finance Core Fund,Other Private Sector,Non-Chinese Institution,3
+Foreign Trade Bank of Latin America,Other Intergovernmental Organization,Non-Chinese Institution,3
+Hana Bank,Other Private Sector,Non-Chinese Institution,3
+Investec,Other Private Sector,Non-Chinese Institution,3
+KB Kookmin Bank,Other Private Sector,Non-Chinese Institution,3
+Korea Exchange Bank,Other Private Sector,Non-Chinese Institution,3
+Land Bank of the Philippines,Other State-owned Bank,Non-Chinese Institution,3
+Mashreq Bank,Other Private Sector,Non-Chinese Institution,3
+Mediobanca,Other Private Sector,Non-Chinese Institution,3
+N.M. Rothschild & Sons,Other Private Sector,Non-Chinese Institution,3
+Nomura,Other Private Sector,Non-Chinese Institution,3
+Norinchukin Bank,Other Private Sector,Non-Chinese Institution,3
+ODDO BHF,Other Private Sector,Non-Chinese Institution,3
+Oberbank,Other Private Sector,Non-Chinese Institution,3
+Overseas Investment Corporation,Other State-owned Bank,Non-Chinese Institution,3
+PASHA Bank,Other Private Sector,Non-Chinese Institution,3
+PJSC Bank FC Otkritie,Other Private Sector,Non-Chinese Institution,3
+PJSC «SOVCOMBANK»,Other Private Sector,Non-Chinese Institution,3
+Russian Regional Development Bank,Other State-owned Bank,Non-Chinese Institution,3
+Santander,Other Private Sector,Non-Chinese Institution,3
+Siam Commercial Bank,Other Private Sector,Non-Chinese Institution,3
+State Bank of India International,Other State-owned Bank,Non-Chinese Institution,3
+TD Bank,Other Private Sector,Non-Chinese Institution,3
+Tai Fung Bank,Chinese State-owned Commercial Bank,Chinese Institution,3
+The Chiba Bank,Other Private Sector,Non-Chinese Institution,3
+Ahli Bank Oman,Other Private Sector,Non-Chinese Institution,2
+Albaraka Türk Katılım Bankası A.Ş,Other Private Sector,Non-Chinese Institution,2
+Alpha Bank,Other Private Sector,Non-Chinese Institution,2
+AmBank,Other Private Sector,Non-Chinese Institution,2
+Anadolubank Nederland,Other Private Sector,Non-Chinese Institution,2
+BHD International Bank,Other Private Sector,Non-Chinese Institution,2
+BHF Bank,Other Private Sector,Non-Chinese Institution,2
+Bancaribe,Other Private Sector,Non-Chinese Institution,2
+Banco Patagonia,Other Private Sector,Non-Chinese Institution,2
+Banco de Crédito e Inversiones,Other Private Sector,Non-Chinese Institution,2
+Banco de Occidente,Other Private Sector,Non-Chinese Institution,2
+Banco de la Pampa Sociedad de Economía Mixta,Other State-owned Commercial Bank,Non-Chinese Institution,2
+Bank Artha Graha,Other Private Sector,Non-Chinese Institution,2
+Bank BJB,Other State-owned Bank,Non-Chinese Institution,2
+Bank BTPN,Other Private Sector,Non-Chinese Institution,2
+Bank DKI,Other State-owned Bank,Non-Chinese Institution,2
+Bank Jateng,Other Private Sector,Non-Chinese Institution,2
+Bank Maluku Malut,Other Private Sector,Non-Chinese Institution,2
+Bank Pembangunan Daerah Jawa Barat Syariah,Other State-owned Bank,Non-Chinese Institution,2
+Bank Pembangunan Daerah Papua,Other State-owned Bank,Non-Chinese Institution,2
+Bank for Investment and Development of Vietnam,Other State-owned Bank,Non-Chinese Institution,2
+Bank of Ayudhya Public,Other State-owned Bank,Non-Chinese Institution,2
+Bank of India,Other State-owned Company,Non-Chinese Institution,2
+Bank of Shanghai,Chinese State-owned Commercial Bank,Chinese Institution,2
+Bankinter,Other Private Sector,Non-Chinese Institution,2
+Banobras,Other State-owned Bank,Non-Chinese Institution,2
+Banque Internationale de Commerce - BRED,Other Private Sector,Non-Chinese Institution,2
+Bradesco BAC Florida Bank,Other Private Sector,Non-Chinese Institution,2
+CDC,Other State-owned Bank,Non-Chinese Institution,2
+Cargill Financial Services,Other Private Sector,Non-Chinese Institution,2
+China Everbright Bank,Chinese State-owned Commercial Bank,Chinese Institution,2
+Citizens Bank,Other Private Sector,Non-Chinese Institution,2
+City National Bank,Other Private Sector,Non-Chinese Institution,2
+Clifford Capital,Other Private Sector,Non-Chinese Institution,2
+Commercial Bank Europe Arab Bank,Other Intergovernmental Organization,Non-Chinese Institution,2
+Credit Bank of Moscow,Other Private Sector,Non-Chinese Institution,2
+DVB Merchant Bank,Other Private Sector,Non-Chinese Institution,2
+Deutsche Pfandbriefbank,Other Private Sector,Non-Chinese Institution,2
+Development Bank of Southern Africa,Other Intergovernmental Organization,Non-Chinese Institution,2
+Dresdner Bank,Other Private Sector,Non-Chinese Institution,2
+Entie Commercial Bank,Other Private Sector,Non-Chinese Institution,2
+European Investment Bank,Other Intergovernmental Organization,Non-Chinese Institution,2
+Export Finance Australia (Formerly Export Finance and Insurance Corporation (EFIC)),Other Government Agency,Non-Chinese Institution,2
+Export Insurance Agency of Russia,Other Government Agency,Non-Chinese Institution,2
+Export-Import Bank of Malaysia,Other State-owned Bank,Non-Chinese Institution,2
+Federated Hermes,Other Private Sector,Non-Chinese Institution,2
+Federated Project,Other Private Sector,Non-Chinese Institution,2
+Fuyo General Lease,Other Private Sector,Non-Chinese Institution,2
+German Investment and Development Corporation,Other State-owned Bank,Non-Chinese Institution,2
+Gulf Bank of Kuwait KSCP,Other Private Sector,Non-Chinese Institution,2
+Housing Bank for Trade and Finance,Other Private Sector,Non-Chinese Institution,2
+Huaxia Bank,Chinese State-owned Commercial Bank,Chinese Institution,2
+IKB Deutsche Industriebank,Other Private Sector,Non-Chinese Institution,2
+Indian Bank,Other State-owned Company,Non-Chinese Institution,2
+Industrial Development Bank of Turkey,Other State-owned Bank,Non-Chinese Institution,2
+Industrial Development Corporation of South Africa,Other Joint Venture/Special Purpose Vehicle,Non-Chinese Institution,2
+Institución de Banca Múltiple,Other Private Sector,Non-Chinese Institution,2
+Instituto de Credito Oficial Espana,Other State-owned Bank,Non-Chinese Institution,2
+International Investment Bank,Other Intergovernmental Organization,Non-Chinese Institution,2
+Islamic Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,2
+Japan International Cooperation Agency,Other Government Agency,Non-Chinese Institution,2
+Jordan Commercial Bank,Other Private Sector,Non-Chinese Institution,2
+Kasikorn Bank,Other Private Sector,Non-Chinese Institution,2
+Kiatnakin Phatra Bank,Other Private Sector,Non-Chinese Institution,2
+Kiatnakin Phatra Bank Thailand,Other State-owned Commercial Bank,Non-Chinese Institution,2
+Kuwait Finance House,Other Private Sector,Non-Chinese Institution,2
+Lembaga Pembiayaan Ekspor Indonesia,Other State-owned Bank,Non-Chinese Institution,2
+Lloyds Bank Corporate Markets,Other Private Sector,Non-Chinese Institution,2
+MediCapital Bank,Other Private Sector,Non-Chinese Institution,2
+Metropolitan Life Insurance,Other Private Sector,Non-Chinese Institution,2
+NIBC Bank,Other Private Sector,Non-Chinese Institution,2
+Nanyang Commercial Bank,Chinese State-owned Commercial Bank,Chinese Institution,2
+National Bank of Egypt,Other State-owned Bank,Non-Chinese Institution,2
+Nordkap Bank,Other Private Sector,Non-Chinese Institution,2
+Oesterreichische Entwicklungsbank,Other State-owned Bank,Non-Chinese Institution,2
+Ping An Bank,Chinese Private Sector,Chinese Institution,2
+Pohjola Bank,Other Private Sector,Non-Chinese Institution,2
+Postal Savings Bank of China,Chinese State-owned Commercial Bank,Chinese Institution,2
+Proparco,Other State-owned Bank,Non-Chinese Institution,2
+RCB Bank,Other Private Sector,Non-Chinese Institution,2
+RHB Bank Berhad,Other Private Sector,Non-Chinese Institution,2
+Rizal Commercial Banking Corporation,Other Private Sector,Non-Chinese Institution,2
+SGBT Finance Ireland Designated Activity,Other Private Sector,Non-Chinese Institution,2
+Samba Financial,Other State-owned Bank,Non-Chinese Institution,2
+Saudi Awwal Bank (Formerly Saudi Arab British Bank (SABB)),Other Private Sector,Non-Chinese Institution,2
+Security Bank Cooperation,Other Private Sector,Non-Chinese Institution,2
+Servizi Assicurativi del Commercio Estero,Other State-owned Company,Non-Chinese Institution,2
+Shikoku Bank,Other Private Sector,Non-Chinese Institution,2
+Siemens Financial Services,Other Private Sector,Non-Chinese Institution,2
+Skandinaviska Enskilda Banken,Other Private Sector,Non-Chinese Institution,2
+"Sohar International Bank, S.A.O.G",Other Private Sector,Non-Chinese Institution,2
+Swedish Export Credit Corporation,Other State-owned Company,Non-Chinese Institution,2
+The Chugoku Bank,Other Private Sector,Non-Chinese Institution,2
+The Commercial Bank of Qatar (CBQ),Other Private Sector,Non-Chinese Institution,2
+Trade Finance Core Fund,Other Private Sector,Non-Chinese Institution,2
+UCO Bank,Other State-owned Bank,Non-Chinese Institution,2
+Union Bank of India,Other Private Sector,Non-Chinese Institution,2
+Union Bank of Taiwan,Other Private Sector,Non-Chinese Institution,2
+United Bank,Other Private Sector,Non-Chinese Institution,2
+Vietnam Eximbank,Other State-owned Bank,Non-Chinese Institution,2
+Vitol,Other Private Sector,Non-Chinese Institution,2
+Vnesheconombank,Other State-owned Bank,Non-Chinese Institution,2
+Wachovia Bank,Other Private Sector,Non-Chinese Institution,2
+mBank,Other Private Sector,Non-Chinese Institution,2
+ACB Alef-Bank AO,Other Private Sector,Non-Chinese Institution,1
+Agricultural Bank of Greece,Other State-owned Commercial Bank,Non-Chinese Institution,1
+Al Jomaih,Other Private Sector,Non-Chinese Institution,1
+Al Khaliji Commercial Bank,Other Private Sector,Non-Chinese Institution,1
+Allied Irish Banks,Other State-owned Bank,Non-Chinese Institution,1
+Altyn Bank JSC,Chinese State-owned Commercial Bank,Chinese Institution,1
+AmMerchant Bank Berhad,Other Private Sector,Non-Chinese Institution,1
+American Equity Investment Life Insurance,Other Private Sector,Non-Chinese Institution,1
+Amret Microfinance Institution,Other Private Sector,Non-Chinese Institution,1
+Amsterdam Trade Bank,Other Private Sector,Non-Chinese Institution,1
+Andean Development,Other Intergovernmental Organization,Non-Chinese Institution,1
+Aozora Asia Pacific Finance,Other Private Sector,Non-Chinese Institution,1
+Apple Bank,Other Private Sector,Non-Chinese Institution,1
+Asia Commercial Bank,Other Private Sector,Non-Chinese Institution,1
+"Asia-Pacific Bank, OJSC",Other Private Sector,Non-Chinese Institution,1
+Atlantic Forfaitierungs,Other Private Sector,Non-Chinese Institution,1
+BAC International Bank,Other Private Sector,Non-Chinese Institution,1
+BCP Bank,Other Private Sector,Non-Chinese Institution,1
+BG Valores,Other Private Sector,Non-Chinese Institution,1
+BGFIBank,Other Private Sector,Non-Chinese Institution,1
+BHF-Bank Aktiengesellschaft,Other Private Sector,Non-Chinese Institution,1
+BPER Bank Luxembourg,Other Private Sector,Non-Chinese Institution,1
+BPI Capital Corporation,Other Private Sector,Non-Chinese Institution,1
+BTG Pactual,Other Private Sector,Non-Chinese Institution,1
+Banca Nazionale del Lavoro Hong Kong,Other Private Sector,Non-Chinese Institution,1
+Banca Transilvania,Other Private Sector,Non-Chinese Institution,1
+Banca UBAE,Other Private Sector,Non-Chinese Institution,1
+Banco ABC,Other Private Sector,Non-Chinese Institution,1
+Banco Agrícola,Other Private Sector,Non-Chinese Institution,1
+Banco Angolano de Investimentos,Other Private Sector,Non-Chinese Institution,1
+Banco BAI Europa,Other Private Sector,Non-Chinese Institution,1
+Banco BPM,Other Private Sector,Non-Chinese Institution,1
+Banco Comercial e de Investimentos,Other Private Sector,Non-Chinese Institution,1
+Banco Continental de Panamá,Other Private Sector,Non-Chinese Institution,1
+Banco Davivienda El Salvador,Other Private Sector,Non-Chinese Institution,1
+Banco Espirito Santo,Other Private Sector,Non-Chinese Institution,1
+Banco Espírito Santo,Other Private Sector,Non-Chinese Institution,1
+Banco General,Other Private Sector,Non-Chinese Institution,1
+Banco Internacional de Costa Rica,Other Private Sector,Non-Chinese Institution,1
+Banco Pan,Other Private Sector,Non-Chinese Institution,1
+Banco Popolare di Verona e Novara,Other Private Sector,Non-Chinese Institution,1
+Banco Sabadell,Other Private Sector,Non-Chinese Institution,1
+Banco Supervielle,Other Private Sector,Non-Chinese Institution,1
+Banco de Valores,Other Private Sector,Non-Chinese Institution,1
+Bancolombia,Other Private Sector,Non-Chinese Institution,1
+Bancomext,Other State-owned Bank,Non-Chinese Institution,1
+Bangladesh Infrastructure Finance Fund,Other State-owned Fund,Non-Chinese Institution,1
+Banistmo,Other Private Sector,Non-Chinese Institution,1
+Banistmo Bond Fund,Other Private Sector,Non-Chinese Institution,1
+Bank Alfalah,Other Private Sector,Non-Chinese Institution,1
+Bank BPD DIY,Other State-owned Bank,Non-Chinese Institution,1
+Bank Dhofar,Other Private Sector,Non-Chinese Institution,1
+Bank Hapoalim,Other Private Sector,Non-Chinese Institution,1
+Bank Jambi,Other State-owned Bank,Non-Chinese Institution,1
+Bank KDI,Other State-owned Bank,Non-Chinese Institution,1
+Bank KEB Hana Indonesia,Other Private Sector,Non-Chinese Institution,1
+Bank Kalteng,Other State-owned Bank,Non-Chinese Institution,1
+Bank Leumi Le-Israel,Other Private Sector,Non-Chinese Institution,1
+Bank Mayapada Internasional,Other Private Sector,Non-Chinese Institution,1
+Bank Mega,Other State-owned Bank,Non-Chinese Institution,1
+Bank Muamalat Indonesia,Other State-owned Commercial Bank,Non-Chinese Institution,1
+Bank Nagari,Other State-owned Bank,Non-Chinese Institution,1
+Bank Negara Malaysia,Other State-owned Bank,Non-Chinese Institution,1
+Bank Papua,Other Private Sector,Non-Chinese Institution,1
+Bank Pembangunan Daerah Jawa Timur,Other State-owned Bank,Non-Chinese Institution,1
+Bank Pembangunan Daerah Kalimantan Selatan,Other State-owned Bank,Non-Chinese Institution,1
+Bank SBI Indonesia,Other Private Sector,Non-Chinese Institution,1
+Bank Sumsel Babel,Other State-owned Bank,Non-Chinese Institution,1
+Bank Sumut,Other State-owned Bank,Non-Chinese Institution,1
+Bank Syariah Mandiri,Other State-owned Bank,Non-Chinese Institution,1
+Bank Tabungan Pensiunan Nasional,Other Private Sector,Non-Chinese Institution,1
+Bank Woori Saudara Indonesia 1906,Other Private Sector,Non-Chinese Institution,1
+Bank ZENIT,Other Private Sector,Non-Chinese Institution,1
+Bank of Chaoyang,Chinese State-owned Commercial Bank,Chinese Institution,1
+"Bank of East Asia, Singapore branch",Other Private Sector,Non-Chinese Institution,1
+Bank of Fuxin,Chinese State-owned Commercial Bank,Chinese Institution,1
+Bank of Ganzhou,Chinese State-owned Commercial Bank,Chinese Institution,1
+Bank of Jiujiang,Chinese State-owned Commercial Bank,Chinese Institution,1
+Bank of Jordan,Other Private Sector,Non-Chinese Institution,1
+Bank of Kigali,Other Private Sector,Non-Chinese Institution,1
+Bank of Overseas Chinese,Other Miscellaneous Agency Type,Non-Chinese Institution,1
+Bank of Punjab,Other State-owned Bank,Non-Chinese Institution,1
+Bank of Weifang,Chinese State-owned Commercial Bank,Chinese Institution,1
+Bank of Zhengzhou,Chinese State-owned Commercial Bank,Chinese Institution,1
+Bank of the Philippines Islands Capital,Other State-owned Company,Non-Chinese Institution,1
+Banque BIA,Other State-owned Commercial Bank,Non-Chinese Institution,1
+Banque Internationale du Cameroun pour l'Epargne et le Crédit,Other Private Sector,Non-Chinese Institution,1
+Banque Misr,Other State-owned Bank,Non-Chinese Institution,1
+Banque Pour le Commerce Exterieur Lao Public,Other Private Sector,Non-Chinese Institution,1
+Banque publique d'investissement,Other State-owned Bank,Non-Chinese Institution,1
+Baoshang Bank,Chinese Private Sector,Chinese Institution,1
+Barclay’s Bank of Ghana,Other Private Sector,Non-Chinese Institution,1
+Bolloré,Other Private Sector,Non-Chinese Institution,1
+Brazilian Development Bank,Other State-owned Bank,Non-Chinese Institution,1
+Bridge Bank,Other Private Sector,Non-Chinese Institution,1
+British Arab Commercial Bank,Other Private Sector,Non-Chinese Institution,1
+CD Indosuez Wealth Management,Other Private Sector,Non-Chinese Institution,1
+COSCO,Chinese State-owned Company,Chinese Institution,1
+CT,Other Private Sector,Non-Chinese Institution,1
+CTBC Bank Indonesia,Other Private Sector,Non-Chinese Institution,1
+CTCB Indonesia,Other State-owned Bank,Non-Chinese Institution,1
+Caisse de dépôt et placement du Québec,Other Private Sector,Non-Chinese Institution,1
+Central Java Bank,Other State-owned Bank,Non-Chinese Institution,1
+Central Trust of China,Other State-owned Bank,Non-Chinese Institution,1
+Chailease Holding,Other Private Sector,Non-Chinese Institution,1
+China Bohai Bank,Chinese State-owned Commercial Bank,Chinese Institution,1
+China Construction Botswana,Chinese State-owned Company,Chinese Institution,1
+China Gezhouba,Chinese State-owned Company,Chinese Institution,1
+China Minsheng Bank Beijing Branch,Chinese Private Sector,Chinese Institution,1
+China Railway,Chinese State-owned Company,Chinese Institution,1
+China Road & Bridge Corporation,Chinese State-owned Company,Chinese Institution,1
+China Zheshang Bank,Chinese Private Sector,Chinese Institution,1
+CoBank,Other Private Sector,Non-Chinese Institution,1
+Commercial Bank of Greece,Other Government Agency,Non-Chinese Institution,1
+Commercial International Bank,Other Private Sector,Non-Chinese Institution,1
+Corporacion Andina de Fomento – Banco de Desarrollo de América Latina,Other Intergovernmental Organization,Non-Chinese Institution,1
+Cosmos Co-operative Bank,Other Private Sector,Non-Chinese Institution,1
+DGB Dekabank,Other Private Sector,Non-Chinese Institution,1
+DVB Bank,Other Private Sector,Non-Chinese Institution,1
+Dah Sing Bank,Other Private Sector,Non-Chinese Institution,1
+Danske Bank A/S,Other Private Sector,Non-Chinese Institution,1
+Development Bank of Japan,Other State-owned Bank,Non-Chinese Institution,1
+Development Bank of the Philippines,Other State-owned Bank,Non-Chinese Institution,1
+E.Sun Financial Holdings,Other Private Sector,Non-Chinese Institution,1
+ECO Trade and Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,1
+East African Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,1
+Eastern and Southern African Trade and Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,1
+Eden Berhad,Other Private Sector,Non-Chinese Institution,1
+Eksport Kredit Fonden,Other State-owned Bank,Non-Chinese Institution,1
+Eksportfinans,Other State-owned Bank,Non-Chinese Institution,1
+Emerging Africa Infrastructure Fund,Other Intergovernmental Organization,Non-Chinese Institution,1
+Euler Hermes,Other Private Sector,Non-Chinese Institution,1
+Euler Hermes Deutschland,Other Private Sector,Non-Chinese Institution,1
+Eurasian Bank of Kazakhstan,Other Private Sector,Non-Chinese Institution,1
+Eurasian Development Bank,Other Intergovernmental Organization,Non-Chinese Institution,1
+Europe Arab Bank,Other Private Sector,Non-Chinese Institution,1
+Everest Bank,Other Private Sector,Non-Chinese Institution,1
+Expobank,Other Private Sector,Non-Chinese Institution,1
+Export-Import Bank of the United States,Other Government Agency,Non-Chinese Institution,1
+FBN Bank,Other Private Sector,Non-Chinese Institution,1
+Faysal Bank,Other Private Sector,Non-Chinese Institution,1
+Fidelity bnk Ghana,Other Private Sector,Non-Chinese Institution,1
+Financiera de Desarollo Nacional,Other Private Sector,Non-Chinese Institution,1
+Financiera de Desarrollo Nacional,Other Private Sector,Non-Chinese Institution,1
+Finnfund,Other State-owned Bank,Non-Chinese Institution,1
+First International Merchant Bank,Other Private Sector,Non-Chinese Institution,1
+French Development Agency,Other State-owned Bank,Non-Chinese Institution,1
+Fubon Bank (Formerly International Bank of Asia (IBA)),Other Private Sector,Non-Chinese Institution,1
+Futuregrowth Asset Managers,Other Private Sector,Non-Chinese Institution,1
+Ghana Commercial Bank,Other Private Sector,Non-Chinese Institution,1
+Grand Capital,Other Private Sector,Non-Chinese Institution,1
+Green for Growth Fund,Other Miscellaneous Agency Type,Non-Chinese Institution,1
+Green for Growth Fund Southeast Europe SICAV-SIF,Other Private Sector,Non-Chinese Institution,1
+Guaranty Trust Bank,Other Private Sector,Non-Chinese Institution,1
+Habib Metropolitan Bank,Other Private Sector,Non-Chinese Institution,1
+Halyk Savings Bank of Kazakhstan JSC,Other Private Sector,Non-Chinese Institution,1
+Hang Seng Bank,Other Private Sector,Non-Chinese Institution,1
+Harbin Bank Financial Leasing,Chinese State-owned Commercial Bank,Chinese Institution,1
+Hokkoku Bank,Other Private Sector,Non-Chinese Institution,1
+Hong Leong Finance,Other Private Sector,Non-Chinese Institution,1
+Huishang Bank,Chinese State-owned Commercial Bank,Chinese Institution,1
+I&M Bank Rwanda,Other Private Sector,Non-Chinese Institution,1
+India Export Import Bank,Other State-owned Bank,Non-Chinese Institution,1
+IndoCorp,Other Private Sector,Non-Chinese Institution,1
+Indonesia Infrastructure Finance,Other Private Sector,Non-Chinese Institution,1
+Industrial Bank of Korea,Other State-owned Bank,Non-Chinese Institution,1
+Industrial Bank of Taiwan,Other Private Sector,Non-Chinese Institution,1
+International Bank of Azerbaijan,Other State-owned Bank,Non-Chinese Institution,1
+International Bank of Taipei,Other Private Sector,Non-Chinese Institution,1
+International Finance Bank,Other Private Sector,Non-Chinese Institution,1
+Islamic Corporation for the Development of the Sector,Other Intergovernmental Organization,Non-Chinese Institution,1
+Islamic Corporation for the Insurance of Investment and Export Credit,Other Intergovernmental Organization,Non-Chinese Institution,1
+J&T Bank ZAO,Other Private Sector,Non-Chinese Institution,1
+JSC Isibasi Bank,Other Private Sector,Non-Chinese Institution,1
+JSCB Absolut Bank,Other Private Sector,Non-Chinese Institution,1
+Jih Sun International Bank,Other Private Sector,Non-Chinese Institution,1
+KCB,Other Private Sector,Non-Chinese Institution,1
+KDB Asia,Other State-owned Bank,Non-Chinese Institution,1
+KDB Bank Europe,Other Government Agency,Non-Chinese Institution,1
+KEB Asia Finance,Other Private Sector,Non-Chinese Institution,1
+Kanbawza Bank,Other Private Sector,Non-Chinese Institution,1
+Kasikornbank Public,Other State-owned Bank,Non-Chinese Institution,1
+King's Town Bank,Other Private Sector,Non-Chinese Institution,1
+Kommunal Landspensjonskasse gjensidig forsikringsselskap,Other Private Sector,Non-Chinese Institution,1
+Korea Export-Import Bank,Other State-owned Bank,Non-Chinese Institution,1
+Korea Finance Corporation,Other State-owned Bank,Non-Chinese Institution,1
+Korea Trade Insurance Corporation,Other State-owned Company,Non-Chinese Institution,1
+Krungthai Bank,Other Private Sector,Non-Chinese Institution,1
+Kuveyt Turk Participation Bank,Other Private Sector,Non-Chinese Institution,1
+LBBW,Other Private Sector,Non-Chinese Institution,1
+LH Financial,Other State-owned Company,Non-Chinese Institution,1
+Landesbank Saar,Other Private Sector,Non-Chinese Institution,1
+Landesbank Schleswig-Holstein Girozentrale,Other State-owned Bank,Non-Chinese Institution,1
+Leading Asia’s Infrastructure Fund,Other Miscellaneous Agency Type,Non-Chinese Institution,1
+Lehman Brothers,Other Private Sector,Non-Chinese Institution,1
+Liberty Holdings,Other Private Sector,Non-Chinese Institution,1
+Lotte F&L Singapore,Other Private Sector,Non-Chinese Institution,1
+MCC-JJJ Mining Development,Chinese State-owned Company,Chinese Institution,1
+MKB Bank,Other Private Sector,Non-Chinese Institution,1
+Matha Capital,Other Private Sector,Non-Chinese Institution,1
+Meezan Bank,Other Private Sector,Non-Chinese Institution,1
+Metrobank,Other Private Sector,Non-Chinese Institution,1
+Misr Bank-Europe,Other State-owned Bank,Non-Chinese Institution,1
+Moscow Narodny Bank,Other Private Sector,Non-Chinese Institution,1
+Musashino Bank,Other Private Sector,Non-Chinese Institution,1
+NIB Bank,Other State-owned Bank,Non-Chinese Institution,1
+NMB Bank Nepal,Other Private Sector,Non-Chinese Institution,1
+NSIA Bank,Other Private Sector,Non-Chinese Institution,1
+Nacional Financiera,Other State-owned Bank,Non-Chinese Institution,1
+National Bank for Foreign Economic Activity of the Republic of Uzbekistan,Other State-owned Bank,Non-Chinese Institution,1
+National Bank of Fujairah,Other Private Sector,Non-Chinese Institution,1
+National Bank of Greece,Other Private Sector,Non-Chinese Institution,1
+National Bank of Oman,Other State-owned Bank,Non-Chinese Institution,1
+National Bank of Panama,Other State-owned Bank,Non-Chinese Institution,1
+Nepal Investment Bank,Other Private Sector,Non-Chinese Institution,1
+Nepal SBI Bank,Other Private Sector,Non-Chinese Institution,1
+New China Trust,Chinese Private Sector,Chinese Institution,1
+Nonghyup Bank,Other Private Sector,Non-Chinese Institution,1
+Nordic Investment Bank,Other Intergovernmental Organization,Non-Chinese Institution,1
+North-West Power Generation,Other State-owned Company,Non-Chinese Institution,1
+Norwegian Export Credit Guarantee Agency,Other State-owned Bank,Non-Chinese Institution,1
+OYAK ANKER Bank,Other Private Sector,Non-Chinese Institution,1
+Odeabank,Other Private Sector,Non-Chinese Institution,1
+Offshore Banking Branch,Other Miscellaneous Agency Type,Non-Chinese Institution,1
+Old Mutual,Other Private Sector,Non-Chinese Institution,1
+Orient Commercial Joint Stock Bank,Other Private Sector,Non-Chinese Institution,1
+PGGM Vermogensbeheer B.V,Other Government Agency,Non-Chinese Institution,1
+"PNC Bank, National Association",Other Private Sector,Non-Chinese Institution,1
+People's Bank of China,Chinese Government Agency,Chinese Institution,1
+Persia International Bank,Other Private Sector,Non-Chinese Institution,1
+Peru Banco de Credito,Other Private Sector,Non-Chinese Institution,1
+PetroVietnam Joinstock Finance Corporation,Other State-owned Company,Non-Chinese Institution,1
+Philippine National Bank,Other Private Sector,Non-Chinese Institution,1
+Piraeus Bank,Other Private Sector,Non-Chinese Institution,1
+Power China Finance,Chinese State-owned Company,Chinese Institution,1
+PowerChina,Chinese State-owned Company,Chinese Institution,1
+Prabhu Bank,Other Private Sector,Non-Chinese Institution,1
+Promsvyazbank,Other State-owned Bank,Non-Chinese Institution,1
+Prudential Capital,Other Private Sector,Non-Chinese Institution,1
+Public Bank Berhad,Other Private Sector,Non-Chinese Institution,1
+Reserve Bank of India,Other State-owned Bank,Non-Chinese Institution,1
+Roseximbank,Other State-owned Bank,Non-Chinese Institution,1
+Rupali Bank,Other State-owned Bank,Non-Chinese Institution,1
+SG Corporate & Investment Banking,Other Private Sector,Non-Chinese Institution,1
+SGBTCI,Other Private Sector,Non-Chinese Institution,1
+Safra Bank,Other Private Sector,Non-Chinese Institution,1
+Sarana Infrastruktur Indonesia,Other Government Agency,Non-Chinese Institution,1
+Shanghai Rural Commercial Bank,Chinese State-owned Commercial Bank,Chinese Institution,1
+Shinkin Central Bank,Other Private Sector,Non-Chinese Institution,1
+Sindh Bank,Other State-owned Bank,Non-Chinese Institution,1
+Sinopac Capital International,Chinese Private Sector,Chinese Institution,1
+Société Commerciale de Banque Cameroun,Other Private Sector,Non-Chinese Institution,1
+Svenska Handelsbanken,Other Private Sector,Non-Chinese Institution,1
+Swedbank,Other Private Sector,Non-Chinese Institution,1
+TISCO Bank Public,Other Private Sector,Non-Chinese Institution,1
+TMB Bank,Other Private Sector,Non-Chinese Institution,1
+TMBThanachart Bank (TMB Bank),Other Private Sector,Non-Chinese Institution,1
+Ta Chong Bank,Other Private Sector,Non-Chinese Institution,1
+Tender Fund,Other Private Sector,Non-Chinese Institution,1
+The Arab Investment,Other Intergovernmental Organization,Non-Chinese Institution,1
+The Bank of Yokohama,Other Private Sector,Non-Chinese Institution,1
+The Commercial Bank of Qatar,Other Private Sector,Non-Chinese Institution,1
+The Hachijuni Bank,Other Private Sector,Non-Chinese Institution,1
+The Iyo Bank,Other Private Sector,Non-Chinese Institution,1
+The Joyo Bank,Other Private Sector,Non-Chinese Institution,1
+The Nanto Bank,Other Private Sector,Non-Chinese Institution,1
+The National Bank of Ras Al Khaimah,Other State-owned Bank,Non-Chinese Institution,1
+The Shizuoka Bank,Other Private Sector,Non-Chinese Institution,1
+Tianjin The First Commercial School,Other Miscellaneous Agency Type,Non-Chinese Institution,1
+Towerbank International,Other Private Sector,Non-Chinese Institution,1
+Trafigura Beheer BV,Other Private Sector,Non-Chinese Institution,1
+Transcapitalbank,Other State-owned Bank,Non-Chinese Institution,1
+Triodos Groenfonds,Other Private Sector,Non-Chinese Institution,1
+Turkiye Kalkinma ve Yatirim Bankasi,Other State-owned Bank,Non-Chinese Institution,1
+UK Export Finance,Other Government Agency,Non-Chinese Institution,1
+Union Bank UK,Other Private Sector,Non-Chinese Institution,1
+Union Bank of California,Other Private Sector,Non-Chinese Institution,1
+United Arab Bank,Other Private Sector,Non-Chinese Institution,1
+United Bank for Africa,Other State-owned Bank,Non-Chinese Institution,1
+United Coconut Planters Bank,Other Private Sector,Non-Chinese Institution,1
+United Kingdom Export Finance,Other Government Agency,Non-Chinese Institution,1
+Uralsib,Other Private Sector,Non-Chinese Institution,1
+Uzbekneftegaz,Other State-owned Company,Non-Chinese Institution,1
+Vietnam Bank for Agriculture and Rural Development,Other State-owned Bank,Non-Chinese Institution,1
+Vietnam Bank for Industry and Trade,Other State-owned Bank,Non-Chinese Institution,1
+Votorantim,Other Private Sector,Non-Chinese Institution,1
+Všeobecná úverová banka,Other Private Sector,Non-Chinese Institution,1
+Westdeutsche Landesbank Girozentrale,Other Private Sector,Non-Chinese Institution,1
+Westrust Bank,Other Private Sector,Non-Chinese Institution,1
+Wholesale Bank Bahrain,Other Private Sector,Non-Chinese Institution,1
+ZTE Corporation,Chinese State-owned Company,Chinese Institution,1
+Zenith Bank,Other Private Sector,Non-Chinese Institution,1
+Zhejiang Huayou Cobalt,Chinese Private Sector,Chinese Institution,1

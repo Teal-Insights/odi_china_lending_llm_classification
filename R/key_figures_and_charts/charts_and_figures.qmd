@@ -48,16 +48,34 @@ dir.create(here("output", "data"), recursive = TRUE, showWarnings = FALSE)
 
 ## Helper Functions
 ```{r}
-# Helper function to save plots in multiple formats
+# Simplified save_plot function without the problematic font parameters
 save_plot <- function(plot, filename, width = 8, height = 6, dpi = 300) {
   # Save as PNG for quick reference
-  ggsave(
-    filename = here("output", "figures", paste0(filename, ".png")),
-    plot = plot,
-    width = width,
-    height = height,
-    dpi = dpi
-  )
+  tryCatch({
+    ggsave(
+      filename = here("output", "figures", paste0(filename, ".png")),
+      plot = plot,
+      width = width,
+      height = height,
+      dpi = dpi
+    )
+  }, error = function(e) {
+    warning("PNG save failed: ", e$message)
+  })
+  
+  # Try to save as SVG (vector format that often works better than EPS)
+  tryCatch({
+    ggsave(
+      filename = here("output", "figures", paste0(filename, ".svg")),
+      plot = plot,
+      width = width,
+      height = height,
+      device = "svg"
+    )
+    message(paste0("Saved ", filename, " in SVG format"))
+  }, error = function(e) {
+    warning("SVG save failed: ", e$message)
+  })
   
   # Try to save as EPS using Cairo's PS device
   tryCatch({
@@ -68,30 +86,54 @@ save_plot <- function(plot, filename, width = 8, height = 6, dpi = 300) {
       height = height,
       device = cairo_ps  # Use Cairo's PS device instead of standard eps
     )
-    message(paste0("Saved: ", filename, " in PNG and EPS formats"))
+    message(paste0("Saved ", filename, " in EPS format"))
   }, error = function(e) {
     # If EPS fails, fall back to PDF (which is also Adobe-compatible)
     warning("EPS save failed, falling back to PDF: ", e$message)
-    ggsave(
-      filename = here("output", "figures", paste0(filename, ".pdf")),
-      plot = plot,
-      width = width,
-      height = height,
-      device = cairo_pdf
-    )
-    message(paste0("Saved: ", filename, " in PNG and PDF formats"))
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, ".pdf")),
+        plot = plot,
+        width = width,
+        height = height,
+        device = cairo_pdf,
+        useDingbats = FALSE  # Important for Adobe compatibility
+      )
+      message(paste0("Saved ", filename, " in PDF format"))
+    }, error = function(e) {
+      warning("PDF save also failed: ", e$message)
+    })
   })
   
-  # Also save a designer-friendly version (no title/subtitle)
+  # Also save designer-friendly version (no title/subtitle) if it exists
   if(exists("plot_export")) {
-    ggsave(
-      filename = here("output", "figures", paste0(filename, "_export.png")),
-      plot = plot_export,
-      width = width,
-      height = height,
-      dpi = dpi
-    )
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, "_export.png")),
+        plot = plot_export,
+        width = width,
+        height = height,
+        dpi = dpi
+      )
+    }, error = function(e) {
+      warning("Export PNG save failed: ", e$message)
+    })
     
+    # Try SVG export version
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, "_export.svg")),
+        plot = plot_export,
+        width = width,
+        height = height,
+        device = "svg"
+      )
+      message(paste0("Saved ", filename, "_export in SVG format"))
+    }, error = function(e) {
+      warning("Export SVG save failed: ", e$message)
+    })
+    
+    # Try EPS export version with fallback to PDF
     tryCatch({
       ggsave(
         filename = here("output", "figures", paste0(filename, "_export.eps")),
@@ -100,17 +142,25 @@ save_plot <- function(plot, filename, width = 8, height = 6, dpi = 300) {
         height = height,
         device = cairo_ps
       )
+      message(paste0("Saved ", filename, "_export in EPS format"))
     }, error = function(e) {
-      ggsave(
-        filename = here("output", "figures", paste0(filename, "_export.pdf")),
-        plot = plot_export,
-        width = width,
-        height = height,
-        device = cairo_pdf
-      )
+      tryCatch({
+        ggsave(
+          filename = here("output", "figures", paste0(filename, "_export.pdf")),
+          plot = plot_export,
+          width = width,
+          height = height,
+          device = cairo_pdf,
+          useDingbats = FALSE
+        )
+        message(paste0("Saved ", filename, "_export in PDF format"))
+      }, error = function(e) {
+        warning("Export PDF save also failed: ", e$message)
+      })
     })
   }
 }
+
 
 # Helper function to save data in CSV format
 save_data <- function(data, filename) {
@@ -1537,6 +1587,32 @@ green_network_results <- create_green_network_figure()
 print(green_network_results$plot)
 ```
 
+## Export Network Data
+```{r}
+export_network_data <- function(network, filename_prefix) {
+  # Export nodes with positions and attributes
+  nodes_df <- network %>%
+    activate(nodes) %>%
+    as_tibble()
+  
+  # Export edges with weights
+  edges_df <- network %>%
+    activate(edges) %>%
+    as_tibble()
+  
+  # Write to CSV files
+  write_csv(nodes_df, here("output", "data", paste0(filename_prefix, "_nodes.csv")))
+  write_csv(edges_df, here("output", "data", paste0(filename_prefix, "_edges.csv")))
+  
+  message(paste0("Exported network data: ", filename_prefix, "_nodes.csv and ", filename_prefix, "_edges.csv"))
+}
+
+# Then call this after creating your network plots:
+export_network_data(overall_network_results$network, "overall_network")
+export_network_data(green_network_results$network, "green_network")
+```
+
+
 ## Top Institutions Comparison
 ```{r top-institutions-comparison}
 create_top_institutions_figure <- function() {
@@ -1948,6 +2024,274 @@ centrality_comparison_figs <- create_centrality_comparison_figure()
 print(centrality_comparison_figs$combined)
 ```
 
+## Top Banks by Count
+
+```{r}
+create_top_active_banks_by_count_figure <- function() {
+  # Create the dataset for syndicated loan counts
+  data_for_syndicated_loan_count <- gcdf_green_data |> 
+    filter(
+      recommended_for_aggregates == "Yes",
+      flow_type == "Loan",
+      number_of_lenders == "Syndicated Loan"
+    ) |> 
+    unnest(standardized_lenders) |> 
+    # Create a simplified lender type classification for coloring
+    mutate(
+      lender_color_group = case_when(
+        standardized_lender_type %in% c(
+          "Chinese State-owned Commercial Bank", 
+          "Chinese State-owned Policy Bank",
+          "Chinese Government Agency",
+          "Chinese State-owned Company",
+          "Chinese State-owned Fund",
+          "Chinese Private Sector"
+        ) ~ "Chinese Institution",
+        TRUE ~ "Non-Chinese Institution"
+      )
+    ) |> 
+    select(
+      transaction_id,
+      standardized_lender_name,
+      standardized_lender_type,
+      lender_color_group
+    ) |> 
+    unique() |> 
+    group_by(
+      standardized_lender_name,
+      standardized_lender_type,
+      lender_color_group
+    ) |> 
+    count(sort = TRUE) |> 
+    ungroup()
+  
+  # Save the data
+  save_data(data_for_syndicated_loan_count, "syndicated_loan_count_by_bank_revised")
+  
+  # Find position of Standard Bank
+  standard_bank_name <- "Standard Bank"
+  standard_bank_position <- which(data_for_syndicated_loan_count$standardized_lender_name == standard_bank_name)
+  
+  # Get the top 25 banks for visualization
+  top_banks <- data_for_syndicated_loan_count |>
+    slice_head(n = 25)
+  
+  # Create a type-based color palette
+  type_colors <- c(
+    "Chinese Institution" = "#E41A1C",     # Red for Chinese institutions
+    "Non-Chinese Institution" = "#377EB8"  # Blue for non-Chinese institutions
+  )
+  
+  # Create the main plot colored by institution type
+  p_top_banks_by_type <- top_banks |>
+    ggplot(
+      aes(
+        x = n,
+        y = reorder(standardized_lender_name, n),
+        fill = lender_color_group
+      )
+    ) +
+    geom_col() +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = type_colors,
+      name = "Institution Type"
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      title = "Most active banks in syndication",
+      subtitle = "By number of syndicated loan transactions, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Create a dataset that includes Standard Bank and top 30 banks
+  top_banks_with_standard <- data_for_syndicated_loan_count |>
+    slice_head(n = 30)
+  
+  # Add Standard Bank if not already in the top 30
+  if(!(standard_bank_name %in% top_banks_with_standard$standardized_lender_name)) {
+    standard_bank_data <- data_for_syndicated_loan_count |>
+      filter(standardized_lender_name == standard_bank_name)
+    
+    top_banks_with_standard <- bind_rows(
+      top_banks_with_standard,
+      standard_bank_data
+    )
+  }
+  
+  # Create a special color scheme to highlight Standard Bank
+  highlight_colors <- c(
+    "Standard Bank" = "#4DAF4A",         # Green for Standard Bank
+    "Chinese Institution" = "#FFCCCC",   # Light red for Chinese institutions
+    "Non-Chinese Institution" = "#CCCCCC" # Gray for other non-Chinese institutions
+  )
+  
+  # Create a new column for highlighting
+  top_banks_with_standard <- top_banks_with_standard |>
+    mutate(
+      highlight_group = case_when(
+        standardized_lender_name == standard_bank_name ~ standard_bank_name,
+        lender_color_group == "Chinese Institution" ~ "Chinese Institution",
+        TRUE ~ "Non-Chinese Institution"
+      )
+    )
+  
+  # Create the highlighting plot
+  top_banks_with_standard_plot_data <- top_banks_with_standard |>
+    mutate(
+      # Append the rank to Standard Bank name for visibility
+      standardized_lender_name = ifelse(
+        standardized_lender_name == standard_bank_name,
+        paste0(standardized_lender_name, " (", standard_bank_position, "th)"),
+        standardized_lender_name
+      ),
+      is_standard_bank = (standardized_lender_name == paste0(standard_bank_name, " (", standard_bank_position, "th)"))
+    )
+  
+  # Create the plot
+  p_highlight_standard_bank <- ggplot(
+    top_banks_with_standard_plot_data,
+    aes(
+      x = n,
+      y = reorder(standardized_lender_name, n),
+      fill = highlight_group
+    )
+  ) +
+    geom_col() +
+    # Add the outline to Standard Bank separately
+    geom_col(
+      data = top_banks_with_standard_plot_data |> filter(is_standard_bank),
+      fill = NA,
+      color = "black",
+      linewidth = 1
+    ) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks_with_standard$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = highlight_colors,
+      name = "Institution Type",
+      breaks = c("Chinese Institution", "Non-Chinese Institution", standard_bank_name)
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      title = "Standard Bank: A key African partner in syndicated lending",
+      subtitle = paste0("Standard Bank ranks ", standard_bank_position, "th overall, but is the top African bank in the network"),
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Export versions without titles
+  p_top_banks_by_type_export <- top_banks |>
+    ggplot(
+      aes(
+        x = n,
+        y = reorder(standardized_lender_name, n),
+        fill = lender_color_group
+      )
+    ) +
+    geom_col() +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = type_colors,
+      name = "Institution Type"
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Export version for the standard bank highlight
+  p_highlight_standard_bank_export <- ggplot(
+    top_banks_with_standard_plot_data,
+    aes(
+      x = n,
+      y = reorder(standardized_lender_name, n),
+      fill = highlight_group
+    )
+  ) +
+    geom_col() +
+    geom_col(
+      data = top_banks_with_standard_plot_data |> filter(is_standard_bank),
+      fill = NA,
+      color = "black",
+      linewidth = 1
+    ) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks_with_standard$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = highlight_colors,
+      name = "Institution Type",
+      breaks = c("Chinese Institution", "Non-Chinese Institution", standard_bank_name)
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Save the plots
+  save_plot(p_top_banks_by_type, "fig_top_active_banks_by_type", width = 10, height = 8)
+  save_plot(p_highlight_standard_bank, "fig_standard_bank_highlight", width = 10, height = 8)
+  
+  # Make export versions available
+  plot_export <- p_top_banks_by_type_export
+  save_plot(p_top_banks_by_type_export, "fig_top_active_banks_by_type_export", width = 10, height = 8)
+  
+  plot_export <- p_highlight_standard_bank_export
+  save_plot(p_highlight_standard_bank_export, "fig_standard_bank_highlight_export", width = 10, height = 8)
+  
+  # Return both plots
+  return(list(
+    by_type = p_top_banks_by_type,
+    standard_bank = p_highlight_standard_bank
+  ))
+}
+
+# Generate the figures
+top_banks_figs <- create_top_active_banks_by_count_figure()
+
+# Display the figures
+print(top_banks_figs$by_type)
+print(top_banks_figs$standard_bank)
+```
+
+
 ## Co-Financing by Green Project Type
 ```{r green-project-type-figure}
 create_green_project_types_figure <- function() {
@@ -2076,6 +2420,8 @@ green_project_types_fig <- create_green_project_types_figure()
 print(green_project_types_fig)
 ```
 
+
+
 # Summary of Outputs
 ```{r summary}
 # Print a summary of all created figures and data files
@@ -2103,5 +2449,58 @@ list.files(here("output", "data"))
 ```
 
 
+```{r}
+data_for_syndicated_loan_count <- gcdf_green_data |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    flow_type == "Loan",
+    number_of_lenders == "Syndicated Loan"
+  ) |> 
+  unnest(
+    standardized_lenders
+  ) |> 
+  mutate(
+    lender_geography_type = case_when(
+      lender_geography_type %in% c(
+        "Other",
+        "Recipient"
+      ) ~ "Non-Chinese",
+      .default = lender_geography_type
+    )
+  ) |> 
+  select(
+    transaction_id,
+    standardized_lender_name,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  unique() |> 
+  group_by(
+    standardized_lender_name,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  count(
+    sort = TRUE
+  ) |> 
+  ungroup()
+```
 
 
+
+standardized_lender_type
+<chr>
+lender_geography_type
+<chr>
+n
+<int>
+Chinese State-owned Commercial Bank	Chinese	385
+Chinese State-owned Commercial Bank	Chinese	339
+Other Private Sector	Non-Chinese	181
+Other Private Sector	Non-Chinese	179
+Other Private Sector	Non-Chinese	157
+Other Private Sector	Non-Chinese	155
+Other Private Sector	Non-Chinese	151
+Chinese State-owned Policy Bank	Chinese	137
+Chinese State-owned Policy Bank	Chinese	127
+Other Private Sector	Non-Chinese	122
