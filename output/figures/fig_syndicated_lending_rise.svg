@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='720.00pt' height='432.00pt' viewBox='0 0 720.00 432.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='432.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<rect x='-0.000000000000064' y='-0.00000000000011' width='720.00' height='432.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpOTEuMDB8NzAzLjU2fDg4Ljc5fDMyNS40MQ=='>
+    <rect x='91.00' y='88.79' width='612.56' height='236.62' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpOTEuMDB8NzAzLjU2fDg4Ljc5fDMyNS40MQ==)'>
+<rect x='91.00' y='88.79' width='612.56' height='236.62' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+<polyline points='91.00,314.65 703.56,314.65 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='91.00,263.44 703.56,263.44 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='91.00,212.22 703.56,212.22 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='91.00,161.00 703.56,161.00 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='91.00,109.78 703.56,109.78 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='118.85,325.41 118.85,88.79 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='239.90,325.41 239.90,88.79 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='360.96,325.41 360.96,88.79 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='482.02,325.41 482.02,88.79 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='603.08,325.41 603.08,88.79 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<line x1='457.81' y1='325.41' x2='457.81' y2='88.79' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-opacity: 0.70; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+<line x1='554.66' y1='325.41' x2='554.66' y2='88.79' style='stroke-width: 1.07; stroke: #BEBEBE; stroke-opacity: 0.70; stroke-dasharray: 5.69,5.69; stroke-linecap: butt;' />
+<text x='506.23' y='116.94' text-anchor='middle' style='font-size: 8.54px;fill: #7F7F7F; font-family: "Arial";' textLength='36.02px' lengthAdjust='spacingAndGlyphs'>Early BRI</text>
+<text x='506.23' y='129.23' text-anchor='middle' style='font-size: 8.54px;fill: #7F7F7F; font-family: "Arial";' textLength='48.39px' lengthAdjust='spacingAndGlyphs'>(2014–2017)</text>
+<text x='603.08' y='116.94' text-anchor='middle' style='font-size: 8.54px;fill: #7F7F7F; font-family: "Arial";' textLength='33.19px' lengthAdjust='spacingAndGlyphs'>Late BRI</text>
+<text x='603.08' y='129.23' text-anchor='middle' style='font-size: 8.54px;fill: #7F7F7F; font-family: "Arial";' textLength='48.39px' lengthAdjust='spacingAndGlyphs'>(2017–2021)</text>
+<polyline points='118.85,307.96 143.06,305.32 167.27,305.12 191.48,298.60 215.69,300.36 239.90,288.14 264.12,261.39 288.33,268.89 312.54,287.69 336.75,106.37 360.96,160.45 385.18,229.78 409.39,213.53 433.60,123.73 457.81,218.24 482.02,171.18 506.23,200.13 530.45,204.04 554.66,214.06 578.87,247.54 603.08,286.36 627.29,283.33 ' style='stroke-width: 3.20; stroke: #046FC4; stroke-opacity: 0.70; stroke-linecap: butt;' />
+<polyline points='143.06,314.62 167.27,314.62 191.48,311.62 215.69,314.60 239.90,314.63 264.12,308.68 288.33,312.94 312.54,312.99 336.75,310.46 360.96,314.47 385.18,313.37 409.39,313.84 433.60,305.31 457.81,310.55 482.02,307.48 506.23,307.30 530.45,305.42 554.66,308.10 578.87,310.20 603.08,311.83 627.29,312.40 ' style='stroke-width: 3.20; stroke: #182061; stroke-opacity: 0.70; stroke-linecap: butt;' />
+<polyline points='167.27,312.46 191.48,314.14 215.69,313.37 239.90,281.57 264.12,310.53 288.33,310.54 312.54,270.56 336.75,301.19 360.96,298.65 385.18,295.23 409.39,285.81 433.60,301.33 457.81,269.36 482.02,284.55 506.23,229.98 530.45,274.27 554.66,276.52 578.87,263.24 603.08,278.14 627.29,283.89 ' style='stroke-width: 3.20; stroke: #FED141; stroke-opacity: 0.70; stroke-linecap: butt;' />
+</g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw0MzIuMDA=)'>
+<text x='86.07' y='317.93' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='38.35px' lengthAdjust='spacingAndGlyphs'>$0 billion</text>
+<text x='86.07' y='266.72' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='42.61px' lengthAdjust='spacingAndGlyphs'>$25 billion</text>
+<text x='86.07' y='215.50' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='43.77px' lengthAdjust='spacingAndGlyphs'>$50 billion</text>
+<text x='86.07' y='164.28' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='42.11px' lengthAdjust='spacingAndGlyphs'>$75 billion</text>
+<text x='86.07' y='113.06' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='48.05px' lengthAdjust='spacingAndGlyphs'>$100 billion</text>
+<text x='118.85' y='336.90' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='24.59px' lengthAdjust='spacingAndGlyphs'>2000</text>
+<text x='239.90' y='336.90' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='23.57px' lengthAdjust='spacingAndGlyphs'>2005</text>
+<text x='360.96' y='336.90' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='21.41px' lengthAdjust='spacingAndGlyphs'>2010</text>
+<text x='482.02' y='336.90' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='20.40px' lengthAdjust='spacingAndGlyphs'>2015</text>
+<text x='603.08' y='336.90' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='23.43px' lengthAdjust='spacingAndGlyphs'>2020</text>
+<text x='397.28' y='358.00' text-anchor='middle' style='font-size: 11.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='94.43px' lengthAdjust='spacingAndGlyphs'>Commitment year</text>
+<text transform='translate(24.64,207.10) rotate(-90)' text-anchor='middle' style='font-size: 11.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='237.17px' lengthAdjust='spacingAndGlyphs'>Loan commitments (constant 2021 US dollars)</text>
+<line x1='201.40' y1='398.95' x2='215.22' y2='398.95' style='stroke-width: 3.20; stroke: #046FC4; stroke-opacity: 0.70; stroke-linecap: butt;' />
+<line x1='358.97' y1='398.95' x2='372.79' y2='398.95' style='stroke-width: 3.20; stroke: #182061; stroke-opacity: 0.70; stroke-linecap: butt;' />
+<line x1='512.32' y1='398.95' x2='526.14' y2='398.95' style='stroke-width: 3.20; stroke: #FED141; stroke-opacity: 0.70; stroke-linecap: butt;' />
+<text x='222.43' y='401.93' style='font-size: 8.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='129.33px' lengthAdjust='spacingAndGlyphs'>Bilateral loan without co-financing</text>
+<text x='380.00' y='401.93' style='font-size: 8.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='125.11px' lengthAdjust='spacingAndGlyphs'>Involves multilateral co-financing</text>
+<text x='533.35' y='401.93' style='font-size: 8.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='61.55px' lengthAdjust='spacingAndGlyphs'>Syndicated loan</text>
+<text x='27.40' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='51.36px' lengthAdjust='spacingAndGlyphs'>Chinese</text>
+<text x='80.99' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='46.79px' lengthAdjust='spacingAndGlyphs'>lending</text>
+<text x='130.03' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='15.87px' lengthAdjust='spacingAndGlyphs'>by</text>
+<text x='148.13' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='49.39px' lengthAdjust='spacingAndGlyphs'>delivery</text>
+<text x='199.77' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='52.83px' lengthAdjust='spacingAndGlyphs'>channel,</text>
+<text x='254.83' y='69.45' style='font-size: 13.20px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='73.82px' lengthAdjust='spacingAndGlyphs'>2000-2021</text>
+<text x='27.40' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='123.97px' lengthAdjust='spacingAndGlyphs'>Syndicated</text>
+<text x='155.28' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='40.59px' lengthAdjust='spacingAndGlyphs'>and</text>
+<text x='199.79' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='135.87px' lengthAdjust='spacingAndGlyphs'>co-financed</text>
+<text x='339.57' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='57.00px' lengthAdjust='spacingAndGlyphs'>loans</text>
+<text x='400.49' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='34.45px' lengthAdjust='spacingAndGlyphs'>are</text>
+<text x='438.86' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='129.10px' lengthAdjust='spacingAndGlyphs'>increasingly</text>
+<text x='571.88' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='107.20px' lengthAdjust='spacingAndGlyphs'>important</text>
+<text x='683.00' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='112.70px' lengthAdjust='spacingAndGlyphs'>modalities</text>
+<text x='703.56' y='419.22' text-anchor='end' style='font-size: 8.25px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='224.41px' lengthAdjust='spacingAndGlyphs'>Source: Authors' calculations based on AidData GCDF 3.0</text>
+</g>
+</svg>

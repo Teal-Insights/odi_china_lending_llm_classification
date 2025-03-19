@@ -1,0 +1,11 @@
+standardized_lender_name,lender_geography,lender_profit_orientation,degree,betweenness,closeness,constraint,network
+Societe Generale,Non-Chinese,Profit Maximizing,50,1250.2167730388567,0.0044444444444444444,0.07747636449543367,Green network
+ICBC,Chinese,Mixed Mandate,48,2211.874909863866,0.0045871559633027525,0.0678589265076908,Green network
+Bank of China,Chinese,Mixed Mandate,44,1254.328231887047,0.004291845493562232,0.08346435946874631,Green network
+Standard Chartered,Non-Chinese,Profit Maximizing,38,541.605844097582,0.004219409282700422,0.0926264837193627,Green network
+KfW,Non-Chinese,Policy Driven,34,445.587572677983,0.0041841004184100415,0.10618458400846652,Green network
+International Finance Corporation,Non-Chinese,Policy Driven,33,775.4446115402617,0.00411522633744856,0.09866653219307922,Green network
+BBVA,Non-Chinese,Profit Maximizing,31,329.61243156447546,0.003861003861003861,0.1051054782358435,Green network
+African Development Bank,Non-Chinese,Policy Driven,29,369.83932992475087,0.0035714285714285713,0.11997488348005285,Green network
+Export-Import Bank of China,Chinese,Policy Driven,29,1346.7065255865484,0.003968253968253968,0.09932500950671455,Green network
+Citibank,Non-Chinese,Profit Maximizing,28,128.09033881383115,0.0034965034965034965,0.12133657582063342,Green network

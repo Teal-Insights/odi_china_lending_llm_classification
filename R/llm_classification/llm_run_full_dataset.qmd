@@ -102,27 +102,25 @@ deepseek_run_results <- collect_results(
 )
 ```
 
-
 Look at the results:
+
 ```{r}
 deepseek_run_results
 ```
-Total processing time: 15.45 hours
-Successful: 17899
-Failed: 58
 
+Total processing time: 15.45 hours Successful: 17899 Failed: 58
 
 Look at the error message for the failed observations:
+
 ```{r}
 deepseek_run_results$failed |> 
   group_by(error_message) |> 
   count(sort = TRUE) 
 ```
-56 observations:
-[1] "Error in `httr2::req_perform()`:\n! HTTP 400 Bad Request.\n• Content Exists Risk\n"
 
-2 Observations:
-[2] "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n" 
+56 observations: \[1\] "Error in `httr2::req_perform()`:\n! HTTP 400 Bad Request.\n• Content Exists Risk\n"
+
+2 Observations: \[2\] "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n"
 
 ## Round 2: Try re-running failed observations
 
@@ -136,7 +134,6 @@ round_1_failed_for_rerun <- deepseek_run_results$failed |>
 
 round_1_failed_for_rerun
 ```
-
 
 ```{r}
 start_time <- Sys.time()
@@ -165,7 +162,7 @@ deepseek_run_results_2 <- collect_results(
 )
 ```
 
-That took care of the two observations with the "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n" 
+That took care of the two observations with the "Error in `httr2::req_perform()`:\n! HTTP 502 Bad Gateway.\n"
 
 The 56 observations with the "Error in `httr2::req_perform()`:\n! HTTP 400 Bad Request.\n• Content Exists Risk\n" remain
 
@@ -177,8 +174,8 @@ deepseek_run_results_2$failed |>
 
 Most observations still produced errors, and they all had the following message: `[1] "Error in httr2::req_perform():\n! HTTP 400 Bad Request.\n• Content Exists Risk\n"`
 
-
 Pulling a few examples of the remaining failed observations.
+
 ```{r}
 deepseek_run_results_2$failed |> 
   slice(
@@ -222,6 +219,7 @@ process_failed_texts <- function(df) {
 ```
 
 Clean combined text field
+
 ```{r}
 
 round_2_failed_for_rerun <- deepseek_run_results_2$failed |> 
@@ -239,6 +237,7 @@ round_2_failed_for_rerun
 ```
 
 Re run with the cleaned combined text field.
+
 ```{r}
 start_time <- Sys.time()
 results <- process_all_chunks(
@@ -269,20 +268,23 @@ deepseek_run_results_3 <- collect_results(
 ```{r}
 deepseek_run_results_3
 ```
-1 successful
-55 failed
 
+1 successful 55 failed
 
 print out the text of all of the remaining failed observations and put them into ChatGPT and Claude to see if we can find patterns.
+
 ```{r}
 # deepseek_run_results_3$failed$combined_text
 ```
 
 ## Round 4: Politically Sensitive People
+
 Maybe it's "politically sensitive people" who show up in a lot of these observations
 
 ### Peng Liyuan
+
 Peng Liyuan, Xi Jinping's wife, shows up in 35 of the 55 observations.
+
 ```{r}
 deepseek_run_results_3$failed |> 
   filter(
@@ -294,6 +296,7 @@ deepseek_run_results_3$failed |>
 ```
 
 Her name shows up zero time in the initial 17899 successfully processed observations.
+
 ```{r}
 deepseek_run_results$successful |> 
   filter(
@@ -304,8 +307,8 @@ deepseek_run_results$successful |>
   ) |> nrow()
 ```
 
-
 ### Bo Xilai
+
 Bo Xilai shows up 15 times in the failed observations, and zero times in the initial successfully run observations.
 
 ```{r}
@@ -328,10 +331,8 @@ deepseek_run_results$successful |>
   ) |> nrow()
 ```
 
-
-
-
 ### Zhang Gaoli
+
 Zhang Gaoli shows up in 3 of the failed observations, and zero times in the successfully run observations.
 
 ```{r}
@@ -355,6 +356,7 @@ deepseek_run_results$successful |>
 ```
 
 ### Combined
+
 The three of these politically sensitive names show up in 53 of 55 of the failed observations. They show up in zero of the succesfully processed observations.
 
 ```{r}
@@ -382,6 +384,7 @@ deepseek_run_results$successful |>
 What is causing the problem for the remaining two observations?
 
 Here is the full text of the two
+
 ```{r}
 deepseek_run_results_3$failed |> 
   filter(
@@ -393,10 +396,13 @@ deepseek_run_results_3$failed |>
   ) |> 
   pull(combined_text)
 ```
+
 #### Testing potential names
+
 Let's test some of the potential "politically sensitive" names to see if they show up in the successfully run observations.
 
 Xi Jinping shows up in 188 succesfully processed observations, so not likely causing the block.
+
 ```{r}
 deepseek_run_results$successful |> 
   filter(
@@ -408,6 +414,7 @@ deepseek_run_results$successful |>
 ```
 
 Hanban shows up 256 times.
+
 ```{r}
 deepseek_run_results$successful |> 
   filter(
@@ -444,7 +451,9 @@ verify_changes <- test_sanitized |>
   filter(sanitized_text != combined_text) |>
   select(combined_text, sanitized_text)
 ```
+
 Process data to remove politically sensitive names
+
 ```{r}
 
 round_3_failed_for_rerun <- deepseek_run_results_3$failed |> 
@@ -463,7 +472,9 @@ round_3_failed_for_rerun <- deepseek_run_results_3$failed |>
 round_3_failed_for_rerun
 
 ```
+
 Run Round 4
+
 ```{r}
 start_time <- Sys.time()
 results <- process_all_chunks(
@@ -491,25 +502,27 @@ deepseek_run_results_4 <- collect_results(
 )
 ```
 
-
 ```{r}
 deepseek_run_results_4
 ```
 
-Only the two that didn't mention Bo Xilai|Peng Liyuan|Zhang Gaoli remain.
+Only the two that didn't mention Bo Xilai\|Peng Liyuan\|Zhang Gaoli remain.
 
-It's clear that what was causing them to error.  It's less clear what is blocking the last two from running. I'll try blocking out any potentially politically sensitive names or subjects.  This doesn't impact.  
+It's clear that what was causing them to error. It's less clear what is blocking the last two from running. I'll try blocking out any potentially politically sensitive names or subjects. This doesn't impact.
 
 ## Round 5: Remove Anything Politcally Sensitive
-Both of the two remaining projects are clearly "Neutral" in our classification framework.  While it would be fun to pinpoint exactly what is being flagged here, it's more important to complete the dataset. Taking out anything possibly politically sensitive will not change the information needed to assess the project classification. 
+
+Both of the two remaining projects are clearly "Neutral" in our classification framework. While it would be fun to pinpoint exactly what is being flagged here, it's more important to complete the dataset. Taking out anything possibly politically sensitive will not change the information needed to assess the project classification.
 
 Pull out the remaining text
+
 ```{r}
 deepseek_run_results_4$failed |> 
   pull(combined_text)
 ```
 
 Create a function to sanitize any potentially politically sensitive names.
+
 ```{r}
 sanitize_sensitive_content <- function(text) {
   text |>
@@ -561,6 +574,7 @@ test_sanitized$sanitized_text
 ```
 
 Create updated dataset
+
 ```{r}
 round_4_failed_for_rerun <- deepseek_run_results_4$failed |> 
   select(
@@ -580,8 +594,8 @@ round_4_failed_for_rerun <- deepseek_run_results_4$failed |>
 round_4_failed_for_rerun
 ```
 
-
 Run it again.
+
 ```{r}
 start_time <- Sys.time()
 results <- process_all_chunks(
@@ -610,13 +624,12 @@ deepseek_run_results_5 <- collect_results(
 ```
 
 Look at the results
+
 ```{r}
 deepseek_run_results_5
 ```
 
-
-
-Great. That worked!  
+Great. That worked!
 
 Both were clearly Neutral, so nice to have that out of the way.
 
@@ -644,6 +657,7 @@ full_dataset
 ```{r}
 full_dataset |> glimpse()
 ```
+
 ```{r}
 # Check 1: Compare aid_data_record_ids
 id_check <- list(
@@ -655,6 +669,7 @@ id_check <- list(
 
 id_check
 ```
+
 ```{r}
 write_csv(
   full_dataset,
@@ -676,7 +691,6 @@ write_rds(
 )
 ```
 
-
 Create a subset that just has the AidData ID + the LLM output, for joining to the GCDF 3.0 dataset.
 
 ```{r}
@@ -688,7 +702,6 @@ full_dataset_for_join <- full_dataset |>
 
 full_dataset_for_join
 ```
-
 
 ```{r}
 write_csv(
@@ -710,4 +723,3 @@ write_rds(
   compress = "xz"
 )
 ```
-

@@ -9,6 +9,18 @@
     ]
   },
   "Packages": {
+    "Cairo": {
+      "Package": "Cairo",
+      "Version": "1.6-2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics"
+      ],
+      "Hash": "3918e6b40d27984ca4a99c73b92406c3"
+    },
     "DBI": {
       "Package": "DBI",
       "Version": "1.2.3",
@@ -120,6 +132,17 @@
         "utils"
       ],
       "Hash": "5deb66b3ae702137e1f4162c11861e76"
+    },
+    "WDI": {
+      "Package": "WDI",
+      "Version": "2.7.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "jsonlite"
+      ],
+      "Hash": "d0621c89c78e458566b28c79c3b9faab"
     },
     "askpass": {
       "Package": "askpass",
@@ -1719,6 +1742,27 @@
         "utils"
       ],
       "Hash": "f8b2924480a2679e2bad9750646112fe"
+    },
+    "tealodiviz": {
+      "Package": "tealodiviz",
+      "Version": "0.0.0.1.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "Teal-Insights",
+      "RemoteRepo": "tealodiviz",
+      "RemoteRef": "main",
+      "RemoteSha": "0273da5549a13b342e2e638dd6241692ebbd933f",
+      "Requirements": [
+        "dplyr",
+        "ggplot2",
+        "ggtext",
+        "grDevices",
+        "purrr",
+        "systemfonts",
+        "textshaping"
+      ],
+      "Hash": "060c0be673eb4a667e3ca0b59f7bf3e4"
     },
     "tealviz": {
       "Package": "tealviz",

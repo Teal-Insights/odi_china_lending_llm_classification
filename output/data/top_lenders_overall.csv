@@ -1,0 +1,11 @@
+standardized_lender_name,lender_geography,lender_profit_orientation,degree,betweenness,closeness,constraint,network
+Bank of China,Chinese,Mixed Mandate,386,26999.056245962216,9.532888465204957e-4,0.0514892069357685,Overall network
+Sumitomo Mitsui,Non-Chinese,Profit Maximizing,367,12567.05950947974,9.389671361502347e-4,0.05138997707404709,Overall network
+Mitsubishi UFJ,Non-Chinese,Profit Maximizing,345,11340.483220654613,9.191176470588235e-4,0.05155905486107075,Overall network
+Standard Chartered,Non-Chinese,Profit Maximizing,345,12615.887995631407,9.199632014719411e-4,0.04891564984487111,Overall network
+ICBC,Chinese,Mixed Mandate,340,20923.02644572366,9.132420091324201e-4,0.053008747500496806,Overall network
+Mizuho,Non-Chinese,Profit Maximizing,331,8260.398502429714,9.049773755656109e-4,0.052945480929319125,Overall network
+Citibank,Non-Chinese,Profit Maximizing,327,12157.194199933665,9.009009009009009e-4,0.05442169495457501,Overall network
+HSBC,Non-Chinese,Profit Maximizing,309,8895.167473418609,8.952551477170994e-4,0.05301034447001852,Overall network
+BNP Paribas,Non-Chinese,Profit Maximizing,297,6347.787461813797,8.802816901408451e-4,0.05660227913979601,Overall network
+Intesa Sanpaolo,Non-Chinese,Profit Maximizing,273,5604.564577995454,8.658008658008658e-4,0.05501397371992592,Overall network

@@ -1,0 +1,2506 @@
+---
+title: "Chinese Co-Financing: Complete Visualization Workflow"
+author: "Teal Emery"
+format: 
+  html:
+    code-fold: true
+    toc: true
+    toc-depth: 3
+    fig-width: 10
+    fig-height: 8
+    embed-resources: true
+editor: visual
+---
+
+# Setup
+
+## Load Libraries
+```{r setup, message=FALSE}
+# Key packages for data manipulation and visualization
+library(tidyverse)    # For data manipulation and visualization
+library(here)         # For file path management
+library(chinadevfin3) # For AidData's GCDF 3.0 dataset
+library(tealodiviz)   # For ODI theming
+library(patchwork)    # For combining plots
+library(Cairo)        # For high-quality output devices
+
+# Network analysis packages
+library(tidygraph)    # For network objects and centrality measures
+library(ggraph)       # For network visualizations
+library(igraph)       # For additional network metrics
+library(ggrepel)      # For text labels that don't overlap
+library(tidytext)     # For reordering within facets
+library(cowplot)
+
+# Additional utility packages
+library(WDI)          # For World Bank WDI data
+library(kableExtra)   # For nicer tables in the HTML output
+
+# Global settings
+theme_set(theme_odi())  # Set default theme
+options(scipen = 999)   # Avoid scientific notation
+set.seed(12345)         # Set seed for reproducible network layouts
+
+# Create output directories if they don't exist
+dir.create(here("output", "figures"), recursive = TRUE, showWarnings = FALSE)
+dir.create(here("output", "data"), recursive = TRUE, showWarnings = FALSE)
+```
+
+## Helper Functions
+```{r}
+# Simplified save_plot function without the problematic font parameters
+save_plot <- function(plot, filename, width = 8, height = 6, dpi = 300) {
+  # Save as PNG for quick reference
+  tryCatch({
+    ggsave(
+      filename = here("output", "figures", paste0(filename, ".png")),
+      plot = plot,
+      width = width,
+      height = height,
+      dpi = dpi
+    )
+  }, error = function(e) {
+    warning("PNG save failed: ", e$message)
+  })
+  
+  # Try to save as SVG (vector format that often works better than EPS)
+  tryCatch({
+    ggsave(
+      filename = here("output", "figures", paste0(filename, ".svg")),
+      plot = plot,
+      width = width,
+      height = height,
+      device = "svg"
+    )
+    message(paste0("Saved ", filename, " in SVG format"))
+  }, error = function(e) {
+    warning("SVG save failed: ", e$message)
+  })
+  
+  # Try to save as EPS using Cairo's PS device
+  tryCatch({
+    ggsave(
+      filename = here("output", "figures", paste0(filename, ".eps")),
+      plot = plot,
+      width = width,
+      height = height,
+      device = cairo_ps  # Use Cairo's PS device instead of standard eps
+    )
+    message(paste0("Saved ", filename, " in EPS format"))
+  }, error = function(e) {
+    # If EPS fails, fall back to PDF (which is also Adobe-compatible)
+    warning("EPS save failed, falling back to PDF: ", e$message)
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, ".pdf")),
+        plot = plot,
+        width = width,
+        height = height,
+        device = cairo_pdf,
+        useDingbats = FALSE  # Important for Adobe compatibility
+      )
+      message(paste0("Saved ", filename, " in PDF format"))
+    }, error = function(e) {
+      warning("PDF save also failed: ", e$message)
+    })
+  })
+  
+  # Also save designer-friendly version (no title/subtitle) if it exists
+  if(exists("plot_export")) {
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, "_export.png")),
+        plot = plot_export,
+        width = width,
+        height = height,
+        dpi = dpi
+      )
+    }, error = function(e) {
+      warning("Export PNG save failed: ", e$message)
+    })
+    
+    # Try SVG export version
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, "_export.svg")),
+        plot = plot_export,
+        width = width,
+        height = height,
+        device = "svg"
+      )
+      message(paste0("Saved ", filename, "_export in SVG format"))
+    }, error = function(e) {
+      warning("Export SVG save failed: ", e$message)
+    })
+    
+    # Try EPS export version with fallback to PDF
+    tryCatch({
+      ggsave(
+        filename = here("output", "figures", paste0(filename, "_export.eps")),
+        plot = plot_export,
+        width = width,
+        height = height,
+        device = cairo_ps
+      )
+      message(paste0("Saved ", filename, "_export in EPS format"))
+    }, error = function(e) {
+      tryCatch({
+        ggsave(
+          filename = here("output", "figures", paste0(filename, "_export.pdf")),
+          plot = plot_export,
+          width = width,
+          height = height,
+          device = cairo_pdf,
+          useDingbats = FALSE
+        )
+        message(paste0("Saved ", filename, "_export in PDF format"))
+      }, error = function(e) {
+        warning("Export PDF save also failed: ", e$message)
+      })
+    })
+  }
+}
+
+
+# Helper function to save data in CSV format
+save_data <- function(data, filename) {
+  write_csv(
+    x = data,
+    file = here("output", "data", paste0(filename, ".csv"))
+  )
+  
+  # Print confirmation
+  message(paste0("Saved data: ", filename, ".csv"))
+}
+```
+
+## Load Base Data
+```{r load-data, message=FALSE}
+# Load the main data for lending pattern analysis
+gcdf3_for_aggregates <- get_gcdf3_dataset() |>
+  filter(recommended_for_aggregates == "Yes")
+
+# Load data for social network analysis
+sna_data_nested <- read_rds(
+  here(
+    "data",
+    "social_network_analysis",
+    "data_for_social_network_analysis.rds"
+  )
+)
+
+# Unnest the data to get all unique lender combinations
+data_for_sna <- sna_data_nested |> 
+  unnest(unique_lenders) |> 
+  unique()
+
+# Load data with green project classifications
+gcdf_green_data <- read_rds(
+  here(
+    "data",
+    "transaction_classification",
+    "gcdf_w_green_classifications.rds"
+  )
+)
+```
+
+# Part 1: Lending Pattern Analysis
+
+## Emergency Lending
+```{r emergency-lending-figure}
+create_emergency_lending_figure <- function() {
+  # Create classifications for lending types
+  gcdf3_for_aggregates_by_lending_type <- gcdf3_for_aggregates |> 
+    filter(flow_type == "Loan") |>
+    mutate(
+      lending_type = case_when(
+        rescue == "Yes" ~ "Emergency lending",
+        infrastructure == "Yes" ~ "Infrastructure lending",
+        .default = "Other"
+      )
+    )
+  
+  # Aggregate data by year and lending type
+  lending_type_by_year <- gcdf3_for_aggregates_by_lending_type |> 
+    group_by(lending_type, commitment_year) |> 
+    summarize(
+      usd_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9,
+      n = n(),
+      .groups = "drop"
+    )
+  
+  # Save the source data
+  save_data(lending_type_by_year, "emergency_lending_data")
+  
+  # Create the visualization plot
+  lending_plot <- lending_type_by_year |> 
+    ggplot(
+      aes(
+        x = commitment_year,
+        y = usd_bn,
+        color = lending_type
+      )
+    ) +
+    # Add the lines
+    geom_line(
+      linewidth = 1.5,
+      alpha = .7
+    ) +
+    # Add vertical lines for BRI periods
+    geom_vline(
+      xintercept = 2014,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    geom_vline(
+      xintercept = 2018,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    # Add period labels
+    annotate(
+      geom = "text",
+      x = 2016,
+      y = 88,
+      label = "Early BRI\n(2014–2017)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    annotate(
+      geom = "text",
+      x = 2020,
+      y = 88,
+      label = "Late BRI\n(2017–2021)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    # Set colors using ODI palette
+    scale_color_manual(
+      values = c(
+        "Emergency lending" = odi_colors$odi_red,
+        "Infrastructure lending" = odi_colors$odi_blue,
+        "Other" = "grey60"
+      )
+    ) +
+    # Format y-axis
+    scale_y_continuous(
+      labels = scales::label_currency(
+        scale = 1,
+        suffix = " billion"
+      ),
+      limits = c(0, 95)
+    ) +
+    # Format x-axis
+    scale_x_continuous(
+      breaks = seq(2000, 2020, by = 5),
+      limits = c(2000, 2023)
+    ) +
+    # Basic labeling
+    labs(
+      x = "Commitment year",
+      y = "Loan commitments (constant 2021 US dollars)",
+      color = NULL,
+      title = "Emergency lending rises as infrastructure lending declines",
+      subtitle = "Chinese lending commitments, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    # Final theme adjustments
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+  
+  # Version for export without title and subtitle
+  plot_export <- lending_type_by_year |> 
+    ggplot(
+      aes(
+        x = commitment_year,
+        y = usd_bn,
+        color = lending_type
+      )
+    ) +
+    geom_line(
+      linewidth = 1.5,
+      alpha = .7
+    ) +
+    geom_vline(
+      xintercept = 2014,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    geom_vline(
+      xintercept = 2018,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    annotate(
+      geom = "text",
+      x = 2016,
+      y = 88,
+      label = "Early BRI\n(2014–2017)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    annotate(
+      geom = "text",
+      x = 2020,
+      y = 88,
+      label = "Late BRI\n(2017–2021)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    scale_color_manual(
+      values = c(
+        "Emergency lending" = odi_colors$odi_red,
+        "Infrastructure lending" = odi_colors$odi_blue,
+        "Other" = "grey60"
+      )
+    ) +
+    scale_y_continuous(
+      labels = scales::label_currency(
+        scale = 1,
+        suffix = " billion"
+      ),
+      limits = c(0, 95)
+    ) +
+    scale_x_continuous(
+      breaks = seq(2000, 2020, by = 5),
+      limits = c(2000, 2023)
+    ) +
+    labs(
+      x = "Commitment year",
+      y = "Loan commitments (constant 2021 US dollars)",
+      color = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank()
+    )
+  
+  # Save the plot
+  save_plot(lending_plot, "fig_emergency_lending_rise", width = 8, height = 6)
+  
+  # Return the plot for display
+  return(lending_plot)
+}
+
+# Generate the emergency lending figure
+emergency_lending_fig <- create_emergency_lending_figure()
+
+# Display the figure
+print(emergency_lending_fig)
+```
+
+## Syndicated Lending
+```{r syndicated-lending-figure}
+create_syndicated_lending_figure <- function() {
+  # Create delivery channel classification
+  channel_of_delivery <- gcdf3_for_aggregates |> 
+    filter(flow_type == "Loan", is.na(rescue)) |>
+    mutate(delivery_channel = case_when(
+      involving_multilateral == "Yes" ~ "Involves multilateral co-financing",
+      number_of_lenders == "Bilateral Loan" & co_financed == "Yes" ~ 
+        "Bilateral loan with co-financing",
+      number_of_lenders == "Bilateral Loan" & (is.na(co_financed) | co_financed == "No") ~
+        "Bilateral loan without co-financing",
+      number_of_lenders == "Syndicated Loan" ~ "Syndicated loan",
+      .default = "Other"
+    ))
+  
+  # Aggregate data by year and delivery channel
+  channel_of_delivery_by_year <- channel_of_delivery |> 
+    group_by(delivery_channel, commitment_year) |> 
+    summarize(
+      usd_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9,
+      n = n(),
+      .groups = "drop"
+    )
+  
+  # Save the source data
+  save_data(channel_of_delivery_by_year, "syndicated_lending_data")
+  
+  # Create the plot
+  lending_plot <- channel_of_delivery_by_year |> 
+    # Filter out bilateral loan with co-financing -- it's minor and adds clutter
+    filter(
+      delivery_channel != "Bilateral loan with co-financing"
+    ) |> 
+    ggplot(
+      aes(
+        x = commitment_year,
+        y = usd_bn,
+        color = delivery_channel
+      )
+    ) +
+    # Add vertical lines for BRI periods
+    geom_vline(
+      xintercept = 2014,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    geom_vline(
+      xintercept = 2018,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    # Add period labels
+    annotate(
+      geom = "text",
+      x = 2016,
+      y = 95,
+      label = "Early BRI\n(2014–2017)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    annotate(
+      geom = "text",
+      x = 2020,
+      y = 95,
+      label = "Late BRI\n(2017–2021)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    # Add the lines
+    geom_line(
+      linewidth = 1.5,
+      alpha = .7
+    ) +
+    # Set colors using ODI palette
+    scale_color_manual(
+      values = c(
+        "Bilateral loan without co-financing" = odi_colors$odi_light_blue,
+        "Syndicated loan" = odi_colors$odi_yellow,
+        "Involves multilateral co-financing" = odi_colors$odi_blue
+      )
+    ) +
+    # Format y-axis
+    scale_y_continuous(
+      labels = scales::label_currency(
+        scale = 1,
+        suffix = " billion"
+      ),
+      limits = c(0, 105)
+    ) +
+    # Format x-axis
+    scale_x_continuous(
+      breaks = seq(2000, 2020, by = 5),
+      limits = c(2000, 2023)
+    ) +
+    # Basic labeling
+    labs(
+      x = "Commitment year",
+      y = "Loan commitments (constant 2021 US dollars)",
+      color = NULL,
+      title = "Syndicated and co-financed loans are increasingly important modalities",
+      subtitle = "Chinese lending by delivery channel, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    # Final theme adjustments
+    theme(
+      legend.position = "bottom",
+      legend.box = "horizontal",
+      legend.margin = margin(t = 20),  # Add top margin
+      legend.box.spacing = unit(10, "pt"),
+      legend.text = element_text(size = 8),  # Smaller text
+      panel.grid.minor = element_blank()
+    ) +
+    guides(color = guide_legend(nrow = 1))  # Force legend to use 1 row
+  
+  # Version for export without title and subtitle
+  plot_export <- channel_of_delivery_by_year |> 
+    filter(
+      delivery_channel != "Bilateral loan with co-financing"
+    ) |> 
+    ggplot(
+      aes(
+        x = commitment_year,
+        y = usd_bn,
+        color = delivery_channel
+      )
+    ) +
+    geom_vline(
+      xintercept = 2014,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    geom_vline(
+      xintercept = 2018,
+      linetype = "dashed",
+      color = "grey",
+      alpha = .7
+    ) +
+    annotate(
+      geom = "text",
+      x = 2016,
+      y = 95,
+      label = "Early BRI\n(2014–2017)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    annotate(
+      geom = "text",
+      x = 2020,
+      y = 95,
+      label = "Late BRI\n(2017–2021)",
+      family = "sans",
+      color = "grey50",
+      size = 3
+    ) +
+    geom_line(
+      linewidth = 1.5,
+      alpha = .7
+    ) +
+    scale_color_manual(
+      values = c(
+        "Bilateral loan without co-financing" = odi_colors$odi_light_blue,
+        "Syndicated loan" = odi_colors$odi_yellow,
+        "Involves multilateral co-financing" = odi_colors$odi_blue
+      )
+    ) +
+    scale_y_continuous(
+      labels = scales::label_currency(
+        scale = 1,
+        suffix = " billion"
+      ),
+      limits = c(0, 105)
+    ) +
+    scale_x_continuous(
+      breaks = seq(2000, 2020, by = 5),
+      limits = c(2000, 2023)
+    ) +
+    labs(
+      x = "Commitment year",
+      y = "Loan commitments (constant 2021 US dollars)",
+      color = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme(
+      legend.position = "bottom",
+      legend.box = "horizontal",
+      legend.margin = margin(t = 20),
+      legend.box.spacing = unit(10, "pt"),
+      legend.text = element_text(size = 8),
+      panel.grid.minor = element_blank()
+    ) +
+    guides(color = guide_legend(nrow = 1))
+  
+  # Save the plot
+  save_plot(lending_plot, "fig_syndicated_lending_rise", width = 10, height = 6)
+  
+  # Return the plot for display
+  return(lending_plot)
+}
+
+# Generate the syndicated lending figure
+syndicated_lending_fig <- create_syndicated_lending_figure()
+
+# Display the figure
+print(syndicated_lending_fig)
+```
+
+## Loan Maturity
+```{r loan-maturity-figure}
+create_loan_maturity_figure <- function() {
+  # Create lending type classification
+  policy_bank_vs_syndicated_lending <- gcdf3_for_aggregates |> 
+    filter(flow_type == "Loan") |>
+    mutate(
+      lending_type = case_when(
+        funding_agencies == "China Development Bank (CDB)" & co_financed == "No" ~
+          "CDB (Non-co-financed)",
+        funding_agencies == "Export-Import Bank of China (China Eximbank)" & co_financed == "No" ~
+          "Eximbank (Non-co-financed)",
+        number_of_lenders == "Syndicated Loan" ~ "Syndicated loan",
+        .default = "Other"
+      )
+    ) |>
+    filter(lending_type != "Other")
+  
+  # Calculate median maturity by lending type
+  maturity_by_lending_type <- policy_bank_vs_syndicated_lending |>
+    group_by(lending_type) |>
+    summarize(
+      median_maturity = median(maturity, na.rm = TRUE),
+      n_loans = n(),
+      n_with_maturity = sum(!is.na(maturity)),
+      .groups = "drop"
+    ) |>
+    # Sort lending types by median maturity
+    arrange(desc(median_maturity))
+  
+  # Save the source data
+  save_data(maturity_by_lending_type, "loan_maturity_data")
+  
+  # Create the plot
+  maturity_plot <- maturity_by_lending_type |>
+    ggplot(
+      aes(
+        x = median_maturity,
+        y = reorder(lending_type, median_maturity),
+        fill = lending_type
+      )
+    ) +
+    geom_col() +
+    # Set colors using ODI palette
+    scale_fill_manual(
+      values = c(
+        "Eximbank (Non-co-financed)" = odi_colors$odi_blue,
+        "CDB (Non-co-financed)" = odi_colors$odi_light_blue,
+        "Syndicated loan" = odi_colors$odi_yellow
+      )
+    ) +
+    # Format x-axis
+    scale_x_continuous(
+      limits = c(0, 20),
+      breaks = seq(0, 20, by = 5),
+      labels = scales::label_number(suffix = " yrs"),
+      expand = c(0, 0)
+    ) +
+    # Basic labeling
+    labs(
+      x = "Median loan maturity (years)",
+      y = NULL,
+      title = "Syndicated loans have shorter maturities than bilateral policy bank loans",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    # Final theme adjustments
+    theme(
+      legend.position = "none",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  # Version for export without title
+  plot_export <- maturity_by_lending_type |>
+    ggplot(
+      aes(
+        x = median_maturity,
+        y = reorder(lending_type, median_maturity),
+        fill = lending_type
+      )
+    ) +
+    geom_col() +
+    scale_fill_manual(
+      values = c(
+        "Eximbank (Non-co-financed)" = odi_colors$odi_blue,
+        "CDB (Non-co-financed)" = odi_colors$odi_light_blue,
+        "Syndicated loan" = odi_colors$odi_yellow
+      )
+    ) +
+    scale_x_continuous(
+      limits = c(0, 20),
+      breaks = seq(0, 20, by = 5),
+      labels = scales::label_number(suffix = " yrs"),
+      expand = c(0, 0)
+    ) +
+    labs(
+      x = "Median loan maturity (years)",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme(
+      legend.position = "none",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  # Save the plot
+  save_plot(maturity_plot, "fig_loan_maturity", width = 8, height = 4)
+  
+  # Return the plot for display
+  return(maturity_plot)
+}
+
+# Generate the loan maturity figure
+loan_maturity_fig <- create_loan_maturity_figure()
+
+# Display the figure
+print(loan_maturity_fig)
+```
+
+## Delivery Channel by Income & Region
+```{r delivery-channel-figures}
+create_delivery_channel_figures <- function() {
+  # Create delivery channel classification
+  channel_of_delivery <- gcdf3_for_aggregates |> 
+    filter(flow_type == "Loan", is.na(rescue)) |>
+    mutate(delivery_channel = case_when(
+      involving_multilateral == "Yes" ~ "Involves multilateral co-financing",
+      number_of_lenders == "Bilateral Loan" & (is.na(co_financed) | co_financed == "No") ~
+        "Bilateral loan without co-financing",
+      number_of_lenders == "Syndicated Loan" ~ "Syndicated loan",
+      .default = "Other"
+    )) |>
+    # Filter out bilateral loans with co-financing
+    filter(!(number_of_lenders == "Bilateral Loan" & co_financed == "Yes"))
+  
+  # Add World Bank income groups
+  income_groups <- WDI::WDI_data$country |>
+    as_tibble() |>
+    select(iso3c, income)
+  
+  channel_data_with_income <- channel_of_delivery |>
+    left_join(income_groups, by = join_by(iso3c)) |>
+    # Focus on the main income groups we care about
+    filter(income %in% c("Low income", "Lower middle income", "Upper middle income"))
+  
+  # Calculate percentages by income group and delivery channel
+  income_analysis <- channel_data_with_income |>
+    group_by(income, delivery_channel) |>
+    summarize(
+      usd_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9,
+      .groups = "drop"
+    ) |>
+    group_by(income) |>
+    mutate(
+      total_by_income = sum(usd_bn),
+      pct_of_income = usd_bn / total_by_income * 100
+    ) |>
+    ungroup()
+  
+  # Save income group data
+  save_data(income_analysis, "delivery_channel_by_income")
+  
+  # Calculate Africa's share of each delivery channel
+  africa_channel_share <- channel_of_delivery |>
+    mutate(
+      is_africa = recipient_region == "Africa"
+    ) |>
+    group_by(delivery_channel, is_africa) |>
+    summarize(
+      usd_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9,
+      .groups = "drop"
+    ) |>
+    group_by(delivery_channel) |>
+    mutate(
+      total_by_channel = sum(usd_bn),
+      pct_of_channel = usd_bn / total_by_channel * 100
+    ) |>
+    filter(is_africa) |>
+    select(-is_africa) |>
+    ungroup()
+  
+  # Save Africa share data
+  save_data(africa_channel_share, "africa_share_by_delivery_channel")
+  
+  # Set the consistent color scheme
+  channel_colors <- c(
+    "Bilateral loan without co-financing" = "#3287C8", # Light blue
+    "Involves multilateral co-financing" = "#404680",  # Dark blue/purple
+    "Syndicated loan" = "#FFD460"                     # Yellow/gold
+  )
+  
+  # Create income group chart
+  income_plot <- income_analysis |>
+    # Order factors for visual clarity
+    mutate(
+      income = factor(income, levels = c("Low income", "Lower middle income", "Upper middle income")),
+      delivery_channel = factor(delivery_channel, 
+                               levels = c("Bilateral loan without co-financing", "Syndicated loan", "Involves multilateral co-financing"))
+    ) |>
+    ggplot(
+      aes(
+        x = pct_of_income,
+        y = income,
+        fill = delivery_channel
+      )
+    ) +
+    geom_col(position = "stack") +
+    geom_text(
+      aes(label = sprintf("%.1f%%", pct_of_income)),
+      position = position_stack(vjust = 0.5),
+      color = "white",
+      size = 3
+    ) +
+    scale_x_continuous(
+      limits = c(0, 100),
+      labels = scales::label_percent(scale = 1),
+      expand = c(0, 0)
+    ) +
+    scale_fill_manual(values = channel_colors) +
+    labs(
+      x = "Percentage of USD commitments",
+      y = NULL,
+      title = "Syndicated loans concentrate in upper middle-income countries",
+      subtitle = "Loan commitment distribution by income group and delivery channel",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  # Create Africa share chart - showing Africa's share of each delivery channel
+  africa_share_plot <- africa_channel_share |>
+    # Order factors
+    mutate(
+      delivery_channel = factor(delivery_channel, 
+                              levels = c("Bilateral loan without co-financing", "Syndicated loan", "Involves multilateral co-financing"))
+    ) |>
+    ggplot(
+      aes(
+        x = pct_of_channel,
+        y = reorder(delivery_channel, -pct_of_channel),
+        fill = delivery_channel
+      )
+    ) +
+    geom_col() +
+    geom_text(
+      aes(label = sprintf("%.1f%%", pct_of_channel)),
+      hjust = -0.1,
+      color = "black",
+      size = 3
+    ) +
+    scale_x_continuous(
+      limits = c(0, 50),
+      labels = scales::label_percent(scale = 1),
+      expand = c(0, 0.15)
+    ) +
+    scale_fill_manual(values = channel_colors) +
+    labs(
+      x = "Africa's share of each delivery channel",
+      y = NULL,
+      title = "Africa receives lower share of syndicated loans",
+      subtitle = "Africa's share of each loan delivery channel, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "none",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  # Combined plot - Fix this section
+  combined_plot <- income_plot / africa_share_plot +
+    plot_layout(heights = c(3, 2)) +
+    plot_annotation(
+      title = "Delivery channel patterns vary significantly by income group and region"
+    )
+  
+  # Create export versions without titles
+  income_plot_export <- income_analysis |>
+    mutate(
+      income = factor(income, levels = c("Low income", "Lower middle income", "Upper middle income")),
+      delivery_channel = factor(delivery_channel, 
+                               levels = c("Bilateral loan without co-financing", "Syndicated loan", "Involves multilateral co-financing"))
+    ) |>
+    ggplot(
+      aes(
+        x = pct_of_income,
+        y = income,
+        fill = delivery_channel
+      )
+    ) +
+    geom_col(position = "stack") +
+    geom_text(
+      aes(label = sprintf("%.1f%%", pct_of_income)),
+      position = position_stack(vjust = 0.5),
+      color = "white",
+      size = 3
+    ) +
+    scale_x_continuous(
+      limits = c(0, 100),
+      labels = scales::label_percent(scale = 1),
+      expand = c(0, 0)
+    ) +
+    scale_fill_manual(values = channel_colors) +
+    labs(
+      x = "Percentage of USD commitments",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  africa_share_plot_export <- africa_channel_share |>
+    mutate(
+      delivery_channel = factor(delivery_channel, 
+                              levels = c("Bilateral loan without co-financing", "Syndicated loan", "Involves multilateral co-financing"))
+    ) |>
+    ggplot(
+      aes(
+        x = pct_of_channel,
+        y = reorder(delivery_channel, -pct_of_channel),
+        fill = delivery_channel
+      )
+    ) +
+    geom_col() +
+    geom_text(
+      aes(label = sprintf("%.1f%%", pct_of_channel)),
+      hjust = -0.1,
+      color = "black",
+      size = 3
+    ) +
+    scale_x_continuous(
+      limits = c(0, 50),
+      labels = scales::label_percent(scale = 1),
+      expand = c(0, 0.15)
+    ) +
+    scale_fill_manual(values = channel_colors) +
+    labs(
+      x = "Africa's share of each delivery channel",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "none",
+      panel.grid.minor = element_blank(),
+      panel.grid.major.y = element_blank()
+    )
+  
+  # Save individual plots
+  save_plot(income_plot, "fig_delivery_channel_income", width = 8, height = 4)
+  save_plot(africa_share_plot, "fig_africa_share_by_channel", width = 8, height = 3)
+  save_plot(combined_plot, "fig_delivery_channel_combined", width = 8, height = 8)
+  
+  # Make export versions available
+  plot_export <- income_plot_export
+  save_plot(income_plot_export, "fig_delivery_channel_income_export", width = 8, height = 4)
+  
+  plot_export <- africa_share_plot_export
+  save_plot(africa_share_plot_export, "fig_africa_share_by_channel_export", width = 8, height = 3)
+  
+  # Return all plots for inspection
+  return(list(
+    income_plot = income_plot, 
+    africa_share_plot = africa_share_plot,
+    combined_plot = combined_plot
+  ))
+}
+
+# Generate the figures
+delivery_channel_figs <- create_delivery_channel_figures()
+
+# Display the combined plot
+print(delivery_channel_figs$combined_plot)
+```
+
+## Syndicated Lending by Sector
+```{r syndicated-lending-sector-figure}
+create_syndicated_lending_sector_figure <- function() {
+  # Filter for syndicated loans
+  syndicated_loans <- gcdf3_for_aggregates |> 
+    filter(
+      flow_type == "Loan",
+      number_of_lenders == "Syndicated Loan"
+    )
+  
+  # Aggregate data by sector
+  syndicated_by_sector <- syndicated_loans |>
+    group_by(sector_name) |>
+    summarize(
+      usd_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 10^-9,
+      n_projects = n(),
+      .groups = "drop"
+    ) |>
+    # Sort by amount
+    arrange(desc(usd_bn))
+  
+  # Save the source data
+  save_data(syndicated_by_sector, "syndicated_lending_by_sector")
+  
+  # Create the plot
+  sector_plot <- syndicated_by_sector |>
+    # Fix capitalization in sector names (initial cap only)
+    mutate(
+      sector_name = stringr::str_to_sentence(sector_name)
+    ) |>
+    # Only include top sectors for clarity
+    slice_max(order_by = usd_bn, n = 15) |>
+    ggplot(
+      aes(
+        x = usd_bn,
+        y = reorder(sector_name, usd_bn)
+      )
+    ) +
+    geom_col(fill = "#3287C8") +  # Use the blue color from your theme
+    scale_x_continuous(
+      labels = scales::label_dollar(suffix = " bn"),
+      expand = c(0, 0),
+      limits = c(0, max(syndicated_by_sector$usd_bn) * 1.05)  # Add 5% for spacing
+    ) +
+    labs(
+      x = "Estimated Chinese policy bank & SOCB contribution",
+      y = NULL,
+      title = "Syndicated lending is concentrated in mining, energy and construction",
+      subtitle = "Top sectors by total loan value, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+  
+  # Version for export without title and subtitle
+  plot_export <- syndicated_by_sector |>
+    mutate(
+      sector_name = stringr::str_to_sentence(sector_name)
+    ) |>
+    slice_max(order_by = usd_bn, n = 15) |>
+    ggplot(
+      aes(
+        x = usd_bn,
+        y = reorder(sector_name, usd_bn)
+      )
+    ) +
+    geom_col(fill = "#3287C8") +
+    scale_x_continuous(
+      labels = scales::label_dollar(suffix = " bn"),
+      expand = c(0, 0),
+      limits = c(0, max(syndicated_by_sector$usd_bn) * 1.05)
+    ) +
+    labs(
+      x = "Estimated Chinese policy bank & SOCB contribution",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+  
+  # Save the plot
+  save_plot(sector_plot, "fig_syndicated_lending_sector", width = 10, height = 6)
+  
+  # Return the plot for display
+  return(sector_plot)
+}
+
+# Generate the syndicated lending by sector figure
+syndicated_sector_fig <- create_syndicated_lending_sector_figure()
+
+# Display the figure
+print(syndicated_sector_fig)
+```
+
+# Part 2: Social Network Analysis
+
+## Network Analysis Functions
+```{r network-functions}
+# ------------------------------------------------------------------------------
+# Function: build_cofinancing_network
+#
+# Constructs a co-financing network graph from transaction data.
+# ------------------------------------------------------------------------------
+build_cofinancing_network <- function(data, transaction_class = NULL, top_n = 50, min_collabs = 2) {
+  
+  # Optionally filter to a specific transaction class
+  if (!is.null(transaction_class)) {
+    data <- data |> filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create edge list
+  edges <- data |>
+    select(transaction_id, standardized_lender_name) |>
+    distinct() |>
+    group_by(transaction_id) |>
+    # Only consider transactions with at least 2 lenders
+    filter(n() >= 2) |>
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(pairs) |>
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) |>
+    select(from, to) |>
+    # Ensure edge is undirected by sorting lender names
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) |>
+    group_by(from, to) |>
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build node data
+  nodes <- data |>
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create tidygraph object (undirected network)
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures
+  graph <- graph |>
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness()
+    )
+  
+  # Add constraint measure
+  graph_igraph <- as.igraph(graph)
+  V(graph_igraph)$constraint <- constraint(graph_igraph)
+  
+  # Add constraint back to tidygraph object
+  graph <- graph |>
+    activate(nodes) |>
+    mutate(constraint = V(graph_igraph)$constraint)
+  
+  # Filter to top_n nodes by degree
+  node_data <- graph |> activate(nodes) |> as_tibble()
+  top_lenders <- node_data |>
+    arrange(desc(degree)) |>
+    slice_head(n = top_n)
+  
+  graph_filtered <- graph |>
+    activate(nodes) |>
+    filter(standardized_lender_name %in% top_lenders$standardized_lender_name) |>
+    convert(to_subgraph)
+  
+  # Filter edges by minimum collaborations
+  graph_filtered <- graph_filtered |>
+    activate(edges) |>
+    filter(weight >= min_collabs) |>
+    convert(to_subgraph)
+  
+  return(graph_filtered)
+}
+
+# Function to create a full network without top_n filtering (for quantitative analysis)
+build_cofinancing_network_full <- function(data, transaction_class = NULL, min_collabs = 2) {
+  
+  # Optionally filter to a specific transaction class
+  if (!is.null(transaction_class)) {
+    data <- data |> filter(transaction_primary_class == transaction_class)
+  }
+  
+  # Create edge list
+  edges <- data |>
+    select(transaction_id, standardized_lender_name) |>
+    distinct() |>
+    group_by(transaction_id) |>
+    filter(n() >= 2) |>
+    summarise(
+      pairs = list(combn(standardized_lender_name, 2, simplify = FALSE)),
+      .groups = "drop"
+    ) |>
+    unnest(pairs) |>
+    mutate(
+      from = map_chr(pairs, 1),
+      to   = map_chr(pairs, 2)
+    ) |>
+    select(from, to) |>
+    mutate(
+      from = pmin(from, to),
+      to   = pmax(from, to)
+    ) |>
+    group_by(from, to) |>
+    summarise(weight = n(), .groups = "drop")
+  
+  # Build node data
+  nodes <- data |>
+    distinct(standardized_lender_name, lender_geography, lender_core_type, lender_profit_orientation)
+  
+  # Create tidygraph object
+  graph <- tbl_graph(nodes = nodes, edges = edges, directed = FALSE)
+  
+  # Compute centrality measures including constraint
+  graph_igraph <- as.igraph(graph)
+  V(graph_igraph)$constraint <- constraint(graph_igraph)
+  
+  graph <- graph |>
+    mutate(
+      degree      = centrality_degree(),
+      betweenness = centrality_betweenness(),
+      closeness   = centrality_closeness(),
+      constraint  = V(graph_igraph)$constraint
+    )
+  
+  # Filter edges by minimum collaborations
+  graph_full <- graph |>
+    activate(edges) |>
+    filter(weight >= min_collabs) |>
+    convert(to_subgraph)
+  
+  return(graph_full)
+}
+
+# ------------------------------------------------------------------------------
+# Function: plot_network
+#
+# Visualizes a tidygraph network object with customized aesthetics.
+# ------------------------------------------------------------------------------
+plot_network <- function(graph, title = "Co-Financing Network", repel_force = 1, for_export = FALSE) {
+  
+  # Create a combined label for coloring
+  graph <- graph |>
+    activate(nodes) |>
+    mutate(
+      lender_color_label = if_else(
+        lender_geography == "Chinese",
+        "Chinese",
+        paste0("Non-Chinese: ", lender_profit_orientation)
+      )
+    )
+  
+  # Define custom color and shape mappings
+  color_values <- c(
+    "Chinese" = "#E41A1C",  # Brighter red
+    "Non-Chinese: Profit Maximizing" = "#377EB8",  # Blue
+    "Non-Chinese: Mixed Mandate"     = "#984EA3",  # Purple
+    "Non-Chinese: Policy Driven"     = "#4DAF4A"   # Green
+  )
+  
+  shape_values <- c(
+    "Profit Maximizing" = 16,  # circle
+    "Mixed Mandate"     = 17,  # triangle
+    "Policy Driven"     = 18,  # diamond
+    "Uncategorized"     = 15   # square
+  )
+  
+  # Set seed for reproducible layout
+  set.seed(42)
+  
+  # Create the network plot with a force-directed layout
+  p <- ggraph(graph, layout = "fr") +
+    # Draw edges with enhanced visibility
+    geom_edge_link(
+      aes(width = weight, alpha = weight),
+      color = "gray40", 
+      lineend = "round"
+    ) +
+    # Draw nodes
+    geom_node_point(
+      aes(
+        color = lender_color_label, 
+        shape = lender_profit_orientation, 
+        size = degree
+      ),
+      stroke = 0.5
+    ) +
+    # Add repelled text labels
+    geom_node_text(
+      aes(label = standardized_lender_name), 
+      repel = TRUE, 
+      size = 3.2,
+      fontface = "bold",
+      bg.color = "white",
+      bg.r = 0.15,
+      force = repel_force,
+      max.overlaps = 30
+    ) +
+    # Apply manual scales
+    scale_color_manual(values = color_values) +
+    scale_shape_manual(values = shape_values) +
+    scale_edge_width(range = c(0.5, 2.5)) +
+    scale_edge_alpha(range = c(0.4, 0.9))
+    
+  # Conditionally add labels based on whether for export or not
+  if (!for_export) {
+    p <- p + 
+      labs(
+        title = title,
+        color = "Lender type",
+        shape = "Profit orientation",
+        size = "Degree centrality",
+        caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+      )
+  } else {
+    p <- p + 
+      labs(
+        color = "Lender type",
+        shape = "Profit orientation",
+        size = "Degree centrality",
+        caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+      )
+  }
+  
+  # Add theme
+  p <- p +
+    theme_void() +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+      plot.subtitle = element_text(hjust = 0.5),
+      legend.position = "right",
+      legend.title = element_text(face = "bold"),
+      plot.margin = margin(10, 10, 10, 10)
+    )
+  
+  return(p)
+}
+```
+
+## Non-Chinese Lender Composition Analysis
+```{r non-chinese-composition}
+create_non_chinese_composition_figure <- function() {
+  # Filter to only non-Chinese lenders
+  non_chinese_lenders <- data_for_sna |>
+    filter(lender_geography == "Non-Chinese")
+  
+  # Create transaction-level summary
+  non_chinese_transaction_summary <- non_chinese_lenders |>
+    group_by(
+      transaction_id, 
+      transaction_primary_class
+    ) |>
+    summarize(
+      total_lenders = n(),
+      count_profit_maximizing = sum(lender_profit_orientation == "Profit Maximizing", na.rm = TRUE),
+      count_policy_driven = sum(lender_profit_orientation == "Policy Driven", na.rm = TRUE),
+      pct_profit_maximizing = (count_profit_maximizing / total_lenders) * 100,
+      pct_policy_driven = (count_policy_driven / total_lenders) * 100,
+      .groups = "drop"
+    )
+  
+  # Create summary by project type
+  non_chinese_composition_summary <- non_chinese_transaction_summary |> 
+    mutate(
+      green_or_not = ifelse(transaction_primary_class == "GREEN", 
+                         "Green projects", "All other lending")
+    ) |> 
+    group_by(green_or_not) |> 
+    summarize(
+      mean_policy_driven = mean(pct_policy_driven, na.rm = TRUE),
+      mean_profit_max = mean(pct_profit_maximizing, na.rm = TRUE),
+      count = n()
+    ) |> 
+    ungroup()
+  
+  # Convert to long format
+  non_chinese_composition_long <- non_chinese_composition_summary |>
+    pivot_longer(
+      cols = c("mean_policy_driven", "mean_profit_max"),
+      names_to = "lender_type",
+      values_to = "percentage"
+    ) |>
+    mutate(
+      lender_type = case_when(
+        lender_type == "mean_policy_driven" ~ "Policy-driven",
+        lender_type == "mean_profit_max" ~ "Profit-maximizing"
+      )
+    )
+  
+  # Save the data
+  save_data(non_chinese_composition_long, "non_chinese_composition")
+  
+  # Create bar chart
+  composition_plot <- ggplot(non_chinese_composition_long, 
+       aes(x = green_or_not, y = percentage, fill = lender_type)) +
+    geom_col(position = "dodge", width = 0.7) +
+    geom_text(aes(label = paste0(round(percentage), "%")), 
+            position = position_dodge(width = 0.7),
+            vjust = -0.5, size = 4) +
+    scale_fill_manual(values = c("Policy-driven" = "#4DAF4A", 
+                               "Profit-maximizing" = "#377EB8")) +
+    labs(
+      title = "Non-Chinese policy banks dominate green project co-financing",
+      subtitle = "Average composition of non-Chinese lenders in co-financed projects",
+      x = "",
+      y = "Average percentage",
+      fill = "Lender type",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme_minimal() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank(),
+      text = element_text(size = 12),
+      axis.text.x = element_text(face = "bold", size = 12)
+    ) +
+    annotate("segment", x = "Green projects", y = 65, xend = "Green projects", yend = 72,
+           arrow = arrow(length = unit(0.3, "cm")), color = "darkgreen") +
+    annotate("text", x = "Green projects", y = 78,
+           label = "Non-Chinese policy banks dominate\ngreen project co-financing", 
+           size = 4, color = "darkgreen", hjust = 0.5)
+  
+  # Version for export without title/subtitle
+  plot_export <- ggplot(non_chinese_composition_long, 
+       aes(x = green_or_not, y = percentage, fill = lender_type)) +
+    geom_col(position = "dodge", width = 0.7) +
+    geom_text(aes(label = paste0(round(percentage), "%")), 
+            position = position_dodge(width = 0.7),
+            vjust = -0.5, size = 4) +
+    scale_fill_manual(values = c("Policy-driven" = "#4DAF4A", 
+                               "Profit-maximizing" = "#377EB8")) +
+    labs(
+      x = "",
+      y = "Average percentage",
+      fill = "Lender type",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme_minimal() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.minor = element_blank(),
+      text = element_text(size = 12),
+      axis.text.x = element_text(face = "bold", size = 12)
+    )
+  
+  # Save the plot
+  save_plot(composition_plot, "fig_non_chinese_composition", width = 10, height = 7)
+  
+  # Return the plot
+  return(composition_plot)
+}
+
+# Generate the plot
+non_chinese_composition_fig <- create_non_chinese_composition_figure()
+
+# Display the figure
+print(non_chinese_composition_fig)
+```
+
+## Overall Co-Financing Network Analysis
+```{r overall-network}
+create_overall_network_figure <- function() {
+  # Build the overall network
+  network_overall <- build_cofinancing_network(
+    data_for_sna,
+    top_n = 20,
+    min_collabs = 1
+  )
+  
+  # Save the network data
+  network_overall_data <- network_overall |> 
+    activate(nodes) |> 
+    as_tibble() |> 
+    arrange(desc(degree))
+  
+  save_data(network_overall_data, "overall_network_top_nodes")
+  
+  # Build full network for later analyses
+  network_overall_full <- build_cofinancing_network_full(
+    data_for_sna,
+    min_collabs = 1
+  )
+  
+  # Visualize the overall network
+  p_overall <- plot_network(
+    network_overall, 
+    title = "Overall co-financing network: top 20 institutions"
+  )
+  
+  # Generate version for export (without title)
+  p_overall_export <- plot_network(
+    network_overall, 
+    for_export = TRUE
+  )
+  
+  # Save the plots
+  save_plot(p_overall, "fig_overall_network", width = 12, height = 10)
+  
+  # Make the plot_export available
+  plot_export <- p_overall_export
+  save_plot(p_overall_export, "fig_overall_network_export", width = 12, height = 10)
+  
+  # Return both the plot and the network objects
+  return(list(
+    plot = p_overall,
+    network = network_overall,
+    network_full = network_overall_full
+  ))
+}
+
+# Generate the overall network figure and store the network objects
+overall_network_results <- create_overall_network_figure()
+
+# Display the overall network plot
+print(overall_network_results$plot)
+```
+
+## Green Co-Financing Network Analysis
+```{r green-network}
+create_green_network_figure <- function() {
+  # Build the green network
+  network_green <- build_cofinancing_network(
+    data_for_sna, 
+    transaction_class = "GREEN", 
+    top_n = 20, 
+    min_collabs = 1
+  )
+  
+  # Save the network data
+  network_green_data <- network_green |> 
+    activate(nodes) |> 
+    as_tibble() |> 
+    arrange(desc(degree))
+  
+  save_data(network_green_data, "green_network_top_nodes")
+  
+  # Build full network for later analyses
+  network_green_full <- build_cofinancing_network_full(
+    data_for_sna,
+    transaction_class = "GREEN",
+    min_collabs = 1
+  )
+  
+  # Visualize the green network
+  p_green <- plot_network(
+    network_green, 
+    title = "Green projects co-financing network: top 20 institutions",
+    repel_force = 1.2
+  )
+  
+  # Generate version for export (without title)
+  p_green_export <- plot_network(
+    network_green, 
+    repel_force = 1.2,
+    for_export = TRUE
+  )
+  
+  # Save the plots
+  save_plot(p_green, "fig_green_network", width = 12, height = 10)
+  
+  # Make the plot_export available
+  plot_export <- p_green_export
+  save_plot(p_green_export, "fig_green_network_export", width = 12, height = 10)
+  
+  # Return both the plot and the network objects
+  return(list(
+    plot = p_green,
+    network = network_green,
+    network_full = network_green_full
+  ))
+}
+
+# Generate the green network figure and store the network objects
+green_network_results <- create_green_network_figure()
+
+# Display the green network plot
+print(green_network_results$plot)
+```
+
+## Export Network Data
+```{r}
+export_network_data <- function(network, filename_prefix) {
+  # Export nodes with positions and attributes
+  nodes_df <- network %>%
+    activate(nodes) %>%
+    as_tibble()
+  
+  # Export edges with weights
+  edges_df <- network %>%
+    activate(edges) %>%
+    as_tibble()
+  
+  # Write to CSV files
+  write_csv(nodes_df, here("output", "data", paste0(filename_prefix, "_nodes.csv")))
+  write_csv(edges_df, here("output", "data", paste0(filename_prefix, "_edges.csv")))
+  
+  message(paste0("Exported network data: ", filename_prefix, "_nodes.csv and ", filename_prefix, "_edges.csv"))
+}
+
+# Then call this after creating your network plots:
+export_network_data(overall_network_results$network, "overall_network")
+export_network_data(green_network_results$network, "green_network")
+```
+
+
+## Top Institutions Comparison
+```{r top-institutions-comparison}
+create_top_institutions_figure <- function() {
+  # Extract centrality data from networks
+  top_lenders_overall <- overall_network_results$network_full |>
+    activate(nodes) |>
+    as_tibble() |>
+    select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+           degree, betweenness, closeness, constraint) |>
+    arrange(desc(degree)) |>
+    slice_head(n = 10) |>
+    mutate(network = "Overall network")
+  
+  top_lenders_green <- green_network_results$network_full |>
+    activate(nodes) |>
+    as_tibble() |>
+    select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+           degree, betweenness, closeness, constraint) |>
+    arrange(desc(degree)) |>
+    slice_head(n = 10) |>
+    mutate(network = "Green network")
+  
+  # Combine the data
+  top_lenders_combined <- bind_rows(top_lenders_overall, top_lenders_green)
+  
+  # Save the data
+  save_data(top_lenders_overall, "top_lenders_overall")
+  save_data(top_lenders_green, "top_lenders_green")
+  
+  # Create a visualization showing top institutions by degree in both networks
+  p_top_degree <- top_lenders_combined |>
+    # Create a shorter label for institution names if they're too long
+    mutate(
+      short_name = ifelse(
+        nchar(standardized_lender_name) > 25,
+        paste0(substr(standardized_lender_name, 1, 22), "..."),
+        standardized_lender_name
+      )
+    ) |>
+    ggplot(
+      aes(
+        y = reorder_within(short_name, degree, network),
+        x = degree,
+        fill = lender_profit_orientation
+      )
+    ) +
+    geom_col() +
+    # Add constraint values as text
+    geom_text(
+      aes(label = paste0("C: ", round(constraint, 3))),
+      hjust = -0.1,
+      size = 3
+    ) +
+    facet_wrap(~ network, scales = "free_y") +
+    # Use ODI colors
+    scale_fill_manual(values = c(
+      "Profit Maximizing" = odi_colors$odi_yellow,
+      "Mixed Mandate" = odi_colors$odi_red,
+      "Policy Driven" = odi_colors$odi_blue
+    )) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(top_lenders_combined$degree) * 1.2)
+    ) +
+    # Use tidytext's reorder_within function for proper ordering within facets
+    scale_y_reordered() +
+    labs(
+      title = "Top 10 institutions by degree centrality",
+      subtitle = "C = constraint score (lower values indicate better bridging position)",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      x = "Degree centrality",
+      y = NULL,
+      fill = "Profit orientation"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.major.y = element_blank(),
+      strip.text = element_text(face = "bold", size = 12),
+      plot.margin = margin(r = 50)  # Extra right margin for text
+    )
+  
+  # Create export version
+  plot_export <- top_lenders_combined |>
+    mutate(
+      short_name = ifelse(
+        nchar(standardized_lender_name) > 25,
+        paste0(substr(standardized_lender_name, 1, 22), "..."),
+        standardized_lender_name
+      )
+    ) |>
+    ggplot(
+      aes(
+        y = reorder_within(short_name, degree, network),
+        x = degree,
+        fill = lender_profit_orientation
+      )
+    ) +
+    geom_col() +
+    geom_text(
+      aes(label = paste0("C: ", round(constraint, 3))),
+      hjust = -0.1,
+      size = 3
+    ) +
+    facet_wrap(~ network, scales = "free_y") +
+    scale_fill_manual(values = c(
+      "Profit Maximizing" = odi_colors$odi_yellow,
+      "Mixed Mandate" = odi_colors$odi_red,
+      "Policy Driven" = odi_colors$odi_blue
+    )) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(top_lenders_combined$degree) * 1.2)
+    ) +
+    scale_y_reordered() +
+    labs(
+      x = "Degree centrality",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      fill = "Profit orientation"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      panel.grid.major.y = element_blank(),
+      strip.text = element_text(face = "bold", size = 12),
+      plot.margin = margin(r = 50)
+    )
+  
+  # Save plots
+  save_plot(p_top_degree, "fig_top_institutions_degree", width = 14, height = 10)
+  
+  # Return the plot
+  return(p_top_degree)
+}
+
+# Generate the top institutions figure
+top_institutions_fig <- create_top_institutions_figure()
+
+# Display the figure
+print(top_institutions_fig)
+```
+
+## Network Centrality Comparison
+```{r centrality-comparison}
+create_centrality_comparison_figure <- function() {
+  # Extract centrality data from both networks
+  centrality_overall_full <- overall_network_results$network_full |>
+    activate(nodes) |>
+    as_tibble() |>
+    select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+           degree, betweenness, closeness, constraint)
+  
+  centrality_green_full <- green_network_results$network_full |>
+    activate(nodes) |>
+    as_tibble() |>
+    select(standardized_lender_name, lender_geography, lender_profit_orientation, 
+           degree, betweenness, closeness, constraint)
+  
+  # Create a summary by lender type for both networks
+  avg_centrality_overall <- centrality_overall_full |>
+    group_by(lender_profit_orientation, lender_geography) |>
+    summarise(
+      avg_degree = mean(degree, na.rm = TRUE),
+      avg_betweenness = mean(betweenness, na.rm = TRUE),
+      avg_constraint = mean(constraint, na.rm = TRUE),
+      count = n(),
+      .groups = "drop"
+    ) |>
+    # Create a combined label for better visualization
+    mutate(
+      lender_type = paste(lender_geography, lender_profit_orientation),
+      network = "Overall network"
+    )
+  
+  avg_centrality_green <- centrality_green_full |>
+    group_by(lender_profit_orientation, lender_geography) |>
+    summarise(
+      avg_degree = mean(degree, na.rm = TRUE),
+      avg_betweenness = mean(betweenness, na.rm = TRUE),
+      avg_constraint = mean(constraint, na.rm = TRUE),
+      count = n(),
+      .groups = "drop"
+    ) |>
+    mutate(
+      lender_type = paste(lender_geography, lender_profit_orientation),
+      network = "Green network"
+    )
+  
+  # Combine the data
+  centrality_comparison <- bind_rows(avg_centrality_overall, avg_centrality_green)
+  
+  # Save the comparison data
+  save_data(centrality_comparison, "centrality_comparison")
+  
+  # Create a degree comparison chart
+  p_degree <- centrality_comparison |>
+    filter(!is.na(lender_profit_orientation)) |>
+    mutate(
+      lender_type = factor(lender_type, 
+                          levels = c("Chinese Mixed Mandate", 
+                                    "Non-Chinese Profit Maximizing",
+                                    "Chinese Policy Driven", 
+                                    "Non-Chinese Policy Driven",
+                                    "Chinese Profit Maximizing"))
+    ) |>
+    ggplot(
+      aes(x = lender_type, y = avg_degree, fill = network)
+    ) +
+    geom_col(position = position_dodge(width = 0.7), width = 0.6) +
+    geom_text(
+      aes(label = paste0("n=", count)),
+      position = position_dodge(width = 0.7),
+      vjust = -0.5,
+      size = 3
+    ) +
+    scale_fill_manual(values = c(
+      "Overall network" = odi_colors$odi_light_blue,
+      "Green network" = odi_colors$odi_blue
+    )) +
+    scale_y_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(centrality_comparison$avg_degree) * 1.1)
+    ) +
+    labs(
+      title = "Average degree centrality comparison by lender type",
+      subtitle = "Higher values indicate more connections",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      x = NULL,
+      y = "Average degree centrality",
+      fill = "Network"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      panel.grid.minor = element_blank()
+    )
+  
+  # Create a constraint comparison chart
+  p_constraint <- centrality_comparison |>
+    filter(!is.na(lender_profit_orientation)) |>
+    mutate(
+      lender_type = factor(lender_type, 
+                          levels = c("Chinese Mixed Mandate", 
+                                    "Non-Chinese Profit Maximizing",
+                                    "Chinese Policy Driven", 
+                                    "Non-Chinese Policy Driven",
+                                    "Chinese Profit Maximizing"))
+    ) |>
+    ggplot(
+      aes(x = lender_type, y = avg_constraint, fill = network)
+    ) +
+    geom_col(position = position_dodge(width = 0.7), width = 0.6) +
+    geom_text(
+      aes(label = paste0("n=", count)),
+      position = position_dodge(width = 0.7),
+      vjust = -0.5,
+      size = 3
+    ) +
+    scale_fill_manual(values = c(
+      "Overall network" = odi_colors$odi_light_blue,
+      "Green network" = odi_colors$odi_blue
+    )) +
+    # Invert y-axis so lower constraint (better bridging) is at top
+    scale_y_reverse(
+      limits = c(max(centrality_comparison$avg_constraint) * 1.1, 0),
+      expand = c(0, 0)
+    ) +
+    labs(
+      title = "Network constraint comparison by lender type",
+      subtitle = "Lower values indicate more bridging opportunities (structural holes)",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      x = NULL,
+      y = "Average constraint score",
+      fill = "Network"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      panel.grid.minor = element_blank()
+    )
+  
+  # Combine the plots using patchwork
+  combined_grid <- p_degree / p_constraint +
+  plot_layout(heights = c(1, 1))
+  
+  p_combined <- ggdraw() +
+  draw_plot(combined_grid) +
+  draw_label(
+    "Network structure differs dramatically between overall and green networks",
+    x = 0.5, y = 0.98, hjust = 0.5, vjust = 1,
+    fontface = "bold", size = 16
+  ) +
+  draw_label(
+    "Chinese mixed-mandate banks maintain high connectivity while other institutions shift roles",
+    x = 0.5, y = 0.94, hjust = 0.5, vjust = 1,
+    size = 12
+  )
+  
+  # Create export versions without titles
+  p_degree_export <- centrality_comparison |>
+    filter(!is.na(lender_profit_orientation)) |>
+    mutate(
+      lender_type = factor(lender_type, 
+                          levels = c("Chinese Mixed Mandate", 
+                                    "Non-Chinese Profit Maximizing",
+                                    "Chinese Policy Driven", 
+                                    "Non-Chinese Policy Driven",
+                                    "Chinese Profit Maximizing"))
+    ) |>
+    ggplot(
+      aes(x = lender_type, y = avg_degree, fill = network)
+    ) +
+    geom_col(position = position_dodge(width = 0.7), width = 0.6) +
+    geom_text(
+      aes(label = paste0("n=", count)),
+      position = position_dodge(width = 0.7),
+      vjust = -0.5,
+      size = 3
+    ) +
+    scale_fill_manual(values = c(
+      "Overall network" = odi_colors$odi_light_blue,
+      "Green network" = odi_colors$odi_blue
+    )) +
+    scale_y_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(centrality_comparison$avg_degree) * 1.1)
+    ) +
+    labs(
+      x = NULL,
+      y = "Average degree centrality",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      fill = "Network"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      panel.grid.minor = element_blank()
+    )
+  
+  p_constraint_export <- centrality_comparison |>
+    filter(!is.na(lender_profit_orientation)) |>
+    mutate(
+      lender_type = factor(lender_type, 
+                          levels = c("Chinese Mixed Mandate", 
+                                    "Non-Chinese Profit Maximizing",
+                                    "Chinese Policy Driven", 
+                                    "Non-Chinese Policy Driven",
+                                    "Chinese Profit Maximizing"))
+    ) |>
+    ggplot(
+      aes(x = lender_type, y = avg_constraint, fill = network)
+    ) +
+    geom_col(position = position_dodge(width = 0.7), width = 0.6) +
+    geom_text(
+      aes(label = paste0("n=", count)),
+      position = position_dodge(width = 0.7),
+      vjust = -0.5,
+      size = 3
+    ) +
+    scale_fill_manual(values = c(
+      "Overall network" = odi_colors$odi_light_blue,
+      "Green network" = odi_colors$odi_blue
+    )) +
+    scale_y_reverse(
+      limits = c(max(centrality_comparison$avg_constraint) * 1.1, 0),
+      expand = c(0, 0)
+    ) +
+    labs(
+      x = NULL,
+      y = "Average constraint score",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      fill = "Network"
+    ) +
+    theme_odi() +
+    theme(
+      legend.position = "bottom",
+      axis.text.x = element_text(angle = 45, hjust = 1),
+      panel.grid.minor = element_blank()
+    )
+  
+  # Save plots
+  save_plot(p_degree, "fig_degree_comparison", width = 10, height = 7)
+  save_plot(p_constraint, "fig_constraint_comparison", width = 10, height = 7)
+  save_plot(p_combined, "fig_centrality_combined", width = 12, height = 12)
+  
+  # Save export versions
+  plot_export <- p_degree_export
+  save_plot(p_degree_export, "fig_degree_comparison_export", width = 10, height = 7)
+  
+  plot_export <- p_constraint_export
+  save_plot(p_constraint_export, "fig_constraint_comparison_export", width = 10, height = 7)
+  
+  # Return the plots
+  return(list(
+    degree = p_degree,
+    constraint = p_constraint,
+    combined = p_combined
+  ))
+}
+
+# Generate the centrality comparison figures
+centrality_comparison_figs <- create_centrality_comparison_figure()
+
+# Display the combined plot
+print(centrality_comparison_figs$combined)
+```
+
+## Top Banks by Count
+
+```{r}
+create_top_active_banks_by_count_figure <- function() {
+  # Create the dataset for syndicated loan counts
+  data_for_syndicated_loan_count <- gcdf_green_data |> 
+    filter(
+      recommended_for_aggregates == "Yes",
+      flow_type == "Loan",
+      number_of_lenders == "Syndicated Loan"
+    ) |> 
+    unnest(standardized_lenders) |> 
+    # Create a simplified lender type classification for coloring
+    mutate(
+      lender_color_group = case_when(
+        standardized_lender_type %in% c(
+          "Chinese State-owned Commercial Bank", 
+          "Chinese State-owned Policy Bank",
+          "Chinese Government Agency",
+          "Chinese State-owned Company",
+          "Chinese State-owned Fund",
+          "Chinese Private Sector"
+        ) ~ "Chinese Institution",
+        TRUE ~ "Non-Chinese Institution"
+      )
+    ) |> 
+    select(
+      transaction_id,
+      standardized_lender_name,
+      standardized_lender_type,
+      lender_color_group
+    ) |> 
+    unique() |> 
+    group_by(
+      standardized_lender_name,
+      standardized_lender_type,
+      lender_color_group
+    ) |> 
+    count(sort = TRUE) |> 
+    ungroup()
+  
+  # Save the data
+  save_data(data_for_syndicated_loan_count, "syndicated_loan_count_by_bank_revised")
+  
+  # Find position of Standard Bank
+  standard_bank_name <- "Standard Bank"
+  standard_bank_position <- which(data_for_syndicated_loan_count$standardized_lender_name == standard_bank_name)
+  
+  # Get the top 25 banks for visualization
+  top_banks <- data_for_syndicated_loan_count |>
+    slice_head(n = 25)
+  
+  # Create a type-based color palette
+  type_colors <- c(
+    "Chinese Institution" = "#E41A1C",     # Red for Chinese institutions
+    "Non-Chinese Institution" = "#377EB8"  # Blue for non-Chinese institutions
+  )
+  
+  # Create the main plot colored by institution type
+  p_top_banks_by_type <- top_banks |>
+    ggplot(
+      aes(
+        x = n,
+        y = reorder(standardized_lender_name, n),
+        fill = lender_color_group
+      )
+    ) +
+    geom_col() +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = type_colors,
+      name = "Institution Type"
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      title = "Most active banks in syndication",
+      subtitle = "By number of syndicated loan transactions, 2000-2021",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Create a dataset that includes Standard Bank and top 30 banks
+  top_banks_with_standard <- data_for_syndicated_loan_count |>
+    slice_head(n = 30)
+  
+  # Add Standard Bank if not already in the top 30
+  if(!(standard_bank_name %in% top_banks_with_standard$standardized_lender_name)) {
+    standard_bank_data <- data_for_syndicated_loan_count |>
+      filter(standardized_lender_name == standard_bank_name)
+    
+    top_banks_with_standard <- bind_rows(
+      top_banks_with_standard,
+      standard_bank_data
+    )
+  }
+  
+  # Create a special color scheme to highlight Standard Bank
+  highlight_colors <- c(
+    "Standard Bank" = "#4DAF4A",         # Green for Standard Bank
+    "Chinese Institution" = "#FFCCCC",   # Light red for Chinese institutions
+    "Non-Chinese Institution" = "#CCCCCC" # Gray for other non-Chinese institutions
+  )
+  
+  # Create a new column for highlighting
+  top_banks_with_standard <- top_banks_with_standard |>
+    mutate(
+      highlight_group = case_when(
+        standardized_lender_name == standard_bank_name ~ standard_bank_name,
+        lender_color_group == "Chinese Institution" ~ "Chinese Institution",
+        TRUE ~ "Non-Chinese Institution"
+      )
+    )
+  
+  # Create the highlighting plot
+  top_banks_with_standard_plot_data <- top_banks_with_standard |>
+    mutate(
+      # Append the rank to Standard Bank name for visibility
+      standardized_lender_name = ifelse(
+        standardized_lender_name == standard_bank_name,
+        paste0(standardized_lender_name, " (", standard_bank_position, "th)"),
+        standardized_lender_name
+      ),
+      is_standard_bank = (standardized_lender_name == paste0(standard_bank_name, " (", standard_bank_position, "th)"))
+    )
+  
+  # Create the plot
+  p_highlight_standard_bank <- ggplot(
+    top_banks_with_standard_plot_data,
+    aes(
+      x = n,
+      y = reorder(standardized_lender_name, n),
+      fill = highlight_group
+    )
+  ) +
+    geom_col() +
+    # Add the outline to Standard Bank separately
+    geom_col(
+      data = top_banks_with_standard_plot_data |> filter(is_standard_bank),
+      fill = NA,
+      color = "black",
+      linewidth = 1
+    ) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks_with_standard$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = highlight_colors,
+      name = "Institution Type",
+      breaks = c("Chinese Institution", "Non-Chinese Institution", standard_bank_name)
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      title = "Standard Bank: A key African partner in syndicated lending",
+      subtitle = paste0("Standard Bank ranks ", standard_bank_position, "th overall, but is the top African bank in the network"),
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Export versions without titles
+  p_top_banks_by_type_export <- top_banks |>
+    ggplot(
+      aes(
+        x = n,
+        y = reorder(standardized_lender_name, n),
+        fill = lender_color_group
+      )
+    ) +
+    geom_col() +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = type_colors,
+      name = "Institution Type"
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Export version for the standard bank highlight
+  p_highlight_standard_bank_export <- ggplot(
+    top_banks_with_standard_plot_data,
+    aes(
+      x = n,
+      y = reorder(standardized_lender_name, n),
+      fill = highlight_group
+    )
+  ) +
+    geom_col() +
+    geom_col(
+      data = top_banks_with_standard_plot_data |> filter(is_standard_bank),
+      fill = NA,
+      color = "black",
+      linewidth = 1
+    ) +
+    scale_x_continuous(
+      expand = c(0, 0),
+      breaks = seq(0, 400, by = 100),
+      limits = c(0, max(top_banks_with_standard$n) * 1.05)
+    ) +
+    scale_fill_manual(
+      values = highlight_colors,
+      name = "Institution Type",
+      breaks = c("Chinese Institution", "Non-Chinese Institution", standard_bank_name)
+    ) +
+    labs(
+      x = "Number of syndicated lending transactions",
+      y = NULL,
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0, 2000-2021"
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      legend.position = "right"
+    )
+  
+  # Save the plots
+  save_plot(p_top_banks_by_type, "fig_top_active_banks_by_type", width = 10, height = 8)
+  save_plot(p_highlight_standard_bank, "fig_standard_bank_highlight", width = 10, height = 8)
+  
+  # Make export versions available
+  plot_export <- p_top_banks_by_type_export
+  save_plot(p_top_banks_by_type_export, "fig_top_active_banks_by_type_export", width = 10, height = 8)
+  
+  plot_export <- p_highlight_standard_bank_export
+  save_plot(p_highlight_standard_bank_export, "fig_standard_bank_highlight_export", width = 10, height = 8)
+  
+  # Return both plots
+  return(list(
+    by_type = p_top_banks_by_type,
+    standard_bank = p_highlight_standard_bank
+  ))
+}
+
+# Generate the figures
+top_banks_figs <- create_top_active_banks_by_count_figure()
+
+# Display the figures
+print(top_banks_figs$by_type)
+print(top_banks_figs$standard_bank)
+```
+
+
+## Co-Financing by Green Project Type
+```{r green-project-type-figure}
+create_green_project_types_figure <- function() {
+  # Analyze green projects by type and co-financing status
+  green_projects_by_cofinance <- gcdf_green_data |>
+    filter(primary_class == "GREEN") |>
+    group_by(project_type, co_financed) |> 
+    summarize(
+      amount_bn = sum(amount_constant_usd_2021, na.rm = TRUE) * 1e-9,
+      project_n = n(),
+      .groups = "drop"
+    )
+  
+  # Calculate total amount by project type for ordering
+  project_type_totals <- green_projects_by_cofinance |>
+    group_by(project_type) |>
+    summarize(total_amount_bn = sum(amount_bn, na.rm = TRUE), .groups = "drop") |>
+    filter(total_amount_bn > 0.1) |> # Filter out tiny projects
+    arrange(desc(total_amount_bn))
+  
+  # Filter to include only significant project types and clean labels
+  green_projects_filtered <- green_projects_by_cofinance |>
+    filter(project_type %in% project_type_totals$project_type) |>
+    mutate(
+      # Create nicer display labels
+      project_label = case_when(
+        project_type == "HYDRO" ~ "Hydropower",
+        project_type == "NUCLEAR" ~ "Nuclear power",
+        project_type == "SOLAR" ~ "Solar power",
+        project_type == "GREEN_TRANSPORT" ~ "Green transportation",
+        project_type == "WIND" ~ "Wind power",
+        .default = stringr::str_to_title(gsub("_", " ", project_type))
+      )
+    )
+  
+  # Save the data
+  save_data(green_projects_filtered, "green_projects_summary")
+  
+  # Create the plot
+  p_project_types <- green_projects_filtered |>
+    # Join with the totals for ordering
+    left_join(project_type_totals, by = "project_type") |>
+    ggplot(
+      aes(
+        x = reorder(project_label, total_amount_bn), # Order by total amount
+        y = amount_bn, 
+        fill = co_financed
+      )
+    ) +
+    geom_col(position = "stack") + # Stack the Yes/No bars
+    coord_flip() +
+    scale_fill_manual(
+      values = c(
+        "No" = "#D1E5F0",  # Light blue
+        "Yes" = "#2166AC"  # Dark blue
+      ),
+      labels = c("Not co-financed", "Co-financed")
+    ) +
+    scale_y_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(project_type_totals$total_amount_bn) * 1.05)
+    ) +
+    labs(
+      title = "Co-financing patterns vary widely across green project types",
+      subtitle = "Hydropower dominates financing volume with substantial co-financing",
+      x = NULL,
+      y = "Financing ($ billion)",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      fill = NULL
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      axis.text.y = element_text(face = "bold"),
+      legend.position = "bottom"
+    )
+  
+  # Export-friendly version
+  p_project_types_export <- green_projects_filtered |>
+    left_join(project_type_totals, by = "project_type") |>
+    ggplot(
+      aes(
+        x = reorder(project_label, total_amount_bn),
+        y = amount_bn, 
+        fill = co_financed
+      )
+    ) +
+    geom_col(position = "stack") +
+    coord_flip() +
+    scale_fill_manual(
+      values = c(
+        "No" = "#D1E5F0",  # Light blue
+        "Yes" = "#2166AC"  # Dark blue
+      ),
+      labels = c("Not co-financed", "Co-financed")
+    ) +
+    scale_y_continuous(
+      expand = c(0, 0),
+      limits = c(0, max(project_type_totals$total_amount_bn) * 1.05)
+    ) +
+    labs(
+      x = NULL,
+      y = "Financing ($ billion)",
+      caption = "Source: Authors' calculations based on AidData GCDF 3.0",
+      fill = NULL
+    ) +
+    theme_odi() +
+    theme(
+      panel.grid.major.y = element_blank(),
+      axis.text.y = element_text(face = "bold"),
+      legend.position = "bottom"
+    )
+  
+  # Save plots
+  save_plot(p_project_types, "fig_green_project_types", width = 12, height = 8)
+  
+  # Make export version available
+  plot_export <- p_project_types_export
+  save_plot(p_project_types_export, "fig_green_project_types_export", width = 12, height = 8)
+  
+  return(p_project_types)
+}
+
+# Generate the green project types figure
+green_project_types_fig <- create_green_project_types_figure()
+print(green_project_types_fig)
+```
+
+
+
+# Summary of Outputs
+```{r summary}
+# Print a summary of all created figures and data files
+cat("\n==== Summary of Generated Figures ====\n")
+cat("1. Emergency Lending Rise: fig_emergency_lending_rise\n")
+cat("2. Syndicated Lending Rise: fig_syndicated_lending_rise\n")
+cat("3. Loan Maturity Comparison: fig_loan_maturity\n")
+cat("4. Delivery Channel by Income: fig_delivery_channel_income\n")
+cat("5. Africa's Share by Channel: fig_africa_share_by_channel\n")
+cat("6. Syndicated Lending by Sector: fig_syndicated_lending_sector\n")
+cat("7. Non-Chinese Lender Composition: fig_non_chinese_composition\n")
+cat("8. Overall Co-Financing Network: fig_overall_network\n")
+cat("9. Green Co-Financing Network: fig_green_network\n")
+cat("10. Top Institutions by Degree: fig_top_institutions_degree\n")
+cat("11. Centrality Comparison: fig_centrality_combined\n")
+cat("12. Green Project Types: fig_green_project_types\n")
+
+# List all the files in the output directories
+cat("\n==== Files in the Output Directories ====\n")
+cat("Figures:\n")
+list.files(here("output", "figures"))
+
+cat("\nData:\n")
+list.files(here("output", "data"))
+```
+
+
+```{r}
+data_for_syndicated_loan_count <- gcdf_green_data |> 
+  filter(
+    recommended_for_aggregates == "Yes",
+    flow_type == "Loan",
+    number_of_lenders == "Syndicated Loan"
+  ) |> 
+  unnest(
+    standardized_lenders
+  ) |> 
+  mutate(
+    lender_geography_type = case_when(
+      lender_geography_type %in% c(
+        "Other",
+        "Recipient"
+      ) ~ "Non-Chinese",
+      .default = lender_geography_type
+    )
+  ) |> 
+  select(
+    transaction_id,
+    standardized_lender_name,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  unique() |> 
+  group_by(
+    standardized_lender_name,
+    standardized_lender_type,
+    lender_geography_type
+  ) |> 
+  count(
+    sort = TRUE
+  ) |> 
+  ungroup()
+```
+
+
+
+standardized_lender_type
+<chr>
+lender_geography_type
+<chr>
+n
+<int>
+Chinese State-owned Commercial Bank	Chinese	385
+Chinese State-owned Commercial Bank	Chinese	339
+Other Private Sector	Non-Chinese	181
+Other Private Sector	Non-Chinese	179
+Other Private Sector	Non-Chinese	157
+Other Private Sector	Non-Chinese	155
+Other Private Sector	Non-Chinese	151
+Chinese State-owned Policy Bank	Chinese	137
+Chinese State-owned Policy Bank	Chinese	127
+Other Private Sector	Non-Chinese	122

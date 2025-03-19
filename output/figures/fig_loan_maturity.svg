@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='576.00pt' height='288.00pt' viewBox='0 0 576.00 288.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw1NzYuMDB8MC4wMHwyODguMDA='>
+    <rect x='0.00' y='0.00' width='576.00' height='288.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwyODguMDA=)'>
+<rect x='0.00' y='0.00' width='576.00' height='288.00' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+</g>
+<defs>
+  <clipPath id='cpMTQyLjY5fDU1OS41Nnw1NC4xNHwyMjguNTg='>
+    <rect x='142.69' y='54.14' width='416.87' height='174.44' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMTQyLjY5fDU1OS41Nnw1NC4xNHwyMjguNTg=)'>
+<rect x='142.69' y='54.14' width='416.87' height='174.44' style='stroke-width: 1.07; stroke: #FFFFFF; fill: #FFFFFF;' />
+<polyline points='142.69,228.58 142.69,54.14 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='246.91,228.58 246.91,54.14 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='351.13,228.58 351.13,54.14 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='455.34,228.58 455.34,54.14 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<polyline points='559.56,228.58 559.56,54.14 ' style='stroke-width: 1.07; stroke: #FAF4E8; stroke-linecap: butt;' />
+<rect x='142.69' y='62.32' width='416.87' height='49.06' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #182061;' />
+<rect x='142.69' y='116.83' width='208.44' height='49.06' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #046FC4;' />
+<rect x='142.69' y='171.34' width='104.22' height='49.06' style='stroke-width: 1.07; stroke: none; stroke-linecap: butt; stroke-linejoin: miter; fill: #FED141;' />
+</g>
+<g clip-path='url(#cpMC4wMHw1NzYuMDB8MC4wMHwyODguMDA=)'>
+<text x='137.76' y='199.15' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='67.67px' lengthAdjust='spacingAndGlyphs'>Syndicated loan</text>
+<text x='137.76' y='144.64' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='100.38px' lengthAdjust='spacingAndGlyphs'>CDB (Non-co-financed)</text>
+<text x='137.76' y='90.13' text-anchor='end' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='121.32px' lengthAdjust='spacingAndGlyphs'>Eximbank (Non-co-financed)</text>
+<text x='142.69' y='240.07' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='20.10px' lengthAdjust='spacingAndGlyphs'>0 yrs</text>
+<text x='246.91' y='240.07' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='19.09px' lengthAdjust='spacingAndGlyphs'>5 yrs</text>
+<text x='351.13' y='240.07' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='23.36px' lengthAdjust='spacingAndGlyphs'>10 yrs</text>
+<text x='455.34' y='240.07' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='22.35px' lengthAdjust='spacingAndGlyphs'>15 yrs</text>
+<text x='559.56' y='240.07' text-anchor='middle' style='font-size: 8.80px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='25.38px' lengthAdjust='spacingAndGlyphs'>20 yrs</text>
+<text x='351.13' y='261.16' text-anchor='middle' style='font-size: 11.00px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='144.37px' lengthAdjust='spacingAndGlyphs'>Median loan maturity (years)</text>
+<text x='27.40' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='123.97px' lengthAdjust='spacingAndGlyphs'>Syndicated</text>
+<text x='155.28' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='57.00px' lengthAdjust='spacingAndGlyphs'>loans</text>
+<text x='216.20' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='51.72px' lengthAdjust='spacingAndGlyphs'>have</text>
+<text x='271.84' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='77.71px' lengthAdjust='spacingAndGlyphs'>shorter</text>
+<text x='353.46' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='108.40px' lengthAdjust='spacingAndGlyphs'>maturities</text>
+<text x='465.78' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='47.94px' lengthAdjust='spacingAndGlyphs'>than</text>
+<text x='517.63' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='87.71px' lengthAdjust='spacingAndGlyphs'>bilateral</text>
+<text x='609.26' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='66.48px' lengthAdjust='spacingAndGlyphs'>policy</text>
+<text x='679.66' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='53.28px' lengthAdjust='spacingAndGlyphs'>bank</text>
+<text x='736.86' y='43.79' style='font-size: 22.00px; font-weight: bold; font-family: "Plus Jakarta Sans";' textLength='57.00px' lengthAdjust='spacingAndGlyphs'>loans</text>
+<text x='559.56' y='275.22' text-anchor='end' style='font-size: 8.25px;fill: #182061; font-family: "Plus Jakarta Sans";' textLength='224.41px' lengthAdjust='spacingAndGlyphs'>Source: Authors' calculations based on AidData GCDF 3.0</text>
+</g>
+</svg>

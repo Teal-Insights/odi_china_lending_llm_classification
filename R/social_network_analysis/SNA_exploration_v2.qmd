@@ -81,11 +81,11 @@ glimpse(data_for_sna)
 
 The dataset contains transaction-level information with the following key variables:
 
-- `transaction_id`: Unique identifier for each financing transaction
-- `standardized_lender_name`: Harmonized names of lending institutions
-- `lender_geography`: Whether the lender is Chinese or non-Chinese
-- `lender_profit_orientation`: Categorized as "Profit Maximizing," "Mixed Mandate," or "Policy Driven"
-- `transaction_primary_class`: Classification of transactions (e.g., "GREEN", "BROWN", "GREY")
+-   `transaction_id`: Unique identifier for each financing transaction
+-   `standardized_lender_name`: Harmonized names of lending institutions
+-   `lender_geography`: Whether the lender is Chinese or non-Chinese
+-   `lender_profit_orientation`: Categorized as "Profit Maximizing," "Mixed Mandate," or "Policy Driven"
+-   `transaction_primary_class`: Classification of transactions (e.g., "GREEN", "BROWN", "GREY")
 
 ## Network Analysis Functions
 
@@ -487,9 +487,9 @@ write_csv(
 
 This analysis reveals a stark contrast in the composition of non-Chinese lenders between green and conventional projects:
 
-1. **Green projects** are heavily dominated by policy-driven institutions, which make up approximately 70% of non-Chinese co-financiers.
+1.  **Green projects** are heavily dominated by policy-driven institutions, which make up approximately 70% of non-Chinese co-financiers.
 
-2. **Conventional projects** show a much more balanced distribution, with profit-maximizing commercial banks playing a more significant role.
+2.  **Conventional projects** show a much more balanced distribution, with profit-maximizing commercial banks playing a more significant role.
 
 This fundamental difference in lender composition suggests that green financing in China's overseas development portfolio operates through distinctly different institutional channels than conventional financing. The policy-driven nature of green co-financing has important implications for scaling such investments, as it indicates limited commercial bank participation to date.
 
@@ -530,15 +530,15 @@ ggsave(
 
 In the overall co-financing network, we observe:
 
-1. **Dense Commercial Core**: The network has a densely interconnected structure dominated by commercial banks, both Chinese and international. Bank of China stands out with the highest degree centrality (386) and extraordinarily high betweenness (26,999), indicating its critical role in facilitating connections across the network.
+1.  **Dense Commercial Core**: The network has a densely interconnected structure dominated by commercial banks, both Chinese and international. Bank of China stands out with the highest degree centrality (386) and extraordinarily high betweenness (26,999), indicating its critical role in facilitating connections across the network.
 
-2. **Japanese Bank Cluster**: Japanese banks (Sumitomo Mitsui, Mitsubishi UFJ, Mizuho) form a particularly strong cluster, with Sumitomo Mitsui ranking second in degree centrality (367).
+2.  **Japanese Bank Cluster**: Japanese banks (Sumitomo Mitsui, Mitsubishi UFJ, Mizuho) form a particularly strong cluster, with Sumitomo Mitsui ranking second in degree centrality (367).
 
-3. **Low Constraint Values**: Top banks in this network have consistently low constraint scores (around 0.05), indicating diverse connections across multiple financing ecosystems rather than being confined to specific clusters.
+3.  **Low Constraint Values**: Top banks in this network have consistently low constraint scores (around 0.05), indicating diverse connections across multiple financing ecosystems rather than being confined to specific clusters.
 
-4. **Uniform Closeness**: All top institutions have similar closeness centrality (approximately 0.001), suggesting a relatively even structure where most major institutions can reach others through similar path lengths.
+4.  **Uniform Closeness**: All top institutions have similar closeness centrality (approximately 0.001), suggesting a relatively even structure where most major institutions can reach others through similar path lengths.
 
-5. **Limited Policy Bank Presence**: While China Development Bank appears in the network, most policy-driven institutions are noticeably absent from the core of the overall network, reflecting their limited role in general co-financing activities.
+5.  **Limited Policy Bank Presence**: While China Development Bank appears in the network, most policy-driven institutions are noticeably absent from the core of the overall network, reflecting their limited role in general co-financing activities.
 
 ### Top Lenders in Overall Network
 
@@ -571,13 +571,13 @@ write_csv(
 
 The centrality metrics for the overall network reveal:
 
-- **Chinese Mixed-Mandate Dominance**: Bank of China and ICBC both rank in the top 5, with exceptionally high betweenness centrality (26,999 and 20,923 respectively), highlighting their role as bridges between different parts of the financing ecosystem.
+-   **Chinese Mixed-Mandate Dominance**: Bank of China and ICBC both rank in the top 5, with exceptionally high betweenness centrality (26,999 and 20,923 respectively), highlighting their role as bridges between different parts of the financing ecosystem.
 
-- **International Commercial Integration**: The network is dominated by major international commercial banks (7 of the top 10), with particularly strong representation from Asian institutions (3 Japanese banks).
+-   **International Commercial Integration**: The network is dominated by major international commercial banks (7 of the top 10), with particularly strong representation from Asian institutions (3 Japanese banks).
 
-- **Low Constraint Across the Board**: All top 10 institutions have constraint values between 0.049 and 0.057, indicating they all maintain diverse, non-redundant connections across the financing ecosystem.
+-   **Low Constraint Across the Board**: All top 10 institutions have constraint values between 0.049 and 0.057, indicating they all maintain diverse, non-redundant connections across the financing ecosystem.
 
-- **Standard Chartered's Position**: Standard Chartered ranks 4th in degree centrality and has the lowest constraint value (0.049), reflecting its strategic position connecting multiple financing networks, particularly in emerging markets.
+-   **Standard Chartered's Position**: Standard Chartered ranks 4th in degree centrality and has the lowest constraint value (0.049), reflecting its strategic position connecting multiple financing networks, particularly in emerging markets.
 
 ## Green Co-Financing Network Analysis
 
@@ -619,15 +619,15 @@ ggsave(
 
 The green co-financing network displays striking differences from the overall network:
 
-1. **Bifurcated Structure**: The network clearly splits into two distinct clusters - a policy-driven cluster dominated by development banks and a smaller commercial cluster.
+1.  **Bifurcated Structure**: The network clearly splits into two distinct clusters - a policy-driven cluster dominated by development banks and a smaller commercial cluster.
 
-2. **Changed Leadership Dynamics**: Societe Generale tops the degree centrality ranking (50), while ICBC maintains an extremely high betweenness (2211.87) despite having slightly lower degree (48), confirming its crucial bridging role between policy and commercial clusters.
+2.  **Changed Leadership Dynamics**: Societe Generale tops the degree centrality ranking (50), while ICBC maintains an extremely high betweenness (2211.87) despite having slightly lower degree (48), confirming its crucial bridging role between policy and commercial clusters.
 
-3. **Policy Bank Emergence**: The network shows much stronger representation of policy-driven institutions, with KfW (34), International Finance Corporation (33), and African Development Bank (29) all appearing in the top 10 - a dramatic difference from the overall network.
+3.  **Policy Bank Emergence**: The network shows much stronger representation of policy-driven institutions, with KfW (34), International Finance Corporation (33), and African Development Bank (29) all appearing in the top 10 - a dramatic difference from the overall network.
 
-4. **Higher Constraint Values**: Constraint values are generally higher in the green network (ranging from 0.068 to 0.121 for top 10), indicating more clustered, less diverse connections compared to the overall network.
+4.  **Higher Constraint Values**: Constraint values are generally higher in the green network (ranging from 0.068 to 0.121 for top 10), indicating more clustered, less diverse connections compared to the overall network.
 
-5. **Chinese Banks as Strategic Bridges**: ICBC, Bank of China, and China Eximbank all maintain important positions, serving as crucial bridges between the policy and commercial clusters with some of the highest betweenness centrality scores.
+5.  **Chinese Banks as Strategic Bridges**: ICBC, Bank of China, and China Eximbank all maintain important positions, serving as crucial bridges between the policy and commercial clusters with some of the highest betweenness centrality scores.
 
 ### Top Lenders in Green Network
 
@@ -660,15 +660,15 @@ write_csv(
 
 The centrality metrics in the green network reveal several key patterns:
 
-- **Societe Generale's Prominence**: This French commercial bank leads in degree centrality (50), suggesting broad participation across green projects, yet its betweenness (1250.22) is significantly lower than ICBC's, indicating less of a bridging role.
+-   **Societe Generale's Prominence**: This French commercial bank leads in degree centrality (50), suggesting broad participation across green projects, yet its betweenness (1250.22) is significantly lower than ICBC's, indicating less of a bridging role.
 
-- **ICBC's Critical Bridging Function**: ICBC has the second-highest degree (48) but over 1.7 times the betweenness of Societe Generale (2211.87), coupled with a relatively low constraint (0.068), confirming its unique position connecting otherwise separate financing clusters.
+-   **ICBC's Critical Bridging Function**: ICBC has the second-highest degree (48) but over 1.7 times the betweenness of Societe Generale (2211.87), coupled with a relatively low constraint (0.068), confirming its unique position connecting otherwise separate financing clusters.
 
-- **Public Development Banks' Emergence**: KfW (34), IFC (33), and African Development Bank (29) all appear in the top 10, with significant betweenness scores, highlighting their importance in the green financing ecosystem.
+-   **Public Development Banks' Emergence**: KfW (34), IFC (33), and African Development Bank (29) all appear in the top 10, with significant betweenness scores, highlighting their importance in the green financing ecosystem.
 
-- **Export-Import Bank of China's Role**: China Eximbank ranks 9th in degree (29) but has the third-highest betweenness (1346.71), indicating its specialized bridging role, particularly in connecting Chinese commercial banks with policy-oriented institutions.
+-   **Export-Import Bank of China's Role**: China Eximbank ranks 9th in degree (29) but has the third-highest betweenness (1346.71), indicating its specialized bridging role, particularly in connecting Chinese commercial banks with policy-oriented institutions.
 
-- **Higher Network Integration**: Closeness centrality values are approximately 3-4 times higher than in the overall network, suggesting the green financing network has shorter paths between institutions despite its bifurcated structure.
+-   **Higher Network Integration**: Closeness centrality values are approximately 3-4 times higher than in the overall network, suggesting the green financing network has shorter paths between institutions despite its bifurcated structure.
 
 ## Normalized Degree Centrality Analysis
 
@@ -756,13 +756,13 @@ ggsave(
 
 The normalized degree centrality analysis reveals a clear hierarchy in the green co-financing network:
 
-1. **Chinese Mixed-Mandate Banks**: These institutions (primarily ICBC and BOC) have by far the highest normalized degree centrality (0.125), confirming their crucial role in connecting different parts of the network.
+1.  **Chinese Mixed-Mandate Banks**: These institutions (primarily ICBC and BOC) have by far the highest normalized degree centrality (0.125), confirming their crucial role in connecting different parts of the network.
 
-2. **Non-Chinese Profit-Maximizing Banks**: Despite their reduced role compared to the overall network, these institutions still maintain high connectivity (0.100 normalized degree), particularly focused within their commercial cluster.
+2.  **Non-Chinese Profit-Maximizing Banks**: Despite their reduced role compared to the overall network, these institutions still maintain high connectivity (0.100 normalized degree), particularly focused within their commercial cluster.
 
-3. **Policy-Driven Institutions**: Both Chinese and non-Chinese policy banks show moderate normalized degree centrality (0.075 and 0.070 respectively), reflecting their participation in a smaller set of focused relationships.
+3.  **Policy-Driven Institutions**: Both Chinese and non-Chinese policy banks show moderate normalized degree centrality (0.075 and 0.070 respectively), reflecting their participation in a smaller set of focused relationships.
 
-4. **Chinese Profit-Maximizing Banks**: These have the lowest normalized degree (0.040), indicating more peripheral roles in the green financing network.
+4.  **Chinese Profit-Maximizing Banks**: These have the lowest normalized degree (0.040), indicating more peripheral roles in the green financing network.
 
 This hierarchy demonstrates how Chinese mixed-mandate banks serve as the critical connective tissue in the green financing network, bridging between the otherwise separate policy and commercial clusters.
 
@@ -826,15 +826,15 @@ write_csv(
 
 **Key Findings on Standard Bank Group:**
 
-1. **Strategic Position**: Standard Bank has a substantial presence in the overall network with 138 connections and a betweenness of 927.52, placing it as the only African bank with significant centrality in the Chinese co-financing ecosystem.
+1.  **Strategic Position**: Standard Bank has a substantial presence in the overall network with 138 connections and a betweenness of 927.52, placing it as the only African bank with significant centrality in the Chinese co-financing ecosystem.
 
-2. **ICBC Partnership**: The data confirms Standard Bank's strategic relationship with ICBC, which is its most frequent partner (29 co-financed transactions). This aligns with their known institutional connection, as ICBC holds a 20% stake in Standard Bank and they operate a joint venture (ICBC Standard Bank).
+2.  **ICBC Partnership**: The data confirms Standard Bank's strategic relationship with ICBC, which is its most frequent partner (29 co-financed transactions). This aligns with their known institutional connection, as ICBC holds a 20% stake in Standard Bank and they operate a joint venture (ICBC Standard Bank).
 
-3. **Commercial Focus**: Standard Bank's co-financing relationships are overwhelmingly with profit-maximizing commercial banks, with all top 5 partners being profit-maximizing institutions (ICBC being the only mixed-mandate exception).
+3.  **Commercial Focus**: Standard Bank's co-financing relationships are overwhelmingly with profit-maximizing commercial banks, with all top 5 partners being profit-maximizing institutions (ICBC being the only mixed-mandate exception).
 
-4. **Moderate Constraint (0.058)**: Standard Bank's constraint score is relatively low, indicating it maintains diverse, non-redundant connections across different financing ecosystems.
+4.  **Moderate Constraint (0.058)**: Standard Bank's constraint score is relatively low, indicating it maintains diverse, non-redundant connections across different financing ecosystems.
 
-5. **Green Finance Potential**: Our dataset doesn't show Standard Bank in green transactions, but the bank is known to be active in South Africa's Renewable Energy Independent Power Producer Procurement (REIPPP) program. Its established relationship with ICBC, which is a central player in the green network, positions it as a potential gateway for expanding Chinese green finance in Africa.
+5.  **Green Finance Potential**: Our dataset doesn't show Standard Bank in green transactions, but the bank is known to be active in South Africa's Renewable Energy Independent Power Producer Procurement (REIPPP) program. Its established relationship with ICBC, which is a central player in the green network, positions it as a potential gateway for expanding Chinese green finance in Africa.
 
 These findings suggest that the ICBC-Standard Bank partnership represents an important model for how regional banks can facilitate Chinese participation in financing in the Global South. While not yet fully realized in green financing, this partnership could be leveraged to expand green co-financing in Africa, where it's most needed.
 
@@ -910,19 +910,20 @@ write_csv(
 
 **Key Findings on People's Bank of China:**
 
-1. **High Green Transaction Count**: PBOC appears in 20 green transactions, representing a substantial commitment to green financing, along with 13 "grey" transactions and 62 "neutral" transactions.
+1.  **High Green Transaction Count**: PBOC appears in 20 green transactions, representing a substantial commitment to green financing, along with 13 "grey" transactions and 62 "neutral" transactions.
 
-2. **Moderate Network Centrality**: Despite its significant transaction volume, PBOC has moderate network centrality metrics in the green network, with a degree of 12 and betweenness of 93.32.
+2.  **Moderate Network Centrality**: Despite its significant transaction volume, PBOC has moderate network centrality metrics in the green network, with a degree of 12 and betweenness of 93.32.
 
-3. **Focused Co-Financing Strategy**: PBOC's co-financing is highly concentrated with a small set of multilateral development banks:
-   - Inter-American Development Bank (65 transactions)
-   - African Development Bank (30 transactions)
-   - Canadian Climate Fund for the Americas (7 transactions)
-   - International Finance Corporation (6 transactions)
+3.  **Focused Co-Financing Strategy**: PBOC's co-financing is highly concentrated with a small set of multilateral development banks:
 
-4. **Moderate Constraint (0.181)**: PBOC's constraint score is higher than commercial banks but lower than most policy banks, reflecting its position between highly constrained policy banks and less constrained commercial banks.
+    -   Inter-American Development Bank (65 transactions)
+    -   African Development Bank (30 transactions)
+    -   Canadian Climate Fund for the Americas (7 transactions)
+    -   International Finance Corporation (6 transactions)
 
-5. **Fund-Based Approach**: Rather than participating directly in diverse co-financing arrangements, PBOC establishes dedicated funds administered by MDBs, such as the China Co-financing Fund for Latin America at IDB and the Africa Growing Together Fund at AfDB.
+4.  **Moderate Constraint (0.181)**: PBOC's constraint score is higher than commercial banks but lower than most policy banks, reflecting its position between highly constrained policy banks and less constrained commercial banks.
+
+5.  **Fund-Based Approach**: Rather than participating directly in diverse co-financing arrangements, PBOC establishes dedicated funds administered by MDBs, such as the China Co-financing Fund for Latin America at IDB and the Africa Growing Together Fund at AfDB.
 
 This "high count, low centrality" pattern reflects PBOC's strategic choice to deploy capital through trusted multilateral intermediaries rather than directly participating in diverse financing arrangements. While this focuses its impact, it may limit its broader influence across the green financing ecosystem. The data suggests PBOC has established a concentrated but effective model for deploying green finance through multilateral channels.
 
@@ -1008,15 +1009,15 @@ write_csv(
 
 The comparative analysis reveals several striking patterns:
 
-1. **Dramatic Shift in Non-Chinese Profit-Maximizing Banks**: These institutions show the most dramatic change between networks, with average degree plummeting from 46.1 in the overall network to just 12.7 in the green network. This indicates a significantly reduced role in green financing despite their dominance in overall financing.
+1.  **Dramatic Shift in Non-Chinese Profit-Maximizing Banks**: These institutions show the most dramatic change between networks, with average degree plummeting from 46.1 in the overall network to just 12.7 in the green network. This indicates a significantly reduced role in green financing despite their dominance in overall financing.
 
-2. **Resilient Chinese Mixed-Mandate Banks**: These institutions maintain relatively high average degree in both networks (55.3 overall, 16.9 green) and show the lowest constraint in the green network (0.196), confirming their unique bridging position.
+2.  **Resilient Chinese Mixed-Mandate Banks**: These institutions maintain relatively high average degree in both networks (55.3 overall, 16.9 green) and show the lowest constraint in the green network (0.196), confirming their unique bridging position.
 
-3. **Emerging Role of Policy-Driven Institutions**: Non-Chinese policy banks show a remarkable increase in representation, growing from 23 institutions in the overall network to 66 in the green network, though their average degree remains modest (9.7), indicating many participate in a limited number of transactions.
+3.  **Emerging Role of Policy-Driven Institutions**: Non-Chinese policy banks show a remarkable increase in representation, growing from 23 institutions in the overall network to 66 in the green network, though their average degree remains modest (9.7), indicating many participate in a limited number of transactions.
 
-4. **Higher Constraint Across Categories**: Almost all lender types show higher constraint in the green network than in the overall network, indicating a more clustered, less integrated green financing ecosystem.
+4.  **Higher Constraint Across Categories**: Almost all lender types show higher constraint in the green network than in the overall network, indicating a more clustered, less integrated green financing ecosystem.
 
-5. **Chinese Policy Banks' Transformation**: These institutions show a major change in constraint, rising from 0.585 in the overall network to 0.424 in the green network, suggesting they operate more as connectors in the green space despite their still relatively clustered connections.
+5.  **Chinese Policy Banks' Transformation**: These institutions show a major change in constraint, rising from 0.585 in the overall network to 0.424 in the green network, suggesting they operate more as connectors in the green space despite their still relatively clustered connections.
 
 These patterns confirm the bifurcated nature of the green financing network, with policy-driven institutions playing a much more prominent role but mainly operating within their own clusters, connected to the commercial world primarily through Chinese mixed-mandate banks.
 
@@ -1068,15 +1069,15 @@ write_csv(
 
 The rank comparison reveals dramatic changes in institutional prominence between networks:
 
-1. **Massive Rank Improvements**: Several government and policy institutions show extraordinary improvements in ranking, jumping hundreds of places. For example, "Unspecified Chinese Government Institution" leaps 592 positions, while the People's Bank of China rises 583 places.
+1.  **Massive Rank Improvements**: Several government and policy institutions show extraordinary improvements in ranking, jumping hundreds of places. For example, "Unspecified Chinese Government Institution" leaps 592 positions, while the People's Bank of China rises 583 places.
 
-2. **Government-Led Green Financing**: Government agencies dominate the list of institutions with improved rankings, including Norway's government (+582) and China's Ministry of Commerce (+581), indicating the policy-driven nature of green financing.
+2.  **Government-Led Green Financing**: Government agencies dominate the list of institutions with improved rankings, including Norway's government (+582) and China's Ministry of Commerce (+581), indicating the policy-driven nature of green financing.
 
-3. **Regional Development Banks Emerge**: The Caribbean Development Bank jumps 562 positions, highlighting the growing role of regional development banks in green financing.
+3.  **Regional Development Banks Emerge**: The Caribbean Development Bank jumps 562 positions, highlighting the growing role of regional development banks in green financing.
 
-4. **Specialized European Institutions**: Spain's Institute of Official Credit rises 538 positions, showing the importance of European public finance institutions in green projects.
+4.  **Specialized European Institutions**: Spain's Institute of Official Credit rises 538 positions, showing the importance of European public finance institutions in green projects.
 
-5. **Regional Banks in Green Finance**: Several regional commercial banks like Hatton National Bank and Kasikornbank see dramatic improvements (+572 each), suggesting local financial institutions play important roles in certain green projects.
+5.  **Regional Banks in Green Finance**: Several regional commercial banks like Hatton National Bank and Kasikornbank see dramatic improvements (+572 each), suggesting local financial institutions play important roles in certain green projects.
 
 These massive rank changes further underscore how the green financing ecosystem operates through fundamentally different channels than conventional financing, with policy-driven and regional institutions playing outsized roles.
 
@@ -1204,20 +1205,21 @@ write_csv(
 
 The analysis of co-financing by project type reveals several important patterns:
 
-1. **Hydropower Dominance**: Hydropower projects account for the vast majority of green financing volume (approximately $61 billion) and show a substantial level of co-financing (50-75% of total volume).
+1.  **Hydropower Dominance**: Hydropower projects account for the vast majority of green financing volume (approximately \$61 billion) and show a substantial level of co-financing (50-75% of total volume).
 
-2. **Nuclear Power's Bilateral Nature**: The second-largest category ($10.4 billion) is overwhelmingly dominated by non-co-financed projects (over 95%), suggesting these are primarily bilateral arrangements between China and recipient countries.
+2.  **Nuclear Power's Bilateral Nature**: The second-largest category (\$10.4 billion) is overwhelmingly dominated by non-co-financed projects (over 95%), suggesting these are primarily bilateral arrangements between China and recipient countries.
 
-3. **Limited Scale of New Renewables**: Solar, wind, and other non-hydro renewables collectively account for less than $5 billion in financing, highlighting the still-limited scale of these technologies in China's overseas green portfolio.
+3.  **Limited Scale of New Renewables**: Solar, wind, and other non-hydro renewables collectively account for less than \$5 billion in financing, highlighting the still-limited scale of these technologies in China's overseas green portfolio.
 
-4. **Varying Co-Financing Patterns**: Co-financing percentages vary dramatically across project types:
-   - Hydropower: 50-75% co-financed
-   - Nuclear: 0-25% co-financed
-   - Solar: 25-50% co-financed
-   - Wind: 25-50% co-financed
-   - Green Transportation: 25-50% co-financed
+4.  **Varying Co-Financing Patterns**: Co-financing percentages vary dramatically across project types:
 
-5. **Long Tail of Small Projects**: Beyond the top 5 categories, there is a long tail of smaller project types (under $1 billion each), many of which show varying degrees of co-financing but represent a tiny fraction of the overall portfolio.
+    -   Hydropower: 50-75% co-financed
+    -   Nuclear: 0-25% co-financed
+    -   Solar: 25-50% co-financed
+    -   Wind: 25-50% co-financed
+    -   Green Transportation: 25-50% co-financed
+
+5.  **Long Tail of Small Projects**: Beyond the top 5 categories, there is a long tail of smaller project types (under \$1 billion each), many of which show varying degrees of co-financing but represent a tiny fraction of the overall portfolio.
 
 This breakdown highlights both the concentrated nature of China's green financing portfolio, dominated by traditional large hydro and nuclear projects, and the role of co-financing in different technology sectors. The newer renewable technologies, despite growing interest, remain a small fraction of the overall green portfolio by value.
 
@@ -1225,30 +1227,26 @@ This breakdown highlights both the concentrated nature of China's green financin
 
 To interpret our network analysis, it's important to understand the centrality measures used:
 
-1. **Degree Centrality**
-   - **What it means**: The number of direct connections an institution has to others. High-degree institutions collaborate with many partners.
-   - **Policy implication**: Institutions with high degree centrality are key coordinators that bring together multiple financing partners.
-   - **Example**: Bank of China has the highest degree in the overall network (386), indicating its extensive collaboration across the financing ecosystem.
-
-2. **Betweenness Centrality**
-   - **What it means**: How often an institution serves as a bridge between others that wouldn't otherwise be connected.
-   - **Policy implication**: High-betweenness institutions connect different financing ecosystems that would otherwise remain separate.
-   - **Example**: ICBC has extremely high betweenness (2211.87) in the green network, indicating its crucial role connecting the policy and commercial clusters.
-
-3. **Constraint**
-   - **What it means**: Whether an institution's partners are also connected to each other (high constraint) or not (low constraint).
-   - **Policy implication**: Low-constraint institutions have diverse, non-redundant connections and can leverage relationships across different financing ecosystems.
-   - **Example**: Chinese Mixed-Mandate banks have the lowest constraint in the green network (0.196), confirming their unique bridging position, while Policy-Driven institutions have much higher constraint (0.424 for Chinese, 0.392 for non-Chinese), showing they tend to finance together in tight clusters.
-
-4. **Closeness Centrality**
-   - **What it means**: How easily an institution can reach all others in the network (the inverse of the average shortest path).
-   - **Policy implication**: High-closeness institutions can efficiently disseminate information or practices across the network.
-   - **Example**: Closeness values are generally low in the overall network (around 0.001) but higher in the green network (around 0.004), suggesting the green network, despite being bifurcated, has shorter paths between institutions.
-
-5. **Normalized Degree**
-   - **What it means**: Degree centrality divided by the maximum possible connections, allowing comparison across networks of different sizes.
-   - **Policy implication**: Helps identify disproportionately central institutions regardless of network size.
-   - **Example**: Chinese Mixed-Mandate banks have the highest normalized degree (0.125) in the green network, highlighting their outsized importance relative to network size.
+1.  **Degree Centrality**
+    -   **What it means**: The number of direct connections an institution has to others. High-degree institutions collaborate with many partners.
+    -   **Policy implication**: Institutions with high degree centrality are key coordinators that bring together multiple financing partners.
+    -   **Example**: Bank of China has the highest degree in the overall network (386), indicating its extensive collaboration across the financing ecosystem.
+2.  **Betweenness Centrality**
+    -   **What it means**: How often an institution serves as a bridge between others that wouldn't otherwise be connected.
+    -   **Policy implication**: High-betweenness institutions connect different financing ecosystems that would otherwise remain separate.
+    -   **Example**: ICBC has extremely high betweenness (2211.87) in the green network, indicating its crucial role connecting the policy and commercial clusters.
+3.  **Constraint**
+    -   **What it means**: Whether an institution's partners are also connected to each other (high constraint) or not (low constraint).
+    -   **Policy implication**: Low-constraint institutions have diverse, non-redundant connections and can leverage relationships across different financing ecosystems.
+    -   **Example**: Chinese Mixed-Mandate banks have the lowest constraint in the green network (0.196), confirming their unique bridging position, while Policy-Driven institutions have much higher constraint (0.424 for Chinese, 0.392 for non-Chinese), showing they tend to finance together in tight clusters.
+4.  **Closeness Centrality**
+    -   **What it means**: How easily an institution can reach all others in the network (the inverse of the average shortest path).
+    -   **Policy implication**: High-closeness institutions can efficiently disseminate information or practices across the network.
+    -   **Example**: Closeness values are generally low in the overall network (around 0.001) but higher in the green network (around 0.004), suggesting the green network, despite being bifurcated, has shorter paths between institutions.
+5.  **Normalized Degree**
+    -   **What it means**: Degree centrality divided by the maximum possible connections, allowing comparison across networks of different sizes.
+    -   **Policy implication**: Helps identify disproportionately central institutions regardless of network size.
+    -   **Example**: Chinese Mixed-Mandate banks have the highest normalized degree (0.125) in the green network, highlighting their outsized importance relative to network size.
 
 These metrics together provide a comprehensive view of how different types of institutions structure their relationships and influence the overall financing ecosystem. The dramatic differences in these metrics between networks confirm the fundamentally different structure of green financing compared to conventional financing.
 
@@ -1256,25 +1254,25 @@ These metrics together provide a comprehensive view of how different types of in
 
 Our network analysis reveals several important findings with significant policy implications:
 
-1. **Bifurcated Financing Ecosystems**: Green projects rely on fundamentally different institutional networks than traditional Belt and Road financing. The green financing network is dominated by policy-driven institutions, with much less involvement from profit-maximizing commercial lenders. This bifurcation suggests a market failure in green financing that policy interventions could address.
+1.  **Bifurcated Financing Ecosystems**: Green projects rely on fundamentally different institutional networks than traditional Belt and Road financing. The green financing network is dominated by policy-driven institutions, with much less involvement from profit-maximizing commercial lenders. This bifurcation suggests a market failure in green financing that policy interventions could address.
 
-2. **Chinese Commercial Banks as Critical Bridges**: Chinese state-owned commercial banks like ICBC and Bank of China play a unique "bridging" role between policy-driven and commercial lending networks. Their low constraint scores (0.196) and high betweenness centrality indicate they connect financing ecosystems that would otherwise remain separate. This position gives them substantial leverage to mobilize commercial capital toward green investments.
+2.  **Chinese Commercial Banks as Critical Bridges**: Chinese state-owned commercial banks like ICBC and Bank of China play a unique "bridging" role between policy-driven and commercial lending networks. Their low constraint scores (0.196) and high betweenness centrality indicate they connect financing ecosystems that would otherwise remain separate. This position gives them substantial leverage to mobilize commercial capital toward green investments.
 
-3. **PBOC's Concentrated Multilateral Strategy**: The People's Bank of China demonstrates a distinctive approach to green financing by concentrating its activities through a small number of multilateral partners rather than participating broadly across the network. This "high count, low centrality" pattern suggests PBOC is effectively using multilateral institutions as trusted intermediaries, potentially reducing transaction costs but limiting its broader network influence.
+3.  **PBOC's Concentrated Multilateral Strategy**: The People's Bank of China demonstrates a distinctive approach to green financing by concentrating its activities through a small number of multilateral partners rather than participating broadly across the network. This "high count, low centrality" pattern suggests PBOC is effectively using multilateral institutions as trusted intermediaries, potentially reducing transaction costs but limiting its broader network influence.
 
-4. **Regional Bank Potential**: Standard Bank's strategic relationship with ICBC illustrates the potential role of regional banks in facilitating Chinese green finance in the Global South. Despite Standard Bank's absence from green financing in our dataset, its position as the most prominent African bank in the overall network and its established relationship with ICBC suggest it could serve as an important gateway for expanding green co-financing in Africa.
+4.  **Regional Bank Potential**: Standard Bank's strategic relationship with ICBC illustrates the potential role of regional banks in facilitating Chinese green finance in the Global South. Despite Standard Bank's absence from green financing in our dataset, its position as the most prominent African bank in the overall network and its established relationship with ICBC suggest it could serve as an important gateway for expanding green co-financing in Africa.
 
-5. **Hydropower Co-Financing Success**: The relatively high rate of co-financing in hydropower projects (50-75%) compared to other green technologies suggests that Chinese financiers have developed effective models for risk-sharing in this sector. These models could potentially be adapted and applied to newer renewable technologies to increase their scale.
+5.  **Hydropower Co-Financing Success**: The relatively high rate of co-financing in hydropower projects (50-75%) compared to other green technologies suggests that Chinese financiers have developed effective models for risk-sharing in this sector. These models could potentially be adapted and applied to newer renewable technologies to increase their scale.
 
-6. **Limited Commercial Participation in Renewables**: The lower co-financing rates and small overall volume for solar and wind projects highlight untapped potential for commercial lender participation in these technologies. This represents a significant opportunity for scaling up these investments through targeted risk-sharing mechanisms.
+6.  **Limited Commercial Participation in Renewables**: The lower co-financing rates and small overall volume for solar and wind projects highlight untapped potential for commercial lender participation in these technologies. This represents a significant opportunity for scaling up these investments through targeted risk-sharing mechanisms.
 
 For Chinese policymakers and development banks, these findings suggest several strategic opportunities:
 
-- Leverage the bridging position of state-owned commercial banks to mobilize more commercial capital for green investments
-- Consider replenishing and expanding multilateral co-financing funds that have proven effective vehicles for green project financing
-- Develop more strategic partnerships with regional banks to enhance local knowledge and project pipeline development
-- Explore blended finance approaches that reduce risk for commercial partners in green projects, particularly in newer renewable technologies
-- Apply successful co-financing models from hydropower to other green technologies
+-   Leverage the bridging position of state-owned commercial banks to mobilize more commercial capital for green investments
+-   Consider replenishing and expanding multilateral co-financing funds that have proven effective vehicles for green project financing
+-   Develop more strategic partnerships with regional banks to enhance local knowledge and project pipeline development
+-   Explore blended finance approaches that reduce risk for commercial partners in green projects, particularly in newer renewable technologies
+-   Apply successful co-financing models from hydropower to other green technologies
 
 ## Conclusion
 

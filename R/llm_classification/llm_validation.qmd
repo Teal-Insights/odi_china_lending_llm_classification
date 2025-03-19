@@ -222,6 +222,7 @@ deepseek_result <- chat$chat(coal_example, echo = FALSE) |>
 # Print result
 print(deepseek_result)
 ```
+
 deepseek_result
 
 # Run 300 Examples
@@ -357,14 +358,13 @@ claude_run_results
 ```
 
 ## Deepseek
+
 ```{r}
 deepseek_test <- gcdf_sample_for_validation |> 
   head(3)
 
 deepseek_test
 ```
-
-
 
 ```{r}
 start_time <- Sys.time()
@@ -400,4 +400,3 @@ deepseek_time_elapsed_per_loan * 18000 / 60
 ```{r}
 deepseek_run_results
 ```
-
