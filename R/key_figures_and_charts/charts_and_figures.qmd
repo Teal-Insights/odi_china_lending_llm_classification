@@ -15,6 +15,7 @@ editor: visual
 # Setup
 
 ## Load Libraries
+
 ```{r setup, message=FALSE}
 # Key packages for data manipulation and visualization
 library(tidyverse)    # For data manipulation and visualization
@@ -47,6 +48,7 @@ dir.create(here("output", "data"), recursive = TRUE, showWarnings = FALSE)
 ```
 
 ## Helper Functions
+
 ```{r}
 # Simplified save_plot function without the problematic font parameters
 save_plot <- function(plot, filename, width = 8, height = 6, dpi = 300) {
@@ -175,6 +177,7 @@ save_data <- function(data, filename) {
 ```
 
 ## Load Base Data
+
 ```{r load-data, message=FALSE}
 # Load the main data for lending pattern analysis
 gcdf3_for_aggregates <- get_gcdf3_dataset() |>
@@ -207,6 +210,7 @@ gcdf_green_data <- read_rds(
 # Part 1: Lending Pattern Analysis
 
 ## Emergency Lending
+
 ```{r emergency-lending-figure}
 create_emergency_lending_figure <- function() {
   # Create classifications for lending types
@@ -273,7 +277,7 @@ create_emergency_lending_figure <- function() {
       geom = "text",
       x = 2020,
       y = 88,
-      label = "Late BRI\n(2017–2021)",
+      label = "Late BRI\n(2018–2021)",
       family = "sans",
       color = "grey50",
       size = 3
@@ -352,7 +356,7 @@ create_emergency_lending_figure <- function() {
       geom = "text",
       x = 2020,
       y = 88,
-      label = "Late BRI\n(2017–2021)",
+      label = "Late BRI\n(2018–2021)",
       family = "sans",
       color = "grey50",
       size = 3
@@ -401,6 +405,7 @@ print(emergency_lending_fig)
 ```
 
 ## Syndicated Lending
+
 ```{r syndicated-lending-figure}
 create_syndicated_lending_figure <- function() {
   # Create delivery channel classification
@@ -468,7 +473,7 @@ create_syndicated_lending_figure <- function() {
       geom = "text",
       x = 2020,
       y = 95,
-      label = "Late BRI\n(2017–2021)",
+      label = "Late BRI\n(2018–2021)",
       family = "sans",
       color = "grey50",
       size = 3
@@ -556,7 +561,7 @@ create_syndicated_lending_figure <- function() {
       geom = "text",
       x = 2020,
       y = 95,
-      label = "Late BRI\n(2017–2021)",
+      label = "Late BRI\n(2018–2021)",
       family = "sans",
       color = "grey50",
       size = 3
@@ -614,6 +619,7 @@ print(syndicated_lending_fig)
 ```
 
 ## Loan Maturity
+
 ```{r loan-maturity-figure}
 create_loan_maturity_figure <- function() {
   # Create lending type classification
@@ -734,6 +740,7 @@ print(loan_maturity_fig)
 ```
 
 ## Delivery Channel by Income & Region
+
 ```{r delivery-channel-figures}
 create_delivery_channel_figures <- function() {
   # Create delivery channel classification
@@ -999,6 +1006,7 @@ print(delivery_channel_figs$combined_plot)
 ```
 
 ## Syndicated Lending by Sector
+
 ```{r syndicated-lending-sector-figure}
 create_syndicated_lending_sector_figure <- function() {
   # Filter for syndicated loans
@@ -1101,6 +1109,7 @@ print(syndicated_sector_fig)
 # Part 2: Social Network Analysis
 
 ## Network Analysis Functions
+
 ```{r network-functions}
 # ------------------------------------------------------------------------------
 # Function: build_cofinancing_network
@@ -1348,6 +1357,7 @@ plot_network <- function(graph, title = "Co-Financing Network", repel_force = 1,
 ```
 
 ## Non-Chinese Lender Composition Analysis
+
 ```{r non-chinese-composition}
 create_non_chinese_composition_figure <- function() {
   # Filter to only non-Chinese lenders
@@ -1468,6 +1478,7 @@ print(non_chinese_composition_fig)
 ```
 
 ## Overall Co-Financing Network Analysis
+
 ```{r overall-network}
 create_overall_network_figure <- function() {
   # Build the overall network
@@ -1526,6 +1537,7 @@ print(overall_network_results$plot)
 ```
 
 ## Green Co-Financing Network Analysis
+
 ```{r green-network}
 create_green_network_figure <- function() {
   # Build the green network
@@ -1588,6 +1600,7 @@ print(green_network_results$plot)
 ```
 
 ## Export Network Data
+
 ```{r}
 export_network_data <- function(network, filename_prefix) {
   # Export nodes with positions and attributes
@@ -1612,8 +1625,8 @@ export_network_data(overall_network_results$network, "overall_network")
 export_network_data(green_network_results$network, "green_network")
 ```
 
-
 ## Top Institutions Comparison
+
 ```{r top-institutions-comparison}
 create_top_institutions_figure <- function() {
   # Extract centrality data from networks
@@ -1757,6 +1770,7 @@ print(top_institutions_fig)
 ```
 
 ## Network Centrality Comparison
+
 ```{r centrality-comparison}
 create_centrality_comparison_figure <- function() {
   # Extract centrality data from both networks
@@ -2291,8 +2305,8 @@ print(top_banks_figs$by_type)
 print(top_banks_figs$standard_bank)
 ```
 
-
 ## Co-Financing by Green Project Type
+
 ```{r green-project-type-figure}
 create_green_project_types_figure <- function() {
   # Analyze green projects by type and co-financing status
@@ -2420,9 +2434,8 @@ green_project_types_fig <- create_green_project_types_figure()
 print(green_project_types_fig)
 ```
 
-
-
 # Summary of Outputs
+
 ```{r summary}
 # Print a summary of all created figures and data files
 cat("\n==== Summary of Generated Figures ====\n")
@@ -2447,7 +2460,6 @@ list.files(here("output", "figures"))
 cat("\nData:\n")
 list.files(here("output", "data"))
 ```
-
 
 ```{r}
 data_for_syndicated_loan_count <- gcdf_green_data |> 
@@ -2486,21 +2498,4 @@ data_for_syndicated_loan_count <- gcdf_green_data |>
   ungroup()
 ```
 
-
-
-standardized_lender_type
-<chr>
-lender_geography_type
-<chr>
-n
-<int>
-Chinese State-owned Commercial Bank	Chinese	385
-Chinese State-owned Commercial Bank	Chinese	339
-Other Private Sector	Non-Chinese	181
-Other Private Sector	Non-Chinese	179
-Other Private Sector	Non-Chinese	157
-Other Private Sector	Non-Chinese	155
-Other Private Sector	Non-Chinese	151
-Chinese State-owned Policy Bank	Chinese	137
-Chinese State-owned Policy Bank	Chinese	127
-Other Private Sector	Non-Chinese	122
+standardized_lender_type <chr> lender_geography_type <chr> n <int> Chinese State-owned Commercial Bank Chinese 385 Chinese State-owned Commercial Bank Chinese 339 Other Private Sector Non-Chinese 181 Other Private Sector Non-Chinese 179 Other Private Sector Non-Chinese 157 Other Private Sector Non-Chinese 155 Other Private Sector Non-Chinese 151 Chinese State-owned Policy Bank Chinese 137 Chinese State-owned Policy Bank Chinese 127 Other Private Sector Non-Chinese 122

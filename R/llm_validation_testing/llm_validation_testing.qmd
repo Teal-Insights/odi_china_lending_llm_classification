@@ -1296,7 +1296,6 @@ human_validated_observations <- here(
 human_validated_observations
 ```
 
-
 ```{r}
 human_validated_observations |> 
   select(
@@ -1305,7 +1304,6 @@ human_validated_observations |>
   ) |> 
   map(unique)
 ```
-
 
 ```{r}
 library(tidyverse)
@@ -1493,13 +1491,3 @@ print(results$major_disagreements)
 print(results$plots$agreement)
 print(results$plots$category)
 ```
-
-
-
-
-
-
-
-
-
-
