@@ -3,35 +3,69 @@
 
 Welcome! This repository accompanies our research paper, [“Greener on
 the Other Side? Mapping China’s Overseas Co-financing and Financial
-Innovation”](https://odi.org/en/publications/greener-on-the-other-side-mapping-chinas-overseas-co-financing-and-financial-innovation/),
-and includes materials from our Methodological Annex. Here, you can
-explore our analytical workflow, replicate select findings, and
-(hopefully) learn from our experiences applying large language models
-(LLMs) and social network analysis (SNA) to policy research on Chinese
-overseas lending.
+Innovation,”](https://odi.org/en/publications/greener-on-the-other-side-mapping-chinas-overseas-co-financing-and-financial-innovation/)
+and includes materials from our Methodological Annex. Our work makes
+three main methodological contributions:
 
-We want to emphasize that this project was a modest, exploratory effort.
-We had a limited budget and spent a considerable amount of time
-iterating on our approach. While it was a lot of work, it was also a lot
-of fun—we ended up innovating on how to use LLMs for policy-relevant
-classification tasks and how to integrate SNA for mapping co-financing
-networks. Our hope is that by sharing our methods, data workflows, and
-code, others can build upon what we’ve started.
+1.  **Demonstrating the promise of LLMs for policy research**: We show
+    how large language models can dramatically reduce the time and cost
+    of policy-relevant classification tasks (processing 18,000 projects
+    in 15 hours for \$1.58 instead of 1,500 hours and \$22,500), while
+    developing practical validation workflows to ensure trustworthy
+    results.
+
+2.  **Raising the bar on reproducibility**: We provide fully transparent
+    code, methods, and assumptions for analyzing Chinese overseas
+    lending—a politically sensitive topic where transparency is
+    particularly valuable—empowering others to scrutinize, challenge, or
+    build upon our findings.
+
+3.  **Advancing network analysis of financing relationships**: Building
+    on pioneering work by Joosse et al. (2025) and Escobar et
+    al. (2025), we use social network analysis to map co-financing
+    ecosystems and identify distinct patterns in green vs. non-green
+    investment networks.
+
+This was a modest, exploratory effort with limited time and resources.
+While we spent considerable time iterating on our approach, it was a lot
+of work but also a lot of fun. We believe we’ve made some important
+contributions, but we acknowledge that this is just the beginning of the
+journey. Our methodological approaches for policy-relevant LLM-powered
+classification and network mapping show promise, and we’re excited to
+share them. Our hope is that by making our methods, data workflows, and
+code available, others can build upon this foundation and advance the
+research further.
 
 [![Report: Greener on the other
 side?](report_cover.png)](https://odi.org/en/publications/greener-on-the-other-side-mapping-chinas-overseas-co-financing-and-financial-innovation/)
 
 ## Key Takeaways from Our Methodology
 
-1.  **Using LLMs for Text Classification**
-    - We leveraged four different LLMs on a validation set of 300
-      project descriptions to classify “green,” “brown,” “grey,” and
-      “neutral” projects in Chinese overseas lending.
-    - We compared model outputs to human evaluations, achieving
-      encouraging—but not perfect—agreement.
-    - We discuss how we worried about issues like “hallucination,” how
-      we tried to mitigate these, and how we interpret confidence scores
-      in classification.
+For a detailed discussion, we suggest reading our [Methodological
+Annex](https://media.odi.org/documents/Methodological_Annex.pdf). A few
+key takeaways:
+
+1.  **Using LLMs for Text Classification: Opening New Frontiers for
+    Policy Research**
+    - We leveraged four different LLMs to classify nearly 18,000 project
+      descriptions into “green,” “brown,” “grey,” and “neutral”
+      categories in just 15 hours at a cost of \$1.58—a task that would
+      have required approximately 1,500 hours of human labor and
+      \$22,500 using traditional approaches (17,957 x 5 minutes per
+      observation x \$15 per hour).
+    - This efficiency opens exciting new frontiers for policy research,
+      but we recognize that speed and scale must be balanced with
+      accuracy. Just because you can process massive amounts of data
+      cheaply doesn’t mean you can trust the results—LLMs can
+      hallucinate.
+    - With no established best practices for validation yet, we
+      developed a practical approach: comparing multiple models against
+      human evaluations on a 300-project sample. Our chosen model
+      achieved 91.8% agreement with human raters.
+    - We’re confident that both the practices and tooling will improve
+      over time, but we hope our practical example provides a useful
+      starting point for others applying LLMs to policy-relevant
+      classification tasks.
 2.  **Social Network Analysis (SNA) of Co-financing Relationships**
     - We created a transaction-level dataset of co-financed lending,
       identified unique transactions, and mapped them as nodes and edges
@@ -190,11 +224,18 @@ git clone https://github.com/YourOrg/YourRepoName.git
 ## Contact & Feedback
 
 - If you have questions or feedback, feel free to open an Issue or reach
-  out via email. We welcome comments, suggestions, and even pull
+  out on LinkedIn. We welcome comments, suggestions, and even pull
   requests if you spot areas for improvement.
-- Because Chinese overseas lending is politically sensitive, we
-  encourage robust debate, alternative definitions, and thoughtful
-  examination of the data.
+- Chinese overseas lending is politically sensitive, and all analyses
+  inevitably rely on assumptions and methods with some degree of
+  arbitrariness. By making our code and methodology fully transparent,
+  we aim to raise the bar on reproducibility in this field. This
+  transparency not only makes our analysis more credible by exposing it
+  to scrutiny, but also empowers others to challenge or build upon our
+  work with data-driven approaches rather than just rhetoric.
+  Additionally, by sharing labor-intensive components like name
+  standardization, we hope to prevent others from having to reinvent the
+  wheel.
 
 ------------------------------------------------------------------------
 
@@ -203,9 +244,13 @@ for exploring new frontiers of applying large language models and social
 network analysis to policy-relevant challenges, and we look forward to
 seeing how you might build on our work.
 
-Please cite this work if it helps you in your own research (citation
-details are in our main paper). Good luck, and don’t hesitate to reach
-out with any questions!
+Please cite this work if it helps you in your own research:
+
+> Chen, Yunnan, and Teal Emery. 2025. “Greener on the Other Side?
+> Mapping China’s Overseas Co-Financing and Financial Innovation.”
+> <https://odi.org/en/publications/greener-on-the-other-side-mapping-chinas-overseas-co-financing-and-financial-innovation/>.
+
+Good luck, and don’t hesitate to reach out with any questions!
 
 ------------------------------------------------------------------------
 
