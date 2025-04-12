@@ -220,12 +220,6 @@ git clone https://github.com/YourOrg/YourRepoName.git
   “hallucinate.” We tested models against a ~300-observation sample and
   cross-checked them with human coders. Use caution and replicate our
   checks if you plan to rely on these outputs.
-
-## Contact & Feedback
-
-- If you have questions or feedback, feel free to open an Issue or reach
-  out on LinkedIn. We welcome comments, suggestions, and even pull
-  requests if you spot areas for improvement.
 - Chinese overseas lending is politically sensitive, and all analyses
   inevitably rely on assumptions and methods with some degree of
   arbitrariness. By making our code and methodology fully transparent,
@@ -236,6 +230,12 @@ git clone https://github.com/YourOrg/YourRepoName.git
   Additionally, by sharing labor-intensive components like name
   standardization, we hope to prevent others from having to reinvent the
   wheel.
+
+## Contact & Feedback
+
+- If you have questions or feedback, feel free to open an Issue or reach
+  out on LinkedIn. We welcome comments, suggestions, and even pull
+  requests if you spot areas for improvement.
 
 ------------------------------------------------------------------------
 
