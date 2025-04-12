@@ -140,11 +140,11 @@ git clone https://github.com/YourOrg/YourRepoName.git
 -   We spent considerable time on this project despite a modest budget and a lot of labor intensity. This means we didn't have the resources to build fully containerized or cross-platform reproducibility solutions. We hope that what we've done—version control, pinned packages, and open-sourcing everything—still moves the needle on reproducible research.
 -   Classifying "green" vs. "grey" vs. "brown" projects is inherently subjective and reliant on the text we had. Other researchers might define or interpret "green" differently (e.g., whether nuclear or large-hydro counts). We try to make our assumptions explicit so you can adapt the definitions.
 -   LLM-based classification is still experimental—and these models can "hallucinate." We tested models against a \~300-observation sample and cross-checked them with human coders. Use caution and replicate our checks if you plan to rely on these outputs.
--   Chinese overseas lending is politically sensitive, and all analyses inevitably rely on assumptions and methods with some degree of arbitrariness. By making our code and methodology fully transparent, we aim to raise the bar on reproducibility in this field. This transparency not only makes our analysis more credible by exposing it to scrutiny, but also empowers others to challenge or build upon our work with data-driven approaches rather than just rhetoric. Additionally, by sharing labor-intensive components like name standardization, we hope to prevent others from having to reinvent the wheel.
+-   Chinese overseas lending is politically sensitive, and all analyses inevitably rely on assumptions and methods with some degree of arbitrariness. By making our code and methodology fully transparent, we aim to raise the bar on reproducibility in this field. We hope this transparency not only makes our analysis more credible by exposing it to scrutiny, but also empowers others to challenge or build upon our work with data-driven approaches rather than just rhetoric. Additionally, by sharing labor-intensive components like name standardization, we hope to prevent others from having to reinvent the wheel.
 
 ## Contact & Feedback
 
--   If you have questions or feedback, feel free to open an Issue or reach out on LinkedIn. We welcome comments, suggestions, and even pull requests if you spot areas for improvement.
+-   If you have questions or feedback, feel free to open a GitHub Issue in this repo, or reach out on LinkedIn. We welcome comments, suggestions, and even pull requests if you spot areas for improvement.
 
 ------------------------------------------------------------------------
 

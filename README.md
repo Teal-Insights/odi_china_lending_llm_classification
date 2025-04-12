@@ -223,7 +223,7 @@ git clone https://github.com/YourOrg/YourRepoName.git
 - Chinese overseas lending is politically sensitive, and all analyses
   inevitably rely on assumptions and methods with some degree of
   arbitrariness. By making our code and methodology fully transparent,
-  we aim to raise the bar on reproducibility in this field. This
+  we aim to raise the bar on reproducibility in this field. We hope this
   transparency not only makes our analysis more credible by exposing it
   to scrutiny, but also empowers others to challenge or build upon our
   work with data-driven approaches rather than just rhetoric.
@@ -233,9 +233,9 @@ git clone https://github.com/YourOrg/YourRepoName.git
 
 ## Contact & Feedback
 
-- If you have questions or feedback, feel free to open an Issue or reach
-  out on LinkedIn. We welcome comments, suggestions, and even pull
-  requests if you spot areas for improvement.
+- If you have questions or feedback, feel free to open a GitHub Issue in
+  this repo, or reach out on LinkedIn. We welcome comments, suggestions,
+  and even pull requests if you spot areas for improvement.
 
 ------------------------------------------------------------------------
 
